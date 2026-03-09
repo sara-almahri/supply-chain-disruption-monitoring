@@ -1,0 +1,127 @@
+{
+  "scenario_id": "MERC_SC008",
+  "model": "gpt-4.1",
+  "run_index": 3,
+  "runtime_seconds": 18.140697956085205,
+  "agent_outputs": {
+    "disruption_analysis": {
+      "type": "Geopolitical",
+      "involved": {
+        "countries": [
+          "North Korea"
+        ],
+        "industries": [
+          "Aerospace"
+        ],
+        "companies": [
+          "North Korea Aerospace Industries"
+        ]
+      },
+      "summary": "A major geopolitical disruption has affected the Aerospace industry in North Korea, with significant production halts at North Korea Aerospace Industries.",
+      "questions": [
+        "Which of {Mercedes-Benz Group AG}'s Tier-1 suppliers are located in North Korea?",
+        "Which of {Mercedes-Benz Group AG}'s Tier-2 suppliers are located in North Korea, and which Tier-1 suppliers do they supply?",
+        "Which of {Mercedes-Benz Group AG}'s Tier-3 suppliers are located in North Korea, and which Tier-2 suppliers do they supply?"
+      ]
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": [],
+      "monitored_company": "Mercedes-Benz Group AG",
+      "disrupted_countries": [
+        "North Korea"
+      ],
+      "summary": {
+        "total_disrupted_chains": 0,
+        "tier_1_count": 0,
+        "tier_2_count": 0,
+        "tier_3_count": 0,
+        "tier_4_count": 0
+      }
+    },
+    "risk_assessment": {
+      "company_name": "Mercedes-Benz Group AG",
+      "generated_at": "2026-03-01T16:55:19.954539Z",
+      "supplier_risk_scores": {},
+      "tier1_risk_profiles": [],
+      "critical_suppliers": [],
+      "expected_critical_suppliers": [],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 0,
+        "high_risk_suppliers": 0,
+        "medium_risk_suppliers": 0,
+        "low_risk_suppliers": 0,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.0,
+        "average_risk_score": 0.0
+      },
+      "kg_summary": {
+        "monitored_company": "Mercedes-Benz Group AG",
+        "disrupted_countries": [
+          "North Korea"
+        ],
+        "summary": {
+          "total_disrupted_chains": 0,
+          "tier_1_chain_count": 0,
+          "tier_2_chain_count": 0,
+          "tier_3_chain_count": 0,
+          "tier_4_chain_count": 0,
+          "unique_disrupted_companies": 0
+        }
+      },
+      "disruption_summary": {
+        "involved": {
+          "countries": [
+            "North Korea"
+          ],
+          "companies": [
+            "North Korea Aerospace Industries"
+          ]
+        }
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "recommendation": "LOW RISK: No Tier-1 suppliers exceed medium-risk thresholds. Maintain standard monitoring cadence."
+    },
+    "chief_supply_chain_output": {
+      "company_name": "Mercedes-Benz Group AG",
+      "decision_timestamp": "2026-03-01T16:55:19Z",
+      "decisions": {},
+      "decision_report": {
+        "executive_summary": "Based on analysis of ALL Tier-1 suppliers: 0 REPLACE_SUPPLIER (risk \u22650.6), 0 INCREASE_MONITORING (risk 0.45-0.59), 0 MAINTAIN_STANDARD (risk <0.45). No suppliers in scope due to isolated disruption in North Korea Aerospace sector and zero affected automotive supply chains.",
+        "action_summary": {
+          "total_tier1_suppliers_analyzed": 0,
+          "replace_supplier_count": 0,
+          "increase_monitoring_count": 0,
+          "maintain_standard_count": 0,
+          "critical_suppliers": [],
+          "key_statistics": "All Tier-1 suppliers assessed. Zero Tier-1, Tier-2, Tier-3, or Tier-4 nodes disrupted for Mercedes-Benz Group AG. Aggregate exposure: 0 disrupted nodes across all tiers."
+        }
+      },
+      "risk_summary": {
+        "total_suppliers_analyzed": 0,
+        "high_risk_suppliers": 0,
+        "recommendation": "No action required for Mercedes-Benz Group AG Tier-1 suppliers. Maintain standard monitoring. No REPLACE_SUPPLIER or INCREASE_MONITORING actions necessary. Low risk confirmed.",
+        "attention_flag": false
+      }
+    }
+  },
+  "risk_scores_count": 0,
+  "success": true,
+  "timestamp": "2026-03-01T16:55:27.359529"
+}

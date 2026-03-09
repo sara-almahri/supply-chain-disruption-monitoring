@@ -1,0 +1,36 @@
+# Company Configuration
+# ====================
+# This file configures the target company for supply chain disruption monitoring.
+# Change the company_name to monitor different companies.
+
+company:
+  name: "Tesla"  # Change this to monitor other companies (e.g., "Apple", "Mercedes", "Ford")
+  
+  # Company-specific settings
+  settings:
+    # Maximum tier depth to trace in supply chain
+    max_tier_depth: 4
+    
+    # Risk thresholds
+    risk_thresholds:
+      critical: 0.8
+      high: 0.6
+      medium: 0.4
+      low: 0.0
+    
+    # Countries of primary operations (for country-level disruption filtering)
+    primary_operation_countries:
+      - "United States"
+      - "China"
+      - "Germany"
+      - "Netherlands"
+    
+    # Key industries/sectors
+    key_industries:
+      - "Automotive"
+      - "Electric Vehicles"
+      - "Battery Manufacturing"
+      - "Semiconductors"
+      - "Lithium Mining"
+
+

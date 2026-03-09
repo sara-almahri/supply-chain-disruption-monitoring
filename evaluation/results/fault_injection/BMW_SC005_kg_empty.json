@@ -1,0 +1,1264 @@
+{
+  "scenario_id": "BMW_SC005",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Geopolitical",
+      "involved": {
+        "countries": [
+          "Germany"
+        ],
+        "industries": [
+          "Automotive"
+        ],
+        "companies": [
+          "Mercedes-Benz Group AG"
+        ]
+      },
+      "summary": "Geopolitical tensions in Germany have disrupted the automotive supply chain, affecting major manufacturers like Mercedes-Benz Group AG. This situation, compounded by government restrictions and economic instability, could impact Bayerische Motoren Werke AG if its suppliers are located in or dependent on the German automotive industry. Immediate assessment of supplier dependencies in Germany is necessary to mitigate potential production disruptions.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Germany": "high"
+        },
+        "industries": {
+          "Automotive": "high"
+        },
+        "companies": {
+          "Mercedes-Benz Group AG": "high"
+        }
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/Geopolitical_Tensions_Germany_Bayerische_Motoren_Werke_AG_20251122T111036_kg.json",
+      "monitored_company": "Bayerische Motoren Werke AG",
+      "disrupted_countries": [
+        "Germany"
+      ],
+      "chain_counts": {
+        "tier_1": 9,
+        "tier_2": 54,
+        "tier_3": 539,
+        "tier_4": 5412
+      },
+      "total_chains": 6014,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "SK Inc": 0.5976,
+        "Saudi Basic Industries Corp": 0.5893,
+        "Schaeffler AG": 0.563,
+        "Xperi Inc": 0.5458,
+        "Toyota Industries Corp": 0.5345,
+        "Kawasaki Heavy Industries Ltd": 0.5314,
+        "BASF SE": 0.5303,
+        "LG Chem Ltd": 0.528,
+        "JTEKT Corp": 0.5168,
+        "Samsung SDI Co Ltd": 0.5156
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "SK Inc",
+          "risk_score": 0.5976,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 13,
+            "4": 20
+          },
+          "total_unique_disrupted_suppliers": 35,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 131,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              348
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 15.0,
+              "normalized": 0.8988
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.1375384271302092,
+              "normalized": 0.3017
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017878692756482962,
+              "normalized": 0.1284
+            },
+            "tier1_centrality": {
+              "raw": 0.2320970766632835,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Saudi Basic Industries Corp",
+          "risk_score": 0.5893,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 17,
+            "4": 19
+          },
+          "total_unique_disrupted_suppliers": 38,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 109,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              357
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 16.65,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.14158868058021346,
+              "normalized": 0.3735
+            },
+            "downstream_pagerank": {
+              "raw": 0.001486945439133471,
+              "normalized": 0.056
+            },
+            "tier1_centrality": {
+              "raw": 0.17100826402117114,
+              "normalized": 0.4187
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Schaeffler AG",
+          "risk_score": 0.563,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 3,
+            "3": 8,
+            "4": 17
+          },
+          "total_unique_disrupted_suppliers": 29,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 67,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              120
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.2,
+              "normalized": 0.7883
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.1478941901919171,
+              "normalized": 0.4854
+            },
+            "downstream_pagerank": {
+              "raw": 0.0024541600013421702,
+              "normalized": 0.2885
+            },
+            "tier1_centrality": {
+              "raw": 0.19774044670863253,
+              "normalized": 0.6731
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Xperi Inc",
+          "risk_score": 0.5458,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 14,
+            "4": 18
+          },
+          "total_unique_disrupted_suppliers": 34,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 83,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              312
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 14.8,
+              "normalized": 0.8865
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.15045687632532503,
+              "normalized": 0.5309
+            },
+            "downstream_pagerank": {
+              "raw": 0.0014244896071145706,
+              "normalized": 0.041
+            },
+            "tier1_centrality": {
+              "raw": 0.13392157464544574,
+              "normalized": 0.0658
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.5345,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 7,
+            "4": 17
+          },
+          "total_unique_disrupted_suppliers": 26,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 73,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              165
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.95,
+              "normalized": 0.6503
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.15179549804793757,
+              "normalized": 0.5546
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016269979113837621,
+              "normalized": 0.0897
+            },
+            "tier1_centrality": {
+              "raw": 0.2039450339362971,
+              "normalized": 0.7321
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Kawasaki Heavy Industries Ltd",
+          "risk_score": 0.5314,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 11,
+            "4": 18
+          },
+          "total_unique_disrupted_suppliers": 30,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 68,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              148
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 12.55,
+              "normalized": 0.7485
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.1577649179342182,
+              "normalized": 0.6605
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018807516985387394,
+              "normalized": 0.1507
+            },
+            "tier1_centrality": {
+              "raw": 0.14240021615325693,
+              "normalized": 0.1465
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "BASF SE",
+          "risk_score": 0.5303,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 4,
+            "3": 7,
+            "4": 16
+          },
+          "total_unique_disrupted_suppliers": 28,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 82,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              158
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.1,
+              "normalized": 0.7822
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.13187204622179785,
+              "normalized": 0.2012
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017212774131584354,
+              "normalized": 0.1123
+            },
+            "tier1_centrality": {
+              "raw": 0.2253048573675348,
+              "normalized": 0.9354
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "LG Chem Ltd",
+          "risk_score": 0.528,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 11,
+            "4": 18
+          },
+          "total_unique_disrupted_suppliers": 31,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 109,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              238
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.3,
+              "normalized": 0.7945
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.137932523860488,
+              "normalized": 0.3087
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018863436759488064,
+              "normalized": 0.152
+            },
+            "tier1_centrality": {
+              "raw": 0.1957844101002777,
+              "normalized": 0.6545
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "JTEKT Corp",
+          "risk_score": 0.5168,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 7,
+            "4": 15
+          },
+          "total_unique_disrupted_suppliers": 23,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 77,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              183
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 9.5,
+              "normalized": 0.5613
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.1497642773260727,
+              "normalized": 0.5186
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017791638353179375,
+              "normalized": 0.1263
+            },
+            "tier1_centrality": {
+              "raw": 0.22564277493780135,
+              "normalized": 0.9386
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Samsung SDI Co Ltd",
+          "risk_score": 0.5156,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 9,
+            "4": 19
+          },
+          "total_unique_disrupted_suppliers": 29,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 91,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              125
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 11.899999999999999,
+              "normalized": 0.7086
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.13771613951565417,
+              "normalized": 0.3048
+            },
+            "downstream_pagerank": {
+              "raw": 0.0021016289550218606,
+              "normalized": 0.2038
+            },
+            "tier1_centrality": {
+              "raw": 0.2152071844942533,
+              "normalized": 0.8393
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "SK Inc",
+          "risk_score": 0.5976,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 15.0,
+              "normalized": 0.8988
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.1375384271302092,
+              "normalized": 0.3017
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017878692756482962,
+              "normalized": 0.1284
+            },
+            "tier1_centrality": {
+              "raw": 0.2320970766632835,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 13,
+            "4": 20
+          }
+        },
+        {
+          "company": "Saudi Basic Industries Corp",
+          "risk_score": 0.5893,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 16.65,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.14158868058021346,
+              "normalized": 0.3735
+            },
+            "downstream_pagerank": {
+              "raw": 0.001486945439133471,
+              "normalized": 0.056
+            },
+            "tier1_centrality": {
+              "raw": 0.17100826402117114,
+              "normalized": 0.4187
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 17,
+            "4": 19
+          }
+        },
+        {
+          "company": "Schaeffler AG",
+          "risk_score": 0.563,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.2,
+              "normalized": 0.7883
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.1478941901919171,
+              "normalized": 0.4854
+            },
+            "downstream_pagerank": {
+              "raw": 0.0024541600013421702,
+              "normalized": 0.2885
+            },
+            "tier1_centrality": {
+              "raw": 0.19774044670863253,
+              "normalized": 0.6731
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 3,
+            "3": 8,
+            "4": 17
+          }
+        },
+        {
+          "company": "Xperi Inc",
+          "risk_score": 0.5458,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 14.8,
+              "normalized": 0.8865
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.15045687632532503,
+              "normalized": 0.5309
+            },
+            "downstream_pagerank": {
+              "raw": 0.0014244896071145706,
+              "normalized": 0.041
+            },
+            "tier1_centrality": {
+              "raw": 0.13392157464544574,
+              "normalized": 0.0658
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 14,
+            "4": 18
+          }
+        },
+        {
+          "company": "Toyota Industries Corp",
+          "risk_score": 0.5345,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.95,
+              "normalized": 0.6503
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.15179549804793757,
+              "normalized": 0.5546
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016269979113837621,
+              "normalized": 0.0897
+            },
+            "tier1_centrality": {
+              "raw": 0.2039450339362971,
+              "normalized": 0.7321
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 7,
+            "4": 17
+          }
+        },
+        {
+          "company": "Kawasaki Heavy Industries Ltd",
+          "risk_score": 0.5314,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 12.55,
+              "normalized": 0.7485
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.1577649179342182,
+              "normalized": 0.6605
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018807516985387394,
+              "normalized": 0.1507
+            },
+            "tier1_centrality": {
+              "raw": 0.14240021615325693,
+              "normalized": 0.1465
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 11,
+            "4": 18
+          }
+        },
+        {
+          "company": "BASF SE",
+          "risk_score": 0.5303,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.1,
+              "normalized": 0.7822
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.13187204622179785,
+              "normalized": 0.2012
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017212774131584354,
+              "normalized": 0.1123
+            },
+            "tier1_centrality": {
+              "raw": 0.2253048573675348,
+              "normalized": 0.9354
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 4,
+            "3": 7,
+            "4": 16
+          }
+        },
+        {
+          "company": "LG Chem Ltd",
+          "risk_score": 0.528,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.3,
+              "normalized": 0.7945
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.137932523860488,
+              "normalized": 0.3087
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018863436759488064,
+              "normalized": 0.152
+            },
+            "tier1_centrality": {
+              "raw": 0.1957844101002777,
+              "normalized": 0.6545
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 11,
+            "4": 18
+          }
+        },
+        {
+          "company": "JTEKT Corp",
+          "risk_score": 0.5168,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 9.5,
+              "normalized": 0.5613
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.1497642773260727,
+              "normalized": 0.5186
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017791638353179375,
+              "normalized": 0.1263
+            },
+            "tier1_centrality": {
+              "raw": 0.22564277493780135,
+              "normalized": 0.9386
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 7,
+            "4": 15
+          }
+        },
+        {
+          "company": "Samsung SDI Co Ltd",
+          "risk_score": 0.5156,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 11.899999999999999,
+              "normalized": 0.7086
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.13771613951565417,
+              "normalized": 0.3048
+            },
+            "downstream_pagerank": {
+              "raw": 0.0021016289550218606,
+              "normalized": 0.2038
+            },
+            "tier1_centrality": {
+              "raw": 0.2152071844942533,
+              "normalized": 0.8393
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 9,
+            "4": 19
+          }
+        },
+        {
+          "company": "Altana AG",
+          "risk_score": 0.5075,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.649999999999999,
+              "normalized": 0.6319
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.16663270370676425,
+              "normalized": 0.8178
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015422303328419546,
+              "normalized": 0.0693
+            },
+            "tier1_centrality": {
+              "raw": 0.1270011476229989,
+              "normalized": 0.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 1,
+            "3": 8,
+            "4": 14
+          }
+        },
+        {
+          "company": "Solarwatt GmbH",
+          "risk_score": 0.5075,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.649999999999999,
+              "normalized": 0.6319
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.16663270370676425,
+              "normalized": 0.8178
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015422303328419546,
+              "normalized": 0.0693
+            },
+            "tier1_centrality": {
+              "raw": 0.1270011476229989,
+              "normalized": 0.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 1,
+            "3": 8,
+            "4": 14
+          }
+        },
+        {
+          "company": "AAPICO Hitech PCL",
+          "risk_score": 0.5066,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.95,
+              "normalized": 0.6503
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.158062864059878,
+              "normalized": 0.6658
+            },
+            "downstream_pagerank": {
+              "raw": 0.0020888545981687543,
+              "normalized": 0.2007
+            },
+            "tier1_centrality": {
+              "raw": 0.15127723811265817,
+              "normalized": 0.231
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 10,
+            "4": 17
+          }
+        },
+        {
+          "company": "Siemens AG",
+          "risk_score": 0.5038,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.75,
+              "normalized": 0.638
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.15366497533797877,
+              "normalized": 0.5878
+            },
+            "downstream_pagerank": {
+              "raw": 0.002259623106355195,
+              "normalized": 0.2417
+            },
+            "tier1_centrality": {
+              "raw": 0.1692461164167487,
+              "normalized": 0.402
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 2,
+            "3": 6,
+            "4": 15
+          }
+        },
+        {
+          "company": "AMAG Austria Metall AG",
+          "risk_score": 0.5027,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 11.0,
+              "normalized": 0.6534
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.16011507478540812,
+              "normalized": 0.7022
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015603780412012467,
+              "normalized": 0.0737
+            },
+            "tier1_centrality": {
+              "raw": 0.13845375810521587,
+              "normalized": 0.109
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 10,
+            "4": 15
+          }
+        },
+        {
+          "company": "Rio Tinto PLC",
+          "risk_score": 0.5011,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 9.899999999999999,
+              "normalized": 0.5859
+            },
+            "dependency_ratio": {
+              "raw": 0.09090909090909091,
+              "normalized": 0.0909
+            },
+            "downstream_centrality": {
+              "raw": 0.1504181412239836,
+              "normalized": 0.5302
+            },
+            "downstream_pagerank": {
+              "raw": 0.0020820684750338984,
+              "normalized": 0.1991
+            },
+            "tier1_centrality": {
+              "raw": 0.1977120220297638,
+              "normalized": 0.6728
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 7,
+            "4": 14
+          }
+        }
+      ],
+      "expected_critical_suppliers": [
+        "SK Inc",
+        "Saudi Basic Industries Corp",
+        "Schaeffler AG",
+        "Xperi Inc",
+        "Toyota Industries Corp",
+        "Kawasaki Heavy Industries Ltd",
+        "BASF SE",
+        "LG Chem Ltd",
+        "JTEKT Corp",
+        "Samsung SDI Co Ltd",
+        "Altana AG",
+        "Solarwatt GmbH",
+        "AAPICO Hitech PCL",
+        "Siemens AG",
+        "AMAG Austria Metall AG",
+        "Rio Tinto PLC"
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 100,
+        "high_risk_suppliers": 16,
+        "medium_risk_suppliers": 26,
+        "low_risk_suppliers": 58,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5976,
+        "average_risk_score": 0.39467399999999997
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "adaptive",
+      "recommendation": "HIGH PRIORITY: 16 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "SK Inc": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5976,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        },
+        "Saudi Basic Industries Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5893,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        },
+        "Schaeffler AG": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.563,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        },
+        "Xperi Inc": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5458,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        },
+        "Toyota Industries Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5345,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        },
+        "Kawasaki Heavy Industries Ltd": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5314,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        },
+        "BASF SE": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5303,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        },
+        "LG Chem Ltd": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.528,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        },
+        "JTEKT Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5168,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        },
+        "Samsung SDI Co Ltd": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5156,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER"
+          }
+        }
+      },
+      "decision_framework": "balanced",
+      "decision_report": {
+        "executive_summary": "A balanced approach is adopted to manage the risks associated with the top 10 suppliers, involving critical replacements due to high risk exposure.",
+        "action_summary": "Immediate replacement actions for all top suppliers; no suppliers currently have scores warranting only increased monitoring."
+      },
+      "risk_summary": {
+        "total_suppliers": 100,
+        "high_risk_suppliers": 16,
+        "medium_risk_suppliers": 26,
+        "low_risk_suppliers": 58,
+        "highest_risk_score": 0.5976,
+        "average_risk_score": 0.39467399999999997
+      },
+      "qualitative_analysis": {
+        "disruption_summary": "A geopolitical has occurred. For Bayerische Motoren Werke AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Bayerische Motoren Werke AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, no Tier-1 suppliers currently require immediate replacement. All top 10 riskiest suppliers have risk scores below the HIGH threshold (0.6), indicating that enhanced monitoring and contingency planning are sufficient mitigation strategies at this time."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:50.118228"
+}

@@ -1,0 +1,378 @@
+{
+  "scenario_id": "BMW_SC009",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Eastern Europe"
+        ],
+        "industries": [
+          "Metals Mining"
+        ],
+        "companies": [
+          "BHP Group Ltd"
+        ]
+      },
+      "summary": "An economic crisis in Eastern Europe has affected BHP Group Ltd, a major player in the Metals Mining industry. While the disruption is reported to be, it is crucial for Bayerische Motoren Werke AG to assess its supply chain dependencies in Eastern Europe, particularly in the Metals Mining sector, to ensure there are on its operations.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Eastern Europe": "high"
+        },
+        "industries": {
+          "Metals Mining": "medium"
+        },
+        "companies": {
+          "BHP Group Ltd": "high"
+        }
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/economic_crisis_2023_eastern_europe_Bayerische_Motoren_Werke_AG_20251122T000832_kg.json",
+      "monitored_company": "Bayerische Motoren Werke AG",
+      "disrupted_countries": [
+        "Eastern Europe"
+      ],
+      "chain_counts": {
+        "tier_1": 0,
+        "tier_2": 1,
+        "tier_3": 49,
+        "tier_4": 493
+      },
+      "total_chains": 543,
+      "query_strategy": "hybrid"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "ArcelorMittal SA": 0.6141,
+        "JTEKT Corp": 0.5055,
+        "Denso Corp": 0.4857,
+        "San Shing Fastech Corp": 0.4651,
+        "Schaeffler AG": 0.4646,
+        "QST International Corp": 0.4607,
+        "SK Inc": 0.4545,
+        "Xperi Inc": 0.449,
+        "Contemporary Amperex Technology Co Ltd": 0.4487,
+        "BASF SE": 0.4485
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.6141,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 3,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 19,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              17
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.6,
+              "normalized": 1
+            },
+            "dependency_ratio": {
+              "raw": 0.0890909090909091,
+              "normalized": 0.0891
+            },
+            "downstream_centrality": {
+              "raw": 0.13551081240667165,
+              "normalized": 0.2659
+            },
+            "downstream_pagerank": {
+              "raw": 0.003299984943339969,
+              "normalized": 0.2406
+            },
+            "tier1_centrality": {
+              "raw": 0.22014861401282385,
+              "normalized": 0.8863
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1
+            }
+          }
+        },
+        {
+          "supplier": "JTEKT Corp",
+          "risk_score": 0.5055,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 16,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              12
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.0890909090909091,
+              "normalized": 0.0891
+            },
+            "downstream_centrality": {
+              "raw": 0.19188695960718835,
+              "normalized": 0.747
+            },
+            "downstream_pagerank": {
+              "raw": 0.005207465556708104,
+              "normalized": 0.4587
+            },
+            "tier1_centrality": {
+              "raw": 0.22564277493780135,
+              "normalized": 0.9386
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "ArcelorMittal SA",
+          "risk_score": 0.6141,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.6,
+              "normalized": 1
+            },
+            "dependency_ratio": {
+              "raw": 0.0890909090909091,
+              "normalized": 0.0891
+            },
+            "downstream_centrality": {
+              "raw": 0.13551081240667165,
+              "normalized": 0.2659
+            },
+            "downstream_pagerank": {
+              "raw": 0.003299984943339969,
+              "normalized": 0.2406
+            },
+            "tier1_centrality": {
+              "raw": 0.22014861401282385,
+              "normalized": 0.8863
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          }
+        },
+        {
+          "company": "JTEKT Corp",
+          "risk_score": 0.5055,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.0890909090909091,
+              "normalized": 0.0891
+            },
+            "downstream_centrality": {
+              "raw": 0.19188695960718835,
+              "normalized": 0.747
+            },
+            "downstream_pagerank": {
+              "raw": 0.005207465556708104,
+              "normalized": 0.4587
+            },
+            "tier1_centrality": {
+              "raw": 0.22564277493780135,
+              "normalized": 0.9386
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          }
+        }
+      ],
+      "expected_critical_suppliers": [
+        "ArcelorMittal SA",
+        "JTEKT Corp"
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 98,
+        "high_risk_suppliers": 2,
+        "medium_risk_suppliers": 22,
+        "low_risk_suppliers": 74,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0
+        },
+        "highest_risk_score": 0.6141,
+        "average_risk_score": 0.32916122448979596
+      },
+      "kg_summary": {
+        "monitored_company": "Bayerische Motoren Werke AG",
+        "disrupted_countries": [
+          "Eastern Europe"
+        ],
+        "summary": {
+          "total_disrupted_chains": 543,
+          "tier_1_chain_count": 0,
+          "tier_2_chain_count": 1,
+          "tier_3_chain_count": 49,
+          "tier_4_chain_count": 493,
+          "unique_disrupted_companies": 1
+        }
+      },
+      "disruption_summary": {
+        "type": "Economic Crisis",
+        "involved": {
+          "countries": [
+            "Eastern Europe"
+          ],
+          "industries": [
+            "Metals Mining"
+          ],
+          "companies": [
+            "BHP Group Ltd"
+          ]
+        },
+        "summary": "An economic crisis in Eastern Europe has affected BHP Group Ltd, a major player in the Metals Mining industry. While the disruption is reported to be, it is crucial for Bayerische Motoren Werke AG to assess its supply chain dependencies in Eastern Europe, particularly in the Metals Mining sector, to ensure there are on its operations.",
+        "confidence": {
+          "overall": "medium",
+          "countries": {
+            "Eastern Europe": "high"
+          },
+          "industries": {
+            "Metals Mining": "medium"
+          },
+          "companies": {
+            "BHP Group Ltd": "high"
+          }
+        }
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "Adaptive calculation for economic crisis in metals and mining sector",
+      "recommendation": "HIGH PRIORITY: 2 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "ArcelorMittal SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.6141,
+          "justification": "Risk score of 0.7 (HIGH) requires REPLACE_SUPPLIER based on comprehensive risk assessment."
+        },
+        "JTEKT Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5055,
+          "justification": "Comprehensive analysis supports REPLACE_SUPPLIER for JTEKT Corp due to high risk level."
+        },
+        "Denso Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4857,
+          "justification": "Risk score of 0.5 indicates INCREASE_MONITORING is appropriate, maintaining supplier relationship."
+        },
+        "San Shing Fastech Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4651
+        },
+        "Schaeffler AG": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4646
+        },
+        "QST International Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4607
+        },
+        "SK Inc": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4545
+        },
+        "Xperi Inc": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.449
+        },
+        "Contemporary Amperex Technology Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4487
+        },
+        "BASF SE": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4485
+        }
+      },
+      "decision_report": {
+        "executive_summary": "Two suppliers identified for replacement due to high risk levels, while monitoring increased for other high-risk suppliers to ensure continuity.",
+        "action_summary": "Immediate action for replacement of ArcelorMittal SA and JTEKT Corp is recommended, alongside increased monitoring for other key suppliers to mitigate potential disruptions."
+      },
+      "risk_summary": {
+        "total_tier1_suppliers": 98,
+        "high_risk_suppliers": 2,
+        "medium_risk_suppliers": 22,
+        "low_risk_suppliers": 74,
+        "highest_risk_score": 0.6141,
+        "average_risk_score": 0.32916
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A economic crisis has occurred in Eastern Europe affecting the Metals Mining industry, with major impacts on companies including BHP Group Ltd. This disruption has cascaded through Bayerische Motoren Werke AG's supply chain network, affecting 543 supply chain paths across multiple tiers. For Bayerische Motoren Werke AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (543 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Bayerische Motoren Werke AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Bayerische Motoren Werke AG should immediately initiate replacement procedures for the following Tier-1 suppliers: ArcelorMittal SA, JTEKT Corp. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Bayerische Motoren Werke AG's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Bayerische Motoren Werke AG's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:50.547180"
+}

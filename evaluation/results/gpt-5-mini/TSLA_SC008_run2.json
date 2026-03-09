@@ -1,0 +1,121 @@
+{
+  "scenario_id": "TSLA_SC008",
+  "model": "gpt-5-mini",
+  "run_index": 2,
+  "runtime_seconds": 668.5149681568146,
+  "agent_outputs": {
+    "disruption_analysis": {
+      "type": "Geopolitical",
+      "involved": {
+        "countries": [
+          "North Korea"
+        ],
+        "industries": [
+          "Aerospace"
+        ],
+        "companies": [
+          "North Korea Aerospace Industries"
+        ]
+      },
+      "questions": [
+        "Which of {Tesla Inc}'s Tier-1 suppliers are based in North Korea?",
+        "Which of {Tesla Inc}'s Tier-2 suppliers are based in North Korea and which Tier-1 supplier do they supply to?",
+        "Which of {Tesla Inc}'s Tier-3 suppliers are based in North Korea and which Tier-2 and Tier-1 suppliers do they supply to?",
+        "Which of {Tesla Inc}'s suppliers (up to Tier-3) operate in the Aerospace industry in North Korea?"
+      ],
+      "summary": "Given North Korea's isolation and sanctions environment, it is highly unlikely Tesla has direct Tier-1 automotive suppliers located there, but this must be confirmed.\nExpert Thought 2: Even if no Tier-1 exposure exists, Tier-2 or Tier-3 suppliers could conceivably be registered in or source materials/components via entities linked to North Korea (e.g., specialized metals, tooling, or sanctioned supply channels), creating a low-probability upstream contagion that must be investigated.\nExpert Thought 3: Geopolitical events can cascade via sanctions, shipping route changes, or regional instability. Although the article states the disruption is isolated and , we must verify there are no indirect connections (shared sub-suppliers, intermediary traders, or commodity flows) that could broaden impact.\n\nAction Thought 1: Query the knowledge graph immediately with: \"Which of {Tesla Inc}'s Tier-1 suppliers are based in North Korea?\" If any are found, escalate and map their full Tier-2 and Tier-3 dependencies.\nAction Thought 2: If Tier-1 yields no results (expected), run the Tier-2 and Tier-3 queries in the order listed to identify any indirect exposures and ensure each returned supplier is linked to its upstream buyer (which Tier-1 supplier they feed).\nAction Thought 3: For any supplier nodes discovered in or linked to North Korea, extract industry classification, locations of their manufacturing/assembly sites, and cross-check whether they supply aerospace-specific components that overlap with automotive/EV component categories (e.g., specialty alloys, avionics-grade electronics) to assess substitution difficulty and lead times.\n\nRisk Summary: Based on the article, the event is a localized geopolitical disruption affecting North Korea Aerospace Industries and the Aerospace industry in North Korea. Initial risk to {Tesla Inc} is low given the stated isolation from international automotive supply chains, but definitive risk assessment requires the knowledge graph queries above to rule out any Tier-2/Tier-3 linkages. Recommended next steps: execute the four KG queries listed, flag any matches for immediate mitigation (alternate sourcing, inventory checks, legal/sanctions review), and monitor for escalation or regional spillover that could affect adjacent supplier countries or trade lanes."
+    },
+    "kg_results": {
+      "monitored_company": "Tesla Inc",
+      "disrupted_countries": [
+        "North Korea"
+      ],
+      "disrupted_companies": [
+        "North Korea Aerospace Industries"
+      ],
+      "scenario_id": "TSLA_SC008"
+    },
+    "risk_assessment": {
+      "company_name": "Tesla Inc",
+      "generated_at": "2026-03-02T00:55:38.003468Z",
+      "supplier_risk_scores": {},
+      "tier1_risk_profiles": [],
+      "critical_suppliers": [],
+      "expected_critical_suppliers": [],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 0,
+        "high_risk_suppliers": 0,
+        "medium_risk_suppliers": 0,
+        "low_risk_suppliers": 0,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.0,
+        "average_risk_score": 0.0
+      },
+      "kg_summary": {
+        "monitored_company": "Tesla Inc",
+        "disrupted_countries": [
+          "North Korea"
+        ],
+        "summary": {
+          "total_disrupted_chains": 0,
+          "tier_1_chain_count": 0,
+          "tier_2_chain_count": 0,
+          "tier_3_chain_count": 0,
+          "tier_4_chain_count": 0,
+          "unique_disrupted_companies": 0
+        }
+      },
+      "disruption_summary": {
+        "involved": {
+          "countries": [
+            "North Korea"
+          ],
+          "companies": [
+            "North Korea Aerospace Industries"
+          ]
+        }
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "recommendation": "LOW RISK: No Tier-1 suppliers exceed medium-risk thresholds. Maintain standard monitoring cadence."
+    },
+    "chief_supply_chain_output": {
+      "company_name": "Tesla Inc",
+      "decision_timestamp": "2026-03-02T00:55:38Z",
+      "decisions": {},
+      "decision_report": {
+        "executive_summary": "Based on analysis of ALL Tier-1 suppliers: 0 REPLACE_SUPPLIER (risk \u22650.6), 0 INCREASE_MONITORING (risk 0.45-0.59), 0 MAINTAIN_STANDARD (risk <0.45). No Tier-1 suppliers exceeded medium-risk thresholds; maintain standard monitoring cadence.",
+        "action_summary": {
+          "total_tier1_suppliers_analyzed": 0,
+          "replace_supplier_count": 0,
+          "increase_monitoring_count": 0,
+          "maintain_standard_count": 0,
+          "critical_suppliers": [],
+          "key_statistics": "All Tier-1 suppliers assessed. Aggregate exposure: 0 disrupted nodes across Tier-2/3/4."
+        }
+      },
+      "risk_summary": {
+        "total_suppliers_analyzed": 0,
+        "high_risk_suppliers": 0,
+        "recommendation": "LOW RISK: No Tier-1 suppliers exceed medium-risk thresholds. Maintain standard monitoring cadence.",
+        "attention_flag": false
+      }
+    }
+  },
+  "risk_scores_count": 0,
+  "success": true,
+  "timestamp": "2026-03-02T00:56:06.311937"
+}

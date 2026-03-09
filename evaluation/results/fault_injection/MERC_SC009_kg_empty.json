@@ -1,0 +1,730 @@
+{
+  "scenario_id": "MERC_SC009",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Eastern Europe"
+        ],
+        "industries": [
+          "Metals Mining"
+        ],
+        "companies": [
+          "BHP Group Ltd"
+        ]
+      },
+      "summary": "An economic crisis in Eastern Europe has affected BHP Group Ltd, a major player in the Metals Mining industry. Despite the disruption being regional and, it is advised to monitor any indirect supply chain impacts, especially if there are any suppliers with connections to BHP Group Ltd that might indirectly affect Mercedes-Benz Group AG.",
+      "confidence": {
+        "overall": "medium",
+        "entities": {
+          "countries": "high",
+          "industries": "medium",
+          "companies": "high"
+        }
+      },
+      "validation": {
+        "validated_countries": [],
+        "validated_industries": [],
+        "validated_companies": [],
+        "validation_confidence": "medium"
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/economic_crisis_eastern_europe_Mercedes-Benz_Group_AG_20251122T085001_kg.json",
+      "monitored_company": "Mercedes-Benz Group AG",
+      "disrupted_countries": [
+        "Eastern Europe"
+      ],
+      "chain_counts": {
+        "tier_1": 0,
+        "tier_2": 1,
+        "tier_3": 31,
+        "tier_4": 500
+      },
+      "total_chains": 532,
+      "query_strategy": "hybrid"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "ArcelorMittal SA": 0.5823,
+        "JTEKT Corp": 0.4741,
+        "Denso Corp": 0.4589,
+        "QST International Corp": 0.4581,
+        "Futaba Industrial Co Ltd": 0.4338,
+        "SK Innovation Co Ltd": 0.4337,
+        "Schaeffler AG": 0.4284,
+        "Koito Manufacturing Co Ltd": 0.4192,
+        "SK Inc": 0.418,
+        "voestalpine AG": 0.4141
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.5823,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 3,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 19,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              17
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.6,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.12972844933543243,
+              "normalized": 0.196
+            },
+            "downstream_pagerank": {
+              "raw": 0.003311036718372424,
+              "normalized": 0.2522
+            },
+            "tier1_centrality": {
+              "raw": 0.22057746334320538,
+              "normalized": 0.6417
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "JTEKT Corp",
+          "risk_score": 0.4741,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 16,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              12
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.1919979319663256,
+              "normalized": 0.7409
+            },
+            "downstream_pagerank": {
+              "raw": 0.005335825497223668,
+              "normalized": 0.4799
+            },
+            "tier1_centrality": {
+              "raw": 0.22628228393025607,
+              "normalized": 0.6826
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Denso Corp",
+          "risk_score": 0.4589,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 12,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              10
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.19148973711292291,
+              "normalized": 0.7365
+            },
+            "downstream_pagerank": {
+              "raw": 0.00401124451074705,
+              "normalized": 0.331
+            },
+            "tier1_centrality": {
+              "raw": 0.20626315510629867,
+              "normalized": 0.5392
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "QST International Corp",
+          "risk_score": 0.4581,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 8,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              7
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.2155233562945586,
+              "normalized": 0.9468
+            },
+            "downstream_pagerank": {
+              "raw": 0.009960609949267034,
+              "normalized": 1.0
+            },
+            "tier1_centrality": {
+              "raw": 0.13154605231907074,
+              "normalized": 0.0041
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Futaba Industrial Co Ltd",
+          "risk_score": 0.4338,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 8,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              6
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.19947027549076185,
+              "normalized": 0.8063
+            },
+            "downstream_pagerank": {
+              "raw": 0.005037627671968033,
+              "normalized": 0.4464
+            },
+            "tier1_centrality": {
+              "raw": 0.15174654957239597,
+              "normalized": 0.1488
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "SK Innovation Co Ltd",
+          "risk_score": 0.4337,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 27,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              25
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.1507800506546168,
+              "normalized": 0.3802
+            },
+            "downstream_pagerank": {
+              "raw": 0.0036216814722381985,
+              "normalized": 0.2872
+            },
+            "tier1_centrality": {
+              "raw": 0.27060266551564793,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Schaeffler AG",
+          "risk_score": 0.4284,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 17,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              13
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.1774074921652051,
+              "normalized": 0.6132
+            },
+            "downstream_pagerank": {
+              "raw": 0.0058896216707628206,
+              "normalized": 0.5422
+            },
+            "tier1_centrality": {
+              "raw": 0.19820616994645357,
+              "normalized": 0.4815
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Koito Manufacturing Co Ltd",
+          "risk_score": 0.4192,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 6,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              4
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.1851326431218356,
+              "normalized": 0.6808
+            },
+            "downstream_pagerank": {
+              "raw": 0.0030477955255710626,
+              "normalized": 0.2226
+            },
+            "tier1_centrality": {
+              "raw": 0.16648876598722365,
+              "normalized": 0.2544
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "SK Inc",
+          "risk_score": 0.418,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 28,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              29
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.15742049883404732,
+              "normalized": 0.4383
+            },
+            "downstream_pagerank": {
+              "raw": 0.003913228773670293,
+              "normalized": 0.32
+            },
+            "tier1_centrality": {
+              "raw": 0.23247209330876423,
+              "normalized": 0.7269
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "voestalpine AG",
+          "risk_score": 0.4141,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 6,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              3
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.18558990866965863,
+              "normalized": 0.6848
+            },
+            "downstream_pagerank": {
+              "raw": 0.007640093106762634,
+              "normalized": 0.7391
+            },
+            "tier1_centrality": {
+              "raw": 0.14299237765374304,
+              "normalized": 0.0861
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "ArcelorMittal SA",
+          "risk_score": 0.5823,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.6,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.07057745187901009,
+              "normalized": 0.0706
+            },
+            "downstream_centrality": {
+              "raw": 0.12972844933543243,
+              "normalized": 0.196
+            },
+            "downstream_pagerank": {
+              "raw": 0.003311036718372424,
+              "normalized": 0.2522
+            },
+            "tier1_centrality": {
+              "raw": 0.22057746334320538,
+              "normalized": 0.6417
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 77,
+        "high_risk_suppliers": 1,
+        "medium_risk_suppliers": 14,
+        "low_risk_suppliers": 62,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5823,
+        "average_risk_score": 0.3038142857142857
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "adaptive"
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "ArcelorMittal SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5823,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "JTEKT Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4741,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Denso Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4589,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "QST International Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4581,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Futaba Industrial Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4338,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "SK Innovation Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4337,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Schaeffler AG": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4284,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Koito Manufacturing Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4192,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "SK Inc": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.418,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "voestalpine AG": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4141,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        }
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A economic crisis has occurred in Eastern Europe affecting the Metals Mining industry, with major impacts on companies including BHP Group Ltd. For Mercedes-Benz Group AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Mercedes-Benz Group AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring. Risk assessment identifies 1 Tier-1 supplier(s) with HIGH risk scores, representing critical vulnerabilities that could significantly impact Mercedes-Benz Group AG's operations.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, no Tier-1 suppliers currently require immediate replacement. All top 10 riskiest suppliers have risk scores below the HIGH threshold (0.6), indicating that enhanced monitoring and contingency planning are sufficient mitigation strategies at this time."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:51.870200"
+}

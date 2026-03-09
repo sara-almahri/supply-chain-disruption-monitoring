@@ -1,0 +1,796 @@
+{
+  "scenario_id": "BMW_SC001",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "South Africa"
+        ],
+        "industries": [
+          "Metals Mining"
+        ],
+        "companies": [
+          "Kumba Iron Ore Ltd"
+        ]
+      },
+      "summary": "The economic downturn in South Africa has led to significant disruptions in the Metals Mining industry, particularly affecting Kumba Iron Ore Ltd. This situation could impact Bayerische Motoren Werke AG if any of its suppliers, up to Tier-4, are dependent on South African metals mining operations. Immediate assessment of supplier dependencies in South Africa is necessary to mitigate potential supply chain disruptions.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "South Africa": "high"
+        },
+        "industries": {
+          "Metals Mining": "medium"
+        },
+        "companies": {
+          "Kumba Iron Ore Ltd": "high"
+        }
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/ECONOMIC_CRISIS_SOUTH_AFRICA_Bayerische_Motoren_Werke_AG_20251121T223254_kg.json",
+      "monitored_company": "Bayerische Motoren Werke AG",
+      "disrupted_countries": [
+        "South Africa"
+      ],
+      "chain_counts": {
+        "tier_1": 1,
+        "tier_2": 9,
+        "tier_3": 122,
+        "tier_4": 1384
+      },
+      "total_chains": 1516,
+      "query_strategy": "hybrid"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "ArcelorMittal SA": 0.5971,
+        "SK Inc": 0.465,
+        "Samsung SDI Co Ltd": 0.4369,
+        "BASF SE": 0.4274,
+        "Schaeffler AG": 0.4163,
+        "thyssenkrupp AG": 0.4154,
+        "JTEKT Corp": 0.401,
+        "Denso Corp": 0.3968,
+        "Toyota Industries Corp": 0.3954,
+        "LG Chem Ltd": 0.3918
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.5971,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 3,
+            "3": 13,
+            "4": 18
+          },
+          "total_unique_disrupted_suppliers": 34,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 46,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              96
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 15.05,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.11476487046684304,
+              "normalized": 0.182
+            },
+            "downstream_pagerank": {
+              "raw": 0.0020675133987862527,
+              "normalized": 0.1326
+            },
+            "tier1_centrality": {
+              "raw": 0.22014861401282385,
+              "normalized": 0.8863
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "SK Inc",
+          "risk_score": 0.465,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 11
+          },
+          "total_unique_disrupted_suppliers": 14,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 38,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              51
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 5.35,
+              "normalized": 0.3401
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.16304919803818752,
+              "normalized": 0.6196
+            },
+            "downstream_pagerank": {
+              "raw": 0.0034855348820727935,
+              "normalized": 0.2992
+            },
+            "tier1_centrality": {
+              "raw": 0.2320970766632835,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Samsung SDI Co Ltd",
+          "risk_score": 0.4369,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 15
+          },
+          "total_unique_disrupted_suppliers": 18,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 34,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              37
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 6.75,
+              "normalized": 0.4354
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.13800198820394427,
+              "normalized": 0.3926
+            },
+            "downstream_pagerank": {
+              "raw": 0.0035567717425809336,
+              "normalized": 0.3075
+            },
+            "tier1_centrality": {
+              "raw": 0.2152071844942533,
+              "normalized": 0.8393
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "BASF SE",
+          "risk_score": 0.4274,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 7,
+            "4": 7
+          },
+          "total_unique_disrupted_suppliers": 15,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 34,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              34
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 6.699999999999999,
+              "normalized": 0.432
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.12813210060614436,
+              "normalized": 0.3031
+            },
+            "downstream_pagerank": {
+              "raw": 0.0025811135669769245,
+              "normalized": 0.1929
+            },
+            "tier1_centrality": {
+              "raw": 0.2253048573675348,
+              "normalized": 0.9354
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Schaeffler AG",
+          "risk_score": 0.4163,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 15
+          },
+          "total_unique_disrupted_suppliers": 18,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 36,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              41
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 6.75,
+              "normalized": 0.4354
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.13583640859812018,
+              "normalized": 0.373
+            },
+            "downstream_pagerank": {
+              "raw": 0.002787575177483354,
+              "normalized": 0.2172
+            },
+            "tier1_centrality": {
+              "raw": 0.19774044670863253,
+              "normalized": 0.6731
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "thyssenkrupp AG",
+          "risk_score": 0.4154,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 3,
+            "4": 8
+          },
+          "total_unique_disrupted_suppliers": 12,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 23,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              34
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 5.05,
+              "normalized": 0.3197
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.14479349595714525,
+              "normalized": 0.4541
+            },
+            "downstream_pagerank": {
+              "raw": 0.0028847563913904947,
+              "normalized": 0.2286
+            },
+            "tier1_centrality": {
+              "raw": 0.22225141825952718,
+              "normalized": 0.9063
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "JTEKT Corp",
+          "risk_score": 0.401,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 10
+          },
+          "total_unique_disrupted_suppliers": 12,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 38,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              58
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 4.5,
+              "normalized": 0.2823
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.1423037712617413,
+              "normalized": 0.4316
+            },
+            "downstream_pagerank": {
+              "raw": 0.0019275603761540877,
+              "normalized": 0.1162
+            },
+            "tier1_centrality": {
+              "raw": 0.22564277493780135,
+              "normalized": 0.9386
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Denso Corp",
+          "risk_score": 0.3968,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 10
+          },
+          "total_unique_disrupted_suppliers": 12,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 28,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              35
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 4.5,
+              "normalized": 0.2823
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.15039574844818177,
+              "normalized": 0.5049
+            },
+            "downstream_pagerank": {
+              "raw": 0.002200148392505398,
+              "normalized": 0.1482
+            },
+            "tier1_centrality": {
+              "raw": 0.2057771349058774,
+              "normalized": 0.7496
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.3954,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 10
+          },
+          "total_unique_disrupted_suppliers": 12,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 32,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              47
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 4.5,
+              "normalized": 0.2823
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.15061485294127994,
+              "normalized": 0.5069
+            },
+            "downstream_pagerank": {
+              "raw": 0.0019274448195171828,
+              "normalized": 0.1161
+            },
+            "tier1_centrality": {
+              "raw": 0.2039450339362971,
+              "normalized": 0.7321
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "LG Chem Ltd",
+          "risk_score": 0.3918,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 12
+          },
+          "total_unique_disrupted_suppliers": 13,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 33,
+          "top_disrupted_countries": [
+            [
+              "South Africa",
+              33
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 4.699999999999999,
+              "normalized": 0.2959
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.15028389216774124,
+              "normalized": 0.5039
+            },
+            "downstream_pagerank": {
+              "raw": 0.0036892310752915224,
+              "normalized": 0.3231
+            },
+            "tier1_centrality": {
+              "raw": 0.1957844101002777,
+              "normalized": 0.6545
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "ArcelorMittal SA",
+          "risk_score": 0.5971,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 15.05,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.08818181818181818,
+              "normalized": 0.0882
+            },
+            "downstream_centrality": {
+              "raw": 0.11476487046684304,
+              "normalized": 0.182
+            },
+            "downstream_pagerank": {
+              "raw": 0.0020675133987862527,
+              "normalized": 0.1326
+            },
+            "tier1_centrality": {
+              "raw": 0.22014861401282385,
+              "normalized": 0.8863
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 3,
+            "3": 13,
+            "4": 18
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 97,
+        "high_risk_suppliers": 1,
+        "medium_risk_suppliers": 6,
+        "low_risk_suppliers": 90,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5971,
+        "average_risk_score": 0.3139752577319588
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "adaptive_risk_calculation",
+      "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "ArcelorMittal SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5971,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for ArcelorMittal SA",
+            "risk_analysis": {
+              "score": 0.5971,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "SK Inc": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.465,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for SK Inc",
+            "risk_analysis": {
+              "score": 0.465,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Samsung SDI Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4369,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for Samsung SDI Co Ltd",
+            "risk_analysis": {
+              "score": 0.4369,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "BASF SE": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4274,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for BASF SE",
+            "risk_analysis": {
+              "score": 0.4274,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Schaeffler AG": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4163,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for Schaeffler AG",
+            "risk_analysis": {
+              "score": 0.4163,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "thyssenkrupp AG": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4154,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for thyssenkrupp AG",
+            "risk_analysis": {
+              "score": 0.4154,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "JTEKT Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.401,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for JTEKT Corp",
+            "risk_analysis": {
+              "score": 0.401,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Denso Corp": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3968,
+          "justification": {
+            "summary": "Comprehensive analysis supports MAINTAIN_STANDARD for Denso Corp",
+            "risk_analysis": {
+              "score": 0.3968,
+              "rounded_score": 0.4,
+              "risk_level": "LOW"
+            },
+            "action_rationale": {
+              "decision": "MAINTAIN_STANDARD",
+              "reasoning": "Risk score 0.4 exceeds threshold for MAINTAIN_STANDARD",
+              "expected_impact": "MAINTAIN_STANDARD will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Toyota Industries Corp": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3954,
+          "justification": {
+            "summary": "Comprehensive analysis supports MAINTAIN_STANDARD for Toyota Industries Corp",
+            "risk_analysis": {
+              "score": 0.3954,
+              "rounded_score": 0.4,
+              "risk_level": "LOW"
+            },
+            "action_rationale": {
+              "decision": "MAINTAIN_STANDARD",
+              "reasoning": "Risk score 0.4 exceeds threshold for MAINTAIN_STANDARD",
+              "expected_impact": "MAINTAIN_STANDARD will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "LG Chem Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3918,
+          "justification": {
+            "summary": "Comprehensive analysis supports MAINTAIN_STANDARD for LG Chem Ltd",
+            "risk_analysis": {
+              "score": 0.3918,
+              "rounded_score": 0.4,
+              "risk_level": "LOW"
+            },
+            "action_rationale": {
+              "decision": "MAINTAIN_STANDARD",
+              "reasoning": "Risk score 0.4 exceeds threshold for MAINTAIN_STANDARD",
+              "expected_impact": "MAINTAIN_STANDARD will mitigate supply chain risk for this supplier"
+            }
+          }
+        }
+      },
+      "decision_report": {
+        "executive_summary": "The supply chain analysis for Bayerische Motoren Werke AG has identified ArcelorMittal SA as a high-risk supplier with a recommendation to replace immediately. Several suppliers including SK Inc, Samsung SDI Co Ltd, BASF SE, Schaeffler AG, thyssenkrupp AG, and JTEKT Corp are recommended for increased monitoring due to medium risk levels. Denso Corp, Toyota Industries Corp, and LG Chem Ltd should maintain standard operations as their risk levels are considered low.",
+        "action_summary": "Immediate actions include replacing ArcelorMittal SA and increasing monitoring for the specified medium-risk suppliers."
+      },
+      "risk_summary": {
+        "total_tier1_suppliers": 97,
+        "high_risk_suppliers": 1,
+        "medium_risk_suppliers": 6,
+        "low_risk_suppliers": 90,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5971,
+        "average_risk_score": 0.3139752577319588
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A economic crisis has occurred in South Africa affecting the Metals Mining industry, with major impacts on companies including Kumba Iron Ore Ltd. For Bayerische Motoren Werke AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Bayerische Motoren Werke AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Bayerische Motoren Werke AG should immediately initiate replacement procedures for the following Tier-1 suppliers: ArcelorMittal SA. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Bayerische Motoren Werke AG's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Bayerische Motoren Werke AG's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:27.450397"
+}

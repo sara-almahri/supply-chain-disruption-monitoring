@@ -1,0 +1,916 @@
+{
+  "scenario_id": "BMW_SC007",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Argentina"
+        ],
+        "industries": [
+          "Metals Mining"
+        ],
+        "companies": [
+          "Ternium Argentina SA"
+        ]
+      },
+      "summary": "The economic downturn in Argentina has led to significant disruptions in the Metals Mining industry, affecting major producers like Ternium Argentina SA. This situation could impact Bayerische Motoren Werke AG if any of its suppliers, particularly those in the metals sector, are based in Argentina or rely on Argentinean metals. Immediate assessment of supplier dependencies in Argentina is necessary to mitigate potential supply chain disruptions.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Argentina": "high"
+        },
+        "industries": {
+          "Metals Mining": "medium"
+        },
+        "companies": {
+          "Ternium Argentina SA": "high"
+        }
+      },
+      "validation": {
+        "validated_countries": [],
+        "validated_industries": [],
+        "validated_companies": [],
+        "invalid_entities": [],
+        "validation_confidence": "medium"
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/Economic Crisis in Argentina_Bayerische_Motoren_Werke_AG_20251121T235829_kg.json",
+      "monitored_company": "Bayerische Motoren Werke AG",
+      "disrupted_countries": [
+        "Argentina"
+      ],
+      "chain_counts": {
+        "tier_1": 0,
+        "tier_2": 0,
+        "tier_3": 42,
+        "tier_4": 535
+      },
+      "total_chains": 577,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "ArcelorMittal SA": 0.6519,
+        "JTEKT Corp": 0.5649,
+        "Toyota Industries Corp": 0.5544,
+        "SK Inc": 0.5383,
+        "Denso Corp": 0.5371,
+        "Kawasaki Heavy Industries Ltd": 0.5115,
+        "American Axle & Manufacturing Holdings Inc": 0.5094,
+        "Schaeffler AG": 0.5044,
+        "BASF SE": 0.4878,
+        "Pressure Technologies PLC": 0.4809
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.6519,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 5,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 9,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 22,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              25
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.9,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.13201244146206825,
+              "normalized": 0.426
+            },
+            "downstream_pagerank": {
+              "raw": 0.0029215127412521957,
+              "normalized": 0.4782
+            },
+            "tier1_centrality": {
+              "raw": 0.22014861401282385,
+              "normalized": 0.8853
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "JTEKT Corp",
+          "risk_score": 0.5649,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 6,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 21,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              16
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.15658805115711658,
+              "normalized": 0.83
+            },
+            "downstream_pagerank": {
+              "raw": 0.002277017149881608,
+              "normalized": 0.3571
+            },
+            "tier1_centrality": {
+              "raw": 0.22564277493780135,
+              "normalized": 0.9381
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.5544,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 6,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 17,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              12
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.15972580024495592,
+              "normalized": 0.8816
+            },
+            "downstream_pagerank": {
+              "raw": 0.002405221674287491,
+              "normalized": 0.3811
+            },
+            "tier1_centrality": {
+              "raw": 0.2039450339362971,
+              "normalized": 0.7299
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "SK Inc",
+          "risk_score": 0.5383,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 6,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 23,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              31
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.14663139722120536,
+              "normalized": 0.6663
+            },
+            "downstream_pagerank": {
+              "raw": 0.0030863423087285438,
+              "normalized": 0.5091
+            },
+            "tier1_centrality": {
+              "raw": 0.2320970766632835,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Denso Corp",
+          "risk_score": 0.5371,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 6,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 21,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              16
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.15393771944624085,
+              "normalized": 0.7864
+            },
+            "downstream_pagerank": {
+              "raw": 0.002206470674574965,
+              "normalized": 0.3438
+            },
+            "tier1_centrality": {
+              "raw": 0.2057771349058774,
+              "normalized": 0.7474
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Kawasaki Heavy Industries Ltd",
+          "risk_score": 0.5115,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 6,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 18,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              12
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.16464243384187932,
+              "normalized": 0.9624
+            },
+            "downstream_pagerank": {
+              "raw": 0.0023690088378149933,
+              "normalized": 0.3743
+            },
+            "tier1_centrality": {
+              "raw": 0.14240021615325693,
+              "normalized": 0.1393
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "American Axle & Manufacturing Holdings Inc",
+          "risk_score": 0.5094,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 8,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 13,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              18
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.25,
+              "normalized": 0.8169
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.1330531386643226,
+              "normalized": 0.4431
+            },
+            "downstream_pagerank": {
+              "raw": 0.00208113352962875,
+              "normalized": 0.3202
+            },
+            "tier1_centrality": {
+              "raw": 0.14579869016558605,
+              "normalized": 0.1719
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Schaeffler AG",
+          "risk_score": 0.5044,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 20,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              27
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.75,
+              "normalized": 0.3944
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.16132668258708033,
+              "normalized": 0.9079
+            },
+            "downstream_pagerank": {
+              "raw": 0.004169090112371335,
+              "normalized": 0.7126
+            },
+            "tier1_centrality": {
+              "raw": 0.19774044670863253,
+              "normalized": 0.6703
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "ArcelorMittal SA",
+          "risk_score": 0.6519,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.9,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.13201244146206825,
+              "normalized": 0.426
+            },
+            "downstream_pagerank": {
+              "raw": 0.0029215127412521957,
+              "normalized": 0.4782
+            },
+            "tier1_centrality": {
+              "raw": 0.22014861401282385,
+              "normalized": 0.8853
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 5,
+            "4": 4
+          }
+        },
+        {
+          "company": "JTEKT Corp",
+          "risk_score": 0.5649,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.15658805115711658,
+              "normalized": 0.83
+            },
+            "downstream_pagerank": {
+              "raw": 0.002277017149881608,
+              "normalized": 0.3571
+            },
+            "tier1_centrality": {
+              "raw": 0.22564277493780135,
+              "normalized": 0.9381
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          }
+        },
+        {
+          "company": "Toyota Industries Corp",
+          "risk_score": 0.5544,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.15972580024495592,
+              "normalized": 0.8816
+            },
+            "downstream_pagerank": {
+              "raw": 0.002405221674287491,
+              "normalized": 0.3811
+            },
+            "tier1_centrality": {
+              "raw": 0.2039450339362971,
+              "normalized": 0.7299
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          }
+        },
+        {
+          "company": "SK Inc",
+          "risk_score": 0.5383,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.14663139722120536,
+              "normalized": 0.6663
+            },
+            "downstream_pagerank": {
+              "raw": 0.0030863423087285438,
+              "normalized": 0.5091
+            },
+            "tier1_centrality": {
+              "raw": 0.2320970766632835,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          }
+        },
+        {
+          "company": "Denso Corp",
+          "risk_score": 0.5371,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.15393771944624085,
+              "normalized": 0.7864
+            },
+            "downstream_pagerank": {
+              "raw": 0.002206470674574965,
+              "normalized": 0.3438
+            },
+            "tier1_centrality": {
+              "raw": 0.2057771349058774,
+              "normalized": 0.7474
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          }
+        },
+        {
+          "company": "Kawasaki Heavy Industries Ltd",
+          "risk_score": 0.5115,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.16464243384187932,
+              "normalized": 0.9624
+            },
+            "downstream_pagerank": {
+              "raw": 0.0023690088378149933,
+              "normalized": 0.3743
+            },
+            "tier1_centrality": {
+              "raw": 0.14240021615325693,
+              "normalized": 0.1393
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          }
+        },
+        {
+          "company": "American Axle & Manufacturing Holdings Inc",
+          "risk_score": 0.5094,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.25,
+              "normalized": 0.8169
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.1330531386643226,
+              "normalized": 0.4431
+            },
+            "downstream_pagerank": {
+              "raw": 0.00208113352962875,
+              "normalized": 0.3202
+            },
+            "tier1_centrality": {
+              "raw": 0.14579869016558605,
+              "normalized": 0.1719
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 5
+          }
+        },
+        {
+          "company": "Schaeffler AG",
+          "risk_score": 0.5044,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.75,
+              "normalized": 0.3944
+            },
+            "dependency_ratio": {
+              "raw": 0.07090909090909091,
+              "normalized": 0.0709
+            },
+            "downstream_centrality": {
+              "raw": 0.16132668258708033,
+              "normalized": 0.9079
+            },
+            "downstream_pagerank": {
+              "raw": 0.004169090112371335,
+              "normalized": 0.7126
+            },
+            "tier1_centrality": {
+              "raw": 0.19774044670863253,
+              "normalized": 0.6703
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 5
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 78,
+        "high_risk_suppliers": 8,
+        "medium_risk_suppliers": 22,
+        "low_risk_suppliers": 48,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.6519,
+        "average_risk_score": 0.37288846153846156
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "adaptive_risk_calculation"
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "ArcelorMittal SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.6519,
+          "justification": {
+            "summary": "Risk score of 0.7 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.7",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "JTEKT Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5649,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Toyota Industries Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5544,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "SK Inc": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5383,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Denso Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5371,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Kawasaki Heavy Industries Ltd": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5115,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "American Axle & Manufacturing Holdings Inc": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5094,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Schaeffler AG": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5044,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "BASF SE": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4878,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Pressure Technologies PLC": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4809,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        }
+      },
+      "decision_report": "A balanced decision framework was selected due to moderate risk levels. Critical precautions have been recommended for the top 10 suppliers, emphasizing supplier replacement for those with high risk scores.",
+      "risk_summary": {
+        "total_tier1_suppliers": 78,
+        "high_risk_suppliers": 8,
+        "medium_risk_suppliers": 22,
+        "low_risk_suppliers": 48,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.6519,
+        "average_risk_score": 0.53406
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A economic crisis has occurred in Argentina affecting the Metals Mining industry , with major impacts on companies including Ternium Argentina SA . For Bayerische Motoren Werke AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Bayerische Motoren Werke AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Bayerische Motoren Werke AG should immediately initiate replacement procedures for the following Tier-1 suppliers: ArcelorMittal SA, JTEKT Corp, Toyota Industries Corp, SK Inc, Denso Corp, Kawasaki Heavy Industries Ltd, American Axle & Manufacturing Holdings Inc, Schaeffler AG. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Bayerische Motoren Werke AG's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Bayerische Motoren Werke AG's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:50.495369"
+}

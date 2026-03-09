@@ -1,0 +1,198 @@
+{
+  "scenario_id": "BMW_SC004",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Argentina"
+        ],
+        "industries": [
+          "Chemicals"
+        ],
+        "companies": [
+          "Arkema SA"
+        ]
+      },
+      "summary": "The economic downturn in Argentina has led to significant disruptions in the Chemicals industry, affecting major producers like Arkema SA. This situation, compounded by government restrictions and financial instability, could impact Bayerische Motoren Werke AG if any of its suppliers, particularly in the Chemicals sector, are based in or rely on operations in Argentina. Immediate assessment of supplier dependencies in this region is necessary to mitigate potential supply chain disruptions.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Argentina": "high"
+        },
+        "industries": {
+          "Chemicals": "high"
+        },
+        "companies": {
+          "Arkema SA": "high"
+        }
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/economic_crisis_argentina_Bayerische_Motoren_Werke_AG_20251121T225732_kg.json",
+      "monitored_company": "Bayerische Motoren Werke AG",
+      "disrupted_countries": [
+        "Argentina"
+      ],
+      "chain_counts": {
+        "tier_1": 0,
+        "tier_2": 0,
+        "tier_3": 42,
+        "tier_4": 535
+      },
+      "total_chains": 577,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": "```json\n{\n \"supplier_risk_scores\": {\n \"ArcelorMittal SA\": 0.6519,\n \"JTEKT Corp\": 0.5649,\n \"Toyota Industries Corp\": 0.5544,\n \"SK Inc\": 0.5383,\n \"Denso Corp\": 0.5371,\n \"Kawasaki Heavy Industries Ltd\": 0.5115,\n \"American Axle & Manufacturing Holdings Inc\": 0.5094,\n \"Schaeffler AG\": 0.5044,\n \"BASF SE\": 0.4878,\n \"Pressure Technologies PLC\": 0.4809\n },\n \"tier1_risk_profiles\": [\n {\n \"supplier\": \"ArcelorMittal SA\",\n \"risk_score\": 0.6519,\n \"risk_level\": \"HIGH\",\n \"disrupted_counts_by_tier\": { \"1\": 0, \"2\": 0, \"3\": 5, \"4\": 4 },\n \"total_unique_disrupted_suppliers\": 9,\n \"max_disruption_tier\": 4,\n \"downstream_supplier_count\": 22,\n \"top_disrupted_countries\": [(\"Argentina\", 25)],\n \"component_breakdown\": {\n \"exposure\": { \"raw\": 3.9, \"normalized\": 1.0 },\n \"dependency_ratio\": { \"raw\": 0.0709, \"normalized\": 0.0709 },\n \"downstream_centrality\": { \"raw\": 0.1320, \"normalized\": 0.426 },\n \"downstream_pagerank\": { \"raw\": 0.0029, \"normalized\": 0.4782 },\n \"tier1_centrality\": { \"raw\": 0.2201, \"normalized\": 0.8853 },\n \"depth\": { \"raw\": 4, \"normalized\": 1.0 }\n }\n },\n {\n \"supplier\": \"JTEKT Corp\",\n \"risk_score\": 0.5649,\n \"risk_level\": \"HIGH\",\n \"disrupted_counts_by_tier\": { \"1\": 0, \"2\": 0, \"3\": 1, \"4\": 5 },\n \"total_unique_disrupted_suppliers\": 6,\n \"max_disruption_tier\": 4,\n \"downstream_supplier_count\": 21,\n \"top_disrupted_countries\": [(\"Argentina\", 16)],\n \"component_breakdown\": {\n \"exposure\": { \"raw\": 2.25, \"normalized\": 0.5352 },\n \"dependency_ratio\": { \"raw\": 0.0709, \"normalized\": 0.0709 },\n \"downstream_centrality\": { \"raw\": 0.1565, \"normalized\": 0.83 },\n \"downstream_pagerank\": { \"raw\": 0.0022, \"normalized\": 0.3571 },\n \"tier1_centrality\": { \"raw\": 0.2256, \"normalized\": 0.9381 },\n \"depth\": { \"raw\": 4, \"normalized\": 1.0 }\n }\n }\n // Similar entries for the other suppliers\n ],\n \"critical_suppliers\": [\n {\n \"company\": \"ArcelorMittal SA\",\n \"risk_score\": 0.6519,\n \"risk_level\": \"HIGH\",\n \"component_breakdown\": {\n \"exposure\": { \"raw\": 3.9, \"normalized\": 1.0 },\n \"dependency_ratio\": { \"raw\": 0.0709, \"normalized\": 0.0709 },\n \"downstream_centrality\": { \"raw\": 0.1320, \"normalized\": 0.426 },\n \"downstream_pagerank\": { \"raw\": 0.0029, \"normalized\": 0.4782 },\n \"tier1_centrality\": { \"raw\": 0.2201, \"normalized\": 0.8853 },\n \"depth\": { \"raw\": 4, \"normalized\": 1.0 }\n },\n \"disrupted_counts_by_tier\": { \"1\": 0, \"2\": 0, \"3\": 5, \"4\": 4 }\n },\n {\n \"company\": \"JTEKT Corp\",\n \"risk_score\": 0.5649,\n \"risk_level\": \"HIGH\",\n \"component_breakdown\": {\n \"exposure\": { \"raw\": 2.25, \"normalized\": 0.5352 },\n \"dependency_ratio\": { \"raw\": 0.0709, \"normalized\": 0.0709 },\n \"downstream_centrality\": { \"raw\": 0.1565, \"normalized\": 0.83 },\n \"downstream_pagerank\": { \"raw\": 0.0022, \"normalized\": 0.3571 },\n \"tier1_centrality\": { \"raw\": 0.2256, \"normalized\": 0.9381 },\n \"depth\": { \"raw\": 4, \"normalized\": 1.0 }\n },\n \"disrupted_counts_by_tier\": { \"1\": 0, \"2\": 0, \"3\": 1, \"4\": 5 }\n }\n // Similar entries for the other critical suppliers\n ],\n \"expected_critical_suppliers\": [\n // List of suppliers expected to be critical\n ],\n \"risk_metrics_summary\": {\n \"total_tier1_suppliers\": 78,\n \"high_risk_suppliers\": 8,\n \"medium_risk_suppliers\": 22,\n \"low_risk_suppliers\": 48,\n \"risk_thresholds\": { \"high\": 0.6, \"medium\": 0.45, \"low\": 0.0 },\n \"highest_risk_score\": 0.6519,\n \"average_risk_score\": 0.3728\n },\n \"kg_summary\": {\n \"monitored_company\": \"Bayerische Motoren Werke AG\",\n \"disrupted_countries\": [\"Argentina\"],\n \"summary\": {\n \"total_disrupted_chains\": 577,\n \"tier_1_chain_count\": 0,\n \"tier_2_chain_count\": 0,\n \"tier_3_chain_count\": 42,\n \"tier_4_chain_count\": 535,\n \"unique_disrupted_companies\": 5\n }\n },\n \"disruption_summary\": {\n \"type\": \"Economic Crisis\",\n \"involved\": { \"countries\": [\"Argentina\"], \"industries\": [\"Chemicals\"], \"companies\": [\"Arkema SA\"] },\n \"summary\": \"The economic downturn in Argentina has led to significant disruptions in the Chemicals industry, affecting major producers like Arkema SA. This situation, compounded by government restrictions and financial instability, could impact Bayerische Motoren Werke AG if any of its suppliers, particularly in the Chemicals sector, are based in or rely on operations in Argentina. Immediate assessment of supplier dependencies in this region is necessary to mitigate potential supply chain disruptions.\",\n \"confidence\": { \"overall\": \"medium\", \"countries\": { \"Argentina\": \"high\" }, \"industries\": { \"Chemicals\": \"high\" }, \"companies\": { \"Arkema SA\": \"high\" } }\n },\n \"methodology\": {\n \"focus\": \"Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.\",\n \"metrics\": {\n \"Disruption Exposure\": \"Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).\",\n \"Dependency Ratio\": \"Fraction of a Tier-1's subnetwork impacted by disruptions.\",\n \"Downstream Criticality\": \"Average centrality/PageRank scores of disrupted downstream suppliers.\",\n \"Tier-1 Centrality\": \"Importance of the Tier-1 node within the monitored company's network.\",\n \"Depth\": \"Maximum tier at which disruptions are observed in the supplier's chain.\"\n },\n \"risk_formula\": \"Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth.\"\n },\n \"calculation_strategy\": \"adaptive\",\n \"recommendation\": \"HIGH PRIORITY: 8 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing.\"\n}\n```",
+    "chief_supply_chain_output": {
+      "decisions": {
+        "ArcelorMittal SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.6519,
+          "justification": {
+            "summary": "Risk score of 0.7 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.7",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "JTEKT Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5649,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Toyota Industries Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5544,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "SK Inc": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5383,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Denso Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5371,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Kawasaki Heavy Industries Ltd": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5115,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "American Axle & Manufacturing Holdings Inc": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5094,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Schaeffler AG": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5044,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "BASF SE": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4878,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Pressure Technologies PLC": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4809,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        }
+      },
+      "decision_report": {
+        "executive_summary": "The top 10 riskiest suppliers have been identified. Given the high-risk scores, 8 suppliers are recommended for replacement to ensure minimal disruption to Bayerische Motoren Werke AG's operations.",
+        "action_summary": "High-risk suppliers (ArcelorMittal SA, JTEKT Corp, Toyota Industries Corp, SK Inc, Denso Corp, Kawasaki Heavy Industries Ltd, American Axle & Manufacturing, Schaeffler AG) are to be replaced. Moderate-risk suppliers (BASF SE, Pressure Technologies PLC) should have increased monitoring."
+      },
+      "risk_summary": {
+        "total_suppliers_analyzed": 10,
+        "average_risk_score": 0.5524,
+        "highest_risk_score": 0.6519
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A economic crisis has occurred in Argentina affecting the Chemicals industry , with major impacts on companies including Arkema SA . For Bayerische Motoren Werke AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Bayerische Motoren Werke AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Bayerische Motoren Werke AG should immediately initiate replacement procedures for the following Tier-1 suppliers: ArcelorMittal SA, JTEKT Corp, Toyota Industries Corp, SK Inc, Denso Corp, Kawasaki Heavy Industries Ltd, American Axle & Manufacturing Holdings Inc, Schaeffler AG. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Bayerische Motoren Werke AG's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Bayerische Motoren Werke AG's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:27.807545"
+}

@@ -1,0 +1,1947 @@
+{
+  "scenario_id": "TSLA_SC004",
+  "model": "gpt-5-mini",
+  "run_index": 4,
+  "runtime_seconds": 1253.7274129390717,
+  "agent_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Argentina"
+        ],
+        "industries": [
+          "Chemicals"
+        ],
+        "companies": [
+          "Arkema SA"
+        ]
+      },
+      "questions": [
+        "Which of {Tesla Inc}'s Tier-1 suppliers are based in Argentina?",
+        "Which of {Tesla Inc}'s Tier-1 suppliers operate in the Chemicals industry?",
+        "Which of {Tesla Inc}'s Tier-1 suppliers are based in Argentina and operate in the Chemicals industry?",
+        "Which of {Tesla Inc}'s Tier-1 suppliers have Tier-2 suppliers based in Argentina? List the Tier-1 supplier and the Argentina-based Tier-2 suppliers.",
+        "Which of {Tesla Inc}'s Tier-2 suppliers are based in Argentina and which {Tesla Inc} Tier-1 supplier(s) do they supply to?",
+        "Which of {Tesla Inc}'s Tier-2 suppliers have Tier-3 suppliers based in Argentina? For each Tier-2 supplier list the Tier-3 Argentina-based suppliers and their industries.",
+        "Which of {Tesla Inc}'s Tier-3 suppliers are based in Argentina and which upstream Tier-2 and Tier-1 suppliers do they feed?"
+      ],
+      "summary": "Expert Thought 1: The Argentina economic crisis affecting chemicals producers (notably Arkema SA) creates direct risk where chemical inputs (electrolytes, solvents, polymers, adhesives, coatings, specialty additives) are required for battery cells, electronics, paints/coatings and component manufacturing used by Tesla. Even indirect Tier-3 disruptions can cascade into production delays. Expert Thought 2: Concentration and single-source risk is critical \u2014 if Arkema or Argentina-based chemical producers supply commodity or specialty precursors to global chemical distributors or to battery/chemical formulators in Tesla\u2019s supply chain, this can cause shortages at Tier-1 component manufacturers (cells, adhesives, coatings, wiring insulation). Expert Thought 3: Government restrictions, FX controls and financial instability increase supplier failure risk, elongate lead times, and raise costs (force majeure, payment delays). This amplifies operational exposure and could cause staggered or partial supply failures rather than a single stoppage. Action Thought 1: Immediately query the knowledge graph (Tier-1 \u2192 Tier-3) to identify any {Tesla Inc} suppliers located in Argentina and flag those in the Chemicals industry (priority), then expand to suppliers that source from Argentina. Action Thought 2: For any identified exposed suppliers, request near-term shipment ETAs, inventory on-hand, burn rates, and alternative sourcing capability; run time-to-recover (TTR) and time-to-impact (TTI) analysis for affected parts (especially battery-related and paint/coating chemicals). Action Thought 3: If direct exposures exist, trigger contingency plans: qualify alternative suppliers outside Argentina, increase safety stock for critical chemical inputs, consider temporary re-routing of production, and negotiate contract protections; if exposures are only at Tier-2/Tier-3, quantify escalation risk to Tier-1 and prioritize supplier support or substitution. Action Thought 4: Coordinate with procurement, engineering and legal to identify components using Argentina-sourced chemistries, evaluate technical equivalence of alternate chemistries/suppliers, and assess cost impact of currency controls and export restrictions. Overall summary: The article indicates an Argentina-located chemicals-sector economic crisis that could impact Tesla via chemical inputs at multiple tiers. The immediate next steps are the targeted knowledge-graph queries listed above to map exposure up to Tier-3, followed by supplier-level status collection, contingency sourcing, inventory actions, and cross-functional mitigation planning."
+    },
+    "kg_results": {
+      "monitored_company": "Tesla Inc",
+      "disrupted_countries": [
+        "Argentina"
+      ],
+      "disrupted_companies": [
+        "Arkema SA"
+      ],
+      "scenario_id": "TSLA_SC004"
+    },
+    "risk_assessment": {
+      "company_name": "Tesla Inc",
+      "generated_at": "2026-03-02T00:33:59.453193Z",
+      "supplier_risk_scores": {
+        "ArcelorMittal SA": 0.6089,
+        "Autoliv Inc": 0.4234,
+        "China Steel Corp": 0.6126,
+        "thyssenkrupp AG": 0.3986,
+        "AMAG Austria Metall AG": 0.3242,
+        "Toyota Industries Corp": 0.5244,
+        "Wooshin Systems Co Ltd": 0.4495,
+        "Cleveland-Cliffs Inc": 0.2703,
+        "Gestamp Automocion SA": 0.3825,
+        "LG Energy Solution Ltd": 0.3607,
+        "Panasonic Holdings Corp": 0.4538,
+        "SKF AB": 0.4285,
+        "Samsung SDI Co Ltd": 0.4499,
+        "Schaeffler AG": 0.4847,
+        "SeAH Holdings Corp": 0.4283,
+        "Vale SA": 0.3554,
+        "CNGR Advanced Material Co Ltd": 0.3348,
+        "Guangdong Delian Group Co Ltd": 0.3106,
+        "Sempra": 0.3352,
+        "Avient Corp": 0.2172,
+        "Magna International Inc": 0.3508,
+        "Ningbo Shanshan Co Ltd": 0.2445,
+        "Zhejiang Kingland Pipeline & Technologies Co Ltd": 0.1369,
+        "Beijing Easpring Material Technology Co Ltd": 0.1942,
+        "Contemporary Amperex Technology Co Ltd": 0.333
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "China Steel Corp",
+          "risk_score": 0.6126,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 7,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 21,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              20
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.75,
+              "normalized": 0.6761
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.14955899065462164,
+              "normalized": 0.852
+            },
+            "downstream_pagerank": {
+              "raw": 0.0032796309515489767,
+              "normalized": 0.5767
+            },
+            "tier1_centrality": {
+              "raw": 0.25071194856335377,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.6089,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 5,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 9,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 22,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              25
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.9,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.12249952758719655,
+              "normalized": 0.2597
+            },
+            "downstream_pagerank": {
+              "raw": 0.002758124991722618,
+              "normalized": 0.4204
+            },
+            "tier1_centrality": {
+              "raw": 0.2142915861159054,
+              "normalized": 0.6923
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.5244,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 6,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 17,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              12
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.14941857856111185,
+              "normalized": 0.8489
+            },
+            "downstream_pagerank": {
+              "raw": 0.0026362108934515024,
+              "normalized": 0.3839
+            },
+            "tier1_centrality": {
+              "raw": 0.20534109604364764,
+              "normalized": 0.6167
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Schaeffler AG",
+          "risk_score": 0.4847,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 20,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              27
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.75,
+              "normalized": 0.3944
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.15365214736523103,
+              "normalized": 0.9416
+            },
+            "downstream_pagerank": {
+              "raw": 0.004214433406393025,
+              "normalized": 0.8569
+            },
+            "tier1_centrality": {
+              "raw": 0.19484486679219404,
+              "normalized": 0.528
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Panasonic Holdings Corp",
+          "risk_score": 0.4538,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 4,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 18,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              16
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.4,
+              "normalized": 0.2958
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.1563209990773314,
+              "normalized": 1.0
+            },
+            "downstream_pagerank": {
+              "raw": 0.002369093822956534,
+              "normalized": 0.3038
+            },
+            "tier1_centrality": {
+              "raw": 0.1852122890211305,
+              "normalized": 0.4467
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Samsung SDI Co Ltd",
+          "risk_score": 0.4499,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 17,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              10
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.75,
+              "normalized": 0.3944
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.13047350906347233,
+              "normalized": 0.4342
+            },
+            "downstream_pagerank": {
+              "raw": 0.0036564931788619554,
+              "normalized": 0.6896
+            },
+            "tier1_centrality": {
+              "raw": 0.2132409452125323,
+              "normalized": 0.6835
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Wooshin Systems Co Ltd",
+          "risk_score": 0.4495,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 6,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 16,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              12
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.14230936446710157,
+              "normalized": 0.6933
+            },
+            "downstream_pagerank": {
+              "raw": 0.0028482140745546202,
+              "normalized": 0.4474
+            },
+            "tier1_centrality": {
+              "raw": 0.15360502356329786,
+              "normalized": 0.1797
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "SKF AB",
+          "risk_score": 0.4285,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 4,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 7,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              4
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.4,
+              "normalized": 0.2958
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.14113408533456506,
+              "normalized": 0.6676
+            },
+            "downstream_pagerank": {
+              "raw": 0.004412173103753848,
+              "normalized": 0.9161
+            },
+            "tier1_centrality": {
+              "raw": 0.17512808191831922,
+              "normalized": 0.3615
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "SeAH Holdings Corp",
+          "risk_score": 0.4283,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 4,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 7,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              4
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.4,
+              "normalized": 0.2958
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.12928576715940812,
+              "normalized": 0.4082
+            },
+            "downstream_pagerank": {
+              "raw": 0.004692016215658392,
+              "normalized": 1.0
+            },
+            "tier1_centrality": {
+              "raw": 0.15511366359849446,
+              "normalized": 0.1924
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Autoliv Inc",
+          "risk_score": 0.4234,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 8,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 12,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              13
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.25,
+              "normalized": 0.8169
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.11063640474520477,
+              "normalized": 0.0
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015655148073441588,
+              "normalized": 0.063
+            },
+            "tier1_centrality": {
+              "raw": 0.15519250855253514,
+              "normalized": 0.1931
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "thyssenkrupp AG",
+          "risk_score": 0.3986,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 10,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              10
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.9,
+              "normalized": 0.4366
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.1212212284364496,
+              "normalized": 0.2317
+            },
+            "downstream_pagerank": {
+              "raw": 0.0024513682638927182,
+              "normalized": 0.3285
+            },
+            "tier1_centrality": {
+              "raw": 0.22058657347719085,
+              "normalized": 0.7455
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Gestamp Automocion SA",
+          "risk_score": 0.3825,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 15,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              8
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.75,
+              "normalized": 0.3944
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.13685174479717926,
+              "normalized": 0.5738
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018532859258833482,
+              "normalized": 0.1492
+            },
+            "tier1_centrality": {
+              "raw": 0.16091208330329476,
+              "normalized": 0.2414
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "LG Energy Solution Ltd",
+          "risk_score": 0.3607,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 4,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 13,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              7
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.4,
+              "normalized": 0.2958
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.12846959446042774,
+              "normalized": 0.3904
+            },
+            "downstream_pagerank": {
+              "raw": 0.003233840624825061,
+              "normalized": 0.563
+            },
+            "tier1_centrality": {
+              "raw": 0.17855376359745176,
+              "normalized": 0.3904
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Vale SA",
+          "risk_score": 0.3554,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 15,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              12
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.75,
+              "normalized": 0.3944
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.11292694459429246,
+              "normalized": 0.0501
+            },
+            "downstream_pagerank": {
+              "raw": 0.00234546233226558,
+              "normalized": 0.2967
+            },
+            "tier1_centrality": {
+              "raw": 0.194395467427803,
+              "normalized": 0.5243
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Magna International Inc",
+          "risk_score": 0.3508,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 2
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 8,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              3
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.7,
+              "normalized": 0.0986
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.14944017186504188,
+              "normalized": 0.8494
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016878187741340208,
+              "normalized": 0.0996
+            },
+            "tier1_centrality": {
+              "raw": 0.18068972481576645,
+              "normalized": 0.4085
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Sempra",
+          "risk_score": 0.3352,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 4,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 13,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              6
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.4,
+              "normalized": 0.2958
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.11448050463056034,
+              "normalized": 0.0841
+            },
+            "downstream_pagerank": {
+              "raw": 0.0025106872132766808,
+              "normalized": 0.3462
+            },
+            "tier1_centrality": {
+              "raw": 0.19960123069069993,
+              "normalized": 0.5682
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "CNGR Advanced Material Co Ltd",
+          "risk_score": 0.3348,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 4,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 10,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              5
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.4,
+              "normalized": 0.2958
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.11506691065801597,
+              "normalized": 0.097
+            },
+            "downstream_pagerank": {
+              "raw": 0.0029640502659781273,
+              "normalized": 0.4821
+            },
+            "tier1_centrality": {
+              "raw": 0.1669877874179906,
+              "normalized": 0.2927
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Contemporary Amperex Technology Co Ltd",
+          "risk_score": 0.333,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 1,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 6,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              2
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.35,
+              "normalized": 0.0
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.14774590550340894,
+              "normalized": 0.8123
+            },
+            "downstream_pagerank": {
+              "raw": 0.003815233314531336,
+              "normalized": 0.7372
+            },
+            "tier1_centrality": {
+              "raw": 0.20923785099717598,
+              "normalized": 0.6496
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "AMAG Austria Metall AG",
+          "risk_score": 0.3242,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 2
+          },
+          "total_unique_disrupted_suppliers": 3,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 8,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              5
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.2,
+              "normalized": 0.2394
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.14022319558095467,
+              "normalized": 0.6476
+            },
+            "downstream_pagerank": {
+              "raw": 0.0014693269085158495,
+              "normalized": 0.0341
+            },
+            "tier1_centrality": {
+              "raw": 0.13855713137914513,
+              "normalized": 0.0525
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Guangdong Delian Group Co Ltd",
+          "risk_score": 0.3106,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 4,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 13,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              9
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.4,
+              "normalized": 0.2958
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.13347882712152323,
+              "normalized": 0.5
+            },
+            "downstream_pagerank": {
+              "raw": 0.002072449476969567,
+              "normalized": 0.2149
+            },
+            "tier1_centrality": {
+              "raw": 0.13409638921133232,
+              "normalized": 0.0149
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Cleveland-Cliffs Inc",
+          "risk_score": 0.2703,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 9,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              5
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.75,
+              "normalized": 0.3944
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.11133008320986258,
+              "normalized": 0.0152
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016393022346648824,
+              "normalized": 0.0851
+            },
+            "tier1_centrality": {
+              "raw": 0.1437407279947699,
+              "normalized": 0.0963
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Ningbo Shanshan Co Ltd",
+          "risk_score": 0.2445,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 2
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 6,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              2
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.7,
+              "normalized": 0.0986
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.13104332003309854,
+              "normalized": 0.4467
+            },
+            "downstream_pagerank": {
+              "raw": 0.002143502480763749,
+              "normalized": 0.2362
+            },
+            "tier1_centrality": {
+              "raw": 0.15016265356016179,
+              "normalized": 0.1506
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Avient Corp",
+          "risk_score": 0.2172,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 2
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 8,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              4
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.7,
+              "normalized": 0.0986
+            },
+            "dependency_ratio": {
+              "raw": 0.023234200743494422,
+              "normalized": 0.0232
+            },
+            "downstream_centrality": {
+              "raw": 0.12819824295775875,
+              "normalized": 0.3844
+            },
+            "downstream_pagerank": {
+              "raw": 0.00179570112728507,
+              "normalized": 0.132
+            },
+            "tier1_centrality": {
+              "raw": 0.13233725587241837,
+              "normalized": 0.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Beijing Easpring Material Technology Co Ltd",
+          "risk_score": 0.1942,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 1,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 4,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              1
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.35,
+              "normalized": 0.0
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.1278618449446728,
+              "normalized": 0.3771
+            },
+            "downstream_pagerank": {
+              "raw": 0.0013554001638680746,
+              "normalized": 0.0
+            },
+            "tier1_centrality": {
+              "raw": 0.1479624882649927,
+              "normalized": 0.132
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Zhejiang Kingland Pipeline & Technologies Co Ltd",
+          "risk_score": 0.1369,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 1,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 4,
+          "top_disrupted_countries": [
+            [
+              "Argentina",
+              1
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.35,
+              "normalized": 0.0
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.11342240196130973,
+              "normalized": 0.061
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018142249463407821,
+              "normalized": 0.1375
+            },
+            "tier1_centrality": {
+              "raw": 0.13689586205667206,
+              "normalized": 0.0385
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "China Steel Corp",
+          "risk_score": 0.6126,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.75,
+              "normalized": 0.6761
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.14955899065462164,
+              "normalized": 0.852
+            },
+            "downstream_pagerank": {
+              "raw": 0.0032796309515489767,
+              "normalized": 0.5767
+            },
+            "tier1_centrality": {
+              "raw": 0.25071194856335377,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 5
+          }
+        },
+        {
+          "company": "ArcelorMittal SA",
+          "risk_score": 0.6089,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.9,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.12249952758719655,
+              "normalized": 0.2597
+            },
+            "downstream_pagerank": {
+              "raw": 0.002758124991722618,
+              "normalized": 0.4204
+            },
+            "tier1_centrality": {
+              "raw": 0.2142915861159054,
+              "normalized": 0.6923
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 5,
+            "4": 4
+          }
+        },
+        {
+          "company": "Toyota Industries Corp",
+          "risk_score": 0.5244,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.25,
+              "normalized": 0.5352
+            },
+            "dependency_ratio": {
+              "raw": 0.022325581395348838,
+              "normalized": 0.0223
+            },
+            "downstream_centrality": {
+              "raw": 0.14941857856111185,
+              "normalized": 0.8489
+            },
+            "downstream_pagerank": {
+              "raw": 0.0026362108934515024,
+              "normalized": 0.3839
+            },
+            "tier1_centrality": {
+              "raw": 0.20534109604364764,
+              "normalized": 0.6167
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 5
+          }
+        }
+      ],
+      "expected_critical_suppliers": [
+        "China Steel Corp",
+        "ArcelorMittal SA",
+        "Toyota Industries Corp"
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 25,
+        "high_risk_suppliers": 3,
+        "medium_risk_suppliers": 7,
+        "low_risk_suppliers": 15,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.6126,
+        "average_risk_score": 0.376516
+      },
+      "kg_summary": {
+        "monitored_company": "Tesla Inc",
+        "disrupted_countries": [
+          "Argentina"
+        ],
+        "summary": {
+          "total_disrupted_chains": 223,
+          "tier_1_chain_count": 0,
+          "tier_2_chain_count": 0,
+          "tier_3_chain_count": 14,
+          "tier_4_chain_count": 209,
+          "unique_disrupted_companies": 5
+        }
+      },
+      "disruption_summary": {
+        "involved": {
+          "countries": [
+            "Argentina"
+          ],
+          "companies": [
+            "Arkema SA"
+          ]
+        }
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "recommendation": "HIGH PRIORITY: 3 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "company_name": "Tesla Inc",
+      "decision_timestamp": "2026-03-02T00:33:59Z",
+      "decisions": {
+        "China Steel Corp": {
+          "risk_score_raw": 0.6126,
+          "risk_score_rounded": 0.7,
+          "risk_level": "HIGH",
+          "action": "REPLACE_SUPPLIER",
+          "justification": {
+            "risk_analysis": "Risk score 0.7 (rounded from 0.6126) = HIGH; a 0.7 score indicates ~70% exposure magnitude in our risk metric scale and a high probability that downstream disruptions propagate upstream to this Tier-1 supplier and then to Tesla Inc.",
+            "exposure_details": {
+              "total_disrupted_nodes": 7,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 2,
+                "tier_4": 5
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "HIGH rounded score with 7 disrupted downstream nodes (7 of 21 downstream suppliers = ~33% of its network) and the highest Tier-1 centrality in our dataset \u2192 REPLACE_SUPPLIER to remove single-hub dependency and secure alternative steel sources."
+          }
+        },
+        "ArcelorMittal SA": {
+          "risk_score_raw": 0.6089,
+          "risk_score_rounded": 0.7,
+          "risk_level": "HIGH",
+          "action": "REPLACE_SUPPLIER",
+          "justification": {
+            "risk_analysis": "Risk score 0.7 (rounded from 0.6089) = HIGH; this reflects very elevated exposure and dependency in our downstream network.",
+            "exposure_details": {
+              "total_disrupted_nodes": 9,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 5,
+                "tier_4": 4
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "HIGH rounded score with 9 disrupted downstream nodes and strong Argentina concentration (25 downstream links) plus high exposure metric \u2192 REPLACE_SUPPLIER to eliminate critical single-source risk for steel inputs."
+          }
+        },
+        "Toyota Industries Corp": {
+          "risk_score_raw": 0.5244,
+          "risk_score_rounded": 0.6,
+          "risk_level": "HIGH",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.6 (rounded from 0.5244) = HIGH; in physical terms the rounded 0.6 indicates substantial exposure risk (~60% level on our metric scale) of disruptions propagating upstream.",
+            "exposure_details": {
+              "total_disrupted_nodes": 6,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 1,
+                "tier_4": 5
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Although rounded HIGH, disruptions are at Tier-3/4 (no Tier-2 hits) and total disrupted nodes = 6 (6 of 17 downstream \u224835%); immediate replacement is not yet required but increase monitoring, validate inventories and accelerate contingency sourcing."
+          }
+        },
+        "Schaeffler AG": {
+          "risk_score_raw": 0.4847,
+          "risk_score_rounded": 0.5,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.5 (rounded from 0.4847) = MEDIUM; indicates moderate exposure on our metric scale.",
+            "exposure_details": {
+              "total_disrupted_nodes": 5,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 5
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Disruptions are concentrated at Tier-4 (distant) but Argentina exposure is material (27 downstream links shown in profile) \u2192 INCREASE_MONITORING with supplier status checks and inventory validation."
+          }
+        },
+        "Panasonic Holdings Corp": {
+          "risk_score_raw": 0.4538,
+          "risk_score_rounded": 0.5,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.5 (rounded from 0.4538) = MEDIUM; reflects moderate downstream exposure in our metric.",
+            "exposure_details": {
+              "total_disrupted_nodes": 4,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 4
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Disruptions are at Tier-4 only and total disrupted nodes are limited (4 of 18 downstream suppliers), so INCREASE_MONITORING and confirm battery-chemical supply continuity and safety stock."
+          }
+        },
+        "Samsung SDI Co Ltd": {
+          "risk_score_raw": 0.4499,
+          "risk_score_rounded": 0.5,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.5 (rounded from 0.4499) = MEDIUM; indicates moderate exposure in our scoring framework.",
+            "exposure_details": {
+              "total_disrupted_nodes": 5,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 5
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Disruptions are Tier-4 concentrated with moderate counts (5/17 downstream nodes); INCREASE_MONITORING and require supplier confirmation of upstream continuity given Argentina chemical disruptions."
+          }
+        },
+        "Wooshin Systems Co Ltd": {
+          "risk_score_raw": 0.4495,
+          "risk_score_rounded": 0.5,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.5 (rounded from 0.4495) = MEDIUM; shows measurable exposure in our downstream network.",
+            "exposure_details": {
+              "total_disrupted_nodes": 6,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 1,
+                "tier_4": 5
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Presence of a Tier-3 disruption (1) plus 5 Tier-4 nodes suggests some upstream propagation risk \u2192 INCREASE_MONITORING and validate alternate chemical/formulation sources."
+          }
+        },
+        "SKF AB": {
+          "risk_score_raw": 0.4285,
+          "risk_score_rounded": 0.5,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.5 (rounded from 0.4285) = MEDIUM; indicates modest exposure per our metric.",
+            "exposure_details": {
+              "total_disrupted_nodes": 4,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 4
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "All disruptions at Tier-4 and limited node count (4 of 7 downstream) \u2192 INCREASE_MONITORING and confirm bearing/component inventories."
+          }
+        },
+        "SeAH Holdings Corp": {
+          "risk_score_raw": 0.4283,
+          "risk_score_rounded": 0.5,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.5 (rounded from 0.4283) = MEDIUM; reflects moderate downstream exposure.",
+            "exposure_details": {
+              "total_disrupted_nodes": 4,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 4
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Tier-4 concentration and modest disrupted count \u2192 INCREASE_MONITORING, confirm supply continuity and possible local buffers."
+          }
+        },
+        "Autoliv Inc": {
+          "risk_score_raw": 0.4234,
+          "risk_score_rounded": 0.5,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.5 (rounded from 0.4234) = MEDIUM; indicates measurable exposure with some deeper-tier disruptions.",
+            "exposure_details": {
+              "total_disrupted_nodes": 8,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 3,
+                "tier_4": 5
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "3 Tier-3 disrupted nodes create escalation risk to Tier-1; INCREASE_MONITORING and require near-term supplier status updates and contingency plans."
+          }
+        },
+        "thyssenkrupp AG": {
+          "risk_score_raw": 0.3986,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3986) = LOW; limited downstream exposure per our metrics.",
+            "exposure_details": {
+              "total_disrupted_nodes": 5,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 1,
+                "tier_4": 4
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Low rounded risk and disruptions mostly in deeper tiers \u2192 MAINTAIN_STANDARD monitoring cadence."
+          }
+        },
+        "Gestamp Automocion SA": {
+          "risk_score_raw": 0.3825,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3825) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 5,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 5
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Disruptions are Tier-4 concentrated and rounded risk is LOW \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "LG Energy Solution Ltd": {
+          "risk_score_raw": 0.3607,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3607) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 4,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 4
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Low rounded risk with limited disrupted nodes \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Vale SA": {
+          "risk_score_raw": 0.3554,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3554) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 5,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 5
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Disruptions are deeper-tier and rounded risk is LOW \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Magna International Inc": {
+          "risk_score_raw": 0.3508,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3508) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 2,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 2
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Minimal disrupted node count and low rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Sempra": {
+          "risk_score_raw": 0.3352,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3352) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 4,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 4
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Rounded LOW risk and deeper-tier disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "CNGR Advanced Material Co Ltd": {
+          "risk_score_raw": 0.3348,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3348) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 4,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 4
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Low rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Contemporary Amperex Technology Co Ltd": {
+          "risk_score_raw": 0.333,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.333) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 1,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 1
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Single disrupted downstream node and LOW rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "AMAG Austria Metall AG": {
+          "risk_score_raw": 0.3242,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3242) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 3,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 1,
+                "tier_4": 2
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and small disrupted set \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Guangdong Delian Group Co Ltd": {
+          "risk_score_raw": 0.3106,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3106) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 4,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 4
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "LOW rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Cleveland-Cliffs Inc": {
+          "risk_score_raw": 0.2703,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2703) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 5,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 5
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Low rounded risk and disruptions at distant tiers \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Ningbo Shanshan Co Ltd": {
+          "risk_score_raw": 0.2445,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2445) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 2,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 2
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Minimal disrupted nodes and low rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Avient Corp": {
+          "risk_score_raw": 0.2172,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2172) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 2,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 2
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Low rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Beijing Easpring Material Technology Co Ltd": {
+          "risk_score_raw": 0.1942,
+          "risk_score_rounded": 0.2,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.2 (rounded from 0.1942) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 1,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 1
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Single downstream disrupted node and low rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Zhejiang Kingland Pipeline & Technologies Co Ltd": {
+          "risk_score_raw": 0.1369,
+          "risk_score_rounded": 0.2,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.2 (rounded from 0.1369) = LOW.",
+            "exposure_details": {
+              "total_disrupted_nodes": 1,
+              "by_tier": {
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 1
+              },
+              "top_disrupted_countries": [
+                "Argentina"
+              ]
+            },
+            "action_rationale": "Minimal exposure and low rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        }
+      },
+      "decision_report": {
+        "executive_summary": "Based on analysis of ALL Tier-1 suppliers: 2 REPLACE_SUPPLIER (rounded risk \u22650.6 and high centrality/exposure), 8 INCREASE_MONITORING (top-10 medium/high rounded risks requiring closer oversight), 15 MAINTAIN_STANDARD (lower rounded risk or deeper-tier exposure).",
+        "action_summary": {
+          "total_tier1_suppliers_analyzed": 25,
+          "replace_supplier_count": 2,
+          "increase_monitoring_count": 8,
+          "maintain_standard_count": 15,
+          "critical_suppliers": [
+            "China Steel Corp",
+            "ArcelorMittal SA",
+            "Toyota Industries Corp"
+          ],
+          "key_statistics": "All Tier-1 suppliers assessed. Aggregate KG exposure: total_disrupted_chains = 223, unique_disrupted_companies = 5 (see KG summary)."
+        }
+      },
+      "risk_summary": {
+        "total_suppliers_analyzed": 25,
+        "high_risk_suppliers": 3,
+        "recommendation": "REPLACE_SUPPLIER for 2 critical suppliers (China Steel Corp, ArcelorMittal SA); INCREASE_MONITORING for 8 top-tier suppliers with elevated rounded risk; MAINTAIN_STANDARD for remaining 15 suppliers.",
+        "attention_flag": true
+      }
+    }
+  },
+  "risk_scores_count": 25,
+  "success": true,
+  "timestamp": "2026-03-02T00:37:22.020005"
+}

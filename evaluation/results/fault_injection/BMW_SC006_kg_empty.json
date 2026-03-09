@@ -1,0 +1,332 @@
+{
+  "scenario_id": "BMW_SC006",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Telecommunications Disruption",
+      "involved": {
+        "countries": [
+          "Australia"
+        ],
+        "industries": [
+          "Telecommunications",
+          "Metals & Mining"
+        ],
+        "companies": [
+          "BHP Group Ltd"
+        ]
+      },
+      "summary": "A telecommunications disruption in Australia has affected BHP Group Ltd, a significant player in the Metals & Mining industry. This disruption is and, thereby posing no direct threat to Bayerische Motoren Werke AG's operations.",
+      "confidence": "High"
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/telecom_disruption_australia_Bayerische_Motoren_Werke_AG_20251121T235142_kg.json",
+      "monitored_company": "Bayerische Motoren Werke AG",
+      "disrupted_countries": [
+        "Australia"
+      ],
+      "chain_counts": {
+        "tier_1": 0,
+        "tier_2": 8,
+        "tier_3": 92,
+        "tier_4": 1364
+      },
+      "total_chains": 1464,
+      "query_strategy": "hybrid"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "ArcelorMittal SA": 0.584,
+        "Glencore PLC": 0.5139,
+        "Contemporary Amperex Technology Co Ltd": 0.4978,
+        "Samsung SDI Co Ltd": 0.4763,
+        "SK Inc": 0.4222,
+        "JTEKT Corp": 0.4211,
+        "LG Chem Ltd": 0.3943,
+        "Umicore SA": 0.3882,
+        "Schaeffler AG": 0.3826,
+        "BASF SE": 0.3823
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.584,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 7,
+            "4": 9
+          },
+          "total_unique_disrupted_suppliers": 18,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 42,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              72
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 8.15,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.09,
+              "normalized": 0.09
+            },
+            "downstream_centrality": {
+              "raw": 0.11973553674213717,
+              "normalized": 0.1081
+            },
+            "downstream_pagerank": {
+              "raw": 0.002533554526751626,
+              "normalized": 0.1144
+            },
+            "tier1_centrality": {
+              "raw": 0.22014861401282385,
+              "normalized": 0.8863
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Glencore PLC",
+          "risk_score": 0.5139,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 4,
+            "3": 1,
+            "4": 7
+          },
+          "total_unique_disrupted_suppliers": 12,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 32,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              66
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 5.949999999999999,
+              "normalized": 0.7179
+            },
+            "dependency_ratio": {
+              "raw": 0.09,
+              "normalized": 0.09
+            },
+            "downstream_centrality": {
+              "raw": 0.11799622298320507,
+              "normalized": 0.0929
+            },
+            "downstream_pagerank": {
+              "raw": 0.003240685501788076,
+              "normalized": 0.2031
+            },
+            "tier1_centrality": {
+              "raw": 0.23160173556807012,
+              "normalized": 0.9953
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "ArcelorMittal SA",
+          "risk_score": 0.584,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 8.15,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.09,
+              "normalized": 0.09
+            },
+            "downstream_centrality": {
+              "raw": 0.11973553674213717,
+              "normalized": 0.1081
+            },
+            "downstream_pagerank": {
+              "raw": 0.002533554526751626,
+              "normalized": 0.1144
+            },
+            "tier1_centrality": {
+              "raw": 0.22014861401282385,
+              "normalized": 0.8863
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 7,
+            "4": 9
+          }
+        },
+        {
+          "company": "Glencore PLC",
+          "risk_score": 0.5139,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 5.949999999999999,
+              "normalized": 0.7179
+            },
+            "dependency_ratio": {
+              "raw": 0.09,
+              "normalized": 0.09
+            },
+            "downstream_centrality": {
+              "raw": 0.11799622298320507,
+              "normalized": 0.0929
+            },
+            "downstream_pagerank": {
+              "raw": 0.003240685501788076,
+              "normalized": 0.2031
+            },
+            "tier1_centrality": {
+              "raw": 0.23160173556807012,
+              "normalized": 0.9953
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 4,
+            "3": 1,
+            "4": 7
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 99,
+        "high_risk_suppliers": 2,
+        "medium_risk_suppliers": 4,
+        "low_risk_suppliers": 93,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.584,
+        "average_risk_score": 0.31025858585858584
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "Adaptive Risk Calculation",
+      "recommendation": "HIGH PRIORITY: 2 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "ArcelorMittal SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.584,
+          "justification": "Comprehensive analysis supports REPLACE_SUPPLIER for ArcelorMittal SA. Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER, and action will mitigate supply chain risk for this supplier."
+        },
+        "Glencore PLC": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5139,
+          "justification": "Comprehensive analysis supports REPLACE_SUPPLIER for Glencore PLC. Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER, and action will mitigate supply chain risk for this supplier."
+        },
+        "Contemporary Amperex Technology Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4978,
+          "justification": "Comprehensive analysis supports INCREASE_MONITORING for Contemporary Amperex Technology Co Ltd. Risk score 0.5 indicates need to enhance monitoring activities."
+        },
+        "Samsung SDI Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4763,
+          "justification": "Comprehensive analysis supports INCREASE_MONITORING for Samsung SDI Co Ltd. Risk score 0.5 indicates need to enhance monitoring activities."
+        },
+        "SK Inc": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4222,
+          "justification": "Comprehensive analysis supports INCREASE_MONITORING for SK Inc. Risk score 0.5 indicates need to enhance monitoring activities."
+        },
+        "JTEKT Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4211,
+          "justification": "Comprehensive analysis supports INCREASE_MONITORING for JTEKT Corp. Risk score 0.5 indicates need to enhance monitoring activities."
+        },
+        "LG Chem Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3943,
+          "justification": "Comprehensive analysis supports MAINTAIN_STANDARD for LG Chem Ltd. Current practices are sufficient given risk score 0.4."
+        },
+        "Umicore SA": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3882,
+          "justification": "Comprehensive analysis supports MAINTAIN_STANDARD for Umicore SA. Current practices are sufficient given risk score 0.4."
+        },
+        "Schaeffler AG": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3826,
+          "justification": "Comprehensive analysis supports MAINTAIN_STANDARD for Schaeffler AG. Current practices are sufficient given risk score 0.4."
+        },
+        "BASF SE": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3823,
+          "justification": "Comprehensive analysis supports MAINTAIN_STANDARD for BASF SE. Current practices are sufficient given risk score 0.4."
+        }
+      },
+      "decision_report": {
+        "executive_summary": "The action plan for Bayerische Motoren Werke AG involves strategic replacement for high-risk suppliers and enhanced monitoring for medium-risk partners based on an assessed balanced risk management framework. Replacement is prioritized for those exceeding risk thresholds.",
+        "action_summary": "ArcelorMittal SA and Glencore PLC require immediate replacement. Monitoring efforts will be enhanced for Contemporary Amperex Technology Co Ltd, Samsung SDI Co Ltd, SK Inc, and JTEKT Corp."
+      },
+      "risk_summary": {
+        "total_suppliers_analyzed": 10,
+        "highest_risk_score": 0.584,
+        "average_risk_score": 0.44627,
+        "decision_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        }
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A telecommunications disruption has occurred in Australia affecting the Telecommunications, Metals & Mining industry, impacting companies such as BHP Group Ltd. For Bayerische Motoren Werke AG, this disruption is critical as it indirectly influences suppliers and sub-suppliers essential for component delivery, despite the primary impact being on telecommunications rather than manufacturing. The extensive network vulnerability necessitates monitoring.",
+        "network_impact_analysis": "The disruption has propagated across Bayerische Motoren Werke AG's supply chain, impacting 0 unique companies across 0 paths from Tier-1 to Tier-4. Although the impact remains primarily in Tier-3 and Tier-4, the presence of vulnerabilities in the network underscores the need for heightened vigilance due to the low but present risk of propagation.",
+        "replacement_recommendations": "ArcelorMittal SA and Glencore PLC are recommended for immediate replacement. The evaluation signifies these entities present substantial risk factors including high disruption exposure and centrality, jeopardizing supply reliability. Replacements will bolster resilience by mitigating risk of supply chain discontinuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:50.399637"
+}

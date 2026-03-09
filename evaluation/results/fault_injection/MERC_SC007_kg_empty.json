@@ -1,0 +1,442 @@
+{
+  "scenario_id": "MERC_SC007",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Argentina"
+        ],
+        "industries": [
+          "Metals Mining"
+        ],
+        "companies": [
+          "Ternium Argentina SA"
+        ]
+      },
+      "summary": "The economic downturn in Argentina has led to significant disruptions in the Metals Mining industry, particularly affecting Ternium Argentina SA. This situation, compounded by government restrictions and financial instability, could impact Mercedes-Benz Group AG if any of its suppliers rely on metals sourced from Argentina. Immediate assessment of supplier dependencies in Argentina is necessary to mitigate potential supply chain disruptions.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Argentina": "high"
+        },
+        "industries": {
+          "Metals Mining": "medium"
+        },
+        "companies": {
+          "Ternium Argentina SA": "high"
+        }
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/economic_downturn_argentina_metals_Mercedes-Benz_Group_AG_20251121T225455_kg.json",
+      "monitored_company": "Mercedes-Benz Group AG",
+      "disrupted_countries": [
+        "Argentina"
+      ],
+      "chain_counts": {
+        "tier_1": 1,
+        "tier_2": 2,
+        "tier_3": 50,
+        "tier_4": 614
+      },
+      "total_chains": 667,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "Shell PLC": 0.5466,
+        "ArcelorMittal SA": 0.5463,
+        "YPF SA": 0.5154,
+        "JTEKT Corp": 0.4912,
+        "Renault SA": 0.4907,
+        "Toyota Industries Corp": 0.4854,
+        "SK Innovation Co Ltd": 0.4802,
+        "Denso Corp": 0.4709,
+        "SK Inc": 0.4473,
+        "Exxon Mobil Corp": 0.4428
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "Shell PLC",
+          "risk_score": 0.5466,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 3,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 9,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 30,
+          "top_disrupted_countries": [
+            "Argentina"
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 4.0,
+              "normalized": 0.8295
+            },
+            "dependency_ratio": {
+              "raw": 0.06232813932172319,
+              "normalized": 0.0623
+            },
+            "downstream_centrality": {
+              "raw": 0.14073236031480302,
+              "normalized": 0.4196
+            },
+            "downstream_pagerank": {
+              "raw": 0.0019402116131009984,
+              "normalized": 0.2337
+            },
+            "tier1_centrality": {
+              "raw": 0.21023129842203828,
+              "normalized": 0.5676
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.5463,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 5,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 9,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 22,
+          "top_disrupted_countries": [
+            "Argentina"
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.9,
+              "normalized": 0.8068
+            },
+            "dependency_ratio": {
+              "raw": 0.06232813932172319,
+              "normalized": 0.0623
+            },
+            "downstream_centrality": {
+              "raw": 0.13382692573811214,
+              "normalized": 0.3382
+            },
+            "downstream_pagerank": {
+              "raw": 0.0028886088768543135,
+              "normalized": 0.4207
+            },
+            "tier1_centrality": {
+              "raw": 0.22057746334320538,
+              "normalized": 0.6417
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "YPF SA",
+          "risk_score": 0.5154,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 0,
+            "3": 4,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 10,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 11,
+          "top_disrupted_countries": [
+            "Argentina"
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 4.75,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.06232813932172319,
+              "normalized": 0.0623
+            },
+            "downstream_centrality": {
+              "raw": 0.1051095038627576,
+              "normalized": 0.0
+            },
+            "downstream_pagerank": {
+              "raw": 0.001754898482481724,
+              "normalized": 0.1972
+            },
+            "tier1_centrality": {
+              "raw": 0.14545410613054718,
+              "normalized": 0.1037
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "Shell PLC",
+          "risk_score": 0.5466,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 4.0,
+              "normalized": 0.8295
+            },
+            "dependency_ratio": {
+              "raw": 0.06232813932172319,
+              "normalized": 0.0623
+            },
+            "downstream_centrality": {
+              "raw": 0.14073236031480302,
+              "normalized": 0.4196
+            },
+            "downstream_pagerank": {
+              "raw": 0.0019402116131009984,
+              "normalized": 0.2337
+            },
+            "tier1_centrality": {
+              "raw": 0.21023129842203828,
+              "normalized": 0.5676
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 3,
+            "4": 5
+          }
+        },
+        {
+          "company": "ArcelorMittal SA",
+          "risk_score": 0.5463,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.9,
+              "normalized": 0.8068
+            },
+            "dependency_ratio": {
+              "raw": 0.06232813932172319,
+              "normalized": 0.0623
+            },
+            "downstream_centrality": {
+              "raw": 0.13382692573811214,
+              "normalized": 0.3382
+            },
+            "downstream_pagerank": {
+              "raw": 0.0028886088768543135,
+              "normalized": 0.4207
+            },
+            "tier1_centrality": {
+              "raw": 0.22057746334320538,
+              "normalized": 0.6417
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 5,
+            "4": 4
+          }
+        },
+        {
+          "company": "YPF SA",
+          "risk_score": 0.5154,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 4.75,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.06232813932172319,
+              "normalized": 0.0623
+            },
+            "downstream_centrality": {
+              "raw": 0.1051095038627576,
+              "normalized": 0.0
+            },
+            "downstream_pagerank": {
+              "raw": 0.001754898482481724,
+              "normalized": 0.1972
+            },
+            "tier1_centrality": {
+              "raw": 0.14545410613054718,
+              "normalized": 0.1037
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 0,
+            "3": 4,
+            "4": 5
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 68,
+        "high_risk_suppliers": 3,
+        "medium_risk_suppliers": 19,
+        "low_risk_suppliers": 46,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5466,
+        "average_risk_score": 0.3586514705882353
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "adaptive_risk_calculation",
+      "recommendation": "HIGH PRIORITY: 3 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "Shell PLC": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5466,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for Shell PLC",
+            "risk_analysis": {
+              "score": 0.5466,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "ArcelorMittal SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5463,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for ArcelorMittal SA",
+            "risk_analysis": {
+              "score": 0.5463,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "YPF SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5154,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for YPF SA",
+            "risk_analysis": {
+              "score": 0.5154,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "JTEKT Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4912
+        },
+        "Renault SA": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4907
+        },
+        "Toyota Industries Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4854
+        },
+        "SK Innovation Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4802
+        },
+        "Denso Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4709
+        },
+        "SK Inc": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4473
+        },
+        "Exxon Mobil Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4428
+        }
+      },
+      "decision_report": {
+        "executive_summary": "Mercedes-Benz Group AG needs to replace three high-risk suppliers and increase monitoring for others to mitigate potential supply chain disruptions stemming from economic unrest in Argentina.",
+        "action_summary": "Immediate replacement is recommended for Shell PLC, ArcelorMittal SA, and YPF SA. Increase monitoring protocols for JTEKT Corp, Renault SA, Toyota Industries Corp, SK Innovation Co Ltd, Denso Corp, SK Inc, and Exxon Mobil Corp."
+      },
+      "risk_summary": {
+        "overall_risk_status": "Medium",
+        "total_high_risk_suppliers": 3,
+        "total_medium_risk_suppliers": 19,
+        "total_low_risk_suppliers": 46,
+        "average_risk_score": 0.49168
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A economic crisis has occurred in Argentina affecting the Metals Mining industry , with major impacts on companies including Ternium Argentina SA . For Mercedes-Benz Group AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Mercedes-Benz Group AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Mercedes-Benz Group AG should immediately initiate replacement procedures for the following Tier-1 suppliers: Shell PLC, ArcelorMittal SA, YPF SA. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Mercedes-Benz Group AG's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Mercedes-Benz Group AG's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:51.817266"
+}

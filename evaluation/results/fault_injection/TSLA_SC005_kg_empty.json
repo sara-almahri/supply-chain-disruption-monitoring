@@ -1,0 +1,859 @@
+{
+  "scenario_id": "TSLA_SC005",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Geopolitical",
+      "involved": {
+        "countries": [
+          "Germany"
+        ],
+        "industries": [
+          "Automotive"
+        ],
+        "companies": [
+          "Mercedes-Benz Group AG"
+        ]
+      },
+      "summary": "Geopolitical tensions in Germany have disrupted the automotive supply chain, impacting major manufacturers like Mercedes-Benz Group AG. Although no direct links to Tesla Inc.'s supply chain were found in the knowledge graph, this situation could indirectly affect Tesla Inc. if any of its suppliers are based in Germany or rely on German suppliers. Immediate assessment of Tesla Inc.'s supplier dependencies in Germany is necessary to mitigate potential production disruptions.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Germany": "high"
+        },
+        "industries": {
+          "Automotive": "high"
+        },
+        "companies": {
+          "Mercedes-Benz Group AG": "high"
+        }
+      },
+      "validation": {
+        "validated_countries": [],
+        "validated_industries": [],
+        "validated_companies": [],
+        "invalid_entities": [],
+        "validation_confidence": "medium"
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/geo_tensions_germany_automotive_Tesla_Inc__20251121T224921_kg.json",
+      "monitored_company": "Tesla Inc",
+      "disrupted_countries": [
+        "Germany"
+      ],
+      "chain_counts": {
+        "tier_1": 2,
+        "tier_2": 16,
+        "tier_3": 174,
+        "tier_4": 1717
+      },
+      "total_chains": 1909,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "Schaeffler AG": 0.5881,
+        "China Steel Corp": 0.5846,
+        "Samsung SDI Co Ltd": 0.5343,
+        "Toyota Industries Corp": 0.5106,
+        "Panasonic Holdings Corp": 0.4966,
+        "AMAG Austria Metall AG": 0.464,
+        "thyssenkrupp AG": 0.4499,
+        "ArcelorMittal SA": 0.4489,
+        "Magna International Inc": 0.4309,
+        "Wooshin Systems Co Ltd": 0.4211
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "Schaeffler AG",
+          "risk_score": 0.5881,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 3,
+            "3": 8,
+            "4": 17
+          },
+          "total_unique_disrupted_suppliers": 29,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 67,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              120
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.2,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1285759973271096,
+              "normalized": 0.2565
+            },
+            "downstream_pagerank": {
+              "raw": 0.0023798031240547515,
+              "normalized": 0.3844
+            },
+            "tier1_centrality": {
+              "raw": 0.19484486679219404,
+              "normalized": 0.5374
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "China Steel Corp",
+          "risk_score": 0.5846,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 11,
+            "4": 18
+          },
+          "total_unique_disrupted_suppliers": 30,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 105,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              198
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 12.55,
+              "normalized": 0.9494
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1262748429097899,
+              "normalized": 0.2244
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018499327505261177,
+              "normalized": 0.1687
+            },
+            "tier1_centrality": {
+              "raw": 0.25071194856335377,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Samsung SDI Co Ltd",
+          "risk_score": 0.5343,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 9,
+            "4": 19
+          },
+          "total_unique_disrupted_suppliers": 29,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 91,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              125
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 11.899999999999999,
+              "normalized": 0.8988
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.12221886757162675,
+              "normalized": 0.1678
+            },
+            "downstream_pagerank": {
+              "raw": 0.001966988190692905,
+              "normalized": 0.2163
+            },
+            "tier1_centrality": {
+              "raw": 0.2132409452125323,
+              "normalized": 0.6898
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.5106,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 7,
+            "4": 17
+          },
+          "total_unique_disrupted_suppliers": 26,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 73,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              165
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.95,
+              "normalized": 0.8249
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.12881502532663802,
+              "normalized": 0.2599
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017393653903659222,
+              "normalized": 0.1237
+            },
+            "tier1_centrality": {
+              "raw": 0.20534109604364764,
+              "normalized": 0.6243
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Panasonic Holdings Corp",
+          "risk_score": 0.4966,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 8,
+            "4": 19
+          },
+          "total_unique_disrupted_suppliers": 27,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 76,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              185
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.649999999999999,
+              "normalized": 0.8016
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.13272093794810966,
+              "normalized": 0.3144
+            },
+            "downstream_pagerank": {
+              "raw": 0.0021035134949653513,
+              "normalized": 0.2719
+            },
+            "tier1_centrality": {
+              "raw": 0.1852122890211305,
+              "normalized": 0.4577
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "AMAG Austria Metall AG",
+          "risk_score": 0.464,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 10,
+            "4": 15
+          },
+          "total_unique_disrupted_suppliers": 26,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 53,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              92
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 11.0,
+              "normalized": 0.8288
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.13144809787227094,
+              "normalized": 0.2966
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015824317651154766,
+              "normalized": 0.0598
+            },
+            "tier1_centrality": {
+              "raw": 0.13855713137914513,
+              "normalized": 0.0714
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "thyssenkrupp AG",
+          "risk_score": 0.4499,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 1,
+            "3": 4,
+            "4": 13
+          },
+          "total_unique_disrupted_suppliers": 19,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 52,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              74
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 8.3,
+              "normalized": 0.6187
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.12766234686577838,
+              "normalized": 0.2438
+            },
+            "downstream_pagerank": {
+              "raw": 0.0020606394793628337,
+              "normalized": 0.2544
+            },
+            "tier1_centrality": {
+              "raw": 0.22058657347719085,
+              "normalized": 0.7506
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.4489,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 6,
+            "4": 15
+          },
+          "total_unique_disrupted_suppliers": 22,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 71,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              126
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 9.0,
+              "normalized": 0.6732
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.11901929960173777,
+              "normalized": 0.1231
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018773909661634035,
+              "normalized": 0.1798
+            },
+            "tier1_centrality": {
+              "raw": 0.2142915861159054,
+              "normalized": 0.6985
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Magna International Inc",
+          "risk_score": 0.4309,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 5,
+            "4": 15
+          },
+          "total_unique_disrupted_suppliers": 22,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 55,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              85
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 9.25,
+              "normalized": 0.6926
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.12416423857005307,
+              "normalized": 0.1949
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015998813776818325,
+              "normalized": 0.0669
+            },
+            "tier1_centrality": {
+              "raw": 0.18068972481576645,
+              "normalized": 0.4202
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Wooshin Systems Co Ltd",
+          "risk_score": 0.4211,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 4,
+            "4": 16
+          },
+          "total_unique_disrupted_suppliers": 20,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 53,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              99
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 7.6,
+              "normalized": 0.5642
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1448165292094304,
+              "normalized": 0.4832
+            },
+            "downstream_pagerank": {
+              "raw": 0.0022535049562534774,
+              "normalized": 0.3329
+            },
+            "tier1_centrality": {
+              "raw": 0.15360502356329786,
+              "normalized": 0.196
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "Schaeffler AG",
+          "risk_score": 0.5881,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.2,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1285759973271096,
+              "normalized": 0.2565
+            },
+            "downstream_pagerank": {
+              "raw": 0.0023798031240547515,
+              "normalized": 0.3844
+            },
+            "tier1_centrality": {
+              "raw": 0.19484486679219404,
+              "normalized": 0.5374
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 3,
+            "3": 8,
+            "4": 17
+          }
+        },
+        {
+          "company": "China Steel Corp",
+          "risk_score": 0.5846,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 12.55,
+              "normalized": 0.9494
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1262748429097899,
+              "normalized": 0.2244
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018499327505261177,
+              "normalized": 0.1687
+            },
+            "tier1_centrality": {
+              "raw": 0.25071194856335377,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 11,
+            "4": 18
+          }
+        },
+        {
+          "company": "Samsung SDI Co Ltd",
+          "risk_score": 0.5343,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 11.899999999999999,
+              "normalized": 0.8988
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.12221886757162675,
+              "normalized": 0.1678
+            },
+            "downstream_pagerank": {
+              "raw": 0.001966988190692905,
+              "normalized": 0.2163
+            },
+            "tier1_centrality": {
+              "raw": 0.2132409452125323,
+              "normalized": 0.6898
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 9,
+            "4": 19
+          }
+        },
+        {
+          "company": "Toyota Industries Corp",
+          "risk_score": 0.5106,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.95,
+              "normalized": 0.8249
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.12881502532663802,
+              "normalized": 0.2599
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017393653903659222,
+              "normalized": 0.1237
+            },
+            "tier1_centrality": {
+              "raw": 0.20534109604364764,
+              "normalized": 0.6243
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 7,
+            "4": 17
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 33,
+        "high_risk_suppliers": 4,
+        "medium_risk_suppliers": 8,
+        "low_risk_suppliers": 21,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5881,
+        "average_risk_score": 0.3799818181818182
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "adaptive_risk_calculation",
+      "recommendation": "HIGH PRIORITY: 4 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "Schaeffler AG": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5881,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "China Steel Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5846,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Samsung SDI Co Ltd": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5343,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Toyota Industries Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5106,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Panasonic Holdings Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4966,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "AMAG Austria Metall AG": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.464,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "thyssenkrupp AG": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4499,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "ArcelorMittal SA": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4489,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Magna International Inc": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4309,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Wooshin Systems Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4211,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        }
+      },
+      "decision_report": {
+        "summary": "Decisions have been made for the top 10 riskiest suppliers based on a balanced decision framework focusing on suppliers with high and medium risk scores. Immediate replacements and increased monitoring actions were identified."
+      },
+      "risk_summary": {
+        "total_suppliers": 10,
+        "high_risk_suppliers": 4,
+        "medium_risk_suppliers": 6,
+        "actions": {
+          "REPLACE_SUPPLIER": 4,
+          "INCREASE_MONITORING": 6
+        }
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A geopolitical has occurred in Germany affecting the Automotive industry , with major impacts on companies including Mercedes-Benz Group AG . For Tesla Inc, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Tesla Inc's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Tesla Inc should immediately initiate replacement procedures for the following Tier-1 suppliers: Schaeffler AG, China Steel Corp, Samsung SDI Co Ltd, Toyota Industries Corp. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Tesla Inc's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Tesla Inc's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:53.637198"
+}

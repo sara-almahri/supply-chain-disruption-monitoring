@@ -1,0 +1,753 @@
+{
+  "scenario_id": "BMW_SC003",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Japan"
+        ],
+        "industries": [
+          "Automotive"
+        ],
+        "companies": [
+          "Toyota Industries Corp"
+        ]
+      },
+      "summary": "Massive labor strikes in Japan's automotive sector have halted production at major manufacturing facilities, including Toyota Industries Corp. This disruption, compounded by government restrictions and economic instability, could impact Bayerische Motoren Werke AG's supply chain, particularly if any Tier-1 or Tier-2 suppliers are dependent on Japanese automotive components or manufacturing capabilities.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Japan": "high"
+        },
+        "industries": {
+          "Automotive": "high"
+        },
+        "companies": {
+          "Toyota Industries Corp": "high"
+        }
+      },
+      "validation": {
+        "validated_countries": [],
+        "validated_industries": [],
+        "validated_companies": [],
+        "invalid_entities": [],
+        "validation_confidence": "medium"
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/economic_crisis_japan_automotive_Bayerische_Motoren_Werke_AG_20251121T225131_kg.json",
+      "monitored_company": "Bayerische Motoren Werke AG",
+      "disrupted_countries": [
+        "Japan"
+      ],
+      "chain_counts": {
+        "tier_1": 13,
+        "tier_2": 171,
+        "tier_3": 3179,
+        "tier_4": 0
+      },
+      "total_chains": 3363,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "JTEKT Corp": 0.5594,
+        "Denso Corp": 0.5304,
+        "Toyota Industries Corp": 0.5186,
+        "Mitsubishi Electric Corp": 0.4036,
+        "Toyoda Gosei Co Ltd": 0.3858,
+        "Kawasaki Heavy Industries Ltd": 0.3742,
+        "Hitachi Ltd": 0.368,
+        "SK Inc": 0.3626,
+        "MINEBEA MITSUMI Inc": 0.3556,
+        "Samsung SDI Co Ltd": 0.3511
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "JTEKT Corp",
+          "risk_score": 0.5594,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 21,
+            "3": 117,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 139,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 124,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              312
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 75.25,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.11471316107144648,
+              "normalized": 0.0297
+            },
+            "downstream_pagerank": {
+              "raw": 0.0014256789780414452,
+              "normalized": 0.0971
+            },
+            "tier1_centrality": {
+              "raw": 0.22564277493780135,
+              "normalized": 0.9386
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "Denso Corp",
+          "risk_score": 0.5304,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 20,
+            "3": 114,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 135,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 117,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              287
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 73.0,
+              "normalized": 0.9699
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.11395532480415776,
+              "normalized": 0.0231
+            },
+            "downstream_pagerank": {
+              "raw": 0.001440712507628194,
+              "normalized": 0.0991
+            },
+            "tier1_centrality": {
+              "raw": 0.2057771349058774,
+              "normalized": 0.7496
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.5186,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 16,
+            "3": 117,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 134,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 121,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              273
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 71.5,
+              "normalized": 0.9498
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.11368741825989466,
+              "normalized": 0.0208
+            },
+            "downstream_pagerank": {
+              "raw": 0.001325797935997563,
+              "normalized": 0.0843
+            },
+            "tier1_centrality": {
+              "raw": 0.2039450339362971,
+              "normalized": 0.7321
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "Mitsubishi Electric Corp",
+          "risk_score": 0.4036,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 11,
+            "3": 88,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 100,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 90,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              159
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 53.25,
+              "normalized": 0.7057
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.11813475386400693,
+              "normalized": 0.0595
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016995859736685542,
+              "normalized": 0.1324
+            },
+            "tier1_centrality": {
+              "raw": 0.16273631204144523,
+              "normalized": 0.34
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "Toyoda Gosei Co Ltd",
+          "risk_score": 0.3858,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 11,
+            "3": 70,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 82,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 72,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              147
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 44.25,
+              "normalized": 0.5853
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.12387964173796433,
+              "normalized": 0.1094
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018035196416578815,
+              "normalized": 0.1458
+            },
+            "tier1_centrality": {
+              "raw": 0.1855239604227704,
+              "normalized": 0.5569
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "Kawasaki Heavy Industries Ltd",
+          "risk_score": 0.3742,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 9,
+            "3": 88,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 98,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 91,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              162
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 51.75,
+              "normalized": 0.6856
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.12188323832352578,
+              "normalized": 0.092
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015820896570709598,
+              "normalized": 0.1173
+            },
+            "tier1_centrality": {
+              "raw": 0.14240021615325693,
+              "normalized": 0.1465
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "Hitachi Ltd",
+          "risk_score": 0.368,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 7,
+            "3": 85,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 93,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 87,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              132
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 48.75,
+              "normalized": 0.6455
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.12031652368077131,
+              "normalized": 0.0784
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016558286700883889,
+              "normalized": 0.1268
+            },
+            "tier1_centrality": {
+              "raw": 0.14862824161269966,
+              "normalized": 0.2058
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "SK Inc",
+          "risk_score": 0.3626,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 44,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 46,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 59,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              53
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 23.5,
+              "normalized": 0.3077
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.14508537927095544,
+              "normalized": 0.2937
+            },
+            "downstream_pagerank": {
+              "raw": 0.0026377153297806833,
+              "normalized": 0.2533
+            },
+            "tier1_centrality": {
+              "raw": 0.2320970766632835,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "MINEBEA MITSUMI Inc",
+          "risk_score": 0.3556,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 7,
+            "3": 72,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 80,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 77,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              107
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 42.25,
+              "normalized": 0.5585
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.11609769722742988,
+              "normalized": 0.0417
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017623738934477563,
+              "normalized": 0.1405
+            },
+            "tier1_centrality": {
+              "raw": 0.1647505110768357,
+              "normalized": 0.3592
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "Samsung SDI Co Ltd",
+          "risk_score": 0.3511,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 3,
+            "3": 45,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 48,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 59,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              60
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 24.75,
+              "normalized": 0.3244
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.13440341311669318,
+              "normalized": 0.2008
+            },
+            "downstream_pagerank": {
+              "raw": 0.002903367621934435,
+              "normalized": 0.2875
+            },
+            "tier1_centrality": {
+              "raw": 0.2152071844942533,
+              "normalized": 0.8393
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "JTEKT Corp",
+          "risk_score": 0.5594,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 75.25,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.11471316107144648,
+              "normalized": 0.0297
+            },
+            "downstream_pagerank": {
+              "raw": 0.0014256789780414452,
+              "normalized": 0.0971
+            },
+            "tier1_centrality": {
+              "raw": 0.22564277493780135,
+              "normalized": 0.9386
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 21,
+            "3": 117,
+            "4": 0
+          }
+        },
+        {
+          "company": "Denso Corp",
+          "risk_score": 0.5304,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 73.0,
+              "normalized": 0.9699
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.11395532480415776,
+              "normalized": 0.0231
+            },
+            "downstream_pagerank": {
+              "raw": 0.001440712507628194,
+              "normalized": 0.0991
+            },
+            "tier1_centrality": {
+              "raw": 0.2057771349058774,
+              "normalized": 0.7496
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 20,
+            "3": 114,
+            "4": 0
+          }
+        },
+        {
+          "company": "Toyota Industries Corp",
+          "risk_score": 0.5186,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 71.5,
+              "normalized": 0.9498
+            },
+            "dependency_ratio": {
+              "raw": 0.08454545454545455,
+              "normalized": 0.0845
+            },
+            "downstream_centrality": {
+              "raw": 0.11368741825989466,
+              "normalized": 0.0208
+            },
+            "downstream_pagerank": {
+              "raw": 0.001325797935997563,
+              "normalized": 0.0843
+            },
+            "tier1_centrality": {
+              "raw": 0.2039450339362971,
+              "normalized": 0.7321
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 16,
+            "3": 117,
+            "4": 0
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 93,
+        "high_risk_suppliers": 3,
+        "medium_risk_suppliers": 1,
+        "low_risk_suppliers": 89,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5594,
+        "average_risk_score": 0.26606989247311824
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "standard_risk_calculation",
+      "recommendation": "HIGH PRIORITY: 3 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "JTEKT Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5594,
+          "justification": "Comprehensive analysis supports REPLACE_SUPPLIER for JTEKT Corp due to a high risk score (0.6)."
+        },
+        "Denso Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5304,
+          "justification": "Comprehensive analysis supports REPLACE_SUPPLIER for Denso Corp due to a high risk score (0.6)."
+        },
+        "Toyota Industries Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5186,
+          "justification": "Comprehensive analysis supports REPLACE_SUPPLIER for Toyota Industries Corp due to a high risk score (0.6)."
+        },
+        "Mitsubishi Electric Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4036,
+          "justification": "Monitoring enhancements needed due to medium risk levels."
+        },
+        "Toyoda Gosei Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3858,
+          "justification": "Low risk levels allow for maintaining standard operations."
+        },
+        "Kawasaki Heavy Industries Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3742,
+          "justification": "Low risk levels allow for maintaining standard operations."
+        },
+        "Hitachi Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.368,
+          "justification": "Low risk levels allow for maintaining standard operations."
+        },
+        "SK Inc": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3626,
+          "justification": "Low risk levels allow for maintaining standard operations."
+        },
+        "MINEBEA MITSUMI Inc": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3556,
+          "justification": "Low risk levels allow for maintaining standard operations."
+        },
+        "Samsung SDI Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3511,
+          "justification": "Low risk levels allow for maintaining standard operations."
+        }
+      },
+      "decision_report": {
+        "executive_summary": "Immediate supplier replacement actions are necessary for JTEKT Corp, Denso Corp, and Toyota Industries Corp due to elevated risk levels. Additional monitoring required for Mitsubishi Electric Corp.",
+        "action_summary": "Supplier actions include replacements and increased monitoring to ensure supply chain continuity and risk mitigation."
+      },
+      "risk_summary": {
+        "overall_assessment": "Disruption in Japan's automotive sector impacts key Tier-1 suppliers; replacement and monitoring strategies are in place.",
+        "risk_statistics": {
+          "total_tier1_suppliers_analyzed": 10,
+          "high_risk_suppliers": 3,
+          "medium_risk_suppliers": 1,
+          "low_risk_suppliers": 6
+        }
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "An economic crisis in Japan's automotive sector, affecting major companies like Toyota Industries Corp, poses significant supply chain risks if BMW AG's suppliers are impacted. Immediate action is essential to prevent disruptions in component supply.",
+        "network_impact_analysis": "The disruption affects no unique paths across Bayerische Motoren Werke AG's network. However, vigilance is required as future risks remain.",
+        "replacement_recommendations": "Immediate replacement of JTEKT Corp, Denso Corp, and Toyota Industries Corp is crucial. These actions will mitigate risk and enhance supply chain resilience."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:27.681744"
+}

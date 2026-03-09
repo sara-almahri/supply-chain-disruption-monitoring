@@ -1,0 +1,2464 @@
+{
+  "scenario_id": "TSLA_SC003",
+  "model": "gpt-5-mini",
+  "run_index": 2,
+  "runtime_seconds": 1316.8294961452484,
+  "agent_outputs": {
+    "disruption_analysis": {
+      "type": "Labour Strike",
+      "involved": {
+        "countries": [
+          "Japan"
+        ],
+        "industries": [
+          "Automotive",
+          "Manufacturing"
+        ],
+        "companies": [
+          "Toyota Industries Corp"
+        ]
+      },
+      "questions": [
+        "Which of {Tesla Inc}'s Tier-1 suppliers are based in Japan?",
+        "Which of {Tesla Inc}'s Tier-1 suppliers operating in automotive or manufacturing have production facilities in Japan (list facility locations)?",
+        "For each {Tesla Inc} Tier-1 supplier based in Japan, which Tier-2 suppliers do they source from that are based in Japan? Provide supplier names and industries.",
+        "Which of {Tesla Inc}'s Tier-2 suppliers are based in Japan?",
+        "Which of {Tesla Inc}'s Tier-3 suppliers are based in Japan?",
+        "For each {Tesla Inc} Tier-1 supplier with Japan exposure, list their critical supplied parts (e.g., motors, power electronics, battery modules, sensors) that are manufactured in Japan and the Tier (1/2/3) of the supplier producing them."
+      ],
+      "summary": "Expert Thought 1: Massive labour strikes in Japan's automotive sector directly threaten production continuity at plants producing vehicle components. Even if Tesla has no vehicle assembly in Japan, components from Japanese suppliers (motors, precision machining, sensors, connectors, subassemblies) can be single- or limited-source and will create downstream shortages.\nExpert Thought 2: The risk is amplified if any {Tesla Inc} Tier-1 suppliers are located in Japan or if Tier-1 suppliers source critical subcomponents (Tier-2/Tier-3) from Japanese firms \u2014 cascading failures can occur within days for JIT parts and within weeks for larger subassemblies.\nExpert Thought 3: Government restrictions and broader economic instability mentioned in the article can lengthen recovery time, impede logistics (ports, customs), and disrupt worker availability even after strikes end, increasing medium-term supply risk.\nExpert Thought 4: Toyota Industries Corp is explicitly affected per the article; while not a direct Tesla supplier necessarily, many Tier-2/Tier-3 Japanese suppliers serve multiple OEMs and could overlap with Tesla\u2019s extended network.\nAction Thought 1: Immediately query which of {Tesla Inc}\u2019s Tier-1 suppliers are based in Japan (Question 1). If any are found, escalate to map their Japan-based Tier-2 and Tier-3 suppliers (Questions 3, 6).\nAction Thought 2: If Tier-1 exposure is found, run an impact-prioritization by part-criticality (power electronics, motors, battery components, sensors), lead-time, inventory days of supply, and available dual-sourcing alternatives.\nAction Thought 3: If no Tier-1 suppliers are in Japan, query Tier-2 and Tier-3 directly (Questions 4 and 5) and identify which Tier-1 suppliers depend on those lower-tier Japanese suppliers to quantify indirect exposure.\nAction Thought 4: For any identified Japan-based suppliers, request status updates (production halts, backlogs, labor negotiations status), current inventory on hand, and earliest ship dates; concurrently evaluate alternative suppliers outside Japan and feasibility of air/sea rerouting.\nAction Thought 5: Model ripple timing: estimate how long current on-hand inventory will sustain production by part and facility, then run scenarios (2-week strike, 1-month, 3-month) to determine when production lines would be impacted.\nAction Thought 6: Coordinate with procurement, manufacturing planning, and logistics to increase safety stock for at-risk parts, pause non-critical builds if needed, and prepare customer-communication plans for potential delivery impacts.\nOverall Summary: The primary disruption is a labour strike in Japan\u2019s automotive/manufacturing sector, with Toyota Industries Corp reported as significantly impacted. The immediate analyst actions are (1) determine {Tesla Inc}\u2019s Tier-1 Japan exposure, (2) if present, map Tier-2/Tier-3 Japanese dependencies for those Tier-1 suppliers, (3) if Tier-1 exposure is absent, directly inspect Tier-2 and Tier-3 for Japan-based suppliers and link them to their Tier-1 customers within {Tesla Inc}\u2019s network. The questions above are designed to be direct knowledge-graph queries to quantify exposure up to Tier-3 and prioritize mitigation steps."
+    },
+    "kg_results": {
+      "monitored_company": "Tesla Inc",
+      "disrupted_countries": [
+        "Japan"
+      ],
+      "disrupted_companies": [
+        "Toyota Industries Corp"
+      ],
+      "scenario_id": "TSLA_SC003"
+    },
+    "risk_assessment": {
+      "company_name": "Tesla Inc",
+      "generated_at": "2026-03-02T00:20:02.002574Z",
+      "supplier_risk_scores": {
+        "Panasonic Holdings Corp": 0.5135,
+        "Toyota Industries Corp": 0.5242,
+        "Samsung SDI Co Ltd": 0.3833,
+        "SeAH Holdings Corp": 0.2779,
+        "Magna International Inc": 0.3222,
+        "China Steel Corp": 0.4788,
+        "Sempra": 0.3256,
+        "ArcelorMittal SA": 0.3703,
+        "Vale SA": 0.3282,
+        "thyssenkrupp AG": 0.3828,
+        "SKF AB": 0.3745,
+        "Schaeffler AG": 0.3853,
+        "Gestamp Automocion SA": 0.3146,
+        "Autoliv Inc": 0.2892,
+        "CNGR Advanced Material Co Ltd": 0.2939,
+        "Contemporary Amperex Technology Co Ltd": 0.3237,
+        "LG Energy Solution Ltd": 0.3238,
+        "Enchem Co Ltd": 0.2506,
+        "Avient Corp": 0.2323,
+        "Guangdong Delian Group Co Ltd": 0.2491,
+        "Ningbo Shanshan Co Ltd": 0.2474,
+        "AMAG Austria Metall AG": 0.2851,
+        "Wooshin Systems Co Ltd": 0.3103,
+        "Ningbo Huaxiang Electronic Co Ltd": 0.3242,
+        "Hankook Tire & Technology Co Ltd": 0.2841,
+        "Cleveland-Cliffs Inc": 0.2331,
+        "Outokumpu Oyj": 0.261,
+        "Beijing Easpring Material Technology Co Ltd": 0.3054,
+        "L&F Co Ltd": 0.3212,
+        "Wuxi Lead Intelligent Equipment Co Ltd": 0.3357,
+        "Zhejiang Kingland Pipeline & Technologies Co Ltd": 0.2526,
+        "Ningbo Ronbay New Energy Technology Co Ltd": 0.3143,
+        "Ganfeng Lithium Group Co Ltd": 0.226
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.5242,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 16,
+            "3": 117,
+            "4": 157
+          },
+          "total_unique_disrupted_suppliers": 291,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 206,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              3326
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 126.44999999999999,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10691337936590642,
+              "normalized": 0.0215
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016011893379809271,
+              "normalized": 0.0
+            },
+            "tier1_centrality": {
+              "raw": 0.20534109604364764,
+              "normalized": 0.6243
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Panasonic Holdings Corp",
+          "risk_score": 0.5135,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 19,
+            "3": 110,
+            "4": 155
+          },
+          "total_unique_disrupted_suppliers": 285,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 218,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              3536
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 124.5,
+              "normalized": 0.9845
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10970321999276596,
+              "normalized": 0.0786
+            },
+            "downstream_pagerank": {
+              "raw": 0.001701604563096262,
+              "normalized": 0.0284
+            },
+            "tier1_centrality": {
+              "raw": 0.1852122890211305,
+              "normalized": 0.4577
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "China Steel Corp",
+          "risk_score": 0.4788,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 5,
+            "3": 80,
+            "4": 148
+          },
+          "total_unique_disrupted_suppliers": 233,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 259,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              2000
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 95.55,
+              "normalized": 0.7543
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1076623994135383,
+              "normalized": 0.0368
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016049274228813067,
+              "normalized": 0.0011
+            },
+            "tier1_centrality": {
+              "raw": 0.25071194856335377,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Schaeffler AG",
+          "risk_score": 0.3853,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 3,
+            "3": 52,
+            "4": 134
+          },
+          "total_unique_disrupted_suppliers": 189,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 195,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              892
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 75.15,
+              "normalized": 0.592
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10998999712109346,
+              "normalized": 0.0844
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018389645711785227,
+              "normalized": 0.0672
+            },
+            "tier1_centrality": {
+              "raw": 0.19484486679219404,
+              "normalized": 0.5374
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Samsung SDI Co Ltd",
+          "risk_score": 0.3833,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 3,
+            "3": 45,
+            "4": 135
+          },
+          "total_unique_disrupted_suppliers": 183,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 224,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              861
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 72.0,
+              "normalized": 0.567
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1079180021878997,
+              "normalized": 0.042
+            },
+            "downstream_pagerank": {
+              "raw": 0.001720313873587704,
+              "normalized": 0.0337
+            },
+            "tier1_centrality": {
+              "raw": 0.2132409452125323,
+              "normalized": 0.6898
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "thyssenkrupp AG",
+          "risk_score": 0.3828,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 41,
+            "4": 130
+          },
+          "total_unique_disrupted_suppliers": 173,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 177,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              763
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 67.5,
+              "normalized": 0.5312
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10937154243739165,
+              "normalized": 0.0718
+            },
+            "downstream_pagerank": {
+              "raw": 0.001841441488407344,
+              "normalized": 0.0679
+            },
+            "tier1_centrality": {
+              "raw": 0.22058657347719085,
+              "normalized": 0.7506
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "SKF AB",
+          "risk_score": 0.3745,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 3,
+            "3": 55,
+            "4": 136
+          },
+          "total_unique_disrupted_suppliers": 194,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 154,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              736
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 77.35,
+              "normalized": 0.6095
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10808702527862583,
+              "normalized": 0.0455
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018896310600629142,
+              "normalized": 0.0815
+            },
+            "tier1_centrality": {
+              "raw": 0.17512808191831922,
+              "normalized": 0.3742
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.3703,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 31,
+            "4": 138
+          },
+          "total_unique_disrupted_suppliers": 171,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 206,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              708
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 65.3,
+              "normalized": 0.5137
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10809635512681068,
+              "normalized": 0.0457
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018356331821429352,
+              "normalized": 0.0662
+            },
+            "tier1_centrality": {
+              "raw": 0.2142915861159054,
+              "normalized": 0.6985
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Wuxi Lead Intelligent Equipment Co Ltd",
+          "risk_score": 0.3357,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 12
+          },
+          "total_unique_disrupted_suppliers": 13,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 19,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              13
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 4.699999999999999,
+              "normalized": 0.0318
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.15470676727729069,
+              "normalized": 1.0
+            },
+            "downstream_pagerank": {
+              "raw": 0.004140872037340266,
+              "normalized": 0.7175
+            },
+            "tier1_centrality": {
+              "raw": 0.15066071545938264,
+              "normalized": 0.1716
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Vale SA",
+          "risk_score": 0.3282,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 27,
+            "4": 126
+          },
+          "total_unique_disrupted_suppliers": 154,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 156,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              456
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 58.349999999999994,
+              "normalized": 0.4584
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10586552190677083,
+              "normalized": 0.0
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017238587400905815,
+              "normalized": 0.0347
+            },
+            "tier1_centrality": {
+              "raw": 0.194395467427803,
+              "normalized": 0.5337
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Sempra",
+          "risk_score": 0.3256,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 15,
+            "4": 102
+          },
+          "total_unique_disrupted_suppliers": 119,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 127,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              259
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 44.699999999999996,
+              "normalized": 0.3499
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.11506514042332464,
+              "normalized": 0.1884
+            },
+            "downstream_pagerank": {
+              "raw": 0.0022746283858991662,
+              "normalized": 0.1903
+            },
+            "tier1_centrality": {
+              "raw": 0.19960123069069993,
+              "normalized": 0.5768
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Ningbo Huaxiang Electronic Co Ltd",
+          "risk_score": 0.3242,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 17
+          },
+          "total_unique_disrupted_suppliers": 19,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 33,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              30
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 6.949999999999999,
+              "normalized": 0.0497
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.15184046778915294,
+              "normalized": 0.9413
+            },
+            "downstream_pagerank": {
+              "raw": 0.0033233341238747987,
+              "normalized": 0.4865
+            },
+            "tier1_centrality": {
+              "raw": 0.14332414191610474,
+              "normalized": 0.1109
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "LG Energy Solution Ltd",
+          "risk_score": 0.3238,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 20,
+            "4": 117
+          },
+          "total_unique_disrupted_suppliers": 139,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 182,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              462
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 52.449999999999996,
+              "normalized": 0.4115
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.11369859049648129,
+              "normalized": 0.1604
+            },
+            "downstream_pagerank": {
+              "raw": 0.0019318397186489846,
+              "normalized": 0.0934
+            },
+            "tier1_centrality": {
+              "raw": 0.17855376359745176,
+              "normalized": 0.4026
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Contemporary Amperex Technology Co Ltd",
+          "risk_score": 0.3237,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 12,
+            "4": 114
+          },
+          "total_unique_disrupted_suppliers": 127,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 156,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              282
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 46.65,
+              "normalized": 0.3654
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.11142188557458801,
+              "normalized": 0.1138
+            },
+            "downstream_pagerank": {
+              "raw": 0.001983597062166935,
+              "normalized": 0.108
+            },
+            "tier1_centrality": {
+              "raw": 0.20923785099717598,
+              "normalized": 0.6566
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Magna International Inc",
+          "risk_score": 0.3222,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 14,
+            "4": 118
+          },
+          "total_unique_disrupted_suppliers": 134,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 160,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              455
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 49.8,
+              "normalized": 0.3905
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.11468157543896433,
+              "normalized": 0.1805
+            },
+            "downstream_pagerank": {
+              "raw": 0.0020114857478715133,
+              "normalized": 0.1159
+            },
+            "tier1_centrality": {
+              "raw": 0.18068972481576645,
+              "normalized": 0.4202
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "L&F Co Ltd",
+          "risk_score": 0.3212,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 24
+          },
+          "total_unique_disrupted_suppliers": 26,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 38,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              34
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 9.399999999999999,
+              "normalized": 0.0692
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.150762466784631,
+              "normalized": 0.9192
+            },
+            "downstream_pagerank": {
+              "raw": 0.0038369091224365946,
+              "normalized": 0.6316
+            },
+            "tier1_centrality": {
+              "raw": 0.13680613528677776,
+              "normalized": 0.0569
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Gestamp Automocion SA",
+          "risk_score": 0.3146,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 27,
+            "4": 135
+          },
+          "total_unique_disrupted_suppliers": 163,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 166,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              507
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 61.5,
+              "normalized": 0.4835
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10872183931685836,
+              "normalized": 0.0585
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018183348711422111,
+              "normalized": 0.0613
+            },
+            "tier1_centrality": {
+              "raw": 0.16091208330329476,
+              "normalized": 0.2565
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Ningbo Ronbay New Energy Technology Co Ltd",
+          "risk_score": 0.3143,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 8
+          },
+          "total_unique_disrupted_suppliers": 8,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 17,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              11
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.8,
+              "normalized": 0.0167
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1490354932522828,
+              "normalized": 0.8839
+            },
+            "downstream_pagerank": {
+              "raw": 0.005140762077561688,
+              "normalized": 1.0
+            },
+            "tier1_centrality": {
+              "raw": 0.13119743842097986,
+              "normalized": 0.0105
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Wooshin Systems Co Ltd",
+          "risk_score": 0.3103,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 17,
+            "4": 120
+          },
+          "total_unique_disrupted_suppliers": 137,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 166,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              498
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 50.5,
+              "normalized": 0.396
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.11678155960031116,
+              "normalized": 0.2235
+            },
+            "downstream_pagerank": {
+              "raw": 0.0019751091653154545,
+              "normalized": 0.1056
+            },
+            "tier1_centrality": {
+              "raw": 0.15360502356329786,
+              "normalized": 0.196
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Beijing Easpring Material Technology Co Ltd",
+          "risk_score": 0.3054,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 27
+          },
+          "total_unique_disrupted_suppliers": 28,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 39,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              33
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 9.95,
+              "normalized": 0.0736
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.14428448232476004,
+              "normalized": 0.7866
+            },
+            "downstream_pagerank": {
+              "raw": 0.003452906577936142,
+              "normalized": 0.5231
+            },
+            "tier1_centrality": {
+              "raw": 0.1479624882649927,
+              "normalized": 0.1493
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "CNGR Advanced Material Co Ltd",
+          "risk_score": 0.2939,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 4,
+            "4": 45
+          },
+          "total_unique_disrupted_suppliers": 50,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 75,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              90
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 18.5,
+              "normalized": 0.1416
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.131812282229272,
+              "normalized": 0.5312
+            },
+            "downstream_pagerank": {
+              "raw": 0.002988234694077671,
+              "normalized": 0.3919
+            },
+            "tier1_centrality": {
+              "raw": 0.1669877874179906,
+              "normalized": 0.3068
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Autoliv Inc",
+          "risk_score": 0.2892,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 17,
+            "4": 102
+          },
+          "total_unique_disrupted_suppliers": 121,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 134,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              370
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 45.699999999999996,
+              "normalized": 0.3579
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.11456627197757811,
+              "normalized": 0.1781
+            },
+            "downstream_pagerank": {
+              "raw": 0.0021144546409870304,
+              "normalized": 0.145
+            },
+            "tier1_centrality": {
+              "raw": 0.15519250855253514,
+              "normalized": 0.2091
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "AMAG Austria Metall AG",
+          "risk_score": 0.2851,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 17,
+            "4": 108
+          },
+          "total_unique_disrupted_suppliers": 125,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 159,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              326
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 46.3,
+              "normalized": 0.3626
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.11651744897551837,
+              "normalized": 0.2181
+            },
+            "downstream_pagerank": {
+              "raw": 0.0017285730387148208,
+              "normalized": 0.036
+            },
+            "tier1_centrality": {
+              "raw": 0.13855713137914513,
+              "normalized": 0.0714
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Hankook Tire & Technology Co Ltd",
+          "risk_score": 0.2841,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 27
+          },
+          "total_unique_disrupted_suppliers": 28,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 49,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              41
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 9.95,
+              "normalized": 0.0736
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1388238363121012,
+              "normalized": 0.6748
+            },
+            "downstream_pagerank": {
+              "raw": 0.0033909367614192317,
+              "normalized": 0.5056
+            },
+            "tier1_centrality": {
+              "raw": 0.1492280215753521,
+              "normalized": 0.1597
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "SeAH Holdings Corp",
+          "risk_score": 0.2779,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 16,
+            "4": 101
+          },
+          "total_unique_disrupted_suppliers": 119,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 135,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              344
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 44.849999999999994,
+              "normalized": 0.3511
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1094530051801637,
+              "normalized": 0.0735
+            },
+            "downstream_pagerank": {
+              "raw": 0.0020741952827107563,
+              "normalized": 0.1336
+            },
+            "tier1_centrality": {
+              "raw": 0.15511366359849446,
+              "normalized": 0.2085
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Outokumpu Oyj",
+          "risk_score": 0.261,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 27
+          },
+          "total_unique_disrupted_suppliers": 28,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 34,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              30
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 9.95,
+              "normalized": 0.0736
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.137077482103588,
+              "normalized": 0.639
+            },
+            "downstream_pagerank": {
+              "raw": 0.003109438677326325,
+              "normalized": 0.4261
+            },
+            "tier1_centrality": {
+              "raw": 0.1299345207440184,
+              "normalized": 0.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Zhejiang Kingland Pipeline & Technologies Co Ltd",
+          "risk_score": 0.2526,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 2
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 6,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              2
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.7,
+              "normalized": 0.0
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.1399092239228625,
+              "normalized": 0.697
+            },
+            "downstream_pagerank": {
+              "raw": 0.0032139850363376715,
+              "normalized": 0.4556
+            },
+            "tier1_centrality": {
+              "raw": 0.13689586205667206,
+              "normalized": 0.0576
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Enchem Co Ltd",
+          "risk_score": 0.2506,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 45
+          },
+          "total_unique_disrupted_suppliers": 48,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 60,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              60
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 17.25,
+              "normalized": 0.1316
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.12637034927004748,
+              "normalized": 0.4198
+            },
+            "downstream_pagerank": {
+              "raw": 0.003032927096531616,
+              "normalized": 0.4045
+            },
+            "tier1_centrality": {
+              "raw": 0.14584179134415637,
+              "normalized": 0.1317
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Guangdong Delian Group Co Ltd",
+          "risk_score": 0.2491,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 4,
+            "4": 60
+          },
+          "total_unique_disrupted_suppliers": 64,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 95,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              124
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 23.0,
+              "normalized": 0.1773
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.12445088985915971,
+              "normalized": 0.3805
+            },
+            "downstream_pagerank": {
+              "raw": 0.0024125540410755964,
+              "normalized": 0.2292
+            },
+            "tier1_centrality": {
+              "raw": 0.13409638921133232,
+              "normalized": 0.0345
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Ningbo Shanshan Co Ltd",
+          "risk_score": 0.2474,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 31
+          },
+          "total_unique_disrupted_suppliers": 34,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 53,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              53
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 12.35,
+              "normalized": 0.0926
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.12802372097560397,
+              "normalized": 0.4537
+            },
+            "downstream_pagerank": {
+              "raw": 0.002811598436855171,
+              "normalized": 0.342
+            },
+            "tier1_centrality": {
+              "raw": 0.15016265356016179,
+              "normalized": 0.1675
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Cleveland-Cliffs Inc",
+          "risk_score": 0.2331,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 58
+          },
+          "total_unique_disrupted_suppliers": 61,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 72,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              87
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 21.799999999999997,
+              "normalized": 0.1678
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.11942661483398893,
+              "normalized": 0.2777
+            },
+            "downstream_pagerank": {
+              "raw": 0.002314183752496788,
+              "normalized": 0.2014
+            },
+            "tier1_centrality": {
+              "raw": 0.1437407279947699,
+              "normalized": 0.1143
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Avient Corp",
+          "risk_score": 0.2323,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 7,
+            "4": 47
+          },
+          "total_unique_disrupted_suppliers": 54,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 76,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              115
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 19.95,
+              "normalized": 0.1531
+            },
+            "dependency_ratio": {
+              "raw": 0.03066914498141264,
+              "normalized": 0.0307
+            },
+            "downstream_centrality": {
+              "raw": 0.12274317592374225,
+              "normalized": 0.3456
+            },
+            "downstream_pagerank": {
+              "raw": 0.0026139195593078662,
+              "normalized": 0.2861
+            },
+            "tier1_centrality": {
+              "raw": 0.13233725587241837,
+              "normalized": 0.0199
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Ganfeng Lithium Group Co Ltd",
+          "risk_score": 0.226,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 3
+          },
+          "total_unique_disrupted_suppliers": 3,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 11,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              5
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.0499999999999998,
+              "normalized": 0.0028
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.13269296846924677,
+              "normalized": 0.5493
+            },
+            "downstream_pagerank": {
+              "raw": 0.002691824352189936,
+              "normalized": 0.3081
+            },
+            "tier1_centrality": {
+              "raw": 0.1392963293175584,
+              "normalized": 0.0775
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "Toyota Industries Corp",
+          "risk_score": 0.5242,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 126.44999999999999,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10691337936590642,
+              "normalized": 0.0215
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016011893379809271,
+              "normalized": 0.0
+            },
+            "tier1_centrality": {
+              "raw": 0.20534109604364764,
+              "normalized": 0.6243
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 16,
+            "3": 117,
+            "4": 157
+          }
+        },
+        {
+          "company": "Panasonic Holdings Corp",
+          "risk_score": 0.5135,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 124.5,
+              "normalized": 0.9845
+            },
+            "dependency_ratio": {
+              "raw": 0.029767441860465118,
+              "normalized": 0.0298
+            },
+            "downstream_centrality": {
+              "raw": 0.10970321999276596,
+              "normalized": 0.0786
+            },
+            "downstream_pagerank": {
+              "raw": 0.001701604563096262,
+              "normalized": 0.0284
+            },
+            "tier1_centrality": {
+              "raw": 0.1852122890211305,
+              "normalized": 0.4577
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 19,
+            "3": 110,
+            "4": 155
+          }
+        }
+      ],
+      "expected_critical_suppliers": [
+        "Toyota Industries Corp",
+        "Panasonic Holdings Corp"
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 33,
+        "high_risk_suppliers": 2,
+        "medium_risk_suppliers": 1,
+        "low_risk_suppliers": 30,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5242,
+        "average_risk_score": 0.32255151515151514
+      },
+      "kg_summary": {
+        "monitored_company": "Tesla Inc",
+        "disrupted_countries": [
+          "Japan"
+        ],
+        "summary": {
+          "total_disrupted_chains": 17509,
+          "tier_1_chain_count": 2,
+          "tier_2_chain_count": 67,
+          "tier_3_chain_count": 1172,
+          "tier_4_chain_count": 16268,
+          "unique_disrupted_companies": 159
+        }
+      },
+      "disruption_summary": {
+        "involved": {
+          "countries": [
+            "Japan"
+          ],
+          "companies": [
+            "Toyota Industries Corp"
+          ]
+        }
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "recommendation": "HIGH PRIORITY: 2 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "company_name": "Tesla Inc",
+      "decision_timestamp": "2026-03-02T00:20:02Z",
+      "decisions": {
+        "Toyota Industries Corp": {
+          "risk_score_raw": 0.5242,
+          "risk_score_rounded": 0.6,
+          "risk_level": "HIGH",
+          "action": "REPLACE_SUPPLIER",
+          "justification": {
+            "risk_analysis": "Risk score 0.6 (rounded from 0.5242) = HIGH; total_unique_disrupted_suppliers = 291 indicating very large downstream exposure.",
+            "exposure_details": {
+              "total_disrupted_nodes": 291,
+              "by_tier": {
+                "tier_1": 1,
+                "tier_2": 16,
+                "tier_3": 117,
+                "tier_4": 157
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "High rounded risk (\u22650.6), very large downstream footprint and tiered exposure including 16 Tier-2/Tier-1-adjacent disruptions plus high Tier-1 centrality (tier1_centrality raw 0.2053) \u2192 REPLACE_SUPPLIER to avoid cascading failures from Japan-centered disruptions."
+          }
+        },
+        "Panasonic Holdings Corp": {
+          "risk_score_raw": 0.5135,
+          "risk_score_rounded": 0.6,
+          "risk_level": "HIGH",
+          "action": "REPLACE_SUPPLIER",
+          "justification": {
+            "risk_analysis": "Risk score 0.6 (rounded from 0.5135) = HIGH; total_unique_disrupted_suppliers = 285 showing deep downstream exposure.",
+            "exposure_details": {
+              "total_disrupted_nodes": 285,
+              "by_tier": {
+                "tier_1": 1,
+                "tier_2": 19,
+                "tier_3": 110,
+                "tier_4": 155
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "High rounded risk (\u22650.6) with 19 Tier-2 disruptions (immediate upstream risk) and high downstream exposure concentrated in Japan \u2192 REPLACE_SUPPLIER to secure alternative battery/component sources and avoid direct impacts to Tesla production."
+          }
+        },
+        "China Steel Corp": {
+          "risk_score_raw": 0.4788,
+          "risk_score_rounded": 0.5,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.5 (rounded from 0.4788) = MEDIUM; total_unique_disrupted_suppliers = 233 showing significant exposure.",
+            "exposure_details": {
+              "total_disrupted_nodes": 233,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 5,
+                "tier_3": 80,
+                "tier_4": 148
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "MEDIUM rounded risk with 5 Tier-2 disruptions and highest tier-1 centrality (tier1_centrality raw 0.2507 normalized to 1.0) \u2192 INCREASE_MONITORING (escalate status checks and contingency sourcing) rather than immediate replacement."
+          }
+        },
+        "Schaeffler AG": {
+          "risk_score_raw": 0.3853,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3853) = LOW; total_unique_disrupted_suppliers = 189.",
+            "exposure_details": {
+              "total_disrupted_nodes": 189,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 3,
+                "tier_3": 52,
+                "tier_4": 134
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Rounded LOW risk and limited Tier-2 exposure (3) \u2192 MAINTAIN_STANDARD with routine monitoring."
+          }
+        },
+        "Samsung SDI Co Ltd": {
+          "risk_score_raw": 0.3833,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3833) = LOW; total_unique_disrupted_suppliers = 183.",
+            "exposure_details": {
+              "total_disrupted_nodes": 183,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 3,
+                "tier_3": 45,
+                "tier_4": 135
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and few Tier-2 disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "thyssenkrupp AG": {
+          "risk_score_raw": 0.3828,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3828) = LOW; total_unique_disrupted_suppliers = 173.",
+            "exposure_details": {
+              "total_disrupted_nodes": 173,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 2,
+                "tier_3": 41,
+                "tier_4": 130
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk with limited Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "SKF AB": {
+          "risk_score_raw": 0.3745,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3745) = LOW; total_unique_disrupted_suppliers = 194.",
+            "exposure_details": {
+              "total_disrupted_nodes": 194,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 3,
+                "tier_3": 55,
+                "tier_4": 136
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Rounded LOW risk and modest Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "ArcelorMittal SA": {
+          "risk_score_raw": 0.3703,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3703) = LOW; total_unique_disrupted_suppliers = 171.",
+            "exposure_details": {
+              "total_disrupted_nodes": 171,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 2,
+                "tier_3": 31,
+                "tier_4": 138
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and limited Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Wuxi Lead Intelligent Equipment Co Ltd": {
+          "risk_score_raw": 0.3357,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3357) = LOW; total_unique_disrupted_suppliers = 13.",
+            "exposure_details": {
+              "total_disrupted_nodes": 13,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 1,
+                "tier_4": 12
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Low absolute exposure and no Tier-2 disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Vale SA": {
+          "risk_score_raw": 0.3282,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3282) = LOW; total_unique_disrupted_suppliers = 154.",
+            "exposure_details": {
+              "total_disrupted_nodes": 154,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 1,
+                "tier_3": 27,
+                "tier_4": 126
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk with minimal Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Sempra": {
+          "risk_score_raw": 0.3256,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3256) = LOW; total_unique_disrupted_suppliers = 119.",
+            "exposure_details": {
+              "total_disrupted_nodes": 119,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 2,
+                "tier_3": 15,
+                "tier_4": 102
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk with limited Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Ningbo Huaxiang Electronic Co Ltd": {
+          "risk_score_raw": 0.3242,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3242) = LOW; total_unique_disrupted_suppliers = 19.",
+            "exposure_details": {
+              "total_disrupted_nodes": 19,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 2,
+                "tier_4": 17
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Low absolute exposure and no Tier-2 disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "LG Energy Solution Ltd": {
+          "risk_score_raw": 0.3238,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3238) = LOW; total_unique_disrupted_suppliers = 139.",
+            "exposure_details": {
+              "total_disrupted_nodes": 139,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 2,
+                "tier_3": 20,
+                "tier_4": 117
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk with limited Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Contemporary Amperex Technology Co Ltd": {
+          "risk_score_raw": 0.3237,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3237) = LOW; total_unique_disrupted_suppliers = 127.",
+            "exposure_details": {
+              "total_disrupted_nodes": 127,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 1,
+                "tier_3": 12,
+                "tier_4": 114
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and minimal Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Magna International Inc": {
+          "risk_score_raw": 0.3222,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3222) = LOW; total_unique_disrupted_suppliers = 134.",
+            "exposure_details": {
+              "total_disrupted_nodes": 134,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 2,
+                "tier_3": 14,
+                "tier_4": 118
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk with few Tier-2 disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Gestamp Automocion SA": {
+          "risk_score_raw": 0.3146,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3146) = LOW; total_unique_disrupted_suppliers = 163.",
+            "exposure_details": {
+              "total_disrupted_nodes": 163,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 1,
+                "tier_3": 27,
+                "tier_4": 135
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and limited Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Ningbo Ronbay New Energy Technology Co Ltd": {
+          "risk_score_raw": 0.3143,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3143) = LOW; total_unique_disrupted_suppliers = 8.",
+            "exposure_details": {
+              "total_disrupted_nodes": 8,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 8
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Low absolute exposure and no Tier-2 disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Wooshin Systems Co Ltd": {
+          "risk_score_raw": 0.3103,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3103) = LOW; total_unique_disrupted_suppliers = 137.",
+            "exposure_details": {
+              "total_disrupted_nodes": 137,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 17,
+                "tier_4": 120
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and no Tier-2 disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Beijing Easpring Material Technology Co Ltd": {
+          "risk_score_raw": 0.3054,
+          "risk_score_rounded": 0.4,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.4 (rounded from 0.3054) = LOW; total_unique_disrupted_suppliers = 28.",
+            "exposure_details": {
+              "total_disrupted_nodes": 28,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 1,
+                "tier_4": 27
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk, distant tier disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "CNGR Advanced Material Co Ltd": {
+          "risk_score_raw": 0.2939,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2939) = LOW; total_unique_disrupted_suppliers = 50.",
+            "exposure_details": {
+              "total_disrupted_nodes": 50,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 1,
+                "tier_3": 4,
+                "tier_4": 45
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Rounded LOW risk and limited Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Autoliv Inc": {
+          "risk_score_raw": 0.2892,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2892) = LOW; total_unique_disrupted_suppliers = 121.",
+            "exposure_details": {
+              "total_disrupted_nodes": 121,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 2,
+                "tier_3": 17,
+                "tier_4": 102
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk; maintain standard operations with routine checks."
+          }
+        },
+        "AMAG Austria Metall AG": {
+          "risk_score_raw": 0.2851,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2851) = LOW; total_unique_disrupted_suppliers = 125.",
+            "exposure_details": {
+              "total_disrupted_nodes": 125,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 17,
+                "tier_4": 108
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and no Tier-2 disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Hankook Tire & Technology Co Ltd": {
+          "risk_score_raw": 0.2841,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2841) = LOW; total_unique_disrupted_suppliers = 28.",
+            "exposure_details": {
+              "total_disrupted_nodes": 28,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 1,
+                "tier_4": 27
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Low exposure and distant disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "SeAH Holdings Corp": {
+          "risk_score_raw": 0.2779,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2779) = LOW; total_unique_disrupted_suppliers = 119.",
+            "exposure_details": {
+              "total_disrupted_nodes": 119,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 2,
+                "tier_3": 16,
+                "tier_4": 101
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and limited Tier-2 exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Outokumpu Oyj": {
+          "risk_score_raw": 0.261,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.261) = LOW; total_unique_disrupted_suppliers = 28.",
+            "exposure_details": {
+              "total_disrupted_nodes": 28,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 1,
+                "tier_4": 27
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Low exposure and no Tier-2 issues \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Zhejiang Kingland Pipeline & Technologies Co Ltd": {
+          "risk_score_raw": 0.2526,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2526) = LOW; total_unique_disrupted_suppliers = 2.",
+            "exposure_details": {
+              "total_disrupted_nodes": 2,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 2
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Minimal exposure \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Enchem Co Ltd": {
+          "risk_score_raw": 0.2506,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2506) = LOW; total_unique_disrupted_suppliers = 48.",
+            "exposure_details": {
+              "total_disrupted_nodes": 48,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 3,
+                "tier_4": 45
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and distant disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Guangdong Delian Group Co Ltd": {
+          "risk_score_raw": 0.2491,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2491) = LOW; total_unique_disrupted_suppliers = 64.",
+            "exposure_details": {
+              "total_disrupted_nodes": 64,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 4,
+                "tier_4": 60
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk and distant tier disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Ningbo Shanshan Co Ltd": {
+          "risk_score_raw": 0.2474,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2474) = LOW; total_unique_disrupted_suppliers = 34.",
+            "exposure_details": {
+              "total_disrupted_nodes": 34,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 3,
+                "tier_4": 31
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Cleveland-Cliffs Inc": {
+          "risk_score_raw": 0.2331,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2331) = LOW; total_unique_disrupted_suppliers = 61.",
+            "exposure_details": {
+              "total_disrupted_nodes": 61,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 3,
+                "tier_4": 58
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Low downstream exposure and distant disruptions \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Avient Corp": {
+          "risk_score_raw": 0.2323,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.2323) = LOW; total_unique_disrupted_suppliers = 54.",
+            "exposure_details": {
+              "total_disrupted_nodes": 54,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 7,
+                "tier_4": 47
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "LOW rounded risk \u2192 MAINTAIN_STANDARD."
+          }
+        },
+        "Ganfeng Lithium Group Co Ltd": {
+          "risk_score_raw": 0.226,
+          "risk_score_rounded": 0.3,
+          "risk_level": "LOW",
+          "action": "MAINTAIN_STANDARD",
+          "justification": {
+            "risk_analysis": "Risk score 0.3 (rounded from 0.226) = LOW; total_unique_disrupted_suppliers = 3.",
+            "exposure_details": {
+              "total_disrupted_nodes": 3,
+              "by_tier": {
+                "tier_1": 0,
+                "tier_2": 0,
+                "tier_3": 0,
+                "tier_4": 3
+              },
+              "top_disrupted_countries": [
+                "Japan"
+              ]
+            },
+            "action_rationale": "Minimal exposure \u2192 MAINTAIN_STANDARD."
+          }
+        }
+      },
+      "decision_report": {
+        "executive_summary": "Based on analysis of ALL Tier-1 suppliers: 2 REPLACE_SUPPLIER (rounded risk \u22650.6), 1 INCREASE_MONITORING (rounded risk 0.45-0.59), 30 MAINTAIN_STANDARD (rounded risk <0.45).",
+        "action_summary": {
+          "total_tier1_suppliers_analyzed": 33,
+          "replace_supplier_count": 2,
+          "increase_monitoring_count": 1,
+          "maintain_standard_count": 30,
+          "critical_suppliers": [
+            "Toyota Industries Corp",
+            "Panasonic Holdings Corp"
+          ],
+          "key_statistics": "All 33 Tier-1 suppliers assessed. Aggregate immediate disrupted Tier-2/3/4 nodes are reflected in each supplier profile; top Japan exposure concentrated in Toyota and Panasonic profiles."
+        }
+      },
+      "risk_summary": {
+        "total_suppliers_analyzed": 33,
+        "high_risk_suppliers": 2,
+        "medium_risk_suppliers": 1,
+        "recommendation": "REPLACE_SUPPLIER for Toyota Industries Corp and Panasonic Holdings Corp; INCREASE_MONITORING for China Steel Corp; MAINTAIN_STANDARD for the remainder.",
+        "attention_flag": true
+      }
+    }
+  },
+  "risk_scores_count": 33,
+  "success": true,
+  "timestamp": "2026-03-02T00:25:09.834228"
+}

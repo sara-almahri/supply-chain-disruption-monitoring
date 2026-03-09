@@ -1,0 +1,101 @@
+{
+  "disruption_analysis": {
+    "type": "Geopolitical",
+    "involved": {
+      "countries": [
+        "North Korea"
+      ],
+      "industries": [
+        "Aerospace"
+      ],
+      "companies": [
+        "North Korea Aerospace Industries"
+      ]
+    },
+    "summary": "Geopolitical in North Korea affecting Aerospace. Found 1 affected companies in Mercedes-Benz Group AG's supply chain."
+  },
+  "kg_results": {
+    "tier_1": [],
+    "tier_2": [],
+    "tier_3": [],
+    "tier_4": [],
+    "monitored_company": "Mercedes-Benz Group AG",
+    "disrupted_countries": [
+      "North Korea"
+    ],
+    "summary": {
+      "total_disrupted_chains": 0,
+      "tier_1_count": 0,
+      "tier_2_count": 0,
+      "tier_3_count": 0,
+      "tier_4_count": 0
+    }
+  },
+  "risk_assessment": {
+    "company_name": "Mercedes-Benz Group AG",
+    "generated_at": "2025-11-21T16:44:12.829800Z",
+    "supplier_risk_scores": {},
+    "tier1_risk_profiles": [],
+    "critical_suppliers": [],
+    "expected_critical_suppliers": [],
+    "risk_metrics_summary": {
+      "total_tier1_suppliers": 0,
+      "high_risk_suppliers": 0,
+      "medium_risk_suppliers": 0,
+      "low_risk_suppliers": 0,
+      "risk_thresholds": {
+        "high": 0.6,
+        "medium": 0.45,
+        "low": 0.0
+      },
+      "highest_risk_score": 0.0,
+      "average_risk_score": 0.0
+    },
+    "kg_summary": {
+      "monitored_company": "Mercedes-Benz Group AG",
+      "disrupted_countries": [
+        "North Korea"
+      ],
+      "summary": {
+        "total_disrupted_chains": 0,
+        "tier_1_chain_count": 0,
+        "tier_2_chain_count": 0,
+        "tier_3_chain_count": 0,
+        "tier_4_chain_count": 0,
+        "unique_disrupted_companies": 0
+      }
+    },
+    "disruption_summary": {
+      "type": "Geopolitical",
+      "involved": {
+        "countries": [
+          "North Korea"
+        ],
+        "industries": [
+          "Aerospace"
+        ],
+        "companies": [
+          "North Korea Aerospace Industries"
+        ]
+      },
+      "summary": "Geopolitical in North Korea affecting Aerospace. Found 1 affected companies in Mercedes-Benz Group AG's supply chain."
+    },
+    "methodology": {
+      "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+      "metrics": {
+        "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+        "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+        "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+        "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+        "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+      },
+      "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+    },
+    "recommendation": "LOW RISK: No Tier-1 suppliers exceed medium-risk thresholds. Maintain standard monitoring cadence."
+  },
+  "scenario_metadata": {
+    "scenario_id": "MERC_SC008",
+    "is_true_positive": false,
+    "target_tier": 1
+  }
+}

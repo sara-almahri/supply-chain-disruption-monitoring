@@ -1,0 +1,123 @@
+{
+  "scenario_id": "TSLA_SC008",
+  "model": "gpt-4.1",
+  "run_index": 1,
+  "runtime_seconds": 31.940590143203735,
+  "agent_outputs": {
+    "disruption_analysis": {
+      "type": "Geopolitical",
+      "involved": {
+        "countries": [
+          "North Korea"
+        ],
+        "industries": [
+          "Aerospace"
+        ],
+        "companies": [
+          "North Korea Aerospace Industries"
+        ]
+      },
+      "questions": [],
+      "summary": "A geopolitical disruption in North Korea has impacted the Aerospace industry, specifically affecting North Korea Aerospace Industries. and, including Tesla Inc's supply chain network."
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": [],
+      "monitored_company": "Tesla Inc",
+      "disrupted_countries": [
+        "North Korea"
+      ],
+      "summary": {
+        "total_disrupted_chains": 0,
+        "tier_1_count": 0,
+        "tier_2_count": 0,
+        "tier_3_count": 0,
+        "tier_4_count": 0
+      }
+    },
+    "risk_assessment": {
+      "company_name": "Tesla Inc",
+      "generated_at": "2026-03-01T21:15:59.692985Z",
+      "supplier_risk_scores": {},
+      "tier1_risk_profiles": [],
+      "critical_suppliers": [],
+      "expected_critical_suppliers": [],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 0,
+        "high_risk_suppliers": 0,
+        "medium_risk_suppliers": 0,
+        "low_risk_suppliers": 0,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.0,
+        "average_risk_score": 0.0
+      },
+      "kg_summary": {
+        "monitored_company": "Tesla Inc",
+        "disrupted_countries": [
+          "North Korea"
+        ],
+        "summary": {
+          "total_disrupted_chains": 0,
+          "tier_1_chain_count": 0,
+          "tier_2_chain_count": 0,
+          "tier_3_chain_count": 0,
+          "tier_4_chain_count": 0,
+          "unique_disrupted_companies": 0
+        }
+      },
+      "disruption_summary": {
+        "involved": {
+          "countries": [
+            "North Korea"
+          ],
+          "companies": [
+            "North Korea Aerospace Industries"
+          ]
+        }
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "recommendation": "LOW RISK: No Tier-1 suppliers exceed medium-risk thresholds. Maintain standard monitoring cadence."
+    },
+    "chief_supply_chain_output": {
+      "company_name": "Tesla Inc",
+      "decision_timestamp": "2026-03-01T21:15:59Z",
+      "decisions": {},
+      "decision_report": {
+        "executive_summary": "Based on analysis of ALL Tier-1 suppliers: 0 REPLACE_SUPPLIER (risk \u22650.6), 0 INCREASE_MONITORING (risk 0.45-0.59), 0 MAINTAIN_STANDARD (risk <0.45, due to zero suppliers present). No Tier-1 suppliers exist in this event; supply chain is unaffected.",
+        "action_summary": {
+          "total_tier1_suppliers_analyzed": "0",
+          "replace_supplier_count": "0",
+          "increase_monitoring_count": "0",
+          "maintain_standard_count": "0",
+          "critical_suppliers": [],
+          "key_statistics": "No Tier-1 suppliers were present or affected. Aggregate exposure: 0 disrupted nodes across all tiers."
+        }
+      },
+      "risk_summary": {
+        "total_suppliers_analyzed": "0",
+        "high_risk_suppliers": "0",
+        "recommendation": "No actions required for Tesla Inc Tier-1 supply chain. Maintain standard monitoring cadence.",
+        "attention_flag": false
+      }
+    }
+  },
+  "risk_scores_count": 0,
+  "success": true,
+  "timestamp": "2026-03-01T21:16:09.524651"
+}

@@ -1,0 +1,130 @@
+{
+  "scenario_id": "TSLA_SC006",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Other",
+      "involved": {
+        "countries": [
+          "Australia"
+        ],
+        "industries": [
+          "Telecommunications",
+          "Metals Mining"
+        ],
+        "companies": [
+          "BHP Group Ltd"
+        ]
+      },
+      "summary": "A major telecommunications disruption in Australia has affected BHP Group Ltd, a significant player in the Metals Mining industry. While to telecommunications infrastructure, it is crucial to assess if Tesla Inc's suppliers, particularly those in Australia or dependent on telecommunications services, might experience indirect effects. This includes potential communication delays or operational inefficiencies that could ripple through the supply chain.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Australia": "high"
+        },
+        "industries": {
+          "Telecommunications": "high",
+          "Metals Mining": "medium"
+        },
+        "companies": {
+          "BHP Group Ltd": "high"
+        }
+      },
+      "validation": {
+        "validated_countries": [],
+        "validated_industries": [],
+        "validated_companies": [],
+        "invalid_entities": [],
+        "validation_confidence": "medium"
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {},
+      "tier1_risk_profiles": [],
+      "critical_suppliers": [],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 0,
+        "high_risk_suppliers": 0,
+        "medium_risk_suppliers": 0,
+        "low_risk_suppliers": 0,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.0,
+        "average_risk_score": 0.0
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "focused",
+      "disruption_summary": {
+        "type": "Other",
+        "involved": {
+          "countries": [
+            "Australia"
+          ],
+          "industries": [
+            "Telecommunications",
+            "Metals Mining"
+          ],
+          "companies": [
+            "BHP Group Ltd"
+          ]
+        },
+        "summary": "A major telecommunications disruption in Australia has affected BHP Group Ltd, a significant player in the Metals Mining industry.",
+        "confidence": {
+          "overall": "medium",
+          "countries": {
+            "Australia": "high"
+          },
+          "industries": {
+            "Telecommunications": "high",
+            "Metals Mining": "medium"
+          },
+          "companies": {
+            "BHP Group Ltd": "high"
+          }
+        }
+      },
+      "recommendation": "LOW RISK: No Tier-1 suppliers exceed medium-risk thresholds. Maintain standard monitoring cadence."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {},
+      "decision_report": {
+        "executive_summary": "A telecommunications disruption in Australia affecting BHP Group Ltd has occurred. This disruption does not currently impact Tesla Inc.'s supply chain directly. No immediate supplier replacements are required.",
+        "action_summary": "All current suppliers should maintain standard operations, with increased monitoring for any future indirect impacts."
+      },
+      "risk_summary": {
+        "total_tier1_suppliers": 0,
+        "high_risk_suppliers": 0,
+        "medium_risk_suppliers": 0,
+        "low_risk_suppliers": 0
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A telecommunications disruption in Australia affecting BHP Group Ltd has occurred, impacting Tesla's networks in deeper supply chain tiers. Although it currently poses a LOW risk, careful monitoring for any indirect impacts, such as communication delays, is essential.",
+        "network_impact_analysis": "The disruption has affected zero companies in Tesla Inc.'s network across Tier-1 to Tier-4, resulting in a LOW immediate risk of propagation to Tesla's operations. Monitoring remains crucial to prevent future risks.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, no suppliers require immediate replacement. Current risk conditions indicate enhanced monitoring and contingency planning as effective strategies."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:53.705085"
+}

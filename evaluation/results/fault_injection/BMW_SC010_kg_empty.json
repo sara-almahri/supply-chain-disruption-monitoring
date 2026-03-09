@@ -1,0 +1,192 @@
+{
+  "scenario_id": "BMW_SC010",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Industrial Disruption",
+      "involved": {
+        "countries": [
+          "Australia"
+        ],
+        "industries": [
+          "Steel"
+        ],
+        "companies": [
+          "BlueScope Steel Ltd"
+        ]
+      },
+      "summary": "A major disruption has occurred in steel production in Australia, affecting BlueScope Steel Ltd.",
+      "confidence": "High"
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/scenario_7_Bayerische_Motoren_Werke_AG_20251122T045144_kg.json",
+      "monitored_company": "Bayerische Motoren Werke AG",
+      "disrupted_countries": [
+        "Australia"
+      ],
+      "chain_counts": {
+        "tier_1": 0,
+        "tier_2": 8,
+        "tier_3": 92,
+        "tier_4": 1364
+      },
+      "total_chains": 1464,
+      "query_strategy": "hybrid"
+    },
+    "risk_assessment": "```json\n{\n \"supplier_risk_scores\": {\n \"ArcelorMittal SA\": 0.584,\n \"Glencore PLC\": 0.5139,\n \"Contemporary Amperex Technology Co Ltd\": 0.4978,\n \"Samsung SDI Co Ltd\": 0.4763,\n \"SK Inc\": 0.4222,\n \"JTEKT Corp\": 0.4211,\n \"LG Chem Ltd\": 0.3943,\n \"Umicore SA\": 0.3882,\n \"Schaeffler AG\": 0.3826,\n \"BASF SE\": 0.3823\n },\n \"tier1_risk_profiles\": [\n {\n \"supplier\": \"ArcelorMittal SA\",\n \"risk_score\": 0.584,\n \"risk_level\": \"HIGH\",\n \"disrupted_counts_by_tier\": { \"1\": 0, \"2\": 2, \"3\": 7, \"4\": 9 },\n \"total_unique_disrupted_suppliers\": 18,\n \"max_disruption_tier\": 4,\n \"downstream_supplier_count\": 42,\n \"top_disrupted_countries\": [(\"Australia\", 72)],\n \"component_breakdown\": {\n \"exposure\": { \"raw\": 8.15, \"normalized\": 1.0 },\n \"dependency_ratio\": { \"raw\": 0.09, \"normalized\": 0.09 },\n \"downstream_centrality\": { \"raw\": 0.11973553674213717, \"normalized\": 0.1081 },\n \"downstream_pagerank\": { \"raw\": 0.002533554526751626, \"normalized\": 0.1144 },\n \"tier1_centrality\": { \"raw\": 0.22014861401282385, \"normalized\": 0.8863 },\n \"depth\": { \"raw\": 4, \"normalized\": 1.0 }\n }\n },\n {\n \"supplier\": \"Glencore PLC\",\n \"risk_score\": 0.5139,\n \"risk_level\": \"HIGH\",\n \"disrupted_counts_by_tier\": { \"1\": 0, \"2\": 4, \"3\": 1, \"4\": 7 },\n \"total_unique_disrupted_suppliers\": 12,\n \"max_disruption_tier\": 4,\n \"downstream_supplier_count\": 32,\n \"top_disrupted_countries\": [(\"Australia\", 66)],\n \"component_breakdown\": {\n \"exposure\": { \"raw\": 5.949999999999999, \"normalized\": 0.7179 },\n \"dependency_ratio\": { \"raw\": 0.09, \"normalized\": 0.09 },\n \"downstream_centrality\": { \"raw\": 0.11799622298320507, \"normalized\": 0.0929 },\n \"downstream_pagerank\": { \"raw\": 0.003240685501788076, \"normalized\": 0.2031 },\n \"tier1_centrality\": { \"raw\": 0.23160173556807012, \"normalized\": 0.9953 },\n \"depth\": { \"raw\": 4, \"normalized\": 1.0 }\n }\n }\n // other supplier profiles\n ],\n \"critical_suppliers\": [\n {\n \"company\": \"ArcelorMittal SA\",\n \"risk_score\": 0.584,\n \"risk_level\": \"HIGH\",\n \"component_breakdown\": {\n \"exposure\": { \"raw\": 8.15, \"normalized\": 1.0 },\n \"dependency_ratio\": { \"raw\": 0.09, \"normalized\": 0.09 },\n \"downstream_centrality\": { \"raw\": 0.11973553674213717, \"normalized\": 0.1081 },\n \"downstream_pagerank\": { \"raw\": 0.002533554526751626, \"normalized\": 0.1144 },\n \"tier1_centrality\": { \"raw\": 0.22014861401282385, \"normalized\": 0.8863 },\n \"depth\": { \"raw\": 4, \"normalized\": 1.0 }\n },\n \"disrupted_counts_by_tier\": { \"1\": 0, \"2\": 2, \"3\": 7, \"4\": 9 }\n },\n {\n \"company\": \"Glencore PLC\",\n \"risk_score\": 0.5139,\n \"risk_level\": \"HIGH\",\n \"component_breakdown\": {\n \"exposure\": { \"raw\": 5.949999999999999, \"normalized\": 0.7179 },\n \"dependency_ratio\": { \"raw\": 0.09, \"normalized\": 0.09 },\n \"downstream_centrality\": { \"raw\": 0.11799622298320507, \"normalized\": 0.0929 },\n \"downstream_pagerank\": { \"raw\": 0.003240685501788076, \"normalized\": 0.2031 },\n \"tier1_centrality\": { \"raw\": 0.23160173556807012, \"normalized\": 0.9953 },\n \"depth\": { \"raw\": 4, \"normalized\": 1.0 }\n },\n \"disrupted_counts_by_tier\": { \"1\": 0, \"2\": 4, \"3\": 1, \"4\": 7 }\n }\n ],\n \"risk_metrics_summary\": {\n \"total_tier1_suppliers\": 99,\n \"high_risk_suppliers\": 2,\n \"medium_risk_suppliers\": 4,\n \"low_risk_suppliers\": 93,\n \"risk_thresholds\": { \"high\": 0.6, \"medium\": 0.45, \"low\": 0.0 },\n \"highest_risk_score\": 0.584,\n \"average_risk_score\": 0.31025858585858584\n },\n \"methodology\": {\n \"focus\": \"Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.\",\n \"metrics\": {\n \"Disruption Exposure\": \"Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).\",\n \"Dependency Ratio\": \"Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).\",\n \"Downstream Criticality\": \"Average centrality/PageRank scores of disrupted downstream suppliers.\",\n \"Tier-1 Centrality\": \"Importance of the Tier-1 node within the monitored company's network.\",\n \"Depth\": \"Maximum tier at which disruptions are observed in the supplier's chain.\"\n },\n \"risk_formula\": \"Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth.\"\n },\n \"recommendation\": \"HIGH PRIORITY: 2 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing.\"\n}\n```",
+    "chief_supply_chain_output": {
+      "decisions": {
+        "ArcelorMittal SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.584,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Glencore PLC": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5139,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Contemporary Amperex Technology Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4978,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Samsung SDI Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4763,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "SK Inc": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4222,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "JTEKT Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4211,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "LG Chem Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3943,
+          "justification": {
+            "summary": "Risk score of 0.4 (LOW) requires MAINTAIN_STANDARD",
+            "key_factors": [
+              "Risk level: 0.4",
+              "Action: MAINTAIN_STANDARD",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Umicore SA": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3882,
+          "justification": {
+            "summary": "Risk score of 0.4 (LOW) requires MAINTAIN_STANDARD",
+            "key_factors": [
+              "Risk level: 0.4",
+              "Action: MAINTAIN_STANDARD",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Schaeffler AG": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3826,
+          "justification": {
+            "summary": "Risk score of 0.4 (LOW) requires MAINTAIN_STANDARD",
+            "key_factors": [
+              "Risk level: 0.4",
+              "Action: MAINTAIN_STANDARD",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "BASF SE": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3823,
+          "justification": {
+            "summary": "Risk score of 0.4 (LOW) requires MAINTAIN_STANDARD",
+            "key_factors": [
+              "Risk level: 0.4",
+              "Action: MAINTAIN_STANDARD",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        }
+      },
+      "decision_report": "Decision framework used: Balanced. Actions include replacing high-risk suppliers and increasing monitoring for medium-risk suppliers.",
+      "risk_summary": {
+        "total_tier1_suppliers": 99,
+        "high_risk_suppliers": 2,
+        "medium_risk_suppliers": 4,
+        "low_risk_suppliers": 93,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.584,
+        "average_risk_score": 0.31025858585858584
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A industrial disruption has occurred in Australia affecting the Steel industry, with major impacts on companies including BlueScope Steel Ltd. For Bayerische Motoren Werke AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Bayerische Motoren Werke AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Bayerische Motoren Werke AG should immediately initiate replacement procedures for the following Tier-1 suppliers: ArcelorMittal SA, Glencore PLC. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Bayerische Motoren Werke AG's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Bayerische Motoren Werke AG's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:50.638968"
+}

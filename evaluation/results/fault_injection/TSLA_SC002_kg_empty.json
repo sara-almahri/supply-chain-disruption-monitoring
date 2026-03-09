@@ -1,0 +1,613 @@
+{
+  "scenario_id": "TSLA_SC002",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Cayman Islands"
+        ],
+        "industries": [
+          "Automotive"
+        ],
+        "companies": [
+          "Eurocharm Holdings Co Ltd"
+        ]
+      },
+      "summary": "The economic downturn in the Cayman Islands has led to significant disruptions in the automotive production sector, affecting companies like Eurocharm Holdings Co Ltd. This situation, compounded by government restrictions and financial instability, could impact Tesla Inc if any of its suppliers are directly or indirectly connected to the Cayman Islands. Immediate assessment of Tesla's supply chain dependencies in this region is necessary to mitigate potential disruptions.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Cayman Islands": "high"
+        },
+        "industries": {
+          "Automotive": "high"
+        },
+        "companies": {
+          "Eurocharm Holdings Co Ltd": "high"
+        }
+      },
+      "validation": {
+        "validated_countries": [],
+        "validated_industries": [],
+        "validated_companies": [],
+        "invalid_entities": [],
+        "validation_confidence": "medium"
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/economic_crisis_cayman_001_Tesla_Inc_20251121T210418_kg.json",
+      "monitored_company": "Tesla Inc",
+      "disrupted_countries": [
+        "Cayman Islands"
+      ],
+      "chain_counts": {
+        "tier_1": 0,
+        "tier_2": 1,
+        "tier_3": 9,
+        "tier_4": 117
+      },
+      "total_chains": 127,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "China Steel Corp": 0.6628,
+        "AMAG Austria Metall AG": 0.5258,
+        "Panasonic Holdings Corp": 0.5135,
+        "Toyota Industries Corp": 0.5115,
+        "Contemporary Amperex Technology Co Ltd": 0.4452,
+        "Samsung SDI Co Ltd": 0.3987,
+        "thyssenkrupp AG": 0.379,
+        "ArcelorMittal SA": 0.3697,
+        "Vale SA": 0.3568,
+        "Schaeffler AG": 0.3439
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "China Steel Corp",
+          "risk_score": 0.6628,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 8,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 15,
+          "top_disrupted_countries": [
+            [
+              "Cayman Islands",
+              13
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.25,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.017674418604651163,
+              "normalized": 0.0177
+            },
+            "downstream_centrality": {
+              "raw": 0.13451861251711145,
+              "normalized": 0.5419
+            },
+            "downstream_pagerank": {
+              "raw": 0.0012960306814547913,
+              "normalized": 0.283
+            },
+            "tier1_centrality": {
+              "raw": 0.25071194856335377,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "AMAG Austria Metall AG",
+          "risk_score": 0.5258,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 8,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 11,
+          "top_disrupted_countries": [
+            [
+              "Cayman Islands",
+              10
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.25,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.017674418604651163,
+              "normalized": 0.0177
+            },
+            "downstream_centrality": {
+              "raw": 0.11773485508087554,
+              "normalized": 0.3308
+            },
+            "downstream_pagerank": {
+              "raw": 0.0005814332721807247,
+              "normalized": 0.0014
+            },
+            "tier1_centrality": {
+              "raw": 0.13855713137914513,
+              "normalized": 0.0525
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Panasonic Holdings Corp",
+          "risk_score": 0.5135,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 4
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 18,
+          "top_disrupted_countries": [
+            [
+              "Cayman Islands",
+              28
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.15,
+              "normalized": 0.6207
+            },
+            "dependency_ratio": {
+              "raw": 0.017674418604651163,
+              "normalized": 0.0177
+            },
+            "downstream_centrality": {
+              "raw": 0.14994046387661877,
+              "normalized": 0.7359
+            },
+            "downstream_pagerank": {
+              "raw": 0.001320491428673176,
+              "normalized": 0.2927
+            },
+            "tier1_centrality": {
+              "raw": 0.1852122890211305,
+              "normalized": 0.4467
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.5115,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 3
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 12,
+          "top_disrupted_countries": [
+            [
+              "Cayman Islands",
+              11
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.05,
+              "normalized": 0.5862
+            },
+            "dependency_ratio": {
+              "raw": 0.017674418604651163,
+              "normalized": 0.0177
+            },
+            "downstream_centrality": {
+              "raw": 0.14718587619941448,
+              "normalized": 0.7013
+            },
+            "downstream_pagerank": {
+              "raw": 0.001120298265023775,
+              "normalized": 0.2138
+            },
+            "tier1_centrality": {
+              "raw": 0.20534109604364764,
+              "normalized": 0.6167
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Contemporary Amperex Technology Co Ltd",
+          "risk_score": 0.4452,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 6
+          },
+          "total_unique_disrupted_suppliers": 6,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 14,
+          "top_disrupted_countries": [
+            [
+              "Cayman Islands",
+              11
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.1,
+              "normalized": 0.6034
+            },
+            "dependency_ratio": {
+              "raw": 0.017674418604651163,
+              "normalized": 0.0177
+            },
+            "downstream_centrality": {
+              "raw": 0.10712852211530317,
+              "normalized": 0.1974
+            },
+            "downstream_pagerank": {
+              "raw": 0.0013971676751755764,
+              "normalized": 0.3229
+            },
+            "tier1_centrality": {
+              "raw": 0.20923785099717598,
+              "normalized": 0.6496
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Samsung SDI Co Ltd",
+          "risk_score": 0.3987,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 5
+          },
+          "total_unique_disrupted_suppliers": 5,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 10,
+          "top_disrupted_countries": [
+            [
+              "Cayman Islands",
+              5
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.75,
+              "normalized": 0.4828
+            },
+            "dependency_ratio": {
+              "raw": 0.017674418604651163,
+              "normalized": 0.0177
+            },
+            "downstream_centrality": {
+              "raw": 0.11252182179264758,
+              "normalized": 0.2653
+            },
+            "downstream_pagerank": {
+              "raw": 0.0013012710309498437,
+              "normalized": 0.2851
+            },
+            "tier1_centrality": {
+              "raw": 0.2132409452125323,
+              "normalized": 0.6835
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "China Steel Corp",
+          "risk_score": 0.6628,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.25,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.017674418604651163,
+              "normalized": 0.0177
+            },
+            "downstream_centrality": {
+              "raw": 0.13451861251711145,
+              "normalized": 0.5419
+            },
+            "downstream_pagerank": {
+              "raw": 0.0012960306814547913,
+              "normalized": 0.283
+            },
+            "tier1_centrality": {
+              "raw": 0.25071194856335377,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 5
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 20,
+        "high_risk_suppliers": 4,
+        "medium_risk_suppliers": 1,
+        "low_risk_suppliers": 15,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.6628,
+        "average_risk_score": 0.36141999999999996
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "Adaptive Risk Calculation"
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "China Steel Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.6628,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for China Steel Corp",
+            "risk_analysis": {
+              "score": 0.6628,
+              "rounded_score": 0.7,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.7 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "AMAG Austria Metall AG": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5258,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for AMAG Austria Metall AG",
+            "risk_analysis": {
+              "score": 0.5258,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Panasonic Holdings Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5135,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for Panasonic Holdings Corp",
+            "risk_analysis": {
+              "score": 0.5135,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Toyota Industries Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5115,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for Toyota Industries Corp",
+            "risk_analysis": {
+              "score": 0.5115,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Contemporary Amperex Technology Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4452,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for Contemporary Amperex Technology Co Ltd",
+            "risk_analysis": {
+              "score": 0.4452,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Samsung SDI Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3987,
+          "justification": {
+            "summary": "Comprehensive analysis supports MAINTAIN_STANDARD for Samsung SDI Co Ltd",
+            "risk_analysis": {
+              "score": 0.3987,
+              "rounded_score": 0.4,
+              "risk_level": "LOW"
+            },
+            "action_rationale": {
+              "decision": "MAINTAIN_STANDARD",
+              "reasoning": "Risk score 0.4 exceeds threshold for MAINTAIN_STANDARD",
+              "expected_impact": "MAINTAIN_STANDARD will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "thyssenkrupp AG": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.379,
+          "justification": {
+            "summary": "Comprehensive analysis supports MAINTAIN_STANDARD for thyssenkrupp AG",
+            "risk_analysis": {
+              "score": 0.379,
+              "rounded_score": 0.4,
+              "risk_level": "LOW"
+            },
+            "action_rationale": {
+              "decision": "MAINTAIN_STANDARD",
+              "reasoning": "Risk score 0.4 exceeds threshold for MAINTAIN_STANDARD",
+              "expected_impact": "MAINTAIN_STANDARD will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "ArcelorMittal SA": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3697,
+          "justification": {
+            "summary": "Comprehensive analysis supports MAINTAIN_STANDARD for ArcelorMittal SA",
+            "risk_analysis": {
+              "score": 0.3697,
+              "rounded_score": 0.4,
+              "risk_level": "LOW"
+            },
+            "action_rationale": {
+              "decision": "MAINTAIN_STANDARD",
+              "reasoning": "Risk score 0.4 exceeds threshold for MAINTAIN_STANDARD",
+              "expected_impact": "MAINTAIN_STANDARD will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Vale SA": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3568,
+          "justification": {
+            "summary": "Comprehensive analysis supports MAINTAIN_STANDARD for Vale SA",
+            "risk_analysis": {
+              "score": 0.3568,
+              "rounded_score": 0.4,
+              "risk_level": "LOW"
+            },
+            "action_rationale": {
+              "decision": "MAINTAIN_STANDARD",
+              "reasoning": "Risk score 0.4 exceeds threshold for MAINTAIN_STANDARD",
+              "expected_impact": "MAINTAIN_STANDARD will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Schaeffler AG": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3439,
+          "justification": {
+            "summary": "Comprehensive analysis supports MAINTAIN_STANDARD for Schaeffler AG",
+            "risk_analysis": {
+              "score": 0.3439,
+              "rounded_score": 0.4,
+              "risk_level": "LOW"
+            },
+            "action_rationale": {
+              "decision": "MAINTAIN_STANDARD",
+              "reasoning": "Risk score 0.4 exceeds threshold for MAINTAIN_STANDARD",
+              "expected_impact": "MAINTAIN_STANDARD will mitigate supply chain risk for this supplier"
+            }
+          }
+        }
+      },
+      "decision_report": {
+        "executive_summary": "Tesla Inc has implemented a balanced decision framework to address supply chain risks. The critical analysis recommends replacing four high-risk suppliers and increasing monitoring for one medium-risk supplier while maintaining standards for the rest. This strategic approach aims to safeguard operational continuity and bolster resilience.",
+        "action_summary": "Critical suppliers identified for immediate replacement: China Steel Corp, AMAG Austria Metall AG, Panasonic Holdings Corp, Toyota Industries Corp. Increased monitoring advised for Contemporary Amperex Technology Co Ltd, while maintaining current operations for Samsung SDI Co Ltd, thyssenkrupp AG, ArcelorMittal SA, Vale SA, and Schaeffler AG."
+      },
+      "risk_summary": {
+        "total_tier1_suppliers": 10,
+        "high_risk_suppliers": 4,
+        "medium_risk_suppliers": 1,
+        "low_risk_suppliers": 5,
+        "highest_risk_score": 0.6628,
+        "average_risk_score": 0.44518
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A economic crisis has occurred in Cayman Islands affecting the Automotive industry , with major impacts on companies including Eurocharm Holdings Co Ltd . For Tesla Inc, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Tesla Inc's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Tesla Inc should immediately initiate replacement procedures for the following Tier-1 suppliers: China Steel Corp, AMAG Austria Metall AG, Panasonic Holdings Corp, Toyota Industries Corp. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Tesla Inc's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Tesla Inc's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:52.053662"
+}

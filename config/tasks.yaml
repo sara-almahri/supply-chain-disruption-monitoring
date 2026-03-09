@@ -1,0 +1,553 @@
+scrape_news_task:
+  description: |
+    Extract the news article text. The article text is already provided in the task inputs as `extracted_text`.
+    
+    **YOUR TASK:**
+    - The task inputs contain `extracted_text` with the complete news article
+    - Return the `extracted_text` value directly as your output
+    - DO NOT scrape URLs
+    - DO NOT call tools
+    - DO NOT modify the text
+    - Simply return: {extracted_text}
+  expected_output: >
+    Return the extracted_text value from task inputs exactly as provided
+  agent: disruption_monitoring_agent
+  input_keys:
+    - extracted_text
+    - website_url
+  output_keys:
+    - extracted_text
+
+
+analyze_disruptions_task:
+  description: |
+    - You are a **top-tier expert** in **supply chain risk management**, working in an *******{company_name}*********** specializing in **disruptions, ripple effects, and industry interdependencies**. 
+    - You have extensive experience analyzing news and **logically mapping disruptions to supply chains**.
+    - Your job is to logically ask questions in sequence and communicate with the knowledge graph query agent back and fourth ***NOT ONLY ONCE*** to get the answers you need to perform a supply chain impact risk assessment.
+    - You need to ask a question, query the knowledge graph, get the answers, then ask the next question and so on to perform a full comprehensive analysis up to **Tier-3**
+    
+    **CRITICAL: The news article text is in the task inputs as `extracted_text`.**
+    - The `extracted_text` variable contains the complete news article that you need to analyze.
+    - Use this `extracted_text` from the task inputs - it has already been provided to you.
+    - Analyze this news article with **extreme expert-level reasoning** and extract key details in a structured format. 
+    - Use a **step-by-step chain of thought** before generating **structured JSON output**.
+
+    ### **Instructions:**
+    1️. **Understand the article** in extreme detail from a **supply chain risk management** perspective. Remember, you are a supply chain disruption top-tier expert. 
+    2️. **Classify the disruption type** using EXACTLY one of these labels:
+       - "Geopolitical" (wars, sanctions, political instability, territorial disputes)
+       - "Trade Policy" (tariffs, trade wars, import/export restrictions, embargoes)
+       - "Natural Disaster" (earthquakes, floods, hurricanes, volcanic eruptions, wildfires)
+       - "Labour Strike" (worker strikes, union disputes, labour shortages, walkouts)
+       - "Economic Crisis" (recessions, currency collapse, hyperinflation, financial crises)
+       - "Company Bankruptcy" (corporate insolvency, liquidation, financial distress)
+       - "Cyber Attack" (ransomware, data breaches, IT disruptions)
+       - "Pandemic" (disease outbreaks, health emergencies)
+       - "Other" (any disruption not fitting above categories)
+       **CRITICAL:** Read the article carefully. A labour strike is NOT an economic crisis. A trade war is NOT geopolitical. Use the MOST SPECIFIC label that matches.
+    3️. **Generate at least 3 deep supply chain risk manager expert thoughts and at least 3 deep supply action thoughts**, considering **companies, industries, and supply chain tiers affected**.
+    4️. **Extract key impacted elements**: countries, industries, companies.
+    5️. **Formulate logical, systematic and actionable supply chain risk questions** (but **only for queries the database can answer**):
+       - The questions need to be asked systematically, if a disruption has been identified in a region for example, check Tier-1 companies located within that region. 
+       - If companies were found in Tier-1 affected region, list them, but then also futher investigate their Tier-2 dependency as well and check whether they have suppliers in the same affected region. Same thing for Tier-3.
+       - If no companies were found in Tier-1 in the affected region, check Tier-2, and Tier-3 and always remember to list the company it is linked to from its upper Tier as this is important to understand the level of risk each company is exposed to.
+       - For example, if a company on Tier-1 is located in the disrupted region, and also have companies on their tier-2 that are located in the disrupted region, this means it is exposed to higher risk of failing, exposing our company to higher risk too.
+       - **The database contains:** companies, supplier relationships (up to Tier-3), locations, and industries.
+       - **DO NOT generate invalid questions beyond database capabilities.**
+       - ******** the questions need to be direct, do not require high-level interpretation. For example, do not write “Which of our suppliers are based in the EU and could face increased costs due to potential tariffs?” Instead, only ask: “Which of our suppliers (up to tier-3) are based in the EU?” *******
+       - **Avoid abstract questions requiring additional interpretation.**
+       - **Ensure all questions reference {{company_name}} explicitly**.
+       - Example: CORRECT! *"Which of {{company_name}}'s Tier-1 suppliers are based in China?"*
+       - WRONG! **Avoid generic questions like "Which of our suppliers are based in China?"**
+       
+
+    6️. **Output findings in strict JSON format** with the following structure (NO additional text, markdown, or explanations—return JUST the JSON object):
+
+    ***** Example 1: *****
+    Article: "A severe earthquake in Japan has disrupted manufacturing facilities..."
+    - Expert Thought 1: As a supply chain risk expert working in an **automotive company**, I immediately recognize the **critical dependencies our company and the **automotive industry** has on Japanese suppliers**. Japan is a key **supplier of automotive semiconductors, engine components, and lithium-ion batteries**. A major earthquake will likely disrupt **our Tier-1 or Tier-2 suppliers**, potentially leading to **delays in vehicle production**.
+    - Expert Thought 2: I must immediately assess **which of our direct suppliers (Tier-1) are based in Japan** and whether any of them **source subcomponents from affected regions**. A disruption at the **Tier-2 or Tier-3 level can create a cascading failure** affecting our production schedules, especially if alternative suppliers do not exist.
+    - Expert Thought 3: I will first start by tracing our Tier-1 suppliers. Then systematically think of the extended supply chain. If our **Tier-1 suppliers rely on Japanese semiconductor or electronic component manufacturers**, this event could **delay the delivery of critical parts** (e.g., **ECUs, sensors, lithium-ion batteries**), forcing us to either find alternative suppliers or slow down production.
+    - Expert Thought 4: Based on facts and knowledge and my expertise, I know that Toyota, Honda, Nissan and ... are Japanese automotive manufacturers. Those companies may definitely be impacted by the disruption. Also, manufacturers supplying those companies that are based in Japan such as ...... will be impacted!
+
+    *** Disruption Analysis ***
+
+    ```json
+    {{
+      "type": "Natural Disaster",
+      "involved": {{
+        "countries": ["Japan"],
+        "industries": ["Automotive"],
+        "companies": ["Toyota", "Honda", "Denso", "Renesas", "Nissan"]
+      }},
+      "summary": "A severe earthquake in Japan has disrupted key automotive manufacturing facilities. Given Japan’s role as a major supplier of semiconductors, sensors, and lithium-ion batteries, our company must immediately assess its Tier-1 and Tier-2 supplier dependencies to mitigate potential production delays."
+    }}
+    ```
+    - Action Thought 1: I will first start by checking whether we have any direct Tier-1 dependency on companies located in Japan. Based on the answers I get from my first question, I will formulate my second question.
+    - Action Thought 2: If I find Tier-1 comapnies in Japan, I will further map out their extended supply chain to check for Tier-2 and Tier-3 depndency.
+    - Action Thought 3: If I don't find direct  Tier-1 dependency, I will scan all Tier-2 suppliers and check who of them are located in Japan, then, check which company from my Tier-1 do they supply to. I will do the same thing for Tier-3.
+    - Action Thought 4: Ok let me query the knowledge graph agent with my 1st question, and then based on the answer, I formulate my 2nd question.
+    
+    ```questions
+    {{
+      "1st question": "Which of {{company_name}}'s Tier-1 suppliers are in based in Japan?"
+      }}
+  
+  expected_output: >
+    Return ONLY a strict JSON object with keys: type, involved {countries, industries, companies}, questions (array), and summary. No extra text or formatting.
+  agent: disruption_monitoring_agent
+  input_keys:
+    - extracted_text
+    - company_name
+  output_keys:
+    - disruption_analysis
+    - company_name
+
+
+kg_query_task:
+  description: |
+    **CRITICAL: DO NOT ATTEMPT TO RETURN FULL KG DATA**
+    **You are protecting {company_name}.**
+
+    **YOUR SINGLE TASK:**
+    Call `build_and_save_kg` tool EXACTLY ONCE with:
+      - `monitored_company`: "{company_name}"
+      - `disrupted_countries`: extract from `disruption_analysis.involved.countries` (empty list if missing)
+      - `disrupted_companies`: extract from `disruption_analysis.involved.companies` (empty list if missing)
+      - `scenario_id`: "{scenario_id}"
+    
+    The tool will:
+      - Build all disrupted supply chains (Tier-1 to Tier-4)
+      - Save them to disk (to avoid LLM token limits)
+      - Return ONLY metadata (path, counts)
+    
+    **YOUR FINAL ANSWER = the tool's metadata output EXACTLY AS-IS:**
+    {
+      "success": true,
+      "kg_payload_path": "/path/to/saved/kg.json",
+      "monitored_company": "Tesla Inc",
+      "disrupted_countries": ["South Africa"],
+      "chain_counts": {"tier_1": 0, "tier_2": 4, "tier_3": 52, "tier_4": 545},
+      "total_chains": 601,
+      "message": "Built and saved 601 disrupted supply chains to ..."
+    }
+    
+    **DO NOT:**
+      - Call get_saved_kg_for_output (the evaluation script will load the full data)
+      - Attempt to return the full chain data (it's too large for LLM)
+      - Summarize or modify the metadata
+      - Add any commentary
+    
+    **JUST RETURN THE METADATA JSON FROM THE TOOL.**
+   
+  expected_output: >
+    Metadata JSON with keys: success, kg_payload_path, monitored_company, disrupted_countries,
+    chain_counts (dict), total_chains (int), and message (str). The evaluation script will load
+    the full KG data from the saved path.
+  agent: kg_query_agent
+  input_keys:
+    - disruption_analysis
+    - company_name
+    - scenario_id
+  output_keys:
+    - kg_results
+    - company_name
+
+
+product_search_task:
+  description: |
+    For **ALL** companies in `kg_results`, do the following:
+    1. For **EVERY** company in Tier-4, Tier-3, Tier-2, and Tier-1, use the SerperDevTool to search for the products they supply.
+    2. For **EVERY** relationship in the supply chain (e.g., Tier-4 → Tier-3, Tier-3 → Tier-2, Tier-2 → Tier-1, Tier-1 → {company_name}), identify the **product supplied** between the two companies.
+    3. **PRESERVE THE TIER STRUCTURE** from `kg_results` and add the **product supplied** at each step.
+    4. **DO NOT SPLIT OR DISCONNECT THE CHAINS** – ensure each chain is complete from Tier-4 to {company_name}.
+    5. **INCLUDE ALL COMPANIES** in the disruption, ensuring no gaps or missing links.
+
+  expected_output: >
+    A FULL COMPLETE JSON object with keys `tier_1`, `tier_2`, `tier_3`, and `tier_4`, where each tier contains **complete chains** with **products supplied** between companies.
+    Example:
+    {
+      "tier_1": [
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Peak Electronics", "country": "USA", "industry": "Automotive Parts", "product_supplied": "Electronic Control Units"}
+        ],
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Summit Tire Co", "country": "France", "industry": "Automotive Parts", "product_supplied": "Tires"}
+        ]
+      ],
+      "tier_2": [
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Peak Electronics", "country": "USA", "industry": "Automotive Parts", "product_supplied": "Electronic Control Units"},
+          {"company": "Core Semiconductors", "country": "Taiwan", "industry": "Semiconductors", "product_supplied": "Microchips"}
+        ],
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Summit Tire Co", "country": "France", "industry": "Automotive Parts", "product_supplied": "Tires"},
+          {"company": "Eco Rubber Ltd", "country": "Thailand", "industry": "Chemicals", "product_supplied": "Rubber Compounds"}
+        ]
+      ],
+      "tier_3": [
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Peak Electronics", "country": "USA", "industry": "Automotive Parts", "product_supplied": "Electronic Control Units"},
+          {"company": "Core Semiconductors", "country": "Taiwan", "industry": "Semiconductors", "product_supplied": "Microchips"},
+          {"company": "Crystal Materials", "country": "Singapore", "industry": "Chemicals", "product_supplied": "Silicon Wafers"}
+        ],
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Summit Tire Co", "country": "France", "industry": "Automotive Parts", "product_supplied": "Tires"},
+          {"company": "Eco Rubber Ltd", "country": "Thailand", "industry": "Chemicals", "product_supplied": "Rubber Compounds"},
+          {"company": "PureChem Solutions", "country": "Germany", "industry": "Chemicals", "product_supplied": "Synthetic Rubber"}
+        ]
+      ],
+      "tier_4": [
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Peak Electronics", "country": "USA", "industry": "Automotive Parts", "product_supplied": "Electronic Control Units"},
+          {"company": "Core Semiconductors", "country": "Taiwan", "industry": "Semiconductors", "product_supplied": "Microchips"},
+          {"company": "Crystal Materials", "country": "Singapore", "industry": "Chemicals", "product_supplied": "Silicon Wafers"},
+          {"company": "Pacific Metals", "country": "Indonesia", "industry": "Mining", "product_supplied": "Raw Silicon"}
+        ],
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Summit Tire Co", "country": "France", "industry": "Automotive Parts", "product_supplied": "Tires"},
+          {"company": "Eco Rubber Ltd", "country": "Thailand", "industry": "Chemicals", "product_supplied": "Rubber Compounds"},
+          {"company": "PureChem Solutions", "country": "Germany", "industry": "Chemicals", "product_supplied": "Synthetic Rubber"},
+          {"company": "Global Petro Inc", "country": "UAE", "industry": "Oil & Gas", "product_supplied": "Petrochemicals"}
+        ]
+      ]
+    }
+  agent: product_search_agent
+  input_keys:
+    - kg_results
+  output_keys:
+    - product_details
+
+# networkx_plot_task: REMOVED - Now handled by dedicated VisualizationAgent
+# The VisualizationAgent creates CEO-ready professional visualizations
+# networkx_plot_task:
+#   description: |
+#     - For ***ALL*** companies listedin kg_results from Tiers 4 all the way to {company_name} given in kg_results adn product_details output , you should construct a professional robust networkx visualization of full product chain in disruptions. 
+#     - It should include the following:
+#       1. Starting with {company_name}, country
+#       2. Tier-1 suppleirs (with respect to {company_name}) that are in disruptions, their connections to {company_name} throught the **product** they supply, their countries
+#       3. Tier-2 suppleirs (with respect to {company_name}) that are in disruptions, their connections to Tier-1 suppliers throught the **product** they supply, their countries
+#       4. Tier-3 suppleirs (with respect to {company_name}) that are in disruptions, their connections to Tier-2 suppliers throught the **product** they supply, their countries
+#       5. Tier-4 suppleirs (with respect to {company_name}) that are in disruptions, their connections to Tier-3 suppliers throught the **product** they supply, their countries
+#             **** NOTE THAT EACH TIER INCLUDES MULTIPLE COMPANIES, IT IS NOT JUST ONE ******
+#   expected_output: >
+#     A FULL COMPLETE HTML of (the product map) of all companies in disruptions (Tier-1, Tier-2, Tier-3, Tier-4) up to {company_name}
+#   agent: networkx_plotter_agent
+#   input_keys:
+#     - product_details
+#     - kg_results
+#   output_keys:
+#     - networkx_plots
+
+
+risk_manager_task:
+  description: |
+    As **Senior Risk Analyst** for {company_name}, orchestrate the comprehensive risk calculation.
+    
+    **YOUR SINGLE TASK:**
+    Call the `calculate_tier1_comprehensive_risks` tool EXACTLY ONCE with:
+      - `scenario_id`: "{scenario_id}"
+      - `company_name`: "{company_name}"
+    
+    That is ALL. The tool loads all data from disk automatically (KG results, disruption
+    metadata saved by the upstream KG agent). You do NOT need to pass kg_results or
+    disruption_analysis — the tool retrieves them itself.
+    
+    This tool performs all heavy computation in deterministic Python:
+      - Loads the full supply chain data saved by the KG agent
+      - Calculates exposure depth, breadth, criticality, centrality
+      - Aggregates downstream disruption impact to Tier-1
+      - Returns complete risk assessment for ALL Tier-1 suppliers
+    
+    **CRITICAL OUTPUT HANDLING:**
+    The tool returns the complete risk assessment. Your FINAL ANSWER = the tool's output EXACTLY.
+      - Do NOT summarize or modify
+      - Do NOT add commentary
+      - Do NOT wrap in markdown
+      - Return the complete JSON dict as-is
+  expected_output: >
+    Complete JSON object with supplier_risk_scores (dict of all Tier-1 suppliers), 
+    tier1_risk_profiles (array), critical_suppliers (array), summary (object), 
+    and methodology (object). This is the tool's output returned exactly as-is.
+  agent: risk_manager_agent
+  input_keys:
+    - kg_results
+    - disruption_analysis
+    - company_name
+    - scenario_id
+  output_keys:
+    - risk_assessment
+    - company_name
+
+decision_making_task:
+  description: |
+    You are the **Chief Supply Chain Officer** at {company_name}.
+    
+    You have received a comprehensive Tier-1 risk assessment covering ALL Tier-1 suppliers.
+    Your task is to make **clear, actionable decisions** for **EVERY Tier-1 supplier** in the 
+    risk assessment with **data-driven justifications** based on the risk metrics provided.
+    
+    **CRITICAL: Process ALL suppliers, not just top-10.**
+    Sort all Tier-1 suppliers by risk_score (from risk_assessment.supplier_risk_scores) in DESCENDING order.
+    Generate a decision for EVERY supplier.
+    
+    ═══════════════════════════════════════════════════════════════════════════════
+    DECISION FRAMEWORK:
+    ═══════════════════════════════════════════════════════════════════════════════
+    
+    For EACH Tier-1 supplier in the risk assessment, analyze the data and decide ONE action:
+    
+    **ACTION OPTIONS:**
+    1. **REPLACE_SUPPLIER** - Find alternative supplier immediately
+    2. **INCREASE_MONITORING** - Enhance tracking and prepare contingencies  
+    3. **MAINTAIN_STANDARD** - No immediate action, continue normal operations
+    
+    **DECISION RULES (Based on Risk Score - Must Match Ground Truth Thresholds):**
+    
+    **CRITICAL:** Round risk scores UP to 1 decimal place FIRST, then categorize:
+    - Round UP: 0.58 → 0.6, 0.44 → 0.5, 0.42 → 0.5, 0.38 → 0.4
+    
+    **THEN categorize based on ROUNDED score:**
+    - Risk Score ≥ 0.6 (HIGH, when rounded) → REPLACE_SUPPLIER or INCREASE_MONITORING
+    - Risk Score 0.45-0.59 (MEDIUM, when rounded) → INCREASE_MONITORING or MAINTAIN_STANDARD
+    - Risk Score < 0.45 (LOW, when rounded) → MAINTAIN_STANDARD
+    
+    **Examples:**
+    - Raw score 0.58 → Rounded 0.6 → HIGH → REPLACE_SUPPLIER or INCREASE_MONITORING
+    - Raw score 0.44 → Rounded 0.5 → MEDIUM → INCREASE_MONITORING or MAINTAIN_STANDARD
+    - Raw score 0.42 → Rounded 0.5 → MEDIUM → INCREASE_MONITORING or MAINTAIN_STANDARD
+    - Raw score 0.38 → Rounded 0.4 → LOW → MAINTAIN_STANDARD
+    
+    ═══════════════════════════════════════════════════════════════════════════════
+    JUSTIFICATION REQUIREMENTS (TOP-TIER EXPERT LEVEL - BOARD-READY):
+    ═══════════════════════════════════════════════════════════════════════════════
+    
+    You are a **TOP-TIER CHIEF SUPPLY CHAIN EXPERT** with 20+ years of experience. 
+    
+    **CRITICAL FOR EVALUATION:** For scenarios with many Tier-1 suppliers (50+), use **CONCISE justifications** 
+    to ensure timely processing. Focus on decision accuracy over lengthy explanations.
+    
+    **IMPORTANT:** You are processing ONLY the TOP 10 RISKIEST suppliers. All other suppliers will maintain standard monitoring.
+    
+    For EACH of the TOP 10 suppliers, provide CONCISE but ACCURATE justification using ACTUAL DATA:
+    
+    1. **Risk Score Analysis (Quantitative Context with Physical Meaning):**
+       - "This supplier has a risk score of 0.6 (rounded from 0.58), placing them in the HIGH risk category"
+       - "This score is driven by exposure to 18 disrupted suppliers in their downstream network"
+       - **CRITICAL:** Explain what this number PHYSICALLY MEANS: "A score of 0.6 indicates that 60% of this supplier's 
+         downstream network is exposed to disruption, meaning disruptions have a 60% probability of propagating upstream 
+         to this Tier-1 supplier and then to {company_name}"
+       - "The 18 disrupted nodes represent [X%] of this supplier's total downstream network, creating significant 
+         vulnerability"
+    
+    2. **Exposure Analysis (Supply Chain Impact with Physical Propagation Mechanics):**
+       - "Total disrupted nodes: 18 companies downstream of this supplier are affected"
+       - "Breakdown by proximity: 3 Tier-2 nodes (direct suppliers to this company), 10 Tier-3 nodes (suppliers to Tier-2), 
+         and 5 Tier-4 nodes (furthest tier)"
+       - **CRITICAL:** Explain PHYSICAL PROPAGATION: "The 3 Tier-2 disruptions are only ONE tier away from directly impacting 
+         this Tier-1 supplier. In physical supply chain terms, if a Tier-2 supplier fails, it takes approximately [X weeks/months] 
+         for that disruption to propagate upstream to Tier-1, and then [Y weeks/months] to reach {company_name}'s production lines"
+       - "Geographic concentration: Disruptions concentrated in [countries]. This geographic clustering means that regional 
+         economic/political instability affects multiple suppliers simultaneously, reducing our ability to source alternatives 
+         from the same region"
+       - "The presence of disruptions across 3 tiers (Tier-2, Tier-3, Tier-4) indicates a **deep and wide exposure** - 
+         disruptions are not isolated but form a connected network of risk that can cascade through multiple supply paths"
+    
+    3. **Industry Impact Analysis (What Industries Are Affected and What This Means):**
+       - **CRITICAL:** "The disruption affects the [industry] sector (e.g., Metals & Mining, Steel, Battery Materials). 
+         This industry provides [specific materials/components] that are essential for {company_name}'s [specific production 
+         processes]"
+       - "Industry-specific impact: [Industry] disruptions typically result in [material shortages/price increases/quality 
+         issues] that directly affect [specific vehicle components/models]"
+       - "For {company_name}, this means: [Specific impact]. For example, if this is a steel supplier, disruptions would 
+         affect [vehicle body panels, chassis components, battery enclosures, etc.]"
+       - "The [industry] sector has [characteristics: e.g., 'long lead times', 'limited global suppliers', 'high capital 
+         requirements'] which means recovery from disruptions takes [timeframe] and alternative sourcing is [difficult/easy]"
+    
+    4. **Dependency & Criticality Analysis (Network Importance with Production Impact):**
+       - "Network centrality: 0.45 (high) - This supplier is a critical hub in our supply chain"
+       - **CRITICAL:** Explain what centrality PHYSICALLY MEANS: "A centrality score of 0.45 means this supplier sits at 
+         the intersection of multiple supply paths. They connect [X] downstream suppliers across [Y] tiers. If they fail, 
+         it doesn't just affect one path - it creates a **cascading failure** affecting [number] of {company_name}'s 
+         production lines simultaneously"
+       - "Industry context: As a [industry] supplier, they provide [specific materials/components] that are used in 
+         [specific Tesla products/models/components]"
+       - "Dependency level: High centrality (0.45) indicates we rely heavily on this supplier with limited redundancy. 
+         This means: [specific consequence, e.g., 'we have no alternative suppliers for 60% of the components they provide']"
+       - "What this means physically: If this supplier fails, {company_name} would lose access to [specific materials/components], 
+         which would directly halt production of [specific vehicle models/components] at [specific factories]"
+    
+    5. **Production Impact Analysis (What Specific Parts of {company_name}'s Production Will Be Disrupted):**
+       - **CRITICAL:** "Expected impact on {company_name}: Disruptions to this supplier would directly affect our [specific 
+         production processes]"
+       - "Production lines affected: [e.g., 'Model 3 and Model Y body panel production at Fremont factory', 'Battery pack 
+         assembly at Gigafactory Nevada', 'Chassis manufacturing at Shanghai']"
+       - "Components affected: [e.g., 'Steel body panels', 'Battery cell casings', 'Motor housings', 'Chassis frames']"
+       - "Vehicle models impacted: [e.g., 'Model 3, Model Y production would be halted', 'Model S/X would experience 
+         delays in [specific components]']"
+       - "Manufacturing processes disrupted: [e.g., 'Stamping operations', 'Welding lines', 'Assembly processes']"
+       - "Timeline to impact: Based on typical supply chain lead times, disruptions at Tier-2 would reach this Tier-1 supplier 
+         in [X weeks], and then impact {company_name}'s production in [Y weeks]. This gives us [Z weeks] to find alternatives"
+       - "Production volume at risk: This supplier provides materials for approximately [X%] of {company_name}'s monthly 
+         production, representing [Y vehicles/month] at risk"
+    
+    6. **Physical Supply Chain Propagation Mechanics (How Disruptions Flow):**
+       - **CRITICAL:** Explain the PHYSICAL MECHANICS: "Disruptions propagate upstream through the supply chain in the 
+         following way:"
+       - "Step 1: Tier-4 suppliers in [country] experience [disruption type: e.g., 'economic crisis, production shutdowns']"
+       - "Step 2: Tier-3 suppliers that depend on Tier-4 experience [material shortages/price increases], leading to 
+         [production delays/reduced capacity]"
+       - "Step 3: Tier-2 suppliers (3 companies) that depend on Tier-3 experience [cascading effects], with [X%] of their 
+         material supply disrupted"
+       - "Step 4: This Tier-1 supplier receives [reduced supply/increased costs/quality issues] from Tier-2, affecting 
+         their ability to fulfill orders to {company_name}"
+       - "Step 5: {company_name} experiences [production delays/component shortages] affecting [specific production lines]"
+       - "The 3 Tier-2 disruptions are particularly critical because they represent the **immediate upstream risk** - 
+         problems are already at the supplier's direct suppliers, meaning we have minimal buffer time"
+    
+    7. **Action Justification (Strategic Reasoning with Expert Analysis):**
+       - WHY this specific action? "Given risk score ≥0.6, high centrality (0.45), 18 disrupted nodes across 3 tiers 
+         (including 3 at Tier-2), and the critical role this supplier plays in [specific production processes], REPLACE_SUPPLIER 
+         is necessary because:"
+         - "[Specific reason 1: e.g., 'The proximity of Tier-2 disruptions (only 1 tier away) means we have insufficient 
+            time to wait and monitor']"
+         - "[Specific reason 2: e.g., 'The high centrality (0.45) means this supplier's failure would cascade to multiple 
+            production lines simultaneously']"
+         - "[Specific reason 3: e.g., 'The [industry] sector's characteristics [long lead times/limited alternatives] mean 
+            we must act now to secure alternative supply before disruptions reach us']"
+       - Why NOT alternatives? "INCREASE_MONITORING alone is insufficient because:"
+         - "[Reason 1: e.g., 'The depth of exposure (disruptions across 3 tiers starting at Tier-2) creates a high-probability 
+            path for disruptions to reach this supplier']"
+         - "[Reason 2: e.g., 'High centrality (0.45) means we have limited redundancy - if this supplier fails, we cannot 
+            quickly switch to alternatives']"
+         - "[Reason 3: e.g., 'The [industry] sector's recovery timeline ([X months]) exceeds our production buffer capacity 
+            ([Y weeks])']"
+       - Risk mitigation: "This action mitigates the risk of [specific supply chain failure: e.g., 'Model 3 production 
+         halt at Fremont factory'] by [specific mechanism: e.g., 'establishing alternative steel supplier before Tier-2 
+         disruptions propagate upstream, ensuring continuous material flow for body panel production']"
+    
+    ═══════════════════════════════════════════════════════════════════════════════
+    CRITICAL RULES:
+    ═══════════════════════════════════════════════════════════════════════════════
+    
+    ✓ DO NOT make up financial numbers ($XXM costs) - we don't have this data
+    ✓ DO NOT invent timelines or probabilities - not provided in risk assessment  
+    ✓ DO use ACTUAL statistics from risk_assessment (disrupted counts, scores, tiers)
+    ✓ DO justify based on risk score + exposure depth/breadth + centrality
+    ✓ DO round risk scores UP (0.58 → 0.6, 0.42 → 0.5, 0.38 → 0.4)
+    ✓ FOCUS on Tier-1 decisions only (downstream is context)
+    
+    ═══════════════════════════════════════════════════════════════════════════════
+    OUTPUT FORMAT (JSON) - SIMPLIFIED FOR EVALUATION:
+    ═══════════════════════════════════════════════════════════════════════════════
+    
+    **CRITICAL FOR EVALUATION:** Generate decisions for ALL Tier-1 suppliers. Use 
+    **CONCISE justifications** (1-2 sentences each) to stay within token limits. 
+    Focus on accuracy of decisions rather than lengthy explanations.
+    
+    {
+      "company_name": "{company_name}",
+      "decision_timestamp": "2024-XX-XXTXX:XX:XXZ",
+      "decisions": {
+        "<Tier-1 Supplier Name>": {
+          "risk_score_raw": 0.58,
+          "risk_score_rounded": 0.6,
+          "risk_level": "HIGH",
+          "action": "REPLACE_SUPPLIER",
+          "justification": {
+            "risk_analysis": "Risk score 0.6 (rounded from 0.58) = HIGH. Exposure: 18 disrupted downstream nodes.",
+            "exposure_details": {
+              "total_disrupted_nodes": 18,
+              "by_tier": {"tier_2": 3, "tier_3": 10, "tier_4": 5},
+              "top_disrupted_countries": ["South Africa"]
+            },
+            "action_rationale": "HIGH risk (≥0.6) with 3 Tier-2 disruptions (immediate upstream risk) → REPLACE_SUPPLIER required."
+          }
+        },
+        "Another Supplier": {
+          "risk_score_raw": 0.44,
+          "risk_score_rounded": 0.5,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Risk score 0.5 (rounded from 0.44) = MEDIUM. Exposure: 8 disrupted nodes.",
+            "exposure_details": {
+              "total_disrupted_nodes": 8,
+              "by_tier": {"tier_2": 0, "tier_3": 2, "tier_4": 6},
+              "top_disrupted_countries": ["South Africa"]
+            },
+            "action_rationale": "MEDIUM risk (0.45-0.59) with disruptions concentrated in Tier-4 (distant) → INCREASE_MONITORING appropriate."
+          }
+        }
+      },
+      "decision_report": {
+        "executive_summary": "Based on analysis of ALL Tier-1 suppliers: [replace_count] REPLACE_SUPPLIER (risk ≥0.6), [monitor_count] INCREASE_MONITORING (risk 0.45-0.59), [maintain_count] MAINTAIN_STANDARD (risk <0.45).",
+        "action_summary": {
+          "total_tier1_suppliers_analyzed": "[total count from risk_assessment]",
+          "replace_supplier_count": "[count from decisions]",
+          "increase_monitoring_count": "[count from decisions]",  
+          "maintain_standard_count": "[count from decisions]",
+          "critical_suppliers": ["[Supplier names with HIGH/CRITICAL scores]"],
+          "key_statistics": "All Tier-1 suppliers assessed. Aggregate exposure: [total nodes] disrupted nodes across Tier-2/3/4."
+        }
+      },
+      "risk_summary": {
+        "total_suppliers_analyzed": "[count from data]",
+        "high_risk_suppliers": "[count from decisions]",
+        "recommendation": "REPLACE_SUPPLIER for [count] critical suppliers; INCREASE_MONITORING for [count] medium-risk suppliers",
+        "attention_flag": true
+      }
+    }
+    
+            ═══════════════════════════════════════════════════════════════════════════════
+            REMEMBER: 
+            - Use ONLY data from risk_assessment (no made-up numbers)
+            - Round risk scores UP (0.58→0.6, 0.42→0.5)
+            - Clear actions: REPLACE_SUPPLIER / INCREASE_MONITORING / MAINTAIN_STANDARD
+            - Justify with statistics from the data (disrupted counts, scores, centrality)
+            ═══════════════════════════════════════════════════════════════════════════════
+            
+            NOTE: An executive HTML report will be automatically generated from your decision JSON and 
+            appended to the output. Your job is to generate the decision JSON with expert justifications.
+            
+  expected_output: >
+    JSON report with clear actions (REPLACE_SUPPLIER/INCREASE_MONITORING/MAINTAIN_STANDARD) for each 
+    Tier-1 supplier, justified using actual risk assessment data (scores, disrupted counts, centrality).
+    No made-up financial numbers or timelines. Must round risk scores UP to 1 decimal place.
+    An executive HTML report will be automatically appended to the output.
+  agent: chief_supply_chain_agent
+  input_keys:
+    - risk_assessment
+    - disruption_analysis
+    - company_name
+  output_keys:
+    - decisions
+    - decision_report
+    - risk_summary
+    - company_name
+    - decision_timestamp
+    - executive_report
+
+
+sourcing_task:
+  description: |
+    As **Sourcing Specialist**, execute the Tier-1 supplier actions defined by the Chief Supply Chain Officer.
+    - Only act on Tier-1 suppliers flagged in the decision plan (replacement, buffering, dual-sourcing).
+    - For replacement requests, search for alternative Tier-1 candidates matching product, quality, lead-time, and geography requirements.
+    - Evaluate potential suppliers based on cost, lead time, stability, and deliverable fit; summarise findings in structured JSON.
+    - Provide updated supply chain mapping (Tier-0 → Tier-1) for any approved alternatives.
+  expected_output: >
+    A JSON object detailing the alternative suppliers found, their evaluation scores, and the updated supply chain map if applicable.
+  agent: sourcing_agent
+  input_keys:
+  - decisions
+  output_keys:
+  - sourcing_results

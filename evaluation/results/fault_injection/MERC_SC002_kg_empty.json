@@ -1,0 +1,429 @@
+{
+  "scenario_id": "MERC_SC002",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Cayman Islands"
+        ],
+        "industries": [
+          "Automotive"
+        ],
+        "companies": [
+          "Eurocharm Holdings Co Ltd"
+        ]
+      },
+      "summary": "An economic downturn in the Cayman Islands has led to significant disruptions in the automotive production sector, affecting companies like Eurocharm Holdings Co Ltd. This situation, compounded by government restrictions and financial instability, could impact Mercedes-Benz Group AG if any of its suppliers are directly or indirectly connected to the affected region. Immediate assessment of supplier dependencies in the Cayman Islands is necessary to mitigate potential supply chain disruptions.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Cayman Islands": "high"
+        },
+        "industries": {
+          "Automotive": "high"
+        },
+        "companies": {
+          "Eurocharm Holdings Co Ltd": "high"
+        }
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/EconomicCrisis_CaymanIslands_Mercedes-Benz_Group_AG_20251121T223527_kg.json",
+      "monitored_company": "Mercedes-Benz Group AG",
+      "disrupted_countries": [
+        "Cayman Islands"
+      ],
+      "chain_counts": {
+        "tier_1": 0,
+        "tier_2": 2,
+        "tier_3": 39,
+        "tier_4": 322
+      },
+      "total_chains": 363,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "SK Inc": 0.5891,
+        "Renault SA": 0.5161,
+        "AAPICO Hitech PCL": 0.5147,
+        "JTEKT Corp": 0.4605,
+        "Toyota Industries Corp": 0.4591,
+        "Robert Bosch GmbH": 0.4484,
+        "Apple Inc": 0.4467,
+        "AMAG Austria Metall AG": 0.4349,
+        "Contemporary Amperex Technology Co Ltd": 0.4339,
+        "Denso Corp": 0.4152
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "SK Inc",
+          "risk_score": 0.5891,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 7
+          },
+          "total_unique_disrupted_suppliers": 10,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 17,
+          "top_disrupted_countries": [
+            [
+              "Cayman Islands",
+              22
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.9499999999999997,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.04766269477543538,
+              "normalized": 0.0477
+            },
+            "downstream_centrality": {
+              "raw": 0.1294238070687464,
+              "normalized": 0.2728
+            },
+            "downstream_pagerank": {
+              "raw": 0.0009211750086410642,
+              "normalized": 0.2238
+            },
+            "tier1_centrality": {
+              "raw": 0.23247209330876423,
+              "normalized": 0.7258
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Renault SA",
+          "risk_score": 0.5161,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 6
+          },
+          "total_unique_disrupted_suppliers": 7,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 26,
+          "top_disrupted_countries": [
+            [
+              "Cayman Islands",
+              32
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.8499999999999996,
+              "normalized": 0.6944
+            },
+            "dependency_ratio": {
+              "raw": 0.04766269477543538,
+              "normalized": 0.0477
+            },
+            "downstream_centrality": {
+              "raw": 0.15099002225114638,
+              "normalized": 0.5738
+            },
+            "downstream_pagerank": {
+              "raw": 0.0009327077228911226,
+              "normalized": 0.2286
+            },
+            "tier1_centrality": {
+              "raw": 0.19598909066379777,
+              "normalized": 0.4634
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "AAPICO Hitech PCL",
+          "risk_score": 0.5147,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 6
+          },
+          "total_unique_disrupted_suppliers": 9,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 15,
+          "top_disrupted_countries": [
+            [
+              "Cayman Islands",
+              18
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.5999999999999996,
+              "normalized": 0.9028
+            },
+            "dependency_ratio": {
+              "raw": 0.04766269477543538,
+              "normalized": 0.0477
+            },
+            "downstream_centrality": {
+              "raw": 0.13591458384949318,
+              "normalized": 0.3634
+            },
+            "downstream_pagerank": {
+              "raw": 0.0007861473138473165,
+              "normalized": 0.167
+            },
+            "tier1_centrality": {
+              "raw": 0.15115306111182042,
+              "normalized": 0.141
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "SK Inc",
+          "risk_score": 0.5891,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.9499999999999997,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.04766269477543538,
+              "normalized": 0.0477
+            },
+            "downstream_centrality": {
+              "raw": 0.1294238070687464,
+              "normalized": 0.2728
+            },
+            "downstream_pagerank": {
+              "raw": 0.0009211750086410642,
+              "normalized": 0.2238
+            },
+            "tier1_centrality": {
+              "raw": 0.23247209330876423,
+              "normalized": 0.7258
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 7
+          }
+        },
+        {
+          "company": "Renault SA",
+          "risk_score": 0.5161,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 2.8499999999999996,
+              "normalized": 0.6944
+            },
+            "dependency_ratio": {
+              "raw": 0.04766269477543538,
+              "normalized": 0.0477
+            },
+            "downstream_centrality": {
+              "raw": 0.15099002225114638,
+              "normalized": 0.5738
+            },
+            "downstream_pagerank": {
+              "raw": 0.0009327077228911226,
+              "normalized": 0.2286
+            },
+            "tier1_centrality": {
+              "raw": 0.19598909066379777,
+              "normalized": 0.4634
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 6
+          }
+        },
+        {
+          "company": "AAPICO Hitech PCL",
+          "risk_score": 0.5147,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 3.5999999999999996,
+              "normalized": 0.9028
+            },
+            "dependency_ratio": {
+              "raw": 0.04766269477543538,
+              "normalized": 0.0477
+            },
+            "downstream_centrality": {
+              "raw": 0.13591458384949318,
+              "normalized": 0.3634
+            },
+            "downstream_pagerank": {
+              "raw": 0.0007861473138473165,
+              "normalized": 0.167
+            },
+            "tier1_centrality": {
+              "raw": 0.15115306111182042,
+              "normalized": 0.141
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 3,
+            "4": 6
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 52,
+        "high_risk_suppliers": 3,
+        "medium_risk_suppliers": 9,
+        "low_risk_suppliers": 40,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5891,
+        "average_risk_score": 0.3343826923076923
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "Adaptive"
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "SK Inc": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5891,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for SK Inc",
+            "risk_analysis": {
+              "score": 0.5891,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Renault SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5161,
+          "justification": "Immediate replacement is justified by high risk exposure and dependency"
+        },
+        "AAPICO Hitech PCL": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5147,
+          "justification": "High risk score necessitates supplier replacement"
+        },
+        "JTEKT Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4605,
+          "justification": "Moderate risk level requires increased monitoring"
+        },
+        "Toyota Industries Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4591,
+          "justification": "Risk level near threshold, monitor for changes"
+        },
+        "Robert Bosch GmbH": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4484,
+          "justification": "Enhanced monitoring due to proximity to medium risk threshold"
+        },
+        "Apple Inc": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4467,
+          "justification": "Maintain monitoring strategy as risk slightly below threshold"
+        },
+        "AMAG Austria Metall AG": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4349,
+          "justification": "Continued oversight as precautionary measure"
+        },
+        "Contemporary Amperex Technology Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4339,
+          "justification": "Maintain monitoring approach"
+        },
+        "Denso Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4152,
+          "justification": "Below medium threshold, moderate monitoring suffices"
+        }
+      },
+      "decision_report": {
+        "executive_summary": "Actions for top 10 riskiest suppliers finalized. Three suppliers - SK Inc, Renault SA, AAPICO Hitech PCL - require immediate replacement due to high risk; others maintained under increased monitoring based on proximity to critical risk thresholds. This balanced approach addresses current economic disruptions in the Cayman Islands, ensuring Mercedes-Benz Group AG maintains its supply chain resilience.",
+        "action_summary": "REPLACE_SUPPLIER selected for 3 suppliers with high risk, INCREASE_MONITORING for the rest."
+      },
+      "risk_summary": {
+        "overall": "High risk addressed with REPLACE_SUPPLIER for SK Inc, Renault SA, AAPICO Hitech PCL; balanced risk managed for others. Immediate resolution of critical vulnerabilities essential to maintaining supply chain integrity during regional disturbances."
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "An economic crisis in Cayman Islands affecting automotive production led to major disruptions at companies like Eurocharm Holdings Co Ltd. Crucial for Mercedes-Benz Group AG due to dependency on suppliers from the affected region.",
+        "network_impact_analysis": "Affected supply chain paths within the network remain at low immediate propagation risk, primarily due to containment of disruptions in deeper tiers.",
+        "replacement_recommendations": "Immediate initiation of replacement for SK Inc, Renault SA, AAPICO Hitech PCL recommended. Key drivers include heightened exposure and dependency risks. Addressing these vulnerabilities will enhance resilience."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:50.832386"
+}

@@ -1,0 +1,883 @@
+{
+  "scenario_id": "MERC_SC005",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Geopolitical",
+      "involved": {
+        "countries": [
+          "Germany"
+        ],
+        "industries": [
+          "Automotive"
+        ],
+        "companies": [
+          "Mercedes-Benz Group AG"
+        ]
+      },
+      "questions": [
+        "Which of Mercedes-Benz Group AG's Tier-1 suppliers are located in Germany?",
+        "Does any of Mercedes-Benz Group AG's Tier-1 suppliers have suppliers in Germany? Who are they and what industries do they operate in?",
+        "Does any of Mercedes-Benz Group AG's Tier-2 suppliers have suppliers in Germany? Who are they and what industries do they operate in?"
+      ],
+      "summary": "Geopolitical tensions in Germany have disrupted the automotive supply chain, directly affecting Mercedes-Benz Group AG with significant production disruptions. The situation is exacerbated by government restrictions and economic instability, necessitating an immediate assessment of supplier dependencies within Germany to mitigate further production impacts.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Germany": "high"
+        },
+        "industries": {
+          "Automotive": "high"
+        },
+        "companies": {
+          "Mercedes-Benz Group AG": "high"
+        }
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/geopolitical_germany_Mercedes-Benz_Group_AG_20251121T224714_kg.json",
+      "monitored_company": "Mercedes-Benz Group AG",
+      "disrupted_countries": [
+        "Germany"
+      ],
+      "chain_counts": {
+        "tier_1": 7,
+        "tier_2": 52,
+        "tier_3": 514,
+        "tier_4": 5346
+      },
+      "total_chains": 5919,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "SK Inc": 0.5633,
+        "Daimler Truck Holding AG": 0.5592,
+        "Schaeffler AG": 0.5376,
+        "Robert Bosch GmbH": 0.5161,
+        "Shell PLC": 0.5119,
+        "Toyota Industries Corp": 0.5118,
+        "Toyoda Gosei Co Ltd": 0.5059,
+        "BAIC Motor Corp Ltd": 0.4968,
+        "AAPICO Hitech PCL": 0.4937,
+        "Samsung SDI Co Ltd": 0.4918
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "SK Inc",
+          "risk_score": 0.5633,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 13,
+            "4": 20
+          },
+          "total_unique_disrupted_suppliers": 35,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 131,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              348
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 15.0,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.13249376758561393,
+              "normalized": 0.0997
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018083693838826477,
+              "normalized": 0.1116
+            },
+            "tier1_centrality": {
+              "raw": 0.23247209330876423,
+              "normalized": 0.7269
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Daimler Truck Holding AG",
+          "risk_score": 0.5592,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 4,
+            "3": 9,
+            "4": 17
+          },
+          "total_unique_disrupted_suppliers": 31,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 68,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              193
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 14.45,
+              "normalized": 0.9625
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.15291585825414916,
+              "normalized": 0.4686
+            },
+            "downstream_pagerank": {
+              "raw": 0.00160304175436226,
+              "normalized": 0.0582
+            },
+            "tier1_centrality": {
+              "raw": 0.14536860383206837,
+              "normalized": 0.1031
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Schaeffler AG",
+          "risk_score": 0.5376,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 3,
+            "3": 8,
+            "4": 17
+          },
+          "total_unique_disrupted_suppliers": 29,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 67,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              120
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.2,
+              "normalized": 0.8771
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.14473327202365657,
+              "normalized": 0.3208
+            },
+            "downstream_pagerank": {
+              "raw": 0.0024895051107743545,
+              "normalized": 0.2886
+            },
+            "tier1_centrality": {
+              "raw": 0.19820616994645357,
+              "normalized": 0.4815
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Robert Bosch GmbH",
+          "risk_score": 0.5161,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 4,
+            "3": 7,
+            "4": 16
+          },
+          "total_unique_disrupted_suppliers": 28,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 58,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              129
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.1,
+              "normalized": 0.8703
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.1490288464788125,
+              "normalized": 0.3984
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016859745838781802,
+              "normalized": 0.0798
+            },
+            "tier1_centrality": {
+              "raw": 0.1497908874884008,
+              "normalized": 0.1348
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Shell PLC",
+          "risk_score": 0.5119,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 11,
+            "4": 19
+          },
+          "total_unique_disrupted_suppliers": 31,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 105,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              206
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 12.899999999999999,
+              "normalized": 0.8567
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.13720523120434147,
+              "normalized": 0.1848
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018800966879230054,
+              "normalized": 0.1302
+            },
+            "tier1_centrality": {
+              "raw": 0.21023129842203828,
+              "normalized": 0.5676
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.5118,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 7,
+            "4": 17
+          },
+          "total_unique_disrupted_suppliers": 26,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 73,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              165
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.95,
+              "normalized": 0.7235
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.15121130519449555,
+              "normalized": 0.4378
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016516692691589357,
+              "normalized": 0.0709
+            },
+            "tier1_centrality": {
+              "raw": 0.20447633893765432,
+              "normalized": 0.5264
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Toyoda Gosei Co Ltd",
+          "risk_score": 0.5059,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 9,
+            "4": 16
+          },
+          "total_unique_disrupted_suppliers": 26,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 67,
+          "top_disrupted_countries": [
+            [
+              "Germany",
+              135
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.85,
+              "normalized": 0.7167
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.15405634571964363,
+              "normalized": 0.4892
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015959248372783108,
+              "normalized": 0.0564
+            },
+            "tier1_centrality": {
+              "raw": 0.18526610672301155,
+              "normalized": 0.3888
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "SK Inc",
+          "risk_score": 0.5633,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 15.0,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.13249376758561393,
+              "normalized": 0.0997
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018083693838826477,
+              "normalized": 0.1116
+            },
+            "tier1_centrality": {
+              "raw": 0.23247209330876423,
+              "normalized": 0.7269
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 13,
+            "4": 20
+          }
+        },
+        {
+          "company": "Daimler Truck Holding AG",
+          "risk_score": 0.5592,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 14.45,
+              "normalized": 0.9625
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.15291585825414916,
+              "normalized": 0.4686
+            },
+            "downstream_pagerank": {
+              "raw": 0.00160304175436226,
+              "normalized": 0.0582
+            },
+            "tier1_centrality": {
+              "raw": 0.14536860383206837,
+              "normalized": 0.1031
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 4,
+            "3": 9,
+            "4": 17
+          }
+        },
+        {
+          "company": "Schaeffler AG",
+          "risk_score": 0.5376,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.2,
+              "normalized": 0.8771
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.14473327202365657,
+              "normalized": 0.3208
+            },
+            "downstream_pagerank": {
+              "raw": 0.0024895051107743545,
+              "normalized": 0.2886
+            },
+            "tier1_centrality": {
+              "raw": 0.19820616994645357,
+              "normalized": 0.4815
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 3,
+            "3": 8,
+            "4": 17
+          }
+        },
+        {
+          "company": "Robert Bosch GmbH",
+          "risk_score": 0.5161,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 13.1,
+              "normalized": 0.8703
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.1490288464788125,
+              "normalized": 0.3984
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016859745838781802,
+              "normalized": 0.0798
+            },
+            "tier1_centrality": {
+              "raw": 0.1497908874884008,
+              "normalized": 0.1348
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 4,
+            "3": 7,
+            "4": 16
+          }
+        },
+        {
+          "company": "Shell PLC",
+          "risk_score": 0.5119,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 12.899999999999999,
+              "normalized": 0.8567
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.13720523120434147,
+              "normalized": 0.1848
+            },
+            "downstream_pagerank": {
+              "raw": 0.0018800966879230054,
+              "normalized": 0.1302
+            },
+            "tier1_centrality": {
+              "raw": 0.21023129842203828,
+              "normalized": 0.5676
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 11,
+            "4": 19
+          }
+        },
+        {
+          "company": "Toyota Industries Corp",
+          "risk_score": 0.5118,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.95,
+              "normalized": 0.7235
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.15121130519449555,
+              "normalized": 0.4378
+            },
+            "downstream_pagerank": {
+              "raw": 0.0016516692691589357,
+              "normalized": 0.0709
+            },
+            "tier1_centrality": {
+              "raw": 0.20447633893765432,
+              "normalized": 0.5264
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 2,
+            "3": 7,
+            "4": 17
+          }
+        },
+        {
+          "company": "Toyoda Gosei Co Ltd",
+          "risk_score": 0.5059,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 10.85,
+              "normalized": 0.7167
+            },
+            "dependency_ratio": {
+              "raw": 0.07332722273143905,
+              "normalized": 0.0733
+            },
+            "downstream_centrality": {
+              "raw": 0.15405634571964363,
+              "normalized": 0.4892
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015959248372783108,
+              "normalized": 0.0564
+            },
+            "tier1_centrality": {
+              "raw": 0.18526610672301155,
+              "normalized": 0.3888
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 9,
+            "4": 16
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 80,
+        "high_risk_suppliers": 7,
+        "medium_risk_suppliers": 25,
+        "low_risk_suppliers": 48,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5633,
+        "average_risk_score": 0.38317
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "standard_risk_calculation",
+      "recommendation": "HIGH PRIORITY: 7 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "SK Inc": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5633,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for SK Inc",
+            "risk_analysis": {
+              "score": 0.5633,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Daimler Truck Holding AG": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5592,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for Daimler Truck Holding AG",
+            "risk_analysis": {
+              "score": 0.5592,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Schaeffler AG": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5376,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for Schaeffler AG",
+            "risk_analysis": {
+              "score": 0.5376,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Robert Bosch GmbH": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5161,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for Robert Bosch GmbH",
+            "risk_analysis": {
+              "score": 0.5161,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Shell PLC": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5119,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for Shell PLC",
+            "risk_analysis": {
+              "score": 0.5119,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Toyota Industries Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5118,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for Toyota Industries Corp",
+            "risk_analysis": {
+              "score": 0.5118,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Toyoda Gosei Co Ltd": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5059,
+          "justification": {
+            "summary": "Comprehensive analysis supports REPLACE_SUPPLIER for Toyoda Gosei Co Ltd",
+            "risk_analysis": {
+              "score": 0.5059,
+              "rounded_score": 0.6,
+              "risk_level": "HIGH"
+            },
+            "action_rationale": {
+              "decision": "REPLACE_SUPPLIER",
+              "reasoning": "Risk score 0.6 exceeds threshold for REPLACE_SUPPLIER",
+              "expected_impact": "REPLACE_SUPPLIER will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "BAIC Motor Corp Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4968,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for BAIC Motor Corp Ltd",
+            "risk_analysis": {
+              "score": 0.4968,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "AAPICO Hitech PCL": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4937,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for AAPICO Hitech PCL",
+            "risk_analysis": {
+              "score": 0.4937,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        },
+        "Samsung SDI Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4918,
+          "justification": {
+            "summary": "Comprehensive analysis supports INCREASE_MONITORING for Samsung SDI Co Ltd",
+            "risk_analysis": {
+              "score": 0.4918,
+              "rounded_score": 0.5,
+              "risk_level": "MEDIUM"
+            },
+            "action_rationale": {
+              "decision": "INCREASE_MONITORING",
+              "reasoning": "Risk score 0.5 exceeds threshold for INCREASE_MONITORING",
+              "expected_impact": "INCREASE_MONITORING will mitigate supply chain risk for this supplier"
+            }
+          }
+        }
+      },
+      "decision_report": {
+        "executive_summary": "Mercedes-Benz Group AG is facing significant supply chain risks due to geopolitical tensions in Germany, impacting key suppliers across multiple tiers. Immediate actions include replacing high-risk suppliers and increasing monitoring of medium-risk ones to ensure supply chain resilience.",
+        "action_summary": {
+          "total_replacements": 7,
+          "total_increase_monitoring": 3,
+          "framework_used": "balanced"
+        }
+      },
+      "risk_summary": {
+        "total_tier1_suppliers": 80,
+        "high-risk_suppliers": 7,
+        "medium-risk_suppliers": 25,
+        "low-risk_suppliers": 48,
+        "decision_framework": "balanced",
+        "average_risk_score": 0.38317
+      },
+      "qualitative_analysis": {
+        "disruption_summary": "A geopolitical has occurred in Germany affecting the Automotive industry, with major impacts on companies including Mercedes-Benz Group AG. For Mercedes-Benz Group AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Mercedes-Benz Group AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Mercedes-Benz Group AG should immediately initiate replacement procedures for the following Tier-1 suppliers: SK Inc, Daimler Truck Holding AG, Schaeffler AG, Robert Bosch GmbH, Shell PLC, Toyota Industries Corp, Toyoda Gosei Co Ltd. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Mercedes-Benz Group AG's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Mercedes-Benz Group AG's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:51.477373"
+}

@@ -1,0 +1,496 @@
+{
+  "scenario_id": "MERC_SC003",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Japan"
+        ],
+        "industries": [
+          "Automotive"
+        ],
+        "companies": [
+          "Toyota Industries Corp"
+        ]
+      },
+      "summary": "Massive labor strikes in Japan's automotive sector have halted production at major manufacturing facilities, including Toyota Industries Corp. This disruption, compounded by government restrictions and economic instability, could affect Mercedes-Benz Group AG's supply chain, particularly if any Tier-1 or Tier-2 suppliers are dependent on Japanese automotive manufacturers. Immediate assessment of supplier dependencies in Japan is necessary to mitigate potential production delays.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Japan": "high"
+        },
+        "industries": {
+          "Automotive": "high"
+        },
+        "companies": {
+          "Toyota Industries Corp": "high"
+        }
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/economic_crisis_japan_2023_Mercedes-Benz_Group_AG_20251121T224005_kg.json",
+      "monitored_company": "Mercedes-Benz Group AG",
+      "disrupted_countries": [
+        "Japan"
+      ],
+      "chain_counts": {
+        "tier_1": 13,
+        "tier_2": 226,
+        "tier_3": 3897,
+        "tier_4": 0
+      },
+      "total_chains": 4136,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "JTEKT Corp": 0.5372,
+        "Denso Corp": 0.5129,
+        "Toyota Industries Corp": 0.5007,
+        "Komatsu Ltd": 0.4375,
+        "Koito Manufacturing Co Ltd": 0.4362,
+        "Renault SA": 0.4188,
+        "Futaba Industrial Co Ltd": 0.4081,
+        "Mitsubishi Electric Corp": 0.3983,
+        "Toyoda Gosei Co Ltd": 0.3755,
+        "SK Innovation Co Ltd": 0.3543
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "JTEKT Corp",
+          "risk_score": 0.5372,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 21,
+            "3": 117,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 139,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 124,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              312
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 75.25,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.0687,
+              "normalized": 0.0687
+            },
+            "downstream_centrality": {
+              "raw": 0.1157,
+              "normalized": 0.0332
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015,
+              "normalized": 0.1338
+            },
+            "tier1_centrality": {
+              "raw": 0.2263,
+              "normalized": 0.6826
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "Denso Corp",
+          "risk_score": 0.5129,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 20,
+            "3": 114,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 135,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 117,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              287
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 73.0,
+              "normalized": 0.9699
+            },
+            "dependency_ratio": {
+              "raw": 0.0687,
+              "normalized": 0.0687
+            },
+            "downstream_centrality": {
+              "raw": 0.1148,
+              "normalized": 0.0233
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015,
+              "normalized": 0.1367
+            },
+            "tier1_centrality": {
+              "raw": 0.2063,
+              "normalized": 0.5392
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        },
+        {
+          "supplier": "Toyota Industries Corp",
+          "risk_score": 0.5007,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 16,
+            "3": 117,
+            "4": 0
+          },
+          "total_unique_disrupted_suppliers": 134,
+          "max_disruption_tier": 3,
+          "downstream_supplier_count": 121,
+          "top_disrupted_countries": [
+            [
+              "Japan",
+              273
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 71.5,
+              "normalized": 0.9498
+            },
+            "dependency_ratio": {
+              "raw": 0.0687,
+              "normalized": 0.0687
+            },
+            "downstream_centrality": {
+              "raw": 0.1147,
+              "normalized": 0.0219
+            },
+            "downstream_pagerank": {
+              "raw": 0.0014,
+              "normalized": 0.1174
+            },
+            "tier1_centrality": {
+              "raw": 0.2045,
+              "normalized": 0.5264
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "JTEKT Corp",
+          "risk_score": 0.5372,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 75.25,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.0687,
+              "normalized": 0.0687
+            },
+            "downstream_centrality": {
+              "raw": 0.1157,
+              "normalized": 0.0332
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015,
+              "normalized": 0.1338
+            },
+            "tier1_centrality": {
+              "raw": 0.2263,
+              "normalized": 0.6826
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 21,
+            "3": 117,
+            "4": 0
+          }
+        },
+        {
+          "company": "Denso Corp",
+          "risk_score": 0.5129,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 73.0,
+              "normalized": 0.9699
+            },
+            "dependency_ratio": {
+              "raw": 0.0687,
+              "normalized": 0.0687
+            },
+            "downstream_centrality": {
+              "raw": 0.1148,
+              "normalized": 0.0233
+            },
+            "downstream_pagerank": {
+              "raw": 0.0015,
+              "normalized": 0.1367
+            },
+            "tier1_centrality": {
+              "raw": 0.2063,
+              "normalized": 0.5392
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 20,
+            "3": 114,
+            "4": 0
+          }
+        },
+        {
+          "company": "Toyota Industries Corp",
+          "risk_score": 0.5007,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 71.5,
+              "normalized": 0.9498
+            },
+            "dependency_ratio": {
+              "raw": 0.0687,
+              "normalized": 0.0687
+            },
+            "downstream_centrality": {
+              "raw": 0.1147,
+              "normalized": 0.0219
+            },
+            "downstream_pagerank": {
+              "raw": 0.0014,
+              "normalized": 0.1174
+            },
+            "tier1_centrality": {
+              "raw": 0.2045,
+              "normalized": 0.5264
+            },
+            "depth": {
+              "raw": 3,
+              "normalized": 0.75
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 1,
+            "2": 16,
+            "3": 117,
+            "4": 0
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 75,
+        "high_risk_suppliers": 3,
+        "medium_risk_suppliers": 4,
+        "low_risk_suppliers": 68,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5372,
+        "average_risk_score": 0.2886
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions (enhanced_graph_metrics_tool).",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "Adaptive calculation based on Economic Crisis",
+      "recommendation": "HIGH PRIORITY: 3 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "JTEKT Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5372,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Denso Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5129,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Toyota Industries Corp": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5007,
+          "justification": {
+            "summary": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER",
+            "key_factors": [
+              "Risk level: 0.6",
+              "Action: REPLACE_SUPPLIER",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Komatsu Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4375,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Koito Manufacturing Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4362,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Renault SA": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4188,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Futaba Industrial Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4081,
+          "justification": {
+            "summary": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING",
+            "key_factors": [
+              "Risk level: 0.5",
+              "Action: INCREASE_MONITORING",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Mitsubishi Electric Corp": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3983,
+          "justification": {
+            "summary": "Risk score of 0.4 (LOW) requires MAINTAIN_STANDARD",
+            "key_factors": [
+              "Risk level: 0.4",
+              "Action: MAINTAIN_STANDARD",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "Toyoda Gosei Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3755,
+          "justification": {
+            "summary": "Risk score of 0.4 (LOW) requires MAINTAIN_STANDARD",
+            "key_factors": [
+              "Risk level: 0.4",
+              "Action: MAINTAIN_STANDARD",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        },
+        "SK Innovation Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3543,
+          "justification": {
+            "summary": "Risk score of 0.4 (LOW) requires MAINTAIN_STANDARD",
+            "key_factors": [
+              "Risk level: 0.4",
+              "Action: MAINTAIN_STANDARD",
+              "Based on comprehensive risk assessment"
+            ]
+          }
+        }
+      },
+      "decision_report": {
+        "executive_summary": "The top 10 suppliers were analyzed using a balanced framework resulting in recommendations for replacing three high-risk suppliers and increasing monitoring for four medium-risk suppliers. The remaining suppliers fall under the maintain standard category.",
+        "action_summary": "Key actions include initiating immediate replacements for JTEKT Corp, Denso Corp, and Toyota Industries Corp; monitoring increases for medium-risk suppliers like Komatsu Ltd."
+      },
+      "risk_summary": {
+        "high_risk_suppliers": 3,
+        "medium_risk_suppliers": 4,
+        "low_risk_suppliers": 3,
+        "thresholds": {
+          "high": ">= 0.6",
+          "medium": "0.45-0.59",
+          "low": "< 0.45"
+        },
+        "average_risk_score": 0.2886
+      },
+      "decision_framework": "balanced",
+      "qualitative_analysis": {
+        "disruption_summary": "A economic crisis has occurred in Japan affecting the Automotive industry, with major impacts on companies including Toyota Industries Corp. For Mercedes-Benz Group AG, this disruption is critical because it directly impacts suppliers and sub-suppliers that provide essential components and materials. Although the disruption is primarily in deeper tiers, the extensive network impact (0 affected paths) indicates significant vulnerability that could materialize if the disruption worsens or spreads.",
+        "network_impact_analysis": "The disruption has propagated through Mercedes-Benz Group AG's extended supply chain network, affecting 0 unique companies across 0 supply chain paths spanning from Tier-1 to Tier-4. The disruption is primarily in deeper tiers (Tier-3 and Tier-4), resulting in a LOWER immediate propagation risk, but the extensive network impact (0 paths) indicates significant vulnerability that requires monitoring.",
+        "replacement_recommendations": "Based on comprehensive risk analysis, Mercedes-Benz Group AG should immediately initiate replacement procedures for the following Tier-1 suppliers: JTEKT Corp, Denso Corp, Toyota Industries Corp. The replacement decision is driven by multiple risk factors including high disruption exposure, significant downstream supplier dependencies, and elevated centrality within Mercedes-Benz Group AG's supply network. These suppliers represent single points of failure that could cause cascading disruptions. Replacing these high-risk suppliers will enhance Mercedes-Benz Group AG's supply chain resilience by reducing dependency on vulnerable suppliers, diversifying the supplier base, and mitigating the risk of production disruptions. Immediate action is recommended to prevent potential operational impacts and maintain supply continuity."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:51.008702"
+}

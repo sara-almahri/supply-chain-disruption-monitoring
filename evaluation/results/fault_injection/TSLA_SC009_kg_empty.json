@@ -1,0 +1,676 @@
+{
+  "scenario_id": "TSLA_SC009",
+  "fault_type": "kg_empty",
+  "fault_boundary": "KG to Risk",
+  "fault_description": "Return empty KG results",
+  "faulted_outputs": {
+    "disruption_analysis": {
+      "type": "Economic Crisis",
+      "involved": {
+        "countries": [
+          "Eastern Europe"
+        ],
+        "industries": [
+          "Metals Mining"
+        ],
+        "companies": [
+          "BHP Group Ltd"
+        ]
+      },
+      "summary": "An economic crisis in Eastern Europe has affected BHP Group Ltd, a major player in the Metals Mining industry. While the disruption is reported to be, it is crucial for Tesla Inc to assess its supply chain dependencies in Eastern Europe, particularly in the metals mining sector, to ensure there are on its operations.",
+      "confidence": {
+        "overall": "medium",
+        "countries": {
+          "Eastern Europe": "high"
+        },
+        "industries": {
+          "Metals Mining": "medium"
+        },
+        "companies": {
+          "BHP Group Ltd": "high"
+        }
+      },
+      "validation": {
+        "validated_countries": [],
+        "validated_industries": [],
+        "validated_companies": [],
+        "invalid_entities": [],
+        "validation_confidence": "medium"
+      }
+    },
+    "kg_results": {
+      "tier_1": [],
+      "tier_2": [],
+      "tier_3": [],
+      "tier_4": []
+    },
+    "kg_results_metadata": {
+      "success": true,
+      "kg_payload_path": "/Users/saraalmahri/Desktop/Paper 2/Framework revised/evaluation_results/temp/kg_payloads/scenario_1_Tesla_Inc_20251122T090313_kg.json",
+      "monitored_company": "Tesla Inc",
+      "disrupted_countries": [
+        "Eastern Europe"
+      ],
+      "chain_counts": {
+        "tier_1": 0,
+        "tier_2": 3,
+        "tier_3": 12,
+        "tier_4": 242
+      },
+      "total_chains": 257,
+      "query_strategy": "comprehensive"
+    },
+    "risk_assessment": {
+      "supplier_risk_scores": {
+        "ArcelorMittal SA": 0.5593,
+        "China Steel Corp": 0.4556,
+        "CNGR Advanced Material Co Ltd": 0.4221,
+        "Schaeffler AG": 0.4004,
+        "Contemporary Amperex Technology Co Ltd": 0.3907,
+        "Wooshin Systems Co Ltd": 0.3658,
+        "Beijing Easpring Material Technology Co Ltd": 0.3589,
+        "L&F Co Ltd": 0.3554,
+        "Gestamp Automocion SA": 0.3538,
+        "Samsung SDI Co Ltd": 0.3482
+      },
+      "tier1_risk_profiles": [
+        {
+          "supplier": "ArcelorMittal SA",
+          "risk_score": 0.5593,
+          "risk_level": "HIGH",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 3,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 19,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              17
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.6,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.1284,
+              "normalized": 0.0323
+            },
+            "downstream_pagerank": {
+              "raw": 0.00315,
+              "normalized": 0.1641
+            },
+            "tier1_centrality": {
+              "raw": 0.2143,
+              "normalized": 0.6953
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "China Steel Corp",
+          "risk_score": 0.4556,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 34,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              34
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.1,
+              "normalized": 0.6
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.1416,
+              "normalized": 0.1758
+            },
+            "downstream_pagerank": {
+              "raw": 0.00338,
+              "normalized": 0.1933
+            },
+            "tier1_centrality": {
+              "raw": 0.2507,
+              "normalized": 1.0
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "CNGR Advanced Material Co Ltd",
+          "risk_score": 0.4221,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 11,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              10
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.1,
+              "normalized": 0.6
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.145,
+              "normalized": 0.2127
+            },
+            "downstream_pagerank": {
+              "raw": 0.00484,
+              "normalized": 0.376
+            },
+            "tier1_centrality": {
+              "raw": 0.167,
+              "normalized": 0.2995
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Schaeffler AG",
+          "risk_score": 0.4004,
+          "risk_level": "MEDIUM",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 17,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              13
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.1714,
+              "normalized": 0.501
+            },
+            "downstream_pagerank": {
+              "raw": 0.00542,
+              "normalized": 0.4486
+            },
+            "tier1_centrality": {
+              "raw": 0.1948,
+              "normalized": 0.5325
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Contemporary Amperex Technology Co Ltd",
+          "risk_score": 0.3907,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 15,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              11
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.1461,
+              "normalized": 0.2249
+            },
+            "downstream_pagerank": {
+              "raw": 0.00497,
+              "normalized": 0.3919
+            },
+            "tier1_centrality": {
+              "raw": 0.2092,
+              "normalized": 0.653
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Wooshin Systems Co Ltd",
+          "risk_score": 0.3658,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 12,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              9
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.1713,
+              "normalized": 0.5002
+            },
+            "downstream_pagerank": {
+              "raw": 0.00502,
+              "normalized": 0.3976
+            },
+            "tier1_centrality": {
+              "raw": 0.1536,
+              "normalized": 0.1875
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Beijing Easpring Material Technology Co Ltd",
+          "risk_score": 0.3589,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 7,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              4
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.1687,
+              "normalized": 0.471
+            },
+            "downstream_pagerank": {
+              "raw": 0.00575,
+              "normalized": 0.4895
+            },
+            "tier1_centrality": {
+              "raw": 0.148,
+              "normalized": 0.1403
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "L&F Co Ltd",
+          "risk_score": 0.3554,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 7,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              4
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.173,
+              "normalized": 0.5185
+            },
+            "downstream_pagerank": {
+              "raw": 0.00591,
+              "normalized": 0.5095
+            },
+            "tier1_centrality": {
+              "raw": 0.1368,
+              "normalized": 0.0469
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Gestamp Automocion SA",
+          "risk_score": 0.3538,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 14,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              9
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.163,
+              "normalized": 0.4098
+            },
+            "downstream_pagerank": {
+              "raw": 0.00446,
+              "normalized": 0.3285
+            },
+            "tier1_centrality": {
+              "raw": 0.1609,
+              "normalized": 0.2486
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        },
+        {
+          "supplier": "Samsung SDI Co Ltd",
+          "risk_score": 0.3482,
+          "risk_level": "LOW",
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1
+          },
+          "total_unique_disrupted_suppliers": 2,
+          "max_disruption_tier": 4,
+          "downstream_supplier_count": 25,
+          "top_disrupted_countries": [
+            [
+              "Australia",
+              24
+            ]
+          ],
+          "component_breakdown": {
+            "exposure": {
+              "raw": 0.85,
+              "normalized": 0.4
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.1355,
+              "normalized": 0.1101
+            },
+            "downstream_pagerank": {
+              "raw": 0.00314,
+              "normalized": 0.163
+            },
+            "tier1_centrality": {
+              "raw": 0.2132,
+              "normalized": 0.6865
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          }
+        }
+      ],
+      "critical_suppliers": [
+        {
+          "company": "ArcelorMittal SA",
+          "risk_score": 0.5593,
+          "risk_level": "HIGH",
+          "component_breakdown": {
+            "exposure": {
+              "raw": 1.6,
+              "normalized": 1.0
+            },
+            "dependency_ratio": {
+              "raw": 0.0279,
+              "normalized": 0.0279
+            },
+            "downstream_centrality": {
+              "raw": 0.1284,
+              "normalized": 0.0323
+            },
+            "downstream_pagerank": {
+              "raw": 0.00315,
+              "normalized": 0.1641
+            },
+            "tier1_centrality": {
+              "raw": 0.2143,
+              "normalized": 0.6953
+            },
+            "depth": {
+              "raw": 4,
+              "normalized": 1.0
+            }
+          },
+          "disrupted_counts_by_tier": {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 1
+          }
+        }
+      ],
+      "risk_metrics_summary": {
+        "total_tier1_suppliers": 31,
+        "high_risk_suppliers": 1,
+        "medium_risk_suppliers": 3,
+        "low_risk_suppliers": 27,
+        "risk_thresholds": {
+          "high": 0.6,
+          "medium": 0.45,
+          "low": 0.0
+        },
+        "highest_risk_score": 0.5593,
+        "average_risk_score": 0.2972
+      },
+      "methodology": {
+        "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+        "metrics": {
+          "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+          "Dependency Ratio": "Fraction of a Tier-1's subnetwork impacted by disruptions.",
+          "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+          "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+          "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+        },
+        "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+      },
+      "calculation_strategy": "Adaptive calculation based on economic crisis disruption.",
+      "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) show elevated exposure (risk \u22650.6). Increase monitoring, buffer inventory, and prepare contingency sourcing."
+    },
+    "chief_supply_chain_output": {
+      "decisions": {
+        "ArcelorMittal SA": {
+          "action": "REPLACE_SUPPLIER",
+          "risk_score": 0.5593,
+          "justification": "Risk score of 0.6 (HIGH) requires REPLACE_SUPPLIER due to high disruption exposure and criticality within the supply network."
+        },
+        "China Steel Corp": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4556,
+          "justification": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING to maintain awareness and prepare contingencies."
+        },
+        "CNGR Advanced Material Co Ltd": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4221,
+          "justification": "Risk score of 0.5 (MEDIUM) requires INCREASE_MONITORING due to moderate risk level and existing supply chain dependencies."
+        },
+        "Schaeffler AG": {
+          "action": "INCREASE_MONITORING",
+          "risk_score": 0.4004,
+          "justification": "Risk score of 0.5 (MEDIUM) suggests maintaining vigilance with INCREASE_MONITORING plan."
+        },
+        "Contemporary Amperex Technology Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3907,
+          "justification": "Risk score of 0.4 (LOW) requires MAINTAIN_STANDARD as risk level is manageable."
+        },
+        "Wooshin Systems Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3658,
+          "justification": "Risk score of 0.4 (LOW) warrants MAINTAIN_STANDARD given the low risk profile."
+        },
+        "Beijing Easpring Material Technology Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3589,
+          "justification": "Risk score of 0.4 (LOW) supports MAINTAIN_STANDARD action."
+        },
+        "L&F Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3554,
+          "justification": "Risk score of 0.4 (LOW) indicates low risk with MAINTAIN_STANDARD approach."
+        },
+        "Gestamp Automocion SA": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3538,
+          "justification": "Risk score of 0.4 (LOW) suggests low urgency, maintaining standard procedures."
+        },
+        "Samsung SDI Co Ltd": {
+          "action": "MAINTAIN_STANDARD",
+          "risk_score": 0.3482,
+          "justification": "Risk score of 0.4 (LOW) suggests low urgency, maintaining standard procedures."
+        }
+      },
+      "decision_report": {
+        "decision_framework": "balanced",
+        "executive_summary": "Tesla Inc is taking a balanced approach to manage supply chain risks. The plan includes replacing ArcelorMittal SA due to high-risk scores while enhancing monitoring of medium-risk suppliers and maintaining current practices for low-risk suppliers.",
+        "action_summary": "Immediate supplier replacement for ArcelorMittal SA. Increased monitoring for China Steel Corp, CNGR Advanced Material Co Ltd, and Schaeffler AG. Maintain standard operations for all other suppliers in the top 10 risk list."
+      },
+      "risk_summary": {
+        "total_suppliers": 10,
+        "high_risk_suppliers": 1,
+        "medium_risk_suppliers": 3,
+        "low_risk_suppliers": 6
+      },
+      "qualitative_analysis": {
+        "disruption_summary": "An economic crisis in Eastern Europe affects BHP Group Ltd in the Metals Mining industry. This could indirectly impact Tesla's supply chain through its metal suppliers if conditions worsen.",
+        "network_impact_analysis": "The disruption affects 0 companies in the supply chain across 0 paths. While the immediate risk is low, the potential for broader network impacts necessitates vigilance.",
+        "replacement_recommendations": "Recommend replacing ArcelorMittal SA due to its high risk and significant centrality in the network, which presents a single point of failure."
+      }
+    }
+  },
+  "timestamp": "2026-02-26T20:42:53.745578"
+}
