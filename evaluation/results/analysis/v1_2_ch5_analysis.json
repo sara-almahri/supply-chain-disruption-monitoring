@@ -1,0 +1,2271 @@
+{
+ "n_runs": 630,
+ "bootstrap": {
+  "resamples": 10000,
+  "seed": 20261018
+ },
+ "models": {
+  "gpt-4o": {
+   "agent": {
+    "n_runs": 150,
+    "correct_on_input": {
+     "dm": {
+      "runs": 92,
+      "n": 150,
+      "rate": 0.6133333333333334,
+      "ci95": [
+       0.35333333333333333,
+       0.8466666666666666
+      ]
+     },
+     "kg": {
+      "runs": 150,
+      "n": 150,
+      "rate": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "risk": {
+      "runs": 150,
+      "n": 150,
+      "rate": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "csco": {
+      "runs": 140,
+      "n": 150,
+      "rate": 0.9333333333333333,
+      "ci95": [
+       0.8533333333333334,
+       1.0
+      ]
+     }
+    },
+    "dm_fields": {
+     "ongoing": 150,
+     "type": 146,
+     "scope": 122,
+     "countries": 150,
+     "industries": 134,
+     "companies": 122
+    },
+    "origin": {
+     "none": 92,
+     "dm": 58
+    },
+    "csco_errors_on_input": [
+     {
+      "run": "BMW_SC004/r1",
+      "errors": [
+       {
+        "supplier": "wooshin systems co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4508,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "BMW_SC004/r2",
+      "errors": [
+       {
+        "supplier": "wooshin systems co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4508,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "BMW_SC004/r3",
+      "errors": [
+       {
+        "supplier": "wooshin systems co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4508,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "BMW_SC004/r4",
+      "errors": [
+       {
+        "supplier": "wooshin systems co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4508,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "BMW_SC004/r5",
+      "errors": [
+       {
+        "supplier": "wooshin systems co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4508,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "BMW_SC007/r5",
+      "errors": [
+       {
+        "supplier": "wooshin systems co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4508,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC002/r3",
+      "errors": [
+       {
+        "supplier": "sk innovation co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4549,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC002/r4",
+      "errors": [
+       {
+        "supplier": "sk innovation co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4549,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC002/r5",
+      "errors": [
+       {
+        "supplier": "sk innovation co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4549,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "TSLA_SC007/r1",
+      "errors": [
+       {
+        "supplier": "panasonic holdings corp",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4548,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     }
+    ],
+    "all_correct_but_decision_wrong": 0
+   },
+   "propagation": {
+    "two_stage": {
+     "dm_wrong": 58,
+     "paths_changed": 28,
+     "decisions_changed_after_paths_changed": 25,
+     "decisions_changed_with_reference_paths": 0
+    },
+    "decision_wrong_origin": {
+     "dm": 25
+    },
+    "field_errors_by_scenario": {
+     "ongoing": {},
+     "type": {
+      "BMW_SC005": 1,
+      "TSLA_SC005": 3
+     },
+     "scope": {
+      "BMW_SC001": 1,
+      "BMW_SC002": 1,
+      "BMW_SC004": 5,
+      "BMW_SC007": 2,
+      "BMW_SC009": 1,
+      "MERC_SC001": 1,
+      "MERC_SC002": 3,
+      "MERC_SC004": 5,
+      "MERC_SC006": 1,
+      "TSLA_SC001": 1,
+      "TSLA_SC004": 4,
+      "TSLA_SC007": 3
+     },
+     "countries": {},
+     "industries": {
+      "BMW_SC006": 5,
+      "BMW_SC008": 1,
+      "MERC_SC006": 5,
+      "TSLA_SC006": 5
+     },
+     "companies": {
+      "BMW_SC005": 5,
+      "BMW_SC006": 5,
+      "MERC_SC005": 5,
+      "MERC_SC006": 4,
+      "TSLA_SC005": 5,
+      "TSLA_SC006": 4
+     }
+    },
+    "dm_wrong": 58,
+    "dm_wrong_paths_wrong": 28,
+    "dm_wrong_decisions_wrong": 25,
+    "dm_wrong_decisions_right": 33,
+    "dm_right_paths_wrong": 0,
+    "paths_wrong": 28,
+    "paths_wrong_scope_right": 0,
+    "paths_right_decisions_wrong": 0,
+    "paths_wrong_decisions_right": 3,
+    "by_error_combination": {
+     "scope": {
+      "runs": 27,
+      "paths_wrong": 27,
+      "decisions_wrong": 25
+     },
+     "industries+companies": {
+      "runs": 12,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "companies": {
+      "runs": 11,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "type+companies": {
+      "runs": 4,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "industries": {
+      "runs": 3,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "scope+industries+companies": {
+      "runs": 1,
+      "paths_wrong": 1,
+      "decisions_wrong": 0
+     }
+    },
+    "by_field": {
+     "ongoing": {
+      "runs": 0,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "type": {
+      "runs": 4,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "scope": {
+      "runs": 28,
+      "paths_wrong": 28,
+      "decisions_wrong": 25
+     },
+     "countries": {
+      "runs": 0,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "industries": {
+      "runs": 16,
+      "paths_wrong": 1,
+      "decisions_wrong": 0
+     },
+     "companies": {
+      "runs": 28,
+      "paths_wrong": 1,
+      "decisions_wrong": 0
+     }
+    }
+   },
+   "interaction": {
+    "hvr_all_valid": 150,
+    "n": 150,
+    "fidelity": {
+     "kg_relay": 150,
+     "risk_answer_is_tool_result": 150,
+     "csco_quotes": 150,
+     "csco_known_suppliers": 150
+    },
+    "runs_with_unresolved_names": 20,
+    "unresolved_names": {
+     "Banking": 4,
+     "North Korea": 15,
+     "Aerospace": 1,
+     "North Korea Aerospace Industries": 15,
+     "Financials": 1,
+     "Optus": 2
+    }
+   },
+   "system": {
+    "decision_ok": {
+     "runs": 125,
+     "n": 150,
+     "rate": 0.8333333333333334,
+     "ci95": [
+      0.6333333333333333,
+      0.9733333333333333
+     ]
+    },
+    "constrained": {
+     "runs": 96,
+     "n": 150,
+     "rate": 0.64,
+     "ci95": [
+      0.4466666666666666,
+      0.8266666666666667
+     ]
+    },
+    "violations": {
+     "latency": 0,
+     "cost": 0,
+     "tokens": 31
+    },
+    "decision_ok_but_over_budget": 29,
+    "decision_ok_but_over_budget_tokens": [
+     30333.0,
+     34929.0
+    ],
+    "decision_ok_but_over_budget_by_scenario": {
+     "BMW_SC001": 4,
+     "BMW_SC005": 5,
+     "BMW_SC006": 5,
+     "BMW_SC009": 4,
+     "MERC_SC001": 1,
+     "MERC_SC006": 5,
+     "MERC_SC009": 5
+    },
+    "over_token_budget_by_scenario": {
+     "BMW_SC001": 5,
+     "BMW_SC005": 5,
+     "BMW_SC006": 5,
+     "BMW_SC009": 5,
+     "MERC_SC001": 1,
+     "MERC_SC006": 5,
+     "MERC_SC009": 5
+    },
+    "tokens": {
+     "mean": 20407.793333333335,
+     "min": 5965.0,
+     "max": 34929.0,
+     "within_scenario_sd": 385.5947477454082,
+     "between_scenario_sd": 9807.787004006335,
+     "corr_with_reference_scored_suppliers": 0.8369459332250885
+    },
+    "latency_s": {
+     "mean": 15.735333333333333,
+     "min": 5.2,
+     "max": 34.0
+    },
+    "cost_usd": {
+     "mean": 0.05974286,
+     "max": 0.110942,
+     "total": 8.961429000000003
+    }
+   },
+   "repeatability": {
+    "dm_ok": {
+     "pass^k": {
+      "1": 0.6133333333333333,
+      "2": 0.5366666666666666,
+      "3": 0.4833333333333334,
+      "4": 0.44,
+      "5": 0.4
+     },
+     "successes_per_scenario": {
+      "0": 8,
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 6,
+      "5": 12
+     },
+     "never": [
+      "BMW_SC004",
+      "BMW_SC005",
+      "BMW_SC006",
+      "MERC_SC004",
+      "MERC_SC005",
+      "MERC_SC006",
+      "TSLA_SC005",
+      "TSLA_SC006"
+     ],
+     "varying": [
+      "BMW_SC001",
+      "BMW_SC002",
+      "BMW_SC007",
+      "BMW_SC008",
+      "BMW_SC009",
+      "MERC_SC001",
+      "MERC_SC002",
+      "TSLA_SC001",
+      "TSLA_SC004",
+      "TSLA_SC007"
+     ]
+    },
+    "decision_ok": {
+     "pass^k": {
+      "1": 0.8333333333333333,
+      "2": 0.7766666666666667,
+      "3": 0.7433333333333334,
+      "4": 0.7200000000000001,
+      "5": 0.7
+     },
+     "successes_per_scenario": {
+      "0": 2,
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 3,
+      "5": 21
+     },
+     "never": [
+      "BMW_SC004",
+      "MERC_SC004"
+     ],
+     "varying": [
+      "BMW_SC001",
+      "BMW_SC002",
+      "BMW_SC007",
+      "BMW_SC009",
+      "MERC_SC002",
+      "TSLA_SC004",
+      "TSLA_SC007"
+     ]
+    },
+    "constrained": {
+     "pass^k": {
+      "1": 0.64,
+      "2": 0.59,
+      "3": 0.5633333333333332,
+      "4": 0.5466666666666666,
+      "5": 0.5333333333333333
+     },
+     "successes_per_scenario": {
+      "0": 8,
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 2,
+      "5": 16
+     },
+     "never": [
+      "BMW_SC001",
+      "BMW_SC004",
+      "BMW_SC005",
+      "BMW_SC006",
+      "BMW_SC009",
+      "MERC_SC004",
+      "MERC_SC006",
+      "MERC_SC009"
+     ],
+     "varying": [
+      "BMW_SC002",
+      "BMW_SC007",
+      "MERC_SC001",
+      "MERC_SC002",
+      "TSLA_SC004",
+      "TSLA_SC007"
+     ]
+    }
+   }
+  },
+  "gpt-4.1": {
+   "agent": {
+    "n_runs": 150,
+    "correct_on_input": {
+     "dm": {
+      "runs": 87,
+      "n": 150,
+      "rate": 0.58,
+      "ci95": [
+       0.3466666666666667,
+       0.8001666666666644
+      ]
+     },
+     "kg": {
+      "runs": 150,
+      "n": 150,
+      "rate": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "risk": {
+      "runs": 150,
+      "n": 150,
+      "rate": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "csco": {
+      "runs": 141,
+      "n": 150,
+      "rate": 0.94,
+      "ci95": [
+       0.8866666666666666,
+       0.9866666666666667
+      ]
+     }
+    },
+    "dm_fields": {
+     "ongoing": 150,
+     "type": 150,
+     "scope": 118,
+     "countries": 150,
+     "industries": 117,
+     "companies": 123
+    },
+    "origin": {
+     "none": 86,
+     "dm": 63,
+     "csco": 1
+    },
+    "csco_errors_on_input": [
+     {
+      "run": "BMW_SC004/r2",
+      "errors": [
+       {
+        "supplier": "wooshin systems co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4508,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "BMW_SC004/r5",
+      "errors": [
+       {
+        "supplier": "wooshin systems co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4508,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "BMW_SC006/r3",
+      "errors": [
+       {
+        "supplier": "samsung sdi co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4608,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC002/r1",
+      "errors": [
+       {
+        "supplier": "sk innovation co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4549,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC002/r3",
+      "errors": [
+       {
+        "supplier": "eaton corp plc",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4608,
+        "listed": false
+       },
+       {
+        "supplier": "sk innovation co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4549,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC002/r5",
+      "errors": [
+       {
+        "supplier": "sk innovation co ltd",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4549,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "TSLA_SC009/r2",
+      "errors": [
+       {
+        "supplier": "panasonic holdings corp",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4588,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": true,
+      "dm_ok": false
+     },
+     {
+      "run": "TSLA_SC009/r4",
+      "errors": [
+       {
+        "supplier": "panasonic holdings corp",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4588,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": true,
+      "dm_ok": false
+     },
+     {
+      "run": "TSLA_SC009/r5",
+      "errors": [
+       {
+        "supplier": "panasonic holdings corp",
+        "expected": "INCREASE_MONITORING",
+        "csco": "MAINTAIN_STANDARD",
+        "score": 0.4588,
+        "listed": false
+       }
+      ],
+      "dm_scope_ok": true,
+      "dm_ok": true
+     }
+    ],
+    "all_correct_but_decision_wrong": 0
+   },
+   "propagation": {
+    "two_stage": {
+     "dm_wrong": 63,
+     "paths_changed": 36,
+     "decisions_changed_after_paths_changed": 20,
+     "decisions_changed_with_reference_paths": 3
+    },
+    "decision_wrong_origin": {
+     "dm": 22,
+     "csco": 1
+    },
+    "field_errors_by_scenario": {
+     "ongoing": {},
+     "type": {},
+     "scope": {
+      "BMW_SC002": 2,
+      "BMW_SC004": 4,
+      "BMW_SC006": 5,
+      "MERC_SC002": 3,
+      "MERC_SC006": 5,
+      "MERC_SC009": 2,
+      "TSLA_SC002": 1,
+      "TSLA_SC004": 3,
+      "TSLA_SC006": 5,
+      "TSLA_SC009": 2
+     },
+     "countries": {},
+     "industries": {
+      "BMW_SC003": 1,
+      "BMW_SC006": 5,
+      "BMW_SC009": 5,
+      "MERC_SC003": 2,
+      "MERC_SC006": 5,
+      "MERC_SC009": 1,
+      "TSLA_SC003": 1,
+      "TSLA_SC006": 5,
+      "TSLA_SC008": 4,
+      "TSLA_SC009": 4
+     },
+     "companies": {
+      "BMW_SC005": 5,
+      "BMW_SC006": 3,
+      "MERC_SC005": 5,
+      "MERC_SC006": 5,
+      "TSLA_SC005": 5,
+      "TSLA_SC006": 4
+     }
+    },
+    "dm_wrong": 63,
+    "dm_wrong_paths_wrong": 36,
+    "dm_wrong_decisions_wrong": 22,
+    "dm_wrong_decisions_right": 41,
+    "dm_right_paths_wrong": 0,
+    "paths_wrong": 36,
+    "paths_wrong_scope_right": 4,
+    "paths_right_decisions_wrong": 3,
+    "paths_wrong_decisions_right": 16,
+    "by_error_combination": {
+     "industries": {
+      "runs": 16,
+      "paths_wrong": 4,
+      "decisions_wrong": 4
+     },
+     "scope": {
+      "runs": 15,
+      "paths_wrong": 15,
+      "decisions_wrong": 15
+     },
+     "companies": {
+      "runs": 15,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "scope+industries+companies": {
+      "runs": 12,
+      "paths_wrong": 12,
+      "decisions_wrong": 1
+     },
+     "scope+industries": {
+      "runs": 5,
+      "paths_wrong": 5,
+      "decisions_wrong": 2
+     }
+    },
+    "by_field": {
+     "ongoing": {
+      "runs": 0,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "type": {
+      "runs": 0,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "scope": {
+      "runs": 32,
+      "paths_wrong": 32,
+      "decisions_wrong": 18
+     },
+     "countries": {
+      "runs": 0,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "industries": {
+      "runs": 33,
+      "paths_wrong": 21,
+      "decisions_wrong": 7
+     },
+     "companies": {
+      "runs": 27,
+      "paths_wrong": 12,
+      "decisions_wrong": 1
+     }
+    }
+   },
+   "interaction": {
+    "hvr_all_valid": 150,
+    "n": 150,
+    "fidelity": {
+     "kg_relay": 150,
+     "risk_answer_is_tool_result": 150,
+     "csco_quotes": 150,
+     "csco_known_suppliers": 150
+    },
+    "runs_with_unresolved_names": 40,
+    "unresolved_names": {
+     "Textile machinery": 1,
+     "Banking": 15,
+     "Optus": 3,
+     "North Korea": 15,
+     "North Korea Aerospace Industries": 15,
+     "manufacturing": 5,
+     "industrial production": 1,
+     "Manufacturing": 3,
+     "Resource sector": 3,
+     "Resource sector operations": 1,
+     "Aviation": 2,
+     "aviation industry": 1,
+     "Air Transport": 1
+    }
+   },
+   "system": {
+    "decision_ok": {
+     "runs": 127,
+     "n": 150,
+     "rate": 0.8466666666666667,
+     "ci95": [
+      0.7200000000000001,
+      0.9600000000000001
+     ]
+    },
+    "constrained": {
+     "runs": 98,
+     "n": 150,
+     "rate": 0.6533333333333333,
+     "ci95": [
+      0.45999999999999996,
+      0.8266666666666667
+     ]
+    },
+    "violations": {
+     "latency": 0,
+     "cost": 0,
+     "tokens": 32
+    },
+    "decision_ok_but_over_budget": 29,
+    "decision_ok_but_over_budget_tokens": [
+     30022.0,
+     35639.0
+    ],
+    "decision_ok_but_over_budget_by_scenario": {
+     "BMW_SC001": 5,
+     "BMW_SC003": 1,
+     "BMW_SC005": 5,
+     "BMW_SC006": 4,
+     "BMW_SC009": 5,
+     "MERC_SC001": 1,
+     "MERC_SC006": 5,
+     "MERC_SC009": 3
+    },
+    "over_token_budget_by_scenario": {
+     "BMW_SC001": 5,
+     "BMW_SC003": 1,
+     "BMW_SC005": 5,
+     "BMW_SC006": 5,
+     "BMW_SC009": 5,
+     "MERC_SC001": 1,
+     "MERC_SC003": 2,
+     "MERC_SC006": 5,
+     "MERC_SC009": 3
+    },
+    "tokens": {
+     "mean": 19597.286666666667,
+     "min": 6095.0,
+     "max": 35639.0,
+     "within_scenario_sd": 645.2306224622662,
+     "between_scenario_sd": 9995.55944869965,
+     "corr_with_reference_scored_suppliers": 0.926886043419595
+    },
+    "latency_s": {
+     "mean": 16.781333333333333,
+     "min": 5.8,
+     "max": 84.6
+    },
+    "cost_usd": {
+     "mean": 0.045788093333333335,
+     "max": 0.092288,
+     "total": 6.868214
+    }
+   },
+   "repeatability": {
+    "dm_ok": {
+     "pass^k": {
+      "1": 0.5800000000000001,
+      "2": 0.49,
+      "3": 0.44666666666666666,
+      "4": 0.41999999999999993,
+      "5": 0.4
+     },
+     "successes_per_scenario": {
+      "0": 7,
+      "1": 3,
+      "2": 3,
+      "3": 2,
+      "4": 3,
+      "5": 12
+     },
+     "never": [
+      "BMW_SC005",
+      "BMW_SC006",
+      "BMW_SC009",
+      "MERC_SC005",
+      "MERC_SC006",
+      "TSLA_SC005",
+      "TSLA_SC006"
+     ],
+     "varying": [
+      "BMW_SC002",
+      "BMW_SC003",
+      "BMW_SC004",
+      "MERC_SC002",
+      "MERC_SC003",
+      "MERC_SC009",
+      "TSLA_SC002",
+      "TSLA_SC003",
+      "TSLA_SC004",
+      "TSLA_SC008",
+      "TSLA_SC009"
+     ]
+    },
+    "decision_ok": {
+     "pass^k": {
+      "1": 0.8466666666666668,
+      "2": 0.7766666666666668,
+      "3": 0.7366666666666666,
+      "4": 0.7133333333333333,
+      "5": 0.7
+     },
+     "successes_per_scenario": {
+      "0": 1,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 2,
+      "5": 21
+     },
+     "never": [
+      "TSLA_SC009"
+     ],
+     "varying": [
+      "BMW_SC002",
+      "BMW_SC004",
+      "BMW_SC006",
+      "MERC_SC002",
+      "MERC_SC003",
+      "MERC_SC009",
+      "TSLA_SC002",
+      "TSLA_SC004"
+     ]
+    },
+    "constrained": {
+     "pass^k": {
+      "1": 0.6533333333333334,
+      "2": 0.5866666666666666,
+      "3": 0.5466666666666666,
+      "4": 0.52,
+      "5": 0.5
+     },
+     "successes_per_scenario": {
+      "0": 7,
+      "1": 1,
+      "2": 2,
+      "3": 2,
+      "4": 3,
+      "5": 15
+     },
+     "never": [
+      "BMW_SC001",
+      "BMW_SC005",
+      "BMW_SC006",
+      "BMW_SC009",
+      "MERC_SC006",
+      "MERC_SC009",
+      "TSLA_SC009"
+     ],
+     "varying": [
+      "BMW_SC002",
+      "BMW_SC003",
+      "BMW_SC004",
+      "MERC_SC001",
+      "MERC_SC002",
+      "MERC_SC003",
+      "TSLA_SC002",
+      "TSLA_SC004"
+     ]
+    }
+   }
+  },
+  "gpt-5-mini": {
+   "agent": {
+    "n_runs": 150,
+    "correct_on_input": {
+     "dm": {
+      "runs": 27,
+      "n": 150,
+      "rate": 0.18,
+      "ci95": [
+       0.03333333333333333,
+       0.3866666666666667
+      ]
+     },
+     "kg": {
+      "runs": 150,
+      "n": 150,
+      "rate": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "risk": {
+      "runs": 150,
+      "n": 150,
+      "rate": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "csco": {
+      "runs": 142,
+      "n": 150,
+      "rate": 0.9466666666666667,
+      "ci95": [
+       0.9,
+       0.9866666666666667
+      ]
+     }
+    },
+    "dm_fields": {
+     "ongoing": 150,
+     "type": 150,
+     "scope": 131,
+     "countries": 136,
+     "industries": 64,
+     "companies": 100
+    },
+    "origin": {
+     "dm": 123,
+     "none": 27
+    },
+    "csco_errors_on_input": [
+     {
+      "run": "BMW_SC003/r2",
+      "errors": [
+       {
+        "supplier": "Mitsubishi Electric Corp",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4453,
+        "listed": true
+       }
+      ],
+      "dm_scope_ok": true,
+      "dm_ok": false
+     },
+     {
+      "run": "BMW_SC003/r4",
+      "errors": [
+       {
+        "supplier": "Mitsubishi Electric Corp",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4453,
+        "listed": true
+       }
+      ],
+      "dm_scope_ok": true,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC004/r2",
+      "errors": [
+       {
+        "supplier": "Autoliv Inc",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4462,
+        "listed": true
+       },
+       {
+        "supplier": "Wooshin Systems Co Ltd",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4475,
+        "listed": true
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC004/r5",
+      "errors": [
+       {
+        "supplier": "Autoliv Inc",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4462,
+        "listed": true
+       },
+       {
+        "supplier": "Wooshin Systems Co Ltd",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4475,
+        "listed": true
+       }
+      ],
+      "dm_scope_ok": false,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC009/r1",
+      "errors": [
+       {
+        "supplier": "Toyota Industries Corp",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4461,
+        "listed": true
+       }
+      ],
+      "dm_scope_ok": true,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC009/r4",
+      "errors": [
+       {
+        "supplier": "Toyota Industries Corp",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4461,
+        "listed": true
+       }
+      ],
+      "dm_scope_ok": true,
+      "dm_ok": false
+     },
+     {
+      "run": "MERC_SC009/r5",
+      "errors": [
+       {
+        "supplier": "Toyota Industries Corp",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4461,
+        "listed": true
+       }
+      ],
+      "dm_scope_ok": true,
+      "dm_ok": false
+     },
+     {
+      "run": "TSLA_SC005/r3",
+      "errors": [
+       {
+        "supplier": "thyssenkrupp AG",
+        "expected": "MAINTAIN_STANDARD",
+        "csco": "INCREASE_MONITORING",
+        "score": 0.4477,
+        "listed": true
+       }
+      ],
+      "dm_scope_ok": true,
+      "dm_ok": false
+     }
+    ],
+    "all_correct_but_decision_wrong": 0
+   },
+   "propagation": {
+    "two_stage": {
+     "dm_wrong": 123,
+     "paths_changed": 49,
+     "decisions_changed_after_paths_changed": 34,
+     "decisions_changed_with_reference_paths": 3
+    },
+    "decision_wrong_origin": {
+     "dm": 37
+    },
+    "field_errors_by_scenario": {
+     "ongoing": {},
+     "type": {},
+     "scope": {
+      "BMW_SC004": 4,
+      "BMW_SC006": 2,
+      "MERC_SC004": 4,
+      "MERC_SC006": 3,
+      "TSLA_SC004": 4,
+      "TSLA_SC006": 1,
+      "TSLA_SC009": 1
+     },
+     "countries": {
+      "BMW_SC005": 5,
+      "MERC_SC005": 5,
+      "TSLA_SC005": 4
+     },
+     "industries": {
+      "BMW_SC001": 1,
+      "BMW_SC002": 3,
+      "BMW_SC003": 5,
+      "BMW_SC005": 5,
+      "BMW_SC006": 5,
+      "BMW_SC008": 2,
+      "BMW_SC009": 5,
+      "BMW_SC010": 1,
+      "MERC_SC001": 1,
+      "MERC_SC002": 5,
+      "MERC_SC003": 5,
+      "MERC_SC005": 4,
+      "MERC_SC006": 5,
+      "MERC_SC008": 3,
+      "MERC_SC009": 5,
+      "MERC_SC010": 1,
+      "TSLA_SC002": 5,
+      "TSLA_SC003": 5,
+      "TSLA_SC005": 5,
+      "TSLA_SC006": 5,
+      "TSLA_SC008": 4,
+      "TSLA_SC009": 5,
+      "TSLA_SC010": 1
+     },
+     "companies": {
+      "BMW_SC001": 3,
+      "BMW_SC005": 5,
+      "BMW_SC008": 5,
+      "BMW_SC010": 5,
+      "MERC_SC001": 3,
+      "MERC_SC005": 5,
+      "MERC_SC008": 4,
+      "MERC_SC010": 4,
+      "TSLA_SC001": 3,
+      "TSLA_SC005": 5,
+      "TSLA_SC008": 5,
+      "TSLA_SC010": 3
+     }
+    },
+    "dm_wrong": 123,
+    "dm_wrong_paths_wrong": 49,
+    "dm_wrong_decisions_wrong": 37,
+    "dm_wrong_decisions_right": 86,
+    "dm_right_paths_wrong": 0,
+    "paths_wrong": 49,
+    "paths_wrong_scope_right": 30,
+    "paths_right_decisions_wrong": 3,
+    "paths_wrong_decisions_right": 15,
+    "by_error_combination": {
+     "industries": {
+      "runs": 54,
+      "paths_wrong": 15,
+      "decisions_wrong": 10
+     },
+     "companies": {
+      "runs": 24,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "countries+industries+companies": {
+      "runs": 13,
+      "paths_wrong": 13,
+      "decisions_wrong": 13
+     },
+     "industries+companies": {
+      "runs": 12,
+      "paths_wrong": 2,
+      "decisions_wrong": 1
+     },
+     "scope": {
+      "runs": 12,
+      "paths_wrong": 12,
+      "decisions_wrong": 12
+     },
+     "scope+industries": {
+      "runs": 7,
+      "paths_wrong": 7,
+      "decisions_wrong": 1
+     },
+     "countries+companies": {
+      "runs": 1,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     }
+    },
+    "by_field": {
+     "ongoing": {
+      "runs": 0,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "type": {
+      "runs": 0,
+      "paths_wrong": 0,
+      "decisions_wrong": 0
+     },
+     "scope": {
+      "runs": 19,
+      "paths_wrong": 19,
+      "decisions_wrong": 13
+     },
+     "countries": {
+      "runs": 14,
+      "paths_wrong": 13,
+      "decisions_wrong": 13
+     },
+     "industries": {
+      "runs": 86,
+      "paths_wrong": 37,
+      "decisions_wrong": 25
+     },
+     "companies": {
+      "runs": 50,
+      "paths_wrong": 15,
+      "decisions_wrong": 14
+     }
+    }
+   },
+   "interaction": {
+    "hvr_all_valid": 150,
+    "n": 150,
+    "fidelity": {
+     "kg_relay": 150,
+     "risk_answer_is_tool_result": 150,
+     "csco_quotes": 150,
+     "csco_known_suppliers": 150
+    },
+    "runs_with_unresolved_names": 76,
+    "unresolved_names": {
+     "Eskom": 9,
+     "banking": 12,
+     "resource sector": 5,
+     "Optus": 15,
+     "Banking": 11,
+     "North Korea": 15,
+     "North Korea Aerospace Industries": 15,
+     "Panghyon Aircraft Factory": 14,
+     "Manufacturing": 11,
+     "banking sector": 3,
+     "Industrial production": 1,
+     "Port Kembla Steelworks": 12,
+     "manufacturing sectors": 1,
+     "Resource sector operations": 1,
+     "industrial production": 3,
+     "manufacturing": 2,
+     "Banking sector": 1,
+     "Financial Services": 1,
+     "parts suppliers": 1
+    }
+   },
+   "system": {
+    "decision_ok": {
+     "runs": 113,
+     "n": 150,
+     "rate": 0.7533333333333333,
+     "ci95": [
+      0.5399999999999999,
+      0.9466666666666667
+     ]
+    },
+    "constrained": {
+     "runs": 82,
+     "n": 150,
+     "rate": 0.5466666666666666,
+     "ci95": [
+      0.33333333333333326,
+      0.7799999999999999
+     ]
+    },
+    "violations": {
+     "latency": 0,
+     "cost": 0,
+     "tokens": 59
+    },
+    "decision_ok_but_over_budget": 31,
+    "decision_ok_but_over_budget_tokens": [
+     31141.0,
+     42072.0
+    ],
+    "decision_ok_but_over_budget_by_scenario": {
+     "BMW_SC001": 4,
+     "BMW_SC002": 1,
+     "BMW_SC003": 3,
+     "BMW_SC006": 5,
+     "BMW_SC009": 5,
+     "MERC_SC001": 5,
+     "MERC_SC005": 1,
+     "MERC_SC006": 5,
+     "MERC_SC009": 2
+    },
+    "over_token_budget_by_scenario": {
+     "BMW_SC001": 5,
+     "BMW_SC002": 1,
+     "BMW_SC003": 5,
+     "BMW_SC004": 4,
+     "BMW_SC005": 5,
+     "BMW_SC006": 5,
+     "BMW_SC009": 5,
+     "MERC_SC001": 5,
+     "MERC_SC003": 5,
+     "MERC_SC004": 4,
+     "MERC_SC005": 5,
+     "MERC_SC006": 5,
+     "MERC_SC009": 5
+    },
+    "tokens": {
+     "mean": 24134.746666666666,
+     "min": 7522.0,
+     "max": 42072.0,
+     "within_scenario_sd": 1284.3349596048035,
+     "between_scenario_sd": 10737.131336681858,
+     "corr_with_reference_scored_suppliers": 0.8574139505502877
+    },
+    "latency_s": {
+     "mean": 47.388,
+     "min": 16.2,
+     "max": 93.5
+    },
+    "cost_usd": {
+     "mean": 0.014349673333333333,
+     "max": 0.027576,
+     "total": 2.152451
+    }
+   },
+   "repeatability": {
+    "dm_ok": {
+     "pass^k": {
+      "1": 0.18000000000000002,
+      "2": 0.11333333333333333,
+      "3": 0.1,
+      "4": 0.1,
+      "5": 0.1
+     },
+     "successes_per_scenario": {
+      "0": 19,
+      "1": 4,
+      "2": 4,
+      "3": 0,
+      "4": 0,
+      "5": 3
+     },
+     "never": [
+      "BMW_SC003",
+      "BMW_SC005",
+      "BMW_SC006",
+      "BMW_SC008",
+      "BMW_SC009",
+      "BMW_SC010",
+      "MERC_SC002",
+      "MERC_SC003",
+      "MERC_SC005",
+      "MERC_SC006",
+      "MERC_SC008",
+      "MERC_SC009",
+      "MERC_SC010",
+      "TSLA_SC002",
+      "TSLA_SC003",
+      "TSLA_SC005",
+      "TSLA_SC006",
+      "TSLA_SC008",
+      "TSLA_SC009"
+     ],
+     "varying": [
+      "BMW_SC001",
+      "BMW_SC002",
+      "BMW_SC004",
+      "MERC_SC001",
+      "MERC_SC004",
+      "TSLA_SC001",
+      "TSLA_SC004",
+      "TSLA_SC010"
+     ]
+    },
+    "decision_ok": {
+     "pass^k": {
+      "1": 0.7533333333333333,
+      "2": 0.6866666666666668,
+      "3": 0.6633333333333333,
+      "4": 0.6466666666666666,
+      "5": 0.6333333333333333
+     },
+     "successes_per_scenario": {
+      "0": 2,
+      "1": 5,
+      "2": 1,
+      "3": 1,
+      "4": 2,
+      "5": 19
+     },
+     "never": [
+      "BMW_SC005",
+      "MERC_SC003"
+     ],
+     "varying": [
+      "BMW_SC001",
+      "BMW_SC003",
+      "BMW_SC004",
+      "MERC_SC004",
+      "MERC_SC005",
+      "MERC_SC009",
+      "TSLA_SC004",
+      "TSLA_SC005",
+      "TSLA_SC009"
+     ]
+    },
+    "constrained": {
+     "pass^k": {
+      "1": 0.5466666666666666,
+      "2": 0.5066666666666666,
+      "3": 0.49333333333333335,
+      "4": 0.4799999999999999,
+      "5": 0.4666666666666667
+     },
+     "successes_per_scenario": {
+      "0": 10,
+      "1": 4,
+      "2": 0,
+      "3": 0,
+      "4": 2,
+      "5": 14
+     },
+     "never": [
+      "BMW_SC001",
+      "BMW_SC003",
+      "BMW_SC005",
+      "BMW_SC006",
+      "BMW_SC009",
+      "MERC_SC001",
+      "MERC_SC003",
+      "MERC_SC005",
+      "MERC_SC006",
+      "MERC_SC009"
+     ],
+     "varying": [
+      "BMW_SC002",
+      "BMW_SC004",
+      "MERC_SC004",
+      "TSLA_SC004",
+      "TSLA_SC005",
+      "TSLA_SC009"
+     ]
+    }
+   }
+  }
+ },
+ "comparisons": {
+  "gpt-4.1 - gpt-4o": {
+   "dm_ok": {
+    "diff": -0.03333333333333334,
+    "ci95": [
+     -0.23333333333333336,
+     0.15999999999999998
+    ],
+    "n_scenarios": 30
+   },
+   "type": {
+    "diff": 0.026666666666666665,
+    "ci95": [
+     0.0,
+     0.08
+    ],
+    "n_scenarios": 30
+   },
+   "scope": {
+    "diff": -0.026666666666666675,
+    "ci95": [
+     -0.2733333333333333,
+     0.1733333333333333
+    ],
+    "n_scenarios": 30
+   },
+   "entities": {
+    "diff": -0.11333333333333333,
+    "ci95": [
+     -0.2533333333333333,
+     0.0
+    ],
+    "n_scenarios": 30
+   },
+   "dm_entity_f1": {
+    "diff": -0.01541306841306842,
+    "ci95": [
+     -0.029470307470307485,
+     -0.002857142857142858
+    ],
+    "n_scenarios": 30
+   },
+   "decision_ok": {
+    "diff": 0.01333333333333333,
+    "ci95": [
+     -0.12000000000000002,
+     0.16
+    ],
+    "n_scenarios": 30
+   },
+   "constrained": {
+    "diff": 0.013333333333333334,
+    "ci95": [
+     -0.11333333333333333,
+     0.16
+    ],
+    "n_scenarios": 30
+   }
+  },
+  "gpt-5-mini - gpt-4o": {
+   "dm_ok": {
+    "diff": -0.43333333333333335,
+    "ci95": [
+     -0.7266666666666667,
+     -0.12000000000000001
+    ],
+    "n_scenarios": 30
+   },
+   "type": {
+    "diff": 0.026666666666666665,
+    "ci95": [
+     0.0,
+     0.08
+    ],
+    "n_scenarios": 30
+   },
+   "scope": {
+    "diff": 0.05999999999999999,
+    "ci95": [
+     -0.05333333333333334,
+     0.16666666666666663
+    ],
+    "n_scenarios": 30
+   },
+   "entities": {
+    "diff": -0.5333333333333333,
+    "ci95": [
+     -0.8066666666666666,
+     -0.24666666666666665
+    ],
+    "n_scenarios": 30
+   },
+   "dm_entity_f1": {
+    "diff": -0.11731734931734934,
+    "ci95": [
+     -0.15830320790320793,
+     -0.06701468253968258
+    ],
+    "n_scenarios": 30
+   },
+   "decision_ok": {
+    "diff": -0.08,
+    "ci95": [
+     -0.30666666666666664,
+     0.11333333333333331
+    ],
+    "n_scenarios": 30
+   },
+   "constrained": {
+    "diff": -0.09333333333333334,
+    "ci95": [
+     -0.29333333333333333,
+     0.08666666666666667
+    ],
+    "n_scenarios": 30
+   }
+  }
+ },
+ "variants": {
+  "paraphrase": {
+   "n_runs": 90,
+   "excluded": [],
+   "rates": {
+    "dm_ok": {
+     "runs": 56,
+     "n": 90,
+     "rate": 0.6222222222222222,
+     "ci95": [
+      0.3888888888888889,
+      0.8444444444444444
+     ]
+    },
+    "type": {
+     "runs": 87,
+     "n": 90,
+     "rate": 0.9666666666666667,
+     "ci95": [
+      0.9,
+      1.0
+     ]
+    },
+    "scope": {
+     "runs": 72,
+     "n": 90,
+     "rate": 0.8,
+     "ci95": [
+      0.611111111111111,
+      0.9444444444444444
+     ]
+    },
+    "entities": {
+     "runs": 70,
+     "n": 90,
+     "rate": 0.7777777777777778,
+     "ci95": [
+      0.5444444444444444,
+      0.9777777777777777
+     ]
+    },
+    "decision_ok": {
+     "runs": 74,
+     "n": 90,
+     "rate": 0.8222222222222222,
+     "ci95": [
+      0.6330555555555557,
+      0.9777777777777777
+     ]
+    },
+    "constrained": {
+     "runs": 57,
+     "n": 90,
+     "rate": 0.6333333333333333,
+     "ci95": [
+      0.4444444444444445,
+      0.8222222222222222
+     ]
+    }
+   },
+   "paired_vs_original": {
+    "dm_ok": {
+     "diff": 0.008888888888888868,
+     "ci95": [
+      -0.10666666666666669,
+      0.10888888888888888
+     ],
+     "n_scenarios": 30
+    },
+    "type": {
+     "diff": -0.006666666666666672,
+     "ci95": [
+      -0.020000000000000018,
+      0.0
+     ],
+     "n_scenarios": 30
+    },
+    "scope": {
+     "diff": -0.013333333333333353,
+     "ci95": [
+      -0.06888888888888892,
+      0.03333333333333331
+     ],
+     "n_scenarios": 30
+    },
+    "entities": {
+     "diff": -0.015555555555555566,
+     "ci95": [
+      -0.1377777777777778,
+      0.08894444444444363
+     ],
+     "n_scenarios": 30
+    },
+    "dm_entity_f1": {
+     "diff": 0.0041817811817811785,
+     "ci95": [
+      -0.024574832574832593,
+      0.03096408961408955
+     ],
+     "n_scenarios": 30
+    },
+    "decision_ok": {
+     "diff": -0.011111111111111124,
+     "ci95": [
+      -0.05555555555555557,
+      0.02222222222222221
+     ],
+     "n_scenarios": 30
+    },
+    "constrained": {
+     "diff": -0.006666666666666677,
+     "ci95": [
+      -0.05111111111111113,
+      0.024444444444444435
+     ],
+     "n_scenarios": 30
+    }
+   },
+   "violations": {
+    "latency": 0,
+    "cost": 0,
+    "tokens": 18
+   },
+   "latency_max_s": 35.3
+  },
+  "noise-mild": {
+   "n_runs": 30,
+   "excluded": [],
+   "rates": {
+    "dm_ok": {
+     "runs": 19,
+     "n": 30,
+     "rate": 0.6333333333333333,
+     "ci95": [
+      0.4,
+      0.8666666666666667
+     ]
+    },
+    "type": {
+     "runs": 30,
+     "n": 30,
+     "rate": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "scope": {
+     "runs": 25,
+     "n": 30,
+     "rate": 0.8333333333333334,
+     "ci95": [
+      0.6666666666666666,
+      0.9666666666666667
+     ]
+    },
+    "entities": {
+     "runs": 23,
+     "n": 30,
+     "rate": 0.7666666666666667,
+     "ci95": [
+      0.5,
+      1.0
+     ]
+    },
+    "decision_ok": {
+     "runs": 26,
+     "n": 30,
+     "rate": 0.8666666666666667,
+     "ci95": [
+      0.7,
+      1.0
+     ]
+    },
+    "constrained": {
+     "runs": 18,
+     "n": 30,
+     "rate": 0.6,
+     "ci95": [
+      0.4,
+      0.8
+     ]
+    }
+   },
+   "paired_vs_original": {
+    "dm_ok": {
+     "diff": 0.01999999999999999,
+     "ci95": [
+      -0.08666666666666668,
+      0.13333333333333333
+     ],
+     "n_scenarios": 30
+    },
+    "type": {
+     "diff": 0.026666666666666665,
+     "ci95": [
+      0.0,
+      0.08
+     ],
+     "n_scenarios": 30
+    },
+    "scope": {
+     "diff": 0.01999999999999999,
+     "ci95": [
+      -0.08666666666666666,
+      0.12666666666666665
+     ],
+     "n_scenarios": 30
+    },
+    "entities": {
+     "diff": -0.02666666666666667,
+     "ci95": [
+      -0.1,
+      0.019999999999999997
+     ],
+     "n_scenarios": 30
+    },
+    "dm_entity_f1": {
+     "diff": -0.008805416805416808,
+     "ci95": [
+      -0.02460666000666,
+      0.004444444444444444
+     ],
+     "n_scenarios": 30
+    },
+    "decision_ok": {
+     "diff": 0.033333333333333326,
+     "ci95": [
+      -0.07333333333333333,
+      0.14
+     ],
+     "n_scenarios": 30
+    },
+    "constrained": {
+     "diff": -0.04,
+     "ci95": [
+      -0.17333333333333334,
+      0.09333333333333332
+     ],
+     "n_scenarios": 30
+    }
+   },
+   "violations": {
+    "latency": 1,
+    "cost": 0,
+    "tokens": 7
+   },
+   "latency_max_s": 2180.2
+  },
+  "noise-moderate": {
+   "n_runs": 30,
+   "excluded": [],
+   "rates": {
+    "dm_ok": {
+     "runs": 16,
+     "n": 30,
+     "rate": 0.5333333333333333,
+     "ci95": [
+      0.3333333333333333,
+      0.7333333333333333
+     ]
+    },
+    "type": {
+     "runs": 24,
+     "n": 30,
+     "rate": 0.8,
+     "ci95": [
+      0.6333333333333333,
+      0.9666666666666667
+     ]
+    },
+    "scope": {
+     "runs": 23,
+     "n": 30,
+     "rate": 0.7666666666666667,
+     "ci95": [
+      0.5333333333333333,
+      0.9666666666666667
+     ]
+    },
+    "entities": {
+     "runs": 21,
+     "n": 30,
+     "rate": 0.7,
+     "ci95": [
+      0.4666666666666667,
+      0.9
+     ]
+    },
+    "decision_ok": {
+     "runs": 25,
+     "n": 30,
+     "rate": 0.8333333333333334,
+     "ci95": [
+      0.6333333333333333,
+      1.0
+     ]
+    },
+    "constrained": {
+     "runs": 19,
+     "n": 30,
+     "rate": 0.6333333333333333,
+     "ci95": [
+      0.43333333333333335,
+      0.8333333333333334
+     ]
+    }
+   },
+   "paired_vs_original": {
+    "dm_ok": {
+     "diff": -0.08000000000000002,
+     "ci95": [
+      -0.30666666666666664,
+      0.15333333333333332
+     ],
+     "n_scenarios": 30
+    },
+    "type": {
+     "diff": -0.17333333333333334,
+     "ci95": [
+      -0.3466666666666667,
+      -0.020000000000000007
+     ],
+     "n_scenarios": 30
+    },
+    "scope": {
+     "diff": -0.046666666666666676,
+     "ci95": [
+      -0.29333333333333333,
+      0.18666666666666668
+     ],
+     "n_scenarios": 30
+    },
+    "entities": {
+     "diff": -0.09333333333333334,
+     "ci95": [
+      -0.26666666666666666,
+      0.06666666666666667
+     ],
+     "n_scenarios": 30
+    },
+    "dm_entity_f1": {
+     "diff": -0.00027672327672327487,
+     "ci95": [
+      -0.033362193362193364,
+      0.03281012598512597
+     ],
+     "n_scenarios": 30
+    },
+    "decision_ok": {
+     "diff": -5.551115123125783e-18,
+     "ci95": [
+      -0.22000000000000003,
+      0.2
+     ],
+     "n_scenarios": 30
+    },
+    "constrained": {
+     "diff": -0.0066666666666666706,
+     "ci95": [
+      -0.22000000000000003,
+      0.19333333333333333
+     ],
+     "n_scenarios": 30
+    }
+   },
+   "violations": {
+    "latency": 1,
+    "cost": 0,
+    "tokens": 6
+   },
+   "latency_max_s": 2192.7
+  },
+  "noise-high": {
+   "n_runs": 27,
+   "excluded": [
+    {
+     "scenario": "BMW_SC006",
+     "names_no_longer_stated": [
+      "Optus"
+     ]
+    },
+    {
+     "scenario": "MERC_SC006",
+     "names_no_longer_stated": [
+      "Optus"
+     ]
+    },
+    {
+     "scenario": "TSLA_SC006",
+     "names_no_longer_stated": [
+      "Optus"
+     ]
+    }
+   ],
+   "rates": {
+    "dm_ok": {
+     "runs": 16,
+     "n": 27,
+     "rate": 0.5925925925925926,
+     "ci95": [
+      0.2962962962962963,
+      0.8518518518518519
+     ]
+    },
+    "type": {
+     "runs": 24,
+     "n": 27,
+     "rate": 0.8888888888888888,
+     "ci95": [
+      0.6666666666666666,
+      1.0
+     ]
+    },
+    "scope": {
+     "runs": 23,
+     "n": 27,
+     "rate": 0.8518518518518519,
+     "ci95": [
+      0.7037037037037037,
+      1.0
+     ]
+    },
+    "entities": {
+     "runs": 19,
+     "n": 27,
+     "rate": 0.7037037037037037,
+     "ci95": [
+      0.4074074074074074,
+      0.9259259259259259
+     ]
+    },
+    "decision_ok": {
+     "runs": 23,
+     "n": 27,
+     "rate": 0.8518518518518519,
+     "ci95": [
+      0.7037037037037037,
+      1.0
+     ]
+    },
+    "constrained": {
+     "runs": 20,
+     "n": 27,
+     "rate": 0.7407407407407407,
+     "ci95": [
+      0.5555555555555556,
+      0.8888888888888888
+     ]
+    }
+   },
+   "paired_vs_original": {
+    "dm_ok": {
+     "diff": -0.08888888888888889,
+     "ci95": [
+      -0.3555555555555556,
+      0.15555555555555556
+     ],
+     "n_scenarios": 27
+    },
+    "type": {
+     "diff": -0.08148148148148149,
+     "ci95": [
+      -0.24444444444444446,
+      0.0
+     ],
+     "n_scenarios": 27
+    },
+    "scope": {
+     "diff": 0.05185185185185184,
+     "ci95": [
+      -0.12592592592592594,
+      0.23703703703703705
+     ],
+     "n_scenarios": 27
+    },
+    "entities": {
+     "diff": -0.17777777777777778,
+     "ci95": [
+      -0.4444444444444444,
+      0.014814814814814812
+     ],
+     "n_scenarios": 27
+    },
+    "dm_entity_f1": {
+     "diff": -0.02610229276895944,
+     "ci95": [
+      -0.06737213403880073,
+      0.004938271604938271
+     ],
+     "n_scenarios": 27
+    },
+    "decision_ok": {
+     "diff": 0.037037037037037035,
+     "ci95": [
+      -0.14074074074074072,
+      0.2222222222222222
+     ],
+     "n_scenarios": 27
+    },
+    "constrained": {
+     "diff": 0.06666666666666667,
+     "ci95": [
+      -0.0888888888888889,
+      0.24444444444444444
+     ],
+     "n_scenarios": 27
+    }
+   },
+   "violations": {
+    "latency": 0,
+    "cost": 0,
+    "tokens": 4
+   },
+   "latency_max_s": 32.4
+  }
+ },
+ "paraphrase_agreement": {
+  "paraphrases": {
+   "type": 27,
+   "scope": 23,
+   "entities": 20,
+   "n": 30
+  },
+  "three_runs_same_article_mean": {
+   "type": 28.5,
+   "scope": 23.1,
+   "entities": 27.2
+  },
+  "three_runs_same_article_range": {
+   "type": [
+    28,
+    30
+   ],
+   "scope": [
+    22,
+    25
+   ],
+   "entities": [
+    26,
+    28
+   ]
+  }
+ },
+ "reference": {
+  "scenarios": 30,
+  "positives": 21,
+  "types": {
+   "Economic Crisis": 15,
+   "Labour Strike": 3,
+   "Trade Policy": 3,
+   "Cyber Attack": 3,
+   "Other": 3,
+   "Natural Disaster": 3
+  },
+  "scope": {
+   "industries": 21,
+   "country": 9
+  },
+  "scored_suppliers_positive": [
+   19,
+   95
+  ],
+  "reference_actions": {
+   "MAINTAIN_STANDARD": 1192,
+   "INCREASE_MONITORING": 108,
+   "REPLACE_SUPPLIER": 19
+  }
+ }
+}

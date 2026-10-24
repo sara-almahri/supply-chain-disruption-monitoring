@@ -1,0 +1,4293 @@
+{
+ "scenario_id": "run_066b3d93e566",
+ "runtime_seconds": 13.4,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1748,
+   "completion_tokens": 152,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:09:45"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 818,
+   "completion_tokens": 85,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:09:46"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1183,
+   "completion_tokens": 41,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:09:48"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 11168,
+   "completion_tokens": 784,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:09:57"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 14917,
+  "completion_tokens": 1062,
+  "total_tokens": 15979,
+  "usd": 0.0479,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 703,
+   "parsed": true,
+   "tail": "ions at multiple renewable energy facilities in Sweden, affecting companies like NorthVolt AB and Svea Windworks.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 992,
+   "parsed": true,
+   "tail": "ain-disruption-monitoring/output/temp/kg_payloads/run_066b3d93e566_Bayerische_Motoren_Werke_AG_20261017T130947_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 24523,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 2838,
+   "parsed": true,
+   "tail": "g_count\": \"3\",\n      \"maintain_standard_count\": \"30\",\n      \"critical_suppliers\": [\n        \"SK Inc\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports an ongoing norovirus outbreak that is disrupting operations at renewable energy facilities in Sweden, causing temporary workforce shortages and project delays. The outbreak affects the renewable energy industry and specifically names two companies as impacted.",
+   "ongoing_disruption": true,
+   "type": "Pandemic",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Sweden"
+    ],
+    "industries": [
+     "Renewable Energy"
+    ],
+    "companies": [
+     "NorthVolt AB",
+     "Svea Windworks"
+    ]
+   },
+   "summary": "A norovirus outbreak has disrupted operations at multiple renewable energy facilities in Sweden, affecting companies like NorthVolt AB and Svea Windworks."
+  },
+  "kg_results": {
+   "tier_1": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ]
+   ],
+   "tier_2": [],
+   "tier_3": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kawasaki Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ]
+   ],
+   "tier_4": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Tsusho Corp",
+      "country": "Japan",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "American Axle & Manufacturing Holdings Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "AES Corp/The",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Bouygues SA",
+      "country": "Colombia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "CX Technology Co Ltd",
+      "country": "Taiwan",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "CX Technology Co Ltd",
+      "country": "Taiwan",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Denso Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Tsusho Corp",
+      "country": "Japan",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Denso Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "AES Corp/The",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eurocharm Holdings Co Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eurocharm Holdings Co Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Globaltek Fabrication Co Ltd",
+      "country": "Taiwan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Globaltek Fabrication Co Ltd",
+      "country": "Taiwan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Tsusho Corp",
+      "country": "Japan",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LANXESS AG",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "TransAlta Corp",
+      "country": "Canada",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Luminar Technologies Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "MINEBEA MITSUMI Inc",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Kawasaki Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "AES Corp/The",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "QST International Corp",
+      "country": "Taiwan",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "QST International Corp",
+      "country": "Taiwan",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Right WAY Industrial Co Ltd",
+      "country": "Taiwan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Right WAY Industrial Co Ltd",
+      "country": "Taiwan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Traton SE",
+      "country": "Germany",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Korea Electric Power Corp",
+      "country": "South Korea",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "SK ecoplant Co Ltd",
+      "country": "South Korea",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "San Shing Fastech Corp",
+      "country": "Taiwan",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "San Shing Fastech Corp",
+      "country": "Taiwan",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "AES Corp/The",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyoda Gosei Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Tsusho Corp",
+      "country": "Japan",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "voestalpine AG",
+      "country": "Austria",
+      "industry": "Steel"
+     },
+     {
+      "company": "AES Corp/The",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "NorthVolt AB",
+      "country": "Sweden",
+      "industry": "Renewable Energy"
+     }
+    ]
+   ],
+   "monitored_company": "Bayerische Motoren Werke AG",
+   "disrupted_countries": [
+    "Sweden"
+   ],
+   "resolution": {
+    "countries": [
+     "Sweden"
+    ],
+    "industries": [
+     "Renewable Energy"
+    ],
+    "companies": [
+     "NorthVolt AB"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "Svea Windworks"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 1
+   },
+   "summary": {
+    "total_disrupted_chains": 52,
+    "tier_1_count": 1,
+    "tier_2_count": 0,
+    "tier_3_count": 6,
+    "tier_4_count": 45
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:09:50.187024Z",
+   "supplier_risk_scores": {
+    "NorthVolt AB": 0.4123,
+    "AMAG Austria Metall AG": 0.3118,
+    "Electricite de France SA": 0.5305,
+    "Kawasaki Heavy Industries Ltd": 0.3219,
+    "SK Inc": 0.6695,
+    "Saudi Basic Industries Corp": 0.5754,
+    "Xperi Inc": 0.5454,
+    "AAPICO Hitech PCL": 0.2551,
+    "American Axle & Manufacturing Holdings Inc": 0.2687,
+    "Autoliv Inc": 0.2836,
+    "BASF SE": 0.3631,
+    "Bouygues SA": 0.1687,
+    "CX Technology Co Ltd": 0.2525,
+    "Denso Corp": 0.3183,
+    "Eurocharm Holdings Co Ltd": 0.2514,
+    "Globaltek Fabrication Co Ltd": 0.2685,
+    "JTEKT Corp": 0.3042,
+    "LANXESS AG": 0.1492,
+    "LG Chem Ltd": 0.3039,
+    "Luminar Technologies Inc": 0.2748,
+    "MINEBEA MITSUMI Inc": 0.2824,
+    "Magna International Inc": 0.2181,
+    "Nemak SAB de CV": 0.2727,
+    "Norsk Hydro ASA": 0.2687,
+    "Pressure Technologies PLC": 0.2931,
+    "QST International Corp": 0.2434,
+    "Right WAY Industrial Co Ltd": 0.2771,
+    "Rio Tinto PLC": 0.3045,
+    "San Shing Fastech Corp": 0.2487,
+    "Schaeffler AG": 0.3103,
+    "Sempra": 0.3669,
+    "Toyoda Gosei Co Ltd": 0.2365,
+    "thyssenkrupp AG": 0.3173,
+    "voestalpine AG": 0.2347
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.6695,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.001076426264800861,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001076426264800861,
+       "sub_central": 0.1857893823072354,
+       "sub_pagerank": 0.002344089799613578,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Saudi Basic Industries Corp",
+     "risk_score": 0.5754,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.0011248593925759281,
+      "sub_criticality": 0.8321932103200511,
+      "central": 0.3946753759804779,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011248593925759281,
+       "sub_central": 0.17527734084309854,
+       "sub_pagerank": 0.0009716341861984929,
+       "central": 0.17029005530448002,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Xperi Inc",
+     "risk_score": 0.5454,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.0013315579227696406,
+      "sub_criticality": 0.8464958541393195,
+      "central": 0.0650970990309628,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0013315579227696406,
+       "sub_central": 0.17617331165072608,
+       "sub_pagerank": 0.0008179344198287216,
+       "central": 0.1361533186961555,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Electricite de France SA",
+     "risk_score": 0.5305,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.0015384615384615385,
+      "sub_criticality": 0.6539809783494654,
+      "central": 0.3009257775870383,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0015384615384615385,
+       "sub_central": 0.1335119870193146,
+       "sub_pagerank": 0.0024518197355840104,
+       "central": 0.1605797510419716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "NorthVolt AB",
+     "risk_score": 0.4123,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 1,
+     "downstream_supplier_count": 1,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.004975124378109453,
+      "sub_criticality": 0.16178224406011116,
+      "central": 0.03735914800052921,
+      "depth": 0.25,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.004975124378109453,
+       "sub_central": 0.13328030431807025,
+       "sub_pagerank": 0.0003912751015981715,
+       "central": 0.13328030431807025,
+       "depth": 1
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.3669,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 1.0,
+      "central": 0.6641211148252332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.1443993844362524,
+       "sub_pagerank": 0.0035420466105590223,
+       "central": 0.19819844266032435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BASF SE",
+     "risk_score": 0.3631,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014005602240896359,
+      "sub_criticality": 0.8428970928628704,
+      "central": 0.9413297616355838,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014005602240896359,
+       "sub_central": 0.1515774959984751,
+       "sub_pagerank": 0.003047051246776432,
+       "central": 0.22691088890921515,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kawasaki Heavy Industries Ltd",
+     "risk_score": 0.3219,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.23076923076923078,
+      "dependency": 0.0014204545454545455,
+      "sub_criticality": 0.7613178516925865,
+      "central": 0.13499899499509568,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.0014204545454545455,
+       "sub_central": 0.17083744475725796,
+       "sub_pagerank": 0.0007101671505133304,
+       "central": 0.1433935489474825,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Denso Corp",
+     "risk_score": 0.3183,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001394700139470014,
+      "sub_criticality": 0.6724663780038902,
+      "central": 0.8346430647160171,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001394700139470014,
+       "sub_central": 0.16527145796169002,
+       "sub_pagerank": 0.0015270167360752725,
+       "central": 0.21586059850153375,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3173,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.6304172918823666,
+      "central": 0.9070201456985778,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.1594161845493276,
+       "sub_pagerank": 0.002377575943617389,
+       "central": 0.2233572010472152,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.3118,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.23076923076923078,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.7346505124267209,
+      "central": 0.08661351487806133,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.16916690343628016,
+       "sub_pagerank": 0.0007127481850072575,
+       "central": 0.138381924984549,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.3103,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.7153423201214038,
+      "central": 0.6691623077256754,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.16795736645331222,
+       "sub_pagerank": 0.000992627454354349,
+       "central": 0.19872059441081885,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.3045,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.7031110946921685,
+      "central": 0.633856776709076,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.16719115699829223,
+       "sub_pagerank": 0.0023411616202933362,
+       "central": 0.19506375263020811,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.3042,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014903129657228018,
+      "sub_criticality": 0.5499286842799153,
+      "central": 0.9383727902903715,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014903129657228018,
+       "sub_central": 0.15759524104696976,
+       "sub_pagerank": 0.0020430513336641256,
+       "central": 0.22660461462164935,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Chem Ltd",
+     "risk_score": 0.3039,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012315270935960591,
+      "sub_criticality": 0.7050080976778053,
+      "central": 0.6258262987355763,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012315270935960591,
+       "sub_central": 0.16730999232122903,
+       "sub_pagerank": 0.0014615527672021476,
+       "central": 0.1942319796324316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Pressure Technologies PLC",
+     "risk_score": 0.2931,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004761904761904762,
+      "sub_criticality": 0.8854692152003509,
+      "central": 0.1481098418941571,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004761904761904762,
+       "sub_central": 0.14075492960497898,
+       "sub_pagerank": 0.0031811862769133615,
+       "central": 0.1447515314317889,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.2836,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.7879859995292372,
+      "central": 0.254056476095509,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.14349833883369467,
+       "sub_pagerank": 0.0028740389383749305,
+       "central": 0.15572516834665165,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "MINEBEA MITSUMI Inc",
+     "risk_score": 0.2824,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002008032128514056,
+      "sub_criticality": 0.7379840429105609,
+      "central": 0.34351077683833037,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002008032128514056,
+       "sub_central": 0.16937572818487898,
+       "sub_pagerank": 0.0007397466921113977,
+       "central": 0.16499057846774196,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Right WAY Industrial Co Ltd",
+     "risk_score": 0.2771,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0027397260273972603,
+      "sub_criticality": 0.7728902181923829,
+      "central": 0.21851170388785696,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0027397260273972603,
+       "sub_central": 0.16845642769421323,
+       "sub_pagerank": 0.002826475580633267,
+       "central": 0.15204354667581144,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.2748,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018726591760299626,
+      "sub_criticality": 0.8431572005360044,
+      "central": 0.05702018487364515,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018726591760299626,
+       "sub_central": 0.17596416597086786,
+       "sub_pagerank": 0.0008050056277305801,
+       "central": 0.1353167359767227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nemak SAB de CV",
+     "risk_score": 0.2727,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001968503937007874,
+      "sub_criticality": 0.7448552038100542,
+      "central": 0.2318949466480369,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001968503937007874,
+       "sub_central": 0.1698061632609566,
+       "sub_pagerank": 0.0008860784476971413,
+       "central": 0.15342974311235483,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.2687,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019157088122605363,
+      "sub_criticality": 0.7673561103666493,
+      "central": 0.1471500224668079,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019157088122605363,
+       "sub_central": 0.14073007579537247,
+       "sub_pagerank": 0.002809038871368428,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Norsk Hydro ASA",
+     "risk_score": 0.2687,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019083969465648854,
+      "sub_criticality": 0.6863629703110047,
+      "central": 0.3090750622266953,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019083969465648854,
+       "sub_central": 0.13520573119129187,
+       "sub_pagerank": 0.0025538479932598274,
+       "central": 0.16142382968048227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Globaltek Fabrication Co Ltd",
+     "risk_score": 0.2685,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0026455026455026454,
+      "sub_criticality": 0.7581705761489398,
+      "central": 0.1616960158589475,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0026455026455026454,
+       "sub_central": 0.16727946773470673,
+       "sub_pagerank": 0.0027800973518606843,
+       "central": 0.14615874687827893,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.2551,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001321003963011889,
+      "sub_criticality": 0.6686899041756481,
+      "central": 0.21011016614440864,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001321003963011889,
+       "sub_central": 0.16503488559446683,
+       "sub_pagerank": 0.001430684507205444,
+       "central": 0.15117334041189276,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CX Technology Co Ltd",
+     "risk_score": 0.2525,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0025575447570332483,
+      "sub_criticality": 0.7086878450261698,
+      "central": 0.10147062373370543,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0025575447570332483,
+       "sub_central": 0.1660318743756169,
+       "sub_pagerank": 0.00262418857245349,
+       "central": 0.13992078008282968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eurocharm Holdings Co Ltd",
+     "risk_score": 0.2514,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019267822736030828,
+      "sub_criticality": 0.7142248602632263,
+      "central": 0.08066851050940754,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019267822736030828,
+       "sub_central": 0.16560095018570542,
+       "sub_pagerank": 0.0026416344423070897,
+       "central": 0.13776615913327245,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "San Shing Fastech Corp",
+     "risk_score": 0.2487,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016420361247947454,
+      "sub_criticality": 0.7077743611052388,
+      "central": 0.06752263241644371,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016420361247947454,
+       "sub_central": 0.1653286280034923,
+       "sub_pagerank": 0.002621310393341527,
+       "central": 0.13640454822220688,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "QST International Corp",
+     "risk_score": 0.2434,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016420361247947454,
+      "sub_criticality": 0.7049559356107118,
+      "central": 0.020134541642770804,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016420361247947454,
+       "sub_central": 0.16434696453459807,
+       "sub_pagerank": 0.0026124301785932424,
+       "central": 0.13149623087773565,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.2365,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015552099533437014,
+      "sub_criticality": 0.41153648655950154,
+      "central": 0.5377755092229367,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015552099533437014,
+       "sub_central": 0.14722207264796092,
+       "sub_pagerank": 0.001687932538347699,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "voestalpine AG",
+     "risk_score": 0.2347,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0030959752321981426,
+      "sub_criticality": 0.6039606482403003,
+      "central": 0.13173750157574982,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0030959752321981426,
+       "sub_central": 0.13061370706371914,
+       "sub_pagerank": 0.002294217104607236,
+       "central": 0.1430557331701913,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2181,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.31807961135346535,
+      "central": 0.5402968373525618,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.1416704919410188,
+       "sub_pagerank": 0.0013934712786320103,
+       "central": 0.18537309268603536,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Bouygues SA",
+     "risk_score": 0.1687,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0058823529411764705,
+      "sub_criticality": 0.33613232430160167,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0058823529411764705,
+       "sub_central": 0.13592957303874909,
+       "sub_pagerank": 0.0014503512522484469,
+       "central": 0.12941075500490107,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LANXESS AG",
+     "risk_score": 0.1492,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024390243902439024,
+      "sub_criticality": 0.18661092278436628,
+      "central": 0.11223620536419916,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024390243902439024,
+       "sub_central": 0.12314566279990163,
+       "sub_pagerank": 0.000979243480368046,
+       "central": 0.14103584697363655,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "SK Inc",
+     "risk_score": 0.6695,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.001076426264800861,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001076426264800861,
+       "sub_central": 0.1857893823072354,
+       "sub_pagerank": 0.002344089799613578,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "SK Inc"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 34,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 3,
+    "low_risk_suppliers": 30,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.6695,
+    "average_risk_score": 0.3148
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Sweden"
+    ],
+    "summary": {
+     "total_disrupted_chains": 52,
+     "tier_1_chain_count": 1,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 6,
+     "tier_4_chain_count": 45,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Sweden"
+     ],
+     "industries": [
+      "Renewable Energy"
+     ],
+     "companies": [
+      "NorthVolt AB"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 3 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:09:50.187024Z",
+   "supplier_risk_scores": {
+    "NorthVolt AB": 0.4123,
+    "AMAG Austria Metall AG": 0.3118,
+    "Electricite de France SA": 0.5305,
+    "Kawasaki Heavy Industries Ltd": 0.3219,
+    "SK Inc": 0.6695,
+    "Saudi Basic Industries Corp": 0.5754,
+    "Xperi Inc": 0.5454,
+    "AAPICO Hitech PCL": 0.2551,
+    "American Axle & Manufacturing Holdings Inc": 0.2687,
+    "Autoliv Inc": 0.2836,
+    "BASF SE": 0.3631,
+    "Bouygues SA": 0.1687,
+    "CX Technology Co Ltd": 0.2525,
+    "Denso Corp": 0.3183,
+    "Eurocharm Holdings Co Ltd": 0.2514,
+    "Globaltek Fabrication Co Ltd": 0.2685,
+    "JTEKT Corp": 0.3042,
+    "LANXESS AG": 0.1492,
+    "LG Chem Ltd": 0.3039,
+    "Luminar Technologies Inc": 0.2748,
+    "MINEBEA MITSUMI Inc": 0.2824,
+    "Magna International Inc": 0.2181,
+    "Nemak SAB de CV": 0.2727,
+    "Norsk Hydro ASA": 0.2687,
+    "Pressure Technologies PLC": 0.2931,
+    "QST International Corp": 0.2434,
+    "Right WAY Industrial Co Ltd": 0.2771,
+    "Rio Tinto PLC": 0.3045,
+    "San Shing Fastech Corp": 0.2487,
+    "Schaeffler AG": 0.3103,
+    "Sempra": 0.3669,
+    "Toyoda Gosei Co Ltd": 0.2365,
+    "thyssenkrupp AG": 0.3173,
+    "voestalpine AG": 0.2347
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.6695,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.001076426264800861,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001076426264800861,
+       "sub_central": 0.1857893823072354,
+       "sub_pagerank": 0.002344089799613578,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Saudi Basic Industries Corp",
+     "risk_score": 0.5754,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.0011248593925759281,
+      "sub_criticality": 0.8321932103200511,
+      "central": 0.3946753759804779,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011248593925759281,
+       "sub_central": 0.17527734084309854,
+       "sub_pagerank": 0.0009716341861984929,
+       "central": 0.17029005530448002,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Xperi Inc",
+     "risk_score": 0.5454,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.0013315579227696406,
+      "sub_criticality": 0.8464958541393195,
+      "central": 0.0650970990309628,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0013315579227696406,
+       "sub_central": 0.17617331165072608,
+       "sub_pagerank": 0.0008179344198287216,
+       "central": 0.1361533186961555,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Electricite de France SA",
+     "risk_score": 0.5305,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.0015384615384615385,
+      "sub_criticality": 0.6539809783494654,
+      "central": 0.3009257775870383,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0015384615384615385,
+       "sub_central": 0.1335119870193146,
+       "sub_pagerank": 0.0024518197355840104,
+       "central": 0.1605797510419716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "NorthVolt AB",
+     "risk_score": 0.4123,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 1,
+     "downstream_supplier_count": 1,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.004975124378109453,
+      "sub_criticality": 0.16178224406011116,
+      "central": 0.03735914800052921,
+      "depth": 0.25,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.004975124378109453,
+       "sub_central": 0.13328030431807025,
+       "sub_pagerank": 0.0003912751015981715,
+       "central": 0.13328030431807025,
+       "depth": 1
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.3669,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 1.0,
+      "central": 0.6641211148252332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.1443993844362524,
+       "sub_pagerank": 0.0035420466105590223,
+       "central": 0.19819844266032435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BASF SE",
+     "risk_score": 0.3631,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014005602240896359,
+      "sub_criticality": 0.8428970928628704,
+      "central": 0.9413297616355838,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014005602240896359,
+       "sub_central": 0.1515774959984751,
+       "sub_pagerank": 0.003047051246776432,
+       "central": 0.22691088890921515,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kawasaki Heavy Industries Ltd",
+     "risk_score": 0.3219,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.23076923076923078,
+      "dependency": 0.0014204545454545455,
+      "sub_criticality": 0.7613178516925865,
+      "central": 0.13499899499509568,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.0014204545454545455,
+       "sub_central": 0.17083744475725796,
+       "sub_pagerank": 0.0007101671505133304,
+       "central": 0.1433935489474825,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Denso Corp",
+     "risk_score": 0.3183,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001394700139470014,
+      "sub_criticality": 0.6724663780038902,
+      "central": 0.8346430647160171,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001394700139470014,
+       "sub_central": 0.16527145796169002,
+       "sub_pagerank": 0.0015270167360752725,
+       "central": 0.21586059850153375,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3173,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.6304172918823666,
+      "central": 0.9070201456985778,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.1594161845493276,
+       "sub_pagerank": 0.002377575943617389,
+       "central": 0.2233572010472152,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.3118,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.23076923076923078,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.7346505124267209,
+      "central": 0.08661351487806133,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.16916690343628016,
+       "sub_pagerank": 0.0007127481850072575,
+       "central": 0.138381924984549,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.3103,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.7153423201214038,
+      "central": 0.6691623077256754,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.16795736645331222,
+       "sub_pagerank": 0.000992627454354349,
+       "central": 0.19872059441081885,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.3045,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.7031110946921685,
+      "central": 0.633856776709076,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.16719115699829223,
+       "sub_pagerank": 0.0023411616202933362,
+       "central": 0.19506375263020811,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.3042,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014903129657228018,
+      "sub_criticality": 0.5499286842799153,
+      "central": 0.9383727902903715,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014903129657228018,
+       "sub_central": 0.15759524104696976,
+       "sub_pagerank": 0.0020430513336641256,
+       "central": 0.22660461462164935,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Chem Ltd",
+     "risk_score": 0.3039,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012315270935960591,
+      "sub_criticality": 0.7050080976778053,
+      "central": 0.6258262987355763,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012315270935960591,
+       "sub_central": 0.16730999232122903,
+       "sub_pagerank": 0.0014615527672021476,
+       "central": 0.1942319796324316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Pressure Technologies PLC",
+     "risk_score": 0.2931,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004761904761904762,
+      "sub_criticality": 0.8854692152003509,
+      "central": 0.1481098418941571,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004761904761904762,
+       "sub_central": 0.14075492960497898,
+       "sub_pagerank": 0.0031811862769133615,
+       "central": 0.1447515314317889,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.2836,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.7879859995292372,
+      "central": 0.254056476095509,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.14349833883369467,
+       "sub_pagerank": 0.0028740389383749305,
+       "central": 0.15572516834665165,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "MINEBEA MITSUMI Inc",
+     "risk_score": 0.2824,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002008032128514056,
+      "sub_criticality": 0.7379840429105609,
+      "central": 0.34351077683833037,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002008032128514056,
+       "sub_central": 0.16937572818487898,
+       "sub_pagerank": 0.0007397466921113977,
+       "central": 0.16499057846774196,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Right WAY Industrial Co Ltd",
+     "risk_score": 0.2771,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0027397260273972603,
+      "sub_criticality": 0.7728902181923829,
+      "central": 0.21851170388785696,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0027397260273972603,
+       "sub_central": 0.16845642769421323,
+       "sub_pagerank": 0.002826475580633267,
+       "central": 0.15204354667581144,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.2748,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018726591760299626,
+      "sub_criticality": 0.8431572005360044,
+      "central": 0.05702018487364515,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018726591760299626,
+       "sub_central": 0.17596416597086786,
+       "sub_pagerank": 0.0008050056277305801,
+       "central": 0.1353167359767227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nemak SAB de CV",
+     "risk_score": 0.2727,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001968503937007874,
+      "sub_criticality": 0.7448552038100542,
+      "central": 0.2318949466480369,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001968503937007874,
+       "sub_central": 0.1698061632609566,
+       "sub_pagerank": 0.0008860784476971413,
+       "central": 0.15342974311235483,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.2687,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019157088122605363,
+      "sub_criticality": 0.7673561103666493,
+      "central": 0.1471500224668079,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019157088122605363,
+       "sub_central": 0.14073007579537247,
+       "sub_pagerank": 0.002809038871368428,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Norsk Hydro ASA",
+     "risk_score": 0.2687,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019083969465648854,
+      "sub_criticality": 0.6863629703110047,
+      "central": 0.3090750622266953,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019083969465648854,
+       "sub_central": 0.13520573119129187,
+       "sub_pagerank": 0.0025538479932598274,
+       "central": 0.16142382968048227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Globaltek Fabrication Co Ltd",
+     "risk_score": 0.2685,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0026455026455026454,
+      "sub_criticality": 0.7581705761489398,
+      "central": 0.1616960158589475,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0026455026455026454,
+       "sub_central": 0.16727946773470673,
+       "sub_pagerank": 0.0027800973518606843,
+       "central": 0.14615874687827893,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.2551,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001321003963011889,
+      "sub_criticality": 0.6686899041756481,
+      "central": 0.21011016614440864,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001321003963011889,
+       "sub_central": 0.16503488559446683,
+       "sub_pagerank": 0.001430684507205444,
+       "central": 0.15117334041189276,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CX Technology Co Ltd",
+     "risk_score": 0.2525,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0025575447570332483,
+      "sub_criticality": 0.7086878450261698,
+      "central": 0.10147062373370543,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0025575447570332483,
+       "sub_central": 0.1660318743756169,
+       "sub_pagerank": 0.00262418857245349,
+       "central": 0.13992078008282968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eurocharm Holdings Co Ltd",
+     "risk_score": 0.2514,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019267822736030828,
+      "sub_criticality": 0.7142248602632263,
+      "central": 0.08066851050940754,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019267822736030828,
+       "sub_central": 0.16560095018570542,
+       "sub_pagerank": 0.0026416344423070897,
+       "central": 0.13776615913327245,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "San Shing Fastech Corp",
+     "risk_score": 0.2487,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016420361247947454,
+      "sub_criticality": 0.7077743611052388,
+      "central": 0.06752263241644371,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016420361247947454,
+       "sub_central": 0.1653286280034923,
+       "sub_pagerank": 0.002621310393341527,
+       "central": 0.13640454822220688,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "QST International Corp",
+     "risk_score": 0.2434,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016420361247947454,
+      "sub_criticality": 0.7049559356107118,
+      "central": 0.020134541642770804,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016420361247947454,
+       "sub_central": 0.16434696453459807,
+       "sub_pagerank": 0.0026124301785932424,
+       "central": 0.13149623087773565,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.2365,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015552099533437014,
+      "sub_criticality": 0.41153648655950154,
+      "central": 0.5377755092229367,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015552099533437014,
+       "sub_central": 0.14722207264796092,
+       "sub_pagerank": 0.001687932538347699,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "voestalpine AG",
+     "risk_score": 0.2347,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0030959752321981426,
+      "sub_criticality": 0.6039606482403003,
+      "central": 0.13173750157574982,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0030959752321981426,
+       "sub_central": 0.13061370706371914,
+       "sub_pagerank": 0.002294217104607236,
+       "central": 0.1430557331701913,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2181,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.31807961135346535,
+      "central": 0.5402968373525618,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.1416704919410188,
+       "sub_pagerank": 0.0013934712786320103,
+       "central": 0.18537309268603536,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Bouygues SA",
+     "risk_score": 0.1687,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0058823529411764705,
+      "sub_criticality": 0.33613232430160167,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0058823529411764705,
+       "sub_central": 0.13592957303874909,
+       "sub_pagerank": 0.0014503512522484469,
+       "central": 0.12941075500490107,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LANXESS AG",
+     "risk_score": 0.1492,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Sweden",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024390243902439024,
+      "sub_criticality": 0.18661092278436628,
+      "central": 0.11223620536419916,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024390243902439024,
+       "sub_central": 0.12314566279990163,
+       "sub_pagerank": 0.000979243480368046,
+       "central": 0.14103584697363655,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "SK Inc",
+     "risk_score": 0.6695,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 0.7692307692307692,
+      "dependency": 0.001076426264800861,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001076426264800861,
+       "sub_central": 0.1857893823072354,
+       "sub_pagerank": 0.002344089799613578,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "SK Inc"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 34,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 3,
+    "low_risk_suppliers": 30,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.6695,
+    "average_risk_score": 0.3148
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Sweden"
+    ],
+    "summary": {
+     "total_disrupted_chains": 52,
+     "tier_1_chain_count": 1,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 6,
+     "tier_4_chain_count": 45,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Sweden"
+     ],
+     "industries": [
+      "Renewable Energy"
+     ],
+     "companies": [
+      "NorthVolt AB"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 3 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "decisions": {
+    "SK Inc": {
+     "risk_score_raw": 0.6695,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6695 (HIGH), driven mainly by exposure (0.769) and criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Sweden"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Xperi Inc": {
+     "risk_score_raw": 0.5454,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5454 (MEDIUM); disrupted companies at Tier 3 and Tier 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Sweden"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Electricite de France SA": {
+     "risk_score_raw": 0.5305,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5305 (MEDIUM); disrupted companies at Tier 3 and Tier 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Sweden"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Saudi Basic Industries Corp": {
+     "risk_score_raw": 0.5754,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5754 (MEDIUM); influenced by exposure (0.769) and criticality (0.832).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Sweden"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "1 REPLACE_SUPPLIER (score 0.60 or above), 3 INCREASE_MONITORING (0.45 to below 0.60), 30 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "34",
+     "replace_supplier_count": "1",
+     "increase_monitoring_count": "3",
+     "maintain_standard_count": "30",
+     "critical_suppliers": [
+      "SK Inc"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   1,
+   0,
+   6,
+   45
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_066b3d93e566_Bayerische_Motoren_Werke_AG_20261017T130947_kg.json",
+  "monitored_company": "Bayerische Motoren Werke AG",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Sweden"
+  ],
+  "disrupted_industries": [
+   "Renewable Energy"
+  ],
+  "disrupted_companies": [
+   "NorthVolt AB"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "Svea Windworks"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "Sweden"
+   ],
+   "industries": [
+    "Renewable Energy"
+   ],
+   "companies": [
+    "NorthVolt AB",
+    "Svea Windworks"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_066b3d93e566",
+  "chain_counts": {
+   "tier_1": 1,
+   "tier_2": 0,
+   "tier_3": 6,
+   "tier_4": 45
+  },
+  "total_chains": 52,
+  "message": "Built and saved 52 disrupted supply chains to output/temp/kg_payloads/run_066b3d93e566_Bayerische_Motoren_Werke_AG_20261017T130947_kg.json"
+ },
+ "item_id": "P-046",
+ "run_id": "run_066b3d93e566",
+ "item_type": "P",
+ "firm": "Bayerische Motoren Werke AG",
+ "set": "test",
+ "repeat": 1
+}

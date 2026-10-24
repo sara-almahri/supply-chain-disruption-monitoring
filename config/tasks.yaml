@@ -1,0 +1,361 @@
+scrape_news_task:
+  description: |
+    Extract the news article text. The article text is already provided in the task inputs as `extracted_text`.
+    
+    **YOUR TASK:**
+    - The task inputs contain `extracted_text` with the complete news article
+    - Return the `extracted_text` value directly as your output
+    - DO NOT scrape URLs
+    - DO NOT call tools
+    - DO NOT modify the text
+    - Simply return: {extracted_text}
+  expected_output: >
+    Return the extracted_text value from task inputs exactly as provided
+  agent: disruption_monitoring_agent
+  input_keys:
+    - extracted_text
+    - website_url
+  output_keys:
+    - extracted_text
+
+
+analyze_disruptions_task:
+  description: |
+    You are a supply chain disruption analyst working for {company_name}. Read the news article below and record
+    what it reports. You do not know {company_name}'s suppliers: whether a disruption reaches them is established
+    afterwards from the knowledge graph. Report only what the article states.
+
+    Article:
+    """
+    {extracted_text}
+    """
+
+    Work through the following steps in order.
+
+    1. Ongoing disruption. Decide whether the article reports a disruption that is under way: an event that is
+       currently stopping or reducing production, supply, transport or trade. Set "ongoing_disruption" to false when
+       the article reports no disruption (for example company results, investment, appointments, product launches or
+       routine trade figures), a disruption that has ended or been resolved (a strike that has ended, a port that has
+       reopened, sanctions that have been lifted), a past disruption described as history, or only a forecast, warning
+       or threat of a future disruption.
+
+    2. Type. If there is an ongoing disruption, classify it with exactly one of these labels:
+       - "Geopolitical": wars, sanctions, political instability, territorial disputes
+       - "Trade Policy": tariffs, trade wars, import or export restrictions, embargoes
+       - "Natural Disaster": earthquakes, floods, hurricanes, volcanic eruptions, wildfires
+       - "Labour Strike": worker strikes, union disputes, labour shortages, walkouts
+       - "Economic Crisis": recessions, currency collapse, hyperinflation, financial crises
+       - "Company Bankruptcy": corporate insolvency, liquidation, financial distress
+       - "Cyber Attack": ransomware, data breaches, IT disruptions
+       - "Pandemic": disease outbreaks, health emergencies
+       - "Other": a disruption that fits none of the labels above
+       Use the most specific label: a labour strike is not an economic crisis, and a trade war is not geopolitical.
+       If there is no ongoing disruption, the type is "None".
+
+    3. Countries, industries and companies. List only what the article states is disrupted. Do not add countries,
+       industries or companies from your own knowledge, and do not list those mentioned only as background, as sources
+       of comment, as customers or as unaffected.
+       - countries: each country in which the disruption is taking place, by its English name (for example "USA",
+         "United Kingdom", "South Korea"). If the article names a region, list the countries it names within it.
+       - industries: each disrupted industry, using a name from this list when one applies: "Aerospace & Defense",
+         "Automotive", "Cable & Satellite", "Chemicals", "Construction Materials", "Diversified Industrials",
+         "Electric Utilities", "Electrical Equipment", "Engineering & Construction", "Gas & Water Utilities",
+         "Industrial Intermediate Prod", "Machinery", "Medical Equipment & Devices", "Metals & Mining",
+         "Oil & Gas Producers", "Oil & Gas Services & Equip", "Renewable Energy", "Semiconductors", "Steel",
+         "Technology Hardware", "Technology Services", "Telecommunications", "Transportation & Logistics",
+         "Transportation Equipment". For a disrupted industry not in the list, give its name as the article does.
+       - companies: each company the article names as disrupted, with the name the article uses.
+
+    4. Scope. Set "scope" to "industries" when the article confines the disruption to the industries you listed (for
+       example a strike at copper mines, a cyber attack on chip makers, export controls on steel). Set it to "country"
+       when the disruption affects economic activity in the listed countries generally (for example a war, an
+       earthquake, a national lockdown, a currency collapse, a general strike).
+
+    5. Summary. In at most two sentences, state what the article reports. Do not speculate about consequences.
+
+    Begin the JSON with "reasoning": two to four sentences on what the article reports, whether it is still under
+    way, and what it affects. If there is no ongoing disruption, the type is "None", the scope is "country" and the
+    three lists are empty.
+
+    Example 1. Article: "Workers at three copper mines operated by Andes Ridge Mining in northern Chile walked out on
+    Monday, halting output at the sites. The union said the strike would continue until wages are renegotiated."
+    {
+      "reasoning": "The article reports a strike that began on Monday and is continuing, halting output at three copper mines in Chile. It affects mining only and names one company.",
+      "ongoing_disruption": true,
+      "type": "Labour Strike",
+      "scope": "industries",
+      "involved": {"countries": ["Chile"], "industries": ["Metals & Mining"], "companies": ["Andes Ridge Mining"]},
+      "summary": "A strike has halted output at three Andes Ridge Mining copper mines in northern Chile and is continuing."
+    }
+
+    Example 2. Article: "Dockworkers at the port of Antwerp returned to work on Friday after a two-week strike ended
+    with a new wage agreement. Shipping schedules are back to normal."
+    {
+      "reasoning": "The article reports that a port strike has ended and that operations are back to normal. No disruption is under way.",
+      "ongoing_disruption": false,
+      "type": "None",
+      "scope": "country",
+      "involved": {"countries": [], "industries": [], "companies": []},
+      "summary": "A two-week dockworkers' strike at the port of Antwerp has ended and shipping is back to normal."
+    }
+
+    Return only the JSON object, with no other text.
+  expected_output: >
+    A JSON object with keys reasoning, ongoing_disruption (true or false), type, scope ("country" or "industries"),
+    involved (countries, industries, companies) and summary, and no other text.
+  agent: disruption_monitoring_agent
+  input_keys:
+    - extracted_text
+    - company_name
+  output_keys:
+    - disruption_analysis
+    - company_name
+
+
+kg_query_task:
+  description: |
+    You map the disruption reported by the Disruption Monitoring Agent onto {company_name}'s supply network.
+
+    Call the `build_and_save_kg` tool exactly once, with these arguments taken from the disruption analysis:
+      - monitored_company: "{company_name}"
+      - ongoing_disruption: the value of ongoing_disruption
+      - disrupted_countries: involved.countries
+      - disrupted_industries: involved.industries
+      - disrupted_companies: involved.companies
+      - scope: the value of scope
+      - scenario_id: "{scenario_id}"
+    Copy every value exactly. Do not add, remove, translate or correct any name; the tool resolves names to the
+    knowledge graph and reports any it cannot resolve. Use an empty list for a missing list.
+
+    The tool finds every Tier-1 to Tier-4 supply path of {company_name} that ends at a disrupted company, saves the
+    paths to disk and returns their metadata. Its result is your answer.
+  expected_output: >
+    The metadata returned by build_and_save_kg: kg_payload_path, monitored_company, ongoing_disruption, scope, the
+    resolved countries, industries and companies, unresolved names, chain_counts and total_chains.
+  agent: kg_query_agent
+  input_keys:
+    - disruption_analysis
+    - company_name
+    - scenario_id
+  output_keys:
+    - kg_results
+    - company_name
+
+
+product_search_task:
+  description: |
+    For **ALL** companies in `kg_results`, do the following:
+    1. For **EVERY** company in Tier-4, Tier-3, Tier-2, and Tier-1, use the SerperDevTool to search for the products they supply.
+    2. For **EVERY** relationship in the supply chain (e.g., Tier-4 → Tier-3, Tier-3 → Tier-2, Tier-2 → Tier-1, Tier-1 → {company_name}), identify the **product supplied** between the two companies.
+    3. **PRESERVE THE TIER STRUCTURE** from `kg_results` and add the **product supplied** at each step.
+    4. **DO NOT SPLIT OR DISCONNECT THE CHAINS** – ensure each chain is complete from Tier-4 to {company_name}.
+    5. **INCLUDE ALL COMPANIES** in the disruption, ensuring no gaps or missing links.
+
+  expected_output: >
+    A FULL COMPLETE JSON object with keys `tier_1`, `tier_2`, `tier_3`, and `tier_4`, where each tier contains **complete chains** with **products supplied** between companies.
+    Example:
+    {
+      "tier_1": [
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Peak Electronics", "country": "USA", "industry": "Automotive Parts", "product_supplied": "Electronic Control Units"}
+        ],
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Summit Tire Co", "country": "France", "industry": "Automotive Parts", "product_supplied": "Tires"}
+        ]
+      ],
+      "tier_2": [
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Peak Electronics", "country": "USA", "industry": "Automotive Parts", "product_supplied": "Electronic Control Units"},
+          {"company": "Core Semiconductors", "country": "Taiwan", "industry": "Semiconductors", "product_supplied": "Microchips"}
+        ],
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Summit Tire Co", "country": "France", "industry": "Automotive Parts", "product_supplied": "Tires"},
+          {"company": "Eco Rubber Ltd", "country": "Thailand", "industry": "Chemicals", "product_supplied": "Rubber Compounds"}
+        ]
+      ],
+      "tier_3": [
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Peak Electronics", "country": "USA", "industry": "Automotive Parts", "product_supplied": "Electronic Control Units"},
+          {"company": "Core Semiconductors", "country": "Taiwan", "industry": "Semiconductors", "product_supplied": "Microchips"},
+          {"company": "Crystal Materials", "country": "Singapore", "industry": "Chemicals", "product_supplied": "Silicon Wafers"}
+        ],
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Summit Tire Co", "country": "France", "industry": "Automotive Parts", "product_supplied": "Tires"},
+          {"company": "Eco Rubber Ltd", "country": "Thailand", "industry": "Chemicals", "product_supplied": "Rubber Compounds"},
+          {"company": "PureChem Solutions", "country": "Germany", "industry": "Chemicals", "product_supplied": "Synthetic Rubber"}
+        ]
+      ],
+      "tier_4": [
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Peak Electronics", "country": "USA", "industry": "Automotive Parts", "product_supplied": "Electronic Control Units"},
+          {"company": "Core Semiconductors", "country": "Taiwan", "industry": "Semiconductors", "product_supplied": "Microchips"},
+          {"company": "Crystal Materials", "country": "Singapore", "industry": "Chemicals", "product_supplied": "Silicon Wafers"},
+          {"company": "Pacific Metals", "country": "Indonesia", "industry": "Mining", "product_supplied": "Raw Silicon"}
+        ],
+        [
+          {"company": "{company_name}", "country": "USA", "industry": "Automotive"},
+          {"company": "Summit Tire Co", "country": "France", "industry": "Automotive Parts", "product_supplied": "Tires"},
+          {"company": "Eco Rubber Ltd", "country": "Thailand", "industry": "Chemicals", "product_supplied": "Rubber Compounds"},
+          {"company": "PureChem Solutions", "country": "Germany", "industry": "Chemicals", "product_supplied": "Synthetic Rubber"},
+          {"company": "Global Petro Inc", "country": "UAE", "industry": "Oil & Gas", "product_supplied": "Petrochemicals"}
+        ]
+      ]
+    }
+  agent: product_search_agent
+  input_keys:
+    - kg_results
+  output_keys:
+    - product_details
+
+
+risk_manager_task:
+  description: |
+    As **Senior Risk Analyst** for {company_name}, orchestrate the comprehensive risk calculation.
+    
+    **YOUR SINGLE TASK:**
+    Call the `calculate_tier1_comprehensive_risks` tool EXACTLY ONCE with:
+      - `scenario_id`: "{scenario_id}"
+      - `company_name`: "{company_name}"
+    
+    That is ALL. The tool loads all data from disk automatically (KG results, disruption
+    metadata saved by the upstream KG agent). You do NOT need to pass kg_results or
+    disruption_analysis — the tool retrieves them itself.
+    
+    This tool performs all heavy computation in deterministic Python:
+      - Loads the full supply chain data saved by the KG agent
+      - Calculates exposure depth, breadth, criticality, centrality
+      - Aggregates downstream disruption impact to Tier-1
+      - Returns complete risk assessment for ALL Tier-1 suppliers
+    
+    **CRITICAL OUTPUT HANDLING:**
+    The tool returns the complete risk assessment. Your FINAL ANSWER = the tool's output EXACTLY.
+      - Do NOT summarize or modify
+      - Do NOT add commentary
+      - Do NOT wrap in markdown
+      - Return the complete JSON dict as-is
+  expected_output: >
+    Complete JSON object with supplier_risk_scores (dict of all Tier-1 suppliers), 
+    tier1_risk_profiles (array), critical_suppliers (array), summary (object), 
+    and methodology (object). This is the tool's output returned exactly as-is.
+  agent: risk_manager_agent
+  input_keys:
+    - kg_results
+    - disruption_analysis
+    - company_name
+    - scenario_id
+  output_keys:
+    - risk_assessment
+    - company_name
+
+decision_making_task:
+  description: |
+    You are the Chief Supply Chain Officer of {company_name}. You have received the Risk Manager's assessment of every
+    Tier-1 supplier affected by the disruption. Decide one action for every Tier-1 supplier and justify each listed
+    decision with the data in the assessment.
+
+    Actions:
+      - REPLACE_SUPPLIER: find an alternative supplier now
+      - INCREASE_MONITORING: track the supplier closely and prepare contingencies
+      - MAINTAIN_STANDARD: no immediate action
+
+    Decision rule, applied to the raw risk_score in risk_assessment.supplier_risk_scores, without rounding:
+      - 0.60 or above (HIGH): REPLACE_SUPPLIER
+      - 0.45 or above and below 0.60 (MEDIUM): INCREASE_MONITORING
+      - below 0.45 (LOW): MAINTAIN_STANDARD
+    For example: 0.60 is HIGH; 0.59 is MEDIUM; 0.45 is MEDIUM; 0.44 is LOW.
+
+    List every Tier-1 supplier whose raw score is 0.45 or above, in descending order of score, with its decision and
+    justification. Every supplier you do not list is MAINTAIN_STANDARD. If no supplier scores 0.45 or above, the
+    decisions object is empty.
+
+    Justification. In one or two sentences per supplier, state what drives its score, using only values in the
+    assessment: the raw score and risk level; the disrupted companies in its upstream network by tier
+    (disrupted_counts_by_tier) and the deepest disrupted tier; the countries of the disrupted companies
+    (top_disrupted_countries); and the component values in component_breakdown (exposure, dependency, sub-supplier
+    criticality, centrality, depth). The score is a weighted index of these components, not a percentage or a
+    probability. Do not state anything the assessment does not contain: no costs, lead times, timelines,
+    production volumes, factories, products or alternative suppliers.
+
+    Output, as a JSON object and nothing else:
+    {
+      "company_name": "{company_name}",
+      "decisions": {
+        "<Tier-1 supplier name>": {
+          "risk_score_raw": 0.61,
+          "risk_level": "HIGH",
+          "action": "REPLACE_SUPPLIER",
+          "justification": {
+            "risk_analysis": "Raw score 0.61 (HIGH), driven mainly by exposure (0.72) and dependency (0.55).",
+            "exposure_details": {
+              "total_disrupted_nodes": 14,
+              "by_tier": {"tier_2": 2, "tier_3": 5, "tier_4": 7},
+              "top_disrupted_countries": ["<country>"]
+            },
+            "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+          }
+        },
+        "<another Tier-1 supplier name>": {
+          "risk_score_raw": 0.52,
+          "risk_level": "MEDIUM",
+          "action": "INCREASE_MONITORING",
+          "justification": {
+            "risk_analysis": "Raw score 0.52 (MEDIUM); disrupted companies at Tier 3 and Tier 4 only.",
+            "exposure_details": {
+              "total_disrupted_nodes": 6,
+              "by_tier": {"tier_2": 0, "tier_3": 2, "tier_4": 4},
+              "top_disrupted_countries": ["<country>"]
+            },
+            "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+          }
+        }
+      },
+      "decision_report": {
+        "executive_summary": "<n> REPLACE_SUPPLIER (score 0.60 or above), <m> INCREASE_MONITORING (0.45 to below 0.60), <k> MAINTAIN_STANDARD (below 0.45).",
+        "action_summary": {
+          "total_tier1_suppliers_analyzed": "<number of suppliers in supplier_risk_scores>",
+          "replace_supplier_count": "<n>",
+          "increase_monitoring_count": "<m>",
+          "maintain_standard_count": "<total minus n minus m>",
+          "critical_suppliers": ["<suppliers scoring 0.60 or above>"]
+        }
+      }
+    }
+    The values in this example illustrate the format only; take every value from the assessment.
+  expected_output: >
+    A JSON object with company_name, decisions (every Tier-1 supplier scoring 0.45 or above, with risk_score_raw,
+    risk_level, action and a justification drawn only from the risk assessment) and decision_report, and no other text.
+  agent: chief_supply_chain_agent
+  input_keys:
+    - risk_assessment
+    - disruption_analysis
+    - company_name
+  output_keys:
+    - decisions
+    - decision_report
+    - risk_summary
+    - company_name
+    - decision_timestamp
+    - executive_report
+
+
+sourcing_task:
+  description: |
+    As **Sourcing Specialist**, execute the Tier-1 supplier actions defined by the Chief Supply Chain Officer.
+    - Only act on Tier-1 suppliers flagged in the decision plan (replacement, buffering, dual-sourcing).
+    - For replacement requests, search for alternative Tier-1 candidates matching product, quality, lead-time, and geography requirements.
+    - Evaluate potential suppliers based on cost, lead time, stability, and deliverable fit; summarise findings in structured JSON.
+    - Provide updated supply chain mapping (Tier-0 → Tier-1) for any approved alternatives.
+  expected_output: >
+    A JSON object detailing the alternative suppliers found, their evaluation scores, and the updated supply chain map if applicable.
+  agent: sourcing_agent
+  input_keys:
+  - decisions
+  output_keys:
+  - sourcing_results

@@ -1,0 +1,648 @@
+{
+ "scenario_id": "run_8204ff45b744",
+ "runtime_seconds": 11.4,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1789,
+   "completion_tokens": 179,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:10:46"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 844,
+   "completion_tokens": 86,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:10:47"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1212,
+   "completion_tokens": 40,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:10:49"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 2945,
+   "completion_tokens": 508,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:10:56"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 6790,
+  "completion_tokens": 813,
+  "total_tokens": 7603,
+  "usd": 0.0251,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 840,
+   "parsed": true,
+   "tail": "cting retail, hospitality, and logistics. The restrictions have led to reduced trade and disrupted supply chains.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 1057,
+   "parsed": true,
+   "tail": "ain-disruption-monitoring/output/temp/kg_payloads/run_8204ff45b744_Bayerische_Motoren_Werke_AG_20261017T131048_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 3669,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 1779,
+   "parsed": true,
+   "tail": "nt\": \"1\",\n      \"maintain_standard_count\": \"0\",\n      \"critical_suppliers\": [\n        \"Glencore PLC\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports ongoing disruptions in Guernsey due to a norovirus outbreak and lockdown measures. The economic activity has declined sharply, retail and hospitality sectors are severely affected, and logistics are disrupted. The disruption is widespread, affecting economic activity in Guernsey generally.",
+   "ongoing_disruption": true,
+   "type": "Pandemic",
+   "scope": "country",
+   "involved": {
+    "countries": [
+     "Guernsey"
+    ],
+    "industries": [
+     "Retail",
+     "Hospitality",
+     "Transportation & Logistics"
+    ],
+    "companies": [
+     "Channelisles Shipping Services"
+    ]
+   },
+   "summary": "Guernsey is facing a significant economic slowdown due to a norovirus outbreak and renewed lockdown measures, impacting retail, hospitality, and logistics. The restrictions have led to reduced trade and disrupted supply chains."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [],
+   "tier_3": [],
+   "tier_4": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "African Rainbow Minerals Ltd",
+      "country": "South Africa",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Impala Platinum Holdings Ltd",
+      "country": "South Africa",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Zimplats Holdings Ltd",
+      "country": "Guernsey",
+      "industry": "Metals & Mining"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "African Rainbow Minerals Ltd",
+      "country": "South Africa",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Impala Platinum Holdings Ltd",
+      "country": "South Africa",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Zimplats Holdings Ltd",
+      "country": "Guernsey",
+      "industry": "Metals & Mining"
+     }
+    ]
+   ],
+   "monitored_company": "Bayerische Motoren Werke AG",
+   "disrupted_countries": [
+    "Guernsey"
+   ],
+   "resolution": {
+    "countries": [
+     "Guernsey"
+    ],
+    "industries": [
+     "Transportation & Logistics"
+    ],
+    "companies": [],
+    "unresolved": {
+     "countries": [],
+     "industries": [
+      "Retail",
+      "Hospitality"
+     ],
+     "companies": [
+      "Channelisles Shipping Services"
+     ]
+    },
+    "scope": "country",
+    "unresolved_count": 3
+   },
+   "summary": {
+    "total_disrupted_chains": 2,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 0,
+    "tier_4_count": 2
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:10:50.733316Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.4504,
+    "Glencore PLC": 0.7505
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Glencore PLC",
+     "risk_score": 0.7505,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Guernsey",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018450184501845018,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018450184501845018,
+       "sub_central": 0.1104859121224828,
+       "sub_pagerank": 0.002885142254236746,
+       "central": 0.22301660917783855,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.4504,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Guernsey",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.0,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.10852003626607326,
+       "sub_pagerank": 0.0015545184237343304,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Glencore PLC",
+     "risk_score": 0.7505,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018450184501845018,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018450184501845018,
+       "sub_central": 0.1104859121224828,
+       "sub_pagerank": 0.002885142254236746,
+       "central": 0.22301660917783855,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Glencore PLC"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 2,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7505,
+    "average_risk_score": 0.6004499999999999
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Guernsey"
+    ],
+    "summary": {
+     "total_disrupted_chains": 2,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 2,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "country",
+    "involved": {
+     "countries": [
+      "Guernsey"
+     ],
+     "industries": [
+      "Transportation & Logistics"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:10:50.733316Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.4504,
+    "Glencore PLC": 0.7505
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Glencore PLC",
+     "risk_score": 0.7505,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Guernsey",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018450184501845018,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018450184501845018,
+       "sub_central": 0.1104859121224828,
+       "sub_pagerank": 0.002885142254236746,
+       "central": 0.22301660917783855,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.4504,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Guernsey",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.0,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.10852003626607326,
+       "sub_pagerank": 0.0015545184237343304,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Glencore PLC",
+     "risk_score": 0.7505,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018450184501845018,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018450184501845018,
+       "sub_central": 0.1104859121224828,
+       "sub_pagerank": 0.002885142254236746,
+       "central": 0.22301660917783855,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Glencore PLC"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 2,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7505,
+    "average_risk_score": 0.6004499999999999
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Guernsey"
+    ],
+    "summary": {
+     "total_disrupted_chains": 2,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 2,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "country",
+    "involved": {
+     "countries": [
+      "Guernsey"
+     ],
+     "industries": [
+      "Transportation & Logistics"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "decisions": {
+    "Glencore PLC": {
+     "risk_score_raw": 0.7505,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7505 (HIGH), driven mainly by exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_1": 0,
+        "tier_2": 0,
+        "tier_3": 0,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Guernsey"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "ArcelorMittal SA": {
+     "risk_score_raw": 0.4504,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.4504 (MEDIUM), with exposure (1.0) being the primary component.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_1": 0,
+        "tier_2": 0,
+        "tier_3": 0,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Guernsey"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "1 REPLACE_SUPPLIER (score 0.60 or above), 1 INCREASE_MONITORING (0.45 to below 0.60), 0 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "2",
+     "replace_supplier_count": "1",
+     "increase_monitoring_count": "1",
+     "maintain_standard_count": "0",
+     "critical_suppliers": [
+      "Glencore PLC"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   0,
+   0,
+   2
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_8204ff45b744_Bayerische_Motoren_Werke_AG_20261017T131048_kg.json",
+  "monitored_company": "Bayerische Motoren Werke AG",
+  "ongoing_disruption": true,
+  "scope": "country",
+  "disrupted_countries": [
+   "Guernsey"
+  ],
+  "disrupted_industries": [
+   "Transportation & Logistics"
+  ],
+  "disrupted_companies": [],
+  "unresolved": {
+   "countries": [],
+   "industries": [
+    "Retail",
+    "Hospitality"
+   ],
+   "companies": [
+    "Channelisles Shipping Services"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "Guernsey"
+   ],
+   "industries": [
+    "Retail",
+    "Hospitality",
+    "Transportation & Logistics"
+   ],
+   "companies": [
+    "Channelisles Shipping Services"
+   ],
+   "scope": "country"
+  },
+  "scenario_id": "run_8204ff45b744",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 2
+  },
+  "total_chains": 2,
+  "message": "Built and saved 2 disrupted supply chains to output/temp/kg_payloads/run_8204ff45b744_Bayerische_Motoren_Werke_AG_20261017T131048_kg.json"
+ },
+ "item_id": "P-060",
+ "run_id": "run_8204ff45b744",
+ "item_type": "P",
+ "firm": "Bayerische Motoren Werke AG",
+ "set": "test",
+ "repeat": 1
+}

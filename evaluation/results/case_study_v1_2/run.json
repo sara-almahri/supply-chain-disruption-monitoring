@@ -1,0 +1,111 @@
+{
+ "run_id": "CASE_RU_UA_MERC",
+ "monitored_company": "Mercedes-Benz Group AG",
+ "model": "gpt-4o",
+ "expected_snapshot": "gpt-4o-2024-08-06",
+ "served_models": [
+  "gpt-4o-2024-08-06",
+  "text-embedding-3-small"
+ ],
+ "started": "2026-10-18T11:53:45",
+ "finished": "2026-10-18T11:54:50",
+ "runtime_seconds": 64.9,
+ "crew_runtime_seconds": 53.0,
+ "cost": {
+  "calls": 28,
+  "by_served_model": {
+   "gpt-4o-2024-08-06": 23,
+   "text-embedding-3-small": 5
+  },
+  "prompt_tokens": 119131,
+  "cached_tokens": 47744,
+  "completion_tokens": 5471,
+  "usd": 0.29282,
+  "unpriced_models": []
+ },
+ "kg_chain_counts": {
+  "tier_1": 0,
+  "tier_2": 6,
+  "tier_3": 128,
+  "tier_4": 1738
+ },
+ "visualisation": {
+  "executed": true,
+  "product_map_source": "kg_results (fallback in VisualizationAgent.execute)",
+  "visualization_file_path": "evaluation/results/case_study_v1_2/attempts/attempt_1/visualisation/visualizations/network_plots/NetworkX_Executive_Mercedes-Benz_Group_AG_20261018_115446_47bb9575.html",
+  "visualization_generated": true,
+  "company_name": "Mercedes-Benz Group AG"
+ },
+ "tasks": [
+  "analyze_disruptions_task",
+  "kg_query_task",
+  "product_search_task",
+  "risk_manager_task",
+  "decision_making_task",
+  "sourcing_task"
+ ],
+ "agents": [
+  "Supply Chain Disruption Radar for {company_name}",
+  "Supply Chain Pathfinder for {company_name}",
+  "Product Intelligence Engine",
+  "Quantitative Risk Modeler for {company_name}",
+  "Chief Supply Chain Officer for {company_name}",
+  "Supplier Intelligence Platform"
+ ],
+ "provenance": {
+  "commit": "1763ca48fe664190a5dfacdc55936ef96cd870ee",
+  "pipeline_files_modified": [],
+  "python": "3.12.2",
+  "executable": "venv/bin/python",
+  "platform": "macOS-14.1-arm64-arm-64bit",
+  "crewai": "1.9.3",
+  "openai": "1.83.0",
+  "neo4j": "6.1.0"
+ },
+ "graph_before": {
+  "nodes": 6318,
+  "relationships": 22862,
+  "company_nodes": 6222,
+  "companies_to_embed": 0,
+  "monitored_company_present": true,
+  "vector_index": [
+   "company_embedding_index"
+  ]
+ },
+ "article": {
+  "source_url": "https://www.britannica.com/event/2022-Russian-invasion-of-Ukraine",
+  "archive_url": "https://web.archive.org/web/20250612133124id_/https://www.britannica.com/event/2022-Russian-invasion-of-Ukraine",
+  "capture_utc": "20250612133124",
+  "retrieved": "2026-10-18T11:53:13",
+  "html_sha256": "5f1460b181c7434879fd9fd443128c236fae30b53c1b802a00736a598cd47139",
+  "article_sha256": "71562c4938f074651d067249acb2a9f06de95fd48f0510f1087754e997f87263",
+  "blocks": 49,
+  "words": 4161,
+  "characters": 27245,
+  "first_block": "Russia-Ukraine War",
+  "news_item_in_capture": true
+ },
+ "attempts": [
+  {
+   "attempt": 1,
+   "exit_code": 0,
+   "status": "completed",
+   "kind": null,
+   "error": null,
+   "cost": {
+    "calls": 28,
+    "by_served_model": {
+     "gpt-4o-2024-08-06": 23,
+     "text-embedding-3-small": 5
+    },
+    "prompt_tokens": 119131,
+    "cached_tokens": 47744,
+    "completion_tokens": 5471,
+    "usd": 0.29282,
+    "unpriced_models": []
+   }
+  }
+ ],
+ "total_usd_all_attempts": 0.29282,
+ "final_attempt_folder": "attempts/attempt_1 (copied to final/)"
+}

@@ -1,0 +1,3850 @@
+{
+ "scenario_id": "run_db18bde85b0b",
+ "runtime_seconds": 15.0,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1819,
+   "completion_tokens": 201,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:16:39"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 854,
+   "completion_tokens": 85,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:16:40"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1216,
+   "completion_tokens": 38,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:16:42"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 10145,
+   "completion_tokens": 795,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:16:50"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 14034,
+  "completion_tokens": 1119,
+  "total_tokens": 15153,
+  "usd": 0.0463,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 1017,
+   "parsed": true,
+   "tail": " Companies like Centrais Eletricas Brasileiras SA and Energia Forte Brasil report reduced output due to flooding.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 1035,
+   "parsed": true,
+   "tail": "ly-chain-disruption-monitoring/output/temp/kg_payloads/run_db18bde85b0b_Mercedes-Benz_Group_AG_20261017T131641_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 21978,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 2865,
+   "parsed": true,
+   "tail": "     \"increase_monitoring_count\": \"4\",\n      \"maintain_standard_count\": \"27\",\n      \"critical_suppliers\": []\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports heavy flooding in southeastern Brazil that has severely affected hydroelectric plants and transmission routes, disrupting the electric utilities industry. This disruption is ongoing, impacting companies like Centrais Eletricas Brasileiras SA and Energia Forte Brasil, as well as causing transmission lines to be de-energized. The report does not suggest the disruption impacts industries beyond electric utilities.",
+   "ongoing_disruption": true,
+   "type": "Natural Disaster",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Brazil"
+    ],
+    "industries": [
+     "Electric Utilities"
+    ],
+    "companies": [
+     "Centrais Eletricas Brasileiras SA",
+     "Energia Forte Brasil"
+    ]
+   },
+   "summary": "Heavy flooding in southeastern Brazil is disrupting hydroelectric plant operations and transmission routes, significantly impacting the electric utilities industry. Companies like Centrais Eletricas Brasileiras SA and Energia Forte Brasil report reduced output due to flooding."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ]
+   ],
+   "tier_3": [
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Braskem SA",
+      "country": "Brazil",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Apple Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Renault SA",
+      "country": "France",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ]
+   ],
+   "tier_4": [
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Apple Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BAIC Motor Corp Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Cummins Inc",
+      "country": "USA",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Denso Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Exxon Mobil Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Brenntag SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Braskem SA",
+      "country": "Brazil",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Futaba Industrial Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Simec SAB de CV",
+      "country": "Mexico",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kian Shen Corp",
+      "country": "Taiwan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Koito Manufacturing Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Luminar Technologies Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Braskem SA",
+      "country": "Brazil",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nexteer Automotive Group Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Renault SA",
+      "country": "France",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Renault SA",
+      "country": "France",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Braskem SA",
+      "country": "Brazil",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Renault SA",
+      "country": "France",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Renault SA",
+      "country": "France",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Renault SA",
+      "country": "France",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hands Corp Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Renault SA",
+      "country": "France",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Robert Bosch GmbH",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Salzgitter AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mahle GmbH",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Centrais Eletricas Brasileiras SA",
+      "country": "Brazil",
+      "industry": "Electric Utilities"
+     }
+    ]
+   ],
+   "monitored_company": "Mercedes-Benz Group AG",
+   "disrupted_countries": [
+    "Brazil"
+   ],
+   "resolution": {
+    "countries": [
+     "Brazil"
+    ],
+    "industries": [
+     "Electric Utilities"
+    ],
+    "companies": [
+     "Centrais Eletricas Brasileiras SA"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "Energia Forte Brasil"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 1
+   },
+   "summary": {
+    "total_disrupted_chains": 46,
+    "tier_1_count": 0,
+    "tier_2_count": 1,
+    "tier_3_count": 8,
+    "tier_4_count": 37
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Mercedes-Benz Group AG",
+   "generated_at": "2026-10-17T13:16:43.630915Z",
+   "supplier_risk_scores": {
+    "Norsk Hydro ASA": 0.403,
+    "AMAG Austria Metall AG": 0.5754,
+    "Alfa SAB de CV": 0.2145,
+    "Apple Inc": 0.5827,
+    "Grupo Industrial Saltillo SAB de CV": 0.2195,
+    "Nemak SAB de CV": 0.505,
+    "Renault SA": 0.5632,
+    "Rio Tinto PLC": 0.4048,
+    "AAPICO Hitech PCL": 0.2177,
+    "ArcelorMittal SA": 0.3821,
+    "BAIC Motor Corp Ltd": 0.164,
+    "BorgWarner Inc": 0.1867,
+    "Cummins Inc": 0.1973,
+    "Dana Inc": 0.1511,
+    "Denso Corp": 0.3808,
+    "Exxon Mobil Corp": 0.1329,
+    "Futaba Industrial Co Ltd": 0.261,
+    "Grupo Simec SAB de CV": 0.2497,
+    "JTEKT Corp": 0.3493,
+    "Kian Shen Corp": 0.24,
+    "Koito Manufacturing Co Ltd": 0.2885,
+    "Luminar Technologies Inc": 0.1869,
+    "Magna International Inc": 0.2431,
+    "Nexteer Automotive Group Ltd": 0.1663,
+    "Robert Bosch GmbH": 0.1762,
+    "SK Inc": 0.4003,
+    "Salzgitter AG": 0.2234,
+    "Schaeffler AG": 0.2279,
+    "TotalEnergies SE": 0.2048,
+    "Toyota Industries Corp": 0.3061,
+    "Wooshin Systems Co Ltd": 0.1894
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Apple Inc",
+     "risk_score": 0.5827,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011614401858304297,
+      "sub_criticality": 0.5772633655693997,
+      "central": 0.16921464357172766,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011614401858304297,
+       "sub_central": 0.14847110749882655,
+       "sub_pagerank": 0.002231133241521547,
+       "central": 0.1516659167623813,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.5754,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.6055360241592491,
+      "central": 0.03906769981086733,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15534523320627613,
+       "sub_pagerank": 0.001064525359204942,
+       "central": 0.1389426598670044,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Renault SA",
+     "risk_score": 0.5632,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011641443538998836,
+      "sub_criticality": 0.2588604920751045,
+      "central": 0.6114474179224063,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011641443538998836,
+       "sub_central": 0.13470507767333623,
+       "sub_pagerank": 0.0006311091192942393,
+       "central": 0.19489890428422163,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nemak SAB de CV",
+     "risk_score": 0.505,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001968503937007874,
+      "sub_criticality": 0.1772369430732438,
+      "central": 0.1904343882484082,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001968503937007874,
+       "sub_central": 0.12984542479728603,
+       "sub_pagerank": 0.0008949278399556981,
+       "central": 0.15374037394880435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.4048,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.8128977702606208,
+      "central": 0.6174620093956227,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.14740617107764165,
+       "sub_pagerank": 0.0029025344713065303,
+       "central": 0.1954868949832202,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Norsk Hydro ASA",
+     "risk_score": 0.403,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 2,
+     "downstream_supplier_count": 2,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.8,
+      "dependency": 0.0019083969465648854,
+      "sub_criticality": 0.23505413602602232,
+      "central": 0.25524571781885524,
+      "depth": 0.5,
+      "raw": {
+       "exposure": 0.75,
+       "dependency": 0.0019083969465648854,
+       "sub_central": 0.12336580912485237,
+       "sub_pagerank": 0.0012560646904741062,
+       "central": 0.16007637517962023,
+       "depth": 2
+      }
+     }
+    },
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.4003,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001076426264800861,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001076426264800861,
+       "sub_central": 0.1788305878390305,
+       "sub_pagerank": 0.0015255389267458518,
+       "central": 0.23288407839802183,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.3821,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 1.0,
+      "central": 0.8179085719299345,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.16432530134017054,
+       "sub_pagerank": 0.0034356513024719404,
+       "central": 0.21508269212775716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Denso Corp",
+     "risk_score": 0.3808,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001394700139470014,
+      "sub_criticality": 0.9889658047493958,
+      "central": 0.8266901751827349,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001394700139470014,
+       "sub_central": 0.17817364067929262,
+       "sub_pagerank": 0.0015471888965973033,
+       "central": 0.21594118784736435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.3493,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014903129657228018,
+      "sub_criticality": 0.7757059920379884,
+      "central": 0.9380089099894133,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014903129657228018,
+       "sub_central": 0.1654767085455858,
+       "sub_pagerank": 0.0014758765350715406,
+       "central": 0.22682378577310716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3061,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 0.6736115539231738,
+      "central": 0.7099768356638844,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.15939827240943988,
+       "sub_pagerank": 0.0013218824236751762,
+       "central": 0.2045312095650909,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Koito Manufacturing Co Ltd",
+     "risk_score": 0.2885,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016778523489932886,
+      "sub_criticality": 0.7807854541471473,
+      "central": 0.3195533124767721,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016778523489932886,
+       "sub_central": 0.16577912645009274,
+       "sub_pagerank": 0.0012454502239422174,
+       "central": 0.16636313093056476,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Futaba Industrial Co Ltd",
+     "risk_score": 0.261,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016750418760469012,
+      "sub_criticality": 0.7187610671113981,
+      "central": 0.1684590667346842,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016750418760469012,
+       "sub_central": 0.16208635647709563,
+       "sub_pagerank": 0.0011888189258912778,
+       "central": 0.15159205103857634,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Simec SAB de CV",
+     "risk_score": 0.2497,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0030864197530864196,
+      "sub_criticality": 0.6764073824619032,
+      "central": 0.13655807810905168,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0030864197530864196,
+       "sub_central": 0.1476729752882351,
+       "sub_pagerank": 0.0025136277055819983,
+       "central": 0.1484733879200154,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2431,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.4563067335261653,
+      "central": 0.5139762284298816,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.14646051108521932,
+       "sub_pagerank": 0.0011278915347181604,
+       "central": 0.18537005214236818,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kian Shen Corp",
+     "risk_score": 0.24,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015698587127158557,
+      "sub_criticality": 0.6714454129041412,
+      "central": 0.053195967397347846,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015698587127158557,
+       "sub_central": 0.15926930603194467,
+       "sub_pagerank": 0.001178316765766246,
+       "central": 0.14032384925797248,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.2279,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.31346805496388747,
+      "central": 0.6490310668400578,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.13795626931216728,
+       "sub_pagerank": 0.0010461640967911892,
+       "central": 0.19857310827570054,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Salzgitter AG",
+     "risk_score": 0.2234,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002857142857142857,
+      "sub_criticality": 0.6006272446941768,
+      "central": 0.025256843256811497,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002857142857142857,
+       "sub_central": 0.14495275350876752,
+       "sub_pagerank": 0.0022977047474842644,
+       "central": 0.13759250080214516,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Industrial Saltillo SAB de CV",
+     "risk_score": 0.2195,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.003048780487804878,
+      "sub_criticality": 0.16528692714224466,
+      "central": 0.056739197723158295,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.003048780487804878,
+       "sub_central": 0.12913395206670675,
+       "sub_pagerank": 0.0009516670614544296,
+       "central": 0.14067023795041547,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.2177,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001321003963011889,
+      "sub_criticality": 0.5018461145916103,
+      "central": 0.17002187022305093,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001321003963011889,
+       "sub_central": 0.14917180686780274,
+       "sub_pagerank": 0.0010495784907901381,
+       "central": 0.15174483180841153,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Alfa SAB de CV",
+     "risk_score": 0.2145,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.001968503937007874,
+      "sub_criticality": 0.11860597111952778,
+      "central": 0.10247349467040387,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.001968503937007874,
+       "sub_central": 0.12387168750940644,
+       "sub_pagerank": 0.0009242649211370362,
+       "central": 0.1451412550344467,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "TotalEnergies SE",
+     "risk_score": 0.2048,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015151515151515152,
+      "sub_criticality": 0.3507560380260718,
+      "central": 0.34259489566456397,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015151515151515152,
+       "sub_central": 0.13386084886078536,
+       "sub_pagerank": 0.0015857381071939227,
+       "central": 0.16861569233310642,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Cummins Inc",
+     "risk_score": 0.1973,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001579778830963665,
+      "sub_criticality": 0.35327264975707134,
+      "central": 0.26298048438737265,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001579778830963665,
+       "sub_central": 0.14032613090152674,
+       "sub_pagerank": 0.0011349882111283958,
+       "central": 0.1608325314075978,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.1894,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.3490977335922609,
+      "central": 0.19212231870044097,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.14007756729953086,
+       "sub_pagerank": 0.001479634526572369,
+       "central": 0.15390538721874486,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.1869,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018726591760299626,
+      "sub_criticality": 0.43205191275776145,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018726591760299626,
+       "sub_central": 0.14501644241941591,
+       "sub_pagerank": 0.0009690511497649624,
+       "central": 0.13512337401486427,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.1867,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014858841010401188,
+      "sub_criticality": 0.21420264019056243,
+      "central": 0.43497731793070576,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014858841010401188,
+       "sub_central": 0.1320462658352968,
+       "sub_pagerank": 0.0009840988562143426,
+       "central": 0.17764706300646674,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Robert Bosch GmbH",
+     "risk_score": 0.1762,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014619883040935672,
+      "sub_criticality": 0.30569758880162395,
+      "central": 0.14708545833811926,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014619883040935672,
+       "sub_central": 0.13749363605625686,
+       "sub_pagerank": 0.0009400251859932124,
+       "central": 0.14950255202651838,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nexteer Automotive Group Ltd",
+     "risk_score": 0.1663,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002551020408163265,
+      "sub_criticality": 0.28265533683327415,
+      "central": 0.09095347787452616,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002551020408163265,
+       "sub_central": 0.13612176056912126,
+       "sub_pagerank": 0.0008966396328492093,
+       "central": 0.14401505007797588,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BAIC Motor Corp Ltd",
+     "risk_score": 0.164,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013550135501355014,
+      "sub_criticality": 0.27829618985546223,
+      "central": 0.08033439631372426,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013550135501355014,
+       "sub_central": 0.1358622283457997,
+       "sub_pagerank": 0.0008779023423918278,
+       "central": 0.1429769211846897,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dana Inc",
+     "risk_score": 0.1511,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001841620626151013,
+      "sub_criticality": 0.1609902807827068,
+      "central": 0.18472752061840855,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001841620626151013,
+       "sub_central": 0.12887814096692202,
+       "sub_pagerank": 0.0007472462559270101,
+       "central": 0.15318246654947415,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Exxon Mobil Corp",
+     "risk_score": 0.1329,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013550135501355014,
+      "sub_criticality": 0.0,
+      "central": 0.3260976157672567,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013550135501355014,
+       "sub_central": 0.11929320021650236,
+       "sub_pagerank": 0.0005863168401942536,
+       "central": 0.16700290662993955,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [],
+   "expected_critical_suppliers": [],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 31,
+    "high_risk_suppliers": 0,
+    "medium_risk_suppliers": 4,
+    "low_risk_suppliers": 27,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.5827,
+    "average_risk_score": 0.2901161290322581
+   },
+   "kg_summary": {
+    "monitored_company": "Mercedes-Benz Group AG",
+    "disrupted_countries": [
+     "Brazil"
+    ],
+    "summary": {
+     "total_disrupted_chains": 46,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 1,
+     "tier_3_chain_count": 8,
+     "tier_4_chain_count": 37,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Brazil"
+     ],
+     "industries": [
+      "Electric Utilities"
+     ],
+     "companies": [
+      "Centrais Eletricas Brasileiras SA"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "MODERATE RISK: 4 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Mercedes-Benz Group AG",
+   "generated_at": "2026-10-17T13:16:43.630915Z",
+   "supplier_risk_scores": {
+    "Norsk Hydro ASA": 0.403,
+    "AMAG Austria Metall AG": 0.5754,
+    "Alfa SAB de CV": 0.2145,
+    "Apple Inc": 0.5827,
+    "Grupo Industrial Saltillo SAB de CV": 0.2195,
+    "Nemak SAB de CV": 0.505,
+    "Renault SA": 0.5632,
+    "Rio Tinto PLC": 0.4048,
+    "AAPICO Hitech PCL": 0.2177,
+    "ArcelorMittal SA": 0.3821,
+    "BAIC Motor Corp Ltd": 0.164,
+    "BorgWarner Inc": 0.1867,
+    "Cummins Inc": 0.1973,
+    "Dana Inc": 0.1511,
+    "Denso Corp": 0.3808,
+    "Exxon Mobil Corp": 0.1329,
+    "Futaba Industrial Co Ltd": 0.261,
+    "Grupo Simec SAB de CV": 0.2497,
+    "JTEKT Corp": 0.3493,
+    "Kian Shen Corp": 0.24,
+    "Koito Manufacturing Co Ltd": 0.2885,
+    "Luminar Technologies Inc": 0.1869,
+    "Magna International Inc": 0.2431,
+    "Nexteer Automotive Group Ltd": 0.1663,
+    "Robert Bosch GmbH": 0.1762,
+    "SK Inc": 0.4003,
+    "Salzgitter AG": 0.2234,
+    "Schaeffler AG": 0.2279,
+    "TotalEnergies SE": 0.2048,
+    "Toyota Industries Corp": 0.3061,
+    "Wooshin Systems Co Ltd": 0.1894
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Apple Inc",
+     "risk_score": 0.5827,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011614401858304297,
+      "sub_criticality": 0.5772633655693997,
+      "central": 0.16921464357172766,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011614401858304297,
+       "sub_central": 0.14847110749882655,
+       "sub_pagerank": 0.002231133241521547,
+       "central": 0.1516659167623813,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.5754,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.6055360241592491,
+      "central": 0.03906769981086733,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15534523320627613,
+       "sub_pagerank": 0.001064525359204942,
+       "central": 0.1389426598670044,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Renault SA",
+     "risk_score": 0.5632,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011641443538998836,
+      "sub_criticality": 0.2588604920751045,
+      "central": 0.6114474179224063,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011641443538998836,
+       "sub_central": 0.13470507767333623,
+       "sub_pagerank": 0.0006311091192942393,
+       "central": 0.19489890428422163,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nemak SAB de CV",
+     "risk_score": 0.505,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001968503937007874,
+      "sub_criticality": 0.1772369430732438,
+      "central": 0.1904343882484082,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001968503937007874,
+       "sub_central": 0.12984542479728603,
+       "sub_pagerank": 0.0008949278399556981,
+       "central": 0.15374037394880435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.4048,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.8128977702606208,
+      "central": 0.6174620093956227,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.14740617107764165,
+       "sub_pagerank": 0.0029025344713065303,
+       "central": 0.1954868949832202,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Norsk Hydro ASA",
+     "risk_score": 0.403,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 2,
+     "downstream_supplier_count": 2,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.8,
+      "dependency": 0.0019083969465648854,
+      "sub_criticality": 0.23505413602602232,
+      "central": 0.25524571781885524,
+      "depth": 0.5,
+      "raw": {
+       "exposure": 0.75,
+       "dependency": 0.0019083969465648854,
+       "sub_central": 0.12336580912485237,
+       "sub_pagerank": 0.0012560646904741062,
+       "central": 0.16007637517962023,
+       "depth": 2
+      }
+     }
+    },
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.4003,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001076426264800861,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001076426264800861,
+       "sub_central": 0.1788305878390305,
+       "sub_pagerank": 0.0015255389267458518,
+       "central": 0.23288407839802183,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.3821,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 1.0,
+      "central": 0.8179085719299345,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.16432530134017054,
+       "sub_pagerank": 0.0034356513024719404,
+       "central": 0.21508269212775716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Denso Corp",
+     "risk_score": 0.3808,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001394700139470014,
+      "sub_criticality": 0.9889658047493958,
+      "central": 0.8266901751827349,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001394700139470014,
+       "sub_central": 0.17817364067929262,
+       "sub_pagerank": 0.0015471888965973033,
+       "central": 0.21594118784736435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.3493,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014903129657228018,
+      "sub_criticality": 0.7757059920379884,
+      "central": 0.9380089099894133,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014903129657228018,
+       "sub_central": 0.1654767085455858,
+       "sub_pagerank": 0.0014758765350715406,
+       "central": 0.22682378577310716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3061,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 0.6736115539231738,
+      "central": 0.7099768356638844,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.15939827240943988,
+       "sub_pagerank": 0.0013218824236751762,
+       "central": 0.2045312095650909,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Koito Manufacturing Co Ltd",
+     "risk_score": 0.2885,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016778523489932886,
+      "sub_criticality": 0.7807854541471473,
+      "central": 0.3195533124767721,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016778523489932886,
+       "sub_central": 0.16577912645009274,
+       "sub_pagerank": 0.0012454502239422174,
+       "central": 0.16636313093056476,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Futaba Industrial Co Ltd",
+     "risk_score": 0.261,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016750418760469012,
+      "sub_criticality": 0.7187610671113981,
+      "central": 0.1684590667346842,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016750418760469012,
+       "sub_central": 0.16208635647709563,
+       "sub_pagerank": 0.0011888189258912778,
+       "central": 0.15159205103857634,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Simec SAB de CV",
+     "risk_score": 0.2497,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0030864197530864196,
+      "sub_criticality": 0.6764073824619032,
+      "central": 0.13655807810905168,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0030864197530864196,
+       "sub_central": 0.1476729752882351,
+       "sub_pagerank": 0.0025136277055819983,
+       "central": 0.1484733879200154,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2431,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.4563067335261653,
+      "central": 0.5139762284298816,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.14646051108521932,
+       "sub_pagerank": 0.0011278915347181604,
+       "central": 0.18537005214236818,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kian Shen Corp",
+     "risk_score": 0.24,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015698587127158557,
+      "sub_criticality": 0.6714454129041412,
+      "central": 0.053195967397347846,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015698587127158557,
+       "sub_central": 0.15926930603194467,
+       "sub_pagerank": 0.001178316765766246,
+       "central": 0.14032384925797248,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.2279,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.31346805496388747,
+      "central": 0.6490310668400578,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.13795626931216728,
+       "sub_pagerank": 0.0010461640967911892,
+       "central": 0.19857310827570054,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Salzgitter AG",
+     "risk_score": 0.2234,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002857142857142857,
+      "sub_criticality": 0.6006272446941768,
+      "central": 0.025256843256811497,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002857142857142857,
+       "sub_central": 0.14495275350876752,
+       "sub_pagerank": 0.0022977047474842644,
+       "central": 0.13759250080214516,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Industrial Saltillo SAB de CV",
+     "risk_score": 0.2195,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.003048780487804878,
+      "sub_criticality": 0.16528692714224466,
+      "central": 0.056739197723158295,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.003048780487804878,
+       "sub_central": 0.12913395206670675,
+       "sub_pagerank": 0.0009516670614544296,
+       "central": 0.14067023795041547,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.2177,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001321003963011889,
+      "sub_criticality": 0.5018461145916103,
+      "central": 0.17002187022305093,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001321003963011889,
+       "sub_central": 0.14917180686780274,
+       "sub_pagerank": 0.0010495784907901381,
+       "central": 0.15174483180841153,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Alfa SAB de CV",
+     "risk_score": 0.2145,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.001968503937007874,
+      "sub_criticality": 0.11860597111952778,
+      "central": 0.10247349467040387,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.001968503937007874,
+       "sub_central": 0.12387168750940644,
+       "sub_pagerank": 0.0009242649211370362,
+       "central": 0.1451412550344467,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "TotalEnergies SE",
+     "risk_score": 0.2048,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015151515151515152,
+      "sub_criticality": 0.3507560380260718,
+      "central": 0.34259489566456397,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015151515151515152,
+       "sub_central": 0.13386084886078536,
+       "sub_pagerank": 0.0015857381071939227,
+       "central": 0.16861569233310642,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Cummins Inc",
+     "risk_score": 0.1973,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001579778830963665,
+      "sub_criticality": 0.35327264975707134,
+      "central": 0.26298048438737265,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001579778830963665,
+       "sub_central": 0.14032613090152674,
+       "sub_pagerank": 0.0011349882111283958,
+       "central": 0.1608325314075978,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.1894,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.3490977335922609,
+      "central": 0.19212231870044097,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.14007756729953086,
+       "sub_pagerank": 0.001479634526572369,
+       "central": 0.15390538721874486,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.1869,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018726591760299626,
+      "sub_criticality": 0.43205191275776145,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018726591760299626,
+       "sub_central": 0.14501644241941591,
+       "sub_pagerank": 0.0009690511497649624,
+       "central": 0.13512337401486427,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.1867,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014858841010401188,
+      "sub_criticality": 0.21420264019056243,
+      "central": 0.43497731793070576,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014858841010401188,
+       "sub_central": 0.1320462658352968,
+       "sub_pagerank": 0.0009840988562143426,
+       "central": 0.17764706300646674,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Robert Bosch GmbH",
+     "risk_score": 0.1762,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014619883040935672,
+      "sub_criticality": 0.30569758880162395,
+      "central": 0.14708545833811926,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014619883040935672,
+       "sub_central": 0.13749363605625686,
+       "sub_pagerank": 0.0009400251859932124,
+       "central": 0.14950255202651838,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nexteer Automotive Group Ltd",
+     "risk_score": 0.1663,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002551020408163265,
+      "sub_criticality": 0.28265533683327415,
+      "central": 0.09095347787452616,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002551020408163265,
+       "sub_central": 0.13612176056912126,
+       "sub_pagerank": 0.0008966396328492093,
+       "central": 0.14401505007797588,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BAIC Motor Corp Ltd",
+     "risk_score": 0.164,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013550135501355014,
+      "sub_criticality": 0.27829618985546223,
+      "central": 0.08033439631372426,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013550135501355014,
+       "sub_central": 0.1358622283457997,
+       "sub_pagerank": 0.0008779023423918278,
+       "central": 0.1429769211846897,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dana Inc",
+     "risk_score": 0.1511,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001841620626151013,
+      "sub_criticality": 0.1609902807827068,
+      "central": 0.18472752061840855,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001841620626151013,
+       "sub_central": 0.12887814096692202,
+       "sub_pagerank": 0.0007472462559270101,
+       "central": 0.15318246654947415,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Exxon Mobil Corp",
+     "risk_score": 0.1329,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Brazil",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013550135501355014,
+      "sub_criticality": 0.0,
+      "central": 0.3260976157672567,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013550135501355014,
+       "sub_central": 0.11929320021650236,
+       "sub_pagerank": 0.0005863168401942536,
+       "central": 0.16700290662993955,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [],
+   "expected_critical_suppliers": [],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 31,
+    "high_risk_suppliers": 0,
+    "medium_risk_suppliers": 4,
+    "low_risk_suppliers": 27,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.5827,
+    "average_risk_score": 0.2901161290322581
+   },
+   "kg_summary": {
+    "monitored_company": "Mercedes-Benz Group AG",
+    "disrupted_countries": [
+     "Brazil"
+    ],
+    "summary": {
+     "total_disrupted_chains": 46,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 1,
+     "tier_3_chain_count": 8,
+     "tier_4_chain_count": 37,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Brazil"
+     ],
+     "industries": [
+      "Electric Utilities"
+     ],
+     "companies": [
+      "Centrais Eletricas Brasileiras SA"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "MODERATE RISK: 4 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Mercedes-Benz Group AG",
+   "decisions": {
+    "Apple Inc": {
+     "risk_score_raw": 0.5827,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5827 (MEDIUM), driven mainly by high exposure (1.0) and significant depth (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Brazil"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "AMAG Austria Metall AG": {
+     "risk_score_raw": 0.5754,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5754 (MEDIUM), driven by maximum exposure (1.0) and significant depth (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Brazil"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Renault SA": {
+     "risk_score_raw": 0.5632,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5632 (MEDIUM), driven by high exposure (1.0) and substantial centrality (0.611).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Brazil"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Nemak SAB de CV": {
+     "risk_score_raw": 0.505,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.505 (MEDIUM), with high exposure (1.0) and significant depth (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Brazil"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "0 REPLACE_SUPPLIER (score 0.60 or above), 4 INCREASE_MONITORING (0.45 to below 0.60), 27 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "31",
+     "replace_supplier_count": "0",
+     "increase_monitoring_count": "4",
+     "maintain_standard_count": "27",
+     "critical_suppliers": []
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   1,
+   8,
+   37
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_db18bde85b0b_Mercedes-Benz_Group_AG_20261017T131641_kg.json",
+  "monitored_company": "Mercedes-Benz Group AG",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Brazil"
+  ],
+  "disrupted_industries": [
+   "Electric Utilities"
+  ],
+  "disrupted_companies": [
+   "Centrais Eletricas Brasileiras SA"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "Energia Forte Brasil"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "Brazil"
+   ],
+   "industries": [
+    "Electric Utilities"
+   ],
+   "companies": [
+    "Centrais Eletricas Brasileiras SA",
+    "Energia Forte Brasil"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_db18bde85b0b",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 1,
+   "tier_3": 8,
+   "tier_4": 37
+  },
+  "total_chains": 46,
+  "message": "Built and saved 46 disrupted supply chains to output/temp/kg_payloads/run_db18bde85b0b_Mercedes-Benz_Group_AG_20261017T131641_kg.json"
+ },
+ "item_id": "P-111",
+ "run_id": "run_db18bde85b0b",
+ "item_type": "P",
+ "firm": "Mercedes-Benz Group AG",
+ "set": "test",
+ "repeat": 1
+}

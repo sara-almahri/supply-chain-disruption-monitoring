@@ -1,0 +1,3554 @@
+{
+ "set": "full",
+ "ground_truth": "evaluation/ground_truth_final",
+ "network": "dataset/supplychainKG_clean.csv",
+ "settings": {
+  "path_matching": "exact node sets",
+  "budgets": {
+   "latency_s": 600,
+   "cost_usd": 0.2,
+   "tokens": 30000
+  }
+ },
+ "path_universe": {
+  "Bayerische Motoren Werke AG": 168901,
+  "Mercedes-Benz Group AG": 193077,
+  "Tesla Inc": 59824
+ },
+ "integrity": {
+  "runs": 630,
+  "pipeline_errors": 0,
+  "unknown_actions": 0
+ },
+ "results": {
+  "noise-high/gpt-4o": {
+   "summary": {
+    "n_scenarios": 30,
+    "n_runs": 30,
+    "dm_type": {
+     "mean": 0.9,
+     "sd": 0.30512857662936466,
+     "within_scenario_sd": 0.0
+    },
+    "dm_entity_f1": {
+     "mean": 0.9103968253968253,
+     "sd": 0.13651992507277882,
+     "within_scenario_sd": 0.0
+    },
+    "dm_ongoing": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_scope": {
+     "mean": 0.7666666666666667,
+     "sd": 0.4301830671520763,
+     "within_scenario_sd": 0.0
+    },
+    "kg_precision": {
+     "mean": 0.9666666666666667,
+     "sd": 0.18257418583505536,
+     "within_scenario_sd": 0.0
+    },
+    "kg_recall": {
+     "mean": 0.9301683975609241,
+     "sd": 0.1514133273215563,
+     "within_scenario_sd": 0.0
+    },
+    "kg_f1": {
+     "mean": 0.9230895078004152,
+     "sd": 0.19980208892448484,
+     "within_scenario_sd": 0.0
+    },
+    "hvr": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "latency_s": {
+     "mean": 14.353333333333333,
+     "sd": 6.747552983442799,
+     "within_scenario_sd": 0.0
+    },
+    "cost_usd": {
+     "mean": 0.05639573333333334,
+     "sd": 0.02921973022832504,
+     "within_scenario_sd": 0.0
+    },
+    "tokens": {
+     "mean": 19140.7,
+     "sd": 10215.41094806915,
+     "within_scenario_sd": 0.0
+    },
+    "handoffs": {
+     "CSCO final output": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Disruption Monitor to KG Query": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     },
+     "KG Query to Risk Manager": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Risk Manager to CSCO": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     }
+    },
+    "scenarios_all_handoffs_valid_every_run": 30,
+    "latency_runs": {
+     "mean": 14.353333333333333,
+     "sd": 6.747552983442799,
+     "min": 6.0,
+     "max": 32.4
+    },
+    "tokens_runs": {
+     "mean": 19140.7,
+     "sd": 10215.41094806915,
+     "min": 5939,
+     "max": 32733,
+     "over_budget": 6
+    },
+    "cost_runs": {
+     "mean": 0.05639573333333334,
+     "max": 0.102097,
+     "total": 1.6918719999999998
+    },
+    "budget": {
+     "latency_violations": 0,
+     "cost_violations": 0,
+     "token_violations": 6
+    }
+   },
+   "mcc": {
+    "alert": {
+     "per_run_mcc": [
+      0.9211323729436767
+     ],
+     "mcc_mean": 0.9211323729436767,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9666666666666667,
+     "precision": 0.9545454545454546,
+     "recall": 1.0,
+     "f1": 0.9767441860465116,
+     "specificity": 0.8888888888888888,
+     "pooled_counts_run1": {
+      "tp": 21,
+      "fp": 1,
+      "fn": 0,
+      "tn": 8,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.9545454545454546,
+      "recall": 1.0,
+      "specificity": 0.8888888888888888,
+      "f1": 0.9767441860465116,
+      "mcc": 0.9211323729436767,
+      "accuracy": 0.9666666666666667
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.9211323729436767,
+      "lo": 0.7637626158259733,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "type": {
+     "per_run_mcc": [
+      0.8714285714285714
+     ],
+     "mcc_mean": 0.8714285714285714,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9,
+     "labels": [
+      "cyber attack",
+      "economic crisis",
+      "geopolitical",
+      "labor strike",
+      "natural disaster",
+      "other",
+      "trade policy"
+     ],
+     "matrix_run1": [
+      [
+       3,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       15,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       3,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       3,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       3,
+       0
+      ],
+      [
+       0,
+       0,
+       3,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8714285714285714,
+      "lo": 0.6521739130434783,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 7
+     }
+    },
+    "scope": {
+     "per_run_mcc": [
+      0.38516444325982163
+     ],
+     "mcc_mean": 0.38516444325982163,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.7666666666666667,
+     "labels": [
+      "country",
+      "industries"
+     ],
+     "matrix_run1": [
+      [
+       3,
+       6
+      ],
+      [
+       1,
+       20
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.38516444325982163,
+      "lo": -0.09284766908852594,
+      "hi": 0.6831300510639732,
+      "n_boot": 10000,
+      "n_undefined": 293
+     }
+    },
+    "countries": {
+     "per_run_mcc": [
+      1.0
+     ],
+     "mcc_mean": 1.0,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "specificity": 1.0,
+     "pooled_counts_run1": {
+      "tp": 36,
+      "fp": 0,
+      "fn": 0,
+      "tn": 2847,
+      "n": 2883,
+      "prevalence": 0.012486992715920915,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "mcc": 1.0,
+      "accuracy": 1.0
+     },
+     "bootstrap_mcc": {
+      "estimate": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "industries": {
+     "per_run_mcc": [
+      0.8873332227300473
+     ],
+     "mcc_mean": 0.8873332227300473,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9902777777777778,
+     "precision": 0.90625,
+     "recall": 0.8787878787878788,
+     "f1": 0.8923076923076924,
+     "specificity": 0.9956331877729258,
+     "pooled_counts_run1": {
+      "tp": 29,
+      "fp": 3,
+      "fn": 4,
+      "tn": 684,
+      "n": 720,
+      "prevalence": 0.04583333333333333,
+      "precision": 0.90625,
+      "recall": 0.8787878787878788,
+      "specificity": 0.9956331877729258,
+      "f1": 0.8923076923076924,
+      "mcc": 0.8873332227300473,
+      "accuracy": 0.9902777777777778
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8873332227300473,
+      "lo": 0.7856484083540709,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "companies": {
+     "per_run_mcc": [
+      0.8333011841611745
+     ],
+     "mcc_mean": 0.8333011841611745,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9999357140561216,
+     "precision": 0.8333333333333334,
+     "recall": 0.8333333333333334,
+     "f1": 0.8333333333333334,
+     "specificity": 0.9999678508278412,
+     "pooled_counts_run1": {
+      "tp": 30,
+      "fp": 6,
+      "fn": 6,
+      "tn": 186624,
+      "n": 186666,
+      "prevalence": 0.000192857831635113,
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "specificity": 0.9999678508278412,
+      "f1": 0.8333333333333334,
+      "mcc": 0.8333011841611745,
+      "accuracy": 0.9999357140561216
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8333011841611745,
+      "lo": 0.6803416281044914,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "paths": {
+     "per_run_mcc": [
+      0.9632263570648788
+     ],
+     "mcc_mean": 0.9632263570648788,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9994587507882845,
+     "precision": 0.9812215788268394,
+     "recall": 0.9460917292284399,
+     "f1": 0.9633364916732242,
+     "specificity": 0.999862886670339,
+     "pooled_counts_run1": {
+      "tp": 29993,
+      "fp": 574,
+      "fn": 1709,
+      "tn": 4185744,
+      "n": 4218020,
+      "prevalence": 0.0075158486683325355,
+      "precision": 0.9812215788268394,
+      "recall": 0.9460917292284399,
+      "specificity": 0.999862886670339,
+      "f1": 0.9633364916732242,
+      "mcc": 0.9632263570648788,
+      "accuracy": 0.9994587507882845
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.9632263570648788,
+      "lo": 0.8401583933299075,
+      "hi": 0.9955477810789205,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "risk_level": {
+     "per_run_mcc": [
+      0.906464383686288
+     ],
+     "mcc_mean": 0.906464383686288,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9482300884955752,
+     "labels": [
+      "NONE",
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+     ],
+     "matrix_run1": [
+      [
+       863,
+       64,
+       13,
+       1
+      ],
+      [
+       4,
+       1179,
+       9,
+       0
+      ],
+      [
+       0,
+       17,
+       84,
+       7
+      ],
+      [
+       0,
+       1,
+       1,
+       17
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.906464383686288,
+      "lo": 0.7830996975396995,
+      "hi": 0.9873407754270015,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "action": {
+     "per_run_mcc": [
+      0.8078416763831289
+     ],
+     "mcc_mean": 0.8078416763831289,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9792035398230089,
+     "labels": [
+      "MAINTAIN_STANDARD",
+      "INCREASE_MONITORING",
+      "REPLACE_SUPPLIER"
+     ],
+     "matrix_run1": [
+      [
+       2112,
+       20,
+       1
+      ],
+      [
+       17,
+       84,
+       7
+      ],
+      [
+       1,
+       1,
+       17
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8078416763831289,
+      "lo": 0.649659986702202,
+      "hi": 0.9469858681724953,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "baselines": {
+     "always_alert": {
+      "tp": 21,
+      "fp": 9,
+      "fn": 0,
+      "tn": 0,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.7,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.8235294117647058,
+      "mcc": 0.0,
+      "accuracy": 0.7
+     },
+     "always_none_risk_level_accuracy": 0.41637168141592923,
+     "always_maintain_accuracy": 0.9438053097345133,
+     "always_none_and_always_maintain_mcc": 0.0
+    }
+   }
+  },
+  "noise-mild/gpt-4o": {
+   "summary": {
+    "n_scenarios": 30,
+    "n_runs": 30,
+    "dm_type": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_entity_f1": {
+     "mean": 0.9205411255411255,
+     "sd": 0.1650566286618287,
+     "within_scenario_sd": 0.0
+    },
+    "dm_ongoing": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_scope": {
+     "mean": 0.8333333333333334,
+     "sd": 0.3790490217894517,
+     "within_scenario_sd": 0.0
+    },
+    "kg_precision": {
+     "mean": 0.9225191101127957,
+     "sd": 0.2541816456689531,
+     "within_scenario_sd": 0.0
+    },
+    "kg_recall": {
+     "mean": 0.9889740763742496,
+     "sd": 0.04546662695872605,
+     "within_scenario_sd": 0.0
+    },
+    "kg_f1": {
+     "mean": 0.9213309496005755,
+     "sd": 0.25259315370218655,
+     "within_scenario_sd": 0.0
+    },
+    "hvr": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "latency_s": {
+     "mean": 87.52333333333333,
+     "sd": 395.30452485117854,
+     "within_scenario_sd": 0.0
+    },
+    "cost_usd": {
+     "mean": 0.05867993333333333,
+     "sd": 0.029767139203158738,
+     "within_scenario_sd": 0.0
+    },
+    "tokens": {
+     "mean": 19621.666666666668,
+     "sd": 10182.048314806676,
+     "within_scenario_sd": 0.0
+    },
+    "handoffs": {
+     "CSCO final output": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Disruption Monitor to KG Query": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     },
+     "KG Query to Risk Manager": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Risk Manager to CSCO": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     }
+    },
+    "scenarios_all_handoffs_valid_every_run": 30,
+    "latency_runs": {
+     "mean": 87.52333333333333,
+     "sd": 395.30452485117854,
+     "min": 5.6,
+     "max": 2180.2
+    },
+    "tokens_runs": {
+     "mean": 19621.666666666668,
+     "sd": 10182.048314806676,
+     "min": 6007,
+     "max": 34789,
+     "over_budget": 7
+    },
+    "cost_runs": {
+     "mean": 0.05867993333333333,
+     "max": 0.11065,
+     "total": 1.7603980000000004
+    },
+    "budget": {
+     "latency_violations": 1,
+     "cost_violations": 0,
+     "token_violations": 7
+    }
+   },
+   "mcc": {
+    "alert": {
+     "per_run_mcc": [
+      0.8427009716003844
+     ],
+     "mcc_mean": 0.8427009716003844,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9333333333333333,
+     "precision": 0.9130434782608695,
+     "recall": 1.0,
+     "f1": 0.9545454545454546,
+     "specificity": 0.7777777777777778,
+     "pooled_counts_run1": {
+      "tp": 21,
+      "fp": 2,
+      "fn": 0,
+      "tn": 7,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.9130434782608695,
+      "recall": 1.0,
+      "specificity": 0.7777777777777778,
+      "f1": 0.9545454545454546,
+      "mcc": 0.8427009716003844,
+      "accuracy": 0.9333333333333333
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8427009716003844,
+      "lo": 0.5091750772173156,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "type": {
+     "per_run_mcc": [
+      1.0
+     ],
+     "mcc_mean": 1.0,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 1.0,
+     "labels": [
+      "cyber attack",
+      "economic crisis",
+      "labor strike",
+      "natural disaster",
+      "other",
+      "trade policy"
+     ],
+     "matrix_run1": [
+      [
+       3,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       15,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       3,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       3,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       3,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       3
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 7
+     }
+    },
+    "scope": {
+     "per_run_mcc": [
+      0.6172133998483676
+     ],
+     "mcc_mean": 0.6172133998483676,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.8333333333333334,
+     "labels": [
+      "country",
+      "industries"
+     ],
+     "matrix_run1": [
+      [
+       7,
+       2
+      ],
+      [
+       3,
+       18
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.6172133998483676,
+      "lo": 0.30151134457776363,
+      "hi": 0.894427190999916,
+      "n_boot": 10000,
+      "n_undefined": 293
+     }
+    },
+    "countries": {
+     "per_run_mcc": [
+      1.0
+     ],
+     "mcc_mean": 1.0,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "specificity": 1.0,
+     "pooled_counts_run1": {
+      "tp": 36,
+      "fp": 0,
+      "fn": 0,
+      "tn": 2847,
+      "n": 2883,
+      "prevalence": 0.012486992715920915,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "mcc": 1.0,
+      "accuracy": 1.0
+     },
+     "bootstrap_mcc": {
+      "estimate": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "industries": {
+     "per_run_mcc": [
+      0.8806053818307703
+     ],
+     "mcc_mean": 0.8806053818307703,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9875518672199171,
+     "precision": 0.7857142857142857,
+     "recall": 1.0,
+     "f1": 0.88,
+     "specificity": 0.9869565217391304,
+     "pooled_counts_run1": {
+      "tp": 33,
+      "fp": 9,
+      "fn": 0,
+      "tn": 681,
+      "n": 723,
+      "prevalence": 0.04564315352697095,
+      "precision": 0.7857142857142857,
+      "recall": 1.0,
+      "specificity": 0.9869565217391304,
+      "f1": 0.88,
+      "mcc": 0.8806053818307703,
+      "accuracy": 0.9875518672199171
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8806053818307703,
+      "lo": 0.7252214536591182,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "companies": {
+     "per_run_mcc": [
+      0.8333011841611745
+     ],
+     "mcc_mean": 0.8333011841611745,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9999357140561216,
+     "precision": 0.8333333333333334,
+     "recall": 0.8333333333333334,
+     "f1": 0.8333333333333334,
+     "specificity": 0.9999678508278412,
+     "pooled_counts_run1": {
+      "tp": 30,
+      "fp": 6,
+      "fn": 6,
+      "tn": 186624,
+      "n": 186666,
+      "prevalence": 0.000192857831635113,
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "specificity": 0.9999678508278412,
+      "f1": 0.8333333333333334,
+      "mcc": 0.8333011841611745,
+      "accuracy": 0.9999357140561216
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8333011841611745,
+      "lo": 0.6803416281044914,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "paths": {
+     "per_run_mcc": [
+      0.9732304602718723
+     ],
+     "mcc_mean": 0.9732304602718723,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9995879583311601,
+     "precision": 0.952109360854608,
+     "recall": 0.9952368935713836,
+     "f1": 0.9731955582973473,
+     "specificity": 0.9996209079195608,
+     "pooled_counts_run1": {
+      "tp": 31551,
+      "fp": 1587,
+      "fn": 151,
+      "tn": 4184731,
+      "n": 4218020,
+      "prevalence": 0.0075158486683325355,
+      "precision": 0.952109360854608,
+      "recall": 0.9952368935713836,
+      "specificity": 0.9996209079195608,
+      "f1": 0.9731955582973473,
+      "mcc": 0.9732304602718723,
+      "accuracy": 0.9995879583311601
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.9732304602718723,
+      "lo": 0.8996274573205982,
+      "hi": 0.991887073273882,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "risk_level": {
+     "per_run_mcc": [
+      0.9065541715839933
+     ],
+     "mcc_mean": 0.9065541715839933,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9473451327433628,
+     "labels": [
+      "NONE",
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+     ],
+     "matrix_run1": [
+      [
+       836,
+       86,
+       17,
+       2
+      ],
+      [
+       0,
+       1183,
+       9,
+       0
+      ],
+      [
+       0,
+       1,
+       103,
+       4
+      ],
+      [
+       0,
+       0,
+       0,
+       19
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.9065541715839933,
+      "lo": 0.7510746534281225,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "action": {
+     "per_run_mcc": [
+      0.8821093536565354
+     ],
+     "mcc_mean": 0.8821093536565354,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9858407079646018,
+     "labels": [
+      "MAINTAIN_STANDARD",
+      "INCREASE_MONITORING",
+      "REPLACE_SUPPLIER"
+     ],
+     "matrix_run1": [
+      [
+       2107,
+       24,
+       2
+      ],
+      [
+       2,
+       102,
+       4
+      ],
+      [
+       0,
+       0,
+       19
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8821093536565354,
+      "lo": 0.6945168862466623,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "baselines": {
+     "always_alert": {
+      "tp": 21,
+      "fp": 9,
+      "fn": 0,
+      "tn": 0,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.7,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.8235294117647058,
+      "mcc": 0.0,
+      "accuracy": 0.7
+     },
+     "always_none_risk_level_accuracy": 0.41637168141592923,
+     "always_maintain_accuracy": 0.9438053097345133,
+     "always_none_and_always_maintain_mcc": 0.0
+    }
+   }
+  },
+  "noise-moderate/gpt-4o": {
+   "summary": {
+    "n_scenarios": 30,
+    "n_runs": 30,
+    "dm_type": {
+     "mean": 0.8,
+     "sd": 0.4068381021724862,
+     "within_scenario_sd": 0.0
+    },
+    "dm_entity_f1": {
+     "mean": 0.929069819069819,
+     "sd": 0.12223483456346133,
+     "within_scenario_sd": 0.0
+    },
+    "dm_ongoing": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_scope": {
+     "mean": 0.7666666666666667,
+     "sd": 0.4301830671520763,
+     "within_scenario_sd": 0.0
+    },
+    "kg_precision": {
+     "mean": 0.9333333333333333,
+     "sd": 0.2537081317024624,
+     "within_scenario_sd": 0.0
+    },
+    "kg_recall": {
+     "mean": 0.9713009688506771,
+     "sd": 0.07970746100198833,
+     "within_scenario_sd": 0.0
+    },
+    "kg_f1": {
+     "mean": 0.9169870632464959,
+     "sd": 0.2533896517341783,
+     "within_scenario_sd": 0.0
+    },
+    "hvr": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "latency_s": {
+     "mean": 87.77,
+     "sd": 397.6184838813934,
+     "within_scenario_sd": 0.0
+    },
+    "cost_usd": {
+     "mean": 0.05728136666666667,
+     "sd": 0.029322472204288377,
+     "within_scenario_sd": 0.0
+    },
+    "tokens": {
+     "mean": 19171.5,
+     "sd": 10046.494773011029,
+     "within_scenario_sd": 0.0
+    },
+    "handoffs": {
+     "CSCO final output": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Disruption Monitor to KG Query": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     },
+     "KG Query to Risk Manager": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Risk Manager to CSCO": {
+      "runs_valid": 30,
+      "scenarios_valid_on_every_run": 30
+     }
+    },
+    "scenarios_all_handoffs_valid_every_run": 30,
+    "latency_runs": {
+     "mean": 87.77,
+     "sd": 397.6184838813934,
+     "min": 6.6,
+     "max": 2192.7
+    },
+    "tokens_runs": {
+     "mean": 19171.5,
+     "sd": 10046.494773011029,
+     "min": 6026,
+     "max": 34830,
+     "over_budget": 6
+    },
+    "cost_runs": {
+     "mean": 0.05728136666666667,
+     "max": 0.111187,
+     "total": 1.7184409999999999
+    },
+    "budget": {
+     "latency_violations": 1,
+     "cost_violations": 0,
+     "token_violations": 6
+    }
+   },
+   "mcc": {
+    "alert": {
+     "per_run_mcc": [
+      0.8427009716003844
+     ],
+     "mcc_mean": 0.8427009716003844,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9333333333333333,
+     "precision": 0.9130434782608695,
+     "recall": 1.0,
+     "f1": 0.9545454545454546,
+     "specificity": 0.7777777777777778,
+     "pooled_counts_run1": {
+      "tp": 21,
+      "fp": 2,
+      "fn": 0,
+      "tn": 7,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.9130434782608695,
+      "recall": 1.0,
+      "specificity": 0.7777777777777778,
+      "f1": 0.9545454545454546,
+      "mcc": 0.8427009716003844,
+      "accuracy": 0.9333333333333333
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8427009716003844,
+      "lo": 0.7637626158259733,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "type": {
+     "per_run_mcc": [
+      0.7514691493021793
+     ],
+     "mcc_mean": 0.7514691493021793,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.8,
+     "labels": [
+      "cyber attack",
+      "economic crisis",
+      "geopolitical",
+      "labor strike",
+      "natural disaster",
+      "other",
+      "trade policy"
+     ],
+     "matrix_run1": [
+      [
+       3,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       11,
+       0,
+       0,
+       0,
+       1,
+       3
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       3,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       3,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1,
+       0,
+       0,
+       2,
+       0
+      ],
+      [
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       2
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.7514691493021793,
+      "lo": 0.5037851635306663,
+      "hi": 0.933189632340746,
+      "n_boot": 10000,
+      "n_undefined": 7
+     }
+    },
+    "scope": {
+     "per_run_mcc": [
+      0.43059828670894745
+     ],
+     "mcc_mean": 0.43059828670894745,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.7666666666666667,
+     "labels": [
+      "countries",
+      "country",
+      "industries"
+     ],
+     "matrix_run1": [
+      [
+       0,
+       0,
+       0
+      ],
+      [
+       1,
+       4,
+       4
+      ],
+      [
+       0,
+       2,
+       19
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.43059828670894745,
+      "lo": -0.14907119849998599,
+      "hi": 0.8498365855987975,
+      "n_boot": 10000,
+      "n_undefined": 293
+     }
+    },
+    "countries": {
+     "per_run_mcc": [
+      1.0
+     ],
+     "mcc_mean": 1.0,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "specificity": 1.0,
+     "pooled_counts_run1": {
+      "tp": 36,
+      "fp": 0,
+      "fn": 0,
+      "tn": 2847,
+      "n": 2883,
+      "prevalence": 0.012486992715920915,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "mcc": 1.0,
+      "accuracy": 1.0
+     },
+     "bootstrap_mcc": {
+      "estimate": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "industries": {
+     "per_run_mcc": [
+      0.8522640045206991
+     ],
+     "mcc_mean": 0.8522640045206991,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9847645429362881,
+     "precision": 0.7619047619047619,
+     "recall": 0.9696969696969697,
+     "f1": 0.8533333333333334,
+     "specificity": 0.9854862119013063,
+     "pooled_counts_run1": {
+      "tp": 32,
+      "fp": 10,
+      "fn": 1,
+      "tn": 679,
+      "n": 722,
+      "prevalence": 0.045706371191135735,
+      "precision": 0.7619047619047619,
+      "recall": 0.9696969696969697,
+      "specificity": 0.9854862119013063,
+      "f1": 0.8533333333333334,
+      "mcc": 0.8522640045206991,
+      "accuracy": 0.9847645429362881
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8522640045206991,
+      "lo": 0.7161034571285853,
+      "hi": 0.9824803956978152,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "companies": {
+     "per_run_mcc": [
+      0.9486731315351482
+     ],
+     "mcc_mean": 0.9486731315351482,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9999785713520405,
+     "precision": 0.9,
+     "recall": 1.0,
+     "f1": 0.9473684210526315,
+     "specificity": 0.9999785672185608,
+     "pooled_counts_run1": {
+      "tp": 36,
+      "fp": 4,
+      "fn": 0,
+      "tn": 186626,
+      "n": 186666,
+      "prevalence": 0.000192857831635113,
+      "precision": 0.9,
+      "recall": 1.0,
+      "specificity": 0.9999785672185608,
+      "f1": 0.9473684210526315,
+      "mcc": 0.9486731315351482,
+      "accuracy": 0.9999785713520405
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.9486731315351482,
+      "lo": 0.8451270837188736,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "paths": {
+     "per_run_mcc": [
+      0.9822579856190473
+     ],
+     "mcc_mean": 0.9822579856190473,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9997332871821376,
+     "precision": 0.9760548030515336,
+     "recall": 0.988770424578891,
+     "f1": 0.9823714684175063,
+     "specificity": 0.9998163063579977,
+     "pooled_counts_run1": {
+      "tp": 31346,
+      "fp": 769,
+      "fn": 356,
+      "tn": 4185549,
+      "n": 4218020,
+      "prevalence": 0.0075158486683325355,
+      "precision": 0.9760548030515336,
+      "recall": 0.988770424578891,
+      "specificity": 0.9998163063579977,
+      "f1": 0.9823714684175063,
+      "mcc": 0.9822579856190473,
+      "accuracy": 0.9997332871821376
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.9822579856190473,
+      "lo": 0.9041344842336897,
+      "hi": 0.9976156884557915,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "risk_level": {
+     "per_run_mcc": [
+      0.935315616966529
+     ],
+     "mcc_mean": 0.935315616966529,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.9641592920353982,
+     "labels": [
+      "NONE",
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+     ],
+     "matrix_run1": [
+      [
+       884,
+       48,
+       8,
+       1
+      ],
+      [
+       1,
+       1180,
+       11,
+       0
+      ],
+      [
+       0,
+       2,
+       96,
+       10
+      ],
+      [
+       0,
+       0,
+       0,
+       19
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.935315616966529,
+      "lo": 0.8623691204067715,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "action": {
+     "per_run_mcc": [
+      0.8814295203747
+     ],
+     "mcc_mean": 0.8814295203747,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 0.986283185840708,
+     "labels": [
+      "MAINTAIN_STANDARD",
+      "INCREASE_MONITORING",
+      "REPLACE_SUPPLIER"
+     ],
+     "matrix_run1": [
+      [
+       2114,
+       18,
+       1
+      ],
+      [
+       2,
+       96,
+       10
+      ],
+      [
+       0,
+       0,
+       19
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8814295203747,
+      "lo": 0.7025043915969316,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "baselines": {
+     "always_alert": {
+      "tp": 21,
+      "fp": 9,
+      "fn": 0,
+      "tn": 0,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.7,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.8235294117647058,
+      "mcc": 0.0,
+      "accuracy": 0.7
+     },
+     "always_none_risk_level_accuracy": 0.41637168141592923,
+     "always_maintain_accuracy": 0.9438053097345133,
+     "always_none_and_always_maintain_mcc": 0.0
+    }
+   }
+  },
+  "original/gpt-4.1": {
+   "summary": {
+    "n_scenarios": 30,
+    "n_runs": 150,
+    "dm_type": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_entity_f1": {
+     "mean": 0.9139334739334739,
+     "sd": 0.14701192372360386,
+     "within_scenario_sd": 0.018425254458320175
+    },
+    "dm_ongoing": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_scope": {
+     "mean": 0.7866666666666666,
+     "sd": 0.34813130037221673,
+     "within_scenario_sd": 0.12110133261752487
+    },
+    "kg_precision": {
+     "mean": 0.9475601432768708,
+     "sd": 0.17895296508563663,
+     "within_scenario_sd": 0.04358862294021485
+    },
+    "kg_recall": {
+     "mean": 0.9693326608428645,
+     "sd": 0.05523001798610801,
+     "within_scenario_sd": 0.02831124932571014
+    },
+    "kg_f1": {
+     "mean": 0.9323472148949813,
+     "sd": 0.17683805291182697,
+     "within_scenario_sd": 0.05612345878110745
+    },
+    "hvr": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "latency_s": {
+     "mean": 16.781333333333333,
+     "sd": 8.758351180576105,
+     "within_scenario_sd": 3.121283212286993
+    },
+    "cost_usd": {
+     "mean": 0.045788093333333335,
+     "sd": 0.023814560739220513,
+     "within_scenario_sd": 0.0028465289801751495
+    },
+    "tokens": {
+     "mean": 19597.286666666667,
+     "sd": 10166.436090653073,
+     "within_scenario_sd": 721.3897664950649
+    },
+    "handoffs": {
+     "CSCO final output": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Disruption Monitor to KG Query": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     },
+     "KG Query to Risk Manager": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Risk Manager to CSCO": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     }
+    },
+    "scenarios_all_handoffs_valid_every_run": 30,
+    "latency_runs": {
+     "mean": 16.781333333333333,
+     "sd": 10.034867980770793,
+     "min": 5.8,
+     "max": 84.6
+    },
+    "tokens_runs": {
+     "mean": 19597.286666666667,
+     "sd": 10203.392014842215,
+     "min": 6095,
+     "max": 35639,
+     "over_budget": 32
+    },
+    "cost_runs": {
+     "mean": 0.045788093333333335,
+     "max": 0.092288,
+     "total": 6.868214
+    },
+    "budget": {
+     "latency_violations": 0,
+     "cost_violations": 0,
+     "token_violations": 32
+    }
+   },
+   "mcc": {
+    "alert": {
+     "per_run_mcc": [
+      0.9211323729436767,
+      0.9211323729436767,
+      0.9211323729436767,
+      0.8427009716003844,
+      0.8427009716003844
+     ],
+     "mcc_mean": 0.8897598124063597,
+     "mcc_sd": 0.04295864773246218,
+     "accuracy_mean": 0.9533333333333334,
+     "precision": 0.9379446640316206,
+     "recall": 1.0,
+     "f1": 0.9678646934460888,
+     "specificity": 0.8444444444444444,
+     "pooled_counts_run1": {
+      "tp": 21,
+      "fp": 1,
+      "fn": 0,
+      "tn": 8,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.9545454545454546,
+      "recall": 1.0,
+      "specificity": 0.8888888888888888,
+      "f1": 0.9767441860465116,
+      "mcc": 0.9211323729436767,
+      "accuracy": 0.9666666666666667
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8897598124063597,
+      "lo": 0.6619276003825102,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "type": {
+     "per_run_mcc": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mcc_mean": 1.0,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 1.0,
+     "labels": [
+      "cyber attack",
+      "economic crisis",
+      "labor strike",
+      "natural disaster",
+      "other",
+      "trade policy"
+     ],
+     "matrix_run1": [
+      [
+       3,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       15,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       3,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       3,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       3,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       3
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 7
+     }
+    },
+    "scope": {
+     "per_run_mcc": [
+      0.38516444325982163,
+      0.670721181477857,
+      0.38516444325982163,
+      0.40006613209931935,
+      0.40006613209931935
+     ],
+     "mcc_mean": 0.44823646643922777,
+     "mcc_sd": 0.12459571708383906,
+     "accuracy_mean": 0.7866666666666667,
+     "labels": [
+      "country",
+      "industries"
+     ],
+     "matrix_run1": [
+      [
+       3,
+       6
+      ],
+      [
+       1,
+       20
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.44823646643922777,
+      "lo": -0.10916084983560044,
+      "hi": 0.780452482887761,
+      "n_boot": 10000,
+      "n_undefined": 293
+     }
+    },
+    "countries": {
+     "per_run_mcc": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mcc_mean": 1.0,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "specificity": 1.0,
+     "pooled_counts_run1": {
+      "tp": 36,
+      "fp": 0,
+      "fn": 0,
+      "tn": 2847,
+      "n": 2883,
+      "prevalence": 0.012486992715920915,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "mcc": 1.0,
+      "accuracy": 1.0
+     },
+     "bootstrap_mcc": {
+      "estimate": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "industries": {
+     "per_run_mcc": [
+      0.8390191527637633,
+      0.8111504524600893,
+      0.8136668661296975,
+      0.8201466270817339,
+      0.8591146807511095
+     ],
+     "mcc_mean": 0.8286195558372788,
+     "mcc_sd": 0.02024010427180505,
+     "accuracy_mean": 0.9810102749512615,
+     "precision": 0.7098581849322135,
+     "recall": 0.9878787878787879,
+     "f1": 0.8256136464794107,
+     "specificity": 0.9806841249734591,
+     "pooled_counts_run1": {
+      "tp": 33,
+      "fp": 13,
+      "fn": 0,
+      "tn": 681,
+      "n": 727,
+      "prevalence": 0.0453920220082531,
+      "precision": 0.717391304347826,
+      "recall": 1.0,
+      "specificity": 0.9812680115273775,
+      "f1": 0.8354430379746836,
+      "mcc": 0.8390191527637633,
+      "accuracy": 0.9821182943603851
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8286195558372788,
+      "lo": 0.6722228824608831,
+      "hi": 0.9836464312297014,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "companies": {
+     "per_run_mcc": [
+      0.8651542566689686,
+      0.8333011841611745,
+      0.8333011841611745,
+      0.8651542566689686,
+      0.8651542566689686
+     ],
+     "mcc_mean": 0.8524130276658509,
+     "mcc_sd": 0.01744664633836649,
+     "accuracy_mean": 0.9999421426505095,
+     "precision": 0.8385964912280701,
+     "recall": 0.8666666666666667,
+     "f1": 0.8522522522522523,
+     "specificity": 0.9999678508278412,
+     "pooled_counts_run1": {
+      "tp": 32,
+      "fp": 6,
+      "fn": 4,
+      "tn": 186624,
+      "n": 186666,
+      "prevalence": 0.000192857831635113,
+      "precision": 0.8421052631578947,
+      "recall": 0.8888888888888888,
+      "specificity": 0.9999678508278412,
+      "f1": 0.8648648648648649,
+      "mcc": 0.8651542566689686,
+      "accuracy": 0.9999464283801014
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8524130276658509,
+      "lo": 0.7171908699465905,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "paths": {
+     "per_run_mcc": [
+      0.9737009912329079,
+      0.9427189993428283,
+      0.9869098058733446,
+      0.9146082648470704,
+      0.979170112315441
+     ],
+     "mcc_mean": 0.9594216347223185,
+     "mcc_sd": 0.030152603913371538,
+     "accuracy_mean": 0.9993620703552852,
+     "precision": 0.9422658343703425,
+     "recall": 0.9782978991861713,
+     "f1": 0.9591868964227624,
+     "specificity": 0.9995215843612454,
+     "pooled_counts_run1": {
+      "tp": 30632,
+      "fp": 574,
+      "fn": 1070,
+      "tn": 4185744,
+      "n": 4218020,
+      "prevalence": 0.0075158486683325355,
+      "precision": 0.9816061013907582,
+      "recall": 0.966248186234307,
+      "specificity": 0.999862886670339,
+      "f1": 0.9738665988427545,
+      "mcc": 0.9737009912329079,
+      "accuracy": 0.9996102436688304
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.9594216347223185,
+      "lo": 0.9037590101462136,
+      "hi": 0.9835519071902968,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "risk_level": {
+     "per_run_mcc": [
+      0.9123106931342824,
+      0.9337875476916504,
+      0.9621225595106799,
+      0.8929984197680346,
+      0.9023828356664041
+     ],
+     "mcc_mean": 0.9207204111542103,
+     "mcc_sd": 0.027660381343087594,
+     "accuracy_mean": 0.9556637168141593,
+     "labels": [
+      "NONE",
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+     ],
+     "matrix_run1": [
+      [
+       863,
+       64,
+       13,
+       1
+      ],
+      [
+       1,
+       1182,
+       9,
+       0
+      ],
+      [
+       0,
+       14,
+       90,
+       4
+      ],
+      [
+       0,
+       1,
+       3,
+       15
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.9207204111542103,
+      "lo": 0.8010837558053489,
+      "hi": 0.9933674502937669,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "action": {
+     "per_run_mcc": [
+      0.8228045145489727,
+      0.9412491641151793,
+      0.8991373474683326,
+      0.8396780041203767,
+      0.8608481630757083
+     ],
+     "mcc_mean": 0.8727434386657139,
+     "mcc_sd": 0.047745129401359575,
+     "accuracy_mean": 0.9856637168141593,
+     "labels": [
+      "MAINTAIN_STANDARD",
+      "INCREASE_MONITORING",
+      "REPLACE_SUPPLIER"
+     ],
+     "matrix_run1": [
+      [
+       2111,
+       21,
+       1
+      ],
+      [
+       14,
+       90,
+       4
+      ],
+      [
+       1,
+       3,
+       15
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8727434386657139,
+      "lo": 0.7303827131337023,
+      "hi": 0.9897028655869056,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "baselines": {
+     "always_alert": {
+      "tp": 21,
+      "fp": 9,
+      "fn": 0,
+      "tn": 0,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.7,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.8235294117647058,
+      "mcc": 0.0,
+      "accuracy": 0.7
+     },
+     "always_none_risk_level_accuracy": 0.41637168141592923,
+     "always_maintain_accuracy": 0.9438053097345133,
+     "always_none_and_always_maintain_mcc": 0.0
+    }
+   }
+  },
+  "original/gpt-4o": {
+   "summary": {
+    "n_scenarios": 30,
+    "n_runs": 150,
+    "dm_type": {
+     "mean": 0.9733333333333334,
+     "sd": 0.11426929274467315,
+     "within_scenario_sd": 0.033164538433504136
+    },
+    "dm_entity_f1": {
+     "mean": 0.9293465423465423,
+     "sd": 0.14505344019975816,
+     "within_scenario_sd": 0.011577858483230617
+    },
+    "dm_ongoing": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_scope": {
+     "mean": 0.8133333333333334,
+     "sd": 0.305956198502823,
+     "within_scenario_sd": 0.15912209470050678
+    },
+    "kg_precision": {
+     "mean": 0.8769396926872443,
+     "sd": 0.29517788438068665,
+     "within_scenario_sd": 0.05070170477640497
+    },
+    "kg_recall": {
+     "mean": 0.9901416662025597,
+     "sd": 0.030476941834598436,
+     "within_scenario_sd": 0.015902750751009102
+    },
+    "kg_f1": {
+     "mean": 0.876896941041885,
+     "sd": 0.28972526364551626,
+     "within_scenario_sd": 0.05228251578417715
+    },
+    "hvr": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "latency_s": {
+     "mean": 15.735333333333333,
+     "sd": 6.966163904203653,
+     "within_scenario_sd": 1.4480064534676795
+    },
+    "cost_usd": {
+     "mean": 0.05974286,
+     "sd": 0.029153922424034483,
+     "within_scenario_sd": 0.0023859233460207054
+    },
+    "tokens": {
+     "mean": 20407.793333333335,
+     "sd": 9975.45362805478,
+     "within_scenario_sd": 431.10803386280827
+    },
+    "handoffs": {
+     "CSCO final output": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Disruption Monitor to KG Query": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     },
+     "KG Query to Risk Manager": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Risk Manager to CSCO": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     }
+    },
+    "scenarios_all_handoffs_valid_every_run": 30,
+    "latency_runs": {
+     "mean": 15.735333333333333,
+     "sd": 7.107922951192527,
+     "min": 5.2,
+     "max": 34.0
+    },
+    "tokens_runs": {
+     "mean": 20407.793333333335,
+     "sd": 9884.034498306532,
+     "min": 5965,
+     "max": 34929,
+     "over_budget": 31
+    },
+    "cost_runs": {
+     "mean": 0.05974286,
+     "max": 0.110942,
+     "total": 8.961429000000003
+    },
+    "budget": {
+     "latency_violations": 0,
+     "cost_violations": 0,
+     "token_violations": 31
+    }
+   },
+   "mcc": {
+    "alert": {
+     "per_run_mcc": [
+      0.7637626158259733,
+      0.7637626158259733,
+      0.7637626158259733,
+      0.8427009716003844,
+      0.7637626158259733
+     ],
+     "mcc_mean": 0.7795502869808555,
+     "mcc_sd": 0.03530230590872926,
+     "accuracy_mean": 0.9066666666666667,
+     "precision": 0.8826086956521739,
+     "recall": 1.0,
+     "f1": 0.9375757575757576,
+     "specificity": 0.6888888888888889,
+     "pooled_counts_run1": {
+      "tp": 21,
+      "fp": 3,
+      "fn": 0,
+      "tn": 6,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.875,
+      "recall": 1.0,
+      "specificity": 0.6666666666666666,
+      "f1": 0.9333333333333333,
+      "mcc": 0.7637626158259733,
+      "accuracy": 0.9
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.7795502869808555,
+      "lo": 0.10183501544346311,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "type": {
+     "per_run_mcc": [
+      0.9541187015356628,
+      0.9541187015356628,
+      0.9541187015356628,
+      1.0,
+      0.9541187015356628
+     ],
+     "mcc_mean": 0.9632949612285302,
+     "mcc_sd": 0.020518740452442938,
+     "accuracy_mean": 0.9733333333333334,
+     "labels": [
+      "cyber attack",
+      "economic crisis",
+      "geopolitical",
+      "labor strike",
+      "natural disaster",
+      "other",
+      "trade policy"
+     ],
+     "matrix_run1": [
+      [
+       3,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       15,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       3,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       3,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       3,
+       0
+      ],
+      [
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       2
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.9632949612285302,
+      "lo": 0.891226531353549,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 7
+     }
+    },
+    "scope": {
+     "per_run_mcc": [
+      0.7486251134176306,
+      0.6018358754926051,
+      0.5584945425171289,
+      0.7094390134677043,
+      0.4550466375675794
+     ],
+     "mcc_mean": 0.6146882364925297,
+     "mcc_sd": 0.11803087654406047,
+     "accuracy_mean": 0.8133333333333334,
+     "labels": [
+      "country",
+      "industries"
+     ],
+     "matrix_run1": [
+      [
+       9,
+       0
+      ],
+      [
+       4,
+       17
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.6146882364925297,
+      "lo": 0.30284466284389944,
+      "hi": 0.8780867606165761,
+      "n_boot": 10000,
+      "n_undefined": 293
+     }
+    },
+    "countries": {
+     "per_run_mcc": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mcc_mean": 1.0,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "specificity": 1.0,
+     "pooled_counts_run1": {
+      "tp": 36,
+      "fp": 0,
+      "fn": 0,
+      "tn": 2847,
+      "n": 2883,
+      "prevalence": 0.012486992715920915,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "mcc": 1.0,
+      "accuracy": 1.0
+     },
+     "bootstrap_mcc": {
+      "estimate": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "industries": {
+     "per_run_mcc": [
+      0.8746793316877429,
+      0.8919263339672485,
+      0.903662605539901,
+      0.9158405189939486,
+      0.903662605539901
+     ],
+     "mcc_mean": 0.8979542791457484,
+     "mcc_sd": 0.015517303717137986,
+     "accuracy_mean": 0.989740696913464,
+     "precision": 0.8202063789868668,
+     "recall": 0.9939393939393939,
+     "f1": 0.8986980130815747,
+     "specificity": 0.9895390954757278,
+     "pooled_counts_run1": {
+      "tp": 32,
+      "fp": 8,
+      "fn": 1,
+      "tn": 681,
+      "n": 722,
+      "prevalence": 0.045706371191135735,
+      "precision": 0.8,
+      "recall": 0.9696969696969697,
+      "specificity": 0.988388969521045,
+      "f1": 0.8767123287671232,
+      "mcc": 0.8746793316877429,
+      "accuracy": 0.9875346260387812
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8979542791457484,
+      "lo": 0.7502559957427204,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "companies": {
+     "per_run_mcc": [
+      0.8333011841611745,
+      0.8333011841611745,
+      0.8651542566689686,
+      0.8333011841611745,
+      0.8651542566689686
+     ],
+     "mcc_mean": 0.8460424131642922,
+     "mcc_sd": 0.01744664633836649,
+     "accuracy_mean": 0.9999399997857135,
+     "precision": 0.8368421052631579,
+     "recall": 0.8555555555555555,
+     "f1": 0.845945945945946,
+     "specificity": 0.9999678508278412,
+     "pooled_counts_run1": {
+      "tp": 30,
+      "fp": 6,
+      "fn": 6,
+      "tn": 186624,
+      "n": 186666,
+      "prevalence": 0.000192857831635113,
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "specificity": 0.9999678508278412,
+      "f1": 0.8333333333333334,
+      "mcc": 0.8333011841611745,
+      "accuracy": 0.9999357140561216
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8460424131642922,
+      "lo": 0.7008184563056519,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "paths": {
+     "per_run_mcc": [
+      0.9743604907121465,
+      0.960917506680851,
+      0.9703638075231164,
+      0.9775592771229182,
+      0.9614076597231864
+     ],
+     "mcc_mean": 0.9689217483524437,
+     "mcc_sd": 0.007529870002750992,
+     "accuracy_mean": 0.9995189686156064,
+     "precision": 0.9448546490912237,
+     "recall": 0.994107627279036,
+     "f1": 0.9688370174501552,
+     "specificity": 0.9995599474287429,
+     "pooled_counts_run1": {
+      "tp": 31702,
+      "fp": 1677,
+      "fn": 0,
+      "tn": 4184641,
+      "n": 4218020,
+      "prevalence": 0.0075158486683325355,
+      "precision": 0.9497588304023488,
+      "recall": 1.0,
+      "specificity": 0.9995994093138648,
+      "f1": 0.9742321107542908,
+      "mcc": 0.9743604907121465,
+      "accuracy": 0.9996024200928397
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.9689217483524437,
+      "lo": 0.8340990416420155,
+      "hi": 0.9970453856414622,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "risk_level": {
+     "per_run_mcc": [
+      0.8531077843295513,
+      0.811645503573503,
+      0.8472246360081103,
+      0.868497553983663,
+      0.8058736853595797
+     ],
+     "mcc_mean": 0.8372698326508814,
+     "mcc_sd": 0.027237078166984677,
+     "accuracy_mean": 0.906283185840708,
+     "labels": [
+      "NONE",
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+     ],
+     "matrix_run1": [
+      [
+       754,
+       152,
+       33,
+       2
+      ],
+      [
+       0,
+       1190,
+       2,
+       0
+      ],
+      [
+       0,
+       1,
+       107,
+       0
+      ],
+      [
+       0,
+       1,
+       1,
+       17
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8372698326508814,
+      "lo": 0.603020886217345,
+      "hi": 0.9916528347428999,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "action": {
+     "per_run_mcc": [
+      0.8663855724650337,
+      0.7555667440426838,
+      0.8404064420570889,
+      0.8569422524154546,
+      0.7651724010922321
+     ],
+     "mcc_mean": 0.8168946824144986,
+     "mcc_sd": 0.05254110132216341,
+     "accuracy_mean": 0.9768141592920354,
+     "labels": [
+      "MAINTAIN_STANDARD",
+      "INCREASE_MONITORING",
+      "REPLACE_SUPPLIER"
+     ],
+     "matrix_run1": [
+      [
+       2098,
+       33,
+       2
+      ],
+      [
+       1,
+       107,
+       0
+      ],
+      [
+       1,
+       1,
+       17
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8168946824144986,
+      "lo": 0.5956827877469,
+      "hi": 0.9676839136106824,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "baselines": {
+     "always_alert": {
+      "tp": 21,
+      "fp": 9,
+      "fn": 0,
+      "tn": 0,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.7,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.8235294117647058,
+      "mcc": 0.0,
+      "accuracy": 0.7
+     },
+     "always_none_risk_level_accuracy": 0.41637168141592923,
+     "always_maintain_accuracy": 0.9438053097345133,
+     "always_none_and_always_maintain_mcc": 0.0
+    }
+   }
+  },
+  "original/gpt-5-mini": {
+   "summary": {
+    "n_scenarios": 30,
+    "n_runs": 150,
+    "dm_type": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_entity_f1": {
+     "mean": 0.812029193029193,
+     "sd": 0.13706184149037362,
+     "within_scenario_sd": 0.058651042757853086
+    },
+    "dm_ongoing": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_scope": {
+     "mean": 0.8733333333333333,
+     "sd": 0.2651393040926084,
+     "within_scenario_sd": 0.11105043641700406
+    },
+    "kg_precision": {
+     "mean": 0.8794968942751101,
+     "sd": 0.24429308584073187,
+     "within_scenario_sd": 0.05973940542196819
+    },
+    "kg_recall": {
+     "mean": 0.9937025230079837,
+     "sd": 0.018005699314696245,
+     "within_scenario_sd": 0.010630738441587911
+    },
+    "kg_f1": {
+     "mean": 0.8936307099177607,
+     "sd": 0.2394994421231077,
+     "within_scenario_sd": 0.059549880318335434
+    },
+    "hvr": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "latency_s": {
+     "mean": 47.388,
+     "sd": 17.623804904456495,
+     "within_scenario_sd": 7.072327615481605
+    },
+    "cost_usd": {
+     "mean": 0.014349673333333333,
+     "sd": 0.005711203182489497,
+     "within_scenario_sd": 0.0015214983140713974
+    },
+    "tokens": {
+     "mean": 24134.746666666666,
+     "sd": 10920.685339480944,
+     "within_scenario_sd": 1435.9301377778934
+    },
+    "handoffs": {
+     "CSCO final output": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Disruption Monitor to KG Query": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     },
+     "KG Query to Risk Manager": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Risk Manager to CSCO": {
+      "runs_valid": 150,
+      "scenarios_valid_on_every_run": 30
+     }
+    },
+    "scenarios_all_handoffs_valid_every_run": 30,
+    "latency_runs": {
+     "mean": 47.388,
+     "sd": 19.144911602523955,
+     "min": 16.2,
+     "max": 93.5
+    },
+    "tokens_runs": {
+     "mean": 24134.746666666666,
+     "sd": 11150.23515578713,
+     "min": 7522,
+     "max": 42072,
+     "over_budget": 59
+    },
+    "cost_runs": {
+     "mean": 0.014349673333333333,
+     "max": 0.027576,
+     "total": 2.152451
+    },
+    "budget": {
+     "latency_violations": 0,
+     "cost_violations": 0,
+     "token_violations": 59
+    }
+   },
+   "mcc": {
+    "alert": {
+     "per_run_mcc": [
+      0.7637626158259733,
+      0.7637626158259733,
+      0.8427009716003844,
+      0.8427009716003844,
+      0.8427009716003844
+     ],
+     "mcc_mean": 0.8111256292906199,
+     "mcc_sd": 0.04323631811001315,
+     "accuracy_mean": 0.92,
+     "precision": 0.8978260869565217,
+     "recall": 1.0,
+     "f1": 0.946060606060606,
+     "specificity": 0.7333333333333333,
+     "pooled_counts_run1": {
+      "tp": 21,
+      "fp": 3,
+      "fn": 0,
+      "tn": 6,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.875,
+      "recall": 1.0,
+      "specificity": 0.6666666666666666,
+      "f1": 0.9333333333333333,
+      "mcc": 0.7637626158259733,
+      "accuracy": 0.9
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8111256292906199,
+      "lo": 0.30550504633038933,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "type": {
+     "per_run_mcc": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mcc_mean": 1.0,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 1.0,
+     "labels": [
+      "cyber attack",
+      "economic crisis",
+      "labor strike",
+      "natural disaster",
+      "other",
+      "trade policy"
+     ],
+     "matrix_run1": [
+      [
+       3,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       15,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       3,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       3,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       3,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       3
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 7
+     }
+    },
+    "scope": {
+     "per_run_mcc": [
+      0.7094390134677043,
+      0.6172133998483676,
+      0.6825396825396826,
+      0.8603834844182797,
+      0.6825396825396826
+     ],
+     "mcc_mean": 0.7104230525627434,
+     "mcc_sd": 0.09046007884981627,
+     "accuracy_mean": 0.8733333333333334,
+     "labels": [
+      "country",
+      "industries"
+     ],
+     "matrix_run1": [
+      [
+       8,
+       1
+      ],
+      [
+       3,
+       18
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.7104230525627434,
+      "lo": 0.33960030220134113,
+      "hi": 0.9863782232592186,
+      "n_boot": 10000,
+      "n_undefined": 293
+     }
+    },
+    "countries": {
+     "per_run_mcc": [
+      0.9602625887121783,
+      0.9602625887121783,
+      0.9602625887121783,
+      0.9602625887121783,
+      0.9729865880679683
+     ],
+     "mcc_mean": 0.9628073885833363,
+     "mcc_sd": 0.005690345501042016,
+     "accuracy_mean": 0.9990287894554284,
+     "precision": 0.9279352226720649,
+     "recall": 1.0,
+     "f1": 0.9625945945945946,
+     "specificity": 0.9990165086055497,
+     "pooled_counts_run1": {
+      "tp": 36,
+      "fp": 3,
+      "fn": 0,
+      "tn": 2844,
+      "n": 2883,
+      "prevalence": 0.012486992715920915,
+      "precision": 0.9230769230769231,
+      "recall": 1.0,
+      "specificity": 0.9989462592202318,
+      "f1": 0.96,
+      "mcc": 0.9602625887121783,
+      "accuracy": 0.9989594172736732
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.9628073885833363,
+      "lo": 0.882920946984316,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "industries": {
+     "per_run_mcc": [
+      0.6901891273546872,
+      0.7270715876206276,
+      0.6845539222695824,
+      0.7079770667850732,
+      0.6960246501632417
+     ],
+     "mcc_mean": 0.7011632708386424,
+     "mcc_sd": 0.016884729796593733,
+     "accuracy_mean": 0.9573031236729512,
+     "precision": 0.5148078289869334,
+     "recall": 1.0,
+     "f1": 0.6794626947553215,
+     "specificity": 0.955283716012397,
+     "pooled_counts_run1": {
+      "tp": 33,
+      "fp": 33,
+      "fn": 0,
+      "tn": 665,
+      "n": 731,
+      "prevalence": 0.04514363885088919,
+      "precision": 0.5,
+      "recall": 1.0,
+      "specificity": 0.9527220630372493,
+      "f1": 0.6666666666666666,
+      "mcc": 0.6901891273546872,
+      "accuracy": 0.9548563611491108
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.7011632708386424,
+      "lo": 0.5906352359620864,
+      "hi": 0.8374011490816725,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "companies": {
+     "per_run_mcc": [
+      0.8320146286069292,
+      0.8484963119639902,
+      0.8401342876206231,
+      0.8164572073433533,
+      0.8751641573853238
+     ],
+     "mcc_mean": 0.8424533185840439,
+     "mcc_sd": 0.021775322596688303,
+     "accuracy_mean": 0.9999207170560221,
+     "precision": 0.7101628317448092,
+     "recall": 1.0,
+     "f1": 0.8300894413844048,
+     "specificity": 0.9999207017633251,
+     "pooled_counts_run1": {
+      "tp": 36,
+      "fp": 16,
+      "fn": 0,
+      "tn": 186621,
+      "n": 186673,
+      "prevalence": 0.0001928505997117955,
+      "precision": 0.6923076923076923,
+      "recall": 1.0,
+      "specificity": 0.9999142720896714,
+      "f1": 0.8181818181818182,
+      "mcc": 0.8320146286069292,
+      "accuracy": 0.9999142886223503
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8424533185840439,
+      "lo": 0.7292939505766471,
+      "hi": 0.9623263595578205,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "paths": {
+     "per_run_mcc": [
+      0.9023436186730593,
+      0.8743235011911622,
+      0.8982860908961062,
+      0.8974460789295264,
+      0.9072368462353115
+     ],
+     "mcc_mean": 0.8959272271850331,
+     "mcc_sd": 0.012685323096372613,
+     "accuracy_mean": 0.9981852622794581,
+     "precision": 0.8086477595104503,
+     "recall": 0.9945997097974891,
+     "f1": 0.8919139559163957,
+     "specificity": 0.9982124148237186,
+     "pooled_counts_run1": {
+      "tp": 31580,
+      "fp": 6990,
+      "fn": 122,
+      "tn": 4179328,
+      "n": 4218020,
+      "prevalence": 0.0075158486683325355,
+      "precision": 0.818771065595022,
+      "recall": 0.9961516623556873,
+      "specificity": 0.998330274957612,
+      "f1": 0.8987932604735883,
+      "mcc": 0.9023436186730593,
+      "accuracy": 0.9983139008349889
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8959272271850331,
+      "lo": 0.8435302271100839,
+      "hi": 0.9844599618211491,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "risk_level": {
+     "per_run_mcc": [
+      0.836344982580211,
+      0.8278623727104063,
+      0.8408730674480551,
+      0.8944690627786054,
+      0.8906318139826704
+     ],
+     "mcc_mean": 0.8580362598999897,
+     "mcc_sd": 0.03188012479031579,
+     "accuracy_mean": 0.9185840707964602,
+     "labels": [
+      "NONE",
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+     ],
+     "matrix_run1": [
+      [
+       740,
+       167,
+       32,
+       2
+      ],
+      [
+       0,
+       1186,
+       6,
+       0
+      ],
+      [
+       0,
+       5,
+       101,
+       2
+      ],
+      [
+       0,
+       0,
+       0,
+       19
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8580362598999897,
+      "lo": 0.6552235084402084,
+      "hi": 0.9974587690112978,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "action": {
+     "per_run_mcc": [
+      0.8320290836413812,
+      0.8072676989175173,
+      0.8048171242301039,
+      0.8761715800656452,
+      0.8638680025399235
+     ],
+     "mcc_mean": 0.8368306978789142,
+     "mcc_sd": 0.032406080290618,
+     "accuracy_mean": 0.9800884955752213,
+     "labels": [
+      "MAINTAIN_STANDARD",
+      "INCREASE_MONITORING",
+      "REPLACE_SUPPLIER"
+     ],
+     "matrix_run1": [
+      [
+       2092,
+       39,
+       2
+      ],
+      [
+       5,
+       101,
+       2
+      ],
+      [
+       0,
+       0,
+       19
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8368306978789142,
+      "lo": 0.5981869107267287,
+      "hi": 0.9906151446209057,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "baselines": {
+     "always_alert": {
+      "tp": 21,
+      "fp": 9,
+      "fn": 0,
+      "tn": 0,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.7,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.8235294117647058,
+      "mcc": 0.0,
+      "accuracy": 0.7
+     },
+     "always_none_risk_level_accuracy": 0.41637168141592923,
+     "always_maintain_accuracy": 0.9438053097345133,
+     "always_none_and_always_maintain_mcc": 0.0
+    }
+   }
+  },
+  "paraphrase/gpt-4o": {
+   "summary": {
+    "n_scenarios": 30,
+    "n_runs": 90,
+    "dm_type": {
+     "mean": 0.9666666666666667,
+     "sd": 0.10170952554312157,
+     "within_scenario_sd": 0.057735026918962574
+    },
+    "dm_entity_f1": {
+     "mean": 0.9335283235283235,
+     "sd": 0.1181861814238937,
+     "within_scenario_sd": 0.04001414178607503
+    },
+    "dm_ongoing": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "dm_scope": {
+     "mean": 0.8,
+     "sd": 0.33448078365732065,
+     "within_scenario_sd": 0.13471506281091267
+    },
+    "kg_precision": {
+     "mean": 0.8826308655818531,
+     "sd": 0.2870826755037023,
+     "within_scenario_sd": 0.053233219803231493
+    },
+    "kg_recall": {
+     "mean": 0.9832895902782965,
+     "sd": 0.06543155894079371,
+     "within_scenario_sd": 0.01554543747830874
+    },
+    "kg_f1": {
+     "mean": 0.8774861620465048,
+     "sd": 0.28143108804063766,
+     "within_scenario_sd": 0.05715310028691091
+    },
+    "hvr": {
+     "mean": 1.0,
+     "sd": 0.0,
+     "within_scenario_sd": 0.0
+    },
+    "latency_s": {
+     "mean": 15.572222222222223,
+     "sd": 6.82421922797911,
+     "within_scenario_sd": 1.349887807114503
+    },
+    "cost_usd": {
+     "mean": 0.0606211,
+     "sd": 0.02897706091965469,
+     "within_scenario_sd": 0.0024563337489382935
+    },
+    "tokens": {
+     "mean": 20196.12222222222,
+     "sd": 9882.148484921343,
+     "within_scenario_sd": 683.0553440617522
+    },
+    "handoffs": {
+     "CSCO final output": {
+      "runs_valid": 90,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Disruption Monitor to KG Query": {
+      "runs_valid": 90,
+      "scenarios_valid_on_every_run": 30
+     },
+     "KG Query to Risk Manager": {
+      "runs_valid": 90,
+      "scenarios_valid_on_every_run": 30
+     },
+     "Risk Manager to CSCO": {
+      "runs_valid": 90,
+      "scenarios_valid_on_every_run": 30
+     }
+    },
+    "scenarios_all_handoffs_valid_every_run": 30,
+    "latency_runs": {
+     "mean": 15.572222222222223,
+     "sd": 6.9704517252064235,
+     "min": 5.5,
+     "max": 35.3
+    },
+    "tokens_runs": {
+     "mean": 20196.12222222222,
+     "sd": 9982.751290199138,
+     "min": 5939,
+     "max": 34709,
+     "over_budget": 18
+    },
+    "cost_runs": {
+     "mean": 0.0606211,
+     "max": 0.10994,
+     "total": 5.455899000000005
+    },
+    "budget": {
+     "latency_violations": 0,
+     "cost_violations": 0,
+     "token_violations": 18
+    }
+   },
+   "mcc": {
+    "alert": {
+     "per_run_mcc": [
+      0.7637626158259733,
+      0.8427009716003844,
+      0.7637626158259733
+     ],
+     "mcc_mean": 0.7900754010841103,
+     "mcc_sd": 0.0455750809557427,
+     "accuracy_mean": 0.9111111111111111,
+     "precision": 0.8876811594202898,
+     "recall": 1.0,
+     "f1": 0.9404040404040405,
+     "specificity": 0.7037037037037037,
+     "pooled_counts_run1": {
+      "tp": 21,
+      "fp": 3,
+      "fn": 0,
+      "tn": 6,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.875,
+      "recall": 1.0,
+      "specificity": 0.6666666666666666,
+      "f1": 0.9333333333333333,
+      "mcc": 0.7637626158259733,
+      "accuracy": 0.9
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.7900754010841103,
+      "lo": 0.1697250257391052,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "type": {
+     "per_run_mcc": [
+      0.8714285714285714,
+      1.0,
+      1.0
+     ],
+     "mcc_mean": 0.9571428571428572,
+     "mcc_sd": 0.07423074889580901,
+     "accuracy_mean": 0.9666666666666667,
+     "labels": [
+      "cyber attack",
+      "economic crisis",
+      "geopolitical",
+      "labor strike",
+      "natural disaster",
+      "other",
+      "trade policy"
+     ],
+     "matrix_run1": [
+      [
+       3,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       15,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       3,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       3,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       3,
+       0
+      ],
+      [
+       0,
+       0,
+       3,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.9571428571428572,
+      "lo": 0.8840579710144928,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 7
+     }
+    },
+    "scope": {
+     "per_run_mcc": [
+      0.5584945425171289,
+      0.6533052580081484,
+      0.4629100498862757
+     ],
+     "mcc_mean": 0.5582366168038511,
+     "mcc_sd": 0.0951978661168305,
+     "accuracy_mean": 0.8,
+     "labels": [
+      "country",
+      "industries"
+     ],
+     "matrix_run1": [
+      [
+       7,
+       2
+      ],
+      [
+       4,
+       17
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.5582366168038511,
+      "lo": 0.2012259994345024,
+      "hi": 0.8694532607707447,
+      "n_boot": 10000,
+      "n_undefined": 293
+     }
+    },
+    "countries": {
+     "per_run_mcc": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mcc_mean": 1.0,
+     "mcc_sd": 0.0,
+     "accuracy_mean": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "specificity": 1.0,
+     "pooled_counts_run1": {
+      "tp": 36,
+      "fp": 0,
+      "fn": 0,
+      "tn": 2847,
+      "n": 2883,
+      "prevalence": 0.012486992715920915,
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0,
+      "f1": 1.0,
+      "mcc": 1.0,
+      "accuracy": 1.0
+     },
+     "bootstrap_mcc": {
+      "estimate": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "industries": {
+     "per_run_mcc": [
+      0.8987898828801335,
+      0.9284987092727567,
+      0.8313866465991344
+     ],
+     "mcc_mean": 0.8862250795840082,
+     "mcc_sd": 0.04976036465485483,
+     "accuracy_mean": 0.9884623879709167,
+     "precision": 0.8125996810207337,
+     "recall": 0.9797979797979798,
+     "f1": 0.8873849155539296,
+     "specificity": 0.9888775992168847,
+     "pooled_counts_run1": {
+      "tp": 32,
+      "fp": 6,
+      "fn": 1,
+      "tn": 681,
+      "n": 720,
+      "prevalence": 0.04583333333333333,
+      "precision": 0.8421052631578947,
+      "recall": 0.9696969696969697,
+      "specificity": 0.9912663755458515,
+      "f1": 0.9014084507042254,
+      "mcc": 0.8987898828801335,
+      "accuracy": 0.9902777777777778
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.8862250795840082,
+      "lo": 0.7537228411211342,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "companies": {
+     "per_run_mcc": [
+      0.8333011841611745,
+      1.0,
+      0.8651542566689686
+     ],
+     "mcc_mean": 0.899485146943381,
+     "mcc_sd": 0.088493397046288,
+     "accuracy_mean": 0.9999607141454077,
+     "precision": 0.8918128654970761,
+     "recall": 0.9074074074074074,
+     "f1": 0.8993993993993994,
+     "specificity": 0.9999785672185608,
+     "pooled_counts_run1": {
+      "tp": 30,
+      "fp": 6,
+      "fn": 6,
+      "tn": 186624,
+      "n": 186666,
+      "prevalence": 0.000192857831635113,
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "specificity": 0.9999678508278412,
+      "f1": 0.8333333333333334,
+      "mcc": 0.8333011841611745,
+      "accuracy": 0.9999357140561216
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.899485146943381,
+      "lo": 0.8060031083574125,
+      "hi": 1.0,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "paths": {
+     "per_run_mcc": [
+      0.9719009886453547,
+      0.9744500950619243,
+      0.9622862940016466
+     ],
+     "mcc_mean": 0.9695457925696418,
+     "mcc_sd": 0.0064148051782414355,
+     "accuracy_mean": 0.9995302693364817,
+     "precision": 0.9469326939261739,
+     "recall": 0.993176035160768,
+     "f1": 0.9695019344659938,
+     "specificity": 0.999578388454962,
+     "pooled_counts_run1": {
+      "tp": 31551,
+      "fp": 1677,
+      "fn": 151,
+      "tn": 4184641,
+      "n": 4218020,
+      "prevalence": 0.0075158486683325355,
+      "precision": 0.9495305164319249,
+      "recall": 0.9952368935713836,
+      "specificity": 0.9995994093138648,
+      "f1": 0.9718466040351147,
+      "mcc": 0.9719009886453547,
+      "accuracy": 0.9995666213057312
+     },
+     "bootstrap_mcc": {
+      "estimate": 0.9695457925696418,
+      "lo": 0.8411165635364086,
+      "hi": 0.9973568194441308,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "risk_level": {
+     "per_run_mcc": [
+      0.8417706118067146,
+      0.8795432954280198,
+      0.8173618329557639
+     ],
+     "mcc_mean": 0.8462252467301661,
+     "mcc_sd": 0.03132916210215438,
+     "accuracy_mean": 0.9119469026548673,
+     "labels": [
+      "NONE",
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+     ],
+     "matrix_run1": [
+      [
+       754,
+       152,
+       33,
+       2
+      ],
+      [
+       0,
+       1181,
+       11,
+       0
+      ],
+      [
+       0,
+       2,
+       102,
+       4
+      ],
+      [
+       0,
+       1,
+       1,
+       17
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8462252467301661,
+      "lo": 0.6350894882494584,
+      "hi": 0.9960624123982668,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "action": {
+     "per_run_mcc": [
+      0.819626087211057,
+      0.8414423454789836,
+      0.7881760500150434
+     ],
+     "mcc_mean": 0.8164148275683614,
+     "mcc_sd": 0.02677795174173235,
+     "accuracy_mean": 0.9765486725663717,
+     "labels": [
+      "MAINTAIN_STANDARD",
+      "INCREASE_MONITORING",
+      "REPLACE_SUPPLIER"
+     ],
+     "matrix_run1": [
+      [
+       2088,
+       43,
+       2
+      ],
+      [
+       2,
+       102,
+       4
+      ],
+      [
+       1,
+       1,
+       17
+      ]
+     ],
+     "bootstrap_mcc": {
+      "estimate": 0.8164148275683614,
+      "lo": 0.6006872988733803,
+      "hi": 0.9964512111961863,
+      "n_boot": 10000,
+      "n_undefined": 0
+     }
+    },
+    "baselines": {
+     "always_alert": {
+      "tp": 21,
+      "fp": 9,
+      "fn": 0,
+      "tn": 0,
+      "n": 30,
+      "prevalence": 0.7,
+      "precision": 0.7,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.8235294117647058,
+      "mcc": 0.0,
+      "accuracy": 0.7
+     },
+     "always_none_risk_level_accuracy": 0.41637168141592923,
+     "always_maintain_accuracy": 0.9438053097345133,
+     "always_none_and_always_maintain_mcc": 0.0
+    }
+   }
+  }
+ },
+ "paraphrase_agreement": {
+  "scenarios": 30,
+  "same_type": 27,
+  "same_scope": 23,
+  "same_entity_sets": 20
+ }
+}

@@ -1,0 +1,50 @@
+You are annotating a document to build the reference set against which an information-extraction system will be evaluated. Using the ontology below, list every entity of the six node types that the document mentions and every relationship of the four types that the document states. Write each name as it appears in the document. List each distinct entity and each distinct relationship once. Include nothing the document does not support.
+
+Ontology:
+---------
+NODE TYPES (6 Total):
+1) Company:
+   - Entities such as corporations, subsidiaries, parent companies, or government organizations that manage assets.
+   - Do NOT extract brand names or stock/index names.
+2) Location:
+   - Recognizable cities, states, provinces, countries, or distinct regions.
+   - Exclude index groupings or names tied to brands.
+3) Material:
+   - Raw materials, metals, minerals, chemicals, ores, or basic compounds (e.g., "lithium", "gold", "tetraethyllead").
+   - Include synonyms such as "raw metals" or "ores" when clearly used.
+4) Product:
+   - Finished manufactured or refined items sold as discrete goods (including branded items).
+   - Examples include general categories (e.g., "lithium batteries"), specific models, engine components, or cars.
+5) Person:
+   - Clearly identified individuals.
+6) Mine:
+   - Mining sites, projects, or extraction facilities; include synonyms like "pit", "field", "operation", or "project" when used in context.
+
+RELATIONSHIP TYPES (Use EXACT Labels):
+1) produces:
+   - Domain: Company → (Material or Product)
+   - Extract only when the text explicitly states or strongly implies that production, manufacturing, or extraction is occurring.
+   - In addition to earlier synonyms ("manufactures", "builds", "develops", "extracts"), also consider phrases like "is the producer of", "creates", "is manufacturing".
+2) suppliesTo:
+   - Domain: Company → Company
+   - Extract only when the text clearly indicates that one company supplies, delivers, or provides to another.
+3) locatedIn:
+   - Domain: (Company or Mine) → Location
+   - Extract only when the text explicitly shows a headquarters, a main operational site, or a registration location by using phrases like "based in", "headquartered in", "located in", "operates from", or "situated in".
+4) owns:
+   - Domain: Company → (Company or Mine)
+   - Extract only when there is clear evidence of acquisition or ownership using terms such as "acquired", "bought", "purchased", "holds a stake in", "controls", or "took over".
+
+Output Format (STRICT – NO ADDITIONAL TEXT):
+---------------------------------------------
+Nodes:
+Node ID: <Full Entity Name>, Type: <Company/Location/Material/Product/Person/Mine>
+(each node on its own new line)
+
+Relationships:
+Source: <Entity Name>, Source Type: <Type>, Relationship: <produces/suppliesTo/locatedIn/owns>, Target: <Entity Name>, Target Type: <Type>
+(each relationship on its own new line)
+
+Document:
+---------
+{text}

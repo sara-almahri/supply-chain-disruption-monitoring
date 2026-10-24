@@ -1,0 +1,1346 @@
+{
+ "scenario_id": "run_84668267f19d",
+ "runtime_seconds": 12.3,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1856,
+   "completion_tokens": 169,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:12:24"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 809,
+   "completion_tokens": 80,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:12:25"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1162,
+   "completion_tokens": 35,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:12:26"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 4581,
+   "completion_tokens": 1098,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:12:34"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 8408,
+  "completion_tokens": 1382,
+  "total_tokens": 9790,
+  "usd": 0.0348,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 743,
+   "parsed": true,
+   "tail": "products, disrupting its chemicals industry and affecting companies like Sibur Holding PAO and Volzhsky ChemTech.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 937,
+   "parsed": true,
+   "tail": "output/temp/kg_payloads/run_84668267f19d_Tesla_Inc_20261017T131225_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 7960,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 4021,
+   "parsed": true,
+   "tail": "  \"Samsung SDI Co Ltd\",\n        \"Contemporary Amperex Technology Co Ltd\",\n        \"ArcelorMittal SA\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports an ongoing disruption due to a temporary export ban imposed by Russia on key chemical products. This has affected the chemicals industry and involves companies like Sibur Holding PAO. The disruption is due to changes in trade policy and is confined to the chemicals industry.",
+   "ongoing_disruption": true,
+   "type": "Trade Policy",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Russia"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [
+     "Sibur Holding PAO",
+     "Volzhsky ChemTech"
+    ]
+   },
+   "summary": "Russia has imposed a temporary export ban on select chemical products, disrupting its chemicals industry and affecting companies like Sibur Holding PAO and Volzhsky ChemTech."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [],
+   "tier_3": [],
+   "tier_4": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Novatek PJSC",
+      "country": "Russia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Sibur Holding PAO",
+      "country": "Russia",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Mechel PJSC",
+      "country": "Russia",
+      "industry": "Steel"
+     },
+     {
+      "company": "Novatek PJSC",
+      "country": "Russia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Sibur Holding PAO",
+      "country": "Russia",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "CNGR Advanced Material Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Novatek PJSC",
+      "country": "Russia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Sibur Holding PAO",
+      "country": "Russia",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Contemporary Amperex Technology Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Novatek PJSC",
+      "country": "Russia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Sibur Holding PAO",
+      "country": "Russia",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mitsui & Co Ltd",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Novatek PJSC",
+      "country": "Russia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Sibur Holding PAO",
+      "country": "Russia",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Novatek PJSC",
+      "country": "Russia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Sibur Holding PAO",
+      "country": "Russia",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Novatek PJSC",
+      "country": "Russia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Sibur Holding PAO",
+      "country": "Russia",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Novatek PJSC",
+      "country": "Russia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Sibur Holding PAO",
+      "country": "Russia",
+      "industry": "Chemicals"
+     }
+    ]
+   ],
+   "monitored_company": "Tesla Inc",
+   "disrupted_countries": [
+    "Russia"
+   ],
+   "resolution": {
+    "countries": [
+     "Russia"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [
+     "Sibur Holding PAO"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "Volzhsky ChemTech"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 1
+   },
+   "summary": {
+    "total_disrupted_chains": 8,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 0,
+    "tier_4_count": 8
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:12:27.593200Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.6983,
+    "CNGR Advanced Material Co Ltd": 0.5872,
+    "Contemporary Amperex Technology Co Ltd": 0.7477,
+    "Gestamp Automocion SA": 0.55,
+    "Magna International Inc": 0.49,
+    "Samsung SDI Co Ltd": 0.7503,
+    "Vale SA": 0.5797
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.1281787241185963,
+       "sub_pagerank": 0.0033551720730901377,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7477,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.9733160635490566,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.12786053587297366,
+       "sub_pagerank": 0.004359939039994747,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.6983,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7567892111645751,
+      "central": 0.9654526761480843,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.12358779467909209,
+       "sub_pagerank": 0.0030314008424259945,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.5872,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.6471980783065678,
+      "central": 0.0715411106055713,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.11710746760843803,
+       "sub_pagerank": 0.0031994493351815826,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.5797,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 0.334101576983124,
+      "central": 0.6241325726793312,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.11202585669536597,
+       "sub_pagerank": 0.002169564734057989,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.55,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.4976517714576006,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.11869622836936919,
+       "sub_pagerank": 0.0017971087393214933,
+       "central": 0.16092101917067364,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.49,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.0,
+      "central": 0.3957364614183892,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.10930238453889624,
+       "sub_pagerank": 0.001070587045416969,
+       "central": 0.17979659858439637,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Samsung SDI Co Ltd",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.1281787241185963,
+       "sub_pagerank": 0.0033551720730901377,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7477,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.9733160635490566,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.12786053587297366,
+       "sub_pagerank": 0.004359939039994747,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.6983,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7567892111645751,
+      "central": 0.9654526761480843,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.12358779467909209,
+       "sub_pagerank": 0.0030314008424259945,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Samsung SDI Co Ltd",
+    "Contemporary Amperex Technology Co Ltd",
+    "ArcelorMittal SA"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 7,
+    "high_risk_suppliers": 3,
+    "medium_risk_suppliers": 4,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7503,
+    "average_risk_score": 0.6290285714285714
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Russia"
+    ],
+    "summary": {
+     "total_disrupted_chains": 8,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 8,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Russia"
+     ],
+     "industries": [
+      "Chemicals"
+     ],
+     "companies": [
+      "Sibur Holding PAO"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 3 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 4 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:12:27.593200Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.6983,
+    "CNGR Advanced Material Co Ltd": 0.5872,
+    "Contemporary Amperex Technology Co Ltd": 0.7477,
+    "Gestamp Automocion SA": 0.55,
+    "Magna International Inc": 0.49,
+    "Samsung SDI Co Ltd": 0.7503,
+    "Vale SA": 0.5797
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.1281787241185963,
+       "sub_pagerank": 0.0033551720730901377,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7477,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.9733160635490566,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.12786053587297366,
+       "sub_pagerank": 0.004359939039994747,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.6983,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7567892111645751,
+      "central": 0.9654526761480843,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.12358779467909209,
+       "sub_pagerank": 0.0030314008424259945,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.5872,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.6471980783065678,
+      "central": 0.0715411106055713,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.11710746760843803,
+       "sub_pagerank": 0.0031994493351815826,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.5797,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 0.334101576983124,
+      "central": 0.6241325726793312,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.11202585669536597,
+       "sub_pagerank": 0.002169564734057989,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.55,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.4976517714576006,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.11869622836936919,
+       "sub_pagerank": 0.0017971087393214933,
+       "central": 0.16092101917067364,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.49,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Russia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.0,
+      "central": 0.3957364614183892,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.10930238453889624,
+       "sub_pagerank": 0.001070587045416969,
+       "central": 0.17979659858439637,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Samsung SDI Co Ltd",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.1281787241185963,
+       "sub_pagerank": 0.0033551720730901377,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7477,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.9733160635490566,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.12786053587297366,
+       "sub_pagerank": 0.004359939039994747,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.6983,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7567892111645751,
+      "central": 0.9654526761480843,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.12358779467909209,
+       "sub_pagerank": 0.0030314008424259945,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Samsung SDI Co Ltd",
+    "Contemporary Amperex Technology Co Ltd",
+    "ArcelorMittal SA"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 7,
+    "high_risk_suppliers": 3,
+    "medium_risk_suppliers": 4,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7503,
+    "average_risk_score": 0.6290285714285714
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Russia"
+    ],
+    "summary": {
+     "total_disrupted_chains": 8,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 8,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Russia"
+     ],
+     "industries": [
+      "Chemicals"
+     ],
+     "companies": [
+      "Sibur Holding PAO"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 3 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 4 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Tesla Inc",
+   "decisions": {
+    "Samsung SDI Co Ltd": {
+     "risk_score_raw": 0.7503,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7503 (HIGH), driven by exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Russia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Contemporary Amperex Technology Co Ltd": {
+     "risk_score_raw": 0.7477,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7477 (HIGH), with major impact from exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Russia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "ArcelorMittal SA": {
+     "risk_score_raw": 0.6983,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6983 (HIGH); exposure (1.0) and centrality (0.965) are significant factors.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Russia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "CNGR Advanced Material Co Ltd": {
+     "risk_score_raw": 0.5872,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5872 (MEDIUM); exposure (1.0) and sub-supplier criticality (0.647) influence risk.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Russia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Vale SA": {
+     "risk_score_raw": 0.5797,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5797 (MEDIUM); risk is heightened by exposure (1.0) and centrality (0.624).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Russia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Gestamp Automocion SA": {
+     "risk_score_raw": 0.55,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.55 (MEDIUM); key factors are exposure (1.0) and sub-supplier criticality (0.498).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Russia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "3 REPLACE_SUPPLIER (score 0.60 or above), 3 INCREASE_MONITORING (0.45 to below 0.60), 1 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": 7,
+     "replace_supplier_count": 3,
+     "increase_monitoring_count": 3,
+     "maintain_standard_count": 1,
+     "critical_suppliers": [
+      "Samsung SDI Co Ltd",
+      "Contemporary Amperex Technology Co Ltd",
+      "ArcelorMittal SA"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   0,
+   0,
+   8
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_84668267f19d_Tesla_Inc_20261017T131225_kg.json",
+  "monitored_company": "Tesla Inc",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Russia"
+  ],
+  "disrupted_industries": [
+   "Chemicals"
+  ],
+  "disrupted_companies": [
+   "Sibur Holding PAO"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "Volzhsky ChemTech"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "Russia"
+   ],
+   "industries": [
+    "Chemicals"
+   ],
+   "companies": [
+    "Sibur Holding PAO",
+    "Volzhsky ChemTech"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_84668267f19d",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 8
+  },
+  "total_chains": 8,
+  "message": "Built and saved 8 disrupted supply chains to output/temp/kg_payloads/run_84668267f19d_Tesla_Inc_20261017T131225_kg.json"
+ },
+ "item_id": "P-088",
+ "run_id": "run_84668267f19d",
+ "item_type": "P",
+ "firm": "Tesla Inc",
+ "set": "test",
+ "repeat": 1
+}

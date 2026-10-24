@@ -1,0 +1,5900 @@
+{
+ "scenario_id": "run_8af044a1e757",
+ "runtime_seconds": 21.3,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1855,
+   "completion_tokens": 174,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:11:23"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 840,
+   "completion_tokens": 81,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:11:24"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1196,
+   "completion_tokens": 41,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:11:26"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 13728,
+   "completion_tokens": 1416,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:11:43"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 17619,
+  "completion_tokens": 1712,
+  "total_tokens": 19331,
+  "usd": 0.0612,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 856,
+   "parsed": true,
+   "tail": "porarily closed. The pandemic has resulted in workforce disruptions and delayed shipments of essential chemicals.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 959,
+   "parsed": true,
+   "tail": "ain-disruption-monitoring/output/temp/kg_payloads/run_8af044a1e757_Bayerische_Motoren_Werke_AG_20261017T131125_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 31184,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 5214,
+   "parsed": true,
+   "tail": "\",\n      \"maintain_standard_count\": \"36\",\n      \"critical_suppliers\": [\n        \"Samsung SDI Co Ltd\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports an ongoing disruption caused by a viral outbreak affecting multiple industrial sites in Gujarat, India. It specifically impacts the chemicals sector with production slowdowns, affecting chemical plants. The disruption is ongoing, with significant workforce health issues leading to reduced capacity or suspended operations.",
+   "ongoing_disruption": true,
+   "type": "Pandemic",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "India"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [
+     "Horizon Polymers Ltd"
+    ]
+   },
+   "summary": "A viral outbreak in Gujarat, India, has caused production slowdowns in the chemicals sector, with several plants operating at reduced capacity or temporarily closed. The pandemic has resulted in workforce disruptions and delayed shipments of essential chemicals."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ]
+   ],
+   "tier_3": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Akzo Nobel NV",
+      "country": "Netherlands",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Farasis Energy Gan Zhou Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Antolin-Irausa SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangzhou Tinci Materials Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LANXESS AG",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ]
+   ],
+   "tier_4": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "American Axle & Manufacturing Holdings Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mobase Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Eternal Materials Co Ltd",
+      "country": "Taiwan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BMW Brilliance Automotive Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Cummins Inc",
+      "country": "USA",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Contemporary Amperex Technology Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangzhou Tinci Materials Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Contemporary Amperex Technology Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Enchem Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eurocharm Holdings Co Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eve Energy Co Ltd",
+      "country": "China",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Farasis Energy Gan Zhou Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangzhou Tinci Materials Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Farasis Energy Gan Zhou Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "G Tech Optoelectronics Corp",
+      "country": "Taiwan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SAIC Motor Corp Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangzhou Tinci Materials Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Farasis Energy Gan Zhou Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangzhou Tinci Materials Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honeywell International Inc",
+      "country": "USA",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "AAR Corp",
+      "country": "USA",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honeywell International Inc",
+      "country": "USA",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "JGC Holdings Corp",
+      "country": "Japan",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kawasaki Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LANXESS AG",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Evermore Chemical Industry Co Ltd",
+      "country": "Taiwan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Guangzhou Tinci Materials Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Hansol Chemical Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Methanex Corp",
+      "country": "Canada",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Miwon Specialty Chemical Co Ltd/New",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hansol Chemical Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Luminar Technologies Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Antolin-Irausa SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nexteer Automotive Group Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nexteer Automotive Group Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Akzo Nobel NV",
+      "country": "Netherlands",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "BYD Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Hansol Chemical Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangzhou Tinci Materials Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hansol Chemical Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mobase Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Airbus SE",
+      "country": "Netherlands",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Methanex Corp",
+      "country": "Canada",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Sinopec Shanghai Petrochemical Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "USI Corp",
+      "country": "Taiwan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "JGC Holdings Corp",
+      "country": "Japan",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Siemens AG",
+      "country": "Germany",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TDK Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toray Industries Inc",
+      "country": "Japan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Toagosei Co Ltd",
+      "country": "Japan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tata Motors Ltd",
+      "country": "India",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Zhejiang Huayou Cobalt Co Ltd",
+      "country": "China",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Akzo Nobel NV",
+      "country": "Netherlands",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Cummins Inc",
+      "country": "USA",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF India Ltd",
+      "country": "India",
+      "industry": "Chemicals"
+     }
+    ]
+   ],
+   "monitored_company": "Bayerische Motoren Werke AG",
+   "disrupted_countries": [
+    "India"
+   ],
+   "resolution": {
+    "countries": [
+     "India"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "Horizon Polymers Ltd"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 1
+   },
+   "summary": {
+    "total_disrupted_chains": 83,
+    "tier_1_count": 0,
+    "tier_2_count": 1,
+    "tier_3_count": 10,
+    "tier_4_count": 72
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:11:28.108753Z",
+   "supplier_risk_scores": {
+    "BASF SE": 0.5328,
+    "Akzo Nobel NV": 0.2745,
+    "Axalta Coating Systems Ltd": 0.5196,
+    "Farasis Energy Gan Zhou Co Ltd": 0.5447,
+    "Grupo Antolin-Irausa SA": 0.25,
+    "Guangzhou Tinci Materials Technology Co Ltd": 0.5396,
+    "LANXESS AG": 0.493,
+    "LG Chem Ltd": 0.5406,
+    "Ningbo Shanshan Co Ltd": 0.3008,
+    "Samsung SDI Co Ltd": 0.6,
+    "Schaeffler AG": 0.5832,
+    "AAPICO Hitech PCL": 0.2402,
+    "AMAG Austria Metall AG": 0.2344,
+    "Alfa SAB de CV": 0.1935,
+    "American Axle & Manufacturing Holdings Inc": 0.2154,
+    "ArcelorMittal SA": 0.3558,
+    "Autoliv Inc": 0.1879,
+    "BMW Brilliance Automotive Ltd": 0.1247,
+    "BorgWarner Inc": 0.2632,
+    "Contemporary Amperex Technology Co Ltd": 0.3884,
+    "Enchem Co Ltd": 0.2592,
+    "Eurocharm Holdings Co Ltd": 0.1926,
+    "Eve Energy Co Ltd": 0.1743,
+    "G Tech Optoelectronics Corp": 0.2088,
+    "Grupo Industrial Saltillo SAB de CV": 0.1379,
+    "Honeywell International Inc": 0.2122,
+    "Kawasaki Heavy Industries Ltd": 0.2432,
+    "LG Energy Solution Ltd": 0.226,
+    "Luminar Technologies Inc": 0.1995,
+    "Magna International Inc": 0.2651,
+    "Nexteer Automotive Group Ltd": 0.1881,
+    "Rio Tinto PLC": 0.3335,
+    "SK Inc": 0.4003,
+    "Samsung Electronics Co Ltd": 0.2587,
+    "Saudi Basic Industries Corp": 0.1578,
+    "Sempra": 0.361,
+    "Siemens AG": 0.2596,
+    "TDK Corp": 0.1757,
+    "Toray Industries Inc": 0.2565,
+    "Toyota Industries Corp": 0.3186,
+    "Wooshin Systems Co Ltd": 0.1908,
+    "Xperi Inc": 0.2537,
+    "Zhejiang Huayou Cobalt Co Ltd": 0.245,
+    "thyssenkrupp AG": 0.3004
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.6,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "India",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.348972544547795,
+      "central": 0.7990128320887089,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.14679914017769155,
+       "sub_pagerank": 0.0017566218981302823,
+       "central": 0.21166995361360316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.5832,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.3257476400800702,
+      "central": 0.6769246187112365,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.15367222252988577,
+       "sub_pagerank": 0.0016495107181762395,
+       "central": 0.19872059441081885,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Farasis Energy Gan Zhou Co Ltd",
+     "risk_score": 0.5447,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.33326849644629586,
+      "central": 0.2747307940479356,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.15413545094286207,
+       "sub_pagerank": 0.0015052810572958755,
+       "central": 0.1560616664059985,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Chem Ltd",
+     "risk_score": 0.5406,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "India",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012315270935960591,
+      "sub_criticality": 0.1342360791850138,
+      "central": 0.6346053849753164,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0012315270935960591,
+       "sub_central": 0.13906809647618523,
+       "sub_pagerank": 0.001274625429041726,
+       "central": 0.1942319796324316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangzhou Tinci Materials Technology Co Ltd",
+     "risk_score": 0.5396,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0016556291390728477,
+      "sub_criticality": 0.33326849644629586,
+      "central": 0.2251747047567005,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0016556291390728477,
+       "sub_central": 0.15413545094286207,
+       "sub_pagerank": 0.0015052810572958755,
+       "central": 0.15080547022485374,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BASF SE",
+     "risk_score": 0.5328,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 2,
+     "downstream_supplier_count": 2,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.8,
+      "dependency": 0.0014005602240896359,
+      "sub_criticality": 0.5407039584073262,
+      "central": 0.9427063177125254,
+      "depth": 0.5,
+      "raw": {
+       "exposure": 0.75,
+       "dependency": 0.0014005602240896359,
+       "sub_central": 0.15598910481529282,
+       "sub_pagerank": 0.0021869813358602664,
+       "central": 0.22691088890921515,
+       "depth": 2
+      }
+     }
+    },
+    {
+     "supplier": "Axalta Coating Systems Ltd",
+     "risk_score": 0.5196,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0024813895781637717,
+      "sub_criticality": 0.24851954485141248,
+      "central": 0.19241718109349093,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0024813895781637717,
+       "sub_central": 0.13524323124531176,
+       "sub_pagerank": 0.0015311455633065176,
+       "central": 0.14733102393086875,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LANXESS AG",
+     "risk_score": 0.493,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0024390243902439024,
+      "sub_criticality": 0.14542907075716258,
+      "central": 0.13306544827274583,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0024390243902439024,
+       "sub_central": 0.13735613155471654,
+       "sub_pagerank": 0.0012997491657447552,
+       "central": 0.14103584697363655,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.4003,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001076426264800861,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001076426264800861,
+       "sub_central": 0.19520111703634735,
+       "sub_pagerank": 0.0019919309425355165,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.3884,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.879882582628579,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.16697260805369601,
+       "sub_pagerank": 0.0032179150896594457,
+       "central": 0.22024745196016812,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.361,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.9664995862355177,
+      "central": 0.672001705281197,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.15711956435968824,
+       "sub_pagerank": 0.0031427202170968985,
+       "central": 0.19819844266032435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.3558,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.8613670455123853,
+      "central": 0.8318524355674526,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1624362690379409,
+       "sub_pagerank": 0.0029067402062997127,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.3335,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.8437778913563903,
+      "central": 0.6424474470915889,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.16409331657103998,
+       "sub_pagerank": 0.0028672596728788,
+       "central": 0.19506375263020811,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3186,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 0.7298351459394172,
+      "central": 0.72241104490883,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.17856098584723604,
+       "sub_pagerank": 0.002108913719272423,
+       "central": 0.20354513934753968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Shanshan Co Ltd",
+     "risk_score": 0.3008,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.0029411764705882353,
+      "sub_criticality": 0.4828868770945317,
+      "central": 0.234852095540192,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.0029411764705882353,
+       "sub_central": 0.154603372694486,
+       "sub_pagerank": 0.0020572053846789305,
+       "central": 0.15183190845287248,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3004,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.5451396998416742,
+      "central": 0.9092016944196991,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.16718512993220758,
+       "sub_pagerank": 0.0021058293470877227,
+       "central": 0.2233572010472152,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Akzo Nobel NV",
+     "risk_score": 0.2745,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.0024271844660194173,
+      "sub_criticality": 0.3637500069227774,
+      "central": 0.2112760774236681,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.0024271844660194173,
+       "sub_central": 0.1537698378846506,
+       "sub_pagerank": 0.001789791321287161,
+       "central": 0.14933130402336617,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2651,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.5476401418916781,
+      "central": 0.5510826667572616,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.16733913843152742,
+       "sub_pagerank": 0.001590183123706846,
+       "central": 0.18537309268603536,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.2632,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014858841010401188,
+      "sub_criticality": 0.5846290582938166,
+      "central": 0.45905424707161185,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014858841010401188,
+       "sub_central": 0.16961737859572226,
+       "sub_pagerank": 0.0021110705488882205,
+       "central": 0.17561204343806627,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Siemens AG",
+     "risk_score": 0.2596,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001644736842105263,
+      "sub_criticality": 0.5931924266008202,
+      "central": 0.40501621854504477,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001644736842105263,
+       "sub_central": 0.1701448179347314,
+       "sub_pagerank": 0.002153890260395946,
+       "central": 0.1698804676975211,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Enchem Co Ltd",
+     "risk_score": 0.2592,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.003484320557491289,
+      "sub_criticality": 0.6972265098384688,
+      "central": 0.1893044572923159,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.003484320557491289,
+       "sub_central": 0.16766225856692538,
+       "sub_pagerank": 0.002538311125121195,
+       "central": 0.14700087102351275,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung Electronics Co Ltd",
+     "risk_score": 0.2587,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0011961722488038277,
+      "sub_criticality": 0.5398834066111755,
+      "central": 0.5041362265523485,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011961722488038277,
+       "sub_central": 0.16686138164441466,
+       "sub_pagerank": 0.0019256264936514588,
+       "central": 0.18039369049242746,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toray Industries Inc",
+     "risk_score": 0.2565,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018181818181818182,
+      "sub_criticality": 0.5081578497924363,
+      "central": 0.5437855044967472,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018181818181818182,
+       "sub_central": 0.15226550276314774,
+       "sub_pagerank": 0.0021139284921876866,
+       "central": 0.18459911481660543,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Xperi Inc",
+     "risk_score": 0.2537,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013315579227696406,
+      "sub_criticality": 0.7233999627571044,
+      "central": 0.08703234772870658,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013315579227696406,
+       "sub_central": 0.17816462676954625,
+       "sub_pagerank": 0.001323226031095114,
+       "central": 0.1361533186961555,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Antolin-Irausa SA",
+     "risk_score": 0.25,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.004291845493562232,
+      "sub_criticality": 0.2802082139732613,
+      "central": 0.12918057366465535,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.004291845493562232,
+       "sub_central": 0.15086733502026095,
+       "sub_pagerank": 0.001588675080997503,
+       "central": 0.1406237954301972,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Zhejiang Huayou Cobalt Co Ltd",
+     "risk_score": 0.245,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018975332068311196,
+      "sub_criticality": 0.5496351794454519,
+      "central": 0.34616032224344795,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018975332068311196,
+       "sub_central": 0.1674620177998947,
+       "sub_pagerank": 0.0019812097676371126,
+       "central": 0.16363788193656154,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kawasaki Heavy Industries Ltd",
+     "risk_score": 0.2432,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014204545454545455,
+      "sub_criticality": 0.6363428357506113,
+      "central": 0.15529416377563332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014204545454545455,
+       "sub_central": 0.17280255989607232,
+       "sub_pagerank": 0.001528297255415588,
+       "central": 0.1433935489474825,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.2402,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001321003963011889,
+      "sub_criticality": 0.5848966504072081,
+      "central": 0.22864303189066196,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001321003963011889,
+       "sub_central": 0.1696338602653587,
+       "sub_pagerank": 0.0013662018011483487,
+       "central": 0.15117334041189276,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.2344,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.6160009790494088,
+      "central": 0.10804393261186118,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.17154965390533894,
+       "sub_pagerank": 0.0015302330312860334,
+       "central": 0.138381924984549,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.226,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.38431578452780174,
+      "central": 0.48777663913513253,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.15727958149040597,
+       "sub_pagerank": 0.0015511358243737788,
+       "central": 0.17865850109113862,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.2154,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019157088122605363,
+      "sub_criticality": 0.4907921837053492,
+      "central": 0.16716009660356076,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019157088122605363,
+       "sub_central": 0.16383773005869184,
+       "sub_pagerank": 0.0016453815601680005,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Honeywell International Inc",
+     "risk_score": 0.2122,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.00392156862745098,
+      "sub_criticality": 0.36510855590099733,
+      "central": 0.38184759309442246,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.00392156862745098,
+       "sub_central": 0.1393991686053621,
+       "sub_pagerank": 0.0017928407139903499,
+       "central": 0.16742307361421774,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "G Tech Optoelectronics Corp",
+     "risk_score": 0.2088,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.003472222222222222,
+      "sub_criticality": 0.5394900692584501,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.003472222222222222,
+       "sub_central": 0.16264258601141998,
+       "sub_pagerank": 0.002184256645935643,
+       "central": 0.12692218080149115,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.1995,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018726591760299626,
+      "sub_criticality": 0.4557439603355412,
+      "central": 0.07914493894201882,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018726591760299626,
+       "sub_central": 0.16167902204744142,
+       "sub_pagerank": 0.0014618888915524707,
+       "central": 0.1353167359767227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Alfa SAB de CV",
+     "risk_score": 0.1935,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001968503937007874,
+      "sub_criticality": 0.3776299153746927,
+      "central": 0.1745414529923904,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001968503937007874,
+       "sub_central": 0.14500674864070373,
+       "sub_pagerank": 0.0018209460990925663,
+       "central": 0.1454350241632518,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eurocharm Holdings Co Ltd",
+     "risk_score": 0.1926,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019267822736030828,
+      "sub_criticality": 0.40957312349296837,
+      "central": 0.10223841347659411,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019267822736030828,
+       "sub_central": 0.15883524436642898,
+       "sub_pagerank": 0.0013536904322576468,
+       "central": 0.13776615913327245,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.1908,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.32569975662993406,
+      "central": 0.25284897900169445,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.14901782514518422,
+       "sub_pagerank": 0.0017043839068636157,
+       "central": 0.15374075863608472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nexteer Automotive Group Ltd",
+     "risk_score": 0.1881,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002551020408163265,
+      "sub_criticality": 0.35569744809562365,
+      "central": 0.16357600075806267,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002551020408163265,
+       "sub_central": 0.15551690634784734,
+       "sub_pagerank": 0.001764193619223451,
+       "central": 0.14427196692885472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.1879,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.3010511592719496,
+      "central": 0.27155824734293643,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.1521511043149149,
+       "sub_pagerank": 0.001449639076072605,
+       "central": 0.15572516834665165,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "TDK Corp",
+     "risk_score": 0.1757,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002770083102493075,
+      "sub_criticality": 0.31282663410865913,
+      "central": 0.12459823136130063,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002770083102493075,
+       "sub_central": 0.15098697116073345,
+       "sub_pagerank": 0.0016754889560646616,
+       "central": 0.14013776655947574,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eve Energy Co Ltd",
+     "risk_score": 0.1743,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002336448598130841,
+      "sub_criticality": 0.2933368431892938,
+      "central": 0.15058173942731418,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002336448598130841,
+       "sub_central": 0.15167596023262478,
+       "sub_pagerank": 0.001627539940374412,
+       "central": 0.142893722847041,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Saudi Basic Industries Corp",
+     "risk_score": 0.1578,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "India",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0011248593925759281,
+      "sub_criticality": 0.08309256998962565,
+      "central": 0.4088778628451285,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011248593925759281,
+       "sub_central": 0.13872648795590398,
+       "sub_pagerank": 0.0009733197514887287,
+       "central": 0.17029005530448002,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Industrial Saltillo SAB de CV",
+     "risk_score": 0.1379,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.003048780487804878,
+      "sub_criticality": 0.11966840063190144,
+      "central": 0.13174215617474277,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.003048780487804878,
+       "sub_central": 0.13918225308225604,
+       "sub_pagerank": 0.0012419268856734404,
+       "central": 0.14089549120764408,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BMW Brilliance Automotive Ltd",
+     "risk_score": 0.1247,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0020325203252032522,
+      "sub_criticality": 0.1106476149223079,
+      "central": 0.020321429209222322,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0020325203252032522,
+       "sub_central": 0.13360860809593622,
+       "sub_pagerank": 0.0012216788721230497,
+       "central": 0.12907758531650823,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Samsung SDI Co Ltd",
+     "risk_score": 0.6,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.348972544547795,
+      "central": 0.7990128320887089,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.14679914017769155,
+       "sub_pagerank": 0.0017566218981302823,
+       "central": 0.21166995361360316,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Samsung SDI Co Ltd"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 44,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 7,
+    "low_risk_suppliers": 36,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.6,
+    "average_risk_score": 0.3000181818181818
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "India"
+    ],
+    "summary": {
+     "total_disrupted_chains": 83,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 1,
+     "tier_3_chain_count": 10,
+     "tier_4_chain_count": 72,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "India"
+     ],
+     "industries": [
+      "Chemicals"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 7 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:11:28.108753Z",
+   "supplier_risk_scores": {
+    "BASF SE": 0.5328,
+    "Akzo Nobel NV": 0.2745,
+    "Axalta Coating Systems Ltd": 0.5196,
+    "Farasis Energy Gan Zhou Co Ltd": 0.5447,
+    "Grupo Antolin-Irausa SA": 0.25,
+    "Guangzhou Tinci Materials Technology Co Ltd": 0.5396,
+    "LANXESS AG": 0.493,
+    "LG Chem Ltd": 0.5406,
+    "Ningbo Shanshan Co Ltd": 0.3008,
+    "Samsung SDI Co Ltd": 0.6,
+    "Schaeffler AG": 0.5832,
+    "AAPICO Hitech PCL": 0.2402,
+    "AMAG Austria Metall AG": 0.2344,
+    "Alfa SAB de CV": 0.1935,
+    "American Axle & Manufacturing Holdings Inc": 0.2154,
+    "ArcelorMittal SA": 0.3558,
+    "Autoliv Inc": 0.1879,
+    "BMW Brilliance Automotive Ltd": 0.1247,
+    "BorgWarner Inc": 0.2632,
+    "Contemporary Amperex Technology Co Ltd": 0.3884,
+    "Enchem Co Ltd": 0.2592,
+    "Eurocharm Holdings Co Ltd": 0.1926,
+    "Eve Energy Co Ltd": 0.1743,
+    "G Tech Optoelectronics Corp": 0.2088,
+    "Grupo Industrial Saltillo SAB de CV": 0.1379,
+    "Honeywell International Inc": 0.2122,
+    "Kawasaki Heavy Industries Ltd": 0.2432,
+    "LG Energy Solution Ltd": 0.226,
+    "Luminar Technologies Inc": 0.1995,
+    "Magna International Inc": 0.2651,
+    "Nexteer Automotive Group Ltd": 0.1881,
+    "Rio Tinto PLC": 0.3335,
+    "SK Inc": 0.4003,
+    "Samsung Electronics Co Ltd": 0.2587,
+    "Saudi Basic Industries Corp": 0.1578,
+    "Sempra": 0.361,
+    "Siemens AG": 0.2596,
+    "TDK Corp": 0.1757,
+    "Toray Industries Inc": 0.2565,
+    "Toyota Industries Corp": 0.3186,
+    "Wooshin Systems Co Ltd": 0.1908,
+    "Xperi Inc": 0.2537,
+    "Zhejiang Huayou Cobalt Co Ltd": 0.245,
+    "thyssenkrupp AG": 0.3004
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.6,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "India",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.348972544547795,
+      "central": 0.7990128320887089,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.14679914017769155,
+       "sub_pagerank": 0.0017566218981302823,
+       "central": 0.21166995361360316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.5832,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.3257476400800702,
+      "central": 0.6769246187112365,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.15367222252988577,
+       "sub_pagerank": 0.0016495107181762395,
+       "central": 0.19872059441081885,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Farasis Energy Gan Zhou Co Ltd",
+     "risk_score": 0.5447,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.33326849644629586,
+      "central": 0.2747307940479356,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.15413545094286207,
+       "sub_pagerank": 0.0015052810572958755,
+       "central": 0.1560616664059985,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Chem Ltd",
+     "risk_score": 0.5406,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "India",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012315270935960591,
+      "sub_criticality": 0.1342360791850138,
+      "central": 0.6346053849753164,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0012315270935960591,
+       "sub_central": 0.13906809647618523,
+       "sub_pagerank": 0.001274625429041726,
+       "central": 0.1942319796324316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangzhou Tinci Materials Technology Co Ltd",
+     "risk_score": 0.5396,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0016556291390728477,
+      "sub_criticality": 0.33326849644629586,
+      "central": 0.2251747047567005,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0016556291390728477,
+       "sub_central": 0.15413545094286207,
+       "sub_pagerank": 0.0015052810572958755,
+       "central": 0.15080547022485374,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BASF SE",
+     "risk_score": 0.5328,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 2,
+     "downstream_supplier_count": 2,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.8,
+      "dependency": 0.0014005602240896359,
+      "sub_criticality": 0.5407039584073262,
+      "central": 0.9427063177125254,
+      "depth": 0.5,
+      "raw": {
+       "exposure": 0.75,
+       "dependency": 0.0014005602240896359,
+       "sub_central": 0.15598910481529282,
+       "sub_pagerank": 0.0021869813358602664,
+       "central": 0.22691088890921515,
+       "depth": 2
+      }
+     }
+    },
+    {
+     "supplier": "Axalta Coating Systems Ltd",
+     "risk_score": 0.5196,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0024813895781637717,
+      "sub_criticality": 0.24851954485141248,
+      "central": 0.19241718109349093,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0024813895781637717,
+       "sub_central": 0.13524323124531176,
+       "sub_pagerank": 0.0015311455633065176,
+       "central": 0.14733102393086875,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LANXESS AG",
+     "risk_score": 0.493,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0024390243902439024,
+      "sub_criticality": 0.14542907075716258,
+      "central": 0.13306544827274583,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0024390243902439024,
+       "sub_central": 0.13735613155471654,
+       "sub_pagerank": 0.0012997491657447552,
+       "central": 0.14103584697363655,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.4003,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001076426264800861,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001076426264800861,
+       "sub_central": 0.19520111703634735,
+       "sub_pagerank": 0.0019919309425355165,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.3884,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.879882582628579,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.16697260805369601,
+       "sub_pagerank": 0.0032179150896594457,
+       "central": 0.22024745196016812,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.361,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.9664995862355177,
+      "central": 0.672001705281197,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.15711956435968824,
+       "sub_pagerank": 0.0031427202170968985,
+       "central": 0.19819844266032435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.3558,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.8613670455123853,
+      "central": 0.8318524355674526,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1624362690379409,
+       "sub_pagerank": 0.0029067402062997127,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.3335,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.8437778913563903,
+      "central": 0.6424474470915889,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.16409331657103998,
+       "sub_pagerank": 0.0028672596728788,
+       "central": 0.19506375263020811,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3186,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 0.7298351459394172,
+      "central": 0.72241104490883,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.17856098584723604,
+       "sub_pagerank": 0.002108913719272423,
+       "central": 0.20354513934753968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Shanshan Co Ltd",
+     "risk_score": 0.3008,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.0029411764705882353,
+      "sub_criticality": 0.4828868770945317,
+      "central": 0.234852095540192,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.0029411764705882353,
+       "sub_central": 0.154603372694486,
+       "sub_pagerank": 0.0020572053846789305,
+       "central": 0.15183190845287248,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3004,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.5451396998416742,
+      "central": 0.9092016944196991,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.16718512993220758,
+       "sub_pagerank": 0.0021058293470877227,
+       "central": 0.2233572010472152,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Akzo Nobel NV",
+     "risk_score": 0.2745,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.0024271844660194173,
+      "sub_criticality": 0.3637500069227774,
+      "central": 0.2112760774236681,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.0024271844660194173,
+       "sub_central": 0.1537698378846506,
+       "sub_pagerank": 0.001789791321287161,
+       "central": 0.14933130402336617,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2651,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.5476401418916781,
+      "central": 0.5510826667572616,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.16733913843152742,
+       "sub_pagerank": 0.001590183123706846,
+       "central": 0.18537309268603536,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.2632,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014858841010401188,
+      "sub_criticality": 0.5846290582938166,
+      "central": 0.45905424707161185,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014858841010401188,
+       "sub_central": 0.16961737859572226,
+       "sub_pagerank": 0.0021110705488882205,
+       "central": 0.17561204343806627,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Siemens AG",
+     "risk_score": 0.2596,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001644736842105263,
+      "sub_criticality": 0.5931924266008202,
+      "central": 0.40501621854504477,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001644736842105263,
+       "sub_central": 0.1701448179347314,
+       "sub_pagerank": 0.002153890260395946,
+       "central": 0.1698804676975211,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Enchem Co Ltd",
+     "risk_score": 0.2592,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.003484320557491289,
+      "sub_criticality": 0.6972265098384688,
+      "central": 0.1893044572923159,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.003484320557491289,
+       "sub_central": 0.16766225856692538,
+       "sub_pagerank": 0.002538311125121195,
+       "central": 0.14700087102351275,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung Electronics Co Ltd",
+     "risk_score": 0.2587,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0011961722488038277,
+      "sub_criticality": 0.5398834066111755,
+      "central": 0.5041362265523485,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011961722488038277,
+       "sub_central": 0.16686138164441466,
+       "sub_pagerank": 0.0019256264936514588,
+       "central": 0.18039369049242746,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toray Industries Inc",
+     "risk_score": 0.2565,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018181818181818182,
+      "sub_criticality": 0.5081578497924363,
+      "central": 0.5437855044967472,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018181818181818182,
+       "sub_central": 0.15226550276314774,
+       "sub_pagerank": 0.0021139284921876866,
+       "central": 0.18459911481660543,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Xperi Inc",
+     "risk_score": 0.2537,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013315579227696406,
+      "sub_criticality": 0.7233999627571044,
+      "central": 0.08703234772870658,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013315579227696406,
+       "sub_central": 0.17816462676954625,
+       "sub_pagerank": 0.001323226031095114,
+       "central": 0.1361533186961555,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Antolin-Irausa SA",
+     "risk_score": 0.25,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.30000000000000004,
+      "dependency": 0.004291845493562232,
+      "sub_criticality": 0.2802082139732613,
+      "central": 0.12918057366465535,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 0.5,
+       "dependency": 0.004291845493562232,
+       "sub_central": 0.15086733502026095,
+       "sub_pagerank": 0.001588675080997503,
+       "central": 0.1406237954301972,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Zhejiang Huayou Cobalt Co Ltd",
+     "risk_score": 0.245,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018975332068311196,
+      "sub_criticality": 0.5496351794454519,
+      "central": 0.34616032224344795,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018975332068311196,
+       "sub_central": 0.1674620177998947,
+       "sub_pagerank": 0.0019812097676371126,
+       "central": 0.16363788193656154,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kawasaki Heavy Industries Ltd",
+     "risk_score": 0.2432,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014204545454545455,
+      "sub_criticality": 0.6363428357506113,
+      "central": 0.15529416377563332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014204545454545455,
+       "sub_central": 0.17280255989607232,
+       "sub_pagerank": 0.001528297255415588,
+       "central": 0.1433935489474825,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.2402,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001321003963011889,
+      "sub_criticality": 0.5848966504072081,
+      "central": 0.22864303189066196,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001321003963011889,
+       "sub_central": 0.1696338602653587,
+       "sub_pagerank": 0.0013662018011483487,
+       "central": 0.15117334041189276,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.2344,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.6160009790494088,
+      "central": 0.10804393261186118,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.17154965390533894,
+       "sub_pagerank": 0.0015302330312860334,
+       "central": 0.138381924984549,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.226,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "India",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.38431578452780174,
+      "central": 0.48777663913513253,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.15727958149040597,
+       "sub_pagerank": 0.0015511358243737788,
+       "central": 0.17865850109113862,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.2154,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019157088122605363,
+      "sub_criticality": 0.4907921837053492,
+      "central": 0.16716009660356076,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019157088122605363,
+       "sub_central": 0.16383773005869184,
+       "sub_pagerank": 0.0016453815601680005,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Honeywell International Inc",
+     "risk_score": 0.2122,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.00392156862745098,
+      "sub_criticality": 0.36510855590099733,
+      "central": 0.38184759309442246,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.00392156862745098,
+       "sub_central": 0.1393991686053621,
+       "sub_pagerank": 0.0017928407139903499,
+       "central": 0.16742307361421774,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "G Tech Optoelectronics Corp",
+     "risk_score": 0.2088,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.003472222222222222,
+      "sub_criticality": 0.5394900692584501,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.003472222222222222,
+       "sub_central": 0.16264258601141998,
+       "sub_pagerank": 0.002184256645935643,
+       "central": 0.12692218080149115,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.1995,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018726591760299626,
+      "sub_criticality": 0.4557439603355412,
+      "central": 0.07914493894201882,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018726591760299626,
+       "sub_central": 0.16167902204744142,
+       "sub_pagerank": 0.0014618888915524707,
+       "central": 0.1353167359767227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Alfa SAB de CV",
+     "risk_score": 0.1935,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001968503937007874,
+      "sub_criticality": 0.3776299153746927,
+      "central": 0.1745414529923904,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001968503937007874,
+       "sub_central": 0.14500674864070373,
+       "sub_pagerank": 0.0018209460990925663,
+       "central": 0.1454350241632518,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eurocharm Holdings Co Ltd",
+     "risk_score": 0.1926,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019267822736030828,
+      "sub_criticality": 0.40957312349296837,
+      "central": 0.10223841347659411,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019267822736030828,
+       "sub_central": 0.15883524436642898,
+       "sub_pagerank": 0.0013536904322576468,
+       "central": 0.13776615913327245,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.1908,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.32569975662993406,
+      "central": 0.25284897900169445,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.14901782514518422,
+       "sub_pagerank": 0.0017043839068636157,
+       "central": 0.15374075863608472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nexteer Automotive Group Ltd",
+     "risk_score": 0.1881,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002551020408163265,
+      "sub_criticality": 0.35569744809562365,
+      "central": 0.16357600075806267,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002551020408163265,
+       "sub_central": 0.15551690634784734,
+       "sub_pagerank": 0.001764193619223451,
+       "central": 0.14427196692885472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.1879,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "India",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.3010511592719496,
+      "central": 0.27155824734293643,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.1521511043149149,
+       "sub_pagerank": 0.001449639076072605,
+       "central": 0.15572516834665165,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "TDK Corp",
+     "risk_score": 0.1757,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002770083102493075,
+      "sub_criticality": 0.31282663410865913,
+      "central": 0.12459823136130063,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002770083102493075,
+       "sub_central": 0.15098697116073345,
+       "sub_pagerank": 0.0016754889560646616,
+       "central": 0.14013776655947574,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eve Energy Co Ltd",
+     "risk_score": 0.1743,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002336448598130841,
+      "sub_criticality": 0.2933368431892938,
+      "central": 0.15058173942731418,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002336448598130841,
+       "sub_central": 0.15167596023262478,
+       "sub_pagerank": 0.001627539940374412,
+       "central": 0.142893722847041,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Saudi Basic Industries Corp",
+     "risk_score": 0.1578,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "India",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0011248593925759281,
+      "sub_criticality": 0.08309256998962565,
+      "central": 0.4088778628451285,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011248593925759281,
+       "sub_central": 0.13872648795590398,
+       "sub_pagerank": 0.0009733197514887287,
+       "central": 0.17029005530448002,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Industrial Saltillo SAB de CV",
+     "risk_score": 0.1379,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.003048780487804878,
+      "sub_criticality": 0.11966840063190144,
+      "central": 0.13174215617474277,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.003048780487804878,
+       "sub_central": 0.13918225308225604,
+       "sub_pagerank": 0.0012419268856734404,
+       "central": 0.14089549120764408,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BMW Brilliance Automotive Ltd",
+     "risk_score": 0.1247,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "India",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0020325203252032522,
+      "sub_criticality": 0.1106476149223079,
+      "central": 0.020321429209222322,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0020325203252032522,
+       "sub_central": 0.13360860809593622,
+       "sub_pagerank": 0.0012216788721230497,
+       "central": 0.12907758531650823,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Samsung SDI Co Ltd",
+     "risk_score": 0.6,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.348972544547795,
+      "central": 0.7990128320887089,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.14679914017769155,
+       "sub_pagerank": 0.0017566218981302823,
+       "central": 0.21166995361360316,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Samsung SDI Co Ltd"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 44,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 7,
+    "low_risk_suppliers": 36,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.6,
+    "average_risk_score": 0.3000181818181818
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "India"
+    ],
+    "summary": {
+     "total_disrupted_chains": 83,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 1,
+     "tier_3_chain_count": 10,
+     "tier_4_chain_count": 72,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "India"
+     ],
+     "industries": [
+      "Chemicals"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 7 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "decisions": {
+    "Samsung SDI Co Ltd": {
+     "risk_score_raw": 0.6,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6 (HIGH), driven mainly by exposure (1.0) and centrality (0.799).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "India"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Schaeffler AG": {
+     "risk_score_raw": 0.5832,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5832 (MEDIUM); significant exposure level (1.0) with disruption at lower tiers.",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "India"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Farasis Energy Gan Zhou Co Ltd": {
+     "risk_score_raw": 0.5447,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5447 (MEDIUM); high exposure (1.0) and downstream centrality issues.",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "India"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "LG Chem Ltd": {
+     "risk_score_raw": 0.5406,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5406 (MEDIUM); notable centrality (0.6346) in supply chain roles.",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "India"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Guangzhou Tinci Materials Technology Co Ltd": {
+     "risk_score_raw": 0.5396,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5396 (MEDIUM); exposure (1.0) and moderate sub-criticality.",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "India"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "BASF SE": {
+     "risk_score_raw": 0.5328,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5328 (MEDIUM), driven by centrality (0.9427) in Tier 2 disruptions.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_2": 1
+       },
+       "top_disrupted_countries": [
+        "India"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Axalta Coating Systems Ltd": {
+     "risk_score_raw": 0.5196,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5196 (MEDIUM); exposure (1.0) and dependency concerns.",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "India"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "LANXESS AG": {
+     "risk_score_raw": 0.493,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.493 (MEDIUM), primarily due to exposure (1.0) and system depth.",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "India"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "1 REPLACE_SUPPLIER (score 0.60 or above), 7 INCREASE_MONITORING (0.45 to below 0.60), 36 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "44",
+     "replace_supplier_count": "1",
+     "increase_monitoring_count": "7",
+     "maintain_standard_count": "36",
+     "critical_suppliers": [
+      "Samsung SDI Co Ltd"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   1,
+   10,
+   72
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_8af044a1e757_Bayerische_Motoren_Werke_AG_20261017T131125_kg.json",
+  "monitored_company": "Bayerische Motoren Werke AG",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "India"
+  ],
+  "disrupted_industries": [
+   "Chemicals"
+  ],
+  "disrupted_companies": [],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "Horizon Polymers Ltd"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "India"
+   ],
+   "industries": [
+    "Chemicals"
+   ],
+   "companies": [
+    "Horizon Polymers Ltd"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_8af044a1e757",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 1,
+   "tier_3": 10,
+   "tier_4": 72
+  },
+  "total_chains": 83,
+  "message": "Built and saved 83 disrupted supply chains to output/temp/kg_payloads/run_8af044a1e757_Bayerische_Motoren_Werke_AG_20261017T131125_kg.json"
+ },
+ "item_id": "P-051",
+ "run_id": "run_8af044a1e757",
+ "item_type": "P",
+ "firm": "Bayerische Motoren Werke AG",
+ "set": "test",
+ "repeat": 1
+}

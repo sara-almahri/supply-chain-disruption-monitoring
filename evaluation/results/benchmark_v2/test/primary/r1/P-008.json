@@ -1,0 +1,4206 @@
+{
+ "scenario_id": "run_bf30492da8ae",
+ "runtime_seconds": 12.3,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1774,
+   "completion_tokens": 162,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:07:28"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 802,
+   "completion_tokens": 78,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:07:29"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1152,
+   "completion_tokens": 35,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:07:31"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 8636,
+   "completion_tokens": 817,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:07:39"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 12364,
+  "completion_tokens": 1092,
+  "total_tokens": 13456,
+  "usd": 0.0418,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 756,
+   "parsed": true,
+   "tail": " chemicals industry, halting shipments and affecting companies such as BlueWave Solutions and Atlantic Synthesis.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 948,
+   "parsed": true,
+   "tail": "output/temp/kg_payloads/run_bf30492da8ae_Tesla_Inc_20261017T130730_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 18219,
+   "parsed": true,
+   "tail": "ITY: 4 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 2990,
+   "parsed": true,
+   "tail": "orp\",\n        \"China Steel Corp\",\n        \"AMAG Austria Metall AG\",\n        \"Wooshin Systems Co Ltd\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports an ongoing geopolitical disruption affecting Bermuda's chemicals industry due to sanctions and the seizure of a key storage facility. The sanctions have halted shipments and disrupted the flow of chemicals, impacting companies like BlueWave Solutions and Atlantic Synthesis.",
+   "ongoing_disruption": true,
+   "type": "Geopolitical",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Bermuda"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [
+     "BlueWave Solutions",
+     "Atlantic Synthesis"
+    ]
+   },
+   "summary": "Sanctions and the seizure of a storage facility have disrupted Bermuda's chemicals industry, halting shipments and affecting companies such as BlueWave Solutions and Atlantic Synthesis."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [],
+   "tier_3": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ]
+   ],
+   "tier_4": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Caterpillar Inc",
+      "country": "USA",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Quanta Services Inc",
+      "country": "USA",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Caterpillar Inc",
+      "country": "USA",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volvo AB",
+      "country": "Sweden",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Sigdo Koppers SA",
+      "country": "Chile",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Volvo AB",
+      "country": "Sweden",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyoda Gosei Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Beijing Easpring Material Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Sociedad Quimica y Minera de Chile SA",
+      "country": "Chile",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "CNGR Advanced Material Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Caterpillar Inc",
+      "country": "USA",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Caterpillar Inc",
+      "country": "USA",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "CSBC Corp Taiwan",
+      "country": "Taiwan",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Caterpillar Inc",
+      "country": "USA",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volvo AB",
+      "country": "Sweden",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Samsung C&T Corp",
+      "country": "South Korea",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "KCC Corp",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Taiwan Cement Corp",
+      "country": "Taiwan",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Stellantis NV",
+      "country": "Netherlands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Contemporary Amperex Technology Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kian Shen Corp",
+      "country": "Taiwan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mitsui & Co Ltd",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hankook Tire & Technology Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hyundai Engineering & Construction Co Ltd",
+      "country": "South Korea",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hankook Tire & Technology Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hyundai Engineering & Construction Co Ltd",
+      "country": "South Korea",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "KCC Corp",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dongkuk Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Steel"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sociedad Quimica y Minera de Chile SA",
+      "country": "Chile",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Fineblanking Technology Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Futaba Industrial Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Huaxiang Electronic Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Beijing Shougang Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "CX Technology Co Ltd",
+      "country": "Taiwan",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Denso Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Dongkuk Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Steel"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Eurocharm Holdings Co Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Komatsu Ltd",
+      "country": "Japan",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Mazda Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Toyoda Gosei Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SKF AB",
+      "country": "Sweden",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "Jiangsu Lixing General Steel Ball Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SKF AB",
+      "country": "Sweden",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "Komatsu Ltd",
+      "country": "Japan",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Fineblanking Technology Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SAIC Motor Corp Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jiangsu Lixing General Steel Ball Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Quanta Services Inc",
+      "country": "USA",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Denso Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Komatsu Ltd",
+      "country": "Japan",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyoda Gosei Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Stellantis NV",
+      "country": "Netherlands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Sigdo Koppers SA",
+      "country": "Chile",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Volvo AB",
+      "country": "Sweden",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Stellantis NV",
+      "country": "Netherlands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tata Motors Ltd",
+      "country": "India",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tata Motors Ltd",
+      "country": "India",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Stellantis NV",
+      "country": "Netherlands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Jiangsu Lixing General Steel Ball Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Baoshan Iron & Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     }
+    ]
+   ],
+   "monitored_company": "Tesla Inc",
+   "disrupted_countries": [
+    "Bermuda"
+   ],
+   "resolution": {
+    "countries": [
+     "Bermuda"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "BlueWave Solutions",
+      "Atlantic Synthesis"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 2
+   },
+   "summary": {
+    "total_disrupted_chains": 74,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 4,
+    "tier_4_count": 70
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:07:32.452303Z",
+   "supplier_risk_scores": {
+    "AMAG Austria Metall AG": 0.6327,
+    "China Steel Corp": 0.6865,
+    "Toyota Industries Corp": 0.7184,
+    "Wooshin Systems Co Ltd": 0.6178,
+    "ArcelorMittal SA": 0.3298,
+    "Autoliv Inc": 0.2214,
+    "Beijing Easpring Material Technology Co Ltd": 0.182,
+    "CNGR Advanced Material Co Ltd": 0.2088,
+    "Contemporary Amperex Technology Co Ltd": 0.357,
+    "Gestamp Automocion SA": 0.3124,
+    "Guangdong Delian Group Co Ltd": 0.2857,
+    "Hankook Tire & Technology Co Ltd": 0.1603,
+    "LG Energy Solution Ltd": 0.2298,
+    "Magna International Inc": 0.2316,
+    "Ningbo Huaxiang Electronic Co Ltd": 0.1609,
+    "Panasonic Holdings Corp": 0.3065,
+    "SKF AB": 0.2247,
+    "Samsung SDI Co Ltd": 0.2872,
+    "Schaeffler AG": 0.2095,
+    "Sempra": 0.3656,
+    "Vale SA": 0.3351,
+    "thyssenkrupp AG": 0.3316
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.7184,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 1.0,
+      "central": 0.6802397523371976,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.16347731719045075,
+       "sub_pagerank": 0.001430103046550523,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.6865,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.6810657852731049,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.1466226661117523,
+       "sub_pagerank": 0.0017626497725822961,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.6327,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.8898055004705602,
+      "central": 0.042683520545094465,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15765389105866706,
+       "sub_pagerank": 0.0008415840489693271,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.6178,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.7464088628241594,
+      "central": 0.1818185802206059,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.15007583833874097,
+       "sub_pagerank": 0.0013714273627885966,
+       "central": 0.1526327379913603,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.3656,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 1.0,
+      "central": 0.650217581264851,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.13831327917240488,
+       "sub_pagerank": 0.0031015929792535847,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.357,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 0.9232222148305236,
+      "central": 0.7196799664864176,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.15941985731354508,
+       "sub_pagerank": 0.0026615255325128924,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.3351,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 0.8950107415026554,
+      "central": 0.555949780446855,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.12361696383105227,
+       "sub_pagerank": 0.0028590500078540804,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3316,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.7266034318423409,
+      "central": 0.8584817453355253,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.12916034760741363,
+       "sub_pagerank": 0.0024700005957997775,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.3298,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7892663746234094,
+      "central": 0.7159928681105592,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1293155747065851,
+       "sub_pagerank": 0.002614762608183567,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.3124,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.927923740562507,
+      "central": 0.26329750761571213,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.15966831788030478,
+       "sub_pagerank": 0.0015436140465720687,
+       "central": 0.16092101917067364,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Panasonic Holdings Corp",
+     "risk_score": 0.3065,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 19,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       14
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013568521031207597,
+      "sub_criticality": 0.7857607865532532,
+      "central": 0.49031599021491235,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013568521031207597,
+       "sub_central": 0.15215546138670208,
+       "sub_pagerank": 0.0013658908416939787,
+       "central": 0.1840140209668195,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.2872,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.5682190869232558,
+      "central": 0.7321919150567778,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13201108275288825,
+       "sub_pagerank": 0.002104105930101091,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.2857,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.9265912020400777,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.1595978974901196,
+       "sub_pagerank": 0.0012782919392571252,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2316,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.4313307951961156,
+      "central": 0.4488561211953119,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.13342497227544114,
+       "sub_pagerank": 0.0012373559696748936,
+       "central": 0.17979659858439637,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.2298,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.43335486086425745,
+      "central": 0.42779134157984344,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.13116431073238388,
+       "sub_pagerank": 0.0017925467230735335,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SKF AB",
+     "risk_score": 0.2247,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021645021645021645,
+      "sub_criticality": 0.419848289192464,
+      "central": 0.40214763192693365,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021645021645021645,
+       "sub_central": 0.127048483033276,
+       "sub_pagerank": 0.0017613442546154862,
+       "central": 0.1750452707884378,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.2214,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.5004240551032595,
+      "central": 0.20739136387924037,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.13707632962078567,
+       "sub_pagerank": 0.0007914235879187674,
+       "central": 0.15523407834127317,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.2095,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.24763513371230025,
+      "central": 0.5966860322717886,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.12371724530224185,
+       "sub_pagerank": 0.0013278478610141893,
+       "central": 0.19483430107860372,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.2088,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.3927481221279154,
+      "central": 0.2968427342807872,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.11797055093814823,
+       "sub_pagerank": 0.001698738278162906,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Beijing Easpring Material Technology Co Ltd",
+     "risk_score": 0.182,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0035460992907801418,
+      "sub_criticality": 0.33822949822676746,
+      "central": 0.1346710066450887,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0035460992907801418,
+       "sub_central": 0.12850486711602338,
+       "sub_pagerank": 0.0012172119457701828,
+       "central": 0.1478367452210907,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Huaxiang Electronic Co Ltd",
+     "risk_score": 0.1609,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004761904761904762,
+      "sub_criticality": 0.25338007592502654,
+      "central": 0.09046031508925625,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004761904761904762,
+       "sub_central": 0.1106305221448606,
+       "sub_pagerank": 0.0013767744836948557,
+       "central": 0.143339500909445,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hankook Tire & Technology Co Ltd",
+     "risk_score": 0.1603,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002564102564102564,
+      "sub_criticality": 0.22840437462498242,
+      "central": 0.13977861877620945,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002564102564102564,
+       "sub_central": 0.12270096131818324,
+       "sub_pagerank": 0.0008888542287723581,
+       "central": 0.14835630686544468,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Toyota Industries Corp",
+     "risk_score": 0.7184,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 1.0,
+      "central": 0.6802397523371976,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.16347731719045075,
+       "sub_pagerank": 0.001430103046550523,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    },
+    {
+     "company": "China Steel Corp",
+     "risk_score": 0.6865,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.6810657852731049,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.1466226661117523,
+       "sub_pagerank": 0.0017626497725822961,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    },
+    {
+     "company": "AMAG Austria Metall AG",
+     "risk_score": 0.6327,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.8898055004705602,
+      "central": 0.042683520545094465,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15765389105866706,
+       "sub_pagerank": 0.0008415840489693271,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    },
+    {
+     "company": "Wooshin Systems Co Ltd",
+     "risk_score": 0.6178,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.7464088628241594,
+      "central": 0.1818185802206059,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.15007583833874097,
+       "sub_pagerank": 0.0013714273627885966,
+       "central": 0.1526327379913603,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Toyota Industries Corp",
+    "China Steel Corp",
+    "AMAG Austria Metall AG",
+    "Wooshin Systems Co Ltd"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 22,
+    "high_risk_suppliers": 4,
+    "medium_risk_suppliers": 0,
+    "low_risk_suppliers": 18,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7184,
+    "average_risk_score": 0.33615
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Bermuda"
+    ],
+    "summary": {
+     "total_disrupted_chains": 74,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 4,
+     "tier_4_chain_count": 70,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Bermuda"
+     ],
+     "industries": [
+      "Chemicals"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 4 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:07:32.452303Z",
+   "supplier_risk_scores": {
+    "AMAG Austria Metall AG": 0.6327,
+    "China Steel Corp": 0.6865,
+    "Toyota Industries Corp": 0.7184,
+    "Wooshin Systems Co Ltd": 0.6178,
+    "ArcelorMittal SA": 0.3298,
+    "Autoliv Inc": 0.2214,
+    "Beijing Easpring Material Technology Co Ltd": 0.182,
+    "CNGR Advanced Material Co Ltd": 0.2088,
+    "Contemporary Amperex Technology Co Ltd": 0.357,
+    "Gestamp Automocion SA": 0.3124,
+    "Guangdong Delian Group Co Ltd": 0.2857,
+    "Hankook Tire & Technology Co Ltd": 0.1603,
+    "LG Energy Solution Ltd": 0.2298,
+    "Magna International Inc": 0.2316,
+    "Ningbo Huaxiang Electronic Co Ltd": 0.1609,
+    "Panasonic Holdings Corp": 0.3065,
+    "SKF AB": 0.2247,
+    "Samsung SDI Co Ltd": 0.2872,
+    "Schaeffler AG": 0.2095,
+    "Sempra": 0.3656,
+    "Vale SA": 0.3351,
+    "thyssenkrupp AG": 0.3316
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.7184,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 1.0,
+      "central": 0.6802397523371976,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.16347731719045075,
+       "sub_pagerank": 0.001430103046550523,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.6865,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.6810657852731049,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.1466226661117523,
+       "sub_pagerank": 0.0017626497725822961,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.6327,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.8898055004705602,
+      "central": 0.042683520545094465,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15765389105866706,
+       "sub_pagerank": 0.0008415840489693271,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.6178,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.7464088628241594,
+      "central": 0.1818185802206059,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.15007583833874097,
+       "sub_pagerank": 0.0013714273627885966,
+       "central": 0.1526327379913603,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.3656,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 1.0,
+      "central": 0.650217581264851,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.13831327917240488,
+       "sub_pagerank": 0.0031015929792535847,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.357,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 0.9232222148305236,
+      "central": 0.7196799664864176,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.15941985731354508,
+       "sub_pagerank": 0.0026615255325128924,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.3351,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 0.8950107415026554,
+      "central": 0.555949780446855,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.12361696383105227,
+       "sub_pagerank": 0.0028590500078540804,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3316,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.7266034318423409,
+      "central": 0.8584817453355253,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.12916034760741363,
+       "sub_pagerank": 0.0024700005957997775,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.3298,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7892663746234094,
+      "central": 0.7159928681105592,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1293155747065851,
+       "sub_pagerank": 0.002614762608183567,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.3124,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.927923740562507,
+      "central": 0.26329750761571213,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.15966831788030478,
+       "sub_pagerank": 0.0015436140465720687,
+       "central": 0.16092101917067364,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Panasonic Holdings Corp",
+     "risk_score": 0.3065,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 19,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       14
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013568521031207597,
+      "sub_criticality": 0.7857607865532532,
+      "central": 0.49031599021491235,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013568521031207597,
+       "sub_central": 0.15215546138670208,
+       "sub_pagerank": 0.0013658908416939787,
+       "central": 0.1840140209668195,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.2872,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.5682190869232558,
+      "central": 0.7321919150567778,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13201108275288825,
+       "sub_pagerank": 0.002104105930101091,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.2857,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.9265912020400777,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.1595978974901196,
+       "sub_pagerank": 0.0012782919392571252,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2316,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.4313307951961156,
+      "central": 0.4488561211953119,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.13342497227544114,
+       "sub_pagerank": 0.0012373559696748936,
+       "central": 0.17979659858439637,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.2298,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.43335486086425745,
+      "central": 0.42779134157984344,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.13116431073238388,
+       "sub_pagerank": 0.0017925467230735335,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SKF AB",
+     "risk_score": 0.2247,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021645021645021645,
+      "sub_criticality": 0.419848289192464,
+      "central": 0.40214763192693365,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021645021645021645,
+       "sub_central": 0.127048483033276,
+       "sub_pagerank": 0.0017613442546154862,
+       "central": 0.1750452707884378,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.2214,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.5004240551032595,
+      "central": 0.20739136387924037,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.13707632962078567,
+       "sub_pagerank": 0.0007914235879187674,
+       "central": 0.15523407834127317,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.2095,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.24763513371230025,
+      "central": 0.5966860322717886,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.12371724530224185,
+       "sub_pagerank": 0.0013278478610141893,
+       "central": 0.19483430107860372,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.2088,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.3927481221279154,
+      "central": 0.2968427342807872,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.11797055093814823,
+       "sub_pagerank": 0.001698738278162906,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Beijing Easpring Material Technology Co Ltd",
+     "risk_score": 0.182,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0035460992907801418,
+      "sub_criticality": 0.33822949822676746,
+      "central": 0.1346710066450887,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0035460992907801418,
+       "sub_central": 0.12850486711602338,
+       "sub_pagerank": 0.0012172119457701828,
+       "central": 0.1478367452210907,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Huaxiang Electronic Co Ltd",
+     "risk_score": 0.1609,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004761904761904762,
+      "sub_criticality": 0.25338007592502654,
+      "central": 0.09046031508925625,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004761904761904762,
+       "sub_central": 0.1106305221448606,
+       "sub_pagerank": 0.0013767744836948557,
+       "central": 0.143339500909445,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hankook Tire & Technology Co Ltd",
+     "risk_score": 0.1603,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Bermuda",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002564102564102564,
+      "sub_criticality": 0.22840437462498242,
+      "central": 0.13977861877620945,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002564102564102564,
+       "sub_central": 0.12270096131818324,
+       "sub_pagerank": 0.0008888542287723581,
+       "central": 0.14835630686544468,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Toyota Industries Corp",
+     "risk_score": 0.7184,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 1.0,
+      "central": 0.6802397523371976,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.16347731719045075,
+       "sub_pagerank": 0.001430103046550523,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    },
+    {
+     "company": "China Steel Corp",
+     "risk_score": 0.6865,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.6810657852731049,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.1466226661117523,
+       "sub_pagerank": 0.0017626497725822961,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    },
+    {
+     "company": "AMAG Austria Metall AG",
+     "risk_score": 0.6327,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.8898055004705602,
+      "central": 0.042683520545094465,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15765389105866706,
+       "sub_pagerank": 0.0008415840489693271,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    },
+    {
+     "company": "Wooshin Systems Co Ltd",
+     "risk_score": 0.6178,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.7464088628241594,
+      "central": 0.1818185802206059,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.15007583833874097,
+       "sub_pagerank": 0.0013714273627885966,
+       "central": 0.1526327379913603,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Toyota Industries Corp",
+    "China Steel Corp",
+    "AMAG Austria Metall AG",
+    "Wooshin Systems Co Ltd"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 22,
+    "high_risk_suppliers": 4,
+    "medium_risk_suppliers": 0,
+    "low_risk_suppliers": 18,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7184,
+    "average_risk_score": 0.33615
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Bermuda"
+    ],
+    "summary": {
+     "total_disrupted_chains": 74,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 4,
+     "tier_4_chain_count": 70,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Bermuda"
+     ],
+     "industries": [
+      "Chemicals"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 4 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Tesla Inc",
+   "decisions": {
+    "Toyota Industries Corp": {
+     "risk_score_raw": 0.7184,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7184 (HIGH), driven mainly by high exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Bermuda"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "China Steel Corp": {
+     "risk_score_raw": 0.6865,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6865 (HIGH), driven by maximum exposure (1.0) and centrality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Bermuda"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "AMAG Austria Metall AG": {
+     "risk_score_raw": 0.6327,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6327 (HIGH), with maximum exposure (1.0) and high sub-supplier criticality (0.8898).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Bermuda"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Wooshin Systems Co Ltd": {
+     "risk_score_raw": 0.6178,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6178 (HIGH), influenced by full exposure (1.0) and considerable sub-supplier criticality (0.7464).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Bermuda"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "4 REPLACE_SUPPLIER (score 0.60 or above), 0 INCREASE_MONITORING (0.45 to below 0.60), 18 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "22",
+     "replace_supplier_count": "4",
+     "increase_monitoring_count": "0",
+     "maintain_standard_count": "18",
+     "critical_suppliers": [
+      "Toyota Industries Corp",
+      "China Steel Corp",
+      "AMAG Austria Metall AG",
+      "Wooshin Systems Co Ltd"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   0,
+   4,
+   70
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_bf30492da8ae_Tesla_Inc_20261017T130730_kg.json",
+  "monitored_company": "Tesla Inc",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Bermuda"
+  ],
+  "disrupted_industries": [
+   "Chemicals"
+  ],
+  "disrupted_companies": [],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "BlueWave Solutions",
+    "Atlantic Synthesis"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "Bermuda"
+   ],
+   "industries": [
+    "Chemicals"
+   ],
+   "companies": [
+    "BlueWave Solutions",
+    "Atlantic Synthesis"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_bf30492da8ae",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 4,
+   "tier_4": 70
+  },
+  "total_chains": 74,
+  "message": "Built and saved 74 disrupted supply chains to output/temp/kg_payloads/run_bf30492da8ae_Tesla_Inc_20261017T130730_kg.json"
+ },
+ "item_id": "P-008",
+ "run_id": "run_bf30492da8ae",
+ "item_type": "P",
+ "firm": "Tesla Inc",
+ "set": "test",
+ "repeat": 1
+}

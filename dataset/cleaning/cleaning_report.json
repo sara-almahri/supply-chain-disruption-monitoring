@@ -1,0 +1,2331 @@
+{
+ "source": "dataset/supplychainKG.csv",
+ "source_rows": 17474,
+ "rules": {
+  "company_names_merged": 280,
+  "company_names_merged_by_rule": {
+   "garbled legal form": 38,
+   "character error": 163,
+   "missing legal form": 5,
+   "leading stray character": 21,
+   "truncated legal form": 1,
+   "spacing": 1,
+   "trailing stray characters": 2,
+   "leading stray characters": 1,
+   "character error (correct name absent from source)": 3,
+   "leading stray character and character error": 1,
+   "missing leading character": 1,
+   "garbled legal form (correct name absent from source)": 2,
+   "doubled legal form": 1,
+   "name variant": 1,
+   "leading stray character (correct name absent from source)": 4,
+   "spelling variant": 35
+  },
+  "country_values_discarded": [
+   {
+    "company": "Baoji Titanium Industry Co Ltd",
+    "value": "Steel",
+    "rows": 1
+   }
+  ],
+  "companies_with_several_industries": 3,
+  "companies_with_several_countries": 56,
+  "ties_resolved_by_first_row": [
+   {
+    "company": "Cia de Minas Buenaventura SAA",
+    "field": "country",
+    "values": {
+     "Argentina": 1,
+     "Brazil": 1
+    },
+    "chosen": "Argentina"
+   },
+   {
+    "company": "BHP Billiton Mitsubishi Alliance",
+    "field": "country",
+    "values": {
+     "Australia": 1,
+     "Japan": 1
+    },
+    "chosen": "Australia"
+   },
+   {
+    "company": "Nyrstar NV",
+    "field": "country",
+    "values": {
+     "Belgium": 1,
+     "Netherlands": 1
+    },
+    "chosen": "Belgium"
+   },
+   {
+    "company": "Light S/A",
+    "field": "country",
+    "values": {
+     "Brazil": 1,
+     "Spain": 1
+    },
+    "chosen": "Brazil"
+   },
+   {
+    "company": "UlTrans LRT Co Ltd",
+    "field": "country",
+    "values": {
+     "South Korea": 2,
+     "China": 2
+    },
+    "chosen": "South Korea"
+   },
+   {
+    "company": "Yunding Technology Co Ltd",
+    "field": "country",
+    "values": {
+     "China": 1,
+     "Taiwan": 1
+    },
+    "chosen": "China"
+   },
+   {
+    "company": "National Petroleum Co Ltd",
+    "field": "country",
+    "values": {
+     "Egypt": 1,
+     "Taiwan": 1
+    },
+    "chosen": "Egypt"
+   },
+   {
+    "company": "Gaztransport & Technigaz",
+    "field": "country",
+    "values": {
+     "France": 4,
+     "Spain": 4
+    },
+    "chosen": "France"
+   },
+   {
+    "company": "Zimplats Holdings Ltd",
+    "field": "country",
+    "values": {
+     "Guernsey": 2,
+     "United Kingdom": 2
+    },
+    "chosen": "Guernsey"
+   },
+   {
+    "company": "Swancor Holding Co Ltd",
+    "field": "country",
+    "values": {
+     "Taiwan": 1,
+     "USA": 1
+    },
+    "chosen": "Taiwan"
+   }
+  ],
+  "ties_resolved_by_review": [
+   {
+    "company": "Anglo American Platinum Ltd",
+    "field": "country",
+    "value": "South Africa",
+    "reason": "headquartered and listed in South Africa"
+   },
+   {
+    "company": "Baoji Titanium Industry Co Ltd",
+    "field": "country",
+    "value": "China",
+    "reason": "source records the industry \"Steel\" in the country column; the company is based in Baoji, China"
+   },
+   {
+    "company": "DCC PLC",
+    "field": "country",
+    "value": "Ireland",
+    "reason": "headquartered in Dublin"
+   },
+   {
+    "company": "Engie Energia Chile SA",
+    "field": "country",
+    "value": "Chile",
+    "reason": "Chilean operating company"
+   },
+   {
+    "company": "Engie Energia Peru SA",
+    "field": "country",
+    "value": "Peru",
+    "reason": "Peruvian operating company"
+   },
+   {
+    "company": "Guangqi Honda Automobile Co Ltd",
+    "field": "country",
+    "value": "China",
+    "reason": "joint venture based in Guangzhou"
+   },
+   {
+    "company": "Hanwha Aerospace Co Ltd",
+    "field": "country",
+    "value": "South Korea",
+    "reason": "headquartered in South Korea"
+   },
+   {
+    "company": "Hawaiian Holdings Inc",
+    "field": "country",
+    "value": "USA",
+    "reason": "headquartered in Honolulu"
+   },
+   {
+    "company": "International Aero Engines AG",
+    "field": "country",
+    "value": "USA",
+    "reason": "headquartered in East Hartford"
+   },
+   {
+    "company": "State Oil Co of the Azerbaijan Republic",
+    "field": "country",
+    "value": "Azerbaijan",
+    "reason": "state oil company of Azerbaijan"
+   }
+  ],
+  "self_links_dropped": [
+   "Aluminum Corp of China Ltd",
+   "Aluminum Corp of China Ltd",
+   "Aluminum Corp of China Ltd",
+   "HOCHTIEF AG",
+   "Stellantis NV"
+  ],
+  "duplicate_links_dropped": 829
+ },
+ "clean_rows": 16640,
+ "companies_before": 6495,
+ "companies_after": 6222,
+ "countries_after": 96,
+ "industries_after": {
+  "Chemicals": 768,
+  "Automotive": 628,
+  "Metals & Mining": 511,
+  "Steel": 474,
+  "Electric Utilities": 448,
+  "Transportation & Logistics": 431,
+  "Engineering & Construction": 399,
+  "Machinery": 395,
+  "Oil & Gas Producers": 325,
+  "Technology Hardware": 319,
+  "Industrial Intermediate Prod": 264,
+  "Electrical Equipment": 250,
+  "Renewable Energy": 171,
+  "Construction Materials": 155,
+  "Semiconductors": 151,
+  "Gas & Water Utilities": 123,
+  "Aerospace & Defense": 103,
+  "Transportation Equipment": 97,
+  "Oil & Gas Services & Equip": 57,
+  "Medical Equipment & Devices": 47,
+  "Telecommunications": 46,
+  "Technology Services": 42,
+  "Diversified Industrials": 14,
+  "Cable & Satellite": 4
+ },
+ "name_changes": [
+  {
+   "source": "ABM Investama lbk PT",
+   "clean": "ABM Investama Tbk PT",
+   "rule": "garbled legal form",
+   "rows": 2
+  },
+  {
+   "source": "AP Moller Maersk A/S",
+   "clean": "AP Moller - Maersk A/S",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Albermarle Corp",
+   "clean": "Albemarle Corp",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Alco Ltd/Canada",
+   "clean": "Atco Ltd/Canada",
+   "rule": "character error",
+   "rows": 49
+  },
+  {
+   "source": "Alona Corp",
+   "clean": "Alcoa Corp",
+   "rule": "character error",
+   "rows": 7
+  },
+  {
+   "source": "Aluminum Corp of China",
+   "clean": "Aluminum Corp of China Ltd",
+   "rule": "missing legal form",
+   "rows": 12
+  },
+  {
+   "source": "Alumium Corp of China Ltd",
+   "clean": "Aluminum Corp of China Ltd",
+   "rule": "character error",
+   "rows": 10
+  },
+  {
+   "source": "Alumnium Corp of China Ltd",
+   "clean": "Aluminum Corp of China Ltd",
+   "rule": "character error",
+   "rows": 10
+  },
+  {
+   "source": "Aneka Tambang Ibk",
+   "clean": "Aneka Tambang Tbk",
+   "rule": "garbled legal form",
+   "rows": 6
+  },
+  {
+   "source": "Anhui Wanwei Updated High-Tech Material Industry Co...",
+   "clean": "Anhui Wanwei Updated High-Tech Material Industry Co Ltd",
+   "rule": "truncated legal form",
+   "rows": 1
+  },
+  {
+   "source": "Anhui Wanwei Updated High-tech Material Industry Co Ltd",
+   "clean": "Anhui Wanwei Updated High-Tech Material Industry Co Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Anima Watners Updated High-Tech Material Industry Co Ltd",
+   "clean": "Anhui Wanwei Updated High-Tech Material Industry Co Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Astra Otoparts lbk PT",
+   "clean": "Astra Otoparts Tbk PT",
+   "rule": "garbled legal form",
+   "rows": 8
+  },
+  {
+   "source": "BASE SE",
+   "clean": "BASF SE",
+   "rule": "character error",
+   "rows": 8
+  },
+  {
+   "source": "BHyundai Motor Co",
+   "clean": "Hyundai Motor Co",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "BUP Billion Mitsubishi Alliance",
+   "clean": "BHP Billiton Mitsubishi Alliance",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "BYD Co ltd",
+   "clean": "BYD Co Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Bachtel Corp",
+   "clean": "Bechtel Corp",
+   "rule": "character error",
+   "rows": 5
+  },
+  {
+   "source": "Barito Pacific Thk PT",
+   "clean": "Barito Pacific Tbk PT",
+   "rule": "garbled legal form",
+   "rows": 4
+  },
+  {
+   "source": "Beigi Foton Motor Co Ltd",
+   "clean": "Beiqi Foton Motor Co Ltd",
+   "rule": "character error",
+   "rows": 5
+  },
+  {
+   "source": "Beijing Jingyunbong Technology Co Ltd",
+   "clean": "Beijing Jingyuntong Technology Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Berjing Shougang Co Ltd",
+   "clean": "Beijing Shougang Co Ltd",
+   "rule": "character error",
+   "rows": 5
+  },
+  {
+   "source": "Bulat Asam Tbk PT",
+   "clean": "Bukit Asam Tbk PT",
+   "rule": "character error",
+   "rows": 5
+  },
+  {
+   "source": "CHSIG Inner Mongolia Chemical Industry Co Ltd",
+   "clean": "CNSIG Inner Mongolia Chemical Industry Co Ltd",
+   "rule": "character error",
+   "rows": 5
+  },
+  {
+   "source": "CSP - Co Siderurgica do Pecem",
+   "clean": "CSP Co Siderurgica do Pecem",
+   "rule": "spelling variant",
+   "rows": 3
+  },
+  {
+   "source": "Center Point Energy Inc",
+   "clean": "CenterPoint Energy Inc",
+   "rule": "spacing",
+   "rows": 2
+  },
+  {
+   "source": "Century Alumminum Co",
+   "clean": "Century Aluminum Co",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Chandra asri Petrochemical Ibk PT",
+   "clean": "Chandra Asri Petrochemical Tbk PT",
+   "rule": "garbled legal form",
+   "rows": 7
+  },
+  {
+   "source": "Changing Wanli New Energy Co Ltd",
+   "clean": "Chongqing Wanli New Energy Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Changqing Changan Automobile Co Ltd",
+   "clean": "Chongqing Changan Automobile Co Ltd",
+   "rule": "character error",
+   "rows": 20
+  },
+  {
+   "source": "Changqing Changar Automobile Co Ltd",
+   "clean": "Chongqing Changan Automobile Co Ltd",
+   "rule": "character error",
+   "rows": 12
+  },
+  {
+   "source": "China Energy Investment Corp td",
+   "clean": "China Energy Investment Corp Ltd",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "China Huarieng Group Co Ltd",
+   "clean": "China Huaneng Group Co Ltd",
+   "rule": "character error",
+   "rows": 6
+  },
+  {
+   "source": "China Metal Products",
+   "clean": "China Metal Products Co Ltd",
+   "rule": "missing legal form",
+   "rows": 2
+  },
+  {
+   "source": "China National Chemical Engineering Co Ltd",
+   "clean": "China National Chemical Engineering Co ltd",
+   "rule": "spelling variant",
+   "rows": 2
+  },
+  {
+   "source": "China Petroleum OF Chemical Corp",
+   "clean": "China Petroleum & Chemical Corp",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "China Railway Construction Corp",
+   "clean": "China Railway Construction Corp Ltd",
+   "rule": "missing legal form",
+   "rows": 1
+  },
+  {
+   "source": "China Yangize Power Co Ltd",
+   "clean": "China Yangtze Power Co Ltd",
+   "rule": "character error",
+   "rows": 6
+  },
+  {
+   "source": "Chuna Fineblanking Technology Co Ltd",
+   "clean": "China Fineblanking Technology Co Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Churo Spring Co Ltd",
+   "clean": "Chuo Spring Co Ltd",
+   "rule": "character error",
+   "rows": 7
+  },
+  {
+   "source": "Cia de Minas Bueraaventura SM",
+   "clean": "Cia de Minas Buenaventura SAA",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Cie Plastic Ompium SE",
+   "clean": "Cie Plastic Omnium SE",
+   "rule": "character error",
+   "rows": 6
+  },
+  {
+   "source": "Claveland-Cliffs Inc",
+   "clean": "Cleveland-Cliffs Inc",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Comex SAB de CV",
+   "clean": "Cemex SAB de CV",
+   "rule": "character error",
+   "rows": 7
+  },
+  {
+   "source": "Comex SAB dk CV",
+   "clean": "Cemex SAB de CV",
+   "rule": "character error",
+   "rows": 8
+  },
+  {
+   "source": "Coming Inc",
+   "clean": "Corning Inc",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Constelluum SE",
+   "clean": "Constellium SE",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Constelluuro SE",
+   "clean": "Constellium SE",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Cosmodremical Co Ltd",
+   "clean": "Cosmochemical Co Ltd",
+   "rule": "character error",
+   "rows": 10
+  },
+  {
+   "source": "DGK-2 PJSC",
+   "clean": "OGK-2 PJSC",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "DIng hc F Porsche AG",
+   "clean": "Dr Ing hc F Porsche AG",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "DL F&C Co Ltd",
+   "clean": "DL E&C Co Ltd",
+   "rule": "character error",
+   "rows": 11
+  },
+  {
+   "source": "DL Holdings Co Lirl",
+   "clean": "DL Holdings Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 12
+  },
+  {
+   "source": "Dai Hippon Toryo Co Ltd",
+   "clean": "Dai Nippon Toryo Co Ltd",
+   "rule": "character error",
+   "rows": 6
+  },
+  {
+   "source": "Daicel Carp",
+   "clean": "Daicel Corp",
+   "rule": "garbled legal form",
+   "rows": 6
+  },
+  {
+   "source": "Daistrin Chemical Co Ltd",
+   "clean": "Daishin Chemical Co Ltd",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Dangfeng Electronic Technology Co Lb",
+   "clean": "Dongfeng Electronic Technology Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Dangsung Chemical Co Ltd",
+   "clean": "Dongsung Chemical Co Ltd",
+   "rule": "character error",
+   "rows": 7
+  },
+  {
+   "source": "Delta Duna Makmur Tbk PT",
+   "clean": "Delta Dunia Makmur Tbk PT",
+   "rule": "character error",
+   "rows": 5
+  },
+  {
+   "source": "Denso Corp oz",
+   "clean": "Denso Corp",
+   "rule": "trailing stray characters",
+   "rows": 20
+  },
+  {
+   "source": "Diamond offshore Drilling Inc",
+   "clean": "Diamond Offshore Drilling Inc",
+   "rule": "spelling variant",
+   "rows": 2
+  },
+  {
+   "source": "Donglauk Industries Co Ltd",
+   "clean": "Dongkuk Industries Co Ltd",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Dr Ing he F Porsche AG",
+   "clean": "Dr Ing hc F Porsche AG",
+   "rule": "character error",
+   "rows": 12
+  },
+  {
+   "source": "Dr Ing ho F Porsche AG",
+   "clean": "Dr Ing hc F Porsche AG",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "ENN Energy Holdings Lin",
+   "clean": "ENN Energy Holdings Ltd",
+   "rule": "garbled legal form",
+   "rows": 2
+  },
+  {
+   "source": "Empresa Flectrica Pehuenche SA",
+   "clean": "Empresa Electrica Pehuenche SA",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Empresa Nacional diet Petroleo",
+   "clean": "Empresa Nacional del Petroleo",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Enel Destribucion Peru SMA",
+   "clean": "Enel Distribucion Peru SAA",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Engik Energia Peru SA",
+   "clean": "Engie Energia Peru SA",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Engike Energia Chile SA",
+   "clean": "Engie Energia Chile SA",
+   "rule": "character error",
+   "rows": 10
+  },
+  {
+   "source": "Formana Plastics Corp",
+   "clean": "Formosa Plastics Corp",
+   "rule": "character error",
+   "rows": 16
+  },
+  {
+   "source": "Formento de Construcciones y Contratas SA",
+   "clean": "Fomento de Construcciones y Contratas SA",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Formusa Plastics Corp",
+   "clean": "Formosa Plastics Corp",
+   "rule": "character error",
+   "rows": 23
+  },
+  {
+   "source": "Freeport-McMoRan Inc",
+   "clean": "Freeport-McMoran Inc",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "GAC FIAT CHRYSLER Automobiles",
+   "clean": "GAC FIAT CHRYSLER Automobiles Co Ltd",
+   "rule": "missing legal form",
+   "rows": 1
+  },
+  {
+   "source": "Ganfeng Lithium Group Co Lfd",
+   "clean": "Ganfeng Lithium Group Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 5
+  },
+  {
+   "source": "Gazprom Nett PJSC",
+   "clean": "Gazprom Neft PJSC",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Gold Fields ltd",
+   "clean": "Gold Fields Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Gonvarri Polska Sp zoo",
+   "clean": "Gonvarri Polska Sp ZOO",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Grupo Simeo SAB de CV",
+   "clean": "Grupo Simec SAB de CV",
+   "rule": "character error",
+   "rows": 24
+  },
+  {
+   "source": "Guangdong Xinhui Meida Nylon Co lid",
+   "clean": "Guangdong Xinhui Meida Nylon Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Guanggi Honda Automobile Co Ltd",
+   "clean": "Guangqi Honda Automobile Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Guangzhou Great Power Energy W Technology Co Ltd",
+   "clean": "Guangzhou Great Power Energy & Technology Co Ltd",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Guangzhou Industrial Investment Holding Group Co Ltd",
+   "clean": "Guangzhou Industrial Investment Holdings Group Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Guodian Technology M Environment Group Corp Ltd",
+   "clean": "Guodian Technology & Environment Group Corp Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "HanJung Natural Connectivity System CO Ltd",
+   "clean": "HanJung Natural Connectivity System Co Ltd",
+   "rule": "spelling variant",
+   "rows": 6
+  },
+  {
+   "source": "Hansol technics Co Ltd",
+   "clean": "Hansol Technics Co Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Hanwina Aerospace Co Ltd",
+   "clean": "Hanwha Aerospace Co Ltd",
+   "rule": "character error (correct name absent from source)",
+   "rows": 14
+  },
+  {
+   "source": "Hauwina Aerospace Co Ltd",
+   "clean": "Hanwha Aerospace Co Ltd",
+   "rule": "character error (correct name absent from source)",
+   "rows": 6
+  },
+  {
+   "source": "Hawanan Holdings Inc",
+   "clean": "Hawaiian Holdings Inc",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Hengdian Group DMEGO Magnetics Co Ltd",
+   "clean": "Hengdian Group DMEGC Magnetics Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Hindaloo Industries Ltd",
+   "clean": "Hindalco Industries Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Hindusian Aeronautics Ltd",
+   "clean": "Hindustan Aeronautics Ltd",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Hiroca Holdings lid",
+   "clean": "Hiroca Holdings Ltd",
+   "rule": "garbled legal form",
+   "rows": 4
+  },
+  {
+   "source": "Huarieng Lancang River Hydropower Inc",
+   "clean": "Huaneng Lancang River Hydropower Inc",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Hubei Energy Group Co Ltd 54",
+   "clean": "Hubei Energy Group Co Ltd",
+   "rule": "trailing stray characters",
+   "rows": 1
+  },
+  {
+   "source": "Hubei Wanrun New Energy Technology Co ltd",
+   "clean": "Hubei Wanrun New Energy Technology Co Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Human Kaimeite Gases Co Ltd",
+   "clean": "Hunan Kaimeite Gases Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Hyundai Engineering H Construction Co Ltd",
+   "clean": "Hyundai Engineering & Construction Co Ltd",
+   "rule": "character error",
+   "rows": 17
+  },
+  {
+   "source": "Hyundai Industrial Co lid",
+   "clean": "Hyundai Industrial Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 2
+  },
+  {
+   "source": "IBayan Resources Tbk PT",
+   "clean": "Bayan Resources Tbk PT",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "IJIT Co Ltd",
+   "clean": "IJTT Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Imperial oil Ltd",
+   "clean": "Imperial Oil Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Indal Aluminium Industry Tble PT",
+   "clean": "Indal Aluminium Industry Tbk PT",
+   "rule": "garbled legal form",
+   "rows": 7
+  },
+  {
+   "source": "Industrias CH",
+   "clean": "Industrias CH SAB de CV",
+   "rule": "missing legal form",
+   "rows": 16
+  },
+  {
+   "source": "Inner Mongolia BaoTou Stool Union Co Ltd",
+   "clean": "Inner Mongolia BaoTou Steel Union Co Ltd",
+   "rule": "character error",
+   "rows": 24
+  },
+  {
+   "source": "Izistal OJSC",
+   "clean": "Izhstal OJSC",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "JHE Holdings Inc",
+   "clean": "JFE Holdings Inc",
+   "rule": "character error",
+   "rows": 61
+  },
+  {
+   "source": "Jiangling motors corp Ltd",
+   "clean": "Jiangling Motors Corp Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Jiangsu Zhongsheng Gaoke Environmental Co Ltd",
+   "clean": "Jiangsu Zhangsheng Gaoke Environmental Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Jiangxi Special Electric Mobor Co Ltd",
+   "clean": "Jiangxi Special Electric Motor Co Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Jingwei Textile Machinery Co ltd",
+   "clean": "Jingwei Textile Machinery Co Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Jolun A/S",
+   "clean": "Jotun A/S",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Jolywood Suzhou Sunwalt Co Ltd",
+   "clean": "Jolywood Suzhou Sunwatt Co Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "K+S NG",
+   "clean": "K+S AG",
+   "rule": "garbled legal form",
+   "rows": 4
+  },
+  {
+   "source": "KOBELCO WIRE CD LTD",
+   "clean": "KOBELCO WIRE CO LTD",
+   "rule": "garbled legal form",
+   "rows": 3
+  },
+  {
+   "source": "Kaiser Aluminium Corp",
+   "clean": "Kaiser Aluminum Corp",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Kansai Paint Co ltd",
+   "clean": "Kansai Paint Co Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Karelgaz 0AO",
+   "clean": "Karelgaz OAO",
+   "rule": "garbled legal form (correct name absent from source)",
+   "rows": 1
+  },
+  {
+   "source": "Karelgaz DAO",
+   "clean": "Karelgaz OAO",
+   "rule": "garbled legal form (correct name absent from source)",
+   "rows": 1
+  },
+  {
+   "source": "Kols PAO",
+   "clean": "Koks PAO",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Komatsu ltd",
+   "clean": "Komatsu Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Konecranes Dyj",
+   "clean": "Konecranes Oyj",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Konishu Co Ltd",
+   "clean": "Konishi Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Kosogorski Metallurgicheski Zavod DAO",
+   "clean": "Kosogorski Metallurgicheski Zavod OAO",
+   "rule": "garbled legal form",
+   "rows": 2
+  },
+  {
+   "source": "KubyshewAzol PJSC",
+   "clean": "KuibyshevAzot PJSC",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Kuehne Nagel International AG",
+   "clean": "Kuehne + Nagel International AG",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Kumho Petrochemical Co ltd",
+   "clean": "Kumho Petrochemical Co Ltd",
+   "rule": "spelling variant",
+   "rows": 12
+  },
+  {
+   "source": "Kurimoko Ltd",
+   "clean": "Kurimoto Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "LC Chem Ltd",
+   "clean": "LG Chem Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "LJTT Co Ltd",
+   "clean": "IJTT Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "LONG Green Energy Technology Co Ltd",
+   "clean": "LONGi Green Energy Technology Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "LTK Svobodny Sokol 000",
+   "clean": "LTK Svobodny Sokol OOO",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Larsen & Toubra Ltd",
+   "clean": "Larsen & Toubro Ltd",
+   "rule": "character error",
+   "rows": 7
+  },
+  {
+   "source": "Leated Fine Ceramics Co Ltd",
+   "clean": "Leatec Fine Ceramics Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Liao Ning Oxiranchern Inc",
+   "clean": "Liaoning Oxiranchem Inc",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Light S/N",
+   "clean": "Light S/A",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Lotte Chemical Com",
+   "clean": "Lotte Chemical Corp",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Lundin Mirring Corp",
+   "clean": "Lundin Mining Corp",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Luz del Sur SAA",
+   "clean": "LUZ del Sur SAA",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "LyondellBanell Industries NV",
+   "clean": "LyondellBasell Industries NV",
+   "rule": "character error",
+   "rows": 11
+  },
+  {
+   "source": "MIU Aero Engines AG",
+   "clean": "MTU Aero Engines AG",
+   "rule": "character error",
+   "rows": 7
+  },
+  {
+   "source": "MMG Lkl",
+   "clean": "MMG Ltd",
+   "rule": "garbled legal form",
+   "rows": 4
+  },
+  {
+   "source": "Maire Techimont SpA",
+   "clean": "Maire Tecnimont SpA",
+   "rule": "character error",
+   "rows": 5
+  },
+  {
+   "source": "Manitowoo Co Inc/The",
+   "clean": "Manitowoc Co Inc/The",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Maraiikin oil Corp",
+   "clean": "Marathon Oil Corp",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Mercedes Benz Group AG",
+   "clean": "Mercedes-Benz Group AG",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Mercedes-Banz Group AG",
+   "clean": "Mercedes-Benz Group AG",
+   "rule": "character error",
+   "rows": 22
+  },
+  {
+   "source": "Mesa Air Groun Inc",
+   "clean": "Mesa Air Group Inc",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Metain Investments Ltd",
+   "clean": "Metair Investments Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Mineral Resources ltd",
+   "clean": "Mineral Resources Ltd",
+   "rule": "spelling variant",
+   "rows": 2
+  },
+  {
+   "source": "Miwon Commercial Cn Ltd",
+   "clean": "Miwon Commercial Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Morgan Sindall Group PIC",
+   "clean": "Morgan Sindall Group PLC",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Multistrada Arab Sarana Tbk PT",
+   "clean": "Multistrada Arah Sarana Tbk PT",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "NEC Networks & System Integration Corn",
+   "clean": "NEC Networks & System Integration Corp",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Nakabohtec Corrosion Protecting Co ltd",
+   "clean": "Nakabohtec Corrosion Protecting Co Ltd",
+   "rule": "spelling variant",
+   "rows": 3
+  },
+  {
+   "source": "NextEra Energy Inc Inc",
+   "clean": "NextEra Energy Inc",
+   "rule": "doubled legal form",
+   "rows": 228
+  },
+  {
+   "source": "Nikicato Corp",
+   "clean": "Nikkato Corp",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "NingXia Yinxing Energy Co Ltd",
+   "clean": "NingXia YinXing Energy Co Ltd",
+   "rule": "spelling variant",
+   "rows": 3
+  },
+  {
+   "source": "Nipport Gas Co Ltd",
+   "clean": "Nippon Gas Co Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Nipport Soda Co Ltd",
+   "clean": "Nippon Soda Co Ltd",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Nipport Steel Trading Corp",
+   "clean": "Nippon Steel Trading Corp",
+   "rule": "character error",
+   "rows": 21
+  },
+  {
+   "source": "Nyrstan NV",
+   "clean": "Nyrstar NV",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "OOerlikon Corp AG",
+   "clean": "OC Oerlikon Corp AG",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "OPengembangan Pariwisata Indonesia Persero PT",
+   "clean": "Pengembangan Pariwisata Indonesia Persero PT",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "Oil the Natural Gas Corp Ltd",
+   "clean": "Oil & Natural Gas Corp Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Okabe Co td",
+   "clean": "Okabe Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Osaka Organic Chemical Industry lid",
+   "clean": "Osaka Organic Chemical Industry Ltd",
+   "rule": "garbled legal form",
+   "rows": 3
+  },
+  {
+   "source": "Osaka Soda Co ltd",
+   "clean": "Osaka Soda Co Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Osaka Soda Co td",
+   "clean": "Osaka Soda Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "PJSC GAZPROM GAZORASPREDELENTYE UFA",
+   "clean": "PJSC GAZPROM GAZORASPREDELENIYE UFA",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "PS Mitubishi Construction Co Ltd",
+   "clean": "PS Mitsubishi Construction Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "PetroVietman Oil Corp",
+   "clean": "PetroVietnam Oil Corp",
+   "rule": "character error",
+   "rows": 24
+  },
+  {
+   "source": "Petroleos Mexicarios",
+   "clean": "Petroleos Mexicanos",
+   "rule": "character error",
+   "rows": 6
+  },
+  {
+   "source": "Petroliam Narsional Bhd",
+   "clean": "Petroliam Nasional Bhd",
+   "rule": "character error",
+   "rows": 5
+  },
+  {
+   "source": "Philinnines Department of Transportation",
+   "clean": "Philippines Department of Transportation",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Pingdingshan Tratian Coal Mining Co Ltd",
+   "clean": "Pingdingshan Tianan Coal Mining Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Posso International Corp",
+   "clean": "Posco International Corp",
+   "rule": "character error",
+   "rows": 21
+  },
+  {
+   "source": "Qingdao Copton Technology Co Lill",
+   "clean": "Qingdao Copton Technology Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Rangsheng Petrochemical Co Ltd",
+   "clean": "Rongsheng Petrochemical Co Ltd",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "ReLiance Industries Ltd",
+   "clean": "Reliance Industries Ltd",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Resonac Holdinger Corp",
+   "clean": "Resonac Holdings Corp",
+   "rule": "character error",
+   "rows": 7
+  },
+  {
+   "source": "Resources Asia Pasific Tbk PT",
+   "clean": "J Resources Asia Pasific Tbk PT",
+   "rule": "missing leading character",
+   "rows": 2
+  },
+  {
+   "source": "Rosneft oil Co PJSC",
+   "clean": "Rosneft Oil Co PJSC",
+   "rule": "spelling variant",
+   "rows": 2
+  },
+  {
+   "source": "SK IF Technology Co Ltd",
+   "clean": "SK IE Technology Co Ltd",
+   "rule": "character error",
+   "rows": 6
+  },
+  {
+   "source": "SKMI Wire & Cable Tbk PT",
+   "clean": "KMI Wire & Cable Tbk PT",
+   "rule": "leading stray character",
+   "rows": 2
+  },
+  {
+   "source": "SKawasaki Heavy Industries Ltd",
+   "clean": "Kawasaki Heavy Industries Ltd",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "SNK-Lavalin Group Inc",
+   "clean": "SNC-Lavalin Group Inc",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Said General Motors Corp Ltd",
+   "clean": "Saic General Motors Corp Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Saipern SpA",
+   "clean": "Saipem SpA",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Samindo Resources TBK PI",
+   "clean": "Samindo Resources TBK PT",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Samsung SDT Co Ltd",
+   "clean": "Samsung SDI Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "San-A Obbli Co Ltd",
+   "clean": "San-Ai Obbli Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Sanker Chemicals Co Ltd",
+   "clean": "Sankei Chemicals Co Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Sasol Ltd",
+   "clean": "Sasol ltd",
+   "rule": "spelling variant",
+   "rows": 2
+  },
+  {
+   "source": "Saudi Arabian oil Co",
+   "clean": "Saudi Arabian Oil Co",
+   "rule": "spelling variant",
+   "rows": 18
+  },
+  {
+   "source": "Semboorp Industries Ltd",
+   "clean": "Sembcorp Industries Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Seres group co LLU",
+   "clean": "Seres Group Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Shan Xi Hua Yang Group New Energiv Co Ltd",
+   "clean": "Shan Xi Hua Yang Group New Energy Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Shandong Human Smelting Co Ltd",
+   "clean": "Shandong Humon Smelting Co Ltd",
+   "rule": "character error",
+   "rows": 9
+  },
+  {
+   "source": "Shauxi Coal International Energy Group Co Ltd",
+   "clean": "Shanxi Coal International Energy Group Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Shenzhen Capdiem Technology Co ltd",
+   "clean": "Shenzhen Capchem Technology Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Shenzier Sunrise New Energy Co Ltd",
+   "clean": "Shenzhen Sunrise New Energy Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Shouging Group Co Ltd",
+   "clean": "Shougang Group Co Ltd",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Shuanglians Eco-Energy Systems Co Ltd",
+   "clean": "Shuangliang Eco-Energy Systems Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Shun On Electonic Co Ltd",
+   "clean": "Shun On Electronic Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Sichian New Energy Power Co Ltd",
+   "clean": "Sichuan New Energy Power Co Ltd",
+   "rule": "character error",
+   "rows": 6
+  },
+  {
+   "source": "Singanore ING Corn Pte Ltd",
+   "clean": "Singapore LNG Corp Pte Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Singanore NG Corn Pte",
+   "clean": "Singapore LNG Corp Pte Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Sociodad Quimica y Minera de Chile SA",
+   "clean": "Sociedad Quimica y Minera de Chile SA",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Solomon Technology Corn",
+   "clean": "Solomon Technology Corp",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "South East Fuiian Motor Corp Ltd",
+   "clean": "South East Fujian Motor Corp Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "State Grid Corp of Chirra",
+   "clean": "State Grid Corp of China",
+   "rule": "character error",
+   "rows": 13
+  },
+  {
+   "source": "State Oil Co of the Azerbaijan Republic:",
+   "clean": "State Oil Co of the Azerbaijan Republic",
+   "rule": "spelling variant",
+   "rows": 2
+  },
+  {
+   "source": "Stellantis HV",
+   "clean": "Stellantis NV",
+   "rule": "garbled legal form",
+   "rows": 6
+  },
+  {
+   "source": "Suzuki Motors Co Ltd",
+   "clean": "Suzuki Motor Corp",
+   "rule": "name variant",
+   "rows": 1
+  },
+  {
+   "source": "Swandor Holding Co Ltd",
+   "clean": "Swancor Holding Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "TA Chen Stamless Pipe",
+   "clean": "TA Chen Stainless Pipe",
+   "rule": "character error",
+   "rows": 16
+  },
+  {
+   "source": "TABKYUNG BK Co Ltd",
+   "clean": "TAEKYUNG BK Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "TCorrugados y Trefilados SA de CV",
+   "clean": "Corrugados y Trefilados SA de CV",
+   "rule": "leading stray character (correct name absent from source)",
+   "rows": 1
+  },
+  {
+   "source": "THanwina Aerospace Co Ltd",
+   "clean": "Hanwha Aerospace Co Ltd",
+   "rule": "leading stray character and character error",
+   "rows": 1
+  },
+  {
+   "source": "TKG Hucherns Co Ltd",
+   "clean": "TKG Huchems Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "TKeisei Electric Railway Co Ltd",
+   "clean": "Keisei Electric Railway Co Ltd",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "TMitsubishi Heavy Industries Ltd",
+   "clean": "Mitsubishi Heavy Industries Ltd",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "TNamura Shipbuilding Co Ltd",
+   "clean": "Namura Shipbuilding Co Ltd",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "TO Technology Group Corp",
+   "clean": "TCL Technology Group Corp",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "TOKAL Holdings Corp",
+   "clean": "TOKAI Holdings Corp",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "TOL Technology Group Corp",
+   "clean": "TCL Technology Group Corp",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "TOMV AG",
+   "clean": "OMV AG",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "TOssen Innovation Co Ltd",
+   "clean": "Ossen Innovation Co Ltd",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "TRanger Energy Services Inc",
+   "clean": "Ranger Energy Services Inc",
+   "rule": "leading stray character (correct name absent from source)",
+   "rows": 1
+  },
+  {
+   "source": "TSAMIL C&S Co Ltd",
+   "clean": "SAMIL C&S Co Ltd",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "TTalen Energy Supply LLC",
+   "clean": "Talen Energy Supply LLC",
+   "rule": "leading stray character (correct name absent from source)",
+   "rows": 1
+  },
+  {
+   "source": "TThintech Materials Technology Co Ltd",
+   "clean": "Thintech Materials Technology Co Ltd",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "TWijaya Karya Bangunan Gedung Tbk PT",
+   "clean": "Wijaya Karya Bangunan Gedung Tbk PT",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "Tachi-5 Co Ltd",
+   "clean": "Tachi-S Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Taho Chemical Industry Co Ltd",
+   "clean": "Toho Chemical Industry Co Ltd",
+   "rule": "character error",
+   "rows": 17
+  },
+  {
+   "source": "Taho Kinzoku Co Ltd",
+   "clean": "Toho Kinzoku Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "Tameh Polska Sp zoo",
+   "clean": "Tameh Polska Sp ZOO",
+   "rule": "spelling variant",
+   "rows": 2
+  },
+  {
+   "source": "Techikan Reunidas SA",
+   "clean": "Tecnicas Reunidas SA",
+   "rule": "character error",
+   "rows": 5
+  },
+  {
+   "source": "Terna - Rete Eletirica Nazionale",
+   "clean": "Terna - Rete Elettrica Nazionale",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Thai Oil PC",
+   "clean": "Thai Oil PCL",
+   "rule": "garbled legal form",
+   "rows": 4
+  },
+  {
+   "source": "Tiangi Lithium Corp",
+   "clean": "Tianqi Lithium Corp",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Tianoxi Xinvu Guoke Technology Co Ltd",
+   "clean": "Jiangxi Xinyu Guoke Technology Co Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Tochpe Maxion SA",
+   "clean": "Iochpe Maxion SA",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "TransDxjm Group Inc",
+   "clean": "TransDigm Group Inc",
+   "rule": "character error",
+   "rows": 4
+  },
+  {
+   "source": "Transpnevmatika DAO",
+   "clean": "Transpnevmatika OAO",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Triumpla Group Inc",
+   "clean": "Triumph Group Inc",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Tungles Azure Renewable Energy Co Ltd",
+   "clean": "Tunghsu Azure Renewable Energy Co Ltd",
+   "rule": "character error",
+   "rows": 3
+  },
+  {
+   "source": "VMMI Holdings Ltd/Singapore",
+   "clean": "MMI Holdings Ltd/Singapore",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "Vedanta td",
+   "clean": "Vedanta Ltd",
+   "rule": "garbled legal form",
+   "rows": 1
+  },
+  {
+   "source": "Vestas Wind Systems N/S",
+   "clean": "Vestas Wind Systems A/S",
+   "rule": "garbled legal form",
+   "rows": 5
+  },
+  {
+   "source": "Vietnam - Italy Steel JSC",
+   "clean": "Vietnam Italy Steel JSC",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Vietnam oil & Gas Group",
+   "clean": "Vietnam Oil & Gas Group",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "Vietram Electricity Group",
+   "clean": "Vietnam Electricity Group",
+   "rule": "character error",
+   "rows": 9
+  },
+  {
+   "source": "Vietsovpetra JV",
+   "clean": "Vietsovpetro JV",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Vinacomin - Halam Coal JSC",
+   "clean": "Vinacomin - HaLam Coal JSC",
+   "rule": "spelling variant",
+   "rows": 1
+  },
+  {
+   "source": "VolkerFitznatrick ltd",
+   "clean": "VolkerFitzpatrick Ltd",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "WIXI Taiji Industry Co Ltd",
+   "clean": "Wuxi Taiji Industry Co Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Wacker Chemic AG",
+   "clean": "Wacker Chemie AG",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Wanhua Chemical Group Co Ut!",
+   "clean": "Wanhua Chemical Group Co Ltd",
+   "rule": "garbled legal form",
+   "rows": 2
+  },
+  {
+   "source": "Weir Groun PIC/The",
+   "clean": "Weir Group PLC/The",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Windershall Dea AG",
+   "clean": "Wintershall Dea AG",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "Yuki Goser Kogyo Co Ltd",
+   "clean": "Yuki Gosei Kogyo Co Ltd",
+   "rule": "character error",
+   "rows": 6
+  },
+  {
+   "source": "Yunnam Chihong Zinc&Germanium Co Ltd",
+   "clean": "Yunnan Chihong Zinc&Germanium Co Ltd",
+   "rule": "character error",
+   "rows": 33
+  },
+  {
+   "source": "Yunnam Chihong ZinckGermanium Co Ltd",
+   "clean": "Yunnan Chihong Zinc&Germanium Co Ltd",
+   "rule": "character error",
+   "rows": 10
+  },
+  {
+   "source": "ZTRW Automotive Holdings Corp",
+   "clean": "ZF TRW Automotive Holdings Corp",
+   "rule": "character error",
+   "rows": 1
+  },
+  {
+   "source": "Zhejiang JULI Hi-tech Metals Co Ltd",
+   "clean": "Zhejiang JIULI Hi-tech Metals Co Ltd",
+   "rule": "character error",
+   "rows": 38
+  },
+  {
+   "source": "fill Suzlon Energy Ltd",
+   "clean": "Suzlon Energy Ltd",
+   "rule": "leading stray characters",
+   "rows": 1
+  },
+  {
+   "source": "iIntasa SA",
+   "clean": "Intasa SA",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "ifelectronic GmbH",
+   "clean": "ifm electronic GmbH",
+   "rule": "character error (correct name absent from source)",
+   "rows": 1
+  },
+  {
+   "source": "incirec PIVOL LLO",
+   "clean": "Incitec Pivot Ltd",
+   "rule": "character error",
+   "rows": 2
+  },
+  {
+   "source": "oAmkor Technology Inc",
+   "clean": "Amkor Technology Inc",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "oPacific National Pty Ltd",
+   "clean": "Pacific National Pty Ltd",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "oRio Tinto PLC",
+   "clean": "Rio Tinto PLC",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "oTransportes Aereos Pegaso SA de CV",
+   "clean": "Transportes Aereos Pegaso SA de CV",
+   "rule": "leading stray character (correct name absent from source)",
+   "rows": 1
+  },
+  {
+   "source": "oUnited Metallurgical Co JSC",
+   "clean": "United Metallurgical Co JSC",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "sInternational Aero Engines AG",
+   "clean": "International Aero Engines AG",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "sMatsuo Electric Co Ltd",
+   "clean": "Matsuo Electric Co Ltd",
+   "rule": "leading stray character",
+   "rows": 1
+  },
+  {
+   "source": "withtech Inc",
+   "clean": "Withtech Inc",
+   "rule": "spelling variant",
+   "rows": 1
+  }
+ ],
+ "industry_assignments": {
+  "Hanwha Aerospace Co Ltd": {
+   "recorded": {
+    "Chemicals": 7,
+    "Aerospace & Defense": 14
+   },
+   "assigned": "Aerospace & Defense"
+  },
+  "Ossen Innovation Co Ltd": {
+   "recorded": {
+    "Chemicals": 1,
+    "Steel": 2
+   },
+   "assigned": "Steel"
+  },
+  "Guangzhou Industrial Investment Holdings Group Co Ltd": {
+   "recorded": {
+    "Oil & Gas Producers": 2,
+    "Machinery": 1
+   },
+   "assigned": "Oil & Gas Producers"
+  }
+ },
+ "country_assignments": {
+  "Vallourec SACA": {
+   "recorded": {
+    "France": 61,
+    "Mexico": 1
+   },
+   "assigned": "France"
+  },
+  "Kyushu Electric Power Co Inc": {
+   "recorded": {
+    "Japan": 410,
+    "Poland": 1
+   },
+   "assigned": "Japan"
+  },
+  "Cia de Minas Buenaventura SAA": {
+   "recorded": {
+    "Argentina": 1,
+    "Brazil": 1
+   },
+   "assigned": "Argentina"
+  },
+  "Industrias CH SAB de CV": {
+   "recorded": {
+    "Mexico": 128,
+    "China": 1,
+    "France": 2,
+    "Taiwan": 1
+   },
+   "assigned": "Mexico"
+  },
+  "MMG Ltd": {
+   "recorded": {
+    "Australia": 3,
+    "Hong Kong": 10,
+    "China": 1
+   },
+   "assigned": "Hong Kong"
+  },
+  "Incitec Pivot Ltd": {
+   "recorded": {
+    "Australia": 12,
+    "USA": 2
+   },
+   "assigned": "Australia"
+  },
+  "BHP Billiton Mitsubishi Alliance": {
+   "recorded": {
+    "Australia": 1,
+    "Japan": 1
+   },
+   "assigned": "Australia"
+  },
+  "Glencore PLC": {
+   "recorded": {
+    "Switzerland": 85,
+    "United Kingdom": 115
+   },
+   "assigned": "United Kingdom"
+  },
+  "OMV AG": {
+   "recorded": {
+    "Austria": 29,
+    "Germany": 1
+   },
+   "assigned": "Austria"
+  },
+  "Reliance Steel & Aluminum Co": {
+   "recorded": {
+    "USA": 21,
+    "China": 1
+   },
+   "assigned": "USA"
+  },
+  "State Oil Co of the Azerbaijan Republic": {
+   "recorded": {
+    "Azerbaijan": 2,
+    "United Kingdom": 7
+   },
+   "assigned": "Azerbaijan"
+  },
+  "Nyrstar NV": {
+   "recorded": {
+    "Belgium": 1,
+    "Netherlands": 1
+   },
+   "assigned": "Belgium"
+  },
+  "TCL Technology Group Corp": {
+   "recorded": {
+    "China": 53,
+    "Taiwan": 1,
+    "USA": 1
+   },
+   "assigned": "China"
+  },
+  "Bechtel Corp": {
+   "recorded": {
+    "Brazil": 2,
+    "USA": 5
+   },
+   "assigned": "USA"
+  },
+  "Light S/A": {
+   "recorded": {
+    "Brazil": 1,
+    "Spain": 1
+   },
+   "assigned": "Brazil"
+  },
+  "Iochpe Maxion SA": {
+   "recorded": {
+    "Brazil": 2,
+    "Spain": 1
+   },
+   "assigned": "Brazil"
+  },
+  "Posco International Corp": {
+   "recorded": {
+    "South Korea": 69,
+    "China": 16
+   },
+   "assigned": "South Korea"
+  },
+  "China Fineblanking Technology Co Ltd": {
+   "recorded": {
+    "China": 40,
+    "South Korea": 2
+   },
+   "assigned": "China"
+  },
+  "Baoshan Iron & Steel Co Ltd": {
+   "recorded": {
+    "China": 110,
+    "USA": 1
+   },
+   "assigned": "China"
+  },
+  "OCT Holdings Co Ltd": {
+   "recorded": {
+    "Japan": 27,
+    "Taiwan": 1
+   },
+   "assigned": "Japan"
+  },
+  "ENN Energy Holdings Ltd": {
+   "recorded": {
+    "Cayman Islands": 1,
+    "China": 2
+   },
+   "assigned": "China"
+  },
+  "Hiroca Holdings Ltd": {
+   "recorded": {
+    "Cayman Islands": 2,
+    "Japan": 4
+   },
+   "assigned": "Japan"
+  },
+  "UlTrans LRT Co Ltd": {
+   "recorded": {
+    "South Korea": 2,
+    "China": 2
+   },
+   "assigned": "South Korea"
+  },
+  "Intasa SA": {
+   "recorded": {
+    "Chile": 2,
+    "Spain": 1
+   },
+   "assigned": "Chile"
+  },
+  "Sociedad Quimica y Minera de Chile SA": {
+   "recorded": {
+    "Chile": 27,
+    "Spain": 4
+   },
+   "assigned": "Chile"
+  },
+  "Engie Energia Chile SA": {
+   "recorded": {
+    "Chile": 4,
+    "Spain": 10
+   },
+   "assigned": "Chile"
+  },
+  "Bengang Steel Plates Co Ltd": {
+   "recorded": {
+    "China": 13,
+    "South Korea": 1,
+    "Mexico": 2
+   },
+   "assigned": "China"
+  },
+  "Hanwha Aerospace Co Ltd": {
+   "recorded": {
+    "China": 13,
+    "South Korea": 8
+   },
+   "assigned": "South Korea"
+  },
+  "Aluminum Corp of China Ltd": {
+   "recorded": {
+    "China": 47,
+    "USA": 12
+   },
+   "assigned": "China"
+  },
+  "Ossen Innovation Co Ltd": {
+   "recorded": {
+    "China": 1,
+    "Virgin Islands, British": 2
+   },
+   "assigned": "Virgin Islands, British"
+  },
+  "Yunding Technology Co Ltd": {
+   "recorded": {
+    "China": 1,
+    "Taiwan": 1
+   },
+   "assigned": "China"
+  },
+  "ZF TRW Automotive Holdings Corp": {
+   "recorded": {
+    "China": 1,
+    "USA": 6
+   },
+   "assigned": "USA"
+  },
+  "TKG Huchems Co Ltd": {
+   "recorded": {
+    "South Korea": 12,
+    "Japan": 1
+   },
+   "assigned": "South Korea"
+  },
+  "Hawaiian Holdings Inc": {
+   "recorded": {
+    "China": 1,
+    "USA": 1
+   },
+   "assigned": "USA"
+  },
+  "TransDigm Group Inc": {
+   "recorded": {
+    "China": 2,
+    "USA": 4
+   },
+   "assigned": "USA"
+  },
+  "Guangqi Honda Automobile Co Ltd": {
+   "recorded": {
+    "China": 1,
+    "Japan": 4
+   },
+   "assigned": "China"
+  },
+  "Cosmochemical Co Ltd": {
+   "recorded": {
+    "South Korea": 15,
+    "Japan": 6,
+    "USA": 4
+   },
+   "assigned": "South Korea"
+  },
+  "Katanga Mining Ltd": {
+   "recorded": {
+    "Democratic Republic Of The Congo": 2,
+    "Canada": 1
+   },
+   "assigned": "Democratic Republic Of The Congo"
+  },
+  "National Petroleum Co Ltd": {
+   "recorded": {
+    "Egypt": 1,
+    "Taiwan": 1
+   },
+   "assigned": "Egypt"
+  },
+  "Gaztransport & Technigaz": {
+   "recorded": {
+    "France": 4,
+    "Spain": 4
+   },
+   "assigned": "France"
+  },
+  "Constellium SE": {
+   "recorded": {
+    "France": 2,
+    "USA": 1
+   },
+   "assigned": "France"
+  },
+  "Hankuk Steel Wire Co Ltd": {
+   "recorded": {
+    "China": 1,
+    "South Korea": 35
+   },
+   "assigned": "South Korea"
+  },
+  "International Aero Engines AG": {
+   "recorded": {
+    "Germany": 1,
+    "USA": 1
+   },
+   "assigned": "USA"
+  },
+  "Zimplats Holdings Ltd": {
+   "recorded": {
+    "Guernsey": 2,
+    "United Kingdom": 2
+   },
+   "assigned": "Guernsey"
+  },
+  "Born Drilling Ltd": {
+   "recorded": {
+    "United Kingdom": 3,
+    "USA": 2
+   },
+   "assigned": "United Kingdom"
+  },
+  "DCC PLC": {
+   "recorded": {
+    "Ireland": 1,
+    "United Kingdom": 2
+   },
+   "assigned": "Ireland"
+  },
+  "Daishin Chemical Co Ltd": {
+   "recorded": {
+    "Japan": 6,
+    "Taiwan": 1
+   },
+   "assigned": "Japan"
+  },
+  "SMI Corp": {
+   "recorded": {
+    "Japan": 2,
+    "South Korea": 3
+   },
+   "assigned": "South Korea"
+  },
+  "Toho Chemical Industry Co Ltd": {
+   "recorded": {
+    "Japan": 17,
+    "Taiwan": 1
+   },
+   "assigned": "Japan"
+  },
+  "G-TEKT CORPORATION": {
+   "recorded": {
+    "Japan": 3,
+    "Taiwan": 1
+   },
+   "assigned": "Japan"
+  },
+  "Leatec Fine Ceramics Co Ltd": {
+   "recorded": {
+    "Japan": 1,
+    "Taiwan": 2
+   },
+   "assigned": "Taiwan"
+  },
+  "Anglo American Platinum Ltd": {
+   "recorded": {
+    "South Africa": 12,
+    "United Kingdom": 20
+   },
+   "assigned": "South Africa"
+  },
+  "Tameh Polska Sp ZOO": {
+   "recorded": {
+    "Japan": 1,
+    "Poland": 3
+   },
+   "assigned": "Poland"
+  },
+  "Engie Energia Peru SA": {
+   "recorded": {
+    "Peru": 1,
+    "Spain": 3
+   },
+   "assigned": "Peru"
+  },
+  "Swancor Holding Co Ltd": {
+   "recorded": {
+    "Taiwan": 1,
+    "USA": 1
+   },
+   "assigned": "Taiwan"
+  },
+  "Marathon Oil Corp": {
+   "recorded": {
+    "United Arab Emirates": 1,
+    "USA": 3
+   },
+   "assigned": "USA"
+  }
+ }
+}

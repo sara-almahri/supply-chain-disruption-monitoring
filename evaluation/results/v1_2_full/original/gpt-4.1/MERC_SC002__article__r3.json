@@ -1,0 +1,3459 @@
+{
+ "run_id": "original/gpt-4.1/MERC_SC002__article__r3",
+ "condition": "original",
+ "model": "gpt-4.1",
+ "scenario_id": "MERC_SC002",
+ "variant": "article",
+ "run_index": 3,
+ "monitored_company": "Mercedes-Benz Group AG",
+ "article_sha256": "aec0d53504c4ea0ba5c7761e6f2a7aedbfaa3a2d245ea3c69c3711844c31ad3a",
+ "ground_truth": "v1.2",
+ "graph_file": "dataset/supplychainKG_clean.csv",
+ "started": "2026-10-13T21:24:30",
+ "provenance": {
+  "commit": "73575f63e3dd0c773889714ce456d6cd4e6830f8",
+  "tags_at_commit": [
+   "evaluation-v1.2"
+  ],
+  "pipeline_files_modified": [],
+  "python": "3.12.2",
+  "executable": "venv/bin/python",
+  "platform": "macOS-14.1-arm64-arm-64bit",
+  "crewai": "1.9.3",
+  "openai": "1.83.0",
+  "neo4j": "6.1.0"
+ },
+ "graph": {
+  "nodes": 6318,
+  "relationships": 22862
+ },
+ "status": "completed",
+ "finished": "2026-10-13T21:24:55",
+ "success": true,
+ "error": null,
+ "traceback": null,
+ "runtime_seconds": 24.9,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4.1",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4.1-2025-04-14",
+   "prompt_tokens": 1567,
+   "cached_tokens": 1408,
+   "completion_tokens": 222,
+   "reasoning_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-13T21:24:35"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4.1",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4.1-2025-04-14",
+   "prompt_tokens": 870,
+   "cached_tokens": 0,
+   "completion_tokens": 76,
+   "reasoning_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-13T21:24:36"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4.1",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4.1-2025-04-14",
+   "prompt_tokens": 1207,
+   "cached_tokens": 0,
+   "completion_tokens": 33,
+   "reasoning_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-13T21:24:39"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4.1",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4.1-2025-04-14",
+   "prompt_tokens": 18838,
+   "cached_tokens": 0,
+   "completion_tokens": 2587,
+   "reasoning_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-13T21:24:55"
+  }
+ ],
+ "truncated_calls": 0,
+ "cost": {
+  "calls": 4,
+  "prompt_tokens": 22482,
+  "cached_tokens": 1408,
+  "completion_tokens": 2918,
+  "reasoning_tokens": 0,
+  "usd": 0.066196,
+  "unpriced_models": []
+ },
+ "earlier_attempts": [],
+ "earlier_attempts_usd": 0,
+ "api_errors_within_run": [],
+ "client_retries_within_run": 0,
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 1182,
+   "parsed": true,
+   "tail": "s due to banking restrictions. The automotive supply chain is experiencing significant delays and reduced throughput.\"\n}"
+  },
+  "kg_results": {
+   "chars": 959,
+   "parsed": true,
+   "tail": "p/supply-chain-disruption-monitoring/output/temp/kg_payloads/MERC_SC002_Mercedes-Benz_Group_AG_20261013T202437_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 44128,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 9467,
+   "parsed": true,
+   "tail": "s\": [\n        \"Denso Corp\",\n        \"SK Inc\",\n        \"Toyota Industries Corp\",\n        \"JTEKT Corp\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "answers_not_json_objects": [],
+ "kg_tool_called": true,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/MERC_SC002_Mercedes-Benz_Group_AG_20261013T202437_kg.json",
+  "monitored_company": "Mercedes-Benz Group AG",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Cayman Islands"
+  ],
+  "disrupted_industries": [
+   "Automotive"
+  ],
+  "disrupted_companies": [
+   "Eurocharm Holdings Co Ltd"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": []
+  },
+  "requested": {
+   "countries": [
+    "Cayman Islands"
+   ],
+   "industries": [
+    "Automotive"
+   ],
+   "companies": [
+    "Eurocharm Holdings Co Ltd"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "MERC_SC002",
+  "chain_counts": {
+   "tier_1": 1,
+   "tier_2": 2,
+   "tier_3": 30,
+   "tier_4": 296
+  },
+  "total_chains": 329,
+  "message": "Built and saved 329 disrupted supply chains to output/temp/kg_payloads/MERC_SC002_Mercedes-Benz_Group_AG_20261013T202437_kg.json"
+ },
+ "comparison": {
+  "disruption_monitor": {
+   "ongoing": true,
+   "ongoing_ok": true,
+   "type": "Economic Crisis",
+   "type_ok": true,
+   "scope": "industries",
+   "scope_ok": false,
+   "entities": {
+    "countries": {
+     "pipeline": [
+      "Cayman Islands"
+     ],
+     "ground_truth": [
+      "Cayman Islands"
+     ],
+     "f1": 1.0,
+     "equal": true
+    },
+    "industries": {
+     "pipeline": [
+      "Automotive"
+     ],
+     "ground_truth": [
+      "Automotive"
+     ],
+     "f1": 1.0,
+     "equal": true
+    },
+    "companies": {
+     "pipeline": [
+      "Eurocharm Holdings Co Ltd"
+     ],
+     "ground_truth": [
+      "Eurocharm Holdings Co Ltd"
+     ],
+     "f1": 1.0,
+     "equal": true
+    }
+   },
+   "reasoning": "The article describes an ongoing financial crisis in the Cayman Islands that has disrupted the operations of several companies, including Eurocharm Holdings Co Ltd, which halted shipments from its regional distribution centre. The disruption results from emergency banking restrictions imposed by the Cayman Islands Monetary Authority, impacting at least 40 registered entities across various sectors. The article specifically notes a significant impact on the automotive supply chain, with delays and throughput declines. The ongoing disruption is an economic crisis affecting companies in multiple sectors, but the automotive industry is particularly highlighted.",
+   "pass": false
+  },
+  "kg_query": {
+   "relay": {
+    "ongoing": true,
+    "scope": true,
+    "countries": true,
+    "industries": true,
+    "companies": true
+   },
+   "unresolved": {},
+   "vs_offline_on_pipeline_input": {
+    "pipeline": [
+     1,
+     2,
+     30,
+     296
+    ],
+    "reference": [
+     1,
+     2,
+     30,
+     296
+    ],
+    "identical": true
+   },
+   "vs_ground_truth": {
+    "pipeline": [
+     1,
+     2,
+     30,
+     296
+    ],
+    "reference": [
+     1,
+     2,
+     43,
+     380
+    ],
+    "identical": false
+   },
+   "revisits": 0,
+   "pass": true
+  },
+  "risk_manager": {
+   "answer_equals_tool_file": true,
+   "vs_offline_on_pipeline_paths": {
+    "n_pipeline": 60,
+    "n_reference": 60,
+    "score_mismatches": [],
+    "level_mismatches": [],
+    "identical": true
+   },
+   "vs_ground_truth": {
+    "n_pipeline": 60,
+    "n_reference": 60,
+    "score_mismatches": [
+     {
+      "supplier": "aapico hitech pcl",
+      "reference": 0.498,
+      "pipeline": 0.5492
+     },
+     {
+      "supplier": "akzo nobel nv",
+      "reference": 0.3134,
+      "pipeline": 0.2811
+     },
+     {
+      "supplier": "alfa sab de cv",
+      "reference": 0.2342,
+      "pipeline": 0.2452
+     },
+     {
+      "supplier": "amag austria metall ag",
+      "reference": 0.4194,
+      "pipeline": 0.5394
+     },
+     {
+      "supplier": "american axle manufacturing holdings inc",
+      "reference": 0.3257,
+      "pipeline": 0.3622
+     },
+     {
+      "supplier": "apple inc",
+      "reference": 0.4348,
+      "pipeline": 0.5057
+     },
+     {
+      "supplier": "baic motor corp ltd",
+      "reference": 0.29,
+      "pipeline": 0.3452
+     },
+     {
+      "supplier": "borgwarner inc",
+      "reference": 0.3251,
+      "pipeline": 0.4093
+     },
+     {
+      "supplier": "changchun faway automobile components co ltd",
+      "reference": 0.2368,
+      "pipeline": 0.2743
+     },
+     {
+      "supplier": "china motor corp",
+      "reference": 0.2994,
+      "pipeline": 0.3361
+     },
+     {
+      "supplier": "contemporary amperex technology co ltd",
+      "reference": 0.4265,
+      "pipeline": 0.3782
+     },
+     {
+      "supplier": "cummins inc",
+      "reference": 0.3431,
+      "pipeline": 0.3501
+     },
+     {
+      "supplier": "cx technology co ltd",
+      "reference": 0.319,
+      "pipeline": 0.3558
+     },
+     {
+      "supplier": "daimler truck holding ag",
+      "reference": 0.3091,
+      "pipeline": 0.3458
+     },
+     {
+      "supplier": "dana inc",
+      "reference": 0.317,
+      "pipeline": 0.3046
+     },
+     {
+      "supplier": "denso corp",
+      "reference": 0.486,
+      "pipeline": 0.6562
+     },
+     {
+      "supplier": "eaton corp plc",
+      "reference": 0.3937,
+      "pipeline": 0.4608
+     },
+     {
+      "supplier": "exxon mobil corp",
+      "reference": 0.3267,
+      "pipeline": 0.3884
+     },
+     {
+      "supplier": "futaba industrial co ltd",
+      "reference": 0.3393,
+      "pipeline": 0.4893
+     },
+     {
+      "supplier": "gestamp automocion sa",
+      "reference": 0.3202,
+      "pipeline": 0.3559
+     },
+     {
+      "supplier": "hyundai mobis co ltd",
+      "reference": 0.3669,
+      "pipeline": 0.3616
+     },
+     {
+      "supplier": "johnson matthey plc",
+      "reference": 0.2939,
+      "pipeline": 0.3333
+     },
+     {
+      "supplier": "jtekt corp",
+      "reference": 0.469,
+      "pipeline": 0.6064
+     },
+     {
+      "supplier": "kian shen corp",
+      "reference": 0.3745,
+      "pipeline": 0.5176
+     },
+     {
+      "supplier": "koito manufacturing co ltd",
+      "reference": 0.3689,
+      "pipeline": 0.5187
+     },
+     {
+      "supplier": "komatsu ltd",
+      "reference": 0.4312,
+      "pipeline": 0.5095
+     },
+     {
+      "supplier": "korea movenex co ltd",
+      "reference": 0.2618,
+      "pipeline": 0.2962
+     },
+     {
+      "supplier": "lg energy solution ltd",
+      "reference": 0.2581,
+      "pipeline": 0.2957
+     },
+     {
+      "supplier": "luminar technologies inc",
+      "reference": 0.4017,
+      "pipeline": 0.5349
+     },
+     {
+      "supplier": "magna international inc",
+      "reference": 0.2979,
+      "pipeline": 0.335
+     },
+     {
+      "supplier": "metair investments ltd",
+      "reference": 0.2637,
+      "pipeline": 0.3008
+     },
+     {
+      "supplier": "mitsubishi electric corp",
+      "reference": 0.3561,
+      "pipeline": 0.3924
+     },
+     {
+      "supplier": "nemak sab de cv",
+      "reference": 0.2488,
+      "pipeline": 0.2902
+     },
+     {
+      "supplier": "nexteer automotive group ltd",
+      "reference": 0.1978,
+      "pipeline": 0.269
+     },
+     {
+      "supplier": "norsk hydro asa",
+      "reference": 0.282,
+      "pipeline": 0.2584
+     },
+     {
+      "supplier": "qst international corp",
+      "reference": 0.3112,
+      "pipeline": 0.348
+     },
+     {
+      "supplier": "renault sa",
+      "reference": 0.5081,
+      "pipeline": 0.5475
+     },
+     {
+      "supplier": "rio tinto plc",
+      "reference": 0.3397,
+      "pipeline": 0.3724
+     },
+     {
+      "supplier": "robert bosch gmbh",
+      "reference": 0.5342,
+      "pipeline": 0.4398
+     },
+     {
+      "supplier": "samsung sdi co ltd",
+      "reference": 0.3768,
+      "pipeline": 0.3573
+     },
+     {
+      "supplier": "san shing fastech corp",
+      "reference": 0.3155,
+      "pipeline": 0.3524
+     },
+     {
+      "supplier": "schaeffler ag",
+      "reference": 0.3218,
+      "pipeline": 0.3587
+     },
+     {
+      "supplier": "shell plc",
+      "reference": 0.3346,
+      "pipeline": 0.3684
+     },
+     {
+      "supplier": "siemens ag",
+      "reference": 0.2394,
+      "pipeline": 0.2771
+     },
+     {
+      "supplier": "sk inc",
+      "reference": 0.5749,
+      "pipeline": 0.6546
+     },
+     {
+      "supplier": "sk innovation co ltd",
+      "reference": 0.4202,
+      "pipeline": 0.4549
+     },
+     {
+      "supplier": "skf ab",
+      "reference": 0.2549,
+      "pipeline": 0.2618
+     },
+     {
+      "supplier": "tong yang industry co ltd",
+      "reference": 0.3446,
+      "pipeline": 0.4323
+     },
+     {
+      "supplier": "toray industries inc",
+      "reference": 0.3734,
+      "pipeline": 0.4097
+     },
+     {
+      "supplier": "totalenergies se",
+      "reference": 0.2795,
+      "pipeline": 0.2718
+     },
+     {
+      "supplier": "toyoda gosei co ltd",
+      "reference": 0.3259,
+      "pipeline": 0.3628
+     },
+     {
+      "supplier": "toyota industries corp",
+      "reference": 0.4716,
+      "pipeline": 0.6161
+     },
+     {
+      "supplier": "wooshin systems co ltd",
+      "reference": 0.292,
+      "pipeline": 0.329
+     }
+    ],
+    "level_mismatches": [
+     "amag austria metall ag",
+     "apple inc",
+     "denso corp",
+     "eaton corp plc",
+     "futaba industrial co ltd",
+     "jtekt corp",
+     "kian shen corp",
+     "koito manufacturing co ltd",
+     "komatsu ltd",
+     "luminar technologies inc",
+     "robert bosch gmbh",
+     "sk inc",
+     "sk innovation co ltd",
+     "toyota industries corp"
+    ],
+    "identical": false
+   },
+   "expected_action_in_output": [],
+   "pass": true
+  },
+  "csco": {
+   "vs_ground_truth": {
+    "listed": 13,
+    "actionable": 7,
+    "action_errors": [
+     {
+      "supplier": "AMAG Austria Metall AG",
+      "expected": "MAINTAIN_STANDARD",
+      "csco": "INCREASE_MONITORING",
+      "score": 0.4194,
+      "listed": true
+     },
+     {
+      "supplier": "Apple Inc",
+      "expected": "MAINTAIN_STANDARD",
+      "csco": "INCREASE_MONITORING",
+      "score": 0.4348,
+      "listed": true
+     },
+     {
+      "supplier": "Denso Corp",
+      "expected": "INCREASE_MONITORING",
+      "csco": "REPLACE_SUPPLIER",
+      "score": 0.486,
+      "listed": true
+     },
+     {
+      "supplier": "Futaba Industrial Co Ltd",
+      "expected": "MAINTAIN_STANDARD",
+      "csco": "INCREASE_MONITORING",
+      "score": 0.3393,
+      "listed": true
+     },
+     {
+      "supplier": "JTEKT Corp",
+      "expected": "INCREASE_MONITORING",
+      "csco": "REPLACE_SUPPLIER",
+      "score": 0.469,
+      "listed": true
+     },
+     {
+      "supplier": "Kian Shen Corp",
+      "expected": "MAINTAIN_STANDARD",
+      "csco": "INCREASE_MONITORING",
+      "score": 0.3745,
+      "listed": true
+     },
+     {
+      "supplier": "Koito Manufacturing Co Ltd",
+      "expected": "MAINTAIN_STANDARD",
+      "csco": "INCREASE_MONITORING",
+      "score": 0.3689,
+      "listed": true
+     },
+     {
+      "supplier": "Komatsu Ltd",
+      "expected": "MAINTAIN_STANDARD",
+      "csco": "INCREASE_MONITORING",
+      "score": 0.4312,
+      "listed": true
+     },
+     {
+      "supplier": "Luminar Technologies Inc",
+      "expected": "MAINTAIN_STANDARD",
+      "csco": "INCREASE_MONITORING",
+      "score": 0.4017,
+      "listed": true
+     },
+     {
+      "supplier": "robert bosch gmbh",
+      "expected": "INCREASE_MONITORING",
+      "csco": "MAINTAIN_STANDARD",
+      "score": 0.5342,
+      "listed": false
+     },
+     {
+      "supplier": "SK Inc",
+      "expected": "INCREASE_MONITORING",
+      "csco": "REPLACE_SUPPLIER",
+      "score": 0.5749,
+      "listed": true
+     },
+     {
+      "supplier": "Toyota Industries Corp",
+      "expected": "INCREASE_MONITORING",
+      "csco": "REPLACE_SUPPLIER",
+      "score": 0.4716,
+      "listed": true
+     }
+    ],
+    "score_quote_errors": [
+     {
+      "supplier": "AAPICO Hitech PCL",
+      "assessment": 0.498,
+      "quoted": 0.5492
+     },
+     {
+      "supplier": "AMAG Austria Metall AG",
+      "assessment": 0.4194,
+      "quoted": 0.5394
+     },
+     {
+      "supplier": "Apple Inc",
+      "assessment": 0.4348,
+      "quoted": 0.5057
+     },
+     {
+      "supplier": "Denso Corp",
+      "assessment": 0.486,
+      "quoted": 0.6562
+     },
+     {
+      "supplier": "Futaba Industrial Co Ltd",
+      "assessment": 0.3393,
+      "quoted": 0.4893
+     },
+     {
+      "supplier": "JTEKT Corp",
+      "assessment": 0.469,
+      "quoted": 0.6064
+     },
+     {
+      "supplier": "Kian Shen Corp",
+      "assessment": 0.3745,
+      "quoted": 0.5176
+     },
+     {
+      "supplier": "Koito Manufacturing Co Ltd",
+      "assessment": 0.3689,
+      "quoted": 0.5187
+     },
+     {
+      "supplier": "Komatsu Ltd",
+      "assessment": 0.4312,
+      "quoted": 0.5095
+     },
+     {
+      "supplier": "Luminar Technologies Inc",
+      "assessment": 0.4017,
+      "quoted": 0.5349
+     },
+     {
+      "supplier": "Renault SA",
+      "assessment": 0.5081,
+      "quoted": 0.5475
+     },
+     {
+      "supplier": "SK Inc",
+      "assessment": 0.5749,
+      "quoted": 0.6546
+     },
+     {
+      "supplier": "Toyota Industries Corp",
+      "assessment": 0.4716,
+      "quoted": 0.6161
+     }
+    ],
+    "suppliers_not_in_assessment": [],
+    "correct": false
+   },
+   "vs_assessment_received": {
+    "listed": 13,
+    "actionable": 15,
+    "action_errors": [
+     {
+      "supplier": "eaton corp plc",
+      "expected": "INCREASE_MONITORING",
+      "csco": "MAINTAIN_STANDARD",
+      "score": 0.4608,
+      "listed": false
+     },
+     {
+      "supplier": "sk innovation co ltd",
+      "expected": "INCREASE_MONITORING",
+      "csco": "MAINTAIN_STANDARD",
+      "score": 0.4549,
+      "listed": false
+     }
+    ],
+    "score_quote_errors": [],
+    "suppliers_not_in_assessment": [],
+    "correct": false
+   },
+   "pass": false
+  },
+  "system": {
+   "end_to_end": false,
+   "truncated_calls": 0,
+   "served_models": [
+    "gpt-4.1-2025-04-14"
+   ],
+   "temperatures": [
+    "not sent (API default)"
+   ]
+  }
+ },
+ "paths_vs_ground_truth": {
+  "tier_1": {
+   "tp": 1,
+   "fp": 0,
+   "fn": 0
+  },
+  "tier_2": {
+   "tp": 2,
+   "fp": 0,
+   "fn": 0
+  },
+  "tier_3": {
+   "tp": 30,
+   "fp": 0,
+   "fn": 13
+  },
+  "tier_4": {
+   "tp": 296,
+   "fp": 0,
+   "fn": 84
+  }
+ },
+ "path_set_sha256": "e607bf6849f40ee7e1458ee5ad35f5caf4c8bf9ebc4eb8058beeaf857c35ba3b",
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article describes an ongoing financial crisis in the Cayman Islands that has disrupted the operations of several companies, including Eurocharm Holdings Co Ltd, which halted shipments from its regional distribution centre. The disruption results from emergency banking restrictions imposed by the Cayman Islands Monetary Authority, impacting at least 40 registered entities across various sectors. The article specifically notes a significant impact on the automotive supply chain, with delays and throughput declines. The ongoing disruption is an economic crisis affecting companies in multiple sectors, but the automotive industry is particularly highlighted.",
+   "ongoing_disruption": true,
+   "type": "Economic Crisis",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Cayman Islands"
+    ],
+    "industries": [
+     "Automotive"
+    ],
+    "companies": [
+     "Eurocharm Holdings Co Ltd"
+    ]
+   },
+   "summary": "A financial crisis in the Cayman Islands has disrupted multiple companies, including Eurocharm Holdings Co Ltd, causing it to halt shipments due to banking restrictions. The automotive supply chain is experiencing significant delays and reduced throughput."
+  },
+  "kg_results": {
+   "tier_1": 1,
+   "tier_2": 2,
+   "tier_3": 30,
+   "tier_4": 296,
+   "monitored_company": "Mercedes-Benz Group AG",
+   "disrupted_countries": [
+    "Cayman Islands"
+   ],
+   "resolution": {
+    "countries": [
+     "Cayman Islands"
+    ],
+    "industries": [
+     "Automotive"
+    ],
+    "companies": [
+     "Eurocharm Holdings Co Ltd"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": []
+    },
+    "scope": "industries",
+    "unresolved_count": 0
+   },
+   "summary": {
+    "total_disrupted_chains": 329,
+    "tier_1_count": 1,
+    "tier_2_count": 2,
+    "tier_3_count": 30,
+    "tier_4_count": 296
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Mercedes-Benz Group AG",
+   "generated_at": "2026-10-13T20:24:40.736998Z",
+   "supplier_risk_scores": {
+    "Nexteer Automotive Group Ltd": 0.269,
+    "BAIC Motor Corp Ltd": 0.3452,
+    "Renault SA": 0.5475,
+    "AAPICO Hitech PCL": 0.5492,
+    "AMAG Austria Metall AG": 0.5394,
+    "Apple Inc": 0.5057,
+    "BorgWarner Inc": 0.4093,
+    "Denso Corp": 0.6562,
+    "Futaba Industrial Co Ltd": 0.4893,
+    "JTEKT Corp": 0.6064,
+    "Kian Shen Corp": 0.5176,
+    "Koito Manufacturing Co Ltd": 0.5187,
+    "Komatsu Ltd": 0.5095,
+    "Luminar Technologies Inc": 0.5349,
+    "SK Inc": 0.6546,
+    "Toyota Industries Corp": 0.6161,
+    "Eaton Corp PLC": 0.4608,
+    "Robert Bosch GmbH": 0.4398,
+    "Tong Yang Industry Co Ltd": 0.4323,
+    "Akzo Nobel NV": 0.2811,
+    "American Axle & Manufacturing Holdings Inc": 0.3622,
+    "ArcelorMittal SA": 0.3637,
+    "Axalta Coating Systems Ltd": 0.2155,
+    "CX Technology Co Ltd": 0.3558,
+    "Changchun Faway Automobile Components Co Ltd": 0.2743,
+    "China Motor Corp": 0.3361,
+    "Contemporary Amperex Technology Co Ltd": 0.3782,
+    "Cummins Inc": 0.3501,
+    "Daimler Truck Holding AG": 0.3458,
+    "Dana Inc": 0.3046,
+    "Exxon Mobil Corp": 0.3884,
+    "Farasis Energy Gan Zhou Co Ltd": 0.2201,
+    "Gestamp Automocion SA": 0.3559,
+    "Grupo Antolin-Irausa SA": 0.2063,
+    "Hyundai Mobis Co Ltd": 0.3616,
+    "Johnson Matthey PLC": 0.3333,
+    "Korea Movenex Co Ltd": 0.2962,
+    "LG Electronics Inc": 0.1341,
+    "LG Energy Solution Ltd": 0.2957,
+    "Magna International Inc": 0.335,
+    "Metair Investments Ltd": 0.3008,
+    "Mitsubishi Electric Corp": 0.3924,
+    "Nemak SAB de CV": 0.2902,
+    "QST International Corp": 0.348,
+    "Rio Tinto PLC": 0.3724,
+    "SK Innovation Co Ltd": 0.4549,
+    "SKF AB": 0.2618,
+    "Samsung SDI Co Ltd": 0.3573,
+    "San Shing Fastech Corp": 0.3524,
+    "Schaeffler AG": 0.3587,
+    "Shell PLC": 0.3684,
+    "Siemens AG": 0.2771,
+    "Toray Industries Inc": 0.4097,
+    "Toyoda Gosei Co Ltd": 0.3628,
+    "Wooshin Systems Co Ltd": 0.329,
+    "Yorozu Corp": 0.2063,
+    "thyssenkrupp AG": 0.3457,
+    "Alfa SAB de CV": 0.2452,
+    "Norsk Hydro ASA": 0.2584,
+    "TotalEnergies SE": 0.2718
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Denso Corp",
+     "risk_score": 0.6562,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 20,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       28
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0041841004184100415,
+      "sub_criticality": 0.7059819159894717,
+      "central": 0.6398963667574247,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 2.05,
+       "dependency": 0.0041841004184100415,
+       "sub_central": 0.15657706375997799,
+       "sub_pagerank": 0.0010894883943760646,
+       "central": 0.21594118784736435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.6546,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       16
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0032292787944025836,
+      "sub_criticality": 0.6353189713355903,
+      "central": 0.7677682910369065,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 2.05,
+       "dependency": 0.0032292787944025836,
+       "sub_central": 0.15228631981822713,
+       "sub_pagerank": 0.001101576055462591,
+       "central": 0.23288407839802183,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.6161,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       10
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.0030120481927710845,
+      "sub_criticality": 0.910281476542288,
+      "central": 0.5537826145273023,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0030120481927710845,
+       "sub_central": 0.16898239311665955,
+       "sub_pagerank": 0.001196336680726384,
+       "central": 0.2045312095650909,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.6064,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       15
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.0029806259314456036,
+      "sub_criticality": 0.7775540523916387,
+      "central": 0.7220298571299177,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0029806259314456036,
+       "sub_central": 0.1609230149819371,
+       "sub_pagerank": 0.0011921312376000257,
+       "central": 0.22682378577310716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.5492,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 12,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       14
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.002642007926023778,
+      "sub_criticality": 0.7753726250488865,
+      "central": 0.1553915796971628,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.002642007926023778,
+       "sub_central": 0.16079055593708508,
+       "sub_pagerank": 0.00095742300341026,
+       "central": 0.15174483180841153,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Renault SA",
+     "risk_score": 0.5475,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 23,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       26
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6470588235294119,
+      "dependency": 0.002328288707799767,
+      "sub_criticality": 0.8618945101871748,
+      "central": 0.4810853727060493,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.45,
+       "dependency": 0.002328288707799767,
+       "sub_central": 0.16604427493088564,
+       "sub_pagerank": 0.0010591271546114295,
+       "central": 0.19489890428422163,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.5394,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.00338409475465313,
+      "sub_criticality": 0.7739272962609944,
+      "central": 0.05877061905234586,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.00338409475465313,
+       "sub_central": 0.1607027937334172,
+       "sub_pagerank": 0.0007543101880995099,
+       "central": 0.1389426598670044,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.5349,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.003745318352059925,
+      "sub_criticality": 0.7649417753865959,
+      "central": 0.029945582980351156,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.003745318352059925,
+       "sub_central": 0.1601571814688258,
+       "sub_pagerank": 0.0007361545002001036,
+       "central": 0.13512337401486427,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Koito Manufacturing Co Ltd",
+     "risk_score": 0.5187,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       13
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.003355704697986577,
+      "sub_criticality": 0.5665869310210501,
+      "central": 0.2657192733604058,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.003355704697986577,
+       "sub_central": 0.14811282284568636,
+       "sub_pagerank": 0.001076074639352987,
+       "central": 0.16636313093056476,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kian Shen Corp",
+     "risk_score": 0.5176,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.0031397174254317113,
+      "sub_criticality": 0.6598088706584071,
+      "central": 0.06919477570315057,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0031397174254317113,
+       "sub_central": 0.15377337767674354,
+       "sub_pagerank": 0.0014852966593022615,
+       "central": 0.14032384925797248,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Komatsu Ltd",
+     "risk_score": 0.5095,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       11
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.5000000000000001,
+      "dependency": 0.0035087719298245615,
+      "sub_criticality": 1.0,
+      "central": 0.33598225550135874,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.0035087719298245615,
+       "sub_central": 0.1744302160580131,
+       "sub_pagerank": 0.0013248104082383525,
+       "central": 0.17567289945782222,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Apple Inc",
+     "risk_score": 0.5057,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.0023228803716608595,
+      "sub_criticality": 0.558362546509223,
+      "central": 0.15479598954326804,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0023228803716608595,
+       "sub_central": 0.14761342774983235,
+       "sub_pagerank": 0.001060596961813955,
+       "central": 0.1516659167623813,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Futaba Industrial Co Ltd",
+     "risk_score": 0.4893,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.0033500837520938024,
+      "sub_criticality": 0.47559982754856944,
+      "central": 0.15423850779521583,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0033500837520938024,
+       "sub_central": 0.14258797011114127,
+       "sub_pagerank": 0.0011091266619139653,
+       "central": 0.15159205103857634,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eaton Corp PLC",
+     "risk_score": 0.4608,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.5000000000000001,
+      "dependency": 0.00338409475465313,
+      "sub_criticality": 0.8863329310550223,
+      "central": 0.07692887726057948,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.00338409475465313,
+       "sub_central": 0.16752820695209267,
+       "sub_pagerank": 0.0010026199537173633,
+       "central": 0.14134860928198514,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Innovation Co Ltd",
+     "risk_score": 0.4549,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.002421307506053269,
+      "sub_criticality": 0.9111055483095056,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002421307506053269,
+       "sub_central": 0.16903243180327354,
+       "sub_pagerank": 0.0017877701472013938,
+       "central": 0.26365452663773126,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Robert Bosch GmbH",
+     "risk_score": 0.4398,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.5000000000000001,
+      "dependency": 0.0029239766081871343,
+      "sub_criticality": 0.7511305125702138,
+      "central": 0.13846857416712194,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.0029239766081871343,
+       "sub_central": 0.1593185440111372,
+       "sub_pagerank": 0.0011578409732103147,
+       "central": 0.14950255202651838,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Tong Yang Industry Co Ltd",
+     "risk_score": 0.4323,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.5000000000000001,
+      "dependency": 0.003067484662576687,
+      "sub_criticality": 0.7238215135700026,
+      "central": 0.11810096957048105,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.003067484662576687,
+       "sub_central": 0.15766030683195675,
+       "sub_pagerank": 0.0013678118272451045,
+       "central": 0.14680386662388284,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toray Industries Inc",
+     "risk_score": 0.4097,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0036363636363636364,
+      "sub_criticality": 0.9843898623067099,
+      "central": 0.3984711146393235,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0036363636363636364,
+       "sub_central": 0.17348234862812525,
+       "sub_pagerank": 0.0018987383740982156,
+       "central": 0.18395260516316503,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.4093,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.5000000000000001,
+      "dependency": 0.0029717682020802376,
+      "sub_criticality": 0.4925728788115808,
+      "central": 0.3508817256391617,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.0029717682020802376,
+       "sub_central": 0.14361859538774857,
+       "sub_pagerank": 0.0006079861185497558,
+       "central": 0.17764706300646674,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Mitsubishi Electric Corp",
+     "risk_score": 0.3924,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.004484304932735426,
+      "sub_criticality": 0.9702866271735909,
+      "central": 0.25134019001880364,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.004484304932735426,
+       "sub_central": 0.1726259822397314,
+       "sub_pagerank": 0.0014763675543902424,
+       "central": 0.16445791806504884,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Exxon Mobil Corp",
+     "risk_score": 0.3884,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0027100271002710027,
+      "sub_criticality": 0.9428310356885033,
+      "central": 0.2705478089365345,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0027100271002710027,
+       "sub_central": 0.17095884377828102,
+       "sub_pagerank": 0.0010226398633948679,
+       "central": 0.16700290662993955,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.3782,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003169572107765452,
+      "sub_criticality": 0.6954209403754327,
+      "central": 0.6622959097921407,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003169572107765452,
+       "sub_central": 0.1514177908826106,
+       "sub_pagerank": 0.001816173956983579,
+       "central": 0.21890910287766027,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.3724,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.7544293327321707,
+      "central": 0.48552307487467167,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.15097118030302542,
+       "sub_pagerank": 0.0019450928325749027,
+       "central": 0.1954868949832202,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Shell PLC",
+     "risk_score": 0.3684,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.002364066193853428,
+      "sub_criticality": 0.6840958252428826,
+      "central": 0.5888165083002165,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002364066193853428,
+       "sub_central": 0.15524811247243242,
+       "sub_pagerank": 0.0013155703131478673,
+       "central": 0.20917316229320115,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.3637,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 1.0,
+      "central": 0.6334171004643653,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1536600402696397,
+       "sub_pagerank": 0.002481604556381671,
+       "central": 0.21508269212775716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.3628,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003110419906687403,
+      "sub_criticality": 0.7522903446164005,
+      "central": 0.39462774090610747,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003110419906687403,
+       "sub_central": 0.1593889704892581,
+       "sub_pagerank": 0.001515852004214826,
+       "central": 0.1834433623338726,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.3622,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0038314176245210726,
+      "sub_criticality": 0.8956354624703271,
+      "central": 0.10010349565880185,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0038314176245210726,
+       "sub_central": 0.16809306850023045,
+       "sub_pagerank": 0.001061964587222646,
+       "central": 0.14441922095289544,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hyundai Mobis Co Ltd",
+     "risk_score": 0.3616,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0024330900243309003,
+      "sub_criticality": 0.8514893565952961,
+      "central": 0.18642322008338053,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0024330900243309003,
+       "sub_central": 0.16541246076072866,
+       "sub_pagerank": 0.001185097739979783,
+       "central": 0.1558564903263667,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.3587,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.002758620689655172,
+      "sub_criticality": 0.675250204563646,
+      "central": 0.5088154423291178,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002758620689655172,
+       "sub_central": 0.1547109951257613,
+       "sub_pagerank": 0.0011460576996008768,
+       "central": 0.19857310827570054,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.3573,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.002484472049689441,
+      "sub_criticality": 0.6257128821293919,
+      "central": 0.5949409525432988,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002484472049689441,
+       "sub_central": 0.1490061280472795,
+       "sub_pagerank": 0.0016638789336857972,
+       "central": 0.20998464447804224,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.3559,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.8031220884441355,
+      "central": 0.22293762893657296,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.16247553867497133,
+       "sub_pagerank": 0.0012005322230962772,
+       "central": 0.16069460968843582,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CX Technology Co Ltd",
+     "risk_score": 0.3558,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.005115089514066497,
+      "sub_criticality": 0.8798428824530974,
+      "central": 0.06455443937095112,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.005115089514066497,
+       "sub_central": 0.15935953892243743,
+       "sub_pagerank": 0.0022190907025082672,
+       "central": 0.1397090097532282,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "San Shing Fastech Corp",
+     "risk_score": 0.3524,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003284072249589491,
+      "sub_criticality": 0.8787444959080755,
+      "central": 0.03810141924713428,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003284072249589491,
+       "sub_central": 0.15865853965740317,
+       "sub_pagerank": 0.002216690997098691,
+       "central": 0.13620401342805688,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Cummins Inc",
+     "risk_score": 0.3501,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.00315955766192733,
+      "sub_criticality": 0.7740201718462661,
+      "central": 0.2239785561370671,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.00315955766192733,
+       "sub_central": 0.16070843325717032,
+       "sub_pagerank": 0.0014179958107000976,
+       "central": 0.1608325314075978,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "QST International Corp",
+     "risk_score": 0.348,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003284072249589491,
+      "sub_criticality": 0.8748537539544348,
+      "central": 0.0018290172783245364,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003284072249589491,
+       "sub_central": 0.15769732891465438,
+       "sub_pagerank": 0.0022081906794684976,
+       "central": 0.13139795971431287,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Daimler Truck Holding AG",
+     "risk_score": 0.3458,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       11
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.002840909090909091,
+      "sub_criticality": 0.8161030499337973,
+      "central": 0.0980504799745359,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002840909090909091,
+       "sub_central": 0.16326375917926372,
+       "sub_pagerank": 0.0009589634213982931,
+       "central": 0.1441471986130949,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3457,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.8801950836760166,
+      "central": 0.6916783231783208,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.15558992739175836,
+       "sub_pagerank": 0.00221986017586328,
+       "central": 0.22280224061623188,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BAIC Motor Corp Ltd",
+     "risk_score": 0.3452,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.44117647058823545,
+      "dependency": 0.0013550135501355014,
+      "sub_criticality": 0.40748615148333706,
+      "central": 0.08921812481863174,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.1,
+       "dependency": 0.0013550135501355014,
+       "sub_central": 0.138452021002895,
+       "sub_pagerank": 0.0005350711297576381,
+       "central": 0.1429769211846897,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "China Motor Corp",
+     "risk_score": 0.3361,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003278688524590164,
+      "sub_criticality": 0.8161041851052376,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003278688524590164,
+       "sub_central": 0.16326382810831847,
+       "sub_pagerank": 0.0009176896237552563,
+       "central": 0.1311556169190783,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.335,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0034071550255536627,
+      "sub_criticality": 0.6060323480487825,
+      "central": 0.409168915717181,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0034071550255536627,
+       "sub_central": 0.15050799877517237,
+       "sub_pagerank": 0.0006855589173931371,
+       "central": 0.18537005214236818,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Johnson Matthey PLC",
+     "risk_score": 0.3333,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.009009009009009009,
+      "sub_criticality": 0.6632469302723568,
+      "central": 0.26376722787001916,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.009009009009009009,
+       "sub_central": 0.13785412579086842,
+       "sub_pagerank": 0.0017458816300773236,
+       "central": 0.16610448703136732,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.329,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.002967359050445104,
+      "sub_criticality": 0.6951397339904584,
+      "central": 0.17169779244201508,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002967359050445104,
+       "sub_central": 0.15591871266867413,
+       "sub_pagerank": 0.0008750152805068938,
+       "central": 0.15390538721874486,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dana Inc",
+     "risk_score": 0.3046,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003683241252302026,
+      "sub_criticality": 0.5749819914968028,
+      "central": 0.1662417424955985,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003683241252302026,
+       "sub_central": 0.14862258160331251,
+       "sub_pagerank": 0.0008785956380203177,
+       "central": 0.15318246654947415,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Metair Investments Ltd",
+     "risk_score": 0.3008,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0058309037900874635,
+      "sub_criticality": 0.6291711723041454,
+      "central": 0.014681058845412676,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0058309037900874635,
+       "sub_central": 0.1519130176358955,
+       "sub_pagerank": 0.0006665467806656242,
+       "central": 0.13310084120961085,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Korea Movenex Co Ltd",
+     "risk_score": 0.2962,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0030075187969924814,
+      "sub_criticality": 0.5545981742546683,
+      "central": 0.1250796991000652,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0030075187969924814,
+       "sub_central": 0.1473848502751058,
+       "sub_pagerank": 0.0006656138375495292,
+       "central": 0.1477285406777741,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.2957,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0029069767441860465,
+      "sub_criticality": 0.43725047239928894,
+      "central": 0.3545310940882813,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0029069767441860465,
+       "sub_central": 0.1402593484540223,
+       "sub_pagerank": 0.0010470591486934984,
+       "central": 0.17813060034713674,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nemak SAB de CV",
+     "risk_score": 0.2902,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003937007874015748,
+      "sub_criticality": 0.5006430934758695,
+      "central": 0.17045239902488513,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003937007874015748,
+       "sub_central": 0.14410862909422706,
+       "sub_pagerank": 0.0006678520938888914,
+       "central": 0.15374037394880435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Akzo Nobel NV",
+     "risk_score": 0.2811,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0048543689320388345,
+      "sub_criticality": 0.47164526059944595,
+      "central": 0.13457469584545445,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0048543689320388345,
+       "sub_central": 0.13297240644220545,
+       "sub_pagerank": 0.0013272789393563085,
+       "central": 0.14898661739432034,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Siemens AG",
+     "risk_score": 0.2771,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.003289473684210526,
+      "sub_criticality": 0.3771773304212056,
+      "central": 0.2876612818852901,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003289473684210526,
+       "sub_central": 0.13661163080983207,
+       "sub_pagerank": 0.0007449653242762498,
+       "central": 0.16927042313714932,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Changchun Faway Automobile Components Co Ltd",
+     "risk_score": 0.2743,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2058823529411765,
+      "dependency": 0.0058309037900874635,
+      "sub_criticality": 0.45714983441208856,
+      "central": 0.09389927879908135,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0058309037900874635,
+       "sub_central": 0.14146766304407155,
+       "sub_pagerank": 0.0005999552169289997,
+       "central": 0.1435971689833244,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "TotalEnergies SE",
+     "risk_score": 0.2718,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015151515151515152,
+      "sub_criticality": 0.7157302078155908,
+      "central": 0.28271987666593273,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015151515151515152,
+       "sub_central": 0.1571689924476405,
+       "sub_pagerank": 0.0013547650432206254,
+       "central": 0.16861569233310642,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nexteer Automotive Group Ltd",
+     "risk_score": 0.269,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 1,
+      "2": 0,
+      "3": 0,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 1,
+     "downstream_supplier_count": 1,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.3823529411764707,
+      "dependency": 0.002551020408163265,
+      "sub_criticality": 0.49910196938739193,
+      "central": 0.09705312433289603,
+      "depth": 0.25,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.002551020408163265,
+       "sub_central": 0.14401505007797588,
+       "sub_pagerank": 0.00029684963521827855,
+       "central": 0.14401505007797588,
+       "depth": 1
+      }
+     }
+    },
+    {
+     "supplier": "SKF AB",
+     "risk_score": 0.2618,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021645021645021645,
+      "sub_criticality": 0.642849321181081,
+      "central": 0.3268455238988396,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021645021645021645,
+       "sub_central": 0.1527435722457486,
+       "sub_pagerank": 0.0015264309600334048,
+       "central": 0.17446229248209646,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Norsk Hydro ASA",
+     "risk_score": 0.2584,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019083969465648854,
+      "sub_criticality": 0.6805723596900446,
+      "central": 0.21827166972129827,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019083969465648854,
+       "sub_central": 0.15503416315926893,
+       "sub_pagerank": 0.0015188691021940804,
+       "central": 0.16007637517962023,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Alfa SAB de CV",
+     "risk_score": 0.2452,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001968503937007874,
+      "sub_criticality": 0.6705458186369745,
+      "central": 0.10555285432208752,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001968503937007874,
+       "sub_central": 0.15442533882438023,
+       "sub_pagerank": 0.0008199266280987817,
+       "central": 0.1451412550344467,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Farasis Energy Gan Zhou Co Ltd",
+     "risk_score": 0.2201,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.5020935498888415,
+      "central": 0.19118530084225002,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.12924640310618732,
+       "sub_pagerank": 0.0013938009892223223,
+       "central": 0.15648746083490908,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Axalta Coating Systems Ltd",
+     "risk_score": 0.2155,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024813895781637717,
+      "sub_criticality": 0.5146035492523556,
+      "central": 0.1193768051429177,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024813895781637717,
+       "sub_central": 0.12686776625901278,
+       "sub_pagerank": 0.0014211322718955107,
+       "central": 0.14697291344621097,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Antolin-Irausa SA",
+     "risk_score": 0.2063,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004291845493562232,
+      "sub_criticality": 0.4886239109598644,
+      "central": 0.07537242515170059,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004291845493562232,
+       "sub_central": 0.1254101331660924,
+       "sub_pagerank": 0.0013643731292859456,
+       "central": 0.1411423810745294,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Yorozu Corp",
+     "risk_score": 0.2063,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024271844660194173,
+      "sub_criticality": 0.4679392160955773,
+      "central": 0.12139448153767797,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024271844660194173,
+       "sub_central": 0.13669943057987083,
+       "sub_pagerank": 0.0013191821403884313,
+       "central": 0.14724025336868177,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Electronics Inc",
+     "risk_score": 0.1341,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Cayman Islands",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017574692442882249,
+      "sub_criticality": 0.10938354020690104,
+      "central": 0.11754244044606825,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017574692442882249,
+       "sub_central": 0.11370894322162588,
+       "sub_pagerank": 0.0005358258629795794,
+       "central": 0.14672986212385203,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Denso Corp",
+     "risk_score": 0.6562,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0041841004184100415,
+      "sub_criticality": 0.7059819159894717,
+      "central": 0.6398963667574247,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 2.05,
+       "dependency": 0.0041841004184100415,
+       "sub_central": 0.15657706375997799,
+       "sub_pagerank": 0.0010894883943760646,
+       "central": 0.21594118784736435,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 3
+     }
+    },
+    {
+     "company": "SK Inc",
+     "risk_score": 0.6546,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0032292787944025836,
+      "sub_criticality": 0.6353189713355903,
+      "central": 0.7677682910369065,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 2.05,
+       "dependency": 0.0032292787944025836,
+       "sub_central": 0.15228631981822713,
+       "sub_pagerank": 0.001101576055462591,
+       "central": 0.23288407839802183,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 3
+     }
+    },
+    {
+     "company": "Toyota Industries Corp",
+     "risk_score": 0.6161,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.0030120481927710845,
+      "sub_criticality": 0.910281476542288,
+      "central": 0.5537826145273023,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0030120481927710845,
+       "sub_central": 0.16898239311665955,
+       "sub_pagerank": 0.001196336680726384,
+       "central": 0.2045312095650909,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     }
+    },
+    {
+     "company": "JTEKT Corp",
+     "risk_score": 0.6064,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 0.7941176470588237,
+      "dependency": 0.0029806259314456036,
+      "sub_criticality": 0.7775540523916387,
+      "central": 0.7220298571299177,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0029806259314456036,
+       "sub_central": 0.1609230149819371,
+       "sub_pagerank": 0.0011921312376000257,
+       "central": 0.22682378577310716,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Denso Corp",
+    "SK Inc",
+    "Toyota Industries Corp",
+    "JTEKT Corp"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 60,
+    "high_risk_suppliers": 4,
+    "medium_risk_suppliers": 11,
+    "low_risk_suppliers": 45,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.6562,
+    "average_risk_score": 0.37764666666666663
+   },
+   "kg_summary": {
+    "monitored_company": "Mercedes-Benz Group AG",
+    "disrupted_countries": [
+     "Cayman Islands"
+    ],
+    "summary": {
+     "total_disrupted_chains": 329,
+     "tier_1_chain_count": 1,
+     "tier_2_chain_count": 2,
+     "tier_3_chain_count": 30,
+     "tier_4_chain_count": 296,
+     "unique_disrupted_companies": 3
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Cayman Islands"
+     ],
+     "industries": [
+      "Automotive"
+     ],
+     "companies": [
+      "Eurocharm Holdings Co Ltd"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 4 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 11 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Mercedes-Benz Group AG",
+   "decisions": {
+    "Denso Corp": {
+     "risk_score_raw": 0.6562,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6562 (HIGH), driven by maximum exposure (1.0), very high centrality (0.6399) and sub-supplier criticality (0.706).",
+      "exposure_details": {
+       "total_disrupted_nodes": 5,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 3
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "SK Inc": {
+     "risk_score_raw": 0.6546,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6546 (HIGH), with maximum exposure (1.0), high centrality (0.768) and significant sub-supplier criticality (0.6353).",
+      "exposure_details": {
+       "total_disrupted_nodes": 5,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 3
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Toyota Industries Corp": {
+     "risk_score_raw": 0.6161,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6161 (HIGH), mainly driven by high exposure (0.7941), very high sub-supplier criticality (0.9103), and maximum depth (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "JTEKT Corp": {
+     "risk_score_raw": 0.6064,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6064 (HIGH), with high exposure (0.7941), high centrality (0.7220), and significant sub-supplier criticality (0.7776).",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "AAPICO Hitech PCL": {
+     "risk_score_raw": 0.5492,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5492 (MEDIUM), strongly influenced by high exposure (0.7941), sub-supplier criticality (0.7754) and full depth (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Renault SA": {
+     "risk_score_raw": 0.5475,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5475 (MEDIUM), with significant sub-supplier criticality (0.8619) and moderate exposure (0.6471), and disruptions at tiers 2 and 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 3,
+       "by_tier": {
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "AMAG Austria Metall AG": {
+     "risk_score_raw": 0.5394,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5394 (MEDIUM), impacted mainly by high exposure (0.7941), strong sub-supplier criticality (0.7739), and disruptions at tiers 3 and 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Luminar Technologies Inc": {
+     "risk_score_raw": 0.5349,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5349 (MEDIUM); high exposure (0.7941), very high sub-supplier criticality (0.7649), and disruptions at tiers 3 and 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Koito Manufacturing Co Ltd": {
+     "risk_score_raw": 0.5187,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5187 (MEDIUM), with high exposure (0.7941), moderate centrality (0.2657), and significant sub-supplier criticality (0.5666).",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Kian Shen Corp": {
+     "risk_score_raw": 0.5176,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5176 (MEDIUM), characterized by high exposure (0.7941), strong sub-supplier criticality (0.6598), and disruptions concentrated in tiers 3 and 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Komatsu Ltd": {
+     "risk_score_raw": 0.5095,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5095 (MEDIUM); moderate exposure (0.5000) and highest sub-supplier criticality (1.0) contribute most to risk, with disruptions at tiers 3 and 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 3,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Apple Inc": {
+     "risk_score_raw": 0.5057,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5057 (MEDIUM), mainly due to high exposure (0.7941), moderate sub-supplier criticality (0.5584), and all disruptions at tiers 3 and 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Futaba Industrial Co Ltd": {
+     "risk_score_raw": 0.4893,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.4893 (MEDIUM), with high exposure (0.7941) and moderate sub-supplier criticality (0.4756); disruptions at tiers 3 and 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 2
+       },
+       "top_disrupted_countries": [
+        "Cayman Islands"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "4 REPLACE_SUPPLIER (score 0.60 or above), 11 INCREASE_MONITORING (0.45 to below 0.60), 45 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": 60,
+     "replace_supplier_count": 4,
+     "increase_monitoring_count": 11,
+     "maintain_standard_count": 45,
+     "critical_suppliers": [
+      "Denso Corp",
+      "SK Inc",
+      "Toyota Industries Corp",
+      "JTEKT Corp"
+     ]
+    }
+   }
+  }
+ }
+}

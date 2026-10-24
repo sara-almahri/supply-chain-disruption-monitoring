@@ -1,0 +1,7856 @@
+{
+ "scenario_id": "run_f4354cb6fe23",
+ "runtime_seconds": 12.5,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1775,
+   "completion_tokens": 186,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:12:47"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 851,
+   "completion_tokens": 83,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:12:48"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1214,
+   "completion_tokens": 40,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:12:49"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 16448,
+   "completion_tokens": 631,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:12:57"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 20288,
+  "completion_tokens": 940,
+  "total_tokens": 21228,
+  "usd": 0.0601,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 904,
+   "parsed": true,
+   "tail": " like Mannai Corp QSC. The restrictions affect the retail, construction, and technology sectors in Qatar broadly.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 1000,
+   "parsed": true,
+   "tail": "ain-disruption-monitoring/output/temp/kg_payloads/run_f4354cb6fe23_Bayerische_Motoren_Werke_AG_20261017T131248_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 37825,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 2247,
+   "parsed": true,
+   "tail": "g_count\": \"2\",\n      \"maintain_standard_count\": \"51\",\n      \"critical_suppliers\": [\n        \"SK Inc\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports ongoing import restrictions in Qatar that are disrupting various sectors by limiting the entry of products like electronics, machinery, household goods, and construction materials. The disruptions are affecting the economy broadly, causing delays and operational challenges for companies like Mannai Corp QSC and impacting sectors such as retail, construction, and technology.",
+   "ongoing_disruption": true,
+   "type": "Trade Policy",
+   "scope": "country",
+   "involved": {
+    "countries": [
+     "Qatar"
+    ],
+    "industries": [
+     "Retail",
+     "Construction",
+     "Technology"
+    ],
+    "companies": [
+     "Mannai Corp QSC"
+    ]
+   },
+   "summary": "Qatar has expanded import restrictions impacting various sectors, causing delays and operational challenges for companies like Mannai Corp QSC. The restrictions affect the retail, construction, and technology sectors in Qatar broadly."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ]
+   ],
+   "tier_3": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Bouygues SA",
+      "country": "Colombia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ]
+   ],
+   "tier_4": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Akzo Nobel NV",
+      "country": "Netherlands",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Asahi Kasei Corp",
+      "country": "Japan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Axalta Coating Systems Ltd",
+      "country": "Bermuda",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Brenntag SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Bouygues SA",
+      "country": "Colombia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Denso Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "E1 Corp",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "S-Oil Corp",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Farasis Energy Gan Zhou Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Asahi Kasei Corp",
+      "country": "Japan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Farasis Energy Gan Zhou Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Antolin-Irausa SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangzhou Tinci Materials Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangzhou Tinci Materials Technology Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honeywell International Inc",
+      "country": "USA",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "JGC Holdings Corp",
+      "country": "Japan",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kawasaki Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LANXESS AG",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LANXESS AG",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nexteer Automotive Group Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "BYD Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Asahi Kasei Corp",
+      "country": "Japan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Indian Oil Corp Ltd",
+      "country": "India",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "S-Oil Corp",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Taita Chemical Co Ltd",
+      "country": "Taiwan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "JGC Holdings Corp",
+      "country": "Japan",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyoda Gosei Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Mannai Corp QSC",
+      "country": "Qatar",
+      "industry": "Technology Services"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Akzo Nobel NV",
+      "country": "Netherlands",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shanghai Huayi Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "American Axle & Manufacturing Holdings Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Eni SpA",
+      "country": "Italy",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Eni SpA",
+      "country": "Italy",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shanghai Huayi Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Zhejiang Juhua Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Beijing Shougang Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NBTM New Materials Group Co Ltd",
+      "country": "China",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Changchun Faway Automobile Components Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Railway Materials Co Ltd",
+      "country": "China",
+      "industry": "Transportation & Logistics"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Cleveland-Cliffs Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "FreightCar America Inc",
+      "country": "USA",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Denso Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NBTM New Materials Group Co Ltd",
+      "country": "China",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Denso Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "E1 Corp",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Bouygues SA",
+      "country": "Colombia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eve Energy Co Ltd",
+      "country": "China",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alcoa Corp",
+      "country": "USA",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Eni SpA",
+      "country": "Italy",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kawasaki Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Eni SpA",
+      "country": "Italy",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eni SpA",
+      "country": "Italy",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Luminar Technologies Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Alfa SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hyundai Motor Co",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eni SpA",
+      "country": "Italy",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nexteer Automotive Group Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Zhejiang Juhua Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Eni SpA",
+      "country": "Italy",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pertamina Persero PT",
+      "country": "Indonesia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Eni SpA",
+      "country": "Italy",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Signet Inc",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Telecom Co Ltd",
+      "country": "South Korea",
+      "industry": "Telecommunications"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Salzgitter AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Nemak SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Airbus SE",
+      "country": "Netherlands",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Airbus SE",
+      "country": "Netherlands",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Apple Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Sinopec Shanghai Petrochemical Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Taita Chemical Co Ltd",
+      "country": "Taiwan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "USI Corp",
+      "country": "Taiwan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "NBTM New Materials Group Co Ltd",
+      "country": "China",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Siemens AG",
+      "country": "Germany",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Guangzhou Development Group Inc",
+      "country": "China",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyoda Gosei Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mahle GmbH",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Zhejiang Huayou Cobalt Co Ltd",
+      "country": "China",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Zhejiang Juhua Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "China Petroleum & Chemical Corp",
+      "country": "China",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "QatarEnergy",
+      "country": "Qatar",
+      "industry": "Oil & Gas Producers"
+     }
+    ]
+   ],
+   "monitored_company": "Bayerische Motoren Werke AG",
+   "disrupted_countries": [
+    "Qatar"
+   ],
+   "resolution": {
+    "countries": [
+     "Qatar"
+    ],
+    "industries": [],
+    "companies": [
+     "Mannai Corp QSC"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [
+      "Retail",
+      "Construction",
+      "Technology"
+     ],
+     "companies": []
+    },
+    "scope": "country",
+    "unresolved_count": 3
+   },
+   "summary": {
+    "total_disrupted_chains": 132,
+    "tier_1_count": 0,
+    "tier_2_count": 1,
+    "tier_3_count": 10,
+    "tier_4_count": 121
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:12:51.211186Z",
+   "supplier_risk_scores": {
+    "Norsk Hydro ASA": 0.3734,
+    "BASF SE": 0.4894,
+    "SK Inc": 0.7086,
+    "AMAG Austria Metall AG": 0.4459,
+    "Alfa SAB de CV": 0.2869,
+    "Bouygues SA": 0.2633,
+    "Grupo Industrial Saltillo SAB de CV": 0.3471,
+    "Nemak SAB de CV": 0.3973,
+    "Rio Tinto PLC": 0.4058,
+    "Akzo Nobel NV": 0.2913,
+    "ArcelorMittal SA": 0.4256,
+    "Axalta Coating Systems Ltd": 0.2365,
+    "Denso Corp": 0.4144,
+    "E1 Corp": 0.3003,
+    "Farasis Energy Gan Zhou Co Ltd": 0.2715,
+    "Glencore PLC": 0.482,
+    "Grupo Antolin-Irausa SA": 0.2565,
+    "Guangzhou Tinci Materials Technology Co Ltd": 0.2648,
+    "Honeywell International Inc": 0.1954,
+    "JTEKT Corp": 0.4388,
+    "Kawasaki Heavy Industries Ltd": 0.3245,
+    "LANXESS AG": 0.2588,
+    "LG Chem Ltd": 0.3703,
+    "LG Energy Solution Ltd": 0.2407,
+    "Nexteer Automotive Group Ltd": 0.2626,
+    "Ningbo Shanshan Co Ltd": 0.2977,
+    "Samsung Electronics Co Ltd": 0.3597,
+    "Samsung SDI Co Ltd": 0.3563,
+    "Saudi Basic Industries Corp": 0.3086,
+    "Schaeffler AG": 0.3432,
+    "Sempra": 0.3111,
+    "Toyoda Gosei Co Ltd": 0.3633,
+    "Toyota Industries Corp": 0.3976,
+    "Wooshin Systems Co Ltd": 0.2888,
+    "Xperi Inc": 0.398,
+    "thyssenkrupp AG": 0.3457,
+    "AAPICO Hitech PCL": 0.267,
+    "American Axle & Manufacturing Holdings Inc": 0.2537,
+    "Autoliv Inc": 0.2697,
+    "Beijing Shougang Co Ltd": 0.2831,
+    "BorgWarner Inc": 0.1969,
+    "Changchun Faway Automobile Components Co Ltd": 0.1279,
+    "Cleveland-Cliffs Inc": 0.1332,
+    "Dana Inc": 0.1828,
+    "Electricite de France SA": 0.1982,
+    "Eve Energy Co Ltd": 0.2653,
+    "Luminar Technologies Inc": 0.235,
+    "Magna International Inc": 0.2876,
+    "Pressure Technologies PLC": 0.2844,
+    "SK Signet Inc": 0.2381,
+    "SK Telecom Co Ltd": 0.2706,
+    "Salzgitter AG": 0.2356,
+    "Siemens AG": 0.22,
+    "Zhejiang Huayou Cobalt Co Ltd": 0.2047
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.7086,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002152852529601722,
+      "sub_criticality": 0.7905414390943194,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.002152852529601722,
+       "sub_central": 0.15443264126024242,
+       "sub_pagerank": 0.0019432622727001696,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BASF SE",
+     "risk_score": 0.4894,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6296296296296295,
+      "dependency": 0.0028011204481792717,
+      "sub_criticality": 0.3711318967583354,
+      "central": 0.9413584074822137,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.0028011204481792717,
+       "sub_central": 0.13469468767419743,
+       "sub_pagerank": 0.0016167130650133943,
+       "central": 0.22691088890921515,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Glencore PLC",
+     "risk_score": 0.482,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0036900369003690036,
+      "sub_criticality": 1.0,
+      "central": 0.9037788531718994,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0036900369003690036,
+       "sub_central": 0.14160827896604025,
+       "sub_pagerank": 0.0032801496770642536,
+       "central": 0.22301660917783855,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.4459,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6296296296296295,
+      "dependency": 0.00338409475465313,
+      "sub_criticality": 0.5796839642869283,
+      "central": 0.08705947742902542,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.00338409475465313,
+       "sub_central": 0.14450941674837642,
+       "sub_pagerank": 0.0010939885099120988,
+       "central": 0.138381924984549,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.4388,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0029806259314456036,
+      "sub_criticality": 0.7675898758864018,
+      "central": 0.9384028798834392,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0029806259314456036,
+       "sub_central": 0.15335251111632178,
+       "sub_pagerank": 0.0013787199711879233,
+       "central": 0.22660461462164935,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.4256,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0028208744710860366,
+      "sub_criticality": 0.7566685309559645,
+      "central": 0.8278965400262406,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0028208744710860366,
+       "sub_central": 0.14614000454219758,
+       "sub_pagerank": 0.0026747472542263144,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Denso Corp",
+     "risk_score": 0.4144,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002789400278940028,
+      "sub_criticality": 0.6975916609374868,
+      "central": 0.8347238005292573,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002789400278940028,
+       "sub_central": 0.15005830490901312,
+       "sub_pagerank": 0.0014203506087488232,
+       "central": 0.21586059850153375,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.4058,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.37037037037037035,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.5591496086250859,
+      "central": 0.6340355467790703,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.13757996942593928,
+       "sub_pagerank": 0.002183325266740542,
+       "central": 0.19506375263020811,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Xperi Inc",
+     "risk_score": 0.398,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002663115845539281,
+      "sub_criticality": 1.0,
+      "central": 0.06555356700964568,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002663115845539281,
+       "sub_central": 0.1642900310810114,
+       "sub_pagerank": 0.0011660394440625214,
+       "central": 0.1361533186961555,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3976,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0030120481927710845,
+      "sub_criticality": 0.6727958630519324,
+      "central": 0.7158803948013442,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0030120481927710845,
+       "sub_central": 0.14889138270436295,
+       "sub_pagerank": 0.0012705645326541823,
+       "central": 0.20354513934753968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nemak SAB de CV",
+     "risk_score": 0.3973,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6296296296296295,
+      "dependency": 0.003937007874015748,
+      "sub_criticality": 0.2637701085926693,
+      "central": 0.23226997528550958,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.003937007874015748,
+       "sub_central": 0.12964210355814237,
+       "sub_pagerank": 0.0010478392210720923,
+       "central": 0.15342974311235483,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Norsk Hydro ASA",
+     "risk_score": 0.3734,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6666666666666666,
+      "dependency": 0.003816793893129771,
+      "sub_criticality": 0.16562267581570486,
+      "central": 0.30941240753757204,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.25,
+       "dependency": 0.003816793893129771,
+       "sub_central": 0.12320902362487209,
+       "sub_pagerank": 0.001204240401512248,
+       "central": 0.16142382968048227,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "LG Chem Ltd",
+     "risk_score": 0.3703,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0024630541871921183,
+      "sub_criticality": 0.5816934249576067,
+      "central": 0.6260089897005048,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0024630541871921183,
+       "sub_central": 0.1446039845572773,
+       "sub_pagerank": 0.0016028976235326975,
+       "central": 0.1942319796324316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.3633,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.003110419906687403,
+      "sub_criticality": 0.5900176645010986,
+      "central": 0.5380011911400471,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003110419906687403,
+       "sub_central": 0.14499573399824958,
+       "sub_pagerank": 0.0011135786696424474,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung Electronics Co Ltd",
+     "risk_score": 0.3597,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0023923444976076554,
+      "sub_criticality": 0.5955998566926357,
+      "central": 0.4924703704511913,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0023923444976076554,
+       "sub_central": 0.14525843915696215,
+       "sub_pagerank": 0.001130017856148236,
+       "central": 0.18039369049242746,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.3563,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.8825557926187813,
+      "central": 0.7942843411107734,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.1587629553227223,
+       "sub_pagerank": 0.00229600598491334,
+       "central": 0.21166995361360316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Industrial Saltillo SAB de CV",
+     "risk_score": 0.3471,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6296296296296295,
+      "dependency": 0.006097560975609756,
+      "sub_criticality": 0.07031925736493258,
+      "central": 0.111315233283519,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.006097560975609756,
+       "sub_central": 0.11722874230796494,
+       "sub_pagerank": 0.0009671279529600464,
+       "central": 0.14089549120764408,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3457,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.7728256133557878,
+      "central": 0.907065543275275,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.15359891166930842,
+       "sub_pagerank": 0.002379197320999965,
+       "central": 0.2233572010472152,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.3432,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002758620689655172,
+      "sub_criticality": 0.4239948425413911,
+      "central": 0.6693238398083206,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002758620689655172,
+       "sub_central": 0.1371824860310877,
+       "sub_pagerank": 0.0013502849284667052,
+       "central": 0.19872059441081885,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kawasaki Heavy Industries Ltd",
+     "risk_score": 0.3245,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002840909090909091,
+      "sub_criticality": 0.597432536038055,
+      "central": 0.1354213332506557,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002840909090909091,
+       "sub_central": 0.14534468740886533,
+       "sub_pagerank": 0.0010926979926651353,
+       "central": 0.1433935489474825,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.3111,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.7208824336424955,
+      "central": 0.6642851082791407,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.13849292627114906,
+       "sub_pagerank": 0.002585712366537506,
+       "central": 0.19819844266032435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Saudi Basic Industries Corp",
+     "risk_score": 0.3086,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 17,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       15
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0022497187851518562,
+      "sub_criticality": 0.38895288663405597,
+      "central": 0.3949709267882535,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0022497187851518562,
+       "sub_central": 0.13553336642496025,
+       "sub_pagerank": 0.0010958973935944008,
+       "central": 0.17029005530448002,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "E1 Corp",
+     "risk_score": 0.3003,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0034904013961605585,
+      "sub_criticality": 0.45792045081041965,
+      "central": 0.17148053675832645,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0034904013961605585,
+       "sub_central": 0.138547987182863,
+       "sub_pagerank": 0.0019314697313936012,
+       "central": 0.14713027834533393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Shanshan Co Ltd",
+     "risk_score": 0.2977,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0058823529411764705,
+      "sub_criticality": 0.41914514045991214,
+      "central": 0.21685097138573228,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0058823529411764705,
+       "sub_central": 0.13695425280096798,
+       "sub_pagerank": 0.001767186700949714,
+       "central": 0.15183190845287248,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Akzo Nobel NV",
+     "risk_score": 0.2913,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0048543689320388345,
+      "sub_criticality": 0.4003948784735523,
+      "central": 0.19272029602358345,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0048543689320388345,
+       "sub_central": 0.13607184130705763,
+       "sub_pagerank": 0.0015495946442206255,
+       "central": 0.14933130402336617,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.2888,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002967359050445104,
+      "sub_criticality": 0.36884893239872646,
+      "central": 0.23527125551486452,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002967359050445104,
+       "sub_central": 0.1345872484292113,
+       "sub_pagerank": 0.0014137151654249008,
+       "central": 0.15374075863608472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2876,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.6653680076294782,
+      "central": 0.5405212882267973,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.1485418182553624,
+       "sub_pagerank": 0.0011771928003966594,
+       "central": 0.18537309268603536,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Alfa SAB de CV",
+     "risk_score": 0.2869,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.37037037037037035,
+      "dependency": 0.003937007874015748,
+      "sub_criticality": 0.20367917058569548,
+      "central": 0.15512144059683342,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.003937007874015748,
+       "sub_central": 0.12681414657195295,
+       "sub_pagerank": 0.0012877972217831208,
+       "central": 0.1454350241632518,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Pressure Technologies PLC",
+     "risk_score": 0.2844,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004761904761904762,
+      "sub_criticality": 0.8419193695415277,
+      "central": 0.14852577875575776,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004761904761904762,
+       "sub_central": 0.1229980954843083,
+       "sub_pagerank": 0.002886849143190483,
+       "central": 0.1447515314317889,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Beijing Shougang Co Ltd",
+     "risk_score": 0.2831,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0026041666666666665,
+      "sub_criticality": 0.7584569006116657,
+      "central": 0.3078567082243358,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0026041666666666665,
+       "sub_central": 0.15292270152956033,
+       "sub_pagerank": 0.002610815174730541,
+       "central": 0.1612626162649738,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Farasis Energy Gan Zhou Co Ltd",
+     "risk_score": 0.2715,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.72571984001988,
+      "central": 0.25766786942166114,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.1513820532674696,
+       "sub_pagerank": 0.0016324524650614953,
+       "central": 0.1560616664059985,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Telecom Co Ltd",
+     "risk_score": 0.2706,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.003003003003003003,
+      "sub_criticality": 0.7716958966145206,
+      "central": 0.15504420333497967,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.003003003003003003,
+       "sub_central": 0.1535457457435159,
+       "sub_pagerank": 0.0025574104573511244,
+       "central": 0.14542702024971785,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.2697,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.7184665879203861,
+      "central": 0.25442068432741777,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.125741504713024,
+       "sub_pagerank": 0.002579701804652052,
+       "central": 0.15572516834665165,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.267,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001321003963011889,
+      "sub_criticality": 0.7280078518803723,
+      "central": 0.21049583123911367,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001321003963011889,
+       "sub_central": 0.15148973005435237,
+       "sub_pagerank": 0.001110786433363451,
+       "central": 0.15117334041189276,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eve Energy Co Ltd",
+     "risk_score": 0.2653,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002336448598130841,
+      "sub_criticality": 0.7582384591498685,
+      "central": 0.1305980428393595,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002336448598130841,
+       "sub_central": 0.1529124213928467,
+       "sub_pagerank": 0.0024046748815131054,
+       "central": 0.142893722847041,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangzhou Tinci Materials Technology Co Ltd",
+     "risk_score": 0.2648,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016556291390728477,
+      "sub_criticality": 0.7186521562448386,
+      "central": 0.20694590708713412,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016556291390728477,
+       "sub_central": 0.1510494389603758,
+       "sub_pagerank": 0.001808001565514301,
+       "central": 0.15080547022485374,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Bouygues SA",
+     "risk_score": 0.2633,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.37037037037037035,
+      "dependency": 0.011764705882352941,
+      "sub_criticality": 0.15343029868422187,
+      "central": 0.00048825175128855663,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.011764705882352941,
+       "sub_central": 0.12444936990087788,
+       "sub_pagerank": 0.0010303832080261574,
+       "central": 0.12941075500490107,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nexteer Automotive Group Ltd",
+     "risk_score": 0.2626,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.00510204081632653,
+      "sub_criticality": 0.2809417602536067,
+      "central": 0.1438980114851864,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.00510204081632653,
+       "sub_central": 0.1304502236156679,
+       "sub_pagerank": 0.0011595453599892289,
+       "central": 0.14427196692885472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LANXESS AG",
+     "risk_score": 0.2588,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024390243902439024,
+      "sub_criticality": 0.7345377675761294,
+      "central": 0.11266965759166067,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024390243902439024,
+       "sub_central": 0.15179703630257405,
+       "sub_pagerank": 0.0020162044596076486,
+       "central": 0.14103584697363655,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Antolin-Irausa SA",
+     "risk_score": 0.2565,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004291845493562232,
+      "sub_criticality": 0.7229475431510365,
+      "central": 0.10869338613109612,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004291845493562232,
+       "sub_central": 0.15125158540396033,
+       "sub_pagerank": 0.0016581166012651282,
+       "central": 0.1406237954301972,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.2537,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019157088122605363,
+      "sub_criticality": 0.6923408883922776,
+      "central": 0.14756642796192487,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019157088122605363,
+       "sub_central": 0.1229732416747018,
+       "sub_pagerank": 0.0025147017376455495,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.2407,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.4636207900508767,
+      "central": 0.4757259019377892,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.1390473341897372,
+       "sub_pagerank": 0.0013394721200123043,
+       "central": 0.17865850109113862,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Signet Inc",
+     "risk_score": 0.2381,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0031545741324921135,
+      "sub_criticality": 0.6863451655248209,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0031545741324921135,
+       "sub_central": 0.1495290303407129,
+       "sub_pagerank": 0.0023738677786249995,
+       "central": 0.1293601586385059,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Axalta Coating Systems Ltd",
+     "risk_score": 0.2365,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024813895781637717,
+      "sub_criticality": 0.5929180689986174,
+      "central": 0.17341771902424824,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024813895781637717,
+       "sub_central": 0.14513223077186596,
+       "sub_pagerank": 0.001750883606453039,
+       "central": 0.14733102393086875,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Salzgitter AG",
+     "risk_score": 0.2356,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002857142857142857,
+      "sub_criticality": 0.6337124421175804,
+      "central": 0.0812516757807068,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002857142857142857,
+       "sub_central": 0.14705206654553288,
+       "sub_pagerank": 0.0023122281153013947,
+       "central": 0.13778007632886402,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.235,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018726591760299626,
+      "sub_criticality": 0.64377405352628,
+      "central": 0.057480596419810355,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018726591760299626,
+       "sub_central": 0.14752557894555987,
+       "sub_pagerank": 0.001036155807763845,
+       "central": 0.1353167359767227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Siemens AG",
+     "risk_score": 0.22,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001644736842105263,
+      "sub_criticality": 0.4024117682939533,
+      "central": 0.3910184321596503,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001644736842105263,
+       "sub_central": 0.1319347786824054,
+       "sub_pagerank": 0.0017933655600916591,
+       "central": 0.1698804676975211,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Zhejiang Huayou Cobalt Co Ltd",
+     "risk_score": 0.2047,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018975332068311196,
+      "sub_criticality": 0.35578022730090647,
+      "central": 0.33077787246111845,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018975332068311196,
+       "sub_central": 0.1265257992262052,
+       "sub_pagerank": 0.0016773474880816294,
+       "central": 0.16363788193656154,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Electricite de France SA",
+     "risk_score": 0.1982,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015384615384615385,
+      "sub_criticality": 0.3385317979892804,
+      "central": 0.3012671018004121,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015384615384615385,
+       "sub_central": 0.1331604850119971,
+       "sub_pagerank": 0.0016162320487923293,
+       "central": 0.1605797510419716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.1969,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014858841010401188,
+      "sub_criticality": 0.2594425976563049,
+      "central": 0.4463277773230391,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014858841010401188,
+       "sub_central": 0.1294384453162976,
+       "sub_pagerank": 0.0011564871666885166,
+       "central": 0.17561204343806627,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Honeywell International Inc",
+     "risk_score": 0.1954,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.00392156862745098,
+      "sub_criticality": 0.28835465529005305,
+      "central": 0.36730473391879503,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.00392156862745098,
+       "sub_central": 0.1307990840096224,
+       "sub_pagerank": 0.0014940048308916536,
+       "central": 0.16742307361421774,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dana Inc",
+     "risk_score": 0.1828,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001841620626151013,
+      "sub_criticality": 0.2908665972672298,
+      "central": 0.24135218541264725,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001841620626151013,
+       "sub_central": 0.13091729923639145,
+       "sub_pagerank": 0.0007921754531944256,
+       "central": 0.1543709109219078,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Cleveland-Cliffs Inc",
+     "risk_score": 0.1332,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0037735849056603774,
+      "sub_criticality": 0.09745077006401469,
+      "central": 0.1278917178015467,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0037735849056603774,
+       "sub_central": 0.12181490113910329,
+       "sub_pagerank": 0.0009484920932659833,
+       "central": 0.14261327282748398,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Changchun Faway Automobile Components Co Ltd",
+     "risk_score": 0.1279,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0029154518950437317,
+      "sub_criticality": 0.06976038273005598,
+      "central": 0.13184643717079977,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0029154518950437317,
+       "sub_central": 0.12051175582454235,
+       "sub_pagerank": 0.0009394740391573607,
+       "central": 0.14302309097901905,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "SK Inc",
+     "risk_score": 0.7086,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002152852529601722,
+      "sub_criticality": 0.7905414390943194,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.002152852529601722,
+       "sub_central": 0.15443264126024242,
+       "sub_pagerank": 0.0019432622727001696,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "SK Inc"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 54,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 2,
+    "low_risk_suppliers": 51,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7086,
+    "average_risk_score": 0.30880555555555556
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Qatar"
+    ],
+    "summary": {
+     "total_disrupted_chains": 132,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 1,
+     "tier_3_chain_count": 10,
+     "tier_4_chain_count": 121,
+     "unique_disrupted_companies": 2
+    }
+   },
+   "disruption_summary": {
+    "scope": "country",
+    "involved": {
+     "countries": [
+      "Qatar"
+     ],
+     "industries": [],
+     "companies": [
+      "Mannai Corp QSC"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 2 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:12:51.211186Z",
+   "supplier_risk_scores": {
+    "Norsk Hydro ASA": 0.3734,
+    "BASF SE": 0.4894,
+    "SK Inc": 0.7086,
+    "AMAG Austria Metall AG": 0.4459,
+    "Alfa SAB de CV": 0.2869,
+    "Bouygues SA": 0.2633,
+    "Grupo Industrial Saltillo SAB de CV": 0.3471,
+    "Nemak SAB de CV": 0.3973,
+    "Rio Tinto PLC": 0.4058,
+    "Akzo Nobel NV": 0.2913,
+    "ArcelorMittal SA": 0.4256,
+    "Axalta Coating Systems Ltd": 0.2365,
+    "Denso Corp": 0.4144,
+    "E1 Corp": 0.3003,
+    "Farasis Energy Gan Zhou Co Ltd": 0.2715,
+    "Glencore PLC": 0.482,
+    "Grupo Antolin-Irausa SA": 0.2565,
+    "Guangzhou Tinci Materials Technology Co Ltd": 0.2648,
+    "Honeywell International Inc": 0.1954,
+    "JTEKT Corp": 0.4388,
+    "Kawasaki Heavy Industries Ltd": 0.3245,
+    "LANXESS AG": 0.2588,
+    "LG Chem Ltd": 0.3703,
+    "LG Energy Solution Ltd": 0.2407,
+    "Nexteer Automotive Group Ltd": 0.2626,
+    "Ningbo Shanshan Co Ltd": 0.2977,
+    "Samsung Electronics Co Ltd": 0.3597,
+    "Samsung SDI Co Ltd": 0.3563,
+    "Saudi Basic Industries Corp": 0.3086,
+    "Schaeffler AG": 0.3432,
+    "Sempra": 0.3111,
+    "Toyoda Gosei Co Ltd": 0.3633,
+    "Toyota Industries Corp": 0.3976,
+    "Wooshin Systems Co Ltd": 0.2888,
+    "Xperi Inc": 0.398,
+    "thyssenkrupp AG": 0.3457,
+    "AAPICO Hitech PCL": 0.267,
+    "American Axle & Manufacturing Holdings Inc": 0.2537,
+    "Autoliv Inc": 0.2697,
+    "Beijing Shougang Co Ltd": 0.2831,
+    "BorgWarner Inc": 0.1969,
+    "Changchun Faway Automobile Components Co Ltd": 0.1279,
+    "Cleveland-Cliffs Inc": 0.1332,
+    "Dana Inc": 0.1828,
+    "Electricite de France SA": 0.1982,
+    "Eve Energy Co Ltd": 0.2653,
+    "Luminar Technologies Inc": 0.235,
+    "Magna International Inc": 0.2876,
+    "Pressure Technologies PLC": 0.2844,
+    "SK Signet Inc": 0.2381,
+    "SK Telecom Co Ltd": 0.2706,
+    "Salzgitter AG": 0.2356,
+    "Siemens AG": 0.22,
+    "Zhejiang Huayou Cobalt Co Ltd": 0.2047
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.7086,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002152852529601722,
+      "sub_criticality": 0.7905414390943194,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.002152852529601722,
+       "sub_central": 0.15443264126024242,
+       "sub_pagerank": 0.0019432622727001696,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BASF SE",
+     "risk_score": 0.4894,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6296296296296295,
+      "dependency": 0.0028011204481792717,
+      "sub_criticality": 0.3711318967583354,
+      "central": 0.9413584074822137,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.0028011204481792717,
+       "sub_central": 0.13469468767419743,
+       "sub_pagerank": 0.0016167130650133943,
+       "central": 0.22691088890921515,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Glencore PLC",
+     "risk_score": 0.482,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0036900369003690036,
+      "sub_criticality": 1.0,
+      "central": 0.9037788531718994,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0036900369003690036,
+       "sub_central": 0.14160827896604025,
+       "sub_pagerank": 0.0032801496770642536,
+       "central": 0.22301660917783855,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.4459,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6296296296296295,
+      "dependency": 0.00338409475465313,
+      "sub_criticality": 0.5796839642869283,
+      "central": 0.08705947742902542,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.00338409475465313,
+       "sub_central": 0.14450941674837642,
+       "sub_pagerank": 0.0010939885099120988,
+       "central": 0.138381924984549,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.4388,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0029806259314456036,
+      "sub_criticality": 0.7675898758864018,
+      "central": 0.9384028798834392,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0029806259314456036,
+       "sub_central": 0.15335251111632178,
+       "sub_pagerank": 0.0013787199711879233,
+       "central": 0.22660461462164935,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.4256,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0028208744710860366,
+      "sub_criticality": 0.7566685309559645,
+      "central": 0.8278965400262406,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0028208744710860366,
+       "sub_central": 0.14614000454219758,
+       "sub_pagerank": 0.0026747472542263144,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Denso Corp",
+     "risk_score": 0.4144,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002789400278940028,
+      "sub_criticality": 0.6975916609374868,
+      "central": 0.8347238005292573,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002789400278940028,
+       "sub_central": 0.15005830490901312,
+       "sub_pagerank": 0.0014203506087488232,
+       "central": 0.21586059850153375,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.4058,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.37037037037037035,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.5591496086250859,
+      "central": 0.6340355467790703,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.13757996942593928,
+       "sub_pagerank": 0.002183325266740542,
+       "central": 0.19506375263020811,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Xperi Inc",
+     "risk_score": 0.398,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002663115845539281,
+      "sub_criticality": 1.0,
+      "central": 0.06555356700964568,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002663115845539281,
+       "sub_central": 0.1642900310810114,
+       "sub_pagerank": 0.0011660394440625214,
+       "central": 0.1361533186961555,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3976,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0030120481927710845,
+      "sub_criticality": 0.6727958630519324,
+      "central": 0.7158803948013442,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0030120481927710845,
+       "sub_central": 0.14889138270436295,
+       "sub_pagerank": 0.0012705645326541823,
+       "central": 0.20354513934753968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nemak SAB de CV",
+     "risk_score": 0.3973,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6296296296296295,
+      "dependency": 0.003937007874015748,
+      "sub_criticality": 0.2637701085926693,
+      "central": 0.23226997528550958,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.003937007874015748,
+       "sub_central": 0.12964210355814237,
+       "sub_pagerank": 0.0010478392210720923,
+       "central": 0.15342974311235483,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Norsk Hydro ASA",
+     "risk_score": 0.3734,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6666666666666666,
+      "dependency": 0.003816793893129771,
+      "sub_criticality": 0.16562267581570486,
+      "central": 0.30941240753757204,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.25,
+       "dependency": 0.003816793893129771,
+       "sub_central": 0.12320902362487209,
+       "sub_pagerank": 0.001204240401512248,
+       "central": 0.16142382968048227,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "LG Chem Ltd",
+     "risk_score": 0.3703,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0024630541871921183,
+      "sub_criticality": 0.5816934249576067,
+      "central": 0.6260089897005048,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0024630541871921183,
+       "sub_central": 0.1446039845572773,
+       "sub_pagerank": 0.0016028976235326975,
+       "central": 0.1942319796324316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.3633,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.003110419906687403,
+      "sub_criticality": 0.5900176645010986,
+      "central": 0.5380011911400471,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003110419906687403,
+       "sub_central": 0.14499573399824958,
+       "sub_pagerank": 0.0011135786696424474,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung Electronics Co Ltd",
+     "risk_score": 0.3597,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0023923444976076554,
+      "sub_criticality": 0.5955998566926357,
+      "central": 0.4924703704511913,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0023923444976076554,
+       "sub_central": 0.14525843915696215,
+       "sub_pagerank": 0.001130017856148236,
+       "central": 0.18039369049242746,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.3563,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.8825557926187813,
+      "central": 0.7942843411107734,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.1587629553227223,
+       "sub_pagerank": 0.00229600598491334,
+       "central": 0.21166995361360316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Industrial Saltillo SAB de CV",
+     "risk_score": 0.3471,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.6296296296296295,
+      "dependency": 0.006097560975609756,
+      "sub_criticality": 0.07031925736493258,
+      "central": 0.111315233283519,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.2,
+       "dependency": 0.006097560975609756,
+       "sub_central": 0.11722874230796494,
+       "sub_pagerank": 0.0009671279529600464,
+       "central": 0.14089549120764408,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3457,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.7728256133557878,
+      "central": 0.907065543275275,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.15359891166930842,
+       "sub_pagerank": 0.002379197320999965,
+       "central": 0.2233572010472152,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.3432,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002758620689655172,
+      "sub_criticality": 0.4239948425413911,
+      "central": 0.6693238398083206,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002758620689655172,
+       "sub_central": 0.1371824860310877,
+       "sub_pagerank": 0.0013502849284667052,
+       "central": 0.19872059441081885,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kawasaki Heavy Industries Ltd",
+     "risk_score": 0.3245,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002840909090909091,
+      "sub_criticality": 0.597432536038055,
+      "central": 0.1354213332506557,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002840909090909091,
+       "sub_central": 0.14534468740886533,
+       "sub_pagerank": 0.0010926979926651353,
+       "central": 0.1433935489474825,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.3111,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.7208824336424955,
+      "central": 0.6642851082791407,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.13849292627114906,
+       "sub_pagerank": 0.002585712366537506,
+       "central": 0.19819844266032435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Saudi Basic Industries Corp",
+     "risk_score": 0.3086,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 17,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       15
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0022497187851518562,
+      "sub_criticality": 0.38895288663405597,
+      "central": 0.3949709267882535,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0022497187851518562,
+       "sub_central": 0.13553336642496025,
+       "sub_pagerank": 0.0010958973935944008,
+       "central": 0.17029005530448002,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "E1 Corp",
+     "risk_score": 0.3003,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0034904013961605585,
+      "sub_criticality": 0.45792045081041965,
+      "central": 0.17148053675832645,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0034904013961605585,
+       "sub_central": 0.138547987182863,
+       "sub_pagerank": 0.0019314697313936012,
+       "central": 0.14713027834533393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Shanshan Co Ltd",
+     "risk_score": 0.2977,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0058823529411764705,
+      "sub_criticality": 0.41914514045991214,
+      "central": 0.21685097138573228,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0058823529411764705,
+       "sub_central": 0.13695425280096798,
+       "sub_pagerank": 0.001767186700949714,
+       "central": 0.15183190845287248,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Akzo Nobel NV",
+     "risk_score": 0.2913,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0048543689320388345,
+      "sub_criticality": 0.4003948784735523,
+      "central": 0.19272029602358345,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0048543689320388345,
+       "sub_central": 0.13607184130705763,
+       "sub_pagerank": 0.0015495946442206255,
+       "central": 0.14933130402336617,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.2888,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002967359050445104,
+      "sub_criticality": 0.36884893239872646,
+      "central": 0.23527125551486452,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002967359050445104,
+       "sub_central": 0.1345872484292113,
+       "sub_pagerank": 0.0014137151654249008,
+       "central": 0.15374075863608472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.2876,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.6653680076294782,
+      "central": 0.5405212882267973,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.1485418182553624,
+       "sub_pagerank": 0.0011771928003966594,
+       "central": 0.18537309268603536,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Alfa SAB de CV",
+     "risk_score": 0.2869,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.37037037037037035,
+      "dependency": 0.003937007874015748,
+      "sub_criticality": 0.20367917058569548,
+      "central": 0.15512144059683342,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.003937007874015748,
+       "sub_central": 0.12681414657195295,
+       "sub_pagerank": 0.0012877972217831208,
+       "central": 0.1454350241632518,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Pressure Technologies PLC",
+     "risk_score": 0.2844,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004761904761904762,
+      "sub_criticality": 0.8419193695415277,
+      "central": 0.14852577875575776,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004761904761904762,
+       "sub_central": 0.1229980954843083,
+       "sub_pagerank": 0.002886849143190483,
+       "central": 0.1447515314317889,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Beijing Shougang Co Ltd",
+     "risk_score": 0.2831,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0026041666666666665,
+      "sub_criticality": 0.7584569006116657,
+      "central": 0.3078567082243358,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0026041666666666665,
+       "sub_central": 0.15292270152956033,
+       "sub_pagerank": 0.002610815174730541,
+       "central": 0.1612626162649738,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Farasis Energy Gan Zhou Co Ltd",
+     "risk_score": 0.2715,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.72571984001988,
+      "central": 0.25766786942166114,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.1513820532674696,
+       "sub_pagerank": 0.0016324524650614953,
+       "central": 0.1560616664059985,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Telecom Co Ltd",
+     "risk_score": 0.2706,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.003003003003003003,
+      "sub_criticality": 0.7716958966145206,
+      "central": 0.15504420333497967,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.003003003003003003,
+       "sub_central": 0.1535457457435159,
+       "sub_pagerank": 0.0025574104573511244,
+       "central": 0.14542702024971785,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.2697,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.7184665879203861,
+      "central": 0.25442068432741777,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.125741504713024,
+       "sub_pagerank": 0.002579701804652052,
+       "central": 0.15572516834665165,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.267,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001321003963011889,
+      "sub_criticality": 0.7280078518803723,
+      "central": 0.21049583123911367,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001321003963011889,
+       "sub_central": 0.15148973005435237,
+       "sub_pagerank": 0.001110786433363451,
+       "central": 0.15117334041189276,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eve Energy Co Ltd",
+     "risk_score": 0.2653,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002336448598130841,
+      "sub_criticality": 0.7582384591498685,
+      "central": 0.1305980428393595,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002336448598130841,
+       "sub_central": 0.1529124213928467,
+       "sub_pagerank": 0.0024046748815131054,
+       "central": 0.142893722847041,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangzhou Tinci Materials Technology Co Ltd",
+     "risk_score": 0.2648,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0016556291390728477,
+      "sub_criticality": 0.7186521562448386,
+      "central": 0.20694590708713412,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0016556291390728477,
+       "sub_central": 0.1510494389603758,
+       "sub_pagerank": 0.001808001565514301,
+       "central": 0.15080547022485374,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Bouygues SA",
+     "risk_score": 0.2633,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.37037037037037035,
+      "dependency": 0.011764705882352941,
+      "sub_criticality": 0.15343029868422187,
+      "central": 0.00048825175128855663,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.011764705882352941,
+       "sub_central": 0.12444936990087788,
+       "sub_pagerank": 0.0010303832080261574,
+       "central": 0.12941075500490107,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nexteer Automotive Group Ltd",
+     "risk_score": 0.2626,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.00510204081632653,
+      "sub_criticality": 0.2809417602536067,
+      "central": 0.1438980114851864,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.00510204081632653,
+       "sub_central": 0.1304502236156679,
+       "sub_pagerank": 0.0011595453599892289,
+       "central": 0.14427196692885472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LANXESS AG",
+     "risk_score": 0.2588,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024390243902439024,
+      "sub_criticality": 0.7345377675761294,
+      "central": 0.11266965759166067,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024390243902439024,
+       "sub_central": 0.15179703630257405,
+       "sub_pagerank": 0.0020162044596076486,
+       "central": 0.14103584697363655,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Antolin-Irausa SA",
+     "risk_score": 0.2565,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004291845493562232,
+      "sub_criticality": 0.7229475431510365,
+      "central": 0.10869338613109612,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004291845493562232,
+       "sub_central": 0.15125158540396033,
+       "sub_pagerank": 0.0016581166012651282,
+       "central": 0.1406237954301972,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.2537,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019157088122605363,
+      "sub_criticality": 0.6923408883922776,
+      "central": 0.14756642796192487,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019157088122605363,
+       "sub_central": 0.1229732416747018,
+       "sub_pagerank": 0.0025147017376455495,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.2407,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.4636207900508767,
+      "central": 0.4757259019377892,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.1390473341897372,
+       "sub_pagerank": 0.0013394721200123043,
+       "central": 0.17865850109113862,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Signet Inc",
+     "risk_score": 0.2381,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0031545741324921135,
+      "sub_criticality": 0.6863451655248209,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0031545741324921135,
+       "sub_central": 0.1495290303407129,
+       "sub_pagerank": 0.0023738677786249995,
+       "central": 0.1293601586385059,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Axalta Coating Systems Ltd",
+     "risk_score": 0.2365,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024813895781637717,
+      "sub_criticality": 0.5929180689986174,
+      "central": 0.17341771902424824,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024813895781637717,
+       "sub_central": 0.14513223077186596,
+       "sub_pagerank": 0.001750883606453039,
+       "central": 0.14733102393086875,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Salzgitter AG",
+     "risk_score": 0.2356,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002857142857142857,
+      "sub_criticality": 0.6337124421175804,
+      "central": 0.0812516757807068,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002857142857142857,
+       "sub_central": 0.14705206654553288,
+       "sub_pagerank": 0.0023122281153013947,
+       "central": 0.13778007632886402,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.235,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018726591760299626,
+      "sub_criticality": 0.64377405352628,
+      "central": 0.057480596419810355,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018726591760299626,
+       "sub_central": 0.14752557894555987,
+       "sub_pagerank": 0.001036155807763845,
+       "central": 0.1353167359767227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Siemens AG",
+     "risk_score": 0.22,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001644736842105263,
+      "sub_criticality": 0.4024117682939533,
+      "central": 0.3910184321596503,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001644736842105263,
+       "sub_central": 0.1319347786824054,
+       "sub_pagerank": 0.0017933655600916591,
+       "central": 0.1698804676975211,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Zhejiang Huayou Cobalt Co Ltd",
+     "risk_score": 0.2047,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018975332068311196,
+      "sub_criticality": 0.35578022730090647,
+      "central": 0.33077787246111845,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018975332068311196,
+       "sub_central": 0.1265257992262052,
+       "sub_pagerank": 0.0016773474880816294,
+       "central": 0.16363788193656154,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Electricite de France SA",
+     "risk_score": 0.1982,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015384615384615385,
+      "sub_criticality": 0.3385317979892804,
+      "central": 0.3012671018004121,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015384615384615385,
+       "sub_central": 0.1331604850119971,
+       "sub_pagerank": 0.0016162320487923293,
+       "central": 0.1605797510419716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.1969,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014858841010401188,
+      "sub_criticality": 0.2594425976563049,
+      "central": 0.4463277773230391,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014858841010401188,
+       "sub_central": 0.1294384453162976,
+       "sub_pagerank": 0.0011564871666885166,
+       "central": 0.17561204343806627,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Honeywell International Inc",
+     "risk_score": 0.1954,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.00392156862745098,
+      "sub_criticality": 0.28835465529005305,
+      "central": 0.36730473391879503,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.00392156862745098,
+       "sub_central": 0.1307990840096224,
+       "sub_pagerank": 0.0014940048308916536,
+       "central": 0.16742307361421774,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dana Inc",
+     "risk_score": 0.1828,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001841620626151013,
+      "sub_criticality": 0.2908665972672298,
+      "central": 0.24135218541264725,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001841620626151013,
+       "sub_central": 0.13091729923639145,
+       "sub_pagerank": 0.0007921754531944256,
+       "central": 0.1543709109219078,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Cleveland-Cliffs Inc",
+     "risk_score": 0.1332,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0037735849056603774,
+      "sub_criticality": 0.09745077006401469,
+      "central": 0.1278917178015467,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0037735849056603774,
+       "sub_central": 0.12181490113910329,
+       "sub_pagerank": 0.0009484920932659833,
+       "central": 0.14261327282748398,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Changchun Faway Automobile Components Co Ltd",
+     "risk_score": 0.1279,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Qatar",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0029154518950437317,
+      "sub_criticality": 0.06976038273005598,
+      "central": 0.13184643717079977,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0029154518950437317,
+       "sub_central": 0.12051175582454235,
+       "sub_pagerank": 0.0009394740391573607,
+       "central": 0.14302309097901905,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "SK Inc",
+     "risk_score": 0.7086,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002152852529601722,
+      "sub_criticality": 0.7905414390943194,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.002152852529601722,
+       "sub_central": 0.15443264126024242,
+       "sub_pagerank": 0.0019432622727001696,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "SK Inc"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 54,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 2,
+    "low_risk_suppliers": 51,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7086,
+    "average_risk_score": 0.30880555555555556
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Qatar"
+    ],
+    "summary": {
+     "total_disrupted_chains": 132,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 1,
+     "tier_3_chain_count": 10,
+     "tier_4_chain_count": 121,
+     "unique_disrupted_companies": 2
+    }
+   },
+   "disruption_summary": {
+    "scope": "country",
+    "involved": {
+     "countries": [
+      "Qatar"
+     ],
+     "industries": [],
+     "companies": [
+      "Mannai Corp QSC"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 2 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "decisions": {
+    "SK Inc": {
+     "risk_score_raw": 0.7086,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7086 (HIGH), driven by maximum exposure (1.0) and sub-supplier criticality (0.79).",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "tier_3": 2,
+        "tier_4": 2
+       },
+       "top_disrupted_countries": [
+        "Qatar"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "BASF SE": {
+     "risk_score_raw": 0.4894,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.4894 (MEDIUM), influenced by exposure (0.63) and strong centrality (0.94).",
+      "exposure_details": {
+       "total_disrupted_nodes": 3,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 2
+       },
+       "top_disrupted_countries": [
+        "Qatar"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Glencore PLC": {
+     "risk_score_raw": 0.482,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.482 (MEDIUM), with strong sub-supplier criticality (1.0) and high centrality (0.90).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_4": 2
+       },
+       "top_disrupted_countries": [
+        "Qatar"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "1 REPLACE_SUPPLIER (score 0.60 or above), 2 INCREASE_MONITORING (0.45 to below 0.60), 51 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "54",
+     "replace_supplier_count": "1",
+     "increase_monitoring_count": "2",
+     "maintain_standard_count": "51",
+     "critical_suppliers": [
+      "SK Inc"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   1,
+   10,
+   121
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_f4354cb6fe23_Bayerische_Motoren_Werke_AG_20261017T131248_kg.json",
+  "monitored_company": "Bayerische Motoren Werke AG",
+  "ongoing_disruption": true,
+  "scope": "country",
+  "disrupted_countries": [
+   "Qatar"
+  ],
+  "disrupted_industries": [],
+  "disrupted_companies": [
+   "Mannai Corp QSC"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [
+    "Retail",
+    "Construction",
+    "Technology"
+   ],
+   "companies": []
+  },
+  "requested": {
+   "countries": [
+    "Qatar"
+   ],
+   "industries": [
+    "Retail",
+    "Construction",
+    "Technology"
+   ],
+   "companies": [
+    "Mannai Corp QSC"
+   ],
+   "scope": "country"
+  },
+  "scenario_id": "run_f4354cb6fe23",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 1,
+   "tier_3": 10,
+   "tier_4": 121
+  },
+  "total_chains": 132,
+  "message": "Built and saved 132 disrupted supply chains to output/temp/kg_payloads/run_f4354cb6fe23_Bayerische_Motoren_Werke_AG_20261017T131248_kg.json"
+ },
+ "item_id": "P-081",
+ "run_id": "run_f4354cb6fe23",
+ "item_type": "P",
+ "firm": "Bayerische Motoren Werke AG",
+ "set": "test",
+ "repeat": 1
+}

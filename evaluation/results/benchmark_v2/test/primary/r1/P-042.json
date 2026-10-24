@@ -1,0 +1,1949 @@
+{
+ "scenario_id": "run_e1c3a9ac8dd7",
+ "runtime_seconds": 17.4,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1807,
+   "completion_tokens": 177,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:09:28"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 820,
+   "completion_tokens": 77,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:09:29"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1169,
+   "completion_tokens": 38,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:09:30"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 5533,
+   "completion_tokens": 1670,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:09:44"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 9329,
+  "completion_tokens": 1962,
+  "total_tokens": 11291,
+  "usd": 0.0429,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 836,
+   "parsed": true,
+   "tail": "ages, production cutbacks, and job losses. National Petrochemicals Ltd is named as one of the affected companies.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 924,
+   "parsed": true,
+   "tail": "output/temp/kg_payloads/run_e1c3a9ac8dd7_Tesla_Inc_20261017T130929_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 10375,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 6314,
+   "parsed": true,
+   "tail": " \"China Steel Corp\",\n        \"Vale SA\",\n        \"ArcelorMittal SA\",\n        \"AMAG Austria Metall AG\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports an ongoing credit freeze in Pakistan's chemicals industry, causing severe liquidity shortages and production cutbacks. The disruption began in late May and is leading to defaults, reduced production capacity, and job losses. It affects the chemicals industry specifically in Pakistan, and names National Petrochemicals Ltd as a disrupted company.",
+   "ongoing_disruption": true,
+   "type": "Economic Crisis",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Pakistan"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [
+     "National Petrochemicals Ltd"
+    ]
+   },
+   "summary": "Pakistan's chemicals industry is undergoing a credit freeze, resulting in liquidity shortages, production cutbacks, and job losses. National Petrochemicals Ltd is named as one of the affected companies."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [],
+   "tier_3": [],
+   "tier_4": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Veolia Environnement SA",
+      "country": "France",
+      "industry": "Gas & Water Utilities"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Samsung C&T Corp",
+      "country": "South Korea",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Taiwan Cement Corp",
+      "country": "Taiwan",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hankook Tire & Technology Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kumho Petrochemical Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kumho Petrochemical Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SKC Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "ENEOS Holdings Inc",
+      "country": "Japan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "SK IE Technology Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Baoan Group Co Ltd",
+      "country": "China",
+      "industry": "Electrical Equipment"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK IE Technology Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SKC Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Pan Ocean Co Ltd",
+      "country": "South Korea",
+      "industry": "Transportation & Logistics"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "SK Innovation Co Ltd",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hi-Tech Lubricants Ltd",
+      "country": "Pakistan",
+      "industry": "Chemicals"
+     }
+    ]
+   ],
+   "monitored_company": "Tesla Inc",
+   "disrupted_countries": [
+    "Pakistan"
+   ],
+   "resolution": {
+    "countries": [
+     "Pakistan"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "National Petrochemicals Ltd"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 1
+   },
+   "summary": {
+    "total_disrupted_chains": 18,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 0,
+    "tier_4_count": 18
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:09:31.386370Z",
+   "supplier_risk_scores": {
+    "AMAG Austria Metall AG": 0.6093,
+    "ArcelorMittal SA": 0.678,
+    "China Steel Corp": 0.7503,
+    "Guangdong Delian Group Co Ltd": 0.5554,
+    "Hankook Tire & Technology Co Ltd": 0.4761,
+    "LG Energy Solution Ltd": 0.5201,
+    "Magna International Inc": 0.5551,
+    "Panasonic Holdings Corp": 0.5389,
+    "Samsung SDI Co Ltd": 0.5633,
+    "Vale SA": 0.7061
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.16157013797706277,
+       "sub_pagerank": 0.0027237284588253583,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.7061,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 1.0,
+      "central": 0.555949780446855,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.13365053860278892,
+       "sub_pagerank": 0.002926748151498849,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.678,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7802041702288868,
+      "central": 0.7159928681105592,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1362058267918817,
+       "sub_pagerank": 0.002702766497571813,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.6093,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.7729877613726023,
+      "central": 0.042683520545094465,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15394046546933643,
+       "sub_pagerank": 0.0019077040042086945,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.5633,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.1987565987938325,
+      "central": 0.7321919150567778,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.12805167118189623,
+       "sub_pagerank": 0.002110245752944847,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.5554,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.5251491770665653,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.14561083864187174,
+       "sub_pagerank": 0.0021186752973314277,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.5551,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.29913387734022834,
+      "central": 0.4488561211953119,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.13801467233350848,
+       "sub_pagerank": 0.002174905915921949,
+       "central": 0.17979659858439637,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Panasonic Holdings Corp",
+     "risk_score": 0.5389,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0013568521031207597,
+      "sub_criticality": 0.197619543433925,
+      "central": 0.49031599021491235,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013568521031207597,
+       "sub_central": 0.13460286895573412,
+       "sub_pagerank": 0.001958672137527648,
+       "central": 0.1840140209668195,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.5201,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.1348221333598184,
+      "central": 0.42779134157984344,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.1324923057715825,
+       "sub_pagerank": 0.0020054748060273292,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hankook Tire & Technology Co Ltd",
+     "risk_score": 0.4761,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002564102564102564,
+      "sub_criticality": 0.05733613188919514,
+      "central": 0.13977861877620945,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002564102564102564,
+       "sub_central": 0.1279610578946045,
+       "sub_pagerank": 0.001966132053838635,
+       "central": 0.14835630686544468,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "China Steel Corp",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.16157013797706277,
+       "sub_pagerank": 0.0027237284588253583,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Vale SA",
+     "risk_score": 0.7061,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 1.0,
+      "central": 0.555949780446855,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.13365053860278892,
+       "sub_pagerank": 0.002926748151498849,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.678,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7802041702288868,
+      "central": 0.7159928681105592,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1362058267918817,
+       "sub_pagerank": 0.002702766497571813,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "AMAG Austria Metall AG",
+     "risk_score": 0.6093,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.7729877613726023,
+      "central": 0.042683520545094465,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15394046546933643,
+       "sub_pagerank": 0.0019077040042086945,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "China Steel Corp",
+    "Vale SA",
+    "ArcelorMittal SA",
+    "AMAG Austria Metall AG"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 10,
+    "high_risk_suppliers": 4,
+    "medium_risk_suppliers": 6,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7503,
+    "average_risk_score": 0.59526
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Pakistan"
+    ],
+    "summary": {
+     "total_disrupted_chains": 18,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 18,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Pakistan"
+     ],
+     "industries": [
+      "Chemicals"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 4 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 6 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:09:31.386370Z",
+   "supplier_risk_scores": {
+    "AMAG Austria Metall AG": 0.6093,
+    "ArcelorMittal SA": 0.678,
+    "China Steel Corp": 0.7503,
+    "Guangdong Delian Group Co Ltd": 0.5554,
+    "Hankook Tire & Technology Co Ltd": 0.4761,
+    "LG Energy Solution Ltd": 0.5201,
+    "Magna International Inc": 0.5551,
+    "Panasonic Holdings Corp": 0.5389,
+    "Samsung SDI Co Ltd": 0.5633,
+    "Vale SA": 0.7061
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.16157013797706277,
+       "sub_pagerank": 0.0027237284588253583,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.7061,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 1.0,
+      "central": 0.555949780446855,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.13365053860278892,
+       "sub_pagerank": 0.002926748151498849,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.678,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7802041702288868,
+      "central": 0.7159928681105592,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1362058267918817,
+       "sub_pagerank": 0.002702766497571813,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.6093,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.7729877613726023,
+      "central": 0.042683520545094465,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15394046546933643,
+       "sub_pagerank": 0.0019077040042086945,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.5633,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.1987565987938325,
+      "central": 0.7321919150567778,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.12805167118189623,
+       "sub_pagerank": 0.002110245752944847,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.5554,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.5251491770665653,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.14561083864187174,
+       "sub_pagerank": 0.0021186752973314277,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.5551,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.29913387734022834,
+      "central": 0.4488561211953119,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.13801467233350848,
+       "sub_pagerank": 0.002174905915921949,
+       "central": 0.17979659858439637,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Panasonic Holdings Corp",
+     "risk_score": 0.5389,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0013568521031207597,
+      "sub_criticality": 0.197619543433925,
+      "central": 0.49031599021491235,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013568521031207597,
+       "sub_central": 0.13460286895573412,
+       "sub_pagerank": 0.001958672137527648,
+       "central": 0.1840140209668195,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.5201,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.1348221333598184,
+      "central": 0.42779134157984344,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.1324923057715825,
+       "sub_pagerank": 0.0020054748060273292,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hankook Tire & Technology Co Ltd",
+     "risk_score": 0.4761,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Pakistan",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002564102564102564,
+      "sub_criticality": 0.05733613188919514,
+      "central": 0.13977861877620945,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002564102564102564,
+       "sub_central": 0.1279610578946045,
+       "sub_pagerank": 0.001966132053838635,
+       "central": 0.14835630686544468,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "China Steel Corp",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.16157013797706277,
+       "sub_pagerank": 0.0027237284588253583,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Vale SA",
+     "risk_score": 0.7061,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 1.0,
+      "central": 0.555949780446855,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.13365053860278892,
+       "sub_pagerank": 0.002926748151498849,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.678,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.7802041702288868,
+      "central": 0.7159928681105592,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1362058267918817,
+       "sub_pagerank": 0.002702766497571813,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "AMAG Austria Metall AG",
+     "risk_score": 0.6093,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.7729877613726023,
+      "central": 0.042683520545094465,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15394046546933643,
+       "sub_pagerank": 0.0019077040042086945,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "China Steel Corp",
+    "Vale SA",
+    "ArcelorMittal SA",
+    "AMAG Austria Metall AG"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 10,
+    "high_risk_suppliers": 4,
+    "medium_risk_suppliers": 6,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7503,
+    "average_risk_score": 0.59526
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Pakistan"
+    ],
+    "summary": {
+     "total_disrupted_chains": 18,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 18,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Pakistan"
+     ],
+     "industries": [
+      "Chemicals"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 4 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 6 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Tesla Inc",
+   "decisions": {
+    "China Steel Corp": {
+     "risk_score_raw": 0.7503,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7503 (HIGH), driven mainly by high exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Vale SA": {
+     "risk_score_raw": 0.7061,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7061 (HIGH), driven by high exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "ArcelorMittal SA": {
+     "risk_score_raw": 0.678,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.678 (HIGH), influenced by high exposure (1.0) and significant centrality (0.7159928681105592).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "AMAG Austria Metall AG": {
+     "risk_score_raw": 0.6093,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6093 (HIGH), driven by high exposure (1.0) and significant downstream criticality (0.7729877613726023).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Samsung SDI Co Ltd": {
+     "risk_score_raw": 0.5633,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5633 (MEDIUM); high exposure with downstream disruptions.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Guangdong Delian Group Co Ltd": {
+     "risk_score_raw": 0.5554,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5554 (MEDIUM); significant sub-supplier criticality contributes to the score.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Magna International Inc": {
+     "risk_score_raw": 0.5551,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5551 (MEDIUM); notable centrality affects the risk score.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Panasonic Holdings Corp": {
+     "risk_score_raw": 0.5389,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5389 (MEDIUM); affected by downstream supply chain depth.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "LG Energy Solution Ltd": {
+     "risk_score_raw": 0.5201,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5201 (MEDIUM); driven by exposure and centrality within network.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Hankook Tire & Technology Co Ltd": {
+     "risk_score_raw": 0.4761,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.4761 (MEDIUM); exposure and minor centrality risk factors.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Pakistan"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "4 REPLACE_SUPPLIER (score 0.60 or above), 6 INCREASE_MONITORING (0.45 to below 0.60), 0 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "10",
+     "replace_supplier_count": "4",
+     "increase_monitoring_count": "6",
+     "maintain_standard_count": "0",
+     "critical_suppliers": [
+      "China Steel Corp",
+      "Vale SA",
+      "ArcelorMittal SA",
+      "AMAG Austria Metall AG"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   0,
+   0,
+   18
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_e1c3a9ac8dd7_Tesla_Inc_20261017T130929_kg.json",
+  "monitored_company": "Tesla Inc",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Pakistan"
+  ],
+  "disrupted_industries": [
+   "Chemicals"
+  ],
+  "disrupted_companies": [],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "National Petrochemicals Ltd"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "Pakistan"
+   ],
+   "industries": [
+    "Chemicals"
+   ],
+   "companies": [
+    "National Petrochemicals Ltd"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_e1c3a9ac8dd7",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 18
+  },
+  "total_chains": 18,
+  "message": "Built and saved 18 disrupted supply chains to output/temp/kg_payloads/run_e1c3a9ac8dd7_Tesla_Inc_20261017T130929_kg.json"
+ },
+ "item_id": "P-042",
+ "run_id": "run_e1c3a9ac8dd7",
+ "item_type": "P",
+ "firm": "Tesla Inc",
+ "set": "test",
+ "repeat": 1
+}

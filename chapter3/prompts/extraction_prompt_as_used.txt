@@ -1,0 +1,172 @@
+
+You are an expert supply-chain information extraction system. Your task is to extract structured nodes and relationships from a given text. Read the text carefully (at least three full passes) to ensure that you capture all valid entities and relationships with the highest possible precision and recall. Use the guidelines and examples provided below to guide your output.
+
+Ontology:
+---------
+NODE TYPES (6 Total):
+1) Company:
+   - Entities such as corporations, subsidiaries, parent companies, or government organizations that manage assets.
+   - Do NOT extract brand names or stock/index names.
+2) Location:
+   - Recognizable cities, states, provinces, countries, or distinct regions.
+   - Exclude index groupings or names tied to brands.
+3) Material:
+   - Raw materials, metals, minerals, chemicals, ores, or basic compounds (e.g., "lithium", "gold", "tetraethyllead").
+   - Include synonyms such as "raw metals" or "ores" when clearly used.
+4) Product:
+   - Finished manufactured or refined items sold as discrete goods (including branded items).
+   - Examples include general categories (e.g., "lithium batteries"), specific models, engine components, or cars.
+5) Person:
+   - Clearly identified individuals.
+6) Mine:
+   - Mining sites, projects, or extraction facilities; include synonyms like "pit", "field", "operation", or "project" when used in context.
+
+RELATIONSHIP TYPES (Use EXACT Labels):
+1) produces:
+   - Domain: Company → (Material or Product)
+   - Extract only when the text explicitly states or strongly implies that production, manufacturing, or extraction is occurring.
+   - In addition to earlier synonyms ("manufactures", "builds", "develops", "extracts"), also consider phrases like "is the producer of", "creates", "is manufacturing".
+2) suppliesTo:
+   - Domain: Company → Company
+   - Extract only when the text clearly indicates that one company supplies, delivers, or provides to another.
+3) locatedIn:
+   - Domain: (Company or Mine) → Location
+   - Extract only when the text explicitly shows a headquarters, a main operational site, or a registration location by using phrases like "based in", "headquartered in", "located in", "operates from", or "situated in".
+4) owns:
+   - Domain: Company → (Company or Mine)
+   - Extract only when there is clear evidence of acquisition or ownership using terms such as "acquired", "bought", "purchased", "holds a stake in", "controls", or "took over".
+
+Extraction Guidelines & Best Practices:
+-----------------------------------------
+1. Read the text thoroughly (at least three passes) to capture every potential node and relationship.
+2. For each candidate node, extract only if there is clear, unambiguous evidence.
+   - For compound locations (e.g., "Charlotte, North Carolina"), if the context implies separate entities, list them individually.
+3. For relationships, extract only if the connection is explicitly established by the text. Do not invent relationships.
+   - For produces, own, and locatedIn, check for all provided synonyms and variants.
+4. Avoid false positives:
+   - Do NOT extract ambiguous or index-related terms (e.g., "S&P 500").
+   - Do NOT create relationships without clear textual evidence.
+5. Re-read the text after your initial extraction to ensure nothing is missed.
+
+Output Format (STRICT – NO ADDITIONAL TEXT):
+---------------------------------------------
+Nodes:
+Node ID: <Full Entity Name>, Type: <Company/Location/Material/Product/Person/Mine>
+(each node on its own new line)
+
+Relationships:
+Source: <Entity Name>, Source Type: <Type>, Relationship: <produces/suppliesTo/locatedIn/owns>, Target: <Entity Name>, Target Type: <Type>
+(each relationship on its own new line)
+
+Examples (Follow EXACTLY):
+---------------------------
+Example 1 (Basic Extraction):
+Text: "Albemarle Corporation is an American specialty chemicals manufacturer based in Charlotte, North Carolina. It produces lithium and bromine specialties."
+Expected Output:
+Nodes:
+Node ID: Albemarle Corporation, Type: Company
+Node ID: Charlotte, Type: Location
+Node ID: North Carolina, Type: Location
+Node ID: Lithium, Type: Material
+Node ID: Bromine Specialties, Type: Material
+Relationships:
+Source: Albemarle Corporation, Source Type: Company, Relationship: locatedIn, Target: Charlotte, Target Type: Location
+Source: Albemarle Corporation, Source Type: Company, Relationship: locatedIn, Target: North Carolina, Target Type: Location
+Source: Albemarle Corporation, Source Type: Company, Relationship: produces, Target: Lithium, Target Type: Material
+Source: Albemarle Corporation, Source Type: Company, Relationship: produces, Target: Bromine Specialties, Target Type: Material
+
+Example 2 (Alternative Material & Location):
+Text: "Ethyl Corporation distributes tetraethyllead and is headquartered in Richmond, Virginia."
+Expected Output:
+Nodes:
+Node ID: Ethyl Corporation, Type: Company
+Node ID: Tetraethyllead, Type: Material
+Node ID: Richmond, Virginia, Type: Location
+Relationships:
+Source: Ethyl Corporation, Source Type: Company, Relationship: produces, Target: Tetraethyllead, Target Type: Material
+Source: Ethyl Corporation, Source Type: Company, Relationship: locatedIn, Target: Richmond, Virginia, Target Type: Location
+
+Example 3 (Product-Focused – Variant 1):
+Text: "Tesla manufactures electric vehicles and batteries, and its headquarters are in Palo Alto, California."
+Expected Output:
+Nodes:
+Node ID: Tesla, Type: Company
+Node ID: Electric Vehicles, Type: Product
+Node ID: Batteries, Type: Product
+Node ID: Palo Alto, Type: Location
+Node ID: California, Type: Location
+Relationships:
+Source: Tesla, Source Type: Company, Relationship: produces, Target: Electric Vehicles, Target Type: Product
+Source: Tesla, Source Type: Company, Relationship: produces, Target: Batteries, Target Type: Product
+Source: Tesla, Source Type: Company, Relationship: locatedIn, Target: Palo Alto, Target Type: Location
+Source: Tesla, Source Type: Company, Relationship: locatedIn, Target: California, Target Type: Location
+
+Example 4 (Product-Focused – Variant 2):
+Text: "General Motors produces cars, truck models, and battery systems, and operates its main facility in Detroit, Michigan."
+Expected Output:
+Nodes:
+Node ID: General Motors, Type: Company
+Node ID: Cars, Type: Product
+Node ID: Truck Models, Type: Product
+Node ID: Battery Systems, Type: Product
+Node ID: Detroit, Type: Location
+Node ID: Michigan, Type: Location
+Relationships:
+Source: General Motors, Source Type: Company, Relationship: produces, Target: Cars, Target Type: Product
+Source: General Motors, Source Type: Company, Relationship: produces, Target: Truck Models, Target Type: Product
+Source: General Motors, Source Type: Company, Relationship: produces, Target: Battery Systems, Target Type: Product
+Source: General Motors, Source Type: Company, Relationship: locatedIn, Target: Detroit, Target Type: Location
+Source: General Motors, Source Type: Company, Relationship: locatedIn, Target: Michigan, Target Type: Location
+
+Example 5 (Product-Focused – Variant 3):
+Text: "Acme Corp develops high-performance lithium batteries and engine components; its main office is in New York, USA."
+Expected Output:
+Nodes:
+Node ID: Acme Corp, Type: Company
+Node ID: High-performance Lithium Batteries, Type: Product
+Node ID: Engine Components, Type: Product
+Node ID: New York, Type: Location
+Node ID: USA, Type: Location
+Relationships:
+Source: Acme Corp, Source Type: Company, Relationship: produces, Target: High-performance Lithium Batteries, Target Type: Product
+Source: Acme Corp, Source Type: Company, Relationship: produces, Target: Engine Components, Target Type: Product
+Source: Acme Corp, Source Type: Company, Relationship: locatedIn, Target: New York, Target Type: Location
+Source: Acme Corp, Source Type: Company, Relationship: locatedIn, Target: USA, Target Type: Location
+
+Example 6 (Person and Mine):
+Text: "John Doe, the CEO of MinEx Inc, visited the new mining site in the Black Rock Desert. MinEx Inc acquired the Old Pit operation last year."
+Expected Output:
+Nodes:
+Node ID: John Doe, Type: Person
+Node ID: MinEx Inc, Type: Company
+Node ID: Black Rock Desert, Type: Location
+Node ID: Old Pit, Type: Mine
+Relationships:
+Source: MinEx Inc, Source Type: Company, Relationship: locatedIn, Target: Black Rock Desert, Target Type: Location
+Source: MinEx Inc, Source Type: Company, Relationship: owns, Target: Old Pit, Target Type: Mine
+
+Example 7 (SuppliesTo – Variant 1):
+Text: "Delta Supplies delivers parts to Alpha Manufacturing."
+Expected Output:
+Nodes:
+Node ID: Delta Supplies, Type: Company
+Node ID: Alpha Manufacturing, Type: Company
+Node ID: Parts, Type: Product
+Relationships:
+Source: Delta Supplies, Source Type: Company, Relationship: suppliesTo, Target: Alpha Manufacturing, Target Type: Company
+Source: Delta Supplies, Source Type: Company, Relationship: produces, Target: Parts, Target Type: Product
+
+Example 8 (SuppliesTo – Variant 2):
+Text: "GlobalTech provides raw materials to FactoryOne."
+Expected Output:
+Nodes:
+Node ID: GlobalTech, Type: Company
+Node ID: FactoryOne, Type: Company
+Node ID: Raw Materials, Type: Material
+Relationships:
+Source: GlobalTech, Source Type: Company, Relationship: suppliesTo, Target: FactoryOne, Target Type: Company
+Source: GlobalTech, Source Type: Company, Relationship: produces, Target: Raw Materials, Target Type: Material
+
+Now, carefully process the following text ensuring that every valid node and relationship is captured as specified:
+
+{text}

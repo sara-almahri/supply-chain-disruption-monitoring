@@ -1,0 +1,6790 @@
+{
+ "scenario_id": "run_dbc068f14581",
+ "runtime_seconds": 18.4,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1740,
+   "completion_tokens": 165,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:08:42"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 829,
+   "completion_tokens": 73,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:08:43"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1169,
+   "completion_tokens": 39,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:08:44"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 13567,
+   "completion_tokens": 1185,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:08:59"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 17305,
+  "completion_tokens": 1462,
+  "total_tokens": 18767,
+  "usd": 0.0579,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 842,
+   "parsed": true,
+   "tail": "encies. The disruption is impacting commerce across Poland as businesses struggle with payment processing issues.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 930,
+   "parsed": true,
+   "tail": "ain-disruption-monitoring/output/temp/kg_payloads/run_dbc068f14581_Bayerische_Motoren_Werke_AG_20261017T130844_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 30835,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 4300,
+   "parsed": true,
+   "tail": "_suppliers\": [\n        \"American Axle & Manufacturing Holdings Inc\",\n        \"Gestamp Automocion SA\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports a cyber attack that is currently affecting Poland's national electronic payments network, disrupting commerce. The attack has impacted various sectors involved in electronic transactions, including businesses and consumers, across the country as the system processes essential payments for banks, retailers, and government agencies.",
+   "ongoing_disruption": true,
+   "type": "Cyber Attack",
+   "scope": "country",
+   "involved": {
+    "countries": [
+     "Poland"
+    ],
+    "industries": [
+     "Retail",
+     "Finance"
+    ],
+    "companies": []
+   },
+   "summary": "A cyber attack has disrupted Poland's national electronic payments network, affecting transactions for banks, retailers, and government agencies. The disruption is impacting commerce across Poland as businesses struggle with payment processing issues."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ]
+   ],
+   "tier_3": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "American Axle & Manufacturing Holdings Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Cleveland-Cliffs Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Severfield PLC",
+      "country": "United Kingdom",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "voestalpine AG",
+      "country": "Austria",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "American Axle & Manufacturing Holdings Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Cleveland-Cliffs Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Severfield PLC",
+      "country": "United Kingdom",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "voestalpine AG",
+      "country": "Austria",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Airbus SE",
+      "country": "Netherlands",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ]
+   ],
+   "tier_4": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Reliance Steel & Aluminum Co",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "American Axle & Manufacturing Holdings Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eurogroup Laminations SpA",
+      "country": "Italy",
+      "industry": "Machinery"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Bouygues SA",
+      "country": "Colombia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Changchun Faway Automobile Components Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hunan Valin Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dae Won Kang Up Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "KISWIRE Ltd",
+      "country": "South Korea",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schneider Electric SE",
+      "country": "France",
+      "industry": "Electrical Equipment"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eurocharm Holdings Co Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "voestalpine AG",
+      "country": "Austria",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ternium SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kawasaki Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Luminar Technologies Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hunan Valin Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Huaxiang Electronic Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hunan Valin Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Right WAY Industrial Co Ltd",
+      "country": "Taiwan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TA Chen Stainless Pipe",
+      "country": "Taiwan",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Schneider Electric SE",
+      "country": "France",
+      "industry": "Electrical Equipment"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volvo AB",
+      "country": "Sweden",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "BYD Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "voestalpine AG",
+      "country": "Austria",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tata Steel Ltd",
+      "country": "India",
+      "industry": "Steel"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyoda Gosei Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Garuda Metalindo Tbk PT",
+      "country": "Indonesia",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "TA Chen Stainless Pipe",
+      "country": "Taiwan",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Alkat Sp ZOO",
+      "country": "Poland",
+      "industry": "Gas & Water Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AAPICO Hitech PCL",
+      "country": "Thailand",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Reliance Steel & Aluminum Co",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "American Axle & Manufacturing Holdings Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eurogroup Laminations SpA",
+      "country": "Italy",
+      "industry": "Machinery"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BorgWarner Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Bouygues SA",
+      "country": "Colombia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Changchun Faway Automobile Components Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hunan Valin Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dae Won Kang Up Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "KISWIRE Ltd",
+      "country": "South Korea",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schneider Electric SE",
+      "country": "France",
+      "industry": "Electrical Equipment"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Eurocharm Holdings Co Ltd",
+      "country": "Cayman Islands",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "voestalpine AG",
+      "country": "Austria",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Grupo Industrial Saltillo SAB de CV",
+      "country": "Mexico",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ternium SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Kawasaki Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Luminar Technologies Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hunan Valin Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Huaxiang Electronic Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hunan Valin Steel Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Right WAY Industrial Co Ltd",
+      "country": "Taiwan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TA Chen Stainless Pipe",
+      "country": "Taiwan",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Schneider Electric SE",
+      "country": "France",
+      "industry": "Electrical Equipment"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Rio Tinto PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volvo AB",
+      "country": "Sweden",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "BYD Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Worthington Enterprises Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "voestalpine AG",
+      "country": "Austria",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tata Steel Ltd",
+      "country": "India",
+      "industry": "Steel"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyoda Gosei Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Garuda Metalindo Tbk PT",
+      "country": "Indonesia",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Ford Motor Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Honda Motor Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "TA Chen Stainless Pipe",
+      "country": "Taiwan",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tameh Polska Sp ZOO",
+      "country": "Poland",
+      "industry": "Electric Utilities"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "MMC Norilsk Nickel PJSC",
+      "country": "Russia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Airbus SE",
+      "country": "Netherlands",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "E1 Corp",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Bukaka Teknik Utama Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "E1 Corp",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "PetroVietnam Technical Services Corp",
+      "country": "United Arab Emirates",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "E1 Corp",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Korea National Oil Corp",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "PetroVietnam Technical Services Corp",
+      "country": "United Arab Emirates",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "E1 Corp",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Saudi Arabian Oil Co",
+      "country": "Saudi Arabia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Airbus SE",
+      "country": "Netherlands",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Aneka Tambang Tbk",
+      "country": "Indonesia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Adhi Karya Persero Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Medco Energi Internasional Tbk PT",
+      "country": "Indonesia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Bukaka Teknik Utama Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "PetroVietnam Oil Corp",
+      "country": "Vietnam",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "PetroVietnam Technical Services Corp",
+      "country": "United Arab Emirates",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hankook Tire & Technology Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hyundai Engineering & Construction Co Ltd",
+      "country": "South Korea",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Bukaka Teknik Utama Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Johnson Matthey PLC",
+      "country": "United Kingdom",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "MMC Norilsk Nickel PJSC",
+      "country": "Russia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Airbus SE",
+      "country": "Netherlands",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LANXESS AG",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Bukaka Teknik Utama Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LANXESS AG",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "PetroVietnam Technical Services Corp",
+      "country": "United Arab Emirates",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Chem Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Hyundai Engineering & Construction Co Ltd",
+      "country": "South Korea",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Bukaka Teknik Utama Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Bukaka Teknik Utama Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "PetroVietnam Technical Services Corp",
+      "country": "United Arab Emirates",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "ENEOS Holdings Inc",
+      "country": "Japan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "PetroVietnam Technical Services Corp",
+      "country": "United Arab Emirates",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Hyundai Engineering & Construction Co Ltd",
+      "country": "South Korea",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Bukaka Teknik Utama Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pertamina Persero PT",
+      "country": "Indonesia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Adhi Karya Persero Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pertamina Persero PT",
+      "country": "Indonesia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Bukaka Teknik Utama Tbk PT",
+      "country": "Indonesia",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Repsol SA",
+      "country": "Spain",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "PetroVietnam Technical Services Corp",
+      "country": "United Arab Emirates",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Airbus SE",
+      "country": "Netherlands",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "ENEOS Holdings Inc",
+      "country": "Japan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "PetroVietnam Technical Services Corp",
+      "country": "United Arab Emirates",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Saudi Basic Industries Corp",
+      "country": "Saudi Arabia",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Saudi Arabian Oil Co",
+      "country": "Saudi Arabia",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Airbus SE",
+      "country": "Netherlands",
+      "industry": "Aerospace & Defense"
+     },
+     {
+      "company": "Vinci SA",
+      "country": "Poland",
+      "industry": "Engineering & Construction"
+     }
+    ]
+   ],
+   "monitored_company": "Bayerische Motoren Werke AG",
+   "disrupted_countries": [
+    "Poland"
+   ],
+   "resolution": {
+    "countries": [
+     "Poland"
+    ],
+    "industries": [],
+    "companies": [],
+    "unresolved": {
+     "countries": [],
+     "industries": [
+      "Retail",
+      "Finance"
+     ],
+     "companies": []
+    },
+    "scope": "country",
+    "unresolved_count": 2
+   },
+   "summary": {
+    "total_disrupted_chains": 122,
+    "tier_1_count": 0,
+    "tier_2_count": 2,
+    "tier_3_count": 15,
+    "tier_4_count": 105
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:08:46.432831Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.5253,
+    "American Axle & Manufacturing Holdings Inc": 0.641,
+    "Cleveland-Cliffs Inc": 0.3621,
+    "Dana Inc": 0.5498,
+    "Electricite de France SA": 0.3921,
+    "Gestamp Automocion SA": 0.6025,
+    "Severfield PLC": 0.3368,
+    "voestalpine AG": 0.3625,
+    "Saudi Basic Industries Corp": 0.5816,
+    "AAPICO Hitech PCL": 0.3867,
+    "AMAG Austria Metall AG": 0.3356,
+    "Autoliv Inc": 0.397,
+    "BorgWarner Inc": 0.3251,
+    "Bouygues SA": 0.3074,
+    "Changchun Faway Automobile Components Co Ltd": 0.2978,
+    "Dae Won Kang Up Co Ltd": 0.2689,
+    "Eurocharm Holdings Co Ltd": 0.3342,
+    "Grupo Industrial Saltillo SAB de CV": 0.3044,
+    "JTEKT Corp": 0.423,
+    "Kawasaki Heavy Industries Ltd": 0.3742,
+    "Luminar Technologies Inc": 0.339,
+    "Magna International Inc": 0.3639,
+    "Ningbo Huaxiang Electronic Co Ltd": 0.3002,
+    "Pressure Technologies PLC": 0.4092,
+    "Right WAY Industrial Co Ltd": 0.3087,
+    "Rio Tinto PLC": 0.3816,
+    "SK Inc": 0.4881,
+    "Samsung Electronics Co Ltd": 0.4322,
+    "Schaeffler AG": 0.3818,
+    "Tata Steel Ltd": 0.3221,
+    "Toyoda Gosei Co Ltd": 0.4126,
+    "Toyota Industries Corp": 0.3917,
+    "Wooshin Systems Co Ltd": 0.3438,
+    "Xperi Inc": 0.3993,
+    "thyssenkrupp AG": 0.4296,
+    "BASF SE": 0.2994,
+    "E1 Corp": 0.1441,
+    "Glencore PLC": 0.3258,
+    "Hankook Tire & Technology Co Ltd": 0.1809,
+    "Johnson Matthey PLC": 0.2372,
+    "LANXESS AG": 0.1225,
+    "LG Chem Ltd": 0.2587
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.641,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0038314176245210726,
+      "sub_criticality": 0.8703795497029968,
+      "central": 0.16015117578705332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0038314176245210726,
+       "sub_central": 0.13890793744013324,
+       "sub_pagerank": 0.002823319109599075,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.6025,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.6030613972658065,
+      "central": 0.30954238454598093,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.13775361024348942,
+       "sub_pagerank": 0.001547164396578701,
+       "central": 0.16036514791995596,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Saudi Basic Industries Corp",
+     "risk_score": 0.5816,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.8888888888888886,
+      "dependency": 0.003374578177727784,
+      "sub_criticality": 0.6461071243518667,
+      "central": 0.4039031633436915,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.5499999999999998,
+       "dependency": 0.003374578177727784,
+       "sub_central": 0.14051245557249054,
+       "sub_pagerank": 0.0011937566760310732,
+       "central": 0.17029005530448002,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dana Inc",
+     "risk_score": 0.5498,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.003683241252302026,
+      "sub_criticality": 0.3681325913379666,
+      "central": 0.2525523442846634,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.003683241252302026,
+       "sub_central": 0.12269677922316453,
+       "sub_pagerank": 0.0012591236754255482,
+       "central": 0.1543709109219078,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.5253,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 2,
+      "3": 0,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 2,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.8518518518518517,
+      "dependency": 0.0028208744710860366,
+      "sub_criticality": 0.4668465628320181,
+      "central": 0.8304373581200464,
+      "depth": 0.5,
+      "raw": {
+       "exposure": 1.5,
+       "dependency": 0.0028208744710860366,
+       "sub_central": 0.12844905670909998,
+       "sub_pagerank": 0.0018964668805149445,
+       "central": 0.2151531057522004,
+       "depth": 2
+      }
+     }
+    },
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.4881,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 16,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       10
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.5185185185185184,
+      "dependency": 0.0032292787944025836,
+      "sub_criticality": 0.5288258169487574,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.0032292787944025836,
+       "sub_central": 0.13299577484686764,
+       "sub_pagerank": 0.0013684128398070959,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung Electronics Co Ltd",
+     "risk_score": 0.4322,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.5185185185185184,
+      "dependency": 0.0035885167464114833,
+      "sub_criticality": 0.4990571685018417,
+      "central": 0.49996319172333065,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.0035885167464114833,
+       "sub_central": 0.13108787126902227,
+       "sub_pagerank": 0.0014900299508760892,
+       "central": 0.18039369049242746,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.4296,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0037593984962406013,
+      "sub_criticality": 0.7352182863110767,
+      "central": 0.9084375642051284,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0037593984962406013,
+       "sub_central": 0.14622368243692516,
+       "sub_pagerank": 0.0023025487972988755,
+       "central": 0.2233572010472152,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.423,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0029806259314456036,
+      "sub_criticality": 0.6877515231293032,
+      "central": 0.9393122577503475,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0029806259314456036,
+       "sub_central": 0.14318148831565905,
+       "sub_pagerank": 0.001778517493015368,
+       "central": 0.22660461462164935,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.4126,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.003110419906687403,
+      "sub_criticality": 0.8331011367923103,
+      "central": 0.5448218264314415,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003110419906687403,
+       "sub_central": 0.1524970959234618,
+       "sub_pagerank": 0.0015107822106701053,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Pressure Technologies PLC",
+     "risk_score": 0.4092,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.009523809523809525,
+      "sub_criticality": 1.0,
+      "central": 0.16109636338012517,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.009523809523809525,
+       "sub_central": 0.13892782048781843,
+       "sub_pagerank": 0.003121037034035022,
+       "central": 0.1447515314317889,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Xperi Inc",
+     "risk_score": 0.3993,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002663115845539281,
+      "sub_criticality": 1.0,
+      "central": 0.07934909677410354,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002663115845539281,
+       "sub_central": 0.16319381730199883,
+       "sub_pagerank": 0.0013221134509135695,
+       "central": 0.1361533186961555,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.397,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0044943820224719105,
+      "sub_criticality": 0.8930193365970663,
+      "central": 0.2654279087952877,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0044943820224719105,
+       "sub_central": 0.14112254787079098,
+       "sub_pagerank": 0.002875319163204277,
+       "central": 0.15572516834665165,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Electricite de France SA",
+     "risk_score": 0.3921,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.48148148148148145,
+      "dependency": 0.003076923076923077,
+      "sub_criticality": 0.5832165017623006,
+      "central": 0.3115827177139653,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.003076923076923077,
+       "sub_central": 0.13648173029231786,
+       "sub_pagerank": 0.002086722659358414,
+       "central": 0.1605797510419716,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3917,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0030120481927710845,
+      "sub_criticality": 0.6411578848481941,
+      "central": 0.7200749428586801,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0030120481927710845,
+       "sub_central": 0.14019525367555158,
+       "sub_pagerank": 0.0014787087429451427,
+       "central": 0.20354513934753968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.3867,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002642007926023778,
+      "sub_criticality": 0.865251248652609,
+      "central": 0.22215153227748105,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002642007926023778,
+       "sub_central": 0.15455762996335196,
+       "sub_pagerank": 0.001301390331612275,
+       "central": 0.15117334041189276,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.3818,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002758620689655172,
+      "sub_criticality": 0.6149130102766807,
+      "central": 0.6742057170880298,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002758620689655172,
+       "sub_central": 0.13851319242294266,
+       "sub_pagerank": 0.0015313662261378577,
+       "central": 0.19872059441081885,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.3816,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.6297397260054017,
+      "central": 0.639438396347436,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.13522141514930913,
+       "sub_pagerank": 0.0022706070284134053,
+       "central": 0.19506375263020811,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kawasaki Heavy Industries Ltd",
+     "risk_score": 0.3742,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002840909090909091,
+      "sub_criticality": 0.8396347194275735,
+      "central": 0.14818538297011027,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002840909090909091,
+       "sub_central": 0.1529158400162007,
+       "sub_pagerank": 0.0014857253982973307,
+       "central": 0.1433935489474825,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.3639,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0034071550255536627,
+      "sub_criticality": 0.5880499880013982,
+      "central": 0.5473047185237242,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0034071550255536627,
+       "sub_central": 0.1367915134423821,
+       "sub_pagerank": 0.0018074249928118832,
+       "central": 0.18537309268603536,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "voestalpine AG",
+     "risk_score": 0.3625,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.48148148148148145,
+      "dependency": 0.006191950464396285,
+      "sub_criticality": 0.514860541133564,
+      "central": 0.14497360893531613,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.006191950464396285,
+       "sub_central": 0.1321007258243728,
+       "sub_pagerank": 0.0016931341592934057,
+       "central": 0.1430557331701913,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Cleveland-Cliffs Inc",
+     "risk_score": 0.3621,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.48148148148148145,
+      "dependency": 0.007547169811320755,
+      "sub_criticality": 0.5131346354658585,
+      "central": 0.14076692962765164,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.007547169811320755,
+       "sub_central": 0.13199011073869596,
+       "sub_pagerank": 0.0015685549266374306,
+       "central": 0.14261327282748398,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.3438,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002967359050445104,
+      "sub_criticality": 0.6382192456732144,
+      "central": 0.2465611890881784,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002967359050445104,
+       "sub_central": 0.14000691324061587,
+       "sub_pagerank": 0.0018709460056090493,
+       "central": 0.15374075863608472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.339,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.003745318352059925,
+      "sub_criticality": 0.7007880013661467,
+      "central": 0.07139531001560168,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003745318352059925,
+       "sub_central": 0.14401700973729598,
+       "sub_pagerank": 0.0014325987072068367,
+       "central": 0.1353167359767227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Severfield PLC",
+     "risk_score": 0.3368,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.48148148148148145,
+      "dependency": 0.008849557522123894,
+      "sub_criticality": 0.45538113825317184,
+      "central": 0.0,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.008849557522123894,
+       "sub_central": 0.12828862915609546,
+       "sub_pagerank": 0.001474186026949241,
+       "central": 0.127807346497082,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.3356,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.00338409475465313,
+      "sub_criticality": 0.6697857499239717,
+      "central": 0.10053750860091777,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.00338409475465313,
+       "sub_central": 0.14203004326304491,
+       "sub_pagerank": 0.0013120057165193599,
+       "central": 0.138381924984549,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eurocharm Holdings Co Ltd",
+     "risk_score": 0.3342,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0038535645472061657,
+      "sub_criticality": 0.6652912733217047,
+      "central": 0.09468313202768229,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0038535645472061657,
+       "sub_central": 0.14174198759248605,
+       "sub_pagerank": 0.0013460399397709777,
+       "central": 0.13776615913327245,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Glencore PLC",
+     "risk_score": 0.3258,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018450184501845018,
+      "sub_criticality": 0.6742422650513403,
+      "central": 0.905199396552636,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018450184501845018,
+       "sub_central": 0.10741511013246856,
+       "sub_pagerank": 0.0023728224082128755,
+       "central": 0.22301660917783855,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.3251,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0029717682020802376,
+      "sub_criticality": 0.4406884167925005,
+      "central": 0.4545018163669362,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0029717682020802376,
+       "sub_central": 0.12734695738711715,
+       "sub_pagerank": 0.0012256691521683337,
+       "central": 0.17561204343806627,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Tata Steel Ltd",
+     "risk_score": 0.3221,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.016260162601626018,
+      "sub_criticality": 0.5876099131573167,
+      "central": 0.09789728280106103,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.016260162601626018,
+       "sub_central": 0.13676330858884164,
+       "sub_pagerank": 0.0014567767673632189,
+       "central": 0.13810422489695237,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Right WAY Industrial Co Ltd",
+     "risk_score": 0.3087,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.005479452054794521,
+      "sub_criticality": 0.467880681261804,
+      "central": 0.2304249939428314,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.005479452054794521,
+       "sub_central": 0.12908973784163513,
+       "sub_pagerank": 0.0016788046800308748,
+       "central": 0.15204354667581144,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Bouygues SA",
+     "risk_score": 0.3074,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.011764705882352941,
+      "sub_criticality": 0.5611510913346255,
+      "central": 0.015244361450123218,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.011764705882352941,
+       "sub_central": 0.1350675352348345,
+       "sub_pagerank": 0.0017363690143030902,
+       "central": 0.12941075500490107,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Industrial Saltillo SAB de CV",
+     "risk_score": 0.3044,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.006097560975609756,
+      "sub_criticality": 0.498663998582432,
+      "central": 0.12443516902047104,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.006097560975609756,
+       "sub_central": 0.1310626726007898,
+       "sub_pagerank": 0.0015736015452180174,
+       "central": 0.14089549120764408,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Huaxiang Electronic Co Ltd",
+     "risk_score": 0.3002,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.009523809523809525,
+      "sub_criticality": 0.4586600616705445,
+      "central": 0.15309000570583614,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.009523809523809525,
+       "sub_central": 0.12849877876133003,
+       "sub_pagerank": 0.0016457140823260233,
+       "central": 0.14390941928077494,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BASF SE",
+     "risk_score": 0.2994,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014005602240896359,
+      "sub_criticality": 0.5240576091588935,
+      "central": 0.9422241519555759,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014005602240896359,
+       "sub_central": 0.13269017546037168,
+       "sub_pagerank": 0.0017935243078689297,
+       "central": 0.22691088890921515,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Changchun Faway Automobile Components Co Ltd",
+     "risk_score": 0.2978,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0058309037900874635,
+      "sub_criticality": 0.45589422004941615,
+      "central": 0.14466326421759318,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0058309037900874635,
+       "sub_central": 0.12832151310097886,
+       "sub_pagerank": 0.0016328884324087237,
+       "central": 0.14302309097901905,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dae Won Kang Up Co Ltd",
+     "risk_score": 0.2689,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.005012531328320802,
+      "sub_criticality": 0.36190881657954577,
+      "central": 0.045233853883824775,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.005012531328320802,
+       "sub_central": 0.1222978910388229,
+       "sub_pagerank": 0.001413410682075203,
+       "central": 0.13256506274489394,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Chem Ltd",
+     "risk_score": 0.2587,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012315270935960591,
+      "sub_criticality": 0.476412210521825,
+      "central": 0.6315303378827816,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012315270935960591,
+       "sub_central": 0.12963653240735795,
+       "sub_pagerank": 0.0013296295176067274,
+       "central": 0.1942319796324316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Johnson Matthey PLC",
+     "risk_score": 0.2372,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0045045045045045045,
+      "sub_criticality": 0.4948487999000937,
+      "central": 0.3708584705668742,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0045045045045045045,
+       "sub_central": 0.11766605330196082,
+       "sub_pagerank": 0.001960783644423483,
+       "central": 0.16681440027557176,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hankook Tire & Technology Co Ltd",
+     "risk_score": 0.1809,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002564102564102564,
+      "sub_criticality": 0.30019583728053256,
+      "central": 0.2020249571099595,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002564102564102564,
+       "sub_central": 0.11834264213949694,
+       "sub_pagerank": 0.0011526832276848352,
+       "central": 0.14905641856098747,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "E1 Corp",
+     "risk_score": 0.1441,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017452006980802793,
+      "sub_criticality": 0.12647576607021374,
+      "central": 0.18371223299264783,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017452006980802793,
+       "sub_central": 0.10720874245988081,
+       "sub_pagerank": 0.0008241932585830983,
+       "central": 0.14713027834533393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LANXESS AG",
+     "risk_score": 0.1225,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024390243902439024,
+      "sub_criticality": 0.046478255086356016,
+      "central": 0.12576959753196026,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024390243902439024,
+       "sub_central": 0.0991027793347361,
+       "sub_pagerank": 0.0009309465494720618,
+       "central": 0.14103584697363655,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.641,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0038314176245210726,
+      "sub_criticality": 0.8703795497029968,
+      "central": 0.16015117578705332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0038314176245210726,
+       "sub_central": 0.13890793744013324,
+       "sub_pagerank": 0.002823319109599075,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     }
+    },
+    {
+     "company": "Gestamp Automocion SA",
+     "risk_score": 0.6025,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.6030613972658065,
+      "central": 0.30954238454598093,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.13775361024348942,
+       "sub_pagerank": 0.001547164396578701,
+       "central": 0.16036514791995596,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "American Axle & Manufacturing Holdings Inc",
+    "Gestamp Automocion SA"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 42,
+    "high_risk_suppliers": 2,
+    "medium_risk_suppliers": 4,
+    "low_risk_suppliers": 36,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.641,
+    "average_risk_score": 0.36619999999999997
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Poland"
+    ],
+    "summary": {
+     "total_disrupted_chains": 122,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 2,
+     "tier_3_chain_count": 15,
+     "tier_4_chain_count": 105,
+     "unique_disrupted_companies": 3
+    }
+   },
+   "disruption_summary": {
+    "scope": "country",
+    "involved": {
+     "countries": [
+      "Poland"
+     ],
+     "industries": [],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 2 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 4 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:08:46.432831Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.5253,
+    "American Axle & Manufacturing Holdings Inc": 0.641,
+    "Cleveland-Cliffs Inc": 0.3621,
+    "Dana Inc": 0.5498,
+    "Electricite de France SA": 0.3921,
+    "Gestamp Automocion SA": 0.6025,
+    "Severfield PLC": 0.3368,
+    "voestalpine AG": 0.3625,
+    "Saudi Basic Industries Corp": 0.5816,
+    "AAPICO Hitech PCL": 0.3867,
+    "AMAG Austria Metall AG": 0.3356,
+    "Autoliv Inc": 0.397,
+    "BorgWarner Inc": 0.3251,
+    "Bouygues SA": 0.3074,
+    "Changchun Faway Automobile Components Co Ltd": 0.2978,
+    "Dae Won Kang Up Co Ltd": 0.2689,
+    "Eurocharm Holdings Co Ltd": 0.3342,
+    "Grupo Industrial Saltillo SAB de CV": 0.3044,
+    "JTEKT Corp": 0.423,
+    "Kawasaki Heavy Industries Ltd": 0.3742,
+    "Luminar Technologies Inc": 0.339,
+    "Magna International Inc": 0.3639,
+    "Ningbo Huaxiang Electronic Co Ltd": 0.3002,
+    "Pressure Technologies PLC": 0.4092,
+    "Right WAY Industrial Co Ltd": 0.3087,
+    "Rio Tinto PLC": 0.3816,
+    "SK Inc": 0.4881,
+    "Samsung Electronics Co Ltd": 0.4322,
+    "Schaeffler AG": 0.3818,
+    "Tata Steel Ltd": 0.3221,
+    "Toyoda Gosei Co Ltd": 0.4126,
+    "Toyota Industries Corp": 0.3917,
+    "Wooshin Systems Co Ltd": 0.3438,
+    "Xperi Inc": 0.3993,
+    "thyssenkrupp AG": 0.4296,
+    "BASF SE": 0.2994,
+    "E1 Corp": 0.1441,
+    "Glencore PLC": 0.3258,
+    "Hankook Tire & Technology Co Ltd": 0.1809,
+    "Johnson Matthey PLC": 0.2372,
+    "LANXESS AG": 0.1225,
+    "LG Chem Ltd": 0.2587
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.641,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0038314176245210726,
+      "sub_criticality": 0.8703795497029968,
+      "central": 0.16015117578705332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0038314176245210726,
+       "sub_central": 0.13890793744013324,
+       "sub_pagerank": 0.002823319109599075,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.6025,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.6030613972658065,
+      "central": 0.30954238454598093,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.13775361024348942,
+       "sub_pagerank": 0.001547164396578701,
+       "central": 0.16036514791995596,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Saudi Basic Industries Corp",
+     "risk_score": 0.5816,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.8888888888888886,
+      "dependency": 0.003374578177727784,
+      "sub_criticality": 0.6461071243518667,
+      "central": 0.4039031633436915,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.5499999999999998,
+       "dependency": 0.003374578177727784,
+       "sub_central": 0.14051245557249054,
+       "sub_pagerank": 0.0011937566760310732,
+       "central": 0.17029005530448002,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dana Inc",
+     "risk_score": 0.5498,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.003683241252302026,
+      "sub_criticality": 0.3681325913379666,
+      "central": 0.2525523442846634,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.003683241252302026,
+       "sub_central": 0.12269677922316453,
+       "sub_pagerank": 0.0012591236754255482,
+       "central": 0.1543709109219078,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.5253,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 2,
+      "3": 0,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 2,
+     "downstream_supplier_count": 3,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.8518518518518517,
+      "dependency": 0.0028208744710860366,
+      "sub_criticality": 0.4668465628320181,
+      "central": 0.8304373581200464,
+      "depth": 0.5,
+      "raw": {
+       "exposure": 1.5,
+       "dependency": 0.0028208744710860366,
+       "sub_central": 0.12844905670909998,
+       "sub_pagerank": 0.0018964668805149445,
+       "central": 0.2151531057522004,
+       "depth": 2
+      }
+     }
+    },
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.4881,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 16,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       10
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.5185185185185184,
+      "dependency": 0.0032292787944025836,
+      "sub_criticality": 0.5288258169487574,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.0032292787944025836,
+       "sub_central": 0.13299577484686764,
+       "sub_pagerank": 0.0013684128398070959,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung Electronics Co Ltd",
+     "risk_score": 0.4322,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.5185185185185184,
+      "dependency": 0.0035885167464114833,
+      "sub_criticality": 0.4990571685018417,
+      "central": 0.49996319172333065,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.0035885167464114833,
+       "sub_central": 0.13108787126902227,
+       "sub_pagerank": 0.0014900299508760892,
+       "central": 0.18039369049242746,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.4296,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0037593984962406013,
+      "sub_criticality": 0.7352182863110767,
+      "central": 0.9084375642051284,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0037593984962406013,
+       "sub_central": 0.14622368243692516,
+       "sub_pagerank": 0.0023025487972988755,
+       "central": 0.2233572010472152,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.423,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0029806259314456036,
+      "sub_criticality": 0.6877515231293032,
+      "central": 0.9393122577503475,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0029806259314456036,
+       "sub_central": 0.14318148831565905,
+       "sub_pagerank": 0.001778517493015368,
+       "central": 0.22660461462164935,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.4126,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.003110419906687403,
+      "sub_criticality": 0.8331011367923103,
+      "central": 0.5448218264314415,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003110419906687403,
+       "sub_central": 0.1524970959234618,
+       "sub_pagerank": 0.0015107822106701053,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Pressure Technologies PLC",
+     "risk_score": 0.4092,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.009523809523809525,
+      "sub_criticality": 1.0,
+      "central": 0.16109636338012517,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.009523809523809525,
+       "sub_central": 0.13892782048781843,
+       "sub_pagerank": 0.003121037034035022,
+       "central": 0.1447515314317889,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Xperi Inc",
+     "risk_score": 0.3993,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002663115845539281,
+      "sub_criticality": 1.0,
+      "central": 0.07934909677410354,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002663115845539281,
+       "sub_central": 0.16319381730199883,
+       "sub_pagerank": 0.0013221134509135695,
+       "central": 0.1361533186961555,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.397,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0044943820224719105,
+      "sub_criticality": 0.8930193365970663,
+      "central": 0.2654279087952877,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0044943820224719105,
+       "sub_central": 0.14112254787079098,
+       "sub_pagerank": 0.002875319163204277,
+       "central": 0.15572516834665165,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Electricite de France SA",
+     "risk_score": 0.3921,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.48148148148148145,
+      "dependency": 0.003076923076923077,
+      "sub_criticality": 0.5832165017623006,
+      "central": 0.3115827177139653,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.003076923076923077,
+       "sub_central": 0.13648173029231786,
+       "sub_pagerank": 0.002086722659358414,
+       "central": 0.1605797510419716,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3917,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0030120481927710845,
+      "sub_criticality": 0.6411578848481941,
+      "central": 0.7200749428586801,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0030120481927710845,
+       "sub_central": 0.14019525367555158,
+       "sub_pagerank": 0.0014787087429451427,
+       "central": 0.20354513934753968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.3867,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002642007926023778,
+      "sub_criticality": 0.865251248652609,
+      "central": 0.22215153227748105,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002642007926023778,
+       "sub_central": 0.15455762996335196,
+       "sub_pagerank": 0.001301390331612275,
+       "central": 0.15117334041189276,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.3818,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002758620689655172,
+      "sub_criticality": 0.6149130102766807,
+      "central": 0.6742057170880298,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002758620689655172,
+       "sub_central": 0.13851319242294266,
+       "sub_pagerank": 0.0015313662261378577,
+       "central": 0.19872059441081885,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.3816,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.6297397260054017,
+      "central": 0.639438396347436,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.13522141514930913,
+       "sub_pagerank": 0.0022706070284134053,
+       "central": 0.19506375263020811,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kawasaki Heavy Industries Ltd",
+     "risk_score": 0.3742,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002840909090909091,
+      "sub_criticality": 0.8396347194275735,
+      "central": 0.14818538297011027,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002840909090909091,
+       "sub_central": 0.1529158400162007,
+       "sub_pagerank": 0.0014857253982973307,
+       "central": 0.1433935489474825,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.3639,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0034071550255536627,
+      "sub_criticality": 0.5880499880013982,
+      "central": 0.5473047185237242,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0034071550255536627,
+       "sub_central": 0.1367915134423821,
+       "sub_pagerank": 0.0018074249928118832,
+       "central": 0.18537309268603536,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "voestalpine AG",
+     "risk_score": 0.3625,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.48148148148148145,
+      "dependency": 0.006191950464396285,
+      "sub_criticality": 0.514860541133564,
+      "central": 0.14497360893531613,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.006191950464396285,
+       "sub_central": 0.1321007258243728,
+       "sub_pagerank": 0.0016931341592934057,
+       "central": 0.1430557331701913,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Cleveland-Cliffs Inc",
+     "risk_score": 0.3621,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.48148148148148145,
+      "dependency": 0.007547169811320755,
+      "sub_criticality": 0.5131346354658585,
+      "central": 0.14076692962765164,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.007547169811320755,
+       "sub_central": 0.13199011073869596,
+       "sub_pagerank": 0.0015685549266374306,
+       "central": 0.14261327282748398,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.3438,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.002967359050445104,
+      "sub_criticality": 0.6382192456732144,
+      "central": 0.2465611890881784,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.002967359050445104,
+       "sub_central": 0.14000691324061587,
+       "sub_pagerank": 0.0018709460056090493,
+       "central": 0.15374075863608472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.339,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.003745318352059925,
+      "sub_criticality": 0.7007880013661467,
+      "central": 0.07139531001560168,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003745318352059925,
+       "sub_central": 0.14401700973729598,
+       "sub_pagerank": 0.0014325987072068367,
+       "central": 0.1353167359767227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Severfield PLC",
+     "risk_score": 0.3368,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 0
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 3,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.48148148148148145,
+      "dependency": 0.008849557522123894,
+      "sub_criticality": 0.45538113825317184,
+      "central": 0.0,
+      "depth": 0.75,
+      "raw": {
+       "exposure": 1.0,
+       "dependency": 0.008849557522123894,
+       "sub_central": 0.12828862915609546,
+       "sub_pagerank": 0.001474186026949241,
+       "central": 0.127807346497082,
+       "depth": 3
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.3356,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.00338409475465313,
+      "sub_criticality": 0.6697857499239717,
+      "central": 0.10053750860091777,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.00338409475465313,
+       "sub_central": 0.14203004326304491,
+       "sub_pagerank": 0.0013120057165193599,
+       "central": 0.138381924984549,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eurocharm Holdings Co Ltd",
+     "risk_score": 0.3342,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0038535645472061657,
+      "sub_criticality": 0.6652912733217047,
+      "central": 0.09468313202768229,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0038535645472061657,
+       "sub_central": 0.14174198759248605,
+       "sub_pagerank": 0.0013460399397709777,
+       "central": 0.13776615913327245,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Glencore PLC",
+     "risk_score": 0.3258,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0018450184501845018,
+      "sub_criticality": 0.6742422650513403,
+      "central": 0.905199396552636,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018450184501845018,
+       "sub_central": 0.10741511013246856,
+       "sub_pagerank": 0.0023728224082128755,
+       "central": 0.22301660917783855,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.3251,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0029717682020802376,
+      "sub_criticality": 0.4406884167925005,
+      "central": 0.4545018163669362,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0029717682020802376,
+       "sub_central": 0.12734695738711715,
+       "sub_pagerank": 0.0012256691521683337,
+       "central": 0.17561204343806627,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Tata Steel Ltd",
+     "risk_score": 0.3221,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.016260162601626018,
+      "sub_criticality": 0.5876099131573167,
+      "central": 0.09789728280106103,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.016260162601626018,
+       "sub_central": 0.13676330858884164,
+       "sub_pagerank": 0.0014567767673632189,
+       "central": 0.13810422489695237,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Right WAY Industrial Co Ltd",
+     "risk_score": 0.3087,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.005479452054794521,
+      "sub_criticality": 0.467880681261804,
+      "central": 0.2304249939428314,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.005479452054794521,
+       "sub_central": 0.12908973784163513,
+       "sub_pagerank": 0.0016788046800308748,
+       "central": 0.15204354667581144,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Bouygues SA",
+     "risk_score": 0.3074,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.011764705882352941,
+      "sub_criticality": 0.5611510913346255,
+      "central": 0.015244361450123218,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.011764705882352941,
+       "sub_central": 0.1350675352348345,
+       "sub_pagerank": 0.0017363690143030902,
+       "central": 0.12941075500490107,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Industrial Saltillo SAB de CV",
+     "risk_score": 0.3044,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.006097560975609756,
+      "sub_criticality": 0.498663998582432,
+      "central": 0.12443516902047104,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.006097560975609756,
+       "sub_central": 0.1310626726007898,
+       "sub_pagerank": 0.0015736015452180174,
+       "central": 0.14089549120764408,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Huaxiang Electronic Co Ltd",
+     "risk_score": 0.3002,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.009523809523809525,
+      "sub_criticality": 0.4586600616705445,
+      "central": 0.15309000570583614,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.009523809523809525,
+       "sub_central": 0.12849877876133003,
+       "sub_pagerank": 0.0016457140823260233,
+       "central": 0.14390941928077494,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BASF SE",
+     "risk_score": 0.2994,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014005602240896359,
+      "sub_criticality": 0.5240576091588935,
+      "central": 0.9422241519555759,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014005602240896359,
+       "sub_central": 0.13269017546037168,
+       "sub_pagerank": 0.0017935243078689297,
+       "central": 0.22691088890921515,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Changchun Faway Automobile Components Co Ltd",
+     "risk_score": 0.2978,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.0058309037900874635,
+      "sub_criticality": 0.45589422004941615,
+      "central": 0.14466326421759318,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0058309037900874635,
+       "sub_central": 0.12832151310097886,
+       "sub_pagerank": 0.0016328884324087237,
+       "central": 0.14302309097901905,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dae Won Kang Up Co Ltd",
+     "risk_score": 0.2689,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25925925925925924,
+      "dependency": 0.005012531328320802,
+      "sub_criticality": 0.36190881657954577,
+      "central": 0.045233853883824775,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.005012531328320802,
+       "sub_central": 0.1222978910388229,
+       "sub_pagerank": 0.001413410682075203,
+       "central": 0.13256506274489394,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Chem Ltd",
+     "risk_score": 0.2587,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012315270935960591,
+      "sub_criticality": 0.476412210521825,
+      "central": 0.6315303378827816,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012315270935960591,
+       "sub_central": 0.12963653240735795,
+       "sub_pagerank": 0.0013296295176067274,
+       "central": 0.1942319796324316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Johnson Matthey PLC",
+     "risk_score": 0.2372,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0045045045045045045,
+      "sub_criticality": 0.4948487999000937,
+      "central": 0.3708584705668742,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0045045045045045045,
+       "sub_central": 0.11766605330196082,
+       "sub_pagerank": 0.001960783644423483,
+       "central": 0.16681440027557176,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hankook Tire & Technology Co Ltd",
+     "risk_score": 0.1809,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002564102564102564,
+      "sub_criticality": 0.30019583728053256,
+      "central": 0.2020249571099595,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002564102564102564,
+       "sub_central": 0.11834264213949694,
+       "sub_pagerank": 0.0011526832276848352,
+       "central": 0.14905641856098747,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "E1 Corp",
+     "risk_score": 0.1441,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0017452006980802793,
+      "sub_criticality": 0.12647576607021374,
+      "central": 0.18371223299264783,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0017452006980802793,
+       "sub_central": 0.10720874245988081,
+       "sub_pagerank": 0.0008241932585830983,
+       "central": 0.14713027834533393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LANXESS AG",
+     "risk_score": 0.1225,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Poland",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0024390243902439024,
+      "sub_criticality": 0.046478255086356016,
+      "central": 0.12576959753196026,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0024390243902439024,
+       "sub_central": 0.0991027793347361,
+       "sub_pagerank": 0.0009309465494720618,
+       "central": 0.14103584697363655,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.641,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0038314176245210726,
+      "sub_criticality": 0.8703795497029968,
+      "central": 0.16015117578705332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.0038314176245210726,
+       "sub_central": 0.13890793744013324,
+       "sub_pagerank": 0.002823319109599075,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     }
+    },
+    {
+     "company": "Gestamp Automocion SA",
+     "risk_score": 0.6025,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.003780718336483932,
+      "sub_criticality": 0.6030613972658065,
+      "central": 0.30954238454598093,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.7,
+       "dependency": 0.003780718336483932,
+       "sub_central": 0.13775361024348942,
+       "sub_pagerank": 0.001547164396578701,
+       "central": 0.16036514791995596,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "American Axle & Manufacturing Holdings Inc",
+    "Gestamp Automocion SA"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 42,
+    "high_risk_suppliers": 2,
+    "medium_risk_suppliers": 4,
+    "low_risk_suppliers": 36,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.641,
+    "average_risk_score": 0.36619999999999997
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Poland"
+    ],
+    "summary": {
+     "total_disrupted_chains": 122,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 2,
+     "tier_3_chain_count": 15,
+     "tier_4_chain_count": 105,
+     "unique_disrupted_companies": 3
+    }
+   },
+   "disruption_summary": {
+    "scope": "country",
+    "involved": {
+     "countries": [
+      "Poland"
+     ],
+     "industries": [],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 2 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 4 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "decisions": {
+    "American Axle & Manufacturing Holdings Inc": {
+     "risk_score_raw": 0.641,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.641 (HIGH), driven mainly by exposure (1.0) and sub-supplier criticality (0.870).",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "tier_2": 0,
+        "tier_3": 2,
+        "tier_4": 2
+       },
+       "top_disrupted_countries": [
+        "Poland"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Gestamp Automocion SA": {
+     "risk_score_raw": 0.6025,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6025 (HIGH), influenced by exposure (1.0) and depth (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "tier_2": 0,
+        "tier_3": 2,
+        "tier_4": 2
+       },
+       "top_disrupted_countries": [
+        "Poland"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Saudi Basic Industries Corp": {
+     "risk_score_raw": 0.5816,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5816 (MEDIUM), primarily due to exposure (0.889) and downstream centrality (0.404).",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "tier_2": 0,
+        "tier_3": 1,
+        "tier_4": 3
+       },
+       "top_disrupted_countries": [
+        "Poland"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Dana Inc": {
+     "risk_score_raw": 0.5498,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5498 (MEDIUM); significant factors include exposure (1.0) and depth (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 4,
+       "by_tier": {
+        "tier_2": 0,
+        "tier_3": 2,
+        "tier_4": 2
+       },
+       "top_disrupted_countries": [
+        "Poland"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "ArcelorMittal SA": {
+     "risk_score_raw": 0.5253,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5253 (MEDIUM); notable drivers are exposure (0.852) and centrality (0.830).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_2": 2,
+        "tier_3": 0,
+        "tier_4": 0
+       },
+       "top_disrupted_countries": [
+        "Poland"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "SK Inc": {
+     "risk_score_raw": 0.4881,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.4881 (MEDIUM), affected by centrality (1.0) and exposure (0.519).",
+      "exposure_details": {
+       "total_disrupted_nodes": 3,
+       "by_tier": {
+        "tier_2": 0,
+        "tier_3": 0,
+        "tier_4": 3
+       },
+       "top_disrupted_countries": [
+        "Poland"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "2 REPLACE_SUPPLIER (score 0.60 or above), 4 INCREASE_MONITORING (0.45 to below 0.60), 36 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "42",
+     "replace_supplier_count": "2",
+     "increase_monitoring_count": "4",
+     "maintain_standard_count": "36",
+     "critical_suppliers": [
+      "American Axle & Manufacturing Holdings Inc",
+      "Gestamp Automocion SA"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   2,
+   15,
+   105
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_dbc068f14581_Bayerische_Motoren_Werke_AG_20261017T130844_kg.json",
+  "monitored_company": "Bayerische Motoren Werke AG",
+  "ongoing_disruption": true,
+  "scope": "country",
+  "disrupted_countries": [
+   "Poland"
+  ],
+  "disrupted_industries": [],
+  "disrupted_companies": [],
+  "unresolved": {
+   "countries": [],
+   "industries": [
+    "Retail",
+    "Finance"
+   ],
+   "companies": []
+  },
+  "requested": {
+   "countries": [
+    "Poland"
+   ],
+   "industries": [
+    "Retail",
+    "Finance"
+   ],
+   "companies": [],
+   "scope": "country"
+  },
+  "scenario_id": "run_dbc068f14581",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 2,
+   "tier_3": 15,
+   "tier_4": 105
+  },
+  "total_chains": 122,
+  "message": "Built and saved 122 disrupted supply chains to output/temp/kg_payloads/run_dbc068f14581_Bayerische_Motoren_Werke_AG_20261017T130844_kg.json"
+ },
+ "item_id": "P-021",
+ "run_id": "run_dbc068f14581",
+ "item_type": "P",
+ "firm": "Bayerische Motoren Werke AG",
+ "set": "test",
+ "repeat": 1
+}

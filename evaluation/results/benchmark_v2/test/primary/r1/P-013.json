@@ -1,0 +1,3115 @@
+{
+ "scenario_id": "run_4dae67ccdd35",
+ "runtime_seconds": 26.6,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1714,
+   "completion_tokens": 185,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:08:06"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 825,
+   "completion_tokens": 82,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:08:07"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1182,
+   "completion_tokens": 35,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:08:08"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 7691,
+   "completion_tokens": 2358,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:08:31"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 11412,
+  "completion_tokens": 2660,
+  "total_tokens": 14072,
+  "usd": 0.0551,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 830,
+   "parsed": true,
+   "tail": "Ecopetrol SA and others. This has halted significant oil production and affected the nation's oil and gas sector.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 950,
+   "parsed": true,
+   "tail": "output/temp/kg_payloads/run_4dae67ccdd35_Tesla_Inc_20261017T130807_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 15585,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 9040,
+   "parsed": true,
+   "tail": "\"ArcelorMittal SA\",\n        \"thyssenkrupp AG\",\n        \"Samsung SDI Co Ltd\",\n        \"Schaeffler AG\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports an ongoing disruption in Colombia where the government has seized oil production sites due to security concerns. This disruption is affecting the operations of oil companies, including Ecopetrol SA and Andes Norte Oil, and has halted significant oil production. It specifically impacts the Oil & Gas Producers industry.",
+   "ongoing_disruption": true,
+   "type": "Geopolitical",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Colombia"
+    ],
+    "industries": [
+     "Oil & Gas Producers"
+    ],
+    "companies": [
+     "Ecopetrol SA",
+     "Andes Norte Oil"
+    ]
+   },
+   "summary": "Colombia's government has seized oil facilities due to security concerns, disrupting operations at Ecopetrol SA and others. This has halted significant oil production and affected the nation's oil and gas sector."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [],
+   "tier_3": [],
+   "tier_4": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Occidental Petroleum Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Sigdo Koppers SA",
+      "country": "Chile",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Empresas Copec SA",
+      "country": "Chile",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Avient Corp",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Avient Corp",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "CNGR Advanced Material Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "CPC Corp/Taiwan",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Empresas Copec SA",
+      "country": "Chile",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ecopro Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Occidental Petroleum Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Asahi Kasei Corp",
+      "country": "Japan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ecopro Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Occidental Petroleum Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Colbun SA",
+      "country": "Chile",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Empresas Copec SA",
+      "country": "Chile",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "JGC Holdings Corp",
+      "country": "Japan",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Sigdo Koppers SA",
+      "country": "Chile",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Empresas Copec SA",
+      "country": "Chile",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Cummins Inc",
+      "country": "USA",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Chevron Corp",
+      "country": "USA",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Ecopetrol SA",
+      "country": "Colombia",
+      "industry": "Oil & Gas Producers"
+     }
+    ]
+   ],
+   "monitored_company": "Tesla Inc",
+   "disrupted_countries": [
+    "Colombia"
+   ],
+   "resolution": {
+    "countries": [
+     "Colombia"
+    ],
+    "industries": [
+     "Oil & Gas Producers"
+    ],
+    "companies": [
+     "Ecopetrol SA"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "Andes Norte Oil"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 1
+   },
+   "summary": {
+    "total_disrupted_chains": 36,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 0,
+    "tier_4_count": 36
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:08:09.725707Z",
+   "supplier_risk_scores": {
+    "AMAG Austria Metall AG": 0.585,
+    "ArcelorMittal SA": 0.6491,
+    "Avient Corp": 0.5437,
+    "CNGR Advanced Material Co Ltd": 0.5694,
+    "China Steel Corp": 0.7503,
+    "Guangdong Delian Group Co Ltd": 0.5507,
+    "LG Energy Solution Ltd": 0.5177,
+    "Ningbo Shanshan Co Ltd": 0.5745,
+    "Samsung SDI Co Ltd": 0.6177,
+    "Schaeffler AG": 0.6058,
+    "Sempra": 0.6814,
+    "Toyota Industries Corp": 0.7102,
+    "Vale SA": 0.7069,
+    "Wooshin Systems Co Ltd": 0.5538,
+    "thyssenkrupp AG": 0.6383
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.15238242270558158,
+       "sub_pagerank": 0.0025069718245751375,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.7102,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 0.9560854485153906,
+      "central": 0.6857997998450903,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.15053868683155724,
+       "sub_pagerank": 0.0014686140919690797,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.7069,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 1.0,
+      "central": 0.5636710038780091,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.11039780003055544,
+       "sub_pagerank": 0.002851686935516064,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.6814,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.8262552386824825,
+      "central": 0.6562996595713574,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.11717515806172164,
+       "sub_pagerank": 0.0025671599834909613,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.6491,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.6335045161672339,
+      "central": 0.7209312341439469,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1204770334184292,
+       "sub_pagerank": 0.002251508592553912,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.6383,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.5084971521171943,
+      "central": 0.8609424896741971,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.1317468610935212,
+       "sub_pagerank": 0.001896244181938747,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.6177,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.46842316603963696,
+      "central": 0.7368486092086172,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13006436990897072,
+       "sub_pagerank": 0.001923042300421003,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.6058,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.4755916955129194,
+      "central": 0.6036989265810596,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.13036533791404128,
+       "sub_pagerank": 0.0016140373781826768,
+       "central": 0.19483430107860372,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.585,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.6433508556884029,
+      "central": 0.05932950810847295,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.13740864295428823,
+       "sub_pagerank": 0.0012377854473644837,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Shanshan Co Ltd",
+     "risk_score": 0.5745,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0029411764705882353,
+      "sub_criticality": 0.5335142347796603,
+      "central": 0.17097292831772004,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0029411764705882353,
+       "sub_central": 0.13279719386953479,
+       "sub_pagerank": 0.002053765562369024,
+       "central": 0.15003717268170003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.5694,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.43984924601670183,
+      "central": 0.30906935666895075,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.12417317426464762,
+       "sub_pagerank": 0.001934375901233029,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.5538,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.41904447268825373,
+      "central": 0.1960452628595489,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.12799122410042707,
+       "sub_pagerank": 0.0015123810901626722,
+       "central": 0.1526327379913603,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.5507,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.4925880541790965,
+      "central": 0.017388176136753312,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.13107892361949014,
+       "sub_pagerank": 0.0017392950287175937,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Avient Corp",
+     "risk_score": 0.5437,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002680965147453083,
+      "sub_criticality": 0.4651660215810848,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002680965147453083,
+       "sub_central": 0.12992761992788035,
+       "sub_pagerank": 0.0017068125700875267,
+       "central": 0.13233752844266242,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.5177,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.11783767780215729,
+      "central": 0.43774100651942843,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.11534517046998032,
+       "sub_pagerank": 0.0012140723687946453,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "China Steel Corp",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.15238242270558158,
+       "sub_pagerank": 0.0025069718245751375,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Toyota Industries Corp",
+     "risk_score": 0.7102,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 0.9560854485153906,
+      "central": 0.6857997998450903,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.15053868683155724,
+       "sub_pagerank": 0.0014686140919690797,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Vale SA",
+     "risk_score": 0.7069,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 1.0,
+      "central": 0.5636710038780091,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.11039780003055544,
+       "sub_pagerank": 0.002851686935516064,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Sempra",
+     "risk_score": 0.6814,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.8262552386824825,
+      "central": 0.6562996595713574,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.11717515806172164,
+       "sub_pagerank": 0.0025671599834909613,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.6491,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.6335045161672339,
+      "central": 0.7209312341439469,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1204770334184292,
+       "sub_pagerank": 0.002251508592553912,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "thyssenkrupp AG",
+     "risk_score": 0.6383,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.5084971521171943,
+      "central": 0.8609424896741971,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.1317468610935212,
+       "sub_pagerank": 0.001896244181938747,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Samsung SDI Co Ltd",
+     "risk_score": 0.6177,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.46842316603963696,
+      "central": 0.7368486092086172,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13006436990897072,
+       "sub_pagerank": 0.001923042300421003,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Schaeffler AG",
+     "risk_score": 0.6058,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.4755916955129194,
+      "central": 0.6036989265810596,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.13036533791404128,
+       "sub_pagerank": 0.0016140373781826768,
+       "central": 0.19483430107860372,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "China Steel Corp",
+    "Toyota Industries Corp",
+    "Vale SA",
+    "Sempra",
+    "ArcelorMittal SA",
+    "thyssenkrupp AG",
+    "Samsung SDI Co Ltd",
+    "Schaeffler AG"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 15,
+    "high_risk_suppliers": 8,
+    "medium_risk_suppliers": 7,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7503,
+    "average_risk_score": 0.6169666666666667
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Colombia"
+    ],
+    "summary": {
+     "total_disrupted_chains": 36,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 36,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Colombia"
+     ],
+     "industries": [
+      "Oil & Gas Producers"
+     ],
+     "companies": [
+      "Ecopetrol SA"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 8 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 7 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:08:09.725707Z",
+   "supplier_risk_scores": {
+    "AMAG Austria Metall AG": 0.585,
+    "ArcelorMittal SA": 0.6491,
+    "Avient Corp": 0.5437,
+    "CNGR Advanced Material Co Ltd": 0.5694,
+    "China Steel Corp": 0.7503,
+    "Guangdong Delian Group Co Ltd": 0.5507,
+    "LG Energy Solution Ltd": 0.5177,
+    "Ningbo Shanshan Co Ltd": 0.5745,
+    "Samsung SDI Co Ltd": 0.6177,
+    "Schaeffler AG": 0.6058,
+    "Sempra": 0.6814,
+    "Toyota Industries Corp": 0.7102,
+    "Vale SA": 0.7069,
+    "Wooshin Systems Co Ltd": 0.5538,
+    "thyssenkrupp AG": 0.6383
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.15238242270558158,
+       "sub_pagerank": 0.0025069718245751375,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.7102,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 0.9560854485153906,
+      "central": 0.6857997998450903,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.15053868683155724,
+       "sub_pagerank": 0.0014686140919690797,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.7069,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 1.0,
+      "central": 0.5636710038780091,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.11039780003055544,
+       "sub_pagerank": 0.002851686935516064,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.6814,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.8262552386824825,
+      "central": 0.6562996595713574,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.11717515806172164,
+       "sub_pagerank": 0.0025671599834909613,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.6491,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.6335045161672339,
+      "central": 0.7209312341439469,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1204770334184292,
+       "sub_pagerank": 0.002251508592553912,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.6383,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.5084971521171943,
+      "central": 0.8609424896741971,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.1317468610935212,
+       "sub_pagerank": 0.001896244181938747,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.6177,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.46842316603963696,
+      "central": 0.7368486092086172,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13006436990897072,
+       "sub_pagerank": 0.001923042300421003,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.6058,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.4755916955129194,
+      "central": 0.6036989265810596,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.13036533791404128,
+       "sub_pagerank": 0.0016140373781826768,
+       "central": 0.19483430107860372,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.585,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.6433508556884029,
+      "central": 0.05932950810847295,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.13740864295428823,
+       "sub_pagerank": 0.0012377854473644837,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Shanshan Co Ltd",
+     "risk_score": 0.5745,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0029411764705882353,
+      "sub_criticality": 0.5335142347796603,
+      "central": 0.17097292831772004,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0029411764705882353,
+       "sub_central": 0.13279719386953479,
+       "sub_pagerank": 0.002053765562369024,
+       "central": 0.15003717268170003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.5694,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.43984924601670183,
+      "central": 0.30906935666895075,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.12417317426464762,
+       "sub_pagerank": 0.001934375901233029,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.5538,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.41904447268825373,
+      "central": 0.1960452628595489,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.12799122410042707,
+       "sub_pagerank": 0.0015123810901626722,
+       "central": 0.1526327379913603,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.5507,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.4925880541790965,
+      "central": 0.017388176136753312,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.13107892361949014,
+       "sub_pagerank": 0.0017392950287175937,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Avient Corp",
+     "risk_score": 0.5437,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002680965147453083,
+      "sub_criticality": 0.4651660215810848,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002680965147453083,
+       "sub_central": 0.12992761992788035,
+       "sub_pagerank": 0.0017068125700875267,
+       "central": 0.13233752844266242,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.5177,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "Colombia",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.11783767780215729,
+      "central": 0.43774100651942843,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.11534517046998032,
+       "sub_pagerank": 0.0012140723687946453,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "China Steel Corp",
+     "risk_score": 0.7503,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.15238242270558158,
+       "sub_pagerank": 0.0025069718245751375,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Toyota Industries Corp",
+     "risk_score": 0.7102,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 0.9560854485153906,
+      "central": 0.6857997998450903,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.15053868683155724,
+       "sub_pagerank": 0.0014686140919690797,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Vale SA",
+     "risk_score": 0.7069,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 1.0,
+      "central": 0.5636710038780091,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.11039780003055544,
+       "sub_pagerank": 0.002851686935516064,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Sempra",
+     "risk_score": 0.6814,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.8262552386824825,
+      "central": 0.6562996595713574,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.11717515806172164,
+       "sub_pagerank": 0.0025671599834909613,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.6491,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.6335045161672339,
+      "central": 0.7209312341439469,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1204770334184292,
+       "sub_pagerank": 0.002251508592553912,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "thyssenkrupp AG",
+     "risk_score": 0.6383,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.5084971521171943,
+      "central": 0.8609424896741971,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.1317468610935212,
+       "sub_pagerank": 0.001896244181938747,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Samsung SDI Co Ltd",
+     "risk_score": 0.6177,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.46842316603963696,
+      "central": 0.7368486092086172,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13006436990897072,
+       "sub_pagerank": 0.001923042300421003,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Schaeffler AG",
+     "risk_score": 0.6058,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.4755916955129194,
+      "central": 0.6036989265810596,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.13036533791404128,
+       "sub_pagerank": 0.0016140373781826768,
+       "central": 0.19483430107860372,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "China Steel Corp",
+    "Toyota Industries Corp",
+    "Vale SA",
+    "Sempra",
+    "ArcelorMittal SA",
+    "thyssenkrupp AG",
+    "Samsung SDI Co Ltd",
+    "Schaeffler AG"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 15,
+    "high_risk_suppliers": 8,
+    "medium_risk_suppliers": 7,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7503,
+    "average_risk_score": 0.6169666666666667
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Colombia"
+    ],
+    "summary": {
+     "total_disrupted_chains": 36,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 36,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Colombia"
+     ],
+     "industries": [
+      "Oil & Gas Producers"
+     ],
+     "companies": [
+      "Ecopetrol SA"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 8 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 7 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Tesla Inc",
+   "decisions": {
+    "China Steel Corp": {
+     "risk_score_raw": 0.7503,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7503 (HIGH), driven mainly by high scores in exposure, sub-supplier criticality, centrality, and depth.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Toyota Industries Corp": {
+     "risk_score_raw": 0.7102,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7102 (HIGH), driven by high exposure and sub-supplier criticality scores.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Vale SA": {
+     "risk_score_raw": 0.7069,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7069 (HIGH), driven primarily by high exposure and sub-supplier criticality.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Sempra": {
+     "risk_score_raw": 0.6814,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6814 (HIGH), influenced by high exposure and centrality.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "ArcelorMittal SA": {
+     "risk_score_raw": 0.6491,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6491 (HIGH), largely due to exposure and centrality.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "thyssenkrupp AG": {
+     "risk_score_raw": 0.6383,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6383 (HIGH), characterized by exposure and centrality.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Samsung SDI Co Ltd": {
+     "risk_score_raw": 0.6177,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6177 (HIGH), primarily driven by exposure and centrality.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Schaeffler AG": {
+     "risk_score_raw": 0.6058,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6058 (HIGH), influenced by exposure and centrality.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "AMAG Austria Metall AG": {
+     "risk_score_raw": 0.585,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.585 (MEDIUM), elevated exposure and centrality but below high threshold.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Ningbo Shanshan Co Ltd": {
+     "risk_score_raw": 0.5745,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5745 (MEDIUM); medium sub-supplier criticality and exposure.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "CNGR Advanced Material Co Ltd": {
+     "risk_score_raw": 0.5694,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5694 (MEDIUM), moderate dependency and exposure levels.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Wooshin Systems Co Ltd": {
+     "risk_score_raw": 0.5538,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5538 (MEDIUM), notable exposure but below high-risk threshold.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Guangdong Delian Group Co Ltd": {
+     "risk_score_raw": 0.5507,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5507 (MEDIUM), driven by exposure.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Avient Corp": {
+     "risk_score_raw": 0.5437,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5437 (MEDIUM), exposure and centrality levels are influencing.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "LG Energy Solution Ltd": {
+     "risk_score_raw": 0.5177,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5177 (MEDIUM), affected by exposure although still moderate.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Colombia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "8 REPLACE_SUPPLIER (score 0.60 or above), 7 INCREASE_MONITORING (0.45 to below 0.60), 0 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": 15,
+     "replace_supplier_count": 8,
+     "increase_monitoring_count": 7,
+     "maintain_standard_count": 0,
+     "critical_suppliers": [
+      "China Steel Corp",
+      "Toyota Industries Corp",
+      "Vale SA",
+      "Sempra",
+      "ArcelorMittal SA",
+      "thyssenkrupp AG",
+      "Samsung SDI Co Ltd",
+      "Schaeffler AG"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   0,
+   0,
+   36
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_4dae67ccdd35_Tesla_Inc_20261017T130807_kg.json",
+  "monitored_company": "Tesla Inc",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Colombia"
+  ],
+  "disrupted_industries": [
+   "Oil & Gas Producers"
+  ],
+  "disrupted_companies": [
+   "Ecopetrol SA"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "Andes Norte Oil"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "Colombia"
+   ],
+   "industries": [
+    "Oil & Gas Producers"
+   ],
+   "companies": [
+    "Ecopetrol SA",
+    "Andes Norte Oil"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_4dae67ccdd35",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 36
+  },
+  "total_chains": 36,
+  "message": "Built and saved 36 disrupted supply chains to output/temp/kg_payloads/run_4dae67ccdd35_Tesla_Inc_20261017T130807_kg.json"
+ },
+ "item_id": "P-013",
+ "run_id": "run_4dae67ccdd35",
+ "item_type": "P",
+ "firm": "Tesla Inc",
+ "set": "test",
+ "repeat": 1
+}

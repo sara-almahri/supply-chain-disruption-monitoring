@@ -1,0 +1,1627 @@
+{
+ "scenario_id": "run_d60af47bb715",
+ "runtime_seconds": 16.9,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1695,
+   "completion_tokens": 160,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:07:49"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 799,
+   "completion_tokens": 67,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:07:50"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1124,
+   "completion_tokens": 34,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:07:52"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 5200,
+   "completion_tokens": 1402,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:08:04"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 8818,
+  "completion_tokens": 1663,
+  "total_tokens": 10481,
+  "usd": 0.0387,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 769,
+   "parsed": true,
+   "tail": "anker and container ship traffic through the canal is significantly reduced due to new restrictions and protests.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 888,
+   "parsed": true,
+   "tail": "output/temp/kg_payloads/run_d60af47bb715_Tesla_Inc_20261017T130751_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 9621,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 5213,
+   "parsed": true,
+   "tail": "td\",\n        \"ArcelorMittal SA\",\n        \"China Steel Corp\",\n        \"CNGR Advanced Material Co Ltd\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports ongoing political unrest in Egypt, causing disruptions in the Suez Canal. This has slowed global trade, affecting oil tankers and container ships. The unrest and subsequent disruption are ongoing, impacting both the transportation and logistics industry and the broader Egyptian economy.",
+   "ongoing_disruption": true,
+   "type": "Geopolitical",
+   "scope": "country",
+   "involved": {
+    "countries": [
+     "Egypt"
+    ],
+    "industries": [
+     "Transportation & Logistics"
+    ],
+    "companies": []
+   },
+   "summary": "Political unrest in Egypt has disrupted the Suez Canal, significantly slowing down global trade. Oil tanker and container ship traffic through the canal is significantly reduced due to new restrictions and protests."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [],
+   "tier_3": [],
+   "tier_4": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Avient Corp",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "CNGR Advanced Material Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "CTCI Corp",
+      "country": "Taiwan",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Taiwan Cement Corp",
+      "country": "Taiwan",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Contemporary Amperex Technology Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Contemporary Amperex Technology Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jiangsu Lopal Tech Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Glencore PLC",
+      "country": "United Kingdom",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Formosa Petrochemical Corp",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "National Petroleum Co Ltd",
+      "country": "Egypt",
+      "industry": "Oil & Gas Producers"
+     }
+    ]
+   ],
+   "monitored_company": "Tesla Inc",
+   "disrupted_countries": [
+    "Egypt"
+   ],
+   "resolution": {
+    "countries": [
+     "Egypt"
+    ],
+    "industries": [
+     "Transportation & Logistics"
+    ],
+    "companies": [],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": []
+    },
+    "scope": "country",
+    "unresolved_count": 0
+   },
+   "summary": {
+    "total_disrupted_chains": 11,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 0,
+    "tier_4_count": 11
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:07:53.196015Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.7219,
+    "Avient Corp": 0.4507,
+    "CNGR Advanced Material Co Ltd": 0.649,
+    "China Steel Corp": 0.6699,
+    "Contemporary Amperex Technology Co Ltd": 0.7229,
+    "Guangdong Delian Group Co Ltd": 0.5021,
+    "LG Energy Solution Ltd": 0.5751,
+    "Samsung SDI Co Ltd": 0.724
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.724,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 1.0,
+      "central": 0.7368486092086172,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13748779905891587,
+       "sub_pagerank": 0.003514620682377131,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7229,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.7245542206038125,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.12917765514930238,
+       "sub_pagerank": 0.004261061812578603,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.7219,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.9972398060874998,
+      "central": 0.7209312341439469,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.13741055279812076,
+       "sub_pagerank": 0.00409097215419628,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.6699,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.5980823161749361,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.12623980735720394,
+       "sub_pagerank": 0.00256038455801216,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.649,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.8376379442424504,
+      "central": 0.30906935666895075,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.1267512502134115,
+       "sub_pagerank": 0.0038135295644916244,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.5751,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.40481496195194,
+      "central": 0.43774100651942843,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.12083106401497702,
+       "sub_pagerank": 0.0017634868169136041,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.5021,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.24964121250853208,
+      "central": 0.017388176136753312,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.11648840103619984,
+       "sub_pagerank": 0.0016719282067885319,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Avient Corp",
+     "risk_score": 0.4507,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002680965147453083,
+      "sub_criticality": 0.0,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002680965147453083,
+       "sub_central": 0.10950198963977209,
+       "sub_pagerank": 0.0015046773482474446,
+       "central": 0.13233752844266242,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Samsung SDI Co Ltd",
+     "risk_score": 0.724,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 1.0,
+      "central": 0.7368486092086172,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13748779905891587,
+       "sub_pagerank": 0.003514620682377131,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7229,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.7245542206038125,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.12917765514930238,
+       "sub_pagerank": 0.004261061812578603,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.7219,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.9972398060874998,
+      "central": 0.7209312341439469,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.13741055279812076,
+       "sub_pagerank": 0.00409097215419628,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "China Steel Corp",
+     "risk_score": 0.6699,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.5980823161749361,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.12623980735720394,
+       "sub_pagerank": 0.00256038455801216,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.649,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.8376379442424504,
+      "central": 0.30906935666895075,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.1267512502134115,
+       "sub_pagerank": 0.0038135295644916244,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Samsung SDI Co Ltd",
+    "Contemporary Amperex Technology Co Ltd",
+    "ArcelorMittal SA",
+    "China Steel Corp",
+    "CNGR Advanced Material Co Ltd"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 8,
+    "high_risk_suppliers": 5,
+    "medium_risk_suppliers": 3,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.724,
+    "average_risk_score": 0.62695
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Egypt"
+    ],
+    "summary": {
+     "total_disrupted_chains": 11,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 11,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "country",
+    "involved": {
+     "countries": [
+      "Egypt"
+     ],
+     "industries": [
+      "Transportation & Logistics"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 5 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 3 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:07:53.196015Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.7219,
+    "Avient Corp": 0.4507,
+    "CNGR Advanced Material Co Ltd": 0.649,
+    "China Steel Corp": 0.6699,
+    "Contemporary Amperex Technology Co Ltd": 0.7229,
+    "Guangdong Delian Group Co Ltd": 0.5021,
+    "LG Energy Solution Ltd": 0.5751,
+    "Samsung SDI Co Ltd": 0.724
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.724,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 1.0,
+      "central": 0.7368486092086172,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13748779905891587,
+       "sub_pagerank": 0.003514620682377131,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7229,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.7245542206038125,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.12917765514930238,
+       "sub_pagerank": 0.004261061812578603,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.7219,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.9972398060874998,
+      "central": 0.7209312341439469,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.13741055279812076,
+       "sub_pagerank": 0.00409097215419628,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.6699,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.5980823161749361,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.12623980735720394,
+       "sub_pagerank": 0.00256038455801216,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.649,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.8376379442424504,
+      "central": 0.30906935666895075,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.1267512502134115,
+       "sub_pagerank": 0.0038135295644916244,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.5751,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.40481496195194,
+      "central": 0.43774100651942843,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.12083106401497702,
+       "sub_pagerank": 0.0017634868169136041,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.5021,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.24964121250853208,
+      "central": 0.017388176136753312,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.11648840103619984,
+       "sub_pagerank": 0.0016719282067885319,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Avient Corp",
+     "risk_score": 0.4507,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Egypt",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002680965147453083,
+      "sub_criticality": 0.0,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002680965147453083,
+       "sub_central": 0.10950198963977209,
+       "sub_pagerank": 0.0015046773482474446,
+       "central": 0.13233752844266242,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Samsung SDI Co Ltd",
+     "risk_score": 0.724,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 1.0,
+      "central": 0.7368486092086172,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.13748779905891587,
+       "sub_pagerank": 0.003514620682377131,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7229,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 0.7245542206038125,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.12917765514930238,
+       "sub_pagerank": 0.004261061812578603,
+       "central": 0.20734561342292948,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.7219,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.9972398060874998,
+      "central": 0.7209312341439469,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.13741055279812076,
+       "sub_pagerank": 0.00409097215419628,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "China Steel Corp",
+     "risk_score": 0.6699,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.5980823161749361,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.12623980735720394,
+       "sub_pagerank": 0.00256038455801216,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.649,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.8376379442424504,
+      "central": 0.30906935666895075,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.1267512502134115,
+       "sub_pagerank": 0.0038135295644916244,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Samsung SDI Co Ltd",
+    "Contemporary Amperex Technology Co Ltd",
+    "ArcelorMittal SA",
+    "China Steel Corp",
+    "CNGR Advanced Material Co Ltd"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 8,
+    "high_risk_suppliers": 5,
+    "medium_risk_suppliers": 3,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.724,
+    "average_risk_score": 0.62695
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Egypt"
+    ],
+    "summary": {
+     "total_disrupted_chains": 11,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 11,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "country",
+    "involved": {
+     "countries": [
+      "Egypt"
+     ],
+     "industries": [
+      "Transportation & Logistics"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 5 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 3 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Tesla Inc",
+   "decisions": {
+    "Samsung SDI Co Ltd": {
+     "risk_score_raw": 0.724,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.724 (HIGH), with significant exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Egypt"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Contemporary Amperex Technology Co Ltd": {
+     "risk_score_raw": 0.7229,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7229 (HIGH), with sub-supplier criticality (1.0) and significant exposure (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Egypt"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "ArcelorMittal SA": {
+     "risk_score_raw": 0.7219,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7219 (HIGH), driven by high exposure (1.0) and sub-supplier criticality (0.997).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Egypt"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "China Steel Corp": {
+     "risk_score_raw": 0.6699,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6699 (HIGH), with high centrality (1.0) and exposure (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Egypt"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "CNGR Advanced Material Co Ltd": {
+     "risk_score_raw": 0.649,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.649 (HIGH), largely due to high exposure (1.0) and sub-supplier criticality (0.838).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Egypt"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "LG Energy Solution Ltd": {
+     "risk_score_raw": 0.5751,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5751 (MEDIUM), with disrupted companies at Tier 4 and criticality of exposure (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Egypt"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Guangdong Delian Group Co Ltd": {
+     "risk_score_raw": 0.5021,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5021 (MEDIUM), disrupted at deepest tier 4 with high exposure (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Egypt"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    },
+    "Avient Corp": {
+     "risk_score_raw": 0.4507,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.4507 (MEDIUM), mainly due to exposure (1.0) with disruptions at Tier 4.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Egypt"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "5 REPLACE_SUPPLIER (score 0.60 or above), 3 INCREASE_MONITORING (0.45 to below 0.60), 0 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "8",
+     "replace_supplier_count": "5",
+     "increase_monitoring_count": "3",
+     "maintain_standard_count": "0",
+     "critical_suppliers": [
+      "Samsung SDI Co Ltd",
+      "Contemporary Amperex Technology Co Ltd",
+      "ArcelorMittal SA",
+      "China Steel Corp",
+      "CNGR Advanced Material Co Ltd"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   0,
+   0,
+   11
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_d60af47bb715_Tesla_Inc_20261017T130751_kg.json",
+  "monitored_company": "Tesla Inc",
+  "ongoing_disruption": true,
+  "scope": "country",
+  "disrupted_countries": [
+   "Egypt"
+  ],
+  "disrupted_industries": [
+   "Transportation & Logistics"
+  ],
+  "disrupted_companies": [],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": []
+  },
+  "requested": {
+   "countries": [
+    "Egypt"
+   ],
+   "industries": [
+    "Transportation & Logistics"
+   ],
+   "companies": [],
+   "scope": "country"
+  },
+  "scenario_id": "run_d60af47bb715",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 11
+  },
+  "total_chains": 11,
+  "message": "Built and saved 11 disrupted supply chains to output/temp/kg_payloads/run_d60af47bb715_Tesla_Inc_20261017T130751_kg.json"
+ },
+ "item_id": "P-014",
+ "run_id": "run_d60af47bb715",
+ "item_type": "P",
+ "firm": "Tesla Inc",
+ "set": "test",
+ "repeat": 1
+}

@@ -1,0 +1,636 @@
+{
+ "scenario_id": "run_3671fec1ceb5",
+ "runtime_seconds": 9.2,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1811,
+   "completion_tokens": 155,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:14:15"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 807,
+   "completion_tokens": 82,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:14:16"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1161,
+   "completion_tokens": 37,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:14:18"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 2901,
+   "completion_tokens": 466,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:14:23"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 6680,
+  "completion_tokens": 740,
+  "total_tokens": 7420,
+  "usd": 0.0241,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 684,
+   "parsed": true,
+   "tail": "olvency, significantly curtailing its operations and affecting the local mining and copper processing industries.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 970,
+   "parsed": true,
+   "tail": "ly-chain-disruption-monitoring/output/temp/kg_payloads/run_3671fec1ceb5_Mercedes-Benz_Group_AG_20261017T131417_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 3782,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 1671,
+   "parsed": true,
+   "tail": "n_standard_count\": 0,\n      \"critical_suppliers\": [\n        \"Contemporary Amperex Technology Co Ltd\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports that Chambishi Copper Smelter Ltd in Zambia has entered insolvency, leading to a significant reduction in production. This disruption affects the copper processing industry and impacts local suppliers and subcontractors.",
+   "ongoing_disruption": true,
+   "type": "Company Bankruptcy",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Zambia"
+    ],
+    "industries": [
+     "Metals & Mining"
+    ],
+    "companies": [
+     "Chambishi Copper Smelter Ltd"
+    ]
+   },
+   "summary": "Chambishi Copper Smelter Ltd in Zambia has declared insolvency, significantly curtailing its operations and affecting the local mining and copper processing industries."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [],
+   "tier_3": [],
+   "tier_4": [
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Contemporary Amperex Technology Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Yunnan Aluminium Co Ltd",
+      "country": "China",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Yunnan Copper Co Ltd",
+      "country": "China",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Chambishi Copper Smelter Ltd",
+      "country": "Zambia",
+      "industry": "Metals & Mining"
+     }
+    ],
+    [
+     {
+      "company": "Mercedes-Benz Group AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tong Yang Industry Co Ltd",
+      "country": "Taiwan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Aluminum Corp of China Ltd",
+      "country": "China",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Yunnan Copper Co Ltd",
+      "country": "China",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Chambishi Copper Smelter Ltd",
+      "country": "Zambia",
+      "industry": "Metals & Mining"
+     }
+    ]
+   ],
+   "monitored_company": "Mercedes-Benz Group AG",
+   "disrupted_countries": [
+    "Zambia"
+   ],
+   "resolution": {
+    "countries": [
+     "Zambia"
+    ],
+    "industries": [
+     "Metals & Mining"
+    ],
+    "companies": [
+     "Chambishi Copper Smelter Ltd"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": []
+    },
+    "scope": "industries",
+    "unresolved_count": 0
+   },
+   "summary": {
+    "total_disrupted_chains": 2,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 0,
+    "tier_4_count": 2
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Mercedes-Benz Group AG",
+   "generated_at": "2026-10-17T13:14:20.090914Z",
+   "supplier_risk_scores": {
+    "Contemporary Amperex Technology Co Ltd": 0.7504,
+    "Tong Yang Industry Co Ltd": 0.4504
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7504,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Zambia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.11654502088287105,
+       "sub_pagerank": 0.003095385262178875,
+       "central": 0.21890910287766027,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Tong Yang Industry Co Ltd",
+     "risk_score": 0.4504,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Zambia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015337423312883436,
+      "sub_criticality": 0.0,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015337423312883436,
+       "sub_central": 0.09862123842368828,
+       "sub_pagerank": 0.0009457853979598571,
+       "central": 0.14680386662388284,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7504,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.11654502088287105,
+       "sub_pagerank": 0.003095385262178875,
+       "central": 0.21890910287766027,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Contemporary Amperex Technology Co Ltd"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 2,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7504,
+    "average_risk_score": 0.6004
+   },
+   "kg_summary": {
+    "monitored_company": "Mercedes-Benz Group AG",
+    "disrupted_countries": [
+     "Zambia"
+    ],
+    "summary": {
+     "total_disrupted_chains": 2,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 2,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Zambia"
+     ],
+     "industries": [
+      "Metals & Mining"
+     ],
+     "companies": [
+      "Chambishi Copper Smelter Ltd"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Mercedes-Benz Group AG",
+   "generated_at": "2026-10-17T13:14:20.090914Z",
+   "supplier_risk_scores": {
+    "Contemporary Amperex Technology Co Ltd": 0.7504,
+    "Tong Yang Industry Co Ltd": 0.4504
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7504,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Zambia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.11654502088287105,
+       "sub_pagerank": 0.003095385262178875,
+       "central": 0.21890910287766027,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Tong Yang Industry Co Ltd",
+     "risk_score": 0.4504,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Zambia",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015337423312883436,
+      "sub_criticality": 0.0,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015337423312883436,
+       "sub_central": 0.09862123842368828,
+       "sub_pagerank": 0.0009457853979598571,
+       "central": 0.14680386662388284,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.7504,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001584786053882726,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001584786053882726,
+       "sub_central": 0.11654502088287105,
+       "sub_pagerank": 0.003095385262178875,
+       "central": 0.21890910287766027,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Contemporary Amperex Technology Co Ltd"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 2,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7504,
+    "average_risk_score": 0.6004
+   },
+   "kg_summary": {
+    "monitored_company": "Mercedes-Benz Group AG",
+    "disrupted_countries": [
+     "Zambia"
+    ],
+    "summary": {
+     "total_disrupted_chains": 2,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 2,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Zambia"
+     ],
+     "industries": [
+      "Metals & Mining"
+     ],
+     "companies": [
+      "Chambishi Copper Smelter Ltd"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Mercedes-Benz Group AG",
+   "decisions": {
+    "Contemporary Amperex Technology Co Ltd": {
+     "risk_score_raw": 0.7504,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7504 (HIGH), driven by highest exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Zambia"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Tong Yang Industry Co Ltd": {
+     "risk_score_raw": 0.4504,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.4504 (MEDIUM); influenced by exposure (1.0) and depth (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Zambia"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "1 REPLACE_SUPPLIER (score 0.60 or above), 1 INCREASE_MONITORING (0.45 to below 0.60), 0 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": 2,
+     "replace_supplier_count": 1,
+     "increase_monitoring_count": 1,
+     "maintain_standard_count": 0,
+     "critical_suppliers": [
+      "Contemporary Amperex Technology Co Ltd"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   0,
+   0,
+   2
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_3671fec1ceb5_Mercedes-Benz_Group_AG_20261017T131417_kg.json",
+  "monitored_company": "Mercedes-Benz Group AG",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Zambia"
+  ],
+  "disrupted_industries": [
+   "Metals & Mining"
+  ],
+  "disrupted_companies": [
+   "Chambishi Copper Smelter Ltd"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": []
+  },
+  "requested": {
+   "countries": [
+    "Zambia"
+   ],
+   "industries": [
+    "Metals & Mining"
+   ],
+   "companies": [
+    "Chambishi Copper Smelter Ltd"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_3671fec1ceb5",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 2
+  },
+  "total_chains": 2,
+  "message": "Built and saved 2 disrupted supply chains to output/temp/kg_payloads/run_3671fec1ceb5_Mercedes-Benz_Group_AG_20261017T131417_kg.json"
+ },
+ "item_id": "P-105",
+ "run_id": "run_3671fec1ceb5",
+ "item_type": "P",
+ "firm": "Mercedes-Benz Group AG",
+ "set": "test",
+ "repeat": 1
+}

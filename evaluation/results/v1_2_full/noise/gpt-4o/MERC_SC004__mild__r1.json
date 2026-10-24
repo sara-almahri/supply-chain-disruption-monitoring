@@ -1,0 +1,461 @@
+{
+ "run_id": "noise/gpt-4o/MERC_SC004__mild__r1",
+ "condition": "noise",
+ "model": "gpt-4o",
+ "scenario_id": "MERC_SC004",
+ "variant": "mild",
+ "run_index": 1,
+ "monitored_company": "Mercedes-Benz Group AG",
+ "article_sha256": "abb4ff4d964c2d37b03dd7d41467394541a925788b28b922476abc6d78e885fb",
+ "ground_truth": "v1.2",
+ "graph_file": "dataset/supplychainKG_clean.csv",
+ "started": "2026-10-13T21:22:43",
+ "provenance": {
+  "commit": "73575f63e3dd0c773889714ce456d6cd4e6830f8",
+  "tags_at_commit": [
+   "evaluation-v1.2"
+  ],
+  "pipeline_files_modified": [],
+  "python": "3.12.2",
+  "executable": "venv/bin/python",
+  "platform": "macOS-14.1-arm64-arm-64bit",
+  "crewai": "1.9.3",
+  "openai": "1.83.0",
+  "neo4j": "6.1.0"
+ },
+ "graph": {
+  "nodes": 6318,
+  "relationships": 22862
+ },
+ "status": "completed",
+ "finished": "2026-10-13T21:22:52",
+ "success": true,
+ "error": null,
+ "traceback": null,
+ "runtime_seconds": 9.0,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1555,
+   "cached_tokens": 0,
+   "completion_tokens": 158,
+   "reasoning_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-13T21:22:47"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 806,
+   "cached_tokens": 0,
+   "completion_tokens": 70,
+   "reasoning_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-13T21:22:48"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1132,
+   "cached_tokens": 0,
+   "completion_tokens": 33,
+   "reasoning_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-13T21:22:50"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Mercedes-Benz Group AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 2119,
+   "cached_tokens": 0,
+   "completion_tokens": 143,
+   "reasoning_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-13T21:22:52"
+  }
+ ],
+ "truncated_calls": 0,
+ "cost": {
+  "calls": 4,
+  "prompt_tokens": 5612,
+  "cached_tokens": 0,
+  "completion_tokens": 404,
+  "reasoning_tokens": 0,
+  "usd": 0.01807,
+  "unpriced_models": []
+ },
+ "earlier_attempts": [],
+ "earlier_attempts_usd": 0,
+ "api_errors_within_run": [],
+ "client_retries_within_run": 0,
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 712,
+   "parsed": true,
+   "tail": "has severely disrupted its chemicals industry, with Arkema SA reducing output by 60% due to currency devaluation.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 908,
+   "parsed": true,
+   "tail": "p/supply-chain-disruption-monitoring/output/temp/kg_payloads/MERC_SC004_Mercedes-Benz_Group_AG_20261013T202250_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 1844,
+   "parsed": true,
+   "tail": "0\u00d7Depth.'}, 'recommendation': 'NO EXPOSURE: No Tier-1 supplier has a disrupted supply path. MAINTAIN_STANDARD for all.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 462,
+   "parsed": true,
+   "tail": "      \"increase_monitoring_count\": \"0\",\n      \"maintain_standard_count\": \"0\",\n      \"critical_suppliers\": []\n    }\n  }\n}"
+  }
+ },
+ "answers_not_json_objects": [],
+ "kg_tool_called": true,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/MERC_SC004_Mercedes-Benz_Group_AG_20261013T202250_kg.json",
+  "monitored_company": "Mercedes-Benz Group AG",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Argentina"
+  ],
+  "disrupted_industries": [
+   "Chemicals"
+  ],
+  "disrupted_companies": [
+   "Arkema SA"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": []
+  },
+  "requested": {
+   "countries": [
+    "Argentina"
+   ],
+   "industries": [
+    "Chemicals"
+   ],
+   "companies": [
+    "Arkema SA"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "MERC_SC004",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 0
+  },
+  "total_chains": 0,
+  "message": "Built and saved 0 disrupted supply chains to output/temp/kg_payloads/MERC_SC004_Mercedes-Benz_Group_AG_20261013T202250_kg.json"
+ },
+ "comparison": {
+  "disruption_monitor": {
+   "ongoing": true,
+   "ongoing_ok": true,
+   "type": "Economic Crisis",
+   "type_ok": true,
+   "scope": "industries",
+   "scope_ok": true,
+   "entities": {
+    "countries": {
+     "pipeline": [
+      "Argentina"
+     ],
+     "ground_truth": [
+      "Argentina"
+     ],
+     "f1": 1.0,
+     "equal": true
+    },
+    "industries": {
+     "pipeline": [
+      "Chemicals"
+     ],
+     "ground_truth": [
+      "Chemicals"
+     ],
+     "f1": 1.0,
+     "equal": true
+    },
+    "companies": {
+     "pipeline": [
+      "Arkema SA"
+     ],
+     "ground_truth": [
+      "Arkema SA"
+     ],
+     "f1": 1.0,
+     "equal": true
+    }
+   },
+   "reasoning": "The article reports an ongoing disruption in Argentina's chemicals industry due to an economic crisis marked by hyperinflation and currency devaluation. Arkema SA's operations in Argentina have been significantly affected, reducing output by 60%. The article confines the disruption to the chemicals sector in Argentina.",
+   "pass": true
+  },
+  "kg_query": {
+   "relay": {
+    "ongoing": true,
+    "scope": true,
+    "countries": true,
+    "industries": true,
+    "companies": true
+   },
+   "unresolved": {},
+   "vs_offline_on_pipeline_input": {
+    "pipeline": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "reference": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "identical": true
+   },
+   "vs_ground_truth": {
+    "pipeline": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "reference": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "identical": true
+   },
+   "revisits": 0,
+   "pass": true
+  },
+  "risk_manager": {
+   "answer_equals_tool_file": true,
+   "vs_offline_on_pipeline_paths": {
+    "n_pipeline": 0,
+    "n_reference": 0,
+    "score_mismatches": [],
+    "level_mismatches": [],
+    "identical": true
+   },
+   "vs_ground_truth": {
+    "n_pipeline": 0,
+    "n_reference": 0,
+    "score_mismatches": [],
+    "level_mismatches": [],
+    "identical": true
+   },
+   "expected_action_in_output": [],
+   "pass": true
+  },
+  "csco": {
+   "vs_ground_truth": {
+    "listed": 0,
+    "actionable": 0,
+    "action_errors": [],
+    "score_quote_errors": [],
+    "suppliers_not_in_assessment": [],
+    "correct": true
+   },
+   "vs_assessment_received": {
+    "listed": 0,
+    "actionable": 0,
+    "action_errors": [],
+    "score_quote_errors": [],
+    "suppliers_not_in_assessment": [],
+    "correct": true
+   },
+   "pass": true
+  },
+  "system": {
+   "end_to_end": true,
+   "truncated_calls": 0,
+   "served_models": [
+    "gpt-4o-2024-08-06"
+   ],
+   "temperatures": [
+    "not sent (API default)"
+   ]
+  }
+ },
+ "paths_vs_ground_truth": {
+  "tier_1": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 0
+  },
+  "tier_2": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 0
+  },
+  "tier_3": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 0
+  },
+  "tier_4": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 0
+  }
+ },
+ "path_set_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports an ongoing disruption in Argentina's chemicals industry due to an economic crisis marked by hyperinflation and currency devaluation. Arkema SA's operations in Argentina have been significantly affected, reducing output by 60%. The article confines the disruption to the chemicals sector in Argentina.",
+   "ongoing_disruption": true,
+   "type": "Economic Crisis",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Argentina"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [
+     "Arkema SA"
+    ]
+   },
+   "summary": "Argentina's economic crisis has severely disrupted its chemicals industry, with Arkema SA reducing output by 60% due to currency devaluation."
+  },
+  "kg_results": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 0,
+   "monitored_company": "Mercedes-Benz Group AG",
+   "disrupted_countries": [
+    "Argentina"
+   ],
+   "resolution": {
+    "countries": [
+     "Argentina"
+    ],
+    "industries": [
+     "Chemicals"
+    ],
+    "companies": [
+     "Arkema SA"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": []
+    },
+    "scope": "industries",
+    "unresolved_count": 0
+   },
+   "summary": {
+    "total_disrupted_chains": 0,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 0,
+    "tier_4_count": 0
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Mercedes-Benz Group AG",
+   "generated_at": "2026-10-13T20:22:51.088484Z",
+   "supplier_risk_scores": {},
+   "tier1_risk_profiles": [],
+   "critical_suppliers": [],
+   "expected_critical_suppliers": [],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 0,
+    "high_risk_suppliers": 0,
+    "medium_risk_suppliers": 0,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.0,
+    "average_risk_score": 0.0
+   },
+   "kg_summary": {
+    "monitored_company": "Mercedes-Benz Group AG",
+    "disrupted_countries": [
+     "Argentina"
+    ],
+    "summary": {
+     "total_disrupted_chains": 0,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 0,
+     "unique_disrupted_companies": 0
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Argentina"
+     ],
+     "industries": [
+      "Chemicals"
+     ],
+     "companies": [
+      "Arkema SA"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "NO EXPOSURE: No Tier-1 supplier has a disrupted supply path. MAINTAIN_STANDARD for all."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Mercedes-Benz Group AG",
+   "decisions": {},
+   "decision_report": {
+    "executive_summary": "0 REPLACE_SUPPLIER (score 0.60 or above), 0 INCREASE_MONITORING (0.45 to below 0.60), 0 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "0",
+     "replace_supplier_count": "0",
+     "increase_monitoring_count": "0",
+     "maintain_standard_count": "0",
+     "critical_suppliers": []
+    }
+   }
+  }
+ }
+}

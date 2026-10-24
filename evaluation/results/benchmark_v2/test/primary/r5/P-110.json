@@ -1,0 +1,6309 @@
+{
+ "scenario_id": "run_f0f87b029535",
+ "runtime_seconds": 10.0,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1811,
+   "completion_tokens": 167,
+   "cached_tokens": 1664,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:44:28"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 807,
+   "completion_tokens": 78,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:44:29"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1156,
+   "completion_tokens": 35,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:44:30"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 8793,
+   "completion_tokens": 481,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:44:36"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 12567,
+  "completion_tokens": 761,
+  "total_tokens": 13328,
+  "usd": 0.039,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 914,
+   "parsed": true,
+   "tail": "es and transport networks. Operations at several manufacturing sites are suspended, and transport services are halted.\"}"
+  },
+  "kg_results": {
+   "chars": 976,
+   "parsed": true,
+   "tail": "output/temp/kg_payloads/run_f0f87b029535_Tesla_Inc_20261017T134429_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 18865,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 1703,
+   "parsed": true,
+   "tail": "nt\": 1,\n      \"maintain_standard_count\": 23,\n      \"critical_suppliers\": [\n        \"thyssenkrupp AG\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports ongoing flooding in Lincolnshire, United Kingdom, causing severe disruptions in the machinery industry's manufacturing and logistics operations. It has led to the temporary closure of assembly plants, component warehouses, and disruptions in transportation, affecting multiple companies and production sites. The disruption is attributed to natural causes and is still active, influencing the machinery industry specifically.",
+   "ongoing_disruption": true,
+   "type": "Natural Disaster",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "United Kingdom"
+    ],
+    "industries": [
+     "Machinery"
+    ],
+    "companies": [
+     "Fenland Machinery Works",
+     "Humber Engineering"
+    ]
+   },
+   "summary": "Flooding in Lincolnshire is disrupting machinery production and logistics, affecting several companies and transport networks. Operations at several manufacturing sites are suspended, and transport services are halted."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ]
+   ],
+   "tier_3": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ]
+   ],
+   "tier_4": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Norsk Hydro ASA",
+      "country": "Norway",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "AMAG Austria Metall AG",
+      "country": "Austria",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "ABB Ltd",
+      "country": "Switzerland",
+      "industry": "Electrical Equipment"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Grupo Pochteca SAB de CV",
+      "country": "Mexico",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Grupo Simec SAB de CV",
+      "country": "Mexico",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Kobe Steel Ltd",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Ternium SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Ternium SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Ternium SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Autoliv Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Avient Corp",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Avient Corp",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Avient Corp",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Avient Corp",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Avient Corp",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Dow Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "CNGR Advanced Material Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "CNGR Advanced Material Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "CNGR Advanced Material Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "BHP Group Ltd",
+      "country": "Australia",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "CPC Corp/Taiwan",
+      "country": "Taiwan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Mitsubishi Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Mitsubishi Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vestas Wind Systems A/S",
+      "country": "Denmark",
+      "industry": "Renewable Energy"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "China Steel Corp",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Volkswagen AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Cleveland-Cliffs Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Cleveland-Cliffs Inc",
+      "country": "USA",
+      "industry": "Steel"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Aker Solutions ASA",
+      "country": "Norway",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BP PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Chemours Co/The",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Guangdong Delian Group Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "SK Inc",
+      "country": "South Korea",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hankook Tire & Technology Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ABB Ltd",
+      "country": "Switzerland",
+      "industry": "Electrical Equipment"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hankook Tire & Technology Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Hyundai Engineering & Construction Co Ltd",
+      "country": "South Korea",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "LG Energy Solution Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "POSCO Future M Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Aker Solutions ASA",
+      "country": "Norway",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Huaxiang Electronic Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ABB Ltd",
+      "country": "Switzerland",
+      "industry": "Electrical Equipment"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Huaxiang Electronic Co Ltd",
+      "country": "China",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Magna International Inc",
+      "country": "Canada",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Ningbo Shanshan Co Ltd",
+      "country": "China",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Outokumpu Oyj",
+      "country": "Finland",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Eurogroup Laminations SpA",
+      "country": "Italy",
+      "industry": "Machinery"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Kobe Steel Ltd",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Komatsu Ltd",
+      "country": "Japan",
+      "industry": "Machinery"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Mazda Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Panasonic Holdings Corp",
+      "country": "Japan",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Xperi Inc",
+      "country": "USA",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SKF AB",
+      "country": "Sweden",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "ABB Ltd",
+      "country": "Switzerland",
+      "industry": "Electrical Equipment"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SKF AB",
+      "country": "Sweden",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "Komatsu Ltd",
+      "country": "Japan",
+      "industry": "Machinery"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SKF AB",
+      "country": "Sweden",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "SKF AB",
+      "country": "Sweden",
+      "industry": "Industrial Intermediate Prod"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Asahi Kasei Corp",
+      "country": "Japan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "DL Holdings Co Ltd",
+      "country": "South Korea",
+      "industry": "Construction Materials"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "POSCO Future M Co Ltd",
+      "country": "South Korea",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung SDI Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Samsung Electronics Co Ltd",
+      "country": "South Korea",
+      "industry": "Technology Hardware"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "BASF SE",
+      "country": "Germany",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Jordan Petroleum Refinery Co",
+      "country": "Jordan",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sandvik AB",
+      "country": "Sweden",
+      "industry": "Machinery"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sandvik AB",
+      "country": "Sweden",
+      "industry": "Machinery"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Siemens AG",
+      "country": "Germany",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "JGC Holdings Corp",
+      "country": "Japan",
+      "industry": "Engineering & Construction"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Mitsubishi Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Mitsubishi Heavy Industries Ltd",
+      "country": "Japan",
+      "industry": "Diversified Industrials"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "NOW Inc",
+      "country": "USA",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "NOW Inc",
+      "country": "USA",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Dana Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "JTEKT Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Komatsu Ltd",
+      "country": "Japan",
+      "industry": "Machinery"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Nippon Steel Corp",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Industries Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyota Motor Corp",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Citra Tubindo Tbk PT",
+      "country": "Indonesia",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Citra Tubindo Tbk PT",
+      "country": "Indonesia",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Kobe Steel Ltd",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Aker Solutions ASA",
+      "country": "Norway",
+      "industry": "Oil & Gas Services & Equip"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "TotalEnergies SE",
+      "country": "France",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Electricite de France SA",
+      "country": "France",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vale SA",
+      "country": "Brazil",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "General Motors Co",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Wooshin Systems Co Ltd",
+      "country": "South Korea",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Tata Motors Ltd",
+      "country": "India",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Zhejiang Kingland Pipeline & Technologies Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Jiangsu Shagang Group Co Ltd",
+      "country": "China",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Air Liquide SA",
+      "country": "Spain",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Shell PLC",
+      "country": "United Kingdom",
+      "industry": "Oil & Gas Producers"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Cummins Inc",
+      "country": "USA",
+      "industry": "Transportation Equipment"
+     },
+     {
+      "company": "Air Products and Chemicals Inc",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Schaeffler AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "thyssenkrupp AG",
+      "country": "Germany",
+      "industry": "Steel"
+     },
+     {
+      "company": "Vallourec SACA",
+      "country": "France",
+      "industry": "Steel"
+     },
+     {
+      "company": "Tenaris SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Pressure Technologies PLC",
+      "country": "United Kingdom",
+      "industry": "Machinery"
+     }
+    ]
+   ],
+   "monitored_company": "Tesla Inc",
+   "disrupted_countries": [
+    "United Kingdom"
+   ],
+   "resolution": {
+    "countries": [
+     "United Kingdom"
+    ],
+    "industries": [
+     "Machinery"
+    ],
+    "companies": [],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "Fenland Machinery Works",
+      "Humber Engineering"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 2
+   },
+   "summary": {
+    "total_disrupted_chains": 153,
+    "tier_1_count": 0,
+    "tier_2_count": 1,
+    "tier_3_count": 11,
+    "tier_4_count": 141
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:44:31.793937Z",
+   "supplier_risk_scores": {
+    "thyssenkrupp AG": 0.627,
+    "ArcelorMittal SA": 0.408,
+    "Autoliv Inc": 0.392,
+    "China Steel Corp": 0.5187,
+    "Magna International Inc": 0.384,
+    "Schaeffler AG": 0.445,
+    "Vale SA": 0.383,
+    "AMAG Austria Metall AG": 0.2486,
+    "Avient Corp": 0.2112,
+    "CNGR Advanced Material Co Ltd": 0.2586,
+    "Cleveland-Cliffs Inc": 0.2789,
+    "Gestamp Automocion SA": 0.307,
+    "Guangdong Delian Group Co Ltd": 0.1886,
+    "Hankook Tire & Technology Co Ltd": 0.2445,
+    "LG Energy Solution Ltd": 0.1967,
+    "Ningbo Huaxiang Electronic Co Ltd": 0.2431,
+    "Ningbo Shanshan Co Ltd": 0.261,
+    "Outokumpu Oyj": 0.1779,
+    "Panasonic Holdings Corp": 0.3114,
+    "SKF AB": 0.3431,
+    "Samsung SDI Co Ltd": 0.2873,
+    "Sempra": 0.2567,
+    "Toyota Industries Corp": 0.3697,
+    "Wooshin Systems Co Ltd": 0.2327,
+    "Zhejiang Kingland Pipeline & Technologies Co Ltd": 0.1128
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.627,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.45076021081226425,
+      "central": 0.8641145624876101,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.6,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.14392654145925274,
+       "sub_pagerank": 0.00290587434440113,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.5187,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 16,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       15
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.8919371920331561,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.1684909412495091,
+       "sub_pagerank": 0.004627621023354048,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.445,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       16
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.7170017102447287,
+      "central": 0.6127390414081789,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.15875066626902345,
+       "sub_pagerank": 0.004238697545244364,
+       "central": 0.19483430107860372,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.408,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 16,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       17
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.47473806115638456,
+      "central": 0.7272971358717332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1452616099851172,
+       "sub_pagerank": 0.0032325585980144374,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.392,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.6375977366581383,
+      "central": 0.23893937534261417,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.15432951322808688,
+       "sub_pagerank": 0.003078634413584464,
+       "central": 0.15523407834127317,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.384,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.48259547952172616,
+      "central": 0.4707931688303183,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.14569910508178208,
+       "sub_pagerank": 0.002285783092926493,
+       "central": 0.17979659858439637,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.383,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 0.4256566344228167,
+      "central": 0.5736242048454329,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.1425287933607705,
+       "sub_pagerank": 0.003270862410833776,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3697,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       11
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 1.0,
+      "central": 0.6929670927913336,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.1745077964580681,
+       "sub_pagerank": 0.003871768972346825,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SKF AB",
+     "risk_score": 0.3431,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021645021645021645,
+      "sub_criticality": 1.0,
+      "central": 0.4259438063588517,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021645021645021645,
+       "sub_central": 0.17376171259052203,
+       "sub_pagerank": 0.005598648048164008,
+       "central": 0.1750452707884378,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Panasonic Holdings Corp",
+     "risk_score": 0.3114,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013568521031207597,
+      "sub_criticality": 0.7998749236868304,
+      "central": 0.5106028206260668,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013568521031207597,
+       "sub_central": 0.1633649839545506,
+       "sub_pagerank": 0.003593685398976046,
+       "central": 0.1840140209668195,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.307,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.8861516337848568,
+      "central": 0.2926203002471244,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.16816880575316534,
+       "sub_pagerank": 0.0027571025898127186,
+       "central": 0.16092101917067364,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.2873,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.5635051820922348,
+      "central": 0.7428514160371402,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.1502040959708185,
+       "sub_pagerank": 0.0026689622510322653,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Cleveland-Cliffs Inc",
+     "risk_score": 0.2789,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0037735849056603774,
+      "sub_criticality": 0.8244203706247578,
+      "central": 0.13039829677182735,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0037735849056603774,
+       "sub_central": 0.16473165582837596,
+       "sub_pagerank": 0.0026745234247377747,
+       "central": 0.1437352695467267,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Shanshan Co Ltd",
+     "risk_score": 0.261,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0029411764705882353,
+      "sub_criticality": 0.7061419477638754,
+      "central": 0.18988405530040076,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0029411764705882353,
+       "sub_central": 0.15814600292854572,
+       "sub_pagerank": 0.0026955384715108524,
+       "central": 0.15003717268170003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.2586,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.627582388492207,
+      "central": 0.3248303342999277,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.15377186623638364,
+       "sub_pagerank": 0.003352031290698516,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.2567,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.4485349056771213,
+      "central": 0.6641398869943861,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.13704372601863554,
+       "sub_pagerank": 0.0035170980211001973,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.2486,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.7002624453974735,
+      "central": 0.0807873587971402,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15781863669493948,
+       "sub_pagerank": 0.0020210136880587765,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hankook Tire & Technology Co Ltd",
+     "risk_score": 0.2445,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002564102564102564,
+      "sub_criticality": 0.6324289347099828,
+      "central": 0.17401780411830894,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002564102564102564,
+       "sub_central": 0.1540417182548773,
+       "sub_pagerank": 0.002428836152871386,
+       "central": 0.14835630686544468,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Huaxiang Electronic Co Ltd",
+     "risk_score": 0.2431,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004761904761904762,
+      "sub_criticality": 0.6462495093564369,
+      "central": 0.12666250504569493,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004761904761904762,
+       "sub_central": 0.15481123737168861,
+       "sub_pagerank": 0.0022812123137020855,
+       "central": 0.143339500909445,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.2327,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.5545749410795414,
+      "central": 0.2143844590591846,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.14970686692262092,
+       "sub_pagerank": 0.0020787521859281983,
+       "central": 0.1526327379913603,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Avient Corp",
+     "risk_score": 0.2112,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002680965147453083,
+      "sub_criticality": 0.5414313451313378,
+      "central": 0.022811229727764924,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002680965147453083,
+       "sub_central": 0.14897504146640653,
+       "sub_pagerank": 0.0022263935380004963,
+       "central": 0.13233752844266242,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.1967,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.2562119407525866,
+      "central": 0.45056682558621564,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.13309424129929512,
+       "sub_pagerank": 0.002234138569008694,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.1886,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.4211732696367527,
+      "central": 0.039802760184115916,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.14227916300901086,
+       "sub_pagerank": 0.0026024556712711065,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Outokumpu Oyj",
+     "risk_score": 0.1779,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.011363636363636364,
+      "sub_criticality": 0.37525905874697063,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.011363636363636364,
+       "sub_central": 0.13972269456129272,
+       "sub_pagerank": 0.002836648445292911,
+       "central": 0.12992091371520714,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Zhejiang Kingland Pipeline & Technologies Co Ltd",
+     "risk_score": 0.1128,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.02857142857142857,
+      "sub_criticality": 0.0,
+      "central": 0.0567109722328566,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.02857142857142857,
+       "sub_central": 0.11882855471186901,
+       "sub_pagerank": 0.0018240663955942109,
+       "central": 0.1359288568354072,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "thyssenkrupp AG",
+     "risk_score": 0.627,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.45076021081226425,
+      "central": 0.8641145624876101,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.6,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.14392654145925274,
+       "sub_pagerank": 0.00290587434440113,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "thyssenkrupp AG"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 25,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 23,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.627,
+    "average_risk_score": 0.3075
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "United Kingdom"
+    ],
+    "summary": {
+     "total_disrupted_chains": 153,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 1,
+     "tier_3_chain_count": 11,
+     "tier_4_chain_count": 141,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "United Kingdom"
+     ],
+     "industries": [
+      "Machinery"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:44:31.793937Z",
+   "supplier_risk_scores": {
+    "thyssenkrupp AG": 0.627,
+    "ArcelorMittal SA": 0.408,
+    "Autoliv Inc": 0.392,
+    "China Steel Corp": 0.5187,
+    "Magna International Inc": 0.384,
+    "Schaeffler AG": 0.445,
+    "Vale SA": 0.383,
+    "AMAG Austria Metall AG": 0.2486,
+    "Avient Corp": 0.2112,
+    "CNGR Advanced Material Co Ltd": 0.2586,
+    "Cleveland-Cliffs Inc": 0.2789,
+    "Gestamp Automocion SA": 0.307,
+    "Guangdong Delian Group Co Ltd": 0.1886,
+    "Hankook Tire & Technology Co Ltd": 0.2445,
+    "LG Energy Solution Ltd": 0.1967,
+    "Ningbo Huaxiang Electronic Co Ltd": 0.2431,
+    "Ningbo Shanshan Co Ltd": 0.261,
+    "Outokumpu Oyj": 0.1779,
+    "Panasonic Holdings Corp": 0.3114,
+    "SKF AB": 0.3431,
+    "Samsung SDI Co Ltd": 0.2873,
+    "Sempra": 0.2567,
+    "Toyota Industries Corp": 0.3697,
+    "Wooshin Systems Co Ltd": 0.2327,
+    "Zhejiang Kingland Pipeline & Technologies Co Ltd": 0.1128
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.627,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.45076021081226425,
+      "central": 0.8641145624876101,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.6,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.14392654145925274,
+       "sub_pagerank": 0.00290587434440113,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "China Steel Corp",
+     "risk_score": 0.5187,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 16,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       15
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.0011668611435239206,
+      "sub_criticality": 0.8919371920331561,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0011668611435239206,
+       "sub_central": 0.1684909412495091,
+       "sub_pagerank": 0.004627621023354048,
+       "central": 0.23586060904490988,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.445,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       16
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.001379310344827586,
+      "sub_criticality": 0.7170017102447287,
+      "central": 0.6127390414081789,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.001379310344827586,
+       "sub_central": 0.15875066626902345,
+       "sub_pagerank": 0.004238697545244364,
+       "central": 0.19483430107860372,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.408,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 16,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       17
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.47473806115638456,
+      "central": 0.7272971358717332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.1452616099851172,
+       "sub_pagerank": 0.0032325585980144374,
+       "central": 0.20697055070362397,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.392,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.0022471910112359553,
+      "sub_criticality": 0.6375977366581383,
+      "central": 0.23893937534261417,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0022471910112359553,
+       "sub_central": 0.15432951322808688,
+       "sub_pagerank": 0.003078634413584464,
+       "central": 0.15523407834127317,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.384,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.0017035775127768314,
+      "sub_criticality": 0.48259547952172616,
+      "central": 0.4707931688303183,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.0017035775127768314,
+       "sub_central": 0.14569910508178208,
+       "sub_pagerank": 0.002285783092926493,
+       "central": 0.17979659858439637,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Vale SA",
+     "risk_score": 0.383,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4,
+      "dependency": 0.002044989775051125,
+      "sub_criticality": 0.4256566344228167,
+      "central": 0.5736242048454329,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.85,
+       "dependency": 0.002044989775051125,
+       "sub_central": 0.1425287933607705,
+       "sub_pagerank": 0.003270862410833776,
+       "central": 0.1906904872102753,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3697,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       11
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0015060240963855422,
+      "sub_criticality": 1.0,
+      "central": 0.6929670927913336,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015060240963855422,
+       "sub_central": 0.1745077964580681,
+       "sub_pagerank": 0.003871768972346825,
+       "central": 0.20333363639903088,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SKF AB",
+     "risk_score": 0.3431,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021645021645021645,
+      "sub_criticality": 1.0,
+      "central": 0.4259438063588517,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021645021645021645,
+       "sub_central": 0.17376171259052203,
+       "sub_pagerank": 0.005598648048164008,
+       "central": 0.1750452707884378,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Panasonic Holdings Corp",
+     "risk_score": 0.3114,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0013568521031207597,
+      "sub_criticality": 0.7998749236868304,
+      "central": 0.5106028206260668,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0013568521031207597,
+       "sub_central": 0.1633649839545506,
+       "sub_pagerank": 0.003593685398976046,
+       "central": 0.1840140209668195,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.307,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.8861516337848568,
+      "central": 0.2926203002471244,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.16816880575316534,
+       "sub_pagerank": 0.0027571025898127186,
+       "central": 0.16092101917067364,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.2873,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0012422360248447205,
+      "sub_criticality": 0.5635051820922348,
+      "central": 0.7428514160371402,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0012422360248447205,
+       "sub_central": 0.1502040959708185,
+       "sub_pagerank": 0.0026689622510322653,
+       "central": 0.20861836640542003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Cleveland-Cliffs Inc",
+     "risk_score": 0.2789,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0037735849056603774,
+      "sub_criticality": 0.8244203706247578,
+      "central": 0.13039829677182735,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0037735849056603774,
+       "sub_central": 0.16473165582837596,
+       "sub_pagerank": 0.0026745234247377747,
+       "central": 0.1437352695467267,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Shanshan Co Ltd",
+     "risk_score": 0.261,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0029411764705882353,
+      "sub_criticality": 0.7061419477638754,
+      "central": 0.18988405530040076,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0029411764705882353,
+       "sub_central": 0.15814600292854572,
+       "sub_pagerank": 0.0026955384715108524,
+       "central": 0.15003717268170003,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CNGR Advanced Material Co Ltd",
+     "risk_score": 0.2586,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0022675736961451248,
+      "sub_criticality": 0.627582388492207,
+      "central": 0.3248303342999277,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0022675736961451248,
+       "sub_central": 0.15377186623638364,
+       "sub_pagerank": 0.003352031290698516,
+       "central": 0.16433334036478697,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.2567,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 0.4485349056771213,
+      "central": 0.6641398869943861,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.13704372601863554,
+       "sub_pagerank": 0.0035170980211001973,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.2486,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001692047377326565,
+      "sub_criticality": 0.7002624453974735,
+      "central": 0.0807873587971402,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001692047377326565,
+       "sub_central": 0.15781863669493948,
+       "sub_pagerank": 0.0020210136880587765,
+       "central": 0.13847950189266756,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hankook Tire & Technology Co Ltd",
+     "risk_score": 0.2445,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002564102564102564,
+      "sub_criticality": 0.6324289347099828,
+      "central": 0.17401780411830894,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002564102564102564,
+       "sub_central": 0.1540417182548773,
+       "sub_pagerank": 0.002428836152871386,
+       "central": 0.14835630686544468,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Huaxiang Electronic Co Ltd",
+     "risk_score": 0.2431,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.004761904761904762,
+      "sub_criticality": 0.6462495093564369,
+      "central": 0.12666250504569493,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.004761904761904762,
+       "sub_central": 0.15481123737168861,
+       "sub_pagerank": 0.0022812123137020855,
+       "central": 0.143339500909445,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.2327,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001483679525222552,
+      "sub_criticality": 0.5545749410795414,
+      "central": 0.2143844590591846,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001483679525222552,
+       "sub_central": 0.14970686692262092,
+       "sub_pagerank": 0.0020787521859281983,
+       "central": 0.1526327379913603,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Avient Corp",
+     "risk_score": 0.2112,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002680965147453083,
+      "sub_criticality": 0.5414313451313378,
+      "central": 0.022811229727764924,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002680965147453083,
+       "sub_central": 0.14897504146640653,
+       "sub_pagerank": 0.0022263935380004963,
+       "central": 0.13233752844266242,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.1967,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0014534883720930232,
+      "sub_criticality": 0.2562119407525866,
+      "central": 0.45056682558621564,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014534883720930232,
+       "sub_central": 0.13309424129929512,
+       "sub_pagerank": 0.002234138569008694,
+       "central": 0.17765382594348214,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangdong Delian Group Co Ltd",
+     "risk_score": 0.1886,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.001652892561983471,
+      "sub_criticality": 0.4211732696367527,
+      "central": 0.039802760184115916,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001652892561983471,
+       "sub_central": 0.14227916300901086,
+       "sub_pagerank": 0.0026024556712711065,
+       "central": 0.1341376060023936,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Outokumpu Oyj",
+     "risk_score": 0.1779,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.011363636363636364,
+      "sub_criticality": 0.37525905874697063,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.011363636363636364,
+       "sub_central": 0.13972269456129272,
+       "sub_pagerank": 0.002836648445292911,
+       "central": 0.12992091371520714,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Zhejiang Kingland Pipeline & Technologies Co Ltd",
+     "risk_score": 0.1128,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "United Kingdom",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.02857142857142857,
+      "sub_criticality": 0.0,
+      "central": 0.0567109722328566,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.02857142857142857,
+       "sub_central": 0.11882855471186901,
+       "sub_pagerank": 0.0018240663955942109,
+       "central": 0.1359288568354072,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "thyssenkrupp AG",
+     "risk_score": 0.627,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018796992481203006,
+      "sub_criticality": 0.45076021081226425,
+      "central": 0.8641145624876101,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.6,
+       "dependency": 0.0018796992481203006,
+       "sub_central": 0.14392654145925274,
+       "sub_pagerank": 0.00290587434440113,
+       "central": 0.22146494719510393,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "thyssenkrupp AG"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 25,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 23,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.627,
+    "average_risk_score": 0.3075
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "United Kingdom"
+    ],
+    "summary": {
+     "total_disrupted_chains": 153,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 1,
+     "tier_3_chain_count": 11,
+     "tier_4_chain_count": 141,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "United Kingdom"
+     ],
+     "industries": [
+      "Machinery"
+     ],
+     "companies": []
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Tesla Inc",
+   "decisions": {
+    "thyssenkrupp AG": {
+     "risk_score_raw": 0.627,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.627 (HIGH), driven mainly by exposure (1.0) and centrality (0.864).",
+      "exposure_details": {
+       "total_disrupted_nodes": 3,
+       "by_tier": {
+        "tier_2": 1,
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "United Kingdom"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "China Steel Corp": {
+     "risk_score_raw": 0.5187,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5187 (MEDIUM); significant sub-supplier criticality (0.892) and centrality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 2,
+       "by_tier": {
+        "tier_3": 1,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "United Kingdom"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "1 REPLACE_SUPPLIER (score 0.60 or above), 1 INCREASE_MONITORING (0.45 to below 0.60), 23 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": 25,
+     "replace_supplier_count": 1,
+     "increase_monitoring_count": 1,
+     "maintain_standard_count": 23,
+     "critical_suppliers": [
+      "thyssenkrupp AG"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   1,
+   11,
+   141
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_f0f87b029535_Tesla_Inc_20261017T134429_kg.json",
+  "monitored_company": "Tesla Inc",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "United Kingdom"
+  ],
+  "disrupted_industries": [
+   "Machinery"
+  ],
+  "disrupted_companies": [],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "Fenland Machinery Works",
+    "Humber Engineering"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "United Kingdom"
+   ],
+   "industries": [
+    "Machinery"
+   ],
+   "companies": [
+    "Fenland Machinery Works",
+    "Humber Engineering"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_f0f87b029535",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 1,
+   "tier_3": 11,
+   "tier_4": 141
+  },
+  "total_chains": 153,
+  "message": "Built and saved 153 disrupted supply chains to output/temp/kg_payloads/run_f0f87b029535_Tesla_Inc_20261017T134429_kg.json"
+ },
+ "item_id": "P-110",
+ "run_id": "run_f0f87b029535",
+ "item_type": "P",
+ "firm": "Tesla Inc",
+ "set": "test",
+ "repeat": 5
+}

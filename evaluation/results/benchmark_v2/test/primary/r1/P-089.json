@@ -1,0 +1,986 @@
+{
+ "scenario_id": "run_ff6bc1acbc64",
+ "runtime_seconds": 13.1,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1889,
+   "completion_tokens": 202,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:13:17"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 867,
+   "completion_tokens": 89,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:13:18"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1239,
+   "completion_tokens": 40,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:13:20"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 3906,
+   "completion_tokens": 770,
+   "cached_tokens": 1024,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:13:29"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 7901,
+  "completion_tokens": 1101,
+  "total_tokens": 9002,
+  "usd": 0.0308,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 952,
+   "parsed": true,
+   "tail": "re leading to delayed projects, increased costs, and concerns from other logistics providers and workers' unions.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 1049,
+   "parsed": true,
+   "tail": "ain-disruption-monitoring/output/temp/kg_payloads/run_ff6bc1acbc64_Bayerische_Motoren_Werke_AG_20261017T131319_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 6010,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 2829,
+   "parsed": true,
+   "tail": "pliers\": [\n        \"Toyoda Gosei Co Ltd\",\n        \"Toray Industries Inc\",\n        \"ArcelorMittal SA\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports ongoing disruptions in the Transportation & Logistics industry in Mexico due to new tariffs on imported rail equipment. This has affected major companies like Ferrocarril Mexicano SA de CV, leading to delayed projects and increased costs. Other logistics providers and workers' unions are also expressing concerns about the impact.",
+   "ongoing_disruption": true,
+   "type": "Trade Policy",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Mexico"
+    ],
+    "industries": [
+     "Transportation & Logistics"
+    ],
+    "companies": [
+     "Ferrocarril Mexicano SA de CV",
+     "Log\u00edstica Norte\u00f1a"
+    ]
+   },
+   "summary": "Mexico's new tariffs on imported rail equipment are causing disruptions in the Transportation & Logistics industry, impacting companies like Ferrocarril Mexicano SA de CV. The tariffs are leading to delayed projects, increased costs, and concerns from other logistics providers and workers' unions."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [],
+   "tier_3": [],
+   "tier_4": [
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "ArcelorMittal SA",
+      "country": "Luxembourg",
+      "industry": "Steel"
+     },
+     {
+      "company": "Anglo American Platinum Ltd",
+      "country": "South Africa",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Southern Copper Corp",
+      "country": "USA",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Ferrocarril Mexicano SA de CV",
+      "country": "Mexico",
+      "industry": "Transportation & Logistics"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Gestamp Automocion SA",
+      "country": "Spain",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mitsui & Co Ltd",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Southern Copper Corp",
+      "country": "USA",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Ferrocarril Mexicano SA de CV",
+      "country": "Mexico",
+      "industry": "Transportation & Logistics"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toray Industries Inc",
+      "country": "Japan",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "Mitsui & Co Ltd",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Southern Copper Corp",
+      "country": "USA",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Ferrocarril Mexicano SA de CV",
+      "country": "Mexico",
+      "industry": "Transportation & Logistics"
+     }
+    ],
+    [
+     {
+      "company": "Bayerische Motoren Werke AG",
+      "country": "Germany",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Toyoda Gosei Co Ltd",
+      "country": "Japan",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Mitsui & Co Ltd",
+      "country": "Japan",
+      "industry": "Steel"
+     },
+     {
+      "company": "Southern Copper Corp",
+      "country": "USA",
+      "industry": "Metals & Mining"
+     },
+     {
+      "company": "Ferrocarril Mexicano SA de CV",
+      "country": "Mexico",
+      "industry": "Transportation & Logistics"
+     }
+    ]
+   ],
+   "monitored_company": "Bayerische Motoren Werke AG",
+   "disrupted_countries": [
+    "Mexico"
+   ],
+   "resolution": {
+    "countries": [
+     "Mexico"
+    ],
+    "industries": [
+     "Transportation & Logistics"
+    ],
+    "companies": [
+     "Ferrocarril Mexicano SA de CV"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "Log\u00edstica Norte\u00f1a"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 1
+   },
+   "summary": {
+    "total_disrupted_chains": 4,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 0,
+    "tier_4_count": 4
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:13:21.880508Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.6603,
+    "Gestamp Automocion SA": 0.499,
+    "Toray Industries Inc": 0.6947,
+    "Toyoda Gosei Co Ltd": 0.6956
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.6956,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Mexico",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015552099533437014,
+      "sub_criticality": 1.0,
+      "central": 0.45168307206175495,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015552099533437014,
+       "sub_central": 0.12331034538893432,
+       "sub_pagerank": 0.0015999093213309866,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toray Industries Inc",
+     "risk_score": 0.6947,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Mexico",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018181818181818182,
+      "sub_criticality": 1.0,
+      "central": 0.44232287268037246,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018181818181818182,
+       "sub_central": 0.12318213883668218,
+       "sub_pagerank": 0.0019102789583268032,
+       "central": 0.18459911481660543,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.6603,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Mexico",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.5495160360541093,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.11513949333286796,
+       "sub_pagerank": 0.0017331164288565274,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.499,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Mexico",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.24283315449075277,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.11712364711251981,
+       "sub_pagerank": 0.0015170074022907809,
+       "central": 0.16036514791995596,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.6956,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015552099533437014,
+      "sub_criticality": 1.0,
+      "central": 0.45168307206175495,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015552099533437014,
+       "sub_central": 0.12331034538893432,
+       "sub_pagerank": 0.0015999093213309866,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Toray Industries Inc",
+     "risk_score": 0.6947,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018181818181818182,
+      "sub_criticality": 1.0,
+      "central": 0.44232287268037246,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018181818181818182,
+       "sub_central": 0.12318213883668218,
+       "sub_pagerank": 0.0019102789583268032,
+       "central": 0.18459911481660543,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.6603,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.5495160360541093,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.11513949333286796,
+       "sub_pagerank": 0.0017331164288565274,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Toyoda Gosei Co Ltd",
+    "Toray Industries Inc",
+    "ArcelorMittal SA"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 4,
+    "high_risk_suppliers": 3,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.6956,
+    "average_risk_score": 0.6374
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Mexico"
+    ],
+    "summary": {
+     "total_disrupted_chains": 4,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 4,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Mexico"
+     ],
+     "industries": [
+      "Transportation & Logistics"
+     ],
+     "companies": [
+      "Ferrocarril Mexicano SA de CV"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 3 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-17T13:13:21.880508Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.6603,
+    "Gestamp Automocion SA": 0.499,
+    "Toray Industries Inc": 0.6947,
+    "Toyoda Gosei Co Ltd": 0.6956
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.6956,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Mexico",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015552099533437014,
+      "sub_criticality": 1.0,
+      "central": 0.45168307206175495,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015552099533437014,
+       "sub_central": 0.12331034538893432,
+       "sub_pagerank": 0.0015999093213309866,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toray Industries Inc",
+     "risk_score": 0.6947,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Mexico",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018181818181818182,
+      "sub_criticality": 1.0,
+      "central": 0.44232287268037246,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018181818181818182,
+       "sub_central": 0.12318213883668218,
+       "sub_pagerank": 0.0019102789583268032,
+       "central": 0.18459911481660543,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.6603,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Mexico",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.5495160360541093,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.11513949333286796,
+       "sub_pagerank": 0.0017331164288565274,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.499,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Mexico",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.001890359168241966,
+      "sub_criticality": 0.24283315449075277,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.001890359168241966,
+       "sub_central": 0.11712364711251981,
+       "sub_pagerank": 0.0015170074022907809,
+       "central": 0.16036514791995596,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.6956,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0015552099533437014,
+      "sub_criticality": 1.0,
+      "central": 0.45168307206175495,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0015552099533437014,
+       "sub_central": 0.12331034538893432,
+       "sub_pagerank": 0.0015999093213309866,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "Toray Industries Inc",
+     "risk_score": 0.6947,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0018181818181818182,
+      "sub_criticality": 1.0,
+      "central": 0.44232287268037246,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0018181818181818182,
+       "sub_central": 0.12318213883668218,
+       "sub_pagerank": 0.0019102789583268032,
+       "central": 0.18459911481660543,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    },
+    {
+     "company": "ArcelorMittal SA",
+     "risk_score": 0.6603,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0014104372355430183,
+      "sub_criticality": 0.5495160360541093,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0014104372355430183,
+       "sub_central": 0.11513949333286796,
+       "sub_pagerank": 0.0017331164288565274,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Toyoda Gosei Co Ltd",
+    "Toray Industries Inc",
+    "ArcelorMittal SA"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 4,
+    "high_risk_suppliers": 3,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.6956,
+    "average_risk_score": 0.6374
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "Mexico"
+    ],
+    "summary": {
+     "total_disrupted_chains": 4,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 4,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Mexico"
+     ],
+     "industries": [
+      "Transportation & Logistics"
+     ],
+     "companies": [
+      "Ferrocarril Mexicano SA de CV"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 3 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "decisions": {
+    "Toyoda Gosei Co Ltd": {
+     "risk_score_raw": 0.6956,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6956 (HIGH), driven by maximum exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Mexico"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Toray Industries Inc": {
+     "risk_score_raw": 0.6947,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6947 (HIGH), with high exposure (1.0) and sub-supplier criticality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Mexico"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "ArcelorMittal SA": {
+     "risk_score_raw": 0.6603,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.6603 (HIGH), significant centrality (1.0) contributing to the risk level.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Mexico"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Gestamp Automocion SA": {
+     "risk_score_raw": 0.499,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.499 (MEDIUM); disrupted companies at Tier 4 with notable exposure.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Mexico"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "3 REPLACE_SUPPLIER (score 0.60 or above), 1 INCREASE_MONITORING (0.45 to below 0.60), 0 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "4",
+     "replace_supplier_count": "3",
+     "increase_monitoring_count": "1",
+     "maintain_standard_count": "0",
+     "critical_suppliers": [
+      "Toyoda Gosei Co Ltd",
+      "Toray Industries Inc",
+      "ArcelorMittal SA"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   0,
+   0,
+   4
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_ff6bc1acbc64_Bayerische_Motoren_Werke_AG_20261017T131319_kg.json",
+  "monitored_company": "Bayerische Motoren Werke AG",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Mexico"
+  ],
+  "disrupted_industries": [
+   "Transportation & Logistics"
+  ],
+  "disrupted_companies": [
+   "Ferrocarril Mexicano SA de CV"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "Log\u00edstica Norte\u00f1a"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "Mexico"
+   ],
+   "industries": [
+    "Transportation & Logistics"
+   ],
+   "companies": [
+    "Ferrocarril Mexicano SA de CV",
+    "Log\u00edstica Norte\u00f1a"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_ff6bc1acbc64",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 4
+  },
+  "total_chains": 4,
+  "message": "Built and saved 4 disrupted supply chains to output/temp/kg_payloads/run_ff6bc1acbc64_Bayerische_Motoren_Werke_AG_20261017T131319_kg.json"
+ },
+ "item_id": "P-089",
+ "run_id": "run_ff6bc1acbc64",
+ "item_type": "P",
+ "firm": "Bayerische Motoren Werke AG",
+ "set": "test",
+ "repeat": 1
+}

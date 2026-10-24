@@ -1,0 +1,3760 @@
+{
+ "run_id": "original/gpt-4.1/BMW_SC001__article__r1",
+ "condition": "original",
+ "model": "gpt-4.1",
+ "scenario_id": "BMW_SC001",
+ "variant": "article",
+ "run_index": 1,
+ "monitored_company": "Bayerische Motoren Werke AG",
+ "article_sha256": "a5c69206dbf6419b47f33694d68562ffd2e0b414b59de5fdf8c70ba2e1655d7d",
+ "ground_truth": "v1.2",
+ "graph_file": "dataset/supplychainKG_clean.csv",
+ "started": "2026-10-13T20:40:56",
+ "provenance": {
+  "commit": "73575f63e3dd0c773889714ce456d6cd4e6830f8",
+  "tags_at_commit": [
+   "evaluation-v1.2"
+  ],
+  "pipeline_files_modified": [],
+  "python": "3.12.2",
+  "executable": "venv/bin/python",
+  "platform": "macOS-14.1-arm64-arm-64bit",
+  "crewai": "1.9.3",
+  "openai": "1.83.0",
+  "neo4j": "6.1.0"
+ },
+ "graph": {
+  "nodes": 6318,
+  "relationships": 22862
+ },
+ "status": "completed",
+ "finished": "2026-10-13T20:41:15",
+ "success": true,
+ "error": null,
+ "traceback": null,
+ "runtime_seconds": 18.6,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4.1",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4.1-2025-04-14",
+   "prompt_tokens": 1622,
+   "cached_tokens": 1408,
+   "completion_tokens": 245,
+   "reasoning_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-13T20:41:02"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4.1",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4.1-2025-04-14",
+   "prompt_tokens": 905,
+   "cached_tokens": 0,
+   "completion_tokens": 77,
+   "reasoning_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-13T20:41:05"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4.1",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4.1-2025-04-14",
+   "prompt_tokens": 1251,
+   "cached_tokens": 0,
+   "completion_tokens": 35,
+   "reasoning_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-13T20:41:08"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Bayerische Motoren Werke AG",
+   "requested_model": "gpt-4.1",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4.1-2025-04-14",
+   "prompt_tokens": 26173,
+   "cached_tokens": 0,
+   "completion_tokens": 328,
+   "reasoning_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-13T20:41:15"
+  }
+ ],
+ "truncated_calls": 0,
+ "cost": {
+  "calls": 4,
+  "prompt_tokens": 29951,
+  "cached_tokens": 1408,
+  "completion_tokens": 685,
+  "reasoning_tokens": 0,
+  "usd": 0.06327,
+  "unpriced_models": []
+ },
+ "earlier_attempts": [],
+ "earlier_attempts_usd": 0,
+ "api_errors_within_run": [],
+ "client_retries_within_run": 0,
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 1176,
+   "parsed": true,
+   "tail": "perations at two sites, and at least 12 operations nationwide have scaled back output since the start of the quarter.\"\n}"
+  },
+  "kg_results": {
+   "chars": 966,
+   "parsed": true,
+   "tail": "pply-chain-disruption-monitoring/output/temp/kg_payloads/BMW_SC001_Bayerische_Motoren_Werke_AG_20261013T194107_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 63606,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 1134,
+   "parsed": true,
+   "tail": "     \"increase_monitoring_count\": \"1\",\n      \"maintain_standard_count\": \"90\",\n      \"critical_suppliers\": []\n    }\n  }\n}"
+  }
+ },
+ "answers_not_json_objects": [],
+ "kg_tool_called": true,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/BMW_SC001_Bayerische_Motoren_Werke_AG_20261013T194107_kg.json",
+  "monitored_company": "Bayerische Motoren Werke AG",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "South Africa"
+  ],
+  "disrupted_industries": [
+   "Metals & Mining"
+  ],
+  "disrupted_companies": [
+   "Kumba Iron Ore Ltd"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": []
+  },
+  "requested": {
+   "countries": [
+    "South Africa"
+   ],
+   "industries": [
+    "Metals & Mining"
+   ],
+   "companies": [
+    "Kumba Iron Ore Ltd"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "BMW_SC001",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 8,
+   "tier_3": 95,
+   "tier_4": 1085
+  },
+  "total_chains": 1188,
+  "message": "Built and saved 1188 disrupted supply chains to output/temp/kg_payloads/BMW_SC001_Bayerische_Motoren_Werke_AG_20261013T194107_kg.json"
+ },
+ "comparison": {
+  "disruption_monitor": {
+   "ongoing": true,
+   "ongoing_ok": true,
+   "type": "Economic Crisis",
+   "type_ok": true,
+   "scope": "industries",
+   "scope_ok": true,
+   "entities": {
+    "countries": {
+     "pipeline": [
+      "South Africa"
+     ],
+     "ground_truth": [
+      "South Africa"
+     ],
+     "f1": 1.0,
+     "equal": true
+    },
+    "industries": {
+     "pipeline": [
+      "Metals & Mining"
+     ],
+     "ground_truth": [
+      "Metals & Mining"
+     ],
+     "f1": 1.0,
+     "equal": true
+    },
+    "companies": {
+     "pipeline": [
+      "Kumba Iron Ore Ltd"
+     ],
+     "ground_truth": [
+      "Kumba Iron Ore Ltd"
+     ],
+     "f1": 1.0,
+     "equal": true
+    }
+   },
+   "reasoning": "The article states that South Africa's mining sector is experiencing its worst economic crisis in over a decade, with production cuts underway across the Metals & Mining industry. Kumba Iron Ore Ltd has suspended operations at two mining complexes, and at least 12 mining operations nationwide have reduced output since the start of the quarter. The disruptions are attributed to a recession, declining demand, power supply issues, and logistical problems, and are ongoing. The disruption is confined to the Metals & Mining sector in South Africa, with Kumba Iron Ore Ltd named as a directly affected company.",
+   "pass": true
+  },
+  "kg_query": {
+   "relay": {
+    "ongoing": true,
+    "scope": true,
+    "countries": true,
+    "industries": true,
+    "companies": true
+   },
+   "unresolved": {},
+   "vs_offline_on_pipeline_input": {
+    "pipeline": [
+     0,
+     8,
+     95,
+     1085
+    ],
+    "reference": [
+     0,
+     8,
+     95,
+     1085
+    ],
+    "identical": true
+   },
+   "vs_ground_truth": {
+    "pipeline": [
+     0,
+     8,
+     95,
+     1085
+    ],
+    "reference": [
+     0,
+     8,
+     95,
+     1085
+    ],
+    "identical": true
+   },
+   "revisits": 0,
+   "pass": true
+  },
+  "risk_manager": {
+   "answer_equals_tool_file": true,
+   "vs_offline_on_pipeline_paths": {
+    "n_pipeline": 91,
+    "n_reference": 91,
+    "score_mismatches": [],
+    "level_mismatches": [],
+    "identical": true
+   },
+   "vs_ground_truth": {
+    "n_pipeline": 91,
+    "n_reference": 91,
+    "score_mismatches": [],
+    "level_mismatches": [],
+    "identical": true
+   },
+   "expected_action_in_output": [],
+   "pass": true
+  },
+  "csco": {
+   "vs_ground_truth": {
+    "listed": 1,
+    "actionable": 1,
+    "action_errors": [],
+    "score_quote_errors": [],
+    "suppliers_not_in_assessment": [],
+    "correct": true
+   },
+   "vs_assessment_received": {
+    "listed": 1,
+    "actionable": 1,
+    "action_errors": [],
+    "score_quote_errors": [],
+    "suppliers_not_in_assessment": [],
+    "correct": true
+   },
+   "pass": true
+  },
+  "system": {
+   "end_to_end": true,
+   "truncated_calls": 0,
+   "served_models": [
+    "gpt-4.1-2025-04-14"
+   ],
+   "temperatures": [
+    "not sent (API default)"
+   ]
+  }
+ },
+ "paths_vs_ground_truth": {
+  "tier_1": {
+   "tp": 0,
+   "fp": 0,
+   "fn": 0
+  },
+  "tier_2": {
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "tier_3": {
+   "tp": 95,
+   "fp": 0,
+   "fn": 0
+  },
+  "tier_4": {
+   "tp": 1085,
+   "fp": 0,
+   "fn": 0
+  }
+ },
+ "path_set_sha256": "2f67bd6cf69a38d308ea52bf1fe332c852cb864a5b932fe8eda5902c81c4273c",
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article states that South Africa's mining sector is experiencing its worst economic crisis in over a decade, with production cuts underway across the Metals & Mining industry. Kumba Iron Ore Ltd has suspended operations at two mining complexes, and at least 12 mining operations nationwide have reduced output since the start of the quarter. The disruptions are attributed to a recession, declining demand, power supply issues, and logistical problems, and are ongoing. The disruption is confined to the Metals & Mining sector in South Africa, with Kumba Iron Ore Ltd named as a directly affected company.",
+   "ongoing_disruption": true,
+   "type": "Economic Crisis",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "South Africa"
+    ],
+    "industries": [
+     "Metals & Mining"
+    ],
+    "companies": [
+     "Kumba Iron Ore Ltd"
+    ]
+   },
+   "summary": "South Africa's mining sector is undergoing its worst economic crisis in over a decade, causing widespread production cuts across the Metals & Mining industry. Kumba Iron Ore Ltd has suspended operations at two sites, and at least 12 operations nationwide have scaled back output since the start of the quarter."
+  },
+  "kg_results": {
+   "tier_1": 0,
+   "tier_2": 8,
+   "tier_3": 95,
+   "tier_4": 1085,
+   "monitored_company": "Bayerische Motoren Werke AG",
+   "disrupted_countries": [
+    "South Africa"
+   ],
+   "resolution": {
+    "countries": [
+     "South Africa"
+    ],
+    "industries": [
+     "Metals & Mining"
+    ],
+    "companies": [
+     "Kumba Iron Ore Ltd"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": []
+    },
+    "scope": "industries",
+    "unresolved_count": 0
+   },
+   "summary": {
+    "total_disrupted_chains": 1188,
+    "tier_1_count": 0,
+    "tier_2_count": 8,
+    "tier_3_count": 95,
+    "tier_4_count": 1085
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "generated_at": "2026-10-13T19:41:09.709675Z",
+   "supplier_risk_scores": {
+    "ArcelorMittal SA": 0.5937,
+    "Glencore PLC": 0.3119,
+    "Salzgitter AG": 0.2889,
+    "thyssenkrupp AG": 0.3905,
+    "BASF SE": 0.4061,
+    "American Axle & Manufacturing Holdings Inc": 0.3497,
+    "Cleveland-Cliffs Inc": 0.3236,
+    "Contemporary Amperex Technology Co Ltd": 0.3705,
+    "Dana Inc": 0.3283,
+    "Electricite de France SA": 0.3476,
+    "Gestamp Automocion SA": 0.3407,
+    "Samsung SDI Co Ltd": 0.4215,
+    "Severfield PLC": 0.2889,
+    "Umicore SA": 0.2766,
+    "voestalpine AG": 0.3007,
+    "Denso Corp": 0.3645,
+    "Hitachi Ltd": 0.3097,
+    "JTEKT Corp": 0.3677,
+    "Kawasaki Heavy Industries Ltd": 0.3164,
+    "MINEBEA MITSUMI Inc": 0.2989,
+    "Mitsubishi Electric Corp": 0.3155,
+    "QST International Corp": 0.299,
+    "SK Inc": 0.3984,
+    "San Shing Fastech Corp": 0.3042,
+    "Sanoh Industrial Co Ltd": 0.2776,
+    "Schaeffler AG": 0.3999,
+    "Toyota Industries Corp": 0.3645,
+    "Yokohama Rubber Co Ltd/The": 0.2592,
+    "Magna International Inc": 0.3187,
+    "Samsung Electronics Co Ltd": 0.3453,
+    "Siemens AG": 0.3105,
+    "Akzo Nobel NV": 0.2673,
+    "Axalta Coating Systems Ltd": 0.2728,
+    "Farasis Energy Gan Zhou Co Ltd": 0.3059,
+    "Grupo Antolin-Irausa SA": 0.2202,
+    "Guangzhou Tinci Materials Technology Co Ltd": 0.3202,
+    "LANXESS AG": 0.2238,
+    "LG Chem Ltd": 0.357,
+    "Ningbo Shanshan Co Ltd": 0.2627,
+    "AAPICO Hitech PCL": 0.3064,
+    "AMAG Austria Metall AG": 0.2718,
+    "Autoliv Inc": 0.2778,
+    "Beijing Easpring Material Technology Co Ltd": 0.2106,
+    "Beijing Shougang Co Ltd": 0.2706,
+    "Bengang Steel Plates Co Ltd": 0.1779,
+    "BorgWarner Inc": 0.3038,
+    "Bouygues SA": 0.2048,
+    "Changchun Faway Automobile Components Co Ltd": 0.2536,
+    "Dae Won Kang Up Co Ltd": 0.29,
+    "E1 Corp": 0.2603,
+    "Enchem Co Ltd": 0.2471,
+    "Eurocharm Holdings Co Ltd": 0.2837,
+    "Eve Energy Co Ltd": 0.2489,
+    "G Tech Optoelectronics Corp": 0.224,
+    "Grupo Industrial Saltillo SAB de CV": 0.2423,
+    "Hesteel Co Ltd": 0.2112,
+    "Honeywell International Inc": 0.2419,
+    "LG Energy Solution Ltd": 0.3094,
+    "Luminar Technologies Inc": 0.2745,
+    "Metair Investments Ltd": 0.2185,
+    "Nexteer Automotive Group Ltd": 0.2757,
+    "Ningbo Huaxiang Electronic Co Ltd": 0.2326,
+    "Nippon Sheet Glass Co Ltd": 0.2557,
+    "Pressure Technologies PLC": 0.2679,
+    "Right WAY Industrial Co Ltd": 0.2781,
+    "Rio Tinto PLC": 0.3112,
+    "SK Signet Inc": 0.215,
+    "SK Telecom Co Ltd": 0.2348,
+    "Saudi Basic Industries Corp": 0.2814,
+    "Sempra": 0.3181,
+    "TDK Corp": 0.2787,
+    "Tata Steel Ltd": 0.2253,
+    "Toyoda Gosei Co Ltd": 0.3047,
+    "Wooshin Systems Co Ltd": 0.3157,
+    "Wuxi Lead Intelligent Equipment Co Ltd": 0.242,
+    "Xperi Inc": 0.2899,
+    "Yunnan Aluminium Co Ltd": 0.2002,
+    "Zhejiang Founder Motor Co Ltd": 0.195,
+    "Zhejiang Huayou Cobalt Co Ltd": 0.2915,
+    "CX Technology Co Ltd": 0.2637,
+    "Compa SA": 0.2748,
+    "ElringKlinger AG": 0.2639,
+    "Globaltek Fabrication Co Ltd": 0.2896,
+    "Hankook Tire & Technology Co Ltd": 0.2438,
+    "Nemak SAB de CV": 0.2928,
+    "SJM Co Ltd": 0.322,
+    "SJM Holdings Co Ltd": 0.3081,
+    "Toray Industries Inc": 0.2898,
+    "Alfa SAB de CV": 0.2262,
+    "Norsk Hydro ASA": 0.2509,
+    "BMW Brilliance Automotive Ltd": 0.1842
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "ArcelorMittal SA",
+     "risk_score": 0.5937,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 3,
+      "3": 12,
+      "4": 16
+     },
+     "total_unique_disrupted_suppliers": 31,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 30,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       52
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.022566995768688293,
+      "sub_criticality": 0.2743488939479025,
+      "central": 0.8318524355674526,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 13.85,
+       "dependency": 0.022566995768688293,
+       "sub_central": 0.11993594829619103,
+       "sub_pagerank": 0.002525487327785942,
+       "central": 0.2151531057522004,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung SDI Co Ltd",
+     "risk_score": 0.4215,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 14
+     },
+     "total_unique_disrupted_suppliers": 17,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 34,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       34
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.44814814814814813,
+      "dependency": 0.017391304347826087,
+      "sub_criticality": 0.40193835569548203,
+      "central": 0.7990128320887089,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 6.3999999999999995,
+       "dependency": 0.017391304347826087,
+       "sub_central": 0.13746802951068227,
+       "sub_pagerank": 0.0031958455364016662,
+       "central": 0.21166995361360316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BASF SE",
+     "risk_score": 0.4061,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 6,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 11,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 23,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       23
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.3555555555555556,
+      "dependency": 0.014005602240896359,
+      "sub_criticality": 0.41928086412079907,
+      "central": 0.9427063177125254,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 5.15,
+       "dependency": 0.014005602240896359,
+       "sub_central": 0.13985106539790298,
+       "sub_pagerank": 0.0032936574119528023,
+       "central": 0.22691088890921515,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Schaeffler AG",
+     "risk_score": 0.3999,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 13
+     },
+     "total_unique_disrupted_suppliers": 16,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 28,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       34
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4222222222222222,
+      "dependency": 0.01793103448275862,
+      "sub_criticality": 0.3997562071439959,
+      "central": 0.6769246187112365,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 6.05,
+       "dependency": 0.01793103448275862,
+       "sub_central": 0.13716818025116875,
+       "sub_pagerank": 0.0032132623215532694,
+       "central": 0.19872059441081885,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Inc",
+     "risk_score": 0.3984,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 9
+     },
+     "total_unique_disrupted_suppliers": 10,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 32,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       35
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.24444444444444444,
+      "dependency": 0.00968783638320775,
+      "sub_criticality": 0.5521298223953496,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.65,
+       "dependency": 0.00968783638320775,
+       "sub_central": 0.1581058545774189,
+       "sub_pagerank": 0.0036287999376073757,
+       "central": 0.23298777750858266,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "thyssenkrupp AG",
+     "risk_score": 0.3905,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 8
+     },
+     "total_unique_disrupted_suppliers": 10,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 21,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       27
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2740740740740741,
+      "dependency": 0.015037593984962405,
+      "sub_criticality": 0.4994194682526519,
+      "central": 0.9092016944196991,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 4.05,
+       "dependency": 0.015037593984962405,
+       "sub_central": 0.15086291933012838,
+       "sub_pagerank": 0.003158689182282116,
+       "central": 0.2233572010472152,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Contemporary Amperex Technology Co Ltd",
+     "risk_score": 0.3705,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 9
+     },
+     "total_unique_disrupted_suppliers": 11,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 19,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       16
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2814814814814815,
+      "dependency": 0.014263074484944533,
+      "sub_criticality": 0.40231286471545397,
+      "central": 0.879882582628579,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 4.15,
+       "dependency": 0.014263074484944533,
+       "sub_central": 0.1375194908340845,
+       "sub_pagerank": 0.0033703562807809438,
+       "central": 0.22024745196016812,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "JTEKT Corp",
+     "risk_score": 0.3677,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 30,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       52
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2296296296296296,
+      "dependency": 0.010432190760059613,
+      "sub_criticality": 0.45376084829782776,
+      "central": 0.939818724590209,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.4499999999999997,
+       "dependency": 0.010432190760059613,
+       "sub_central": 0.14458896361133053,
+       "sub_pagerank": 0.0023140277530160624,
+       "central": 0.22660461462164935,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Denso Corp",
+     "risk_score": 0.3645,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 25,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       41
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2296296296296296,
+      "dependency": 0.009762900976290097,
+      "sub_criticality": 0.48900774069751385,
+      "central": 0.8385227676194859,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.4499999999999997,
+       "dependency": 0.009762900976290097,
+       "sub_central": 0.14943224276343067,
+       "sub_pagerank": 0.0024783961013984217,
+       "central": 0.21586059850153375,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyota Industries Corp",
+     "risk_score": 0.3645,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 8
+     },
+     "total_unique_disrupted_suppliers": 10,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 27,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       44
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25555555555555554,
+      "dependency": 0.012048192771084338,
+      "sub_criticality": 0.49923188480057457,
+      "central": 0.72241104490883,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.8,
+       "dependency": 0.012048192771084338,
+       "sub_central": 0.15083714346846028,
+       "sub_pagerank": 0.0022191198520896535,
+       "central": 0.20354513934753968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Chem Ltd",
+     "risk_score": 0.357,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 10
+     },
+     "total_unique_disrupted_suppliers": 11,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 30,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       27
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.27037037037037037,
+      "dependency": 0.012315270935960592,
+      "sub_criticality": 0.47899465750614273,
+      "central": 0.6346053849753164,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 4.0,
+       "dependency": 0.012315270935960592,
+       "sub_central": 0.14805634396023734,
+       "sub_pagerank": 0.00362313620876448,
+       "central": 0.1942319796324316,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "American Axle & Manufacturing Holdings Inc",
+     "risk_score": 0.3497,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 13
+     },
+     "total_unique_disrupted_suppliers": 16,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 24,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       31
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.4222222222222222,
+      "dependency": 0.02490421455938697,
+      "sub_criticality": 0.3948186502034419,
+      "central": 0.16716009660356076,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 6.05,
+       "dependency": 0.02490421455938697,
+       "sub_central": 0.13648971003821161,
+       "sub_pagerank": 0.0028634519932049726,
+       "central": 0.14465211619336288,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Electricite de France SA",
+     "risk_score": 0.3476,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 12
+     },
+     "total_unique_disrupted_suppliers": 15,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 22,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       22
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.39629629629629626,
+      "dependency": 0.018461538461538463,
+      "sub_criticality": 0.3627843353987148,
+      "central": 0.31732787336716256,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 5.699999999999999,
+       "dependency": 0.018461538461538463,
+       "sub_central": 0.13208787150770532,
+       "sub_pagerank": 0.003148802657819484,
+       "central": 0.1605797510419716,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Samsung Electronics Co Ltd",
+     "risk_score": 0.3453,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 5
+     },
+     "total_unique_disrupted_suppliers": 6,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 21,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       18
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.14074074074074072,
+      "dependency": 0.005980861244019139,
+      "sub_criticality": 0.7208842535050918,
+      "central": 0.5041362265523485,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 2.25,
+       "dependency": 0.005980861244019139,
+       "sub_central": 0.18129441851520348,
+       "sub_pagerank": 0.005010928528924614,
+       "central": 0.18039369049242746,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Gestamp Automocion SA",
+     "risk_score": 0.3407,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 12
+     },
+     "total_unique_disrupted_suppliers": 15,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 20,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       23
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.39629629629629626,
+      "dependency": 0.022684310018903593,
+      "sub_criticality": 0.32417637678262384,
+      "central": 0.31530456770841725,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 5.699999999999999,
+       "dependency": 0.022684310018903593,
+       "sub_central": 0.12678274789708813,
+       "sub_pagerank": 0.002672215171740141,
+       "central": 0.16036514791995596,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dana Inc",
+     "risk_score": 0.3283,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 12
+     },
+     "total_unique_disrupted_suppliers": 15,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 21,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       28
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.39629629629629626,
+      "dependency": 0.022099447513812154,
+      "sub_criticality": 0.29112725177014104,
+      "central": 0.25879013528032546,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 5.699999999999999,
+       "dependency": 0.022099447513812154,
+       "sub_central": 0.12224146419034254,
+       "sub_pagerank": 0.0025067864683377696,
+       "central": 0.1543709109219078,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Cleveland-Cliffs Inc",
+     "risk_score": 0.3236,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 12
+     },
+     "total_unique_disrupted_suppliers": 15,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 18,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       19
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.39629629629629626,
+      "dependency": 0.045283018867924525,
+      "sub_criticality": 0.29384300963077686,
+      "central": 0.14793762080389763,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 5.699999999999999,
+       "dependency": 0.045283018867924525,
+       "sub_central": 0.12261463676054866,
+       "sub_pagerank": 0.0026487230790554635,
+       "central": 0.14261327282748398,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SJM Co Ltd",
+     "risk_score": 0.322,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002881844380403458,
+      "sub_criticality": 1.0,
+      "central": 0.21278659337971578,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002881844380403458,
+       "sub_central": 0.2196477422832216,
+       "sub_pagerank": 0.009751195603608247,
+       "central": 0.14949151779957995,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Guangzhou Tinci Materials Technology Co Ltd",
+     "risk_score": 0.3202,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 10
+     },
+     "total_unique_disrupted_suppliers": 11,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 22,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       15
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.27037037037037037,
+      "dependency": 0.016556291390728478,
+      "sub_criticality": 0.49463581004069634,
+      "central": 0.2251747047567005,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 4.0,
+       "dependency": 0.016556291390728478,
+       "sub_central": 0.1502055963574812,
+       "sub_pagerank": 0.0041247280600044635,
+       "central": 0.15080547022485374,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Magna International Inc",
+     "risk_score": 0.3187,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       14
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.1148148148148148,
+      "dependency": 0.0068143100511073255,
+      "sub_criticality": 0.6087346667943857,
+      "central": 0.5510826667572616,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.9,
+       "dependency": 0.0068143100511073255,
+       "sub_central": 0.16588393213605684,
+       "sub_pagerank": 0.0032004385298564217,
+       "central": 0.18537309268603536,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.3181,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 5
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 12,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.1037037037037037,
+      "dependency": 0.010706638115631691,
+      "sub_criticality": 0.5596343191316748,
+      "central": 0.672001705281197,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.75,
+       "dependency": 0.010706638115631691,
+       "sub_central": 0.15913704825480454,
+       "sub_pagerank": 0.004462062118871663,
+       "central": 0.19819844266032435,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Kawasaki Heavy Industries Ltd",
+     "risk_score": 0.3164,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 8
+     },
+     "total_unique_disrupted_suppliers": 10,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 19,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       26
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25555555555555554,
+      "dependency": 0.011363636363636364,
+      "sub_criticality": 0.542915730498372,
+      "central": 0.15529416377563332,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.8,
+       "dependency": 0.011363636363636364,
+       "sub_central": 0.1568397452511237,
+       "sub_pagerank": 0.0027374048286972403,
+       "central": 0.1433935489474825,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wooshin Systems Co Ltd",
+     "risk_score": 0.3157,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       10
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.005934718100890208,
+      "sub_criticality": 0.8087293912616633,
+      "central": 0.25284897900169445,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.005934718100890208,
+       "sub_central": 0.1933652280346707,
+       "sub_pagerank": 0.006003626355253018,
+       "central": 0.15374075863608472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Mitsubishi Electric Corp",
+     "risk_score": 0.3155,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       19
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2296296296296296,
+      "dependency": 0.01569506726457399,
+      "sub_criticality": 0.47778400685244654,
+      "central": 0.356416513463175,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.4499999999999997,
+       "dependency": 0.01569506726457399,
+       "sub_central": 0.14788998832794406,
+       "sub_pagerank": 0.003291671542841587,
+       "central": 0.16472571097822392,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Glencore PLC",
+     "risk_score": 0.3119,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 2,
+      "3": 4,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.3111111111111111,
+      "dependency": 0.016605166051660517,
+      "sub_criticality": 0.04107506639096647,
+      "central": 0.9059905507505863,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 4.55,
+       "dependency": 0.016605166051660517,
+       "sub_central": 0.08223763823265072,
+       "sub_pagerank": 0.0013344867550860566,
+       "central": 0.22301660917783855,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Rio Tinto PLC",
+     "risk_score": 0.3112,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 5
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 18,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       17
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.1037037037037037,
+      "dependency": 0.00945179584120983,
+      "sub_criticality": 0.5416259906048362,
+      "central": 0.6424474470915889,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.75,
+       "dependency": 0.00945179584120983,
+       "sub_central": 0.15666252195815478,
+       "sub_pagerank": 0.0037827551981550645,
+       "central": 0.19506375263020811,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Siemens AG",
+     "risk_score": 0.3105,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 5
+     },
+     "total_unique_disrupted_suppliers": 6,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 17,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       15
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.14074074074074072,
+      "dependency": 0.008223684210526315,
+      "sub_criticality": 0.5933065626347561,
+      "central": 0.40501621854504477,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 2.25,
+       "dependency": 0.008223684210526315,
+       "sub_central": 0.1637639547381791,
+       "sub_pagerank": 0.004049480051213768,
+       "central": 0.1698804676975211,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hitachi Ltd",
+     "risk_score": 0.3097,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       20
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2296296296296296,
+      "dependency": 0.0136986301369863,
+      "sub_criticality": 0.5135076244004482,
+      "central": 0.2316624194230642,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.4499999999999997,
+       "dependency": 0.0136986301369863,
+       "sub_central": 0.15279877433227776,
+       "sub_pagerank": 0.0033640255979096,
+       "central": 0.15149359355220696,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LG Energy Solution Ltd",
+     "risk_score": 0.3094,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 5
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 19,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       12
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.1037037037037037,
+      "dependency": 0.007267441860465116,
+      "sub_criticality": 0.6127364520144766,
+      "central": 0.48777663913513253,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.75,
+       "dependency": 0.007267441860465116,
+       "sub_central": 0.16643381785953756,
+       "sub_pagerank": 0.0045110289987561085,
+       "central": 0.17865850109113862,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SJM Holdings Co Ltd",
+     "risk_score": 0.3081,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.002881844380403458,
+      "sub_criticality": 0.9861694908835882,
+      "central": 0.10156359871530357,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002881844380403458,
+       "sub_central": 0.21669850895906395,
+       "sub_pagerank": 0.009629801984170742,
+       "central": 0.1376945845029494,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AAPICO Hitech PCL",
+     "risk_score": 0.3064,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 17,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       23
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.005284015852047556,
+      "sub_criticality": 0.7748116031156345,
+      "central": 0.22864303189066196,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.005284015852047556,
+       "sub_central": 0.18870458123635966,
+       "sub_pagerank": 0.004842457849694931,
+       "central": 0.15117334041189276,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Farasis Energy Gan Zhou Co Ltd",
+     "risk_score": 0.3059,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 10
+     },
+     "total_unique_disrupted_suppliers": 11,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 20,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       15
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.27037037037037037,
+      "dependency": 0.02247191011235955,
+      "sub_criticality": 0.3911219436688779,
+      "central": 0.2747307940479356,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 4.0,
+       "dependency": 0.02247191011235955,
+       "sub_central": 0.13598174520865275,
+       "sub_pagerank": 0.002755163349310002,
+       "central": 0.1560616664059985,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toyoda Gosei Co Ltd",
+     "risk_score": 0.3047,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 18,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       21
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.004665629860031105,
+      "sub_criticality": 0.6524503877448457,
+      "central": 0.5486204955299357,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.004665629860031105,
+       "sub_central": 0.17189091390050526,
+       "sub_pagerank": 0.0034903430400130917,
+       "central": 0.185111941025614,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "San Shing Fastech Corp",
+     "risk_score": 0.3042,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 12,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       12
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2296296296296296,
+      "dependency": 0.011494252873563218,
+      "sub_criticality": 0.5601872950762427,
+      "central": 0.08940097180523139,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.4499999999999997,
+       "dependency": 0.011494252873563218,
+       "sub_central": 0.15921303273688506,
+       "sub_pagerank": 0.005865312343049527,
+       "central": 0.13640454822220688,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BorgWarner Inc",
+     "risk_score": 0.3038,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 5
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 19,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       23
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.1037037037037037,
+      "dependency": 0.007429420505200594,
+      "sub_criticality": 0.5987853792082111,
+      "central": 0.45905424707161185,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.75,
+       "dependency": 0.007429420505200594,
+       "sub_central": 0.16451679949361153,
+       "sub_pagerank": 0.003193603268892531,
+       "central": 0.17561204343806627,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "voestalpine AG",
+     "risk_score": 0.3007,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 12
+     },
+     "total_unique_disrupted_suppliers": 15,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 16,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       17
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.39629629629629626,
+      "dependency": 0.03715170278637771,
+      "sub_criticality": 0.18761124463642093,
+      "central": 0.1521091934574622,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 5.699999999999999,
+       "dependency": 0.03715170278637771,
+       "sub_central": 0.10801731887919842,
+       "sub_pagerank": 0.0016181325773689998,
+       "central": 0.1430557331701913,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "QST International Corp",
+     "risk_score": 0.299,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 12,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       12
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2296296296296296,
+      "dependency": 0.011494252873563218,
+      "sub_criticality": 0.5572106111693439,
+      "central": 0.043124728641994126,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.4499999999999997,
+       "dependency": 0.011494252873563218,
+       "sub_central": 0.15880400629151245,
+       "sub_pagerank": 0.005861612253571075,
+       "central": 0.13149623087773565,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "MINEBEA MITSUMI Inc",
+     "risk_score": 0.2989,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       19
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2296296296296296,
+      "dependency": 0.014056224899598393,
+      "sub_criticality": 0.39539577929336,
+      "central": 0.35891371800207456,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.4499999999999997,
+       "dependency": 0.014056224899598393,
+       "sub_central": 0.13656901340650787,
+       "sub_pagerank": 0.0029819511481318462,
+       "central": 0.16499057846774196,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nemak SAB de CV",
+     "risk_score": 0.2928,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.003937007874015748,
+      "sub_criticality": 0.7887403624904289,
+      "central": 0.24991668489893476,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003937007874015748,
+       "sub_central": 0.19061853351134553,
+       "sub_pagerank": 0.004948171460244758,
+       "central": 0.15342974311235483,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Zhejiang Huayou Cobalt Co Ltd",
+     "risk_score": 0.2915,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 12,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.007590132827324478,
+      "sub_criticality": 0.6389001100425975,
+      "central": 0.34616032224344795,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.007590132827324478,
+       "sub_central": 0.1700289688315252,
+       "sub_pagerank": 0.005102178774436555,
+       "central": 0.16363788193656154,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Dae Won Kang Up Co Ltd",
+     "risk_score": 0.29,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.007518796992481203,
+      "sub_criticality": 0.8231781623560034,
+      "central": 0.053201812072825566,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.007518796992481203,
+       "sub_central": 0.19535063517414686,
+       "sub_pagerank": 0.007428780294804972,
+       "central": 0.13256506274489394,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Xperi Inc",
+     "risk_score": 0.2899,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       26
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.006657789613848202,
+      "sub_criticality": 0.7613720896715968,
+      "central": 0.08703234772870658,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.006657789613848202,
+       "sub_central": 0.1868578562956254,
+       "sub_pagerank": 0.003116951086058871,
+       "central": 0.1361533186961555,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Toray Industries Inc",
+     "risk_score": 0.2898,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 12,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       10
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.005454545454545455,
+      "sub_criticality": 0.5795164200940047,
+      "central": 0.5437855044967472,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.005454545454545455,
+       "sub_central": 0.16186904981678224,
+       "sub_pagerank": 0.0036505294896804416,
+       "central": 0.18459911481660543,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Globaltek Fabrication Co Ltd",
+     "risk_score": 0.2896,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.005291005291005291,
+      "sub_criticality": 0.8053612425677211,
+      "central": 0.1813648032350308,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.005291005291005291,
+       "sub_central": 0.1929024103721783,
+       "sub_pagerank": 0.005705896074736246,
+       "central": 0.14615874687827893,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Salzgitter AG",
+     "risk_score": 0.2889,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 1,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 10,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       11
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.28518518518518515,
+      "dependency": 0.02,
+      "sub_criticality": 0.3690166350609415,
+      "central": 0.10236962657512602,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 4.199999999999999,
+       "dependency": 0.02,
+       "sub_central": 0.13294425245276623,
+       "sub_pagerank": 0.003062225111656626,
+       "central": 0.13778007632886402,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Severfield PLC",
+     "risk_score": 0.2889,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 3,
+      "4": 12
+     },
+     "total_unique_disrupted_suppliers": 15,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 16,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       17
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.39629629629629626,
+      "dependency": 0.05309734513274336,
+      "sub_criticality": 0.1806756253553338,
+      "central": 0.008345455294380804,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 5.699999999999999,
+       "dependency": 0.05309734513274336,
+       "sub_central": 0.1070642947121291,
+       "sub_pagerank": 0.0015633955442829587,
+       "central": 0.127807346497082,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eurocharm Holdings Co Ltd",
+     "risk_score": 0.2837,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.007707129094412331,
+      "sub_criticality": 0.7215098776109005,
+      "central": 0.10223841347659411,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.007707129094412331,
+       "sub_central": 0.1813803855886792,
+       "sub_pagerank": 0.0043356182708240605,
+       "central": 0.13776615913327245,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Saudi Basic Industries Corp",
+     "risk_score": 0.2814,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 22,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       24
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.00562429696287964,
+      "sub_criticality": 0.5594251355462422,
+      "central": 0.4088778628451285,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.00562429696287964,
+       "sub_central": 0.15910830431656456,
+       "sub_pagerank": 0.002546398343396869,
+       "central": 0.17029005530448002,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "TDK Corp",
+     "risk_score": 0.2787,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 5
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.1037037037037037,
+      "dependency": 0.013850415512465374,
+      "sub_criticality": 0.6322523175136074,
+      "central": 0.12459823136130063,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.75,
+       "dependency": 0.013850415512465374,
+       "sub_central": 0.16911549496841008,
+       "sub_pagerank": 0.004973073474360553,
+       "central": 0.14013776655947574,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Right WAY Industrial Co Ltd",
+     "risk_score": 0.2781,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.00821917808219178,
+      "sub_criticality": 0.671027998477148,
+      "central": 0.23684744775155434,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.00821917808219178,
+       "sub_central": 0.17444366532424194,
+       "sub_pagerank": 0.004545987940562944,
+       "central": 0.15204354667581144,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Autoliv Inc",
+     "risk_score": 0.2778,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 14,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       12
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.008988764044943821,
+      "sub_criticality": 0.6058689324969482,
+      "central": 0.27155824734293643,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.008988764044943821,
+       "sub_central": 0.16549015128806466,
+       "sub_pagerank": 0.0035592408369149483,
+       "central": 0.15572516834665165,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Sanoh Industrial Co Ltd",
+     "risk_score": 0.2776,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       13
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2296296296296296,
+      "dependency": 0.023972602739726026,
+      "sub_criticality": 0.36256766169411486,
+      "central": 0.1876515969738702,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.4499999999999997,
+       "dependency": 0.023972602739726026,
+       "sub_central": 0.13205809835141122,
+       "sub_pagerank": 0.0034229799536701602,
+       "central": 0.14682555940756334,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Umicore SA",
+     "risk_score": 0.2766,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 8
+     },
+     "total_unique_disrupted_suppliers": 10,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       10
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.25555555555555554,
+      "dependency": 0.021052631578947368,
+      "sub_criticality": 0.32902082639479086,
+      "central": 0.16056581162797745,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.8,
+       "dependency": 0.021052631578947368,
+       "sub_central": 0.12744842422236374,
+       "sub_pagerank": 0.003280034798327904,
+       "central": 0.14395268942257103,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nexteer Automotive Group Ltd",
+     "risk_score": 0.2757,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 5
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.1037037037037037,
+      "dependency": 0.012755102040816327,
+      "sub_criticality": 0.5995216649006895,
+      "central": 0.16357600075806267,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.75,
+       "dependency": 0.012755102040816327,
+       "sub_central": 0.16461797258722594,
+       "sub_pagerank": 0.003820631696463436,
+       "central": 0.14427196692885472,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Compa SA",
+     "risk_score": 0.2748,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.006535947712418301,
+      "sub_criticality": 0.7048713736807778,
+      "central": 0.23075692303347003,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.006535947712418301,
+       "sub_central": 0.1790940870323952,
+       "sub_pagerank": 0.004931140783555579,
+       "central": 0.15139755153732853,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Luminar Technologies Inc",
+     "risk_score": 0.2745,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.00749063670411985,
+      "sub_criticality": 0.6874266769586689,
+      "central": 0.07914493894201882,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.00749063670411985,
+       "sub_central": 0.17669700944067956,
+       "sub_pagerank": 0.003628602110520811,
+       "central": 0.1353167359767227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Axalta Coating Systems Ltd",
+     "risk_score": 0.2728,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 8
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 15,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       11
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2185185185185185,
+      "dependency": 0.019851116625310174,
+      "sub_criticality": 0.3605139266742224,
+      "central": 0.19241718109349093,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.3,
+       "dependency": 0.019851116625310174,
+       "sub_central": 0.1317758944086355,
+       "sub_pagerank": 0.0025356719939779873,
+       "central": 0.14733102393086875,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "AMAG Austria Metall AG",
+     "risk_score": 0.2718,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 12,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       11
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.00676818950930626,
+      "sub_criticality": 0.6603775995169331,
+      "central": 0.10804393261186118,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.00676818950930626,
+       "sub_central": 0.1729801928949387,
+       "sub_pagerank": 0.0033853053315675754,
+       "central": 0.138381924984549,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Beijing Shougang Co Ltd",
+     "risk_score": 0.2706,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.010416666666666666,
+      "sub_criticality": 0.5417976514704732,
+      "central": 0.3237660139537654,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.010416666666666666,
+       "sub_central": 0.15668610989556336,
+       "sub_pagerank": 0.004779008361824941,
+       "central": 0.1612626162649738,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Pressure Technologies PLC",
+     "risk_score": 0.2679,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.014285714285714285,
+      "sub_criticality": 0.6469449995414882,
+      "central": 0.16809739617582983,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.014285714285714285,
+       "sub_central": 0.17113441793464312,
+       "sub_pagerank": 0.005389781100122335,
+       "central": 0.1447515314317889,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Akzo Nobel NV",
+     "risk_score": 0.2673,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 8,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.19259259259259257,
+      "dependency": 0.019417475728155338,
+      "sub_criticality": 0.369344317161734,
+      "central": 0.2112760774236681,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 2.9499999999999997,
+       "dependency": 0.019417475728155338,
+       "sub_central": 0.13298927928433163,
+       "sub_pagerank": 0.002725719504709421,
+       "central": 0.14933130402336617,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "ElringKlinger AG",
+     "risk_score": 0.2639,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0029850746268656717,
+      "sub_criticality": 0.6667502740494458,
+      "central": 0.2975905556764822,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0029850746268656717,
+       "sub_central": 0.1738558627655317,
+       "sub_pagerank": 0.0030806012150472683,
+       "central": 0.15848630066371217,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "CX Technology Co Ltd",
+     "risk_score": 0.2637,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.005115089514066497,
+      "sub_criticality": 0.7052427519077201,
+      "central": 0.12255245513052823,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.005115089514066497,
+       "sub_central": 0.17914511815320147,
+       "sub_pagerank": 0.006031787449598028,
+       "central": 0.13992078008282968,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Shanshan Co Ltd",
+     "risk_score": 0.2627,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 8
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 16,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       13
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2185185185185185,
+      "dependency": 0.026470588235294117,
+      "sub_criticality": 0.28040992964714706,
+      "central": 0.234852095540192,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.3,
+       "dependency": 0.026470588235294117,
+       "sub_central": 0.12076879584227845,
+       "sub_pagerank": 0.0021679340874684932,
+       "central": 0.15183190845287248,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "E1 Corp",
+     "risk_score": 0.2603,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 11,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.006980802792321117,
+      "sub_criticality": 0.5613915614042579,
+      "central": 0.1905245260595576,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.006980802792321117,
+       "sub_central": 0.15937851109832224,
+       "sub_pagerank": 0.0032769746205147483,
+       "central": 0.14713027834533393,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Yokohama Rubber Co Ltd/The",
+     "risk_score": 0.2592,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 9,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       11
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.2296296296296296,
+      "dependency": 0.020289855072463767,
+      "sub_criticality": 0.2848735213284048,
+      "central": 0.1682131893783854,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 3.4499999999999997,
+       "dependency": 0.020289855072463767,
+       "sub_central": 0.12138213843963934,
+       "sub_pagerank": 0.0026773789998745267,
+       "central": 0.14476381310691258,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Nippon Sheet Glass Co Ltd",
+     "risk_score": 0.2557,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.013559322033898305,
+      "sub_criticality": 0.5013362633242888,
+      "central": 0.24804253929047276,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.013559322033898305,
+       "sub_central": 0.15112630634036564,
+       "sub_pagerank": 0.004174930068969571,
+       "central": 0.15323096074007733,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Changchun Faway Automobile Components Co Ltd",
+     "risk_score": 0.2536,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       6
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.008746355685131196,
+      "sub_criticality": 0.5903018691280997,
+      "central": 0.15180143870770685,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.008746355685131196,
+       "sub_central": 0.16335107949078936,
+       "sub_pagerank": 0.003975267751493959,
+       "central": 0.14302309097901905,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Norsk Hydro ASA",
+     "risk_score": 0.2509,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.0019083969465648854,
+      "sub_criticality": 0.5896351331318733,
+      "central": 0.3252859546368286,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0019083969465648854,
+       "sub_central": 0.16325946322817364,
+       "sub_pagerank": 0.002255211750123662,
+       "central": 0.16142382968048227,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Eve Energy Co Ltd",
+     "risk_score": 0.2489,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.007009345794392523,
+      "sub_criticality": 0.5698236939503504,
+      "central": 0.15058173942731418,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.007009345794392523,
+       "sub_central": 0.160537171308849,
+       "sub_pagerank": 0.0037810610458345077,
+       "central": 0.142893722847041,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Enchem Co Ltd",
+     "risk_score": 0.2471,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.010452961672473868,
+      "sub_criticality": 0.5368807726043779,
+      "central": 0.1893044572923159,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.010452961672473868,
+       "sub_central": 0.15601048105896917,
+       "sub_pagerank": 0.003092828677572732,
+       "central": 0.14700087102351275,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hankook Tire & Technology Co Ltd",
+     "risk_score": 0.2438,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.005128205128205128,
+      "sub_criticality": 0.5627895446163992,
+      "central": 0.20868442215642993,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.005128205128205128,
+       "sub_central": 0.15957060811696352,
+       "sub_pagerank": 0.002850347150164616,
+       "central": 0.14905641856098747,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Industrial Saltillo SAB de CV",
+     "risk_score": 0.2423,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 5
+     },
+     "total_unique_disrupted_suppliers": 5,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 13,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       8
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.1037037037037037,
+      "dependency": 0.01524390243902439,
+      "sub_criticality": 0.44507757810041937,
+      "central": 0.13174215617474277,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.75,
+       "dependency": 0.01524390243902439,
+       "sub_central": 0.14339579455000542,
+       "sub_pagerank": 0.002306419920224274,
+       "central": 0.14089549120764408,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Wuxi Lead Intelligent Equipment Co Ltd",
+     "risk_score": 0.242,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.015037593984962405,
+      "sub_criticality": 0.5350874596499068,
+      "central": 0.2216981726107762,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.015037593984962405,
+       "sub_central": 0.15576406173930005,
+       "sub_pagerank": 0.004342713980978154,
+       "central": 0.1504367297683249,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Honeywell International Inc",
+     "risk_score": 0.2419,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.011764705882352941,
+      "sub_criticality": 0.4131752702971365,
+      "central": 0.38184759309442246,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.011764705882352941,
+       "sub_central": 0.139012095115303,
+       "sub_pagerank": 0.002774679511011005,
+       "central": 0.16742307361421774,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Telecom Co Ltd",
+     "risk_score": 0.2348,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.006006006006006006,
+      "sub_criticality": 0.5337050950873724,
+      "central": 0.17446599107276292,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.006006006006006006,
+       "sub_central": 0.15557411088092638,
+       "sub_pagerank": 0.003734272859208154,
+       "central": 0.14542702024971785,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Ningbo Huaxiang Electronic Co Ltd",
+     "risk_score": 0.2326,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.014285714285714285,
+      "sub_criticality": 0.4743600176441732,
+      "central": 0.16015785520158238,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.014285714285714285,
+       "sub_central": 0.14741949761456719,
+       "sub_pagerank": 0.002237001040019325,
+       "central": 0.14390941928077494,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Alfa SAB de CV",
+     "risk_score": 0.2262,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 8,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.003937007874015748,
+      "sub_criticality": 0.4935687814616747,
+      "central": 0.1745414529923904,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.003937007874015748,
+       "sub_central": 0.1500589758494129,
+       "sub_pagerank": 0.0017343014554523745,
+       "central": 0.1454350241632518,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Tata Steel Ltd",
+     "risk_score": 0.2253,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 4
+     },
+     "total_unique_disrupted_suppliers": 4,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 9,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       5
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.07777777777777777,
+      "dependency": 0.032520325203252036,
+      "sub_criticality": 0.3971557530623315,
+      "central": 0.10542574069838422,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.4,
+       "dependency": 0.032520325203252036,
+       "sub_central": 0.13681085158522852,
+       "sub_pagerank": 0.002457810171487451,
+       "central": 0.13810422489695237,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "G Tech Optoelectronics Corp",
+     "risk_score": 0.224,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.010416666666666666,
+      "sub_criticality": 0.5160061481562661,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.010416666666666666,
+       "sub_central": 0.15314209674153753,
+       "sub_pagerank": 0.002890511832323845,
+       "central": 0.12692218080149115,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "LANXESS AG",
+     "risk_score": 0.2238,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 7
+     },
+     "total_unique_disrupted_suppliers": 8,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 12,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       9
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.19259259259259257,
+      "dependency": 0.01707317073170732,
+      "sub_criticality": 0.19387624246389634,
+      "central": 0.13306544827274583,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 2.9499999999999997,
+       "dependency": 0.01707317073170732,
+       "sub_central": 0.10887819288254842,
+       "sub_pagerank": 0.0009739612721941524,
+       "central": 0.14103584697363655,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Grupo Antolin-Irausa SA",
+     "risk_score": 0.2202,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 6
+     },
+     "total_unique_disrupted_suppliers": 7,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 10,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       7
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.16666666666666663,
+      "dependency": 0.030042918454935622,
+      "sub_criticality": 0.20713422310625862,
+      "central": 0.12918057366465535,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 2.5999999999999996,
+       "dependency": 0.030042918454935622,
+       "sub_central": 0.11069997338211587,
+       "sub_pagerank": 0.0010820914096913415,
+       "central": 0.1406237954301972,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Metair Investments Ltd",
+     "risk_score": 0.2185,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 7,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.008746355685131196,
+      "sub_criticality": 0.4610791499383152,
+      "central": 0.05979584745052359,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.008746355685131196,
+       "sub_central": 0.14559457220122338,
+       "sub_pagerank": 0.0032534190074973565,
+       "central": 0.13326446304193715,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "SK Signet Inc",
+     "risk_score": 0.215,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.006309148264984227,
+      "sub_criticality": 0.5103198255364535,
+      "central": 0.02298556659938859,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.006309148264984227,
+       "sub_central": 0.15236073855868396,
+       "sub_pagerank": 0.0035874387162272542,
+       "central": 0.1293601586385059,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Hesteel Co Ltd",
+     "risk_score": 0.2112,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.007352941176470588,
+      "sub_criticality": 0.3414644659847351,
+      "central": 0.32001283882751785,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.007352941176470588,
+       "sub_central": 0.1291583060331858,
+       "sub_pagerank": 0.0028920717426155975,
+       "central": 0.16086453350566213,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Beijing Easpring Material Technology Co Ltd",
+     "risk_score": 0.2106,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.0070921985815602835,
+      "sub_criticality": 0.39107489778541743,
+      "central": 0.2155183699071703,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.0070921985815602835,
+       "sub_central": 0.1359752806289113,
+       "sub_pagerank": 0.003192139908538142,
+       "central": 0.14978126530703484,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Bouygues SA",
+     "risk_score": 0.2048,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3
+     },
+     "total_unique_disrupted_suppliers": 3,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       3
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.05185185185185184,
+      "dependency": 0.01764705882352941,
+      "sub_criticality": 0.3992225627198057,
+      "central": 0.023462595607530636,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 1.0499999999999998,
+       "dependency": 0.01764705882352941,
+       "sub_central": 0.13709485211531477,
+       "sub_pagerank": 0.001798391556453507,
+       "central": 0.12941075500490107,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Yunnan Aluminium Co Ltd",
+     "risk_score": 0.2002,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.017391304347826087,
+      "sub_criticality": 0.374251129967663,
+      "central": 0.11922099038997193,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.017391304347826087,
+       "sub_central": 0.13366352494255102,
+       "sub_pagerank": 0.003072298126376904,
+       "central": 0.13956742628721394,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Zhejiang Founder Motor Co Ltd",
+     "risk_score": 0.195,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 5,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       2
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.015625,
+      "sub_criticality": 0.38036619900588553,
+      "central": 0.05939949598050124,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.015625,
+       "sub_central": 0.1345037972153696,
+       "sub_pagerank": 0.0029450958005527534,
+       "central": 0.1332224237867635,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "BMW Brilliance Automotive Ltd",
+     "risk_score": 0.1842,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.0,
+      "dependency": 0.01016260162601626,
+      "sub_criticality": 0.3980276544105214,
+      "central": 0.020321429209222322,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.01016260162601626,
+       "sub_central": 0.13693065964020512,
+       "sub_pagerank": 0.0012216788721230497,
+       "central": 0.12907758531650823,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Bengang Steel Plates Co Ltd",
+     "risk_score": 0.1779,
+     "risk_level": "LOW",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 2
+     },
+     "total_unique_disrupted_suppliers": 2,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 6,
+     "top_disrupted_countries": [
+      [
+       "South Africa",
+       4
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 0.025925925925925925,
+      "dependency": 0.018018018018018018,
+      "sub_criticality": 0.29330749881432566,
+      "central": 0.056538740672493586,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.7,
+       "dependency": 0.018018018018018018,
+       "sub_central": 0.1225410521635399,
+       "sub_pagerank": 0.002488844646191144,
+       "central": 0.13291899606798668,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [],
+   "expected_critical_suppliers": [],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 91,
+    "high_risk_suppliers": 0,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 90,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.5937,
+    "average_risk_score": 0.2897967032967033
+   },
+   "kg_summary": {
+    "monitored_company": "Bayerische Motoren Werke AG",
+    "disrupted_countries": [
+     "South Africa"
+    ],
+    "summary": {
+     "total_disrupted_chains": 1188,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 8,
+     "tier_3_chain_count": 95,
+     "tier_4_chain_count": 1085,
+     "unique_disrupted_companies": 21
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "South Africa"
+     ],
+     "industries": [
+      "Metals & Mining"
+     ],
+     "companies": [
+      "Kumba Iron Ore Ltd"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "MODERATE RISK: 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Bayerische Motoren Werke AG",
+   "decisions": {
+    "ArcelorMittal SA": {
+     "risk_score_raw": 0.5937,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.5937 (MEDIUM); strongly driven by high exposure (1.0), full depth (1.0), and high centrality (0.8318).",
+      "exposure_details": {
+       "total_disrupted_nodes": 31,
+       "by_tier": {
+        "tier_2": 3,
+        "tier_3": 12,
+        "tier_4": 16
+       },
+       "top_disrupted_countries": [
+        "South Africa"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "0 REPLACE_SUPPLIER (score 0.60 or above), 1 INCREASE_MONITORING (0.45 to below 0.60), 90 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": "91",
+     "replace_supplier_count": "0",
+     "increase_monitoring_count": "1",
+     "maintain_standard_count": "90",
+     "critical_suppliers": []
+    }
+   }
+  }
+ }
+}

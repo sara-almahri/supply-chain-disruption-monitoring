@@ -1,0 +1,650 @@
+{
+ "scenario_id": "run_272ed445011f",
+ "runtime_seconds": 10.0,
+ "calls": [
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Disruption Radar for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1669,
+   "completion_tokens": 194,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:07:41"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Supply Chain Pathfinder for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 833,
+   "completion_tokens": 86,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:07:42"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Quantitative Risk Modeler for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 1199,
+   "completion_tokens": 34,
+   "cached_tokens": 0,
+   "finish_reason": "tool_calls",
+   "truncated": false,
+   "time": "2026-10-17T14:07:43"
+  },
+  {
+   "api": "chat.completions",
+   "caller": "Chief Supply Chain Officer for Tesla Inc",
+   "requested_model": "gpt-4o",
+   "temperature": "not sent (API default)",
+   "served_model": "gpt-4o-2024-08-06",
+   "prompt_tokens": 2908,
+   "completion_tokens": 486,
+   "cached_tokens": 0,
+   "finish_reason": "stop",
+   "truncated": false,
+   "time": "2026-10-17T14:07:49"
+  }
+ ],
+ "truncated_calls": [],
+ "cost": {
+  "prompt_tokens": 6609,
+  "completion_tokens": 800,
+  "total_tokens": 7409,
+  "usd": 0.0245,
+  "price_in_per_m": 2.5,
+  "price_out_per_m": 10.0
+ },
+ "agent_answers": {
+  "disruption_analysis": {
+   "chars": 982,
+   "parsed": true,
+   "tail": "rGrid Innovate Ltd., and Mekong CircuitTech are facing operational challenges and reduced manufacturing capacity.\"\n}\n```"
+  },
+  "kg_results": {
+   "chars": 1043,
+   "parsed": true,
+   "tail": "output/temp/kg_payloads/run_272ed445011f_Tesla_Inc_20261017T130742_kg.json'}"
+  },
+  "risk_assessment": {
+   "chars": 3615,
+   "parsed": true,
+   "tail": "r-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD.'}"
+  },
+  "chief_supply_chain_output": {
+   "chars": 1702,
+   "parsed": true,
+   "tail": "toring_count\": 1,\n      \"maintain_standard_count\": 0,\n      \"critical_suppliers\": [\n        \"Sempra\"\n      ]\n    }\n  }\n}"
+  }
+ },
+ "agent_outputs": {
+  "disruption_analysis": {
+   "reasoning": "The article reports an ongoing disruption in the Vietnamese electrical equipment industry due to sanctions from western nations. These sanctions have halted exports and frozen assets at multiple manufacturing sites, affecting operations and reducing manufacturing capacity. Several companies are directly impacted by the sanctions.",
+   "ongoing_disruption": true,
+   "type": "Geopolitical",
+   "scope": "industries",
+   "involved": {
+    "countries": [
+     "Vietnam"
+    ],
+    "industries": [
+     "Electrical Equipment"
+    ],
+    "companies": [
+     "Thu Duc Electro Mechanical JSC",
+     "PowerGrid Innovate Ltd.",
+     "Mekong CircuitTech"
+    ]
+   },
+   "summary": "Sanctions from western nations are disrupting the Vietnamese electrical equipment industry, halting exports and freezing assets at several manufacturing sites. Companies like Thu Duc Electro Mechanical JSC, PowerGrid Innovate Ltd., and Mekong CircuitTech are facing operational challenges and reduced manufacturing capacity."
+  },
+  "kg_results": {
+   "tier_1": [],
+   "tier_2": [],
+   "tier_3": [],
+   "tier_4": [
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Avient Corp",
+      "country": "USA",
+      "industry": "Chemicals"
+     },
+     {
+      "company": "AES Corp/The",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vietnam Electricity Group",
+      "country": "Vietnam",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Thu Duc Electro Mechanical JSC",
+      "country": "Vietnam",
+      "industry": "Electrical Equipment"
+     }
+    ],
+    [
+     {
+      "company": "Tesla Inc",
+      "country": "USA",
+      "industry": "Automotive"
+     },
+     {
+      "company": "Sempra",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "AES Corp/The",
+      "country": "USA",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Vietnam Electricity Group",
+      "country": "Vietnam",
+      "industry": "Electric Utilities"
+     },
+     {
+      "company": "Thu Duc Electro Mechanical JSC",
+      "country": "Vietnam",
+      "industry": "Electrical Equipment"
+     }
+    ]
+   ],
+   "monitored_company": "Tesla Inc",
+   "disrupted_countries": [
+    "Vietnam"
+   ],
+   "resolution": {
+    "countries": [
+     "Vietnam"
+    ],
+    "industries": [
+     "Electrical Equipment"
+    ],
+    "companies": [
+     "Thu Duc Electro Mechanical JSC"
+    ],
+    "unresolved": {
+     "countries": [],
+     "industries": [],
+     "companies": [
+      "PowerGrid Innovate Ltd.",
+      "Mekong CircuitTech"
+     ]
+    },
+    "scope": "industries",
+    "unresolved_count": 2
+   },
+   "summary": {
+    "total_disrupted_chains": 2,
+    "tier_1_count": 0,
+    "tier_2_count": 0,
+    "tier_3_count": 0,
+    "tier_4_count": 2
+   }
+  },
+  "risk_assessment": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:07:44.830529Z",
+   "supplier_risk_scores": {
+    "Avient Corp": 0.4507,
+    "Sempra": 0.7505
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.7505,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Vietnam",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.11257754071511723,
+       "sub_pagerank": 0.0031735361472551497,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Avient Corp",
+     "risk_score": 0.4507,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Vietnam",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002680965147453083,
+      "sub_criticality": 0.0,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002680965147453083,
+       "sub_central": 0.09559200007585893,
+       "sub_pagerank": 0.0016971543839891586,
+       "central": 0.13233752844266242,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Sempra",
+     "risk_score": 0.7505,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.11257754071511723,
+       "sub_pagerank": 0.0031735361472551497,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Sempra"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 2,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7505,
+    "average_risk_score": 0.6006
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Vietnam"
+    ],
+    "summary": {
+     "total_disrupted_chains": 2,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 2,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Vietnam"
+     ],
+     "industries": [
+      "Electrical Equipment"
+     ],
+     "companies": [
+      "Thu Duc Electro Mechanical JSC"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "risk_tool_file": {
+   "company_name": "Tesla Inc",
+   "generated_at": "2026-10-17T13:07:44.830529Z",
+   "supplier_risk_scores": {
+    "Avient Corp": 0.4507,
+    "Sempra": 0.7505
+   },
+   "tier1_risk_profiles": [
+    {
+     "supplier": "Sempra",
+     "risk_score": 0.7505,
+     "risk_level": "HIGH",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Vietnam",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.11257754071511723,
+       "sub_pagerank": 0.0031735361472551497,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     }
+    },
+    {
+     "supplier": "Avient Corp",
+     "risk_score": 0.4507,
+     "risk_level": "MEDIUM",
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     },
+     "total_unique_disrupted_suppliers": 1,
+     "max_disruption_tier": 4,
+     "downstream_supplier_count": 4,
+     "top_disrupted_countries": [
+      [
+       "Vietnam",
+       1
+      ]
+     ],
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.002680965147453083,
+      "sub_criticality": 0.0,
+      "central": 0.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.002680965147453083,
+       "sub_central": 0.09559200007585893,
+       "sub_pagerank": 0.0016971543839891586,
+       "central": 0.13233752844266242,
+       "depth": 4
+      }
+     }
+    }
+   ],
+   "critical_suppliers": [
+    {
+     "company": "Sempra",
+     "risk_score": 0.7505,
+     "risk_level": "HIGH",
+     "component_breakdown": {
+      "exposure": 1.0,
+      "dependency": 0.0021413276231263384,
+      "sub_criticality": 1.0,
+      "central": 1.0,
+      "depth": 1.0,
+      "raw": {
+       "exposure": 0.35,
+       "dependency": 0.0021413276231263384,
+       "sub_central": 0.11257754071511723,
+       "sub_pagerank": 0.0031735361472551497,
+       "central": 0.20027969099969561,
+       "depth": 4
+      }
+     },
+     "disrupted_counts_by_tier": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1
+     }
+    }
+   ],
+   "expected_critical_suppliers": [
+    "Sempra"
+   ],
+   "risk_metrics_summary": {
+    "total_tier1_suppliers": 2,
+    "high_risk_suppliers": 1,
+    "medium_risk_suppliers": 1,
+    "low_risk_suppliers": 0,
+    "risk_thresholds": {
+     "high": 0.6,
+     "medium": 0.45,
+     "low": 0.0
+    },
+    "highest_risk_score": 0.7505,
+    "average_risk_score": 0.6006
+   },
+   "kg_summary": {
+    "monitored_company": "Tesla Inc",
+    "disrupted_countries": [
+     "Vietnam"
+    ],
+    "summary": {
+     "total_disrupted_chains": 2,
+     "tier_1_chain_count": 0,
+     "tier_2_chain_count": 0,
+     "tier_3_chain_count": 0,
+     "tier_4_chain_count": 2,
+     "unique_disrupted_companies": 1
+    }
+   },
+   "disruption_summary": {
+    "scope": "industries",
+    "involved": {
+     "countries": [
+      "Vietnam"
+     ],
+     "industries": [
+      "Electrical Equipment"
+     ],
+     "companies": [
+      "Thu Duc Electro Mechanical JSC"
+     ]
+    }
+   },
+   "methodology": {
+    "focus": "Tier-1 supplier risk, aggregated from downstream disruptions up to Tier-4.",
+    "metrics": {
+     "Disruption Exposure": "Weighted count of unique disrupted suppliers reachable from each Tier-1 (Tier-1\u2192Tier-4 weights: 1.0, 0.75, 0.5, 0.35).",
+     "Dependency Ratio": "Share of the supplier's own upstream network (the supplier and companies on simple paths of length 1-3 from it) that is disrupted.",
+     "Downstream Criticality": "Average centrality/PageRank scores of disrupted downstream suppliers.",
+     "Tier-1 Centrality": "Importance of the Tier-1 node within the monitored company's network.",
+     "Depth": "Maximum tier at which disruptions are observed in the supplier's chain."
+    },
+    "risk_formula": "Risk = 0.35\u00d7Exposure + 0.25\u00d7Dependency + 0.20\u00d7Downstream Criticality (max of centrality & pagerank signals) + 0.10\u00d7Tier-1 Centrality + 0.10\u00d7Depth."
+   },
+   "recommendation": "HIGH PRIORITY: 1 Tier-1 supplier(s) score 0.60 or above (HIGH): REPLACE_SUPPLIER. 1 Tier-1 supplier(s) score 0.45 to below 0.60 (MEDIUM): INCREASE_MONITORING. All other Tier-1 suppliers: MAINTAIN_STANDARD."
+  },
+  "chief_supply_chain_output": {
+   "company_name": "Tesla Inc",
+   "decisions": {
+    "Sempra": {
+     "risk_score_raw": 0.7505,
+     "risk_level": "HIGH",
+     "action": "REPLACE_SUPPLIER",
+     "justification": {
+      "risk_analysis": "Raw score 0.7505 (HIGH), driven mainly by high exposure (1.0), sub-supplier criticality (1.0), and centrality (1.0).",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_2": 0,
+        "tier_3": 0,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Vietnam"
+       ]
+      },
+      "action_rationale": "Score at or above 0.60: REPLACE_SUPPLIER."
+     }
+    },
+    "Avient Corp": {
+     "risk_score_raw": 0.4507,
+     "risk_level": "MEDIUM",
+     "action": "INCREASE_MONITORING",
+     "justification": {
+      "risk_analysis": "Raw score 0.4507 (MEDIUM), with exposure (1.0) as a strong component.",
+      "exposure_details": {
+       "total_disrupted_nodes": 1,
+       "by_tier": {
+        "tier_2": 0,
+        "tier_3": 0,
+        "tier_4": 1
+       },
+       "top_disrupted_countries": [
+        "Vietnam"
+       ]
+      },
+      "action_rationale": "Score from 0.45 to below 0.60: INCREASE_MONITORING."
+     }
+    }
+   },
+   "decision_report": {
+    "executive_summary": "1 REPLACE_SUPPLIER (score 0.60 or above), 1 INCREASE_MONITORING (0.45 to below 0.60), 0 MAINTAIN_STANDARD (below 0.45).",
+    "action_summary": {
+     "total_tier1_suppliers_analyzed": 2,
+     "replace_supplier_count": 1,
+     "increase_monitoring_count": 1,
+     "maintain_standard_count": 0,
+     "critical_suppliers": [
+      "Sempra"
+     ]
+    }
+   }
+  },
+  "path_counts": [
+   0,
+   0,
+   0,
+   2
+  ]
+ },
+ "success": true,
+ "error": null,
+ "kg_tool_metadata": {
+  "success": true,
+  "kg_payload_path": "output/temp/kg_payloads/run_272ed445011f_Tesla_Inc_20261017T130742_kg.json",
+  "monitored_company": "Tesla Inc",
+  "ongoing_disruption": true,
+  "scope": "industries",
+  "disrupted_countries": [
+   "Vietnam"
+  ],
+  "disrupted_industries": [
+   "Electrical Equipment"
+  ],
+  "disrupted_companies": [
+   "Thu Duc Electro Mechanical JSC"
+  ],
+  "unresolved": {
+   "countries": [],
+   "industries": [],
+   "companies": [
+    "PowerGrid Innovate Ltd.",
+    "Mekong CircuitTech"
+   ]
+  },
+  "requested": {
+   "countries": [
+    "Vietnam"
+   ],
+   "industries": [
+    "Electrical Equipment"
+   ],
+   "companies": [
+    "Thu Duc Electro Mechanical JSC",
+    "PowerGrid Innovate Ltd.",
+    "Mekong CircuitTech"
+   ],
+   "scope": "industries"
+  },
+  "scenario_id": "run_272ed445011f",
+  "chain_counts": {
+   "tier_1": 0,
+   "tier_2": 0,
+   "tier_3": 0,
+   "tier_4": 2
+  },
+  "total_chains": 2,
+  "message": "Built and saved 2 disrupted supply chains to output/temp/kg_payloads/run_272ed445011f_Tesla_Inc_20261017T130742_kg.json"
+ },
+ "item_id": "P-012",
+ "run_id": "run_272ed445011f",
+ "item_type": "P",
+ "firm": "Tesla Inc",
+ "set": "test",
+ "repeat": 1
+}
