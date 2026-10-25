@@ -8,6 +8,38 @@ visibility and disruption response* (Sara AlMahri, Department of Engineering, Un
 Every reported result can be recomputed from the stored outputs without an API key or a Neo4j instance, in the
 browser with the [Colab notebook](notebooks/reproduce_results.ipynb) or locally (below).
 
+## Where each chapter is
+
+Chapter 3 has its own folder. Chapters 4 and 5 evaluate the same agent pipeline on the same supply network, so they
+share the code folders and keep their data and results under `evaluation/`.
+
+**Chapter 3: extraction of the supply network from text**
+
+- Data, prompts and reference: `chapter3/documents/`, `chapter3/prompts/`, `chapter3/reference_final/`
+- Stored runs and scores: `chapter3/stored_runs/`, `chapter3/results/`
+- Scorers: `chapter3/score_ch3.py` (Table 3.1), `chapter3/score_reruns.py` (Section 3.4.2 and Table 3.4)
+
+**Chapter 4: agentic disruption monitoring**
+
+- The 1,117-article benchmark (specifications, articles, references and generation scripts): `evaluation/benchmark_v2/`
+- Stored runs and scores: `evaluation/results/benchmark_v2/`
+- Case study of Section 4.5: `scripts/run_case_study_v1_2.py`, `evaluation/results/case_study_v1_2/`
+- Scorer: `python -m evaluation.benchmark_v2.score` (Tables 4.5 to 4.7)
+
+**Chapter 5: multi-level evaluation of the agents**
+
+- The 30 scenarios and their references: `evaluation/scenarios/`, `evaluation/ground_truth_final/`
+- Stored runs of the three models: `evaluation/results/v1_2_full/`
+- Reworded and noisy articles: `evaluation/results/prompt_sensitivity/`, `evaluation/results/noise_sensitivity/`
+- Scorers: `scripts/score_v1_2.py` (per-run scores and Table 5.4), `scripts/ch5_analysis_v1_2.py` (Tables 5.3 to 5.8)
+
+**Shared by Chapters 4 and 5**
+
+- The pipeline: `agents/`, `tools/`, `config/`, `crew.py`, `main.py`
+- The supply network: `dataset/`
+- Path tracing and risk scoring without Neo4j: `offline/`
+- Metric definitions: `analysis/METRICS.md`
+
 ## The framework
 
 A pipeline of language-model agents, built on [CrewAI](https://github.com/crewAIInc/crewAI), goes from a news article
